@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Backend AI - LexIA">
+  <main class="bg-black min-h-screen">
+    <!-- Header -->
+    <header class="relative bg-gradient-to-r from-emerald-900 via-teal-900 to-green-900 py-20">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4 text-center">
+        <div class="inline-flex items-center bg-emerald-500/20 border border-emerald-500/30 rounded-full px-6 py-2 mb-6">
+          <span class="text-emerald-300 text-sm font-medium">⚙️ Backend Development</span>
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-emerald-400 via-teal-400 to-green-400 bg-clip-text text-transparent">
+          Backend AI
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
+          Servicios y APIs inteligentes que se auto-optimizan y escalan automáticamente
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="/docs/backend-ai" 
+            class="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-emerald-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105"
+          >
+            Ver Documentación
+          </a>
+          <a 
+            href="#examples" 
+            class="border border-emerald-500 text-emerald-400 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-emerald-500/10 transition-all duration-300"
+          >
+            Ver Ejemplos
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Features -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+          <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-8 hover:border-emerald-500/50 transition-all duration-300">
+            <div class="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-lg flex items-center justify-center text-2xl mb-6">
+              🔌
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">APIs Contextuales</h3>
+            <p class="text-gray-400">APIs que se adaptan al contexto y preferencias del usuario automáticamente.</p>
+          </div>
+
+          <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-8 hover:border-emerald-500/50 transition-all duration-300">
+            <div class="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-lg flex items-center justify-center text-2xl mb-6">
+              ⚡
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">Cache Predictivo</h3>
+            <p class="text-gray-400">Sistema de cache que predice qué datos necesitará el usuario.</p>
+          </div>
+
+          <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-8 hover:border-emerald-500/50 transition-all duration-300">
+            <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center text-2xl mb-6">
+              🛡️
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">Seguridad IA</h3>
+            <p class="text-gray-400">Detección automática de amenazas y protección inteligente.</p>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-between items-center">
+          <a 
+            href="/frontend-ai" 
+            class="flex items-center text-emerald-400 hover:text-emerald-300 transition-colors"
+          >
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            Anterior: Frontend AI
+          </a>
+          
+          <a 
+            href="/database-ai" 
+            class="flex items-center text-emerald-400 hover:text-emerald-300 transition-colors"
+          >
+            Siguiente: Database AI
+            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

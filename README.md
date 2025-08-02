@@ -1,46 +1,63 @@
-# Astro Starter Kit: Basics
+# LexIA - AI Powered Application
 
-```sh
-npm create astro@latest -- --template basics
-```
+Un proyecto moderno construido con Astro y Tailwind CSS, preparado para integraciones de IA.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Tech Stack
 
-## 🚀 Project Structure
+- **Framework**: Astro (último versión)
+- **Estilos**: Tailwind CSS v4
+- **Lenguaje**: TypeScript
+- **Package Manager**: npm
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📁 Estructura del Proyecto
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+├── public/           # Archivos estáticos
+├── src/
+│   ├── components/   # Componentes reutilizables
+│   ├── layouts/      # Layouts de página
+│   ├── pages/        # Páginas (routing automático)
+│   └── styles/       # Estilos globales y Tailwind
+├── .github/          # Configuración de GitHub y Copilot
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🧞 Comandos Disponibles
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
+| Comando                   | Descripción                                      |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | Instala las dependencias                         |
+| `npm run dev`             | Inicia servidor de desarrollo en `localhost:4321`|
+| `npm run build`           | Construye el sitio para producción en `./dist/` |
+| `npm run preview`         | Previsualiza la build localmente                |
+| `npm run astro ...`       | Ejecuta comandos CLI de Astro                   |
 
-## 👀 Want to learn more?
+## 🎯 Características
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- ✅ **Astro Islands**: Arquitectura de componentes optimizada
+- ✅ **Tailwind CSS**: Sistema de utilidades para estilos
+- ✅ **TypeScript**: Tipado estático para mejor desarrollo
+- ✅ **Hot Reload**: Desarrollo rápido con recarga en caliente
+- ✅ **Preparado para IA**: Estructura lista para integraciones
+
+## 🚀 Inicio Rápido
+
+1. Instala las dependencias:
+   ```sh
+   npm install
+   ```
+
+2. Inicia el servidor de desarrollo:
+   ```sh
+   npm run dev
+   ```
+
+3. Abre tu navegador en `http://localhost:4321`
+
+## 📚 Próximos Pasos
+
+- Configurar APIs de IA (OpenAI, Anthropic, etc.)
+- Agregar componentes de chat o asistente
+- Implementar autenticación
+- Configurar base de datos
