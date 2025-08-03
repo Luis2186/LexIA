@@ -1,0 +1,378 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { name: 'Herramientas IA', current: true }
+];
+
+// Definir todas las categorías (misma estructura que en [categoria].astro)
+const categorias = {
+  'generacion': {
+    nombre: 'Generación de Código',
+    emoji: '🤖',
+    descripcion: 'Herramientas especializadas en autocompletado, generación y refactoring de código',
+    color: 'from-blue-500 to-cyan-500',
+    cantidad: 4,
+    destacadas: ['GitHub Copilot', 'Cursor', 'Tabnine']
+  },
+  'chat': {
+    nombre: 'Chat & Asistentes',
+    emoji: '💬',
+    descripcion: 'Asistentes conversacionales especializados en desarrollo y programación',
+    color: 'from-green-500 to-emerald-500',
+    cantidad: 2,
+    destacadas: ['GPT-4o', 'Claude 3.5']
+  },
+  'ides': {
+    nombre: 'IDEs y Editores',
+    emoji: '🛠️',
+    descripcion: 'Entornos de desarrollo integrados con capacidades de IA avanzadas',
+    color: 'from-purple-500 to-violet-500',
+    cantidad: 2,
+    destacadas: ['Cursor', 'Replit AI']
+  },
+  'testing': {
+    nombre: 'Testing & QA',
+    emoji: '🧪',
+    descripcion: 'Herramientas de IA para pruebas automatizadas y aseguramiento de calidad',
+    color: 'from-orange-500 to-red-500',
+    cantidad: 3,
+    destacadas: ['Mabl', 'Diffblue Cover', 'Testim AI']
+  },
+  'devops': {
+    nombre: 'DevOps & Deployment',
+    emoji: '🚀',
+    descripcion: 'Automatización inteligente para CI/CD, infraestructura y operaciones',
+    color: 'from-indigo-500 to-blue-500',
+    cantidad: 2,
+    destacadas: ['Harness AI/OPS', 'Dynatrace Davis AI']
+  },
+  'documentacion': {
+    nombre: 'Documentación',
+    emoji: '📚',
+    descripcion: 'Generación automática y mantenimiento de documentación técnica',
+    color: 'from-teal-500 to-cyan-500',
+    cantidad: 4,
+    destacadas: ['Notion AI', 'Mintlify', 'NotebookLM']
+  },
+  'diseno': {
+    nombre: 'UI/UX & Diseño',
+    emoji: '🎨',
+    descripcion: 'Herramientas de IA para diseño de interfaces, presentaciones y experiencia de usuario',
+    color: 'from-pink-500 to-rose-500',
+    cantidad: 6,
+    destacadas: ['Gamma', 'Beautiful.ai', 'Miro AI']
+  },
+  'seguridad': {
+    nombre: 'Seguridad & Análisis',
+    emoji: '🔒',
+    descripcion: 'Análisis de seguridad, vulnerabilidades y calidad de código con IA',
+    color: 'from-red-500 to-pink-500',
+    cantidad: 3,
+    destacadas: ['Snyk Code', 'SonarLint AI', 'DeepCode']
+  }
+};
+
+const totalHerramientas = Object.values(categorias).reduce((sum, cat) => sum + cat.cantidad, 0);
+---
+
+<Layout title="Herramientas IA - LexIA">
+  <Breadcrumbs items={breadcrumbs} />
+  <main class="bg-black min-h-screen">
+    <!-- Header Principal -->
+    <header class="relative bg-gradient-to-r from-violet-900 via-purple-900 to-indigo-900 py-24">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4 text-center">
+        <div class="inline-flex items-center bg-violet-500/20 border border-violet-500/30 rounded-full px-6 py-2 mb-6">
+          <span class="text-violet-300 text-sm font-medium">🤖 AI Tools Professional</span>
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-violet-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
+          Herramientas IA
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
+          Descubre las mejores <span class="text-violet-400 font-semibold">{totalHerramientas}+ herramientas de IA</span> para desarrollo de software, 
+          organizadas por categorías con documentación completa y ejemplos prácticos
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="#categorias" 
+            class="bg-gradient-to-r from-violet-500 to-purple-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-violet-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105"
+          >
+            Explorar por Categorías
+          </a>
+          <a 
+            href="/docs/herramientas-ia" 
+            class="border border-violet-500 text-violet-400 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-violet-500/10 transition-all duration-300"
+          >
+            Ver Documentación
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Stats Rápidas -->
+    <section class="py-16 bg-gray-900/50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-bold text-violet-400 mb-2">{totalHerramientas}+</div>
+            <div class="text-gray-300 text-sm">Herramientas IA</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-bold text-purple-400 mb-2">{Object.keys(categorias).length}</div>
+            <div class="text-gray-300 text-sm">Categorías</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-bold text-indigo-400 mb-2">100%</div>
+            <div class="text-gray-300 text-sm">Documentadas</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-bold text-cyan-400 mb-2">Gratis</div>
+            <div class="text-gray-300 text-sm">Acceso Completo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorías Principales -->
+    <section id="categorias" class="py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+            Explora por Categorías
+          </h2>
+          <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+            Cada categoría incluye las mejores herramientas con análisis detallados, 
+            precios actualizados y guías de implementación
+          </p>
+        </div>
+
+        <!-- Grid de Categorías -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {Object.entries(categorias).map(([key, categoria]) => (
+            <a 
+              href={`/herramientas-ia/${key}`}
+              class="group block bg-gradient-to-br from-gray-900/80 to-black/90 border border-gray-800 rounded-xl p-8 hover:border-violet-500/40 transition-all duration-300 hover:transform hover:scale-105"
+            >
+              <!-- Header de Categoría -->
+              <div class="flex items-center gap-4 mb-6">
+                <div class={`w-16 h-16 bg-gradient-to-r ${categoria.color} rounded-xl flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-300`}>
+                  {categoria.emoji}
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white group-hover:text-violet-400 transition-colors">
+                    {categoria.nombre}
+                  </h3>
+                  <p class="text-gray-400 text-sm">{categoria.cantidad} herramientas</p>
+                </div>
+              </div>
+
+              <!-- Descripción -->
+              <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+                {/* @ts-ignore */}
+                {categoria.descripcion}
+              </p>
+
+              <!-- Herramientas Destacadas -->
+              <div class="mb-6">
+                <p class="text-gray-400 text-xs mb-3 uppercase tracking-wider">Destacadas:</p>
+                <div class="flex flex-wrap gap-2">
+                  {categoria.destacadas.map((herramienta) => (
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">
+                      {herramienta}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div class="flex items-center justify-between">
+                <span class="text-violet-400 text-sm font-medium group-hover:text-violet-300">
+                  Ver todas →
+                </span>
+                <div class={`w-8 h-8 bg-gradient-to-r ${categoria.color} rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+                  <span class="text-white text-sm">→</span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <!-- Herramientas Más Populares -->
+        <div class="bg-gradient-to-r from-violet-900/20 to-purple-900/20 border border-violet-500/20 rounded-xl p-8">
+          <h3 class="text-2xl font-bold text-white mb-6 text-center">
+            🔥 Herramientas Más Populares
+          </h3>
+          
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <!-- GitHub Copilot -->
+            <div class="bg-black/50 border border-gray-700 rounded-lg p-6 hover:border-blue-500/40 transition-colors">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center text-xl">🤖</div>
+                <div>
+                  <h4 class="text-white font-semibold">GitHub Copilot</h4>
+                  <p class="text-blue-400 text-xs">Generación de Código</p>
+                </div>
+              </div>
+              <p class="text-gray-300 text-sm mb-3">El asistente más popular para desarrollo</p>
+              <div class="flex items-center justify-between">
+                <span class="text-emerald-400 text-sm font-medium">$10/mes</span>
+                <a href="/ia/github-copilot" class="text-violet-400 text-sm hover:text-violet-300">Ver →</a>
+              </div>
+            </div>
+
+            <!-- Gamma -->
+            <div class="bg-black/50 border border-gray-700 rounded-lg p-6 hover:border-violet-500/40 transition-colors">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 bg-gradient-to-r from-violet-500 to-purple-500 rounded-lg flex items-center justify-center text-xl">🎯</div>
+                <div>
+                  <h4 class="text-white font-semibold">Gamma</h4>
+                  <p class="text-violet-400 text-xs">Presentaciones IA</p>
+                </div>
+              </div>
+              <p class="text-gray-300 text-sm mb-3">Presentaciones automáticas profesionales</p>
+              <div class="flex items-center justify-between">
+                <span class="text-emerald-400 text-sm font-medium">$10/mes</span>
+                <a href="/ia/gamma" class="text-violet-400 text-sm hover:text-violet-300">Ver →</a>
+              </div>
+            </div>
+
+            <!-- Notion AI -->
+            <div class="bg-black/50 border border-gray-700 rounded-lg p-6 hover:border-teal-500/40 transition-colors">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-lg flex items-center justify-center text-xl">📝</div>
+                <div>
+                  <h4 class="text-white font-semibold">Notion AI</h4>
+                  <p class="text-teal-400 text-xs">Documentación</p>
+                </div>
+              </div>
+              <p class="text-gray-300 text-sm mb-3">Documentación inteligente automática</p>
+              <div class="flex items-center justify-between">
+                <span class="text-emerald-400 text-sm font-medium">$10/mes</span>
+                <a href="/ia/notion-ai" class="text-violet-400 text-sm hover:text-violet-300">Ver →</a>
+              </div>
+            </div>
+
+            <!-- Cursor -->
+            <div class="bg-black/50 border border-gray-700 rounded-lg p-6 hover:border-purple-500/40 transition-colors">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 bg-gradient-to-r from-purple-500 to-violet-500 rounded-lg flex items-center justify-center text-xl">⚡</div>
+                <div>
+                  <h4 class="text-white font-semibold">Cursor</h4>
+                  <p class="text-purple-400 text-xs">IDEs y Editores</p>
+                </div>
+              </div>
+              <p class="text-gray-300 text-sm mb-3">Editor revolucionario con IA nativa</p>
+              <div class="flex items-center justify-between">
+                <span class="text-emerald-400 text-sm font-medium">$20/mes</span>
+                <a href="/ia/cursor" class="text-violet-400 text-sm hover:text-violet-300">Ver →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comparación Rápida por Precio -->
+        <div class="mt-16 bg-gray-900/50 border border-gray-800 rounded-xl p-8">
+          <h3 class="text-2xl font-bold text-white mb-6 text-center">
+            💰 Comparación por Precio
+          </h3>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Gratis -->
+            <div class="bg-black/50 border border-green-500/30 rounded-lg p-6">
+              <h4 class="text-green-400 font-semibold mb-4 text-center">🆓 Gratis</h4>
+              <ul class="space-y-2 text-gray-300 text-sm">
+                <li>• SonarLint AI</li>
+                <li>• NotebookLM</li>
+                <li>• DiagramGPT</li>
+                <li>• Gamma (plan básico)</li>
+              </ul>
+              <div class="mt-4 text-center">
+                <span class="text-green-400 text-lg font-bold">$0</span>
+              </div>
+            </div>
+
+            <!-- Económicas -->
+            <div class="bg-black/50 border border-blue-500/30 rounded-lg p-6">
+              <h4 class="text-blue-400 font-semibold mb-4 text-center">💎 Económicas</h4>
+              <ul class="space-y-2 text-gray-300 text-sm">
+                <li>• Replit AI ($7/mes)</li>
+                <li>• GitHub Copilot ($10/mes)</li>
+                <li>• Notion AI ($10/mes)</li>
+                <li>• Gamma ($10/mes)</li>
+                <li>• Beautiful.ai ($12/mes)</li>
+                <li>• Mabl ($80/mes)</li>
+              </ul>
+              <div class="mt-4 text-center">
+                <span class="text-blue-400 text-lg font-bold">$7-80</span>
+              </div>
+            </div>
+
+            <!-- Premium -->
+            <div class="bg-black/50 border border-purple-500/30 rounded-lg p-6">
+              <h4 class="text-purple-400 font-semibold mb-4 text-center">🚀 Premium</h4>
+              <ul class="space-y-2 text-gray-300 text-sm">
+                <li>• Miro AI ($16/mes)</li>
+                <li>• GPT-4o ($20/mes)</li>
+                <li>• Cursor ($20/mes)</li>
+                <li>• Snyk Code ($25/mes)</li>
+              </ul>
+              <div class="mt-4 text-center">
+                <span class="text-purple-400 text-lg font-bold">$16+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Final -->
+        <div class="text-center mt-16">
+          <div class="bg-gradient-to-r from-violet-900/30 to-purple-900/30 border border-violet-500/20 rounded-xl p-8">
+            <h3 class="text-3xl font-bold text-white mb-4">¿Listo para potenciar tu desarrollo?</h3>
+            <p class="text-gray-300 mb-6 max-w-2xl mx-auto">
+              Explora cada categoría para encontrar las herramientas perfectas para tu flujo de trabajo. 
+              Todas incluyen documentación completa, ejemplos y guías de implementación.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="/herramientas-ia/generacion" 
+                class="bg-violet-500 hover:bg-violet-600 text-white px-8 py-3 rounded-xl font-semibold transition-colors"
+              >
+                🤖 Empezar con Generación de Código
+              </a>
+              <a 
+                href="/docs/herramientas-ia" 
+                class="border border-violet-500 text-violet-400 hover:bg-violet-500/10 px-8 py-3 rounded-xl font-semibold transition-colors"
+              >
+                📚 Ver Documentación Completa
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  /* Efectos hover suaves */
+  .group:hover .w-16 {
+    transform: scale(1.1);
+  }
+  
+  /* Gradientes animados */
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  .bg-gradient-to-r {
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
+  }
+</style>

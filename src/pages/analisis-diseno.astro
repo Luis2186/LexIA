@@ -57,19 +57,19 @@ import Layout from '../layouts/Layout.astro';
                 <li class="flex items-start gap-3">
                   <span class="text-green-400 mt-1">•</span>
                   <div>
-                    <strong class="text-white">ChatGPT/Claude:</strong> Extracción y clarificación de requisitos
+                    <strong class="text-white"><a href="/ia/chatgpt" class="text-blue-400 hover:text-blue-300 transition-colors">ChatGPT</a>/<a href="/ia/claude" class="text-purple-400 hover:text-purple-300 transition-colors">Claude</a>:</strong> Extracción y clarificación de requisitos
                   </div>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="text-green-400 mt-1">•</span>
                   <div>
-                    <strong class="text-white">Notion AI:</strong> Documentación estructurada automática
+                    <strong class="text-white"><a href="/ia/notion-ai" class="text-gray-400 hover:text-gray-300 transition-colors">Notion AI</a>:</strong> Documentación estructurada automática
                   </div>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="text-green-400 mt-1">•</span>
                   <div>
-                    <strong class="text-white">Gamma/Beautiful.ai:</strong> Presentaciones automáticas
+                    <strong class="text-white"><a href="/ia/gamma" class="text-violet-400 hover:text-violet-300 transition-colors">Gamma</a>/<a href="/ia/beautiful-ai" class="text-rose-400 hover:text-rose-300 transition-colors">Beautiful.ai</a>:</strong> Presentaciones automáticas
                   </div>
                 </li>
               </ul>
@@ -166,7 +166,7 @@ import Layout from '../layouts/Layout.astro';
                 <h4 class="text-lg font-semibold text-pink-300 mb-3">🛠️ Stack Recomendado</h4>
                 <div class="space-y-2 text-sm text-gray-300">
                   <div class="flex justify-between">
-                    <span>Notion AI</span>
+                    <span><a href="/ia/notion-ai" class="text-gray-400 hover:text-gray-300 transition-colors">Notion AI</a></span>
                     <span class="text-green-400">Documentación</span>
                   </div>
                   <div class="flex justify-between">
@@ -174,8 +174,8 @@ import Layout from '../layouts/Layout.astro';
                     <span class="text-blue-400">Wiki técnico</span>
                   </div>
                   <div class="flex justify-between">
-                    <span>Miro AI</span>
-                    <span class="text-purple-400">Wireframes</span>
+                    <span><a href="/ia/miro-ai" class="text-blue-400 hover:text-blue-300 transition-colors">Miro AI</a></span>
+                    <span class="text-purple-400">Esquemas de Pantalla</span>
                   </div>
                   <div class="flex justify-between">
                     <span>Figma AI</span>
@@ -185,6 +185,44 @@ import Layout from '../layouts/Layout.astro';
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Tools CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-violet-900/30 via-purple-900/30 to-blue-900/30 border-y border-violet-500/20">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <div class="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-violet-500/20 to-purple-500/20 rounded-full border border-violet-400/30 backdrop-blur-sm mb-8">
+          <span class="text-2xl">🤖</span>
+          <span class="text-lg font-medium text-violet-300">Herramientas IA Profesionales</span>
+        </div>
+        
+        <h3 class="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent">
+          Descubre las mejores IAs del mercado
+        </h3>
+        
+        <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+          Explora <span class="text-violet-400 font-semibold">25+ herramientas IA</span> especializadas en análisis, 
+          diseño y todas las etapas del desarrollo. Comparaciones, precios y casos de uso reales.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a 
+            href="/herramientas-ia" 
+            class="bg-gradient-to-r from-violet-500 to-purple-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-violet-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-violet-500/25 flex items-center gap-2"
+          >
+            <span>Ver Todas las Herramientas IA</span>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          
+          <a 
+            href="/docs/herramientas-ia" 
+            class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
+          >
+            Documentación Técnica
+          </a>
         </div>
       </div>
     </section>

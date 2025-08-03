@@ -1,0 +1,107 @@
+---
+const currentYear = new Date().getFullYear();
+
+const footerSections = [
+  {
+    title: 'Capas de Desarrollo con IA',
+    links: [
+      { name: 'Análisis y Diseño', href: '/analisis-diseno' },
+      { name: 'Desarrollo y Codificación', href: '/desarrollo-codificacion' },
+      { name: 'Testing y Validación', href: '/testing-validacion' },
+      { name: 'Deployment y DevOps', href: '/deployment-devops' },
+      { name: 'Mantenimiento y Evolución', href: '/mantenimiento-evolucion' },
+      { name: 'Operaciones y Escalabilidad', href: '/operaciones-escalabilidad' }
+    ]
+  },
+  {
+    title: 'Herramientas IA',
+    links: [
+      { name: 'Generación de Código', href: '/herramientas-ia/generacion' },
+      { name: 'Chat & Asistentes', href: '/herramientas-ia/chat' },
+      { name: 'IDEs y Editores', href: '/herramientas-ia/ides' },
+      { name: 'Testing & QA', href: '/herramientas-ia/testing' }
+    ]
+  },
+  {
+    title: 'Recursos',
+    links: [
+      { name: 'Documentación', href: '/docs' },
+      { name: 'Ejemplos Prácticos', href: '/ejemplos' },
+      { name: 'Guías de Implementación', href: '/guias' },
+      { name: 'Mejores Prácticas', href: '/best-practices' }
+    ]
+  }
+];
+
+const socialLinks = [
+  { name: 'GitHub', href: '#', icon: '📂' },
+  { name: 'LinkedIn', href: '#', icon: '💼' },
+  { name: 'Twitter', href: '#', icon: '🐦' }
+];
+---
+
+<footer class="bg-gray-900 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Logo y descripción -->
+      <div class="col-span-1 md:col-span-1">
+        <div class="flex items-center space-x-2 mb-4">
+          <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
+            <span class="text-white text-lg font-bold">L</span>
+          </div>
+          <span class="text-white text-xl font-bold">LexIA</span>
+        </div>
+        <p class="text-gray-400 text-sm mb-4">
+          Guía completa sobre la aplicación de Inteligencia Artificial en el desarrollo de software moderno.
+        </p>
+        
+        <!-- Social Links -->
+        <div class="flex space-x-4">
+          {socialLinks.map((social) => (
+            <a href={social.href} class="text-gray-400 hover:text-white transition-colors">
+              <span class="text-xl">{social.icon}</span>
+              <span class="sr-only">{social.name}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Enlaces de navegación -->
+      {footerSections.map((section) => (
+        <div>
+          <h3 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">
+            {section.title}
+          </h3>
+          <ul class="space-y-2">
+            {section.links.map((link) => (
+              <li>
+                <a href={link.href} class="text-gray-400 hover:text-white transition-colors text-sm">
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- Divider -->
+    <div class="mt-8 pt-8 border-t border-gray-800">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">
+          © {currentYear} LexIA. Proyecto educativo sobre IA en desarrollo de software.
+        </p>
+        
+        <!-- Quick Actions -->
+        <div class="mt-4 md:mt-0 flex space-x-4">
+          <a href="/herramientas-ia" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+            Explorar Herramientas
+          </a>
+          <a href="/#sections" class="border border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+            Ver Etapas
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

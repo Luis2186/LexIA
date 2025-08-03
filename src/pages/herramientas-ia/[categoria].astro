@@ -1,0 +1,532 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// Definir todas las categorías disponibles
+const categorias = {
+  'generacion': {
+    nombre: 'Generación de Código',
+    emoji: '🤖',
+    descripcion: 'Herramientas especializadas en autocompletado, generación y refactoring de código',
+    color: 'from-blue-500 to-cyan-500',
+    herramientas: [
+      {
+        nombre: 'GitHub Copilot',
+        empresa: 'GitHub + OpenAI',
+        descripcion: 'El asistente de código IA más popular. GPT-4 + Codex para 100+ lenguajes.',
+        precio: '$10/mes',
+        tags: ['Autocompletado', 'VS Code', 'IntelliJ'],
+        url: '/ia/github-copilot',
+        logo: '🤖'
+      },
+      {
+        nombre: 'Cursor',
+        empresa: 'Cursor',
+        descripcion: 'Editor de código con IA integrada. Fork de VS Code con GPT-4.',
+        precio: '$20/mes',
+        tags: ['Editor', 'GPT-4', 'Autocomplete'],
+        url: '/ia/cursor',
+        logo: '⚡'
+      },
+      {
+        nombre: 'Tabnine',
+        empresa: 'Tabnine',
+        descripcion: 'Autocompletado inteligente con modelos propios y personalizables.',
+        precio: '$12/mes',
+        tags: ['Autocomplete', 'Local', 'Privacidad'],
+        url: '/ia/tabnine',
+        logo: '🔮'
+      },
+      {
+        nombre: 'Sourcegraph Cody',
+        empresa: 'Sourcegraph',
+        descripcion: 'Asistente IA con acceso al contexto completo del codebase.',
+        precio: '$9/mes',
+        tags: ['Contexto', 'Search', 'Claude'],
+        url: '/ia/sourcegraph-cody',
+        logo: '🔍'
+      }
+    ]
+  },
+  'chat': {
+    nombre: 'Chat & Asistentes',
+    emoji: '💬',
+    descripcion: 'Asistentes conversacionales especializados en desarrollo y programación',
+    color: 'from-green-500 to-emerald-500',
+    herramientas: [
+      {
+        nombre: 'GPT-4o',
+        empresa: 'OpenAI',
+        descripcion: 'El modelo más avanzado para desarrollo. Soporte multimodal y razonamiento complejo.',
+        precio: '$20/mes',
+        tags: ['Multimodal', 'Razonamiento', 'API'],
+        url: '/ia/gpt-4o',
+        logo: '🧠'
+      },
+      {
+        nombre: 'Claude 3.5',
+        empresa: 'Anthropic',
+        descripcion: 'Excelente para código complejo, refactoring y arquitectura de software.',
+        precio: '$20/mes',
+        tags: ['Arquitectura', 'Refactoring', 'Seguridad'],
+        url: '/ia/claude', // Enlace actualizado
+        logo: '🎭'
+      }
+    ]
+  },
+  'ides': {
+    nombre: 'IDEs y Editores',
+    emoji: '🛠️',
+    descripcion: 'Entornos de desarrollo integrados con capacidades de IA avanzadas',
+    color: 'from-purple-500 to-violet-500',
+    herramientas: [
+      {
+        nombre: 'Cursor',
+        empresa: 'Cursor',
+        descripcion: 'Editor de código revolucionario con IA nativa. Fork de VS Code.',
+        precio: '$20/mes',
+        tags: ['Editor', 'IA Nativa', 'Productivity'],
+        url: '/ia/cursor',
+        logo: '⚡'
+      },
+      {
+        nombre: 'Replit AI',
+        empresa: 'Replit',
+        descripcion: 'IDE en la nube con asistente IA integrado para desarrollo colaborativo.',
+        precio: '$7/mes',
+        tags: ['Cloud', 'Colaborativo', 'Deploy'],
+        url: '/ia/replit-ai',
+        logo: '☁️'
+      }
+    ]
+  },
+  'testing': {
+    nombre: 'Testing & QA',
+    emoji: '🧪',
+    descripcion: 'Herramientas de IA para pruebas automatizadas y aseguramiento de calidad',
+    color: 'from-orange-500 to-red-500',
+    herramientas: [
+      {
+        nombre: 'Mabl',
+        empresa: 'Mabl',
+        descripcion: 'Testing inteligente en la nube con auto-scaling y insights de IA.',
+        precio: '$80/mes',
+        tags: ['Cloud Testing', 'Auto-scaling', 'AI Insights'],
+        url: '/ia/mabl',
+        logo: '☁️'
+      },
+      {
+        nombre: 'Diffblue Cover',
+        empresa: 'Diffblue',
+        descripcion: 'Generación automática de unit tests para Java con IA.',
+        precio: 'Enterprise',
+        tags: ['Java', 'Unit Tests', 'Automático'],
+        url: '/ia/diffblue-cover',
+        logo: '🛡️'
+      },
+      {
+        nombre: 'Testim AI',
+        empresa: 'Testim',
+        descripcion: 'Plataforma de testing automatizado con IA para aplicaciones web.',
+        precio: '$450/mes',
+        tags: ['E2E Testing', 'Web', 'Auto-healing'],
+        url: '/ia/testim-ai',
+        logo: '🎯'
+      }
+    ]
+  },
+  'devops': {
+    nombre: 'DevOps & Deployment',
+    emoji: '🚀',
+    descripcion: 'Automatización inteligente para CI/CD, infraestructura y operaciones',
+    color: 'from-indigo-500 to-blue-500',
+    herramientas: [
+      {
+        nombre: 'Harness AI/OPS',
+        empresa: 'Harness',
+        descripcion: 'Plataforma DevOps con IA para CI/CD, feature flags y observabilidad.',
+        precio: 'Enterprise',
+        tags: ['CI/CD', 'Feature Flags', 'Observability'],
+        url: '/ia/harness-ai-ops',
+        logo: '⚙️'
+      },
+      {
+        nombre: 'Dynatrace Davis AI',
+        empresa: 'Dynatrace',
+        descripcion: 'IA para observabilidad, detección de anomalías y root cause analysis.',
+        precio: 'Enterprise',
+        tags: ['Observability', 'Anomalías', 'APM'],
+        url: '/ia/dynatrace-davis-ai',
+        logo: '📊'
+      }
+    ]
+  },
+  'documentacion': {
+    nombre: 'Documentación',
+    emoji: '📚',
+    descripcion: 'Generación automática y mantenimiento de documentación técnica',
+    color: 'from-teal-500 to-cyan-500',
+    herramientas: [
+      {
+        nombre: 'Notion AI',
+        empresa: 'Notion Labs',
+        descripcion: 'Asistente de escritura e investigación integrado en Notion para documentación automática.',
+        precio: '$10/mes',
+        tags: ['Escritura', 'Workspace', 'Automático'],
+        url: '/ia/notion-ai',
+        logo: '📝'
+      },
+      {
+        nombre: 'Mintlify',
+        empresa: 'Mintlify',
+        descripcion: 'Generación automática de documentación desde código con IA.',
+        precio: '$120/mes',
+        tags: ['Auto-docs', 'APIs', 'Beautiful'],
+        url: '/ia/mintlify',
+        logo: '📖'
+      },
+      {
+        nombre: 'NotebookLM',
+        empresa: 'Google',
+        descripcion: 'Asistente IA para investigación y documentación técnica.',
+        precio: 'Gratis',
+        tags: ['Research', 'PDFs', 'Synthesis'],
+        url: '/ia/notebooklm',
+        logo: '📓'
+      },
+      {
+        nombre: 'Swimm',
+        empresa: 'Swimm',
+        descripcion: 'Documentación de código que se mantiene actualizada automáticamente.',
+        precio: '$39/mes',
+        tags: ['Live Docs', 'Code Sync', 'Knowledge'],
+        url: '/ia/swimm',
+        logo: '🏊'
+      }
+    ]
+  },
+  'diseno': {
+    nombre: 'UI/UX & Diseño',
+    emoji: '🎨',
+    descripcion: 'Herramientas de IA para diseño de interfaces, presentaciones y experiencia de usuario',
+    color: 'from-pink-500 to-rose-500',
+    herramientas: [
+      {
+        nombre: 'Gamma',
+        empresa: 'Gamma Technologies',
+        descripcion: 'Crea presentaciones profesionales con IA en segundos. Diseño automático y contenido inteligente.',
+        precio: '$10/mes',
+        tags: ['Presentaciones', 'Auto-diseño', 'Contenido IA'],
+        url: '/ia/gamma',
+        logo: '🎯'
+      },
+      {
+        nombre: 'Beautiful.ai',
+        empresa: 'Beautiful.ai Inc.',
+        descripcion: 'Presentaciones con diseño automático inteligente. DesignAI engine adapta layouts en tiempo real.',
+        precio: '$12/mes',
+        tags: ['DesignAI', 'Presentaciones', 'Auto-layout'],
+        url: '/ia/beautiful-ai',
+        logo: '✨'
+      },
+      {
+        nombre: 'Miro AI',
+        empresa: 'Miro',
+        descripcion: 'Colaboración visual inteligente con generación automática de diagramas y wireframes.',
+        precio: '$16/mes',
+        tags: ['Diagramas', 'Wireframes', 'Colaboración'],
+        url: '/ia/miro-ai',
+        logo: '🧠'
+      },
+      {
+        nombre: 'Uizard',
+        empresa: 'Uizard',
+        descripcion: 'Diseño de UI automático desde wireframes, mockups o descripciones.',
+        precio: '$12/mes',
+        tags: ['Wireframes', 'Mockups', 'Prototyping'],
+        url: '/ia/uizard',
+        logo: '🎨'
+      },
+      {
+        nombre: 'Galileo AI',
+        empresa: 'Galileo AI',
+        descripcion: 'Generación de designs completos desde prompts de texto.',
+        precio: '$19/mes',
+        tags: ['Text-to-Design', 'UI Generation', 'Figma'],
+        url: '/ia/galileo-ai',
+        logo: '🔭'
+      },
+      {
+        nombre: 'DiagramGPT',
+        empresa: 'DiagramGPT',
+        descripcion: 'Creación automática de diagramas técnicos y arquitecturas.',
+        precio: 'Gratis',
+        tags: ['Diagramas', 'Arquitectura', 'Mermaid'],
+        url: '/ia/diagramgpt',
+        logo: '📊'
+      }
+    ]
+  },
+  'seguridad': {
+    nombre: 'Seguridad & Análisis',
+    emoji: '🔒',
+    descripcion: 'Análisis de seguridad, vulnerabilidades y calidad de código con IA',
+    color: 'from-red-500 to-pink-500',
+    herramientas: [
+      {
+        nombre: 'Snyk Code',
+        empresa: 'Snyk',
+        descripcion: 'Análisis de seguridad en tiempo real con IA para detectar vulnerabilidades.',
+        precio: '$25/mes',
+        tags: ['Security', 'SAST', 'Real-time'],
+        url: '/ia/snyk-code',
+        logo: '🛡️'
+      },
+      {
+        nombre: 'SonarLint AI',
+        empresa: 'SonarSource',
+        descripcion: 'Análisis de calidad de código con sugerencias inteligentes.',
+        precio: 'Gratis',
+        tags: ['Code Quality', 'Linting', 'Best Practices'],
+        url: '/ia/sonarlint-ai',
+        logo: '⚡'
+      },
+      {
+        nombre: 'DeepCode',
+        empresa: 'Snyk',
+        descripcion: 'Revisión automática de código con ML para encontrar bugs.',
+        precio: 'Integrado Snyk',
+        tags: ['Bug Detection', 'ML', 'Code Review'],
+        url: '/ia/deepcode',
+        logo: '🔍'
+      }
+    ]
+  }
+};
+
+// Obtener parámetros de la URL
+export async function getStaticPaths() {
+  // Redefinir categorias aquí para getStaticPaths
+  const categoriasKeys = ['generacion', 'chat', 'ides', 'testing', 'devops', 'documentacion', 'diseno', 'seguridad'];
+  return categoriasKeys.map(categoria => ({
+    params: { categoria }
+  }));
+}
+
+const { categoria } = Astro.params;
+// @ts-ignore
+const categoriaData = categorias[categoria];
+
+// Si la categoría no existe, redirigir a la página principal
+if (!categoriaData) {
+  return Astro.redirect('/herramientas-ia');
+}
+
+// Metadata para SEO
+const title = `${categoriaData.nombre} - Herramientas IA | LexIA`;
+const description = `${categoriaData.descripcion}. Descubre las mejores herramientas de IA para ${categoriaData.nombre.toLowerCase()}.`;
+---
+
+<Layout title={title}>
+  <main class="bg-black min-h-screen">
+    <!-- Header de Categoría -->
+    <header class={`relative bg-gradient-to-r ${categoriaData.color.replace('from-', 'from-').replace('to-', 'to-')} py-20`}>
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4">
+        
+        <!-- Breadcrumb -->
+        <nav class="mb-8">
+          <div class="flex items-center space-x-2 text-sm">
+            <a href="/" class="text-gray-300 hover:text-white transition-colors">LexIA</a>
+            <span class="text-gray-500">/</span>
+            <a href="/herramientas-ia" class="text-gray-300 hover:text-white transition-colors">Herramientas IA</a>
+            <span class="text-gray-500">/</span>
+            <span class="text-white font-medium">{categoriaData.nombre}</span>
+          </div>
+        </nav>
+
+        <div class="text-center">
+          <div class="inline-flex items-center bg-white/10 border border-white/20 rounded-full px-6 py-2 mb-6">
+            <span class="text-white text-sm font-medium">{categoriaData.emoji} {categoriaData.nombre}</span>
+          </div>
+          
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white">
+            {categoriaData.emoji} {categoriaData.nombre}
+          </h1>
+          
+          <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto">
+            {categoriaData.descripcion}
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="/herramientas-ia" 
+              class="border border-white/30 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/10 transition-all duration-300"
+            >
+              ← Ver Todas las Categorías
+            </a>
+            <a 
+              href="#herramientas" 
+              class="bg-white text-black px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-100 transition-all duration-300"
+            >
+              Ver Herramientas
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navegación entre Categorías -->
+    <section class="py-8 border-b border-gray-800">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-wrap justify-center gap-3">
+          {Object.entries(categorias).map(([key, cat]) => (
+            <a 
+              href={`/herramientas-ia/${key}`}
+              class={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                key === categoria 
+                  ? 'bg-violet-500 text-white' 
+                  : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
+              }`}
+            >
+              {cat.emoji} {cat.nombre}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Herramientas de la Categoría -->
+    <section id="herramientas" class="py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        
+        <!-- Stats de la categoría -->
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center bg-gray-800/50 border border-gray-700 rounded-xl px-6 py-3 mb-6">
+            <span class="text-violet-400 text-sm font-medium">
+              {categoriaData.herramientas.length} herramientas disponibles
+            </span>
+          </div>
+        </div>
+
+        <!-- Grid de Herramientas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {/* @ts-ignore */}
+          {categoriaData.herramientas.map((herramienta) => (
+            <div class={`tool-card bg-gradient-to-br from-gray-900/50 to-black/50 border border-gray-700 rounded-xl p-6 hover:border-violet-500/40 transition-all duration-300 hover:transform hover:scale-105`}>
+              <div class="flex items-center gap-3 mb-4">
+                <div class={`w-12 h-12 bg-gradient-to-r ${categoriaData.color} rounded-lg flex items-center justify-center text-2xl`}>
+                  {herramienta.logo}
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-white">{herramienta.nombre}</h3>
+                  <p class="text-violet-400 text-sm">by {herramienta.empresa}</p>
+                </div>
+              </div>
+              
+              <p class="text-gray-300 text-sm mb-4">{herramienta.descripcion}</p>
+              
+              <div class="flex flex-wrap gap-2 mb-4">
+                {/* @ts-ignore */}
+                {herramienta.tags.map((tag) => (
+                  <span class="bg-violet-500/20 text-violet-300 px-2 py-1 rounded text-xs">{tag}</span>
+                ))}
+              </div>
+              
+              <div class="flex items-center justify-between">
+                <span class="text-emerald-400 font-semibold">{herramienta.precio}</span>
+                <a 
+                  href={herramienta.url}
+                  class="bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                >
+                  Ver Detalles →
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <!-- Comparación Rápida -->
+        <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-8">
+          <h2 class="text-2xl font-bold text-white mb-6 text-center">
+            📊 Comparación Rápida - {categoriaData.nombre}
+          </h2>
+          
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="border-b border-gray-700">
+                  <th class="text-left text-gray-300 py-3 px-4">Herramienta</th>
+                  <th class="text-left text-gray-300 py-3 px-4">Precio</th>
+                  <th class="text-left text-gray-300 py-3 px-4">Características</th>
+                  <th class="text-left text-gray-300 py-3 px-4">Mejor Para</th>
+                </tr>
+              </thead>
+              <tbody>
+                {/* @ts-ignore */}
+                {categoriaData.herramientas.map((herramienta) => (
+                  <tr class="border-b border-gray-800 hover:bg-gray-800/30">
+                    <td class="py-4 px-4">
+                      <div class="flex items-center gap-3">
+                        <span class="text-xl">{herramienta.logo}</span>
+                        <div>
+                          <div class="text-white font-medium">{herramienta.nombre}</div>
+                          <div class="text-gray-400 text-xs">{herramienta.empresa}</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="py-4 px-4 text-emerald-400 font-medium">{herramienta.precio}</td>
+                    <td class="py-4 px-4">
+                      <div class="flex flex-wrap gap-1">
+                        {/* @ts-ignore */}
+                        {herramienta.tags.slice(0, 2).map((tag) => (
+                          <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs">{tag}</span>
+                        ))}
+                      </div>
+                    </td>
+                    <td class="py-4 px-4 text-gray-300 text-xs">{herramienta.descripcion.split('.')[0]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-16">
+          <div class="bg-gradient-to-r from-violet-900/30 to-purple-900/30 border border-violet-500/20 rounded-xl p-8">
+            <h3 class="text-2xl font-bold text-white mb-4">¿Necesitas más información?</h3>
+            <p class="text-gray-300 mb-6">
+              Explora la documentación completa de cada herramienta con ejemplos prácticos y guías de implementación.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="/docs/herramientas-ia" 
+                class="bg-violet-500 hover:bg-violet-600 text-white px-8 py-3 rounded-xl font-semibold transition-colors"
+              >
+                Ver Documentación Completa
+              </a>
+              <a 
+                href="/herramientas-ia" 
+                class="border border-violet-500 text-violet-400 hover:bg-violet-500/10 px-8 py-3 rounded-xl font-semibold transition-colors"
+              >
+                Explorar Todas las Categorías
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .tool-card {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(0, 0, 0, 0.9) 100%);
+    backdrop-filter: blur(10px);
+  }
+  
+  .tool-card:hover {
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.1);
+  }
+</style>

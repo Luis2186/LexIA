@@ -1,0 +1,868 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Uizard - AI Design Tool | LexIA">
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-violet-900 via-fuchsia-900 to-pink-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🎨
+                    </div>
+                    <div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            Uizard
+                        </h1>
+                        <p class="text-xl text-violet-300">
+                            AI-Powered Design & Prototyping
+                        </p>
+                        <p class="text-gray-400">by Uizard Technologies</p>
+                    </div>
+                </div>
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    Uizard democratiza el diseño con IA que convierte sketches
+                    en prototypes, transforma screenshots en editable designs y
+                    acelera el design-to-development workflow para teams sin
+                    design background.
+                </p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-violet-400 hover:text-violet-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#ai-features"
+                        class="text-gray-400 hover:text-violet-300 whitespace-nowrap transition-colors"
+                        >Features IA</a
+                    >
+                    <a
+                        href="#design-tools"
+                        class="text-gray-400 hover:text-violet-300 whitespace-nowrap transition-colors"
+                        >Design Tools</a
+                    >
+                    <a
+                        href="#ejemplos"
+                        class="text-gray-400 hover:text-violet-300 whitespace-nowrap transition-colors"
+                        >Ejemplos</a
+                    >
+                    <a
+                        href="#beneficios"
+                        class="text-gray-400 hover:text-violet-300 whitespace-nowrap transition-colors"
+                        >Beneficios</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es Uizard? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-violet-900/20 to-fuchsia-900/20 border border-violet-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🎨 ¿Qué es Uizard?
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong>Uizard</strong> es la herramienta de diseño
+                                AI-powered que permite a cualquier persona crear
+                                stunning UI/UX designs, prototypes y wireframes sin
+                                experience previa en diseño. Utiliza computer vision
+                                y machine learning para transformar ideas en professional
+                                interfaces.
+                            </p>
+
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🎯 AI Design Magic
+                                </h3>
+
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-violet-400">📱</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Sketch to Design
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Convierte hand-drawn sketches en
+                                                digital mockups
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-fuchsia-400">📸</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Screenshot to Code
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Transforma screenshots en
+                                                editable components
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-pink-400">🎨</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Text to UI
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Genera interfaces desde text
+                                                descriptions
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🚀 Design Acceleration
+                                </h3>
+
+                                <div class="space-y-4 text-sm">
+                                    <div
+                                        class="border-l-4 border-violet-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-violet-300"
+                                        >
+                                            Rapid Prototyping
+                                        </div>
+                                        <div class="text-gray-400">
+                                            From concept to clickable prototype
+                                            en minutos
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-fuchsia-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-fuchsia-300"
+                                        >
+                                            Design Systems
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Consistent component libraries
+                                            automáticamente
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-pink-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-pink-300"
+                                        >
+                                            Collaboration
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Real-time team collaboration y
+                                            feedback
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-violet-800/20 to-fuchsia-800/20 rounded-xl p-4 border border-violet-500/20"
+                            >
+                                <div
+                                    class="text-sm text-violet-300 font-medium mb-2"
+                                >
+                                    🎯 Perfect For
+                                </div>
+                                <p class="text-gray-400 text-sm">
+                                    Product managers, developers, entrepreneurs
+                                    y startups que necesitan crear professional
+                                    designs sin hiring dedicated designers o
+                                    learning complex tools.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Features -->
+            <section id="ai-features" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🤖 Features de IA Avanzada
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-violet-500/20"
+                        >
+                            <div class="text-3xl mb-4">🧠</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Computer Vision Magic
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Sketch Recognition:</strong> AI identifica
+                                    shapes, text y layouts
+                                </li>
+                                <li>
+                                    • <strong>Screenshot Analysis:</strong> Extrae
+                                    components y structure
+                                </li>
+                                <li>
+                                    • <strong>Image Understanding:</strong> Recognizes
+                                    UI patterns y conventions
+                                </li>
+                                <li>
+                                    • <strong>Element Detection:</strong> Automatic
+                                    component classification
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-fuchsia-500/20"
+                        >
+                            <div class="text-3xl mb-4">🎨</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Intelligent Design Generation
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Auto-Layout:</strong> Smart spacing
+                                    y alignment
+                                </li>
+                                <li>
+                                    • <strong>Color Palettes:</strong> AI-generated
+                                    color schemes
+                                </li>
+                                <li>
+                                    • <strong>Typography:</strong> Font pairing y
+                                    hierarchy suggestions
+                                </li>
+                                <li>
+                                    • <strong>Responsive Design:</strong> Multi-device
+                                    adaptations
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-pink-500/20"
+                        >
+                            <div class="text-3xl mb-4">🔗</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Smart Component System
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Component Recognition:</strong> Identifica
+                                    reusable elements
+                                </li>
+                                <li>
+                                    • <strong>Pattern Library:</strong> Auto-builds
+                                    design systems
+                                </li>
+                                <li>
+                                    • <strong>Variant Generation:</strong> Creates
+                                    component states
+                                </li>
+                                <li>
+                                    • <strong>Consistency Enforcement:</strong> Maintains
+                                    design standards
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-violet-600/20"
+                        >
+                            <div class="text-3xl mb-4">⚡</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Code Generation
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>React Components:</strong> Production-ready
+                                    React code
+                                </li>
+                                <li>
+                                    • <strong>CSS Styles:</strong> Clean, maintainable
+                                    stylesheets
+                                </li>
+                                <li>
+                                    • <strong>Design Tokens:</strong> Consistent
+                                    variable systems
+                                </li>
+                                <li>
+                                    • <strong>Export Options:</strong> Multiple format
+                                    support
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Design Tools -->
+            <section id="design-tools" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚙️ AI Design Workflow
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-violet-500/20"
+                    >
+                        <h3
+                            class="text-xl font-semibold text-white mb-6 text-center"
+                        >
+                            🚀 From Idea to Production
+                        </h3>
+
+                        <div class="grid md:grid-cols-4 gap-6">
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-violet-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    1
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    ✏️ Input Creation
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Sketch, screenshot, text description o drag
+                                    & drop existing designs.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-fuchsia-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    2
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🧠 AI Processing
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    AI analiza input y genera structured,
+                                    editable components.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    3
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🎨 Design Refinement
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Edit, customize y enhance con intuitive
+                                    design tools.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-violet-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    4
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🚀 Export & Develop
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Generate code, prototypes o design specs
+                                    para development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-fuchsia-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🚀 AI-Powered Tools
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-violet-300 mb-3">
+                                    Design Generation
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>Autodesigner:</strong> AI creates
+                                        full designs from prompts
+                                    </li>
+                                    <li>
+                                        • <strong>FigJam Import:</strong> Convert
+                                        Figma designs seamlessly
+                                    </li>
+                                    <li>
+                                        • <strong>Template Library:</strong> 1000+
+                                        AI-enhanced templates
+                                    </li>
+                                    <li>
+                                        • <strong>Brand Kit:</strong> Consistent
+                                        brand application
+                                    </li>
+                                    <li>
+                                        • <strong>Smart Suggestions:</strong> Real-time
+                                        design improvements
+                                    </li>
+                                    <li>
+                                        • <strong>A/B Variants:</strong> Multiple
+                                        design options
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-fuchsia-300 mb-3">
+                                    Development Bridge
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>React Export:</strong> Clean, production-ready
+                                        components
+                                    </li>
+                                    <li>
+                                        • <strong>CSS Generation:</strong> Responsive
+                                        stylesheets
+                                    </li>
+                                    <li>
+                                        • <strong>Design Tokens:</strong> Variables
+                                        y theme systems
+                                    </li>
+                                    <li>
+                                        • <strong>Figma Sync:</strong> Two-way design
+                                        synchronization
+                                    </li>
+                                    <li>
+                                        • <strong>Storybook:</strong> Component documentation
+                                    </li>
+                                    <li>
+                                        • <strong>GitHub Integration:</strong> Direct
+                                        code commits
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos Prácticos -->
+            <section id="ejemplos" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    💡 Casos de Uso Reales
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-violet-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            📱 Mobile App Mockup from Sketch
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-violet-300 mb-2"
+                                    >
+                                        Input: Hand-drawn Sketch
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        Product manager sketches a food delivery
+                                        app concept en papel: navigation, food
+                                        cards, search bar, y shopping cart.
+                                        Simple line drawings con basic
+                                        annotations.
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="font-semibold text-fuchsia-300 mb-2"
+                                >
+                                    AI Recognition Process
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>Shape Detection:</strong> Identifica
+                                        rectangles como cards
+                                    </li>
+                                    <li>
+                                        • <strong>Text Recognition:</strong> Reads
+                                        handwritten labels
+                                    </li>
+                                    <li>
+                                        • <strong>Layout Analysis:</strong> Understands
+                                        grid y spacing
+                                    </li>
+                                    <li>
+                                        • <strong>Component Mapping:</strong> Maps
+                                        sketches to UI elements
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    AI-Generated Mobile Design
+                                </div>
+                                <pre
+                                    class="text-xs text-violet-400"><code>{`🎨 UIZARD AI TRANSFORMATION
+
+INPUT ANALYSIS:
+┌─ Sketch Elements Detected ────┐
+│ • Top nav bar (rough rectangle)│
+│ • Search box (oval shape)      │
+│ • 6 food cards (grid layout)   │
+│ • Bottom navigation (tabs)     │
+│ • Shopping cart icon (circle)  │
+└────────────────────────────────┘
+
+AI DESIGN OUTPUT:
+📱 Modern Food Delivery App
+├── 🔍 Smart Search Bar
+│   ├── Location dropdown
+│   ├── Filter buttons  
+│   └── Voice search icon
+├── 🍕 Food Category Cards
+│   ├── High-quality food images
+│   ├── Restaurant ratings
+│   ├── Delivery time estimates
+│   └── Price ranges
+├── 🛒 Shopping Cart
+│   ├── Item counter badge
+│   ├── Quick add animations
+│   └── Checkout preview
+└── 📱 Navigation
+    ├── Home, Search, Orders
+    ├── Profile, Favorites
+    └── Smooth animations
+
+DESIGN ENHANCEMENTS:
+✨ Modern color palette: Orange/Red food theme
+✨ Typography: Poppins font system
+✨ Icons: Feather icon library
+✨ Spacing: 8px grid system
+✨ Responsive: iOS/Android adaptations`}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-pink-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            💻 SaaS Dashboard from Text Prompt
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-pink-300 mb-2"
+                                    >
+                                        Text Prompt
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        "Create a modern analytics dashboard for
+                                        a project management SaaS. Include
+                                        charts, KPI metrics, task lists, team
+                                        progress, and a dark theme with purple
+                                        accents."
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-violet-300 mb-2">
+                                    AI Understanding
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>Context:</strong> B2B SaaS analytics
+                                        interface
+                                    </li>
+                                    <li>
+                                        • <strong>Components:</strong> Charts, metrics,
+                                        lists, progress
+                                    </li>
+                                    <li>
+                                        • <strong>Theme:</strong> Dark UI con purple
+                                        accent colors
+                                    </li>
+                                    <li>
+                                        • <strong>Layout:</strong> Dashboard grid
+                                        con multiple sections
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Generated Dashboard Design
+                                </div>
+                                <pre
+                                    class="text-xs text-pink-400"><code>{`📊 PROJECT MANAGEMENT DASHBOARD
+
+LAYOUT STRUCTURE:
+┌─ Header ────────────────────────┐
+│ Logo | Search | Notifications   │
+│ User Profile | Settings Menu    │
+└─────────────────────────────────┘
+
+┌─ Sidebar ──┬─ Main Content ─────┐
+│ Navigation │ KPI Metrics Row    │
+│ • Projects │ ┌─ Revenue ─┬─ Users ─┐
+│ • Teams    │ │ $245K     │ 2,847  │
+│ • Reports  │ │ +12.5%    │ +8.2%  │
+│ • Settings │ └───────────┴────────┘
+│            │                     │
+│            │ ┌─ Performance Chart ─┐
+│            │ │ Line graph: 6 months│
+│            │ │ Purple gradient fill │
+│            │ └─────────────────────┘
+│            │                     │
+│            │ ┌─ Task Overview ─────┐
+│            │ │ • Sprint Progress   │
+│            │ │ • Team Performance  │
+│            │ │ • Upcoming Deadlines│
+│            │ └─────────────────────┘
+└────────────┴─────────────────────┘
+
+DESIGN SYSTEM APPLIED:
+🎨 Colors: Dark gray base (#1a1a1a)
+           Purple accent (#8b5cf6)
+           White text (#ffffff)
+           Success green (#10b981)
+
+📝 Typography: Inter font family
+              Weights: 400, 500, 600, 700
+              
+🖼️ Components: Card containers
+              Shadow depths
+              Rounded corners (8px)
+              Interactive states`}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Beneficios Empresariales -->
+            <section id="beneficios" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    📈 Beneficios Empresariales
+                </h2>
+
+                <div class="bg-gray-900 rounded-xl p-8">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">⚡</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Speed
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-violet-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-violet-300 text-lg"
+                                    >
+                                        90%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Faster design process
+                                    </div>
+                                </div>
+                                <div class="bg-fuchsia-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-fuchsia-300 text-lg"
+                                    >
+                                        Hours
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Instead of days
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">💰</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Cost
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-pink-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-pink-300 text-lg"
+                                    >
+                                        80%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Lower design costs
+                                    </div>
+                                </div>
+                                <div class="bg-violet-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-violet-300 text-lg"
+                                    >
+                                        $50K
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Average savings/year
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🚀</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Accessibility
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-fuchsia-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-fuchsia-300 text-lg"
+                                    >
+                                        100%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        No design skills required
+                                    </div>
+                                </div>
+                                <div class="bg-pink-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-pink-300 text-lg"
+                                    >
+                                        Anyone
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Can create designs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Planes -->
+            <section class="mb-12">
+                <div
+                    class="bg-gradient-to-r from-violet-900/20 to-fuchsia-900/20 border border-violet-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        💼 Planes Disponibles
+                    </h2>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🆓 Free
+                            </h3>
+                            <div class="text-2xl font-bold text-gray-400 mb-2">
+                                $0
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para empezar
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• 3 projects</li>
+                                <li>• Basic AI features</li>
+                                <li>• Template library</li>
+                                <li>• Community support</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-violet-500/50"
+                        >
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                ⭐ Pro
+                            </h3>
+                            <div
+                                class="text-2xl font-bold text-violet-400 mb-2"
+                            >
+                                $19/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para profesionales
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Unlimited projects</li>
+                                <li>• Advanced AI tools</li>
+                                <li>• Code generation</li>
+                                <li>• Priority support</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🏢 Business
+                            </h3>
+                            <div
+                                class="text-2xl font-bold text-fuchsia-400 mb-2"
+                            >
+                                $39/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para teams
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Team collaboration</li>
+                                <li>• Brand kit</li>
+                                <li>• Custom components</li>
+                                <li>• Admin controls</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</Layout>

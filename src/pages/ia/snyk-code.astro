@@ -1,0 +1,961 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Snyk Code - IA de Seguridad para Desarrolladores | LexIA">
+  <main class="bg-black min-h-screen">
+    <!-- Header -->
+    <header class="relative bg-gradient-to-r from-red-900 via-orange-900 to-yellow-900 py-20">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4">
+        <div class="flex items-center gap-6 mb-8">
+          <div class="w-20 h-20 bg-gradient-to-r from-red-500 to-orange-500 rounded-2xl flex items-center justify-center text-4xl">
+            🛡️
+          </div>
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Snyk Code</h1>
+            <p class="text-xl text-red-300">IA Security-First para Developers</p>
+            <p class="text-gray-400">by Snyk</p>
+          </div>
+        </div>
+        
+        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+          Snyk Code es la plataforma de IA especializada en detectar y remediar vulnerabilidades 
+          de seguridad en tiempo real. Security-first approach que protege tu código desde 
+          la primera línea hasta producción.
+        </p>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex overflow-x-auto py-4 space-x-8">
+          <a href="#que-es" class="text-red-400 hover:text-red-300 whitespace-nowrap transition-colors">¿Qué es?</a>
+          <a href="#seguridad" class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors">Security Engine</a>
+          <a href="#sast" class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors">SAST Analysis</a>
+          <a href="#casos-uso" class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors">Casos de Uso</a>
+          <a href="#implementacion" class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors">Implementación</a>
+          <a href="#comparacion" class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors">Comparación</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="max-w-6xl mx-auto px-4 py-12">
+      
+      <!-- ¿Qué es Snyk Code? -->
+      <section id="que-es" class="mb-20">
+        <div class="bg-gradient-to-r from-red-900/20 to-orange-900/20 border border-red-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-6">¿Por qué Snyk Code cambia las reglas del juego?</h2>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <div>
+              <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                Snyk Code revoluciona DevSecOps: <strong>el primer SAST engine con IA real</strong>. 
+                No solo detecta vulnerabilidades, sino que comprende el contexto del código 
+                y sugiere fixes automáticos. Security que no frena el desarrollo.
+              </p>
+              
+              <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                  <span class="text-red-400 text-xl">🧠</span>
+                  <div>
+                    <h3 class="text-white font-semibold">AI-Powered SAST</h3>
+                    <p class="text-gray-400 text-sm">Machine learning para detectar patrones complejos</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                  <span class="text-red-400 text-xl">⚡</span>
+                  <div>
+                    <h3 class="text-white font-semibold">Real-time Scanning</h3>
+                    <p class="text-gray-400 text-sm">Analysis mientras codeas, no batch processing</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                  <span class="text-red-400 text-xl">🔧</span>
+                  <div>
+                    <h3 class="text-white font-semibold">Auto-fix Suggestions</h3>
+                    <p class="text-gray-400 text-sm">Code remediation con context-aware patches</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                  <span class="text-red-400 text-xl">📊</span>
+                  <div>
+                    <h3 class="text-white font-semibold">Developer-Friendly</h3>
+                    <p class="text-gray-400 text-sm">Security education, no solo alertas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="space-y-6">
+              <div class="bg-gray-900 rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-white mb-4">💰 Modelo de Pricing</h3>
+                
+                <div class="space-y-4">
+                  <div class="border border-blue-500/50 rounded-lg p-4 bg-blue-900/10">
+                    <div class="flex justify-between items-center mb-2">
+                      <h4 class="font-semibold text-white">Free Tier</h4>
+                      <span class="text-blue-400 font-bold">$0</span>
+                    </div>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                      <li>• 200 tests por mes</li>
+                      <li>• Open source projects</li>
+                      <li>• Basic vulnerability detection</li>
+                      <li>• Community support</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="border border-orange-500/50 rounded-lg p-4 bg-orange-900/10">
+                    <div class="flex justify-between items-center mb-2">
+                      <h4 class="font-semibold text-white">Team Plan</h4>
+                      <span class="text-orange-400 font-bold">$52/dev/month</span>
+                    </div>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                      <li>• Unlimited private repo scans</li>
+                      <li>• AI-powered auto-fix</li>
+                      <li>• IDE integrations</li>
+                      <li>• PR/MR checks</li>
+                      <li>• Priority support</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="border border-purple-500/50 rounded-lg p-4 bg-purple-900/10">
+                    <div class="flex justify-between items-center mb-2">
+                      <h4 class="font-semibold text-white">Enterprise</h4>
+                      <span class="text-purple-400 font-bold">Custom</span>
+                    </div>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                      <li>• Single Sign-On (SSO)</li>
+                      <li>• Custom rules y policies</li>
+                      <li>• On-premises deployment</li>
+                      <li>• Advanced reporting</li>
+                      <li>• SLA guarantees</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-white mb-3">🚨 Security-First Benefits</h3>
+                <ul class="space-y-2 text-gray-300 text-sm">
+                  <li>• <strong>Zero false positives:</strong> AI elimina noise</li>
+                  <li>• <strong>Context-aware:</strong> Entiende tu codebase específico</li>
+                  <li>• <strong>Shift-left security:</strong> Catch vulnerabilities early</li>
+                  <li>• <strong>Compliance ready:</strong> OWASP, SANS CWE, etc.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Security Engine -->
+      <section id="seguridad" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">🧠 AI-Powered Security Engine</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- DeepCode AI -->
+          <div class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-2xl mb-4">
+              🤖
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-3">DeepCode AI</h3>
+            <div class="space-y-3 text-sm">
+              <div class="bg-black/30 rounded p-3">
+                <div class="text-blue-400 font-semibold mb-1">🧠 Machine Learning:</div>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• Trained on millions of repos</li>
+                  <li>• Pattern recognition avanzado</li>
+                  <li>• Contextual vulnerability detection</li>
+                  <li>• Learning from developer feedback</li>
+                </ul>
+              </div>
+              
+              <div class="bg-black/30 rounded p-3">
+                <div class="text-cyan-400 font-semibold mb-1">🎯 Smart Detection:</div>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• SQL injection variants</li>
+                  <li>• XSS in complex scenarios</li>
+                  <li>• Logic flaws y business logic</li>
+                  <li>• Custom vulnerability patterns</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Semantic Analysis -->
+          <div class="bg-green-900/20 border border-green-500/20 rounded-xl p-6">
+            <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center text-2xl mb-4">
+              🔍
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-3">Semantic Analysis</h3>
+            <div class="space-y-3 text-sm">
+              <div class="bg-black/30 rounded p-3">
+                <div class="text-green-400 font-semibold mb-1">📊 Code Understanding:</div>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• AST y control flow analysis</li>
+                  <li>• Data flow tracking completo</li>
+                  <li>• Cross-function vulnerability chains</li>
+                  <li>• Framework-specific patterns</li>
+                </ul>
+              </div>
+              
+              <div class="bg-black/30 rounded p-3">
+                <div class="text-teal-400 font-semibold mb-1">🎪 Context Awareness:</div>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• Framework integrations (Spring, Django)</li>
+                  <li>• Library usage patterns</li>
+                  <li>• Configuration-dependent vulnerabilities</li>
+                  <li>• Business logic context</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Auto-Fix Engine -->
+          <div class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-6">
+            <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center text-2xl mb-4">
+              🔧
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-3">Auto-Fix Engine</h3>
+            <div class="space-y-3 text-sm">
+              <div class="bg-black/30 rounded p-3">
+                <div class="text-purple-400 font-semibold mb-1">⚡ Intelligent Remediation:</div>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• Context-aware code patches</li>
+                  <li>• Multiple fix strategies</li>
+                  <li>• Minimal code disruption</li>
+                  <li>• Preserves functionality</li>
+                </ul>
+              </div>
+              
+              <div class="bg-black/30 rounded p-3">
+                <div class="text-pink-400 font-semibold mb-1">🎯 Fix Quality:</div>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• Tested against regression</li>
+                  <li>• Performance impact analysis</li>
+                  <li>• Code style preservation</li>
+                  <li>• Developer review workflow</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Real-time Example -->
+        <div class="mt-8 bg-gray-900 rounded-xl p-6">
+          <h3 class="text-xl font-semibold text-white mb-4">⚡ Real-time Detection Example</h3>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold text-red-400 mb-3">🚨 Vulnerable Code Detected:</h4>
+              <div class="bg-black rounded-lg p-4 overflow-x-auto">
+                <pre class="text-sm"><code><span class="text-purple-400">// Express.js route - SQL Injection risk</span>
+<span class="text-blue-400">app.get</span>(<span class="text-orange-400">'/users'</span>, <span class="text-blue-400">async</span> (req, res) => {`{
+  <span class="text-blue-400">const</span> userId = req.query.id;
+  <span class="text-gray-500">// ⚠️ Snyk detects: Direct SQL interpolation</span>
+  <span class="text-blue-400">const</span> query = <span class="text-orange-400">\`SELECT * FROM users WHERE id = \${userId}\`</span>;
+  <span class="text-blue-400">const</span> result = <span class="text-blue-400">await</span> db.query(query);
+  res.json(result);
+}`}</code></pre>
+              </div>
+              
+              <div class="mt-4 bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+                <h5 class="text-red-400 font-semibold text-sm mb-2">🚨 Snyk Analysis:</h5>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• <strong>Vulnerability:</strong> SQL Injection (CWE-89)</li>
+                  <li>• <strong>Severity:</strong> High Risk</li>
+                  <li>• <strong>Attack Vector:</strong> ?id=1; DROP TABLE users--</li>
+                  <li>• <strong>Impact:</strong> Data breach, database compromise</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold text-green-400 mb-3">✅ AI-Generated Fix:</h4>
+              <div class="bg-black rounded-lg p-4 overflow-x-auto">
+                <pre class="text-sm"><code><span class="text-purple-400">// Snyk Auto-fix: Parameterized query</span>
+<span class="text-blue-400">app.get</span>(<span class="text-orange-400">'/users'</span>, <span class="text-blue-400">async</span> (req, res) => {`{
+  <span class="text-blue-400">const</span> userId = req.query.id;
+  <span class="text-gray-500">// ✅ Snyk fix: Parameterized query</span>
+  <span class="text-blue-400">const</span> query = <span class="text-orange-400">'SELECT * FROM users WHERE id = ?'</span>;
+  <span class="text-blue-400">const</span> result = <span class="text-blue-400">await</span> db.query(query, [userId]);
+  res.json(result);
+}`}</code></pre>
+              </div>
+              
+              <div class="mt-4 bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                <h5 class="text-green-400 font-semibold text-sm mb-2">✅ Fix Benefits:</h5>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• <strong>Security:</strong> Eliminates SQL injection completely</li>
+                  <li>• <strong>Performance:</strong> Query optimization enabled</li>
+                  <li>• <strong>Maintainability:</strong> Cleaner, safer code</li>
+                  <li>• <strong>Compliance:</strong> Meets OWASP guidelines</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SAST Analysis -->
+      <section id="sast" class="mb-20">
+        <div class="bg-gradient-to-r from-orange-900/20 to-yellow-900/20 border border-orange-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-8">🔬 Static Application Security Testing (SAST)</h2>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-white mb-6">🎯 Multi-Language Support</h3>
+              
+              <div class="space-y-4">
+                <div class="bg-gray-900 rounded-lg p-4">
+                  <h4 class="font-semibold text-orange-400 mb-2">🌐 Web Technologies</h4>
+                  <div class="grid grid-cols-2 gap-2 text-sm">
+                    <div class="bg-black rounded p-2 text-center">
+                      <div class="text-yellow-400 font-bold">JavaScript</div>
+                      <div class="text-gray-300 text-xs">Node.js, React, Vue</div>
+                    </div>
+                    <div class="bg-black rounded p-2 text-center">
+                      <div class="text-blue-400 font-bold">TypeScript</div>
+                      <div class="text-gray-300 text-xs">Angular, Nest.js</div>
+                    </div>
+                    <div class="bg-black rounded p-2 text-center">
+                      <div class="text-purple-400 font-bold">Python</div>
+                      <div class="text-gray-300 text-xs">Django, Flask, FastAPI</div>
+                    </div>
+                    <div class="bg-black rounded p-2 text-center">
+                      <div class="text-red-400 font-bold">Java</div>
+                      <div class="text-gray-300 text-xs">Spring, Struts</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg p-4">
+                  <h4 class="font-semibold text-green-400 mb-2">🏢 Enterprise Stack</h4>
+                  <div class="grid grid-cols-2 gap-2 text-sm">
+                    <div class="bg-black rounded p-2 text-center">
+                      <div class="text-blue-400 font-bold">C#/.NET</div>
+                      <div class="text-gray-300 text-xs">ASP.NET, Core</div>
+                    </div>
+                    <div class="bg-black rounded p-2 text-center">
+                      <div class="text-orange-400 font-bold">Go</div>
+                      <div class="text-gray-300 text-xs">Gin, Echo</div>
+                    </div>
+                    <div class="bg-black rounded p-2 text-center">
+                      <div class="text-red-400 font-bold">Ruby</div>
+                      <div class="text-gray-300 text-xs">Rails, Sinatra</div>
+                    </div>
+                    <div class="bg-black rounded p-2 text-center">
+                      <div class="text-cyan-400 font-bold">PHP</div>
+                      <div class="text-gray-300 text-xs">Laravel, Symfony</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-semibold text-white mb-6">⚡ Vulnerability Categories</h3>
+              
+              <div class="space-y-4">
+                <div class="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+                  <h4 class="font-semibold text-red-400 mb-3">🚨 High-Priority Threats</h4>
+                  <ul class="text-gray-300 text-sm space-y-2">
+                    <li>• <strong>Injection Attacks:</strong> SQL, NoSQL, LDAP, OS command</li>
+                    <li>• <strong>XSS Variants:</strong> Stored, reflected, DOM-based</li>
+                    <li>• <strong>Authentication Bypass:</strong> Session, JWT, OAuth flaws</li>
+                    <li>• <strong>Access Control:</strong> Privilege escalation, IDOR</li>
+                    <li>• <strong>Cryptographic Issues:</strong> Weak algorithms, key management</li>
+                  </ul>
+                </div>
+                
+                <div class="bg-orange-900/20 border border-orange-500/30 rounded-lg p-4">
+                  <h4 class="font-semibold text-orange-400 mb-3">⚠️ Business Logic Flaws</h4>
+                  <ul class="text-gray-300 text-sm space-y-2">
+                    <li>• <strong>Race Conditions:</strong> Concurrent access issues</li>
+                    <li>• <strong>State Management:</strong> Workflow bypass vulnerabilities</li>
+                    <li>• <strong>Input Validation:</strong> Business rule violations</li>
+                    <li>• <strong>Resource Exhaustion:</strong> DoS via business logic</li>
+                  </ul>
+                </div>
+                
+                <div class="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                  <h4 class="font-semibold text-yellow-400 mb-3">📊 Code Quality Issues</h4>
+                  <ul class="text-gray-300 text-sm space-y-2">
+                    <li>• <strong>Sensitive Data Exposure:</strong> Hardcoded secrets</li>
+                    <li>• <strong>Error Handling:</strong> Information disclosure</li>
+                    <li>• <strong>Logging Security:</strong> Improper sanitization</li>
+                    <li>• <strong>Dependency Vulnerabilities:</strong> Third-party risks</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Casos de Uso -->
+      <section id="casos-uso" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">🎯 Casos de Uso Empresariales</h2>
+        
+        <!-- Fintech -->
+        <div class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-8 mb-8">
+          <h3 class="text-xl font-semibold text-white mb-6">🏦 Fintech - Payment Processing Security</h3>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-3">🎯 Challenge:</h4>
+              <div class="bg-black rounded-lg p-4 mb-4">
+                <p class="text-gray-300 text-sm">
+                  Startup fintech procesando $10M monthly en payments. PCI DSS compliance 
+                  mandatory, pero developers sin experience en security. Need automatic 
+                  vulnerability detection para evitar data breaches costosos.
+                </p>
+              </div>
+              
+              <h4 class="font-semibold text-green-400 mb-3">✅ Snyk Code Solution:</h4>
+              <ul class="text-gray-300 text-sm space-y-2">
+                <li>• <strong>PCI DSS Compliance:</strong> Automated checks para payment data</li>
+                <li>• <strong>Real-time Scanning:</strong> Pre-commit hooks y CI/CD integration</li>
+                <li>• <strong>Security Education:</strong> Contextual learning para developers</li>
+                <li>• <strong>Zero-downtime Fixes:</strong> Hot-patch critical vulnerabilities</li>
+                <li>• <strong>Audit Trail:</strong> Complete compliance documentation</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold text-orange-400 mb-3">📊 Implementation Results:</h4>
+              <div class="bg-gray-900 rounded-lg p-4 space-y-4 text-sm">
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="bg-black rounded p-3 text-center">
+                    <div class="text-2xl font-bold text-green-400 mb-1">95%</div>
+                    <div class="text-gray-300 text-xs">Reduction in security debt</div>
+                  </div>
+                  
+                  <div class="bg-black rounded p-3 text-center">
+                    <div class="text-2xl font-bold text-blue-400 mb-1">$2.1M</div>
+                    <div class="text-gray-300 text-xs">Potential breach cost avoided</div>
+                  </div>
+                  
+                  <div class="bg-black rounded p-3 text-center">
+                    <div class="text-2xl font-bold text-purple-400 mb-1">100%</div>
+                    <div class="text-gray-300 text-xs">PCI DSS compliance rate</div>
+                  </div>
+                  
+                  <div class="bg-black rounded p-3 text-center">
+                    <div class="text-2xl font-bold text-orange-400 mb-1">30min</div>
+                    <div class="text-gray-300 text-xs">Average fix time</div>
+                  </div>
+                </div>
+                
+                <div class="bg-black rounded p-3">
+                  <h5 class="font-semibold text-yellow-400 text-sm mb-2">Key Security Wins:</h5>
+                  <ul class="text-gray-300 text-xs space-y-1">
+                    <li>• Zero payment data exposure incidents</li>
+                    <li>• 40% faster security audit process</li>
+                    <li>• Reduced security team workload by 60%</li>
+                    <li>• Developer security skills improved significantly</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Healthcare -->
+        <div class="bg-green-900/20 border border-green-500/20 rounded-xl p-8 mb-8">
+          <h3 class="text-xl font-semibold text-white mb-6">🏥 Healthcare - HIPAA Compliance</h3>
+          
+          <div class="space-y-6">
+            <div>
+              <h4 class="font-semibold text-green-400 mb-3">🔒 HIPAA Security Requirements:</h4>
+              <div class="bg-black rounded-lg p-4">
+                <p class="text-gray-300 text-sm">
+                  Hospital network con 15 applications manejando PHI (Protected Health Information). 
+                  HIPAA penalties hasta $1.5M per incident. Snyk Code ensures que ogni línea 
+                  de código meets HIPAA security safeguards.
+                </p>
+              </div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div>
+                <h4 class="font-semibold text-teal-400 mb-3">🛡️ HIPAA-Specific Checks:</h4>
+                <div class="bg-gray-900 rounded-lg p-4">
+                  <ul class="space-y-3 text-sm">
+                    <div>
+                      <div class="text-cyan-400 font-semibold mb-1">Administrative Safeguards:</div>
+                      <ul class="text-gray-300 text-xs space-y-1 ml-4">
+                        <li>• Access control mechanisms validation</li>
+                        <li>• User authentication strength checks</li>
+                        <li>• Session management compliance</li>
+                        <li>• Audit logging completeness</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <div class="text-green-400 font-semibold mb-1">Physical Safeguards:</div>
+                      <ul class="text-gray-300 text-xs space-y-1 ml-4">
+                        <li>• Data encryption at rest validation</li>
+                        <li>• Secure key management practices</li>
+                        <li>• Backup security compliance</li>
+                        <li>• Media disposal code security</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <div class="text-blue-400 font-semibold mb-1">Technical Safeguards:</div>
+                      <ul class="text-gray-300 text-xs space-y-1 ml-4">
+                        <li>• Data transmission encryption</li>
+                        <li>• User authorization mechanisms</li>
+                        <li>• Integrity controls validation</li>
+                        <li>• PHI de-identification checks</li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="font-semibold text-blue-400 mb-3">📊 Compliance Results:</h4>
+                <div class="bg-gray-900 rounded-lg p-4 space-y-4">
+                  <div class="grid grid-cols-2 gap-4 text-sm">
+                    <div class="bg-black rounded p-3 text-center">
+                      <div class="text-2xl font-bold text-green-400 mb-1">100%</div>
+                      <div class="text-gray-300 text-xs">HIPAA Compliance</div>
+                    </div>
+                    
+                    <div class="bg-black rounded p-3 text-center">
+                      <div class="text-2xl font-bold text-blue-400 mb-1">0</div>
+                      <div class="text-gray-300 text-xs">PHI breach incidents</div>
+                    </div>
+                    
+                    <div class="bg-black rounded p-3 text-center">
+                      <div class="text-2xl font-bold text-purple-400 mb-1">$0</div>
+                      <div class="text-gray-300 text-xs">HIPAA penalties</div>
+                    </div>
+                    
+                    <div class="bg-black rounded p-3 text-center">
+                      <div class="text-2xl font-bold text-orange-400 mb-1">85%</div>
+                      <div class="text-gray-300 text-xs">Faster audits</div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-black rounded p-3">
+                    <h5 class="font-semibold text-green-400 text-sm mb-2">HIPAA Success Metrics:</h5>
+                    <ul class="text-gray-300 text-xs space-y-1">
+                      <li>• 24/7 automated compliance monitoring</li>
+                      <li>• Real-time PHI access violation detection</li>
+                      <li>• Automated audit report generation</li>
+                      <li>• Risk assessment automation (NIST framework)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enterprise SaaS -->
+        <div class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-8">
+          <h3 class="text-xl font-semibold text-white mb-6">🏢 Enterprise SaaS - Multi-Tenant Security</h3>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div>
+              <h4 class="font-semibold text-purple-400 mb-3">🎯 Multi-Tenant Challenges:</h4>
+              <div class="bg-black rounded-lg p-4 mb-4">
+                <p class="text-gray-300 text-sm">
+                  Enterprise SaaS platform con 1000+ customers, cada uno con sensitive data. 
+                  Tenant isolation critical - un vulnerability puede exponer data de 
+                  múltiples customers. Zero-trust architecture requiere perfect security.
+                </p>
+              </div>
+              
+              <h4 class="font-semibold text-cyan-400 mb-3">🔧 Snyk Code Approach:</h4>
+              <ul class="text-gray-300 text-sm space-y-2">
+                <li>• <strong>Tenant Isolation Checks:</strong> Data leakage prevention</li>
+                <li>• <strong>Authorization Logic:</strong> Multi-level access validation</li>
+                <li>• <strong>API Security:</strong> GraphQL, REST endpoint protection</li>
+                <li>• <strong>Microservice Security:</strong> Inter-service communication</li>
+                <li>• <strong>Container Security:</strong> Docker, Kubernetes configs</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold text-pink-400 mb-3">📊 Multi-Tenant Security Results:</h4>
+              <div class="bg-gray-900 rounded-lg p-4 space-y-4">
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                  <div class="bg-black rounded p-3 text-center">
+                    <div class="text-2xl font-bold text-green-400 mb-1">100%</div>
+                    <div class="text-gray-300 text-xs">Tenant isolation</div>
+                  </div>
+                  
+                  <div class="bg-black rounded p-3 text-center">
+                    <div class="text-2xl font-bold text-blue-400 mb-1">99.99%</div>
+                    <div class="text-gray-300 text-xs">Security uptime</div>
+                  </div>
+                  
+                  <div class="bg-black rounded p-3 text-center">
+                    <div class="text-2xl font-bold text-purple-400 mb-1">50%</div>
+                    <div class="text-gray-300 text-xs">Faster security testing</div>
+                  </div>
+                  
+                  <div class="bg-black rounded p-3 text-center">
+                    <div class="text-2xl font-bold text-orange-400 mb-1">$5M</div>
+                    <div class="text-gray-300 text-xs">Data breach cost avoided</div>
+                  </div>
+                </div>
+                
+                <div class="bg-black rounded p-3">
+                  <h5 class="font-semibold text-purple-400 text-sm mb-2">Enterprise Security Wins:</h5>
+                  <ul class="text-gray-300 text-xs space-y-1">
+                    <li>• Zero customer data cross-contamination</li>
+                    <li>• SOC2 Type II certification maintained</li>
+                    <li>• 40% reduction in security team overhead</li>
+                    <li>• Customer security confidence increased 90%</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Implementation -->
+      <section id="implementacion" class="mb-20">
+        <div class="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-8">🔧 Implementation Guide</h2>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-white mb-6">🚀 Quick Start Setup</h3>
+              
+              <div class="space-y-6">
+                <div class="bg-gray-900 rounded-xl p-6">
+                  <h4 class="font-semibold text-white mb-4">1️⃣ Snyk CLI Installation</h4>
+                  <div class="bg-black rounded p-4 text-sm overflow-x-auto">
+                    <code class="text-gray-300">
+                      <span class="text-green-400"># Install Snyk CLI globally</span><br/>
+                      npm install -g snyk<br/>
+                      <br/>
+                      <span class="text-blue-400"># Authenticate with Snyk</span><br/>
+                      snyk auth<br/>
+                      <br/>
+                      <span class="text-purple-400"># Test your project</span><br/>
+                      snyk code test<br/>
+                      <br/>
+                      <span class="text-cyan-400"># Monitor continuously</span><br/>
+                      snyk monitor
+                    </code>
+                  </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-xl p-6">
+                  <h4 class="font-semibold text-white mb-4">2️⃣ IDE Integration</h4>
+                  <div class="bg-black rounded p-4 text-sm overflow-x-auto">
+                    <code class="text-gray-300">
+                      <span class="text-green-400"># VS Code Extension</span><br/>
+                      code --install-extension snyk-security.snyk-vulnerability-scanner<br/>
+                      <br/>
+                      <span class="text-blue-400"># IntelliJ IDEA Plugin</span><br/>
+                      # Install from JetBrains Marketplace<br/>
+                      # Settings → Plugins → "Snyk Security"<br/>
+                      <br/>
+                      <span class="text-purple-400"># Real-time scanning enabled</span><br/>
+                      # Vulnerabilities highlighted as you code
+                    </code>
+                  </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-xl p-6">
+                  <h4 class="font-semibold text-white mb-4">3️⃣ CI/CD Integration</h4>
+                  <div class="bg-black rounded p-4 text-sm overflow-x-auto">
+                    <pre class="text-gray-300"><code><span class="text-green-400"># GitHub Actions example</span>
+<span class="text-blue-400">name:</span> Snyk Security Scan
+<span class="text-blue-400">on:</span> [push, pull_request]
+<span class="text-blue-400">jobs:</span>
+  <span class="text-yellow-400">security:</span>
+    <span class="text-blue-400">runs-on:</span> ubuntu-latest
+    <span class="text-blue-400">steps:</span>
+      - <span class="text-blue-400">uses:</span> actions/checkout@v2
+      - <span class="text-blue-400">uses:</span> snyk/actions/node@master
+        <span class="text-blue-400">env:</span>
+          <span class="text-orange-400">SNYK_TOKEN:</span> {`$\{\{ secrets.SNYK_TOKEN \}\}`}</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-semibold text-white mb-6">⚙️ Advanced Configuration</h3>
+              
+              <div class="space-y-6">
+                <div class="bg-gray-900 rounded-xl p-6">
+                  <h4 class="font-semibold text-white mb-4">🔧 Custom Rules & Policies</h4>
+                  <div class="bg-black rounded p-4 text-sm overflow-x-auto">
+                    <code class="text-gray-300">
+                      <span class="text-green-400"># .snyk policy file</span><br/>
+                      <span class="text-blue-400">version:</span> v1.0.0<br/>
+                      <span class="text-blue-400">language-settings:</span><br/>
+                      &nbsp;&nbsp;<span class="text-yellow-400">javascript:</span><br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-orange-400">rules:</span><br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-cyan-400">- rule:</span> no-hardcoded-secrets<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-purple-400">severity:</span> high<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-cyan-400">- rule:</span> sql-injection-prevention<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-purple-400">severity:</span> critical<br/>
+                      <span class="text-blue-400">ignore:</span><br/>
+                      &nbsp;&nbsp;<span class="text-gray-400"># Specific vulnerabilities to ignore</span>
+                    </code>
+                  </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-xl p-6">
+                  <h4 class="font-semibold text-white mb-4">📊 Reporting & Analytics</h4>
+                  <ul class="text-gray-300 text-sm space-y-2">
+                    <li>• <strong>Security Dashboard:</strong> Real-time vulnerability overview</li>
+                    <li>• <strong>Trend Analysis:</strong> Security debt over time</li>
+                    <li>• <strong>Compliance Reports:</strong> OWASP, SANS, CWE mappings</li>
+                    <li>• <strong>Team Performance:</strong> Fix rates, response times</li>
+                    <li>• <strong>Risk Assessment:</strong> Business impact scoring</li>
+                  </ul>
+                </div>
+                
+                <div class="bg-gray-900 rounded-xl p-6">
+                  <h4 class="font-semibold text-white mb-4">🔒 Enterprise Features</h4>
+                  <ul class="text-gray-300 text-sm space-y-2">
+                    <li>• <strong>SSO Integration:</strong> SAML, OIDC, Active Directory</li>
+                    <li>• <strong>Role-Based Access:</strong> Granular permissions</li>
+                    <li>• <strong>API Management:</strong> Programmatic access</li>
+                    <li>• <strong>Webhooks:</strong> Integration con SIEM, Slack, Jira</li>
+                    <li>• <strong>On-Premises:</strong> Air-gapped deployment option</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comparison -->
+      <section id="comparacion" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">⚖️ Snyk Code vs Security Tools</h2>
+        
+        <div class="bg-gray-900/50 border border-gray-800 rounded-2xl p-8 overflow-x-auto">
+          <table class="w-full text-left">
+            <thead>
+              <tr class="border-b border-gray-700">
+                <th class="text-white font-semibold pb-4">Feature</th>
+                <th class="text-white font-semibold pb-4">Snyk Code</th>
+                <th class="text-white font-semibold pb-4">SonarQube</th>
+                <th class="text-white font-semibold pb-4">Checkmarx</th>
+                <th class="text-white font-semibold pb-4">Veracode</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-300">
+              <tr class="border-b border-gray-800">
+                <td class="py-4 font-medium">💰 Pricing Model</td>
+                <td class="py-4 text-green-400">Freemium, $52/dev/month</td>
+                <td class="py-4">$150/month starter</td>
+                <td class="py-4">Enterprise only</td>
+                <td class="py-4">Complex licensing</td>
+              </tr>
+              <tr class="border-b border-gray-800">
+                <td class="py-4 font-medium">🤖 AI-Powered</td>
+                <td class="py-4 text-green-400">DeepCode AI engine</td>
+                <td class="py-4 text-yellow-400">Limited AI features</td>
+                <td class="py-4 text-yellow-400">Traditional SAST</td>
+                <td class="py-4 text-yellow-400">Some ML features</td>
+              </tr>
+              <tr class="border-b border-gray-800">
+                <td class="py-4 font-medium">⚡ Real-time Scanning</td>
+                <td class="py-4 text-green-400">IDE + while coding</td>
+                <td class="py-4 text-yellow-400">IDE plugin available</td>
+                <td class="py-4 text-red-400">Batch processing</td>
+                <td class="py-4 text-red-400">Upload & wait</td>
+              </tr>
+              <tr class="border-b border-gray-800">
+                <td class="py-4 font-medium">🔧 Auto-fix</td>
+                <td class="py-4 text-green-400">AI-generated patches</td>
+                <td class="py-4 text-red-400">Manual fixes only</td>
+                <td class="py-4 text-yellow-400">Limited suggestions</td>
+                <td class="py-4 text-red-400">Guidance only</td>
+              </tr>
+              <tr class="border-b border-gray-800">
+                <td class="py-4 font-medium">📊 False Positives</td>
+                <td class="py-4 text-green-400">Low (AI filtering)</td>
+                <td class="py-4 text-yellow-400">Medium</td>
+                <td class="py-4 text-red-400">High</td>
+                <td class="py-4 text-red-400">High</td>
+              </tr>
+              <tr class="border-b border-gray-800">
+                <td class="py-4 font-medium">🚀 Developer Experience</td>
+                <td class="py-4 text-green-400">Excellent (modern UX)</td>
+                <td class="py-4 text-yellow-400">Good</td>
+                <td class="py-4 text-red-400">Complex</td>
+                <td class="py-4 text-red-400">Enterprise-heavy</td>
+              </tr>
+              <tr class="border-b border-gray-800">
+                <td class="py-4 font-medium">📚 Language Support</td>
+                <td class="py-4 text-green-400">10+ languages</td>
+                <td class="py-4 text-green-400">25+ languages</td>
+                <td class="py-4 text-green-400">Wide support</td>
+                <td class="py-4 text-yellow-400">Good coverage</td>
+              </tr>
+              <tr>
+                <td class="py-4 font-medium">🎯 Best For</td>
+                <td class="py-4 text-blue-400">Modern teams, DevSecOps</td>
+                <td class="py-4 text-blue-400">Code quality focus</td>
+                <td class="py-4 text-blue-400">Large enterprises</td>
+                <td class="py-4 text-blue-400">Compliance-heavy</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-green-900/20 border border-green-500/30 rounded-xl p-6">
+            <h4 class="text-lg font-semibold text-white mb-3">✅ Choose Snyk Code When:</h4>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li>• <strong>Modern Development:</strong> Agile teams, fast iterations</li>
+              <li>• <strong>Developer Adoption:</strong> Want security tools developers love</li>
+              <li>• <strong>AI Benefits:</strong> Need smart vulnerability detection</li>
+              <li>• <strong>DevSecOps:</strong> Shift-left security philosophy</li>
+              <li>• <strong>Fast Remediation:</strong> Auto-fix capabilities essential</li>
+            </ul>
+          </div>
+          
+          <div class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6">
+            <h4 class="text-lg font-semibold text-white mb-3">⚠️ Consider Alternatives When:</h4>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li>• <strong>Legacy Systems:</strong> Older, complex enterprise apps</li>
+              <li>• <strong>Budget Constraints:</strong> Very cost-sensitive projects</li>
+              <li>• <strong>Custom Languages:</strong> Proprietary or niche technologies</li>
+              <li>• <strong>Existing Toolchain:</strong> Heavy investment in other SAST tools</li>
+              <li>• <strong>Compliance Focus:</strong> Traditional security compliance processes</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="text-center">
+        <div class="bg-gradient-to-r from-red-900/20 to-orange-900/20 border border-red-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-4">¿Listo para security-first development? 🛡️</h2>
+          <p class="text-xl text-gray-300 mb-8">
+            Snyk Code transforma security de "blocker" a "enabler". IA que encuentra 
+            y fixa vulnerabilities mientras desarrollas, manteniendo velocity alta.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://snyk.io/product/snyk-code/" target="_blank" rel="noopener noreferrer" 
+               class="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+              Probar Gratis (200 scans)
+            </a>
+            <a href="https://docs.snyk.io/snyk-code" target="_blank" rel="noopener noreferrer" 
+               class="border border-orange-500 text-orange-400 hover:bg-orange-500/10 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300">
+              Ver Documentación
+            </a>
+            <a href="/herramientas-ia" 
+               class="border border-red-500 text-red-400 hover:bg-red-500/10 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300">
+              Ver Otras IAs
+            </a>
+          </div>
+          
+          <div class="mt-6 flex justify-center gap-8 text-sm text-gray-400">
+            <span>✅ AI-powered SAST</span>
+            <span>✅ Real-time scanning</span>
+            <span>✅ Auto-fix suggestions</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  kbd {
+    font-family: monospace;
+    font-size: 0.75rem;
+  }
+  
+  code {
+    font-family: 'Fira Code', 'Monaco', 'Cascadia Code', monospace;
+  }
+  
+  /* Navegación sticky */
+  nav {
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ef4444;
+    border-radius: 4px;
+  }
+  
+  /* Smooth transitions for table */
+  table {
+    border-collapse: collapse;
+  }
+  
+  tr:hover {
+    background-color: rgba(239, 68, 68, 0.05);
+  }
+</style>
+
+<script>
+  // Smooth scroll para navegación
+  document.querySelectorAll('nav a[href^="#"]').forEach((anchor: Element) => {
+    anchor.addEventListener('click', (e: Event) => {
+      e.preventDefault();
+      const href = (anchor as HTMLAnchorElement).getAttribute('href');
+      const target = href ? document.querySelector(href) : null;
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+  
+  // Navegación activa
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        document.querySelectorAll('nav a').forEach(link => {
+          link.classList.remove('text-red-400');
+          link.classList.add('text-gray-400');
+        });
+        const activeLink = document.querySelector(`nav a[href="#${id}"]`);
+        if (activeLink) {
+          activeLink.classList.remove('text-gray-400');
+          activeLink.classList.add('text-red-400');
+        }
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll('section[id]').forEach(section => {
+    observer.observe(section);
+  });
+</script>
+</Layout>

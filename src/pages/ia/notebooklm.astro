@@ -1,0 +1,995 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="NotebookLM - Investigación y Análisis IA | LexIA">
+  <main class="bg-black min-h-screen">
+    <!-- Header -->
+    <header class="relative bg-gradient-to-r from-indigo-900 via-blue-900 to-cyan-900 py-20">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4">
+        <div class="flex items-center gap-6 mb-8">
+          <div class="w-20 h-20 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-2xl flex items-center justify-center text-4xl">
+            📚
+          </div>
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">NotebookLM</h1>
+            <p class="text-xl text-indigo-300">Tu Asistente de Investigación IA</p>
+            <p class="text-gray-400">by Google</p>
+          </div>
+        </div>
+        
+        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+          NotebookLM revoluciona la investigación técnica para desarrolladores. Analiza documentación, 
+          papers, códigos y crea insights personalizados. Es como tener un investigador senior que 
+          entiende perfectamente tu contexto y necesidades de desarrollo.
+        </p>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex overflow-x-auto py-4 space-x-8">
+          <a href="#que-es" class="text-indigo-400 hover:text-indigo-300 whitespace-nowrap transition-colors">¿Qué es?</a>
+          <a href="#capacidades" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">Capacidades</a>
+          <a href="#casos-desarrollo" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">Casos para Devs</a>
+          <a href="#flujos-investigacion" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">Flujos</a>
+          <a href="#ejemplos-practicos" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">Ejemplos</a>
+          <a href="#integracion" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">Integración</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="max-w-6xl mx-auto px-4 py-12">
+      
+      <!-- ¿Qué es NotebookLM? -->
+      <section id="que-es" class="mb-20">
+        <div class="bg-gradient-to-r from-indigo-900/20 to-cyan-900/20 border border-indigo-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-6">¿Cómo NotebookLM potencia el desarrollo?</h2>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <div>
+              <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                NotebookLM no es solo otro chatbot. Es un <strong>research assistant especializado</strong> 
+                que analiza tus fuentes específicas (documentación, código, papers, specs) y crea 
+                insights únicos basados en TU contexto. Para desarrolladores, es invaluable para 
+                entender tecnologías complejas y tomar decisiones informadas.
+              </p>
+              
+              <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                  <span class="text-indigo-400 text-xl">🧠</span>
+                  <div>
+                    <h3 class="text-white font-semibold">Source-Grounded AI</h3>
+                    <p class="text-gray-400 text-sm">Respuestas basadas en TUS documentos, no conocimiento general</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                  <span class="text-indigo-400 text-xl">📖</span>
+                  <div>
+                    <h3 class="text-white font-semibold">Multi-Source Analysis</h3>
+                    <p class="text-gray-400 text-sm">Combina insights de documentación, código, y research papers</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                  <span class="text-indigo-400 text-xl">🎧</span>
+                  <div>
+                    <h3 class="text-white font-semibold">Audio Overviews</h3>
+                    <p class="text-gray-400 text-sm">Genera podcasts explicativos de tu documentación técnica</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                  <span class="text-indigo-400 text-xl">🔍</span>
+                  <div>
+                    <h3 class="text-white font-semibold">Deep Insights</h3>
+                    <p class="text-gray-400 text-sm">Encuentra patterns y conexiones ocultas en documentación</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="space-y-6">
+              <div class="bg-gray-900 rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-white mb-4">📄 Tipos de Fuentes Soportadas</h3>
+                
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <h4 class="font-semibold text-indigo-400 mb-2">Documentos</h4>
+                    <ul class="text-gray-300 space-y-1">
+                      <li>• PDF (hasta 500MB)</li>
+                      <li>• Google Docs</li>
+                      <li>• Text files</li>
+                      <li>• Markdown</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 class="font-semibold text-indigo-400 mb-2">Web & Audio</h4>
+                    <ul class="text-gray-300 space-y-1">
+                      <li>• URLs de documentación</li>
+                      <li>• YouTube videos</li>
+                      <li>• Audio files</li>
+                      <li>• Slides presentaciones</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-indigo-900/20 border border-indigo-500/30 rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-white mb-3">🎯 Para Desarrolladores</h3>
+                <ul class="space-y-2 text-gray-300 text-sm">
+                  <li>• <strong>Technology Research:</strong> Analiza frameworks y libraries</li>
+                  <li>• <strong>Architecture Decisions:</strong> Compara approaches basado en docs</li>
+                  <li>• <strong>Learning Acceleration:</strong> Digest complex documentation</li>
+                  <li>• <strong>Code Understanding:</strong> Explica legacy codebases</li>
+                  <li>• <strong>Best Practices:</strong> Extrae patterns de documentación oficial</li>
+                </ul>
+              </div>
+              
+              <div class="bg-cyan-900/20 border border-cyan-500/30 rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-white mb-3">🆚 vs ChatGPT/Claude</h3>
+                <ul class="space-y-2 text-gray-300 text-sm">
+                  <li>• <strong>Source-specific:</strong> Respuestas de TUS documentos</li>
+                  <li>• <strong>No hallucinations:</strong> Cita fuentes específicas</li>
+                  <li>• <strong>Context retention:</strong> Mantiene contexto del proyecto</li>
+                  <li>• <strong>Audio summaries:</strong> Escucha mientras codeas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Capacidades -->
+      <section id="capacidades" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">🚀 Capacidades Técnicas</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Document Analysis -->
+          <div class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-2xl mb-4">
+              📊
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-3">Análisis de Documentación</h3>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li>• Extrae conceptos clave y definiciones</li>
+              <li>• Identifica dependencies y requirements</li>
+              <li>• Mapea API endpoints y parameters</li>
+              <li>• Detecta breaking changes en changelogs</li>
+              <li>• Summariza best practices y patterns</li>
+            </ul>
+          </div>
+          
+          <!-- Code Understanding -->
+          <div class="bg-green-900/20 border border-green-500/20 rounded-xl p-6">
+            <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center text-2xl mb-4">
+              💻
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-3">Comprensión de Código</h3>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li>• Explica arquitectura y data flow</li>
+              <li>• Identifica design patterns usados</li>
+              <li>• Analiza dependencies entre módulos</li>
+              <li>• Documenta APIs y interfaces</li>
+              <li>• Sugiere refactoring opportunities</li>
+            </ul>
+          </div>
+          
+          <!-- Technology Research -->
+          <div class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-6">
+            <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center text-2xl mb-4">
+              🔬
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-3">Research Tecnológico</h3>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li>• Compara frameworks y libraries</li>
+              <li>• Analiza trade-offs técnicos</li>
+              <li>• Evalúa compatibility y ecosystem</li>
+              <li>• Identifica migration paths</li>
+              <li>• Summariza community feedback</li>
+            </ul>
+          </div>
+          
+          <!-- Audio Insights -->
+          <div class="bg-orange-900/20 border border-orange-500/20 rounded-xl p-6">
+            <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-2xl mb-4">
+              🎧
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-3">Audio Overviews</h3>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li>• Genera podcasts de documentación</li>
+              <li>• Conversaciones entre "hosts" AI</li>
+              <li>• Explica conceptos complejos audiblemente</li>
+              <li>• Perfect para learning mientras commuting</li>
+              <li>• Diferentes perspectivas y angles</li>
+            </ul>
+          </div>
+          
+          <!-- Citation & Sources -->
+          <div class="bg-yellow-900/20 border border-yellow-500/20 rounded-xl p-6">
+            <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center text-2xl mb-4">
+              📝
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-3">Citations & Sources</h3>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li>• Cita sources específicas en respuestas</li>
+              <li>• Links directos a documentos relevantes</li>
+              <li>• Page numbers y section references</li>
+              <li>• No inventa información inexistente</li>
+              <li>• Transparency en knowledge sources</li>
+            </ul>
+          </div>
+          
+          <!-- Learning Support -->
+          <div class="bg-red-900/20 border border-red-500/20 rounded-xl p-6">
+            <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center text-2xl mb-4">
+              🎓
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-3">Learning Support</h3>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li>• Crea learning paths personalizados</li>
+              <li>• Identifica knowledge gaps</li>
+              <li>• Conecta conceptos relacionados</li>
+              <li>• Sugiere next steps de aprendizaje</li>
+              <li>• Adapta explicaciones a tu nivel</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Casos para Desarrolladores -->
+      <section id="casos-desarrollo" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">💻 Casos de Uso para Desarrolladores</h2>
+        
+        <!-- Learning New Framework -->
+        <div class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-8 mb-8">
+          <h3 class="text-xl font-semibold text-white mb-6">📚 Caso 1: Aprender Nuevo Framework</h3>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-3">🎯 El Desafío:</h4>
+              <div class="bg-black rounded-lg p-4 mb-4">
+                <p class="text-gray-300 text-sm">
+                  Necesitas aprender SvelteKit para un nuevo proyecto. Tienes la documentación oficial, 
+                  algunos tutoriales y videos de conferencias, pero la información está dispersa 
+                  y quieres un learning path estructurado.
+                </p>
+              </div>
+              
+              <h4 class="font-semibold text-yellow-400 mb-3">📄 Sources añadidas:</h4>
+              <ul class="text-gray-300 text-sm space-y-1">
+                <li>• SvelteKit official documentation (PDF)</li>
+                <li>• "SvelteKit 1.0" YouTube video</li>
+                <li>• Svelte tutorial interactivo (URL)</li>
+                <li>• Migration guide from React (Google Doc)</li>
+                <li>• Best practices blog posts (URLs)</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold text-green-400 mb-3">🚀 Insights de NotebookLM:</h4>
+              <div class="bg-gray-900 rounded-lg p-4 space-y-4 text-sm">
+                <div>
+                  <h5 class="font-semibold text-green-400 mb-2">Learning Path Personalizado</h5>
+                  <ul class="text-gray-300 text-xs space-y-1">
+                    <li>1. <strong>Core Concepts:</strong> Svelte reactivity vs React</li>
+                    <li>2. <strong>Routing:</strong> File-based vs React Router</li>
+                    <li>3. <strong>State Management:</strong> Stores vs Context</li>
+                    <li>4. <strong>Data Loading:</strong> Load functions vs useEffect</li>
+                    <li>5. <strong>Deployment:</strong> Adapters vs build configs</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h5 class="font-semibold text-blue-400 mb-2">Key Differences Highlighted</h5>
+                  <div class="bg-black rounded p-3 text-xs">
+                    <div class="text-yellow-400 mb-1">React vs SvelteKit:</div>
+                    <div class="text-gray-300">
+                      "SvelteKit's load functions run on server-side before page renders, 
+                      unlike React's useEffect which runs client-side after mount. 
+                      This enables better SEO and performance..."
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h5 class="font-semibold text-orange-400 mb-2">🎧 Audio Overview</h5>
+                  <p class="text-gray-300 text-xs">
+                    "Generated 23-minute podcast discussing SvelteKit's philosophy, 
+                    comparing it to React/Next.js, and walking through migration strategies 
+                    based on your uploaded sources."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- API Integration Research -->
+        <div class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-8 mb-8">
+          <h3 class="text-xl font-semibold text-white mb-6">🔌 Caso 2: Research de Integración API</h3>
+          
+          <div class="space-y-6">
+            <div>
+              <h4 class="font-semibold text-purple-400 mb-3">📋 El Escenario:</h4>
+              <div class="bg-black rounded-lg p-4">
+                <p class="text-gray-300 text-sm">
+                  Necesitas integrar Stripe, Auth0 y SendGrid en tu app. Cada servicio tiene 
+                  documentación extensa, múltiples SDKs, y diferentes patterns de implementación. 
+                  Quieres entender la mejor forma de coordinar estas integraciones.
+                </p>
+              </div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div>
+                <h4 class="font-semibold text-yellow-400 mb-3">📚 Sources Analyzadas:</h4>
+                <div class="bg-gray-900 rounded-lg p-4 space-y-3">
+                  <div class="border border-gray-700 rounded p-3">
+                    <h5 class="font-semibold text-blue-400 text-sm mb-1">Stripe Documentation</h5>
+                    <ul class="text-gray-300 text-xs space-y-1">
+                      <li>• Payment Intents API guide</li>
+                      <li>• Webhooks implementation</li>
+                      <li>• Node.js SDK documentation</li>
+                      <li>• Security best practices</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="border border-gray-700 rounded p-3">
+                    <h5 class="font-semibold text-green-400 text-sm mb-1">Auth0 Guides</h5>
+                    <ul class="text-gray-300 text-xs space-y-1">
+                      <li>• Single Page Application setup</li>
+                      <li>• JWT token handling</li>
+                      <li>• User management APIs</li>
+                      <li>• Role-based access control</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="border border-gray-700 rounded p-3">
+                    <h5 class="font-semibold text-orange-400 text-sm mb-1">SendGrid Integration</h5>
+                    <ul class="text-gray-300 text-xs space-y-1">
+                      <li>• Template engine docs</li>
+                      <li>• Event webhooks</li>
+                      <li>• Email validation</li>
+                      <li>• Deliverability best practices</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="font-semibold text-green-400 mb-3">🔍 Insights Generados:</h4>
+                <div class="bg-gray-900 rounded-lg p-4 space-y-4">
+                  <div>
+                    <h5 class="font-semibold text-indigo-400 mb-2">Integration Architecture</h5>
+                    <div class="bg-black rounded p-3 text-xs">
+                      <div class="text-gray-300 space-y-1">
+                        <div>📥 <strong>Auth Flow:</strong> Auth0 → JWT → API Protection</div>
+                        <div>💳 <strong>Payment Flow:</strong> Frontend → Stripe → Webhooks</div>
+                        <div>📧 <strong>Email Flow:</strong> Events → Queue → SendGrid</div>
+                        <div>🔗 <strong>Integration:</strong> User ID linkage across services</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 class="font-semibold text-yellow-400 mb-2">Coordination Strategy</h5>
+                    <ul class="text-gray-300 text-xs space-y-1">
+                      <li>• <strong>User Creation:</strong> Auth0 → Update user metadata</li>
+                      <li>• <strong>Payment Success:</strong> Stripe webhook → SendGrid welcome email</li>
+                      <li>• <strong>Subscription Changes:</strong> Stripe → Auth0 roles update</li>
+                      <li>• <strong>Error Handling:</strong> Unified logging across services</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h5 class="font-semibold text-red-400 mb-2">⚠️ Critical Considerations</h5>
+                    <ul class="text-gray-300 text-xs space-y-1">
+                      <li>• Webhook idempotency keys required</li>
+                      <li>• PCI compliance for payment data</li>
+                      <li>• Rate limiting coordination</li>
+                      <li>• Backup authentication methods</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legacy Code Understanding -->
+        <div class="bg-orange-900/20 border border-orange-500/20 rounded-xl p-8">
+          <h3 class="text-xl font-semibold text-white mb-6">🔍 Caso 3: Entender Codebase Legacy</h3>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div>
+              <h4 class="font-semibold text-orange-400 mb-3">🏗️ El Problema:</h4>
+              <div class="bg-black rounded-lg p-4 mb-4">
+                <p class="text-gray-300 text-sm">
+                  Heredaste un codebase de 200K líneas sin documentación. Necesitas entender 
+                  la arquitectura, identificar dependencies críticas, y planear modernización 
+                  sin romper funcionalidad existente.
+                </p>
+              </div>
+              
+              <h4 class="font-semibold text-indigo-400 mb-3">📄 Sources Uploaded:</h4>
+              <ul class="text-gray-300 text-sm space-y-1">
+                <li>• Codebase structure export (text)</li>
+                <li>• Package.json y dependency tree</li>
+                <li>• Database schema documentation</li>
+                <li>• Original project requirements (PDFs)</li>
+                <li>• Internal wikis y README files</li>
+                <li>• API endpoint documentation</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold text-green-400 mb-3">🧠 Analysis Results:</h4>
+              <div class="bg-gray-900 rounded-lg p-4 space-y-4">
+                <div>
+                  <h5 class="font-semibold text-blue-400 mb-2">Architecture Map</h5>
+                  <div class="bg-black rounded p-3 text-xs">
+                    <div class="text-gray-300">
+                      <div class="text-green-400 mb-1">Core Modules Identified:</div>
+                      <div>• <strong>Auth Service:</strong> src/auth/ (JWT + sessions)</div>
+                      <div>• <strong>Payment Engine:</strong> src/billing/ (custom logic)</div>
+                      <div>• <strong>User Management:</strong> src/users/ (CRUD + permissions)</div>
+                      <div>• <strong>Notification System:</strong> src/notify/ (email + SMS)</div>
+                      <div>• <strong>Analytics:</strong> src/analytics/ (tracking events)</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h5 class="font-semibold text-yellow-400 mb-2">Critical Dependencies</h5>
+                  <ul class="text-gray-300 text-xs space-y-1">
+                    <li>• <strong>High Risk:</strong> Custom ORM (no longer maintained)</li>
+                    <li>• <strong>Medium Risk:</strong> jQuery 1.x (security vulnerabilities)</li>
+                    <li>• <strong>Critical Path:</strong> Payment processor integration</li>
+                    <li>• <strong>Opportunity:</strong> API endpoints ready for microservices split</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h5 class="font-semibold text-green-400 mb-2">Modernization Plan</h5>
+                  <ul class="text-gray-300 text-xs space-y-1">
+                    <li>• <strong>Phase 1:</strong> Security updates (jQuery, npm packages)</li>
+                    <li>• <strong>Phase 2:</strong> Database layer modernization</li>
+                    <li>• <strong>Phase 3:</strong> API extraction for new features</li>
+                    <li>• <strong>Phase 4:</strong> Frontend framework migration</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flujos de Investigación -->
+      <section id="flujos-investigacion" class="mb-20">
+        <div class="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 border border-cyan-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-8">🔄 Flujos de Investigación</h2>
+          
+          <div class="space-y-8">
+            <!-- Technology Evaluation -->
+            <div class="bg-black/30 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-white mb-4 flex items-center gap-3">
+                <span class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                Technology Evaluation Workflow
+              </h3>
+              
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                  <h4 class="font-semibold text-blue-400 mb-3">📥 Sources Collection</h4>
+                  <ul class="text-gray-300 text-sm space-y-2">
+                    <li>• Official documentation (PDFs)</li>
+                    <li>• GitHub READMEs y wikis</li>
+                    <li>• Conference talks (YouTube)</li>
+                    <li>• Blog posts y tutorials</li>
+                    <li>• Community discussions</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="font-semibold text-blue-400 mb-3">🤖 AI Analysis</h4>
+                  <ul class="text-gray-300 text-sm space-y-2">
+                    <li>• Feature comparison matrix</li>
+                    <li>• Performance benchmarks</li>
+                    <li>• Learning curve assessment</li>
+                    <li>• Community health metrics</li>
+                    <li>• Future roadmap analysis</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="font-semibold text-blue-400 mb-3">📊 Decision Support</h4>
+                  <ul class="text-gray-300 text-sm space-y-2">
+                    <li>• Pros/cons summary</li>
+                    <li>• Risk assessment</li>
+                    <li>• Migration complexity</li>
+                    <li>• Team skill requirements</li>
+                    <li>• Timeline implications</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Architecture Research -->
+            <div class="bg-black/30 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-white mb-4 flex items-center gap-3">
+                <span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                Architecture Research Workflow
+              </h3>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="font-semibold text-green-400 mb-3">🏗️ Pattern Analysis</h4>
+                  <ul class="text-gray-300 text-sm space-y-2 mb-4">
+                    <li>• Industry best practices docs</li>
+                    <li>• Case studies y post-mortems</li>
+                    <li>• Architecture decision records</li>
+                    <li>• Scaling war stories</li>
+                  </ul>
+                  
+                  <h4 class="font-semibold text-green-400 mb-3">🔍 Insight Generation</h4>
+                  <ul class="text-gray-300 text-sm space-y-2">
+                    <li>• Pattern identification</li>
+                    <li>• Anti-pattern warnings</li>
+                    <li>• Scalability considerations</li>
+                    <li>• Technology fit analysis</li>
+                  </ul>
+                </div>
+                
+                <div class="bg-gray-900 rounded-xl p-6">
+                  <h4 class="font-semibold text-white mb-4">🎯 Example Output</h4>
+                  
+                  <div class="space-y-3 text-sm">
+                    <div class="bg-black rounded p-3">
+                      <p class="text-green-400 text-xs font-semibold mb-1">Microservices Pattern Analysis:</p>
+                      <p class="text-gray-300 text-xs">
+                        "Based on Netflix, Uber, and Spotify case studies: 
+                        Microservices work best for teams 8+ people, 
+                        with strong DevOps culture..."
+                      </p>
+                    </div>
+                    
+                    <div class="bg-black rounded p-3">
+                      <p class="text-yellow-400 text-xs font-semibold mb-1">Anti-Pattern Warning:</p>
+                      <p class="text-gray-300 text-xs">
+                        "Distributed monolith detected in 60% of failed 
+                        migrations. Ensure service boundaries align 
+                        with business domains..."
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Learning Path Creation -->
+            <div class="bg-black/30 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-white mb-4 flex items-center gap-3">
+                <span class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-sm font-bold">3</span>
+                Personalized Learning Paths
+              </h3>
+              
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="font-semibold text-orange-400 mb-3">📚 Content Curation</h4>
+                  <ul class="text-gray-300 text-sm space-y-2">
+                    <li>• Skill level assessment based on current knowledge</li>
+                    <li>• Progressive complexity ordering</li>
+                    <li>• Multiple learning styles support</li>
+                    <li>• Practical project suggestions</li>
+                    <li>• Knowledge gap identification</li>
+                  </ul>
+                  
+                  <h4 class="font-semibold text-orange-400 mb-3 mt-6">🎧 Audio Learning</h4>
+                  <ul class="text-gray-300 text-sm space-y-2">
+                    <li>• Commute-friendly explanations</li>
+                    <li>• Complex concepts simplified audibly</li>
+                    <li>• Different perspectives y approaches</li>
+                    <li>• Q&A style learning sessions</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="font-semibold text-blue-400 mb-3">🎯 Adaptive Learning</h4>
+                  <div class="bg-gray-900 rounded-lg p-4 space-y-3">
+                    <div>
+                      <h5 class="font-semibold text-yellow-400 text-sm mb-2">Based on Your Sources:</h5>
+                      <ul class="text-gray-300 text-xs space-y-1">
+                        <li>• Identifies your current skill level</li>
+                        <li>• Suggests next logical steps</li>
+                        <li>• Connects related concepts</li>
+                        <li>• Provides context-specific examples</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h5 class="font-semibold text-green-400 text-sm mb-2">Progress Tracking:</h5>
+                      <ul class="text-gray-300 text-xs space-y-1">
+                        <li>• Concepts mastered vs remaining</li>
+                        <li>• Difficulty progression mapping</li>
+                        <li>• Practical application milestones</li>
+                        <li>• Knowledge retention assessment</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ejemplos Prácticos -->
+      <section id="ejemplos-practicos" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">💡 Ejemplos Prácticos</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- React to Vue Migration -->
+          <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
+            <h3 class="text-lg font-semibold text-white mb-4">🔄 React → Vue Migration Analysis</h3>
+            
+            <div class="space-y-4">
+              <div class="bg-black rounded p-4 text-sm">
+                <h4 class="text-blue-400 font-semibold mb-2">Sources Added:</h4>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• Vue 3 Composition API docs</li>
+                  <li>• React → Vue migration guide</li>
+                  <li>• Team's existing React codebase docs</li>
+                  <li>• Vue ecosystem comparison</li>
+                </ul>
+              </div>
+              
+              <div class="bg-indigo-900/20 rounded p-4 text-sm">
+                <h4 class="text-indigo-400 font-semibold mb-2">Key Insights:</h4>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• State management: Vuex → Pinia migration path</li>
+                  <li>• Component patterns: HOCs → Composables</li>
+                  <li>• Routing: React Router concepts → Vue Router</li>
+                  <li>• Testing: Jest setup differences</li>
+                  <li>• Bundle size improvements: ~30% smaller</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Database Architecture -->
+          <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
+            <h3 class="text-lg font-semibold text-white mb-4">🗃️ Database Architecture Decision</h3>
+            
+            <div class="space-y-4">
+              <div class="bg-black rounded p-4 text-sm">
+                <h4 class="text-green-400 font-semibold mb-2">Research Sources:</h4>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• PostgreSQL vs MongoDB comparison studies</li>
+                  <li>• Redis caching strategies documentation</li>
+                  <li>• ElasticSearch integration guides</li>
+                  <li>• High-traffic app case studies</li>
+                </ul>
+              </div>
+              
+              <div class="bg-green-900/20 rounded p-4 text-sm">
+                <h4 class="text-green-400 font-semibold mb-2">Recommendation:</h4>
+                <p class="text-gray-300 text-xs mb-2">
+                  "For your e-commerce use case with complex relationships 
+                  and ACID requirements, PostgreSQL with Redis caching 
+                  provides optimal balance of consistency and performance."
+                </p>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• PostgreSQL: Transactional data + full-text search</li>
+                  <li>• Redis: Session store + frequently accessed data</li>
+                  <li>• ElasticSearch: Product search + analytics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Security Audit -->
+          <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
+            <h3 class="text-lg font-semibold text-white mb-4">🔒 Security Best Practices Research</h3>
+            
+            <div class="space-y-4">
+              <div class="bg-black rounded p-4 text-sm">
+                <h4 class="text-red-400 font-semibold mb-2">Security Documentation:</h4>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• OWASP Top 10 guidelines</li>
+                  <li>• JWT security best practices</li>
+                  <li>• API rate limiting strategies</li>
+                  <li>• Input validation frameworks</li>
+                </ul>
+              </div>
+              
+              <div class="bg-red-900/20 rounded p-4 text-sm">
+                <h4 class="text-red-400 font-semibold mb-2">Security Checklist Generated:</h4>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>✅ Input sanitization on all endpoints</li>
+                  <li>✅ JWT refresh token rotation</li>
+                  <li>✅ Rate limiting: 100 req/min per IP</li>
+                  <li>✅ SQL injection prevention with parameterized queries</li>
+                  <li>✅ HTTPS enforcement + security headers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Performance Optimization -->
+          <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
+            <h3 class="text-lg font-semibold text-white mb-4">⚡ Performance Optimization Guide</h3>
+            
+            <div class="space-y-4">
+              <div class="bg-black rounded p-4 text-sm">
+                <h4 class="text-yellow-400 font-semibold mb-2">Performance Resources:</h4>
+                <ul class="text-gray-300 text-xs space-y-1">
+                  <li>• Web Vitals optimization guides</li>
+                  <li>• React performance patterns</li>
+                  <li>• Webpack bundle optimization</li>
+                  <li>• CDN best practices documentation</li>
+                </ul>
+              </div>
+              
+              <div class="bg-yellow-900/20 rounded p-4 text-sm">
+                <h4 class="text-yellow-400 font-semibold mb-2">Optimization Plan:</h4>
+                <div class="space-y-2 text-xs">
+                  <div class="flex justify-between">
+                    <span class="text-gray-300">Code splitting implementation</span>
+                    <span class="text-green-400">-40% initial bundle</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-300">Image optimization + WebP</span>
+                    <span class="text-green-400">-60% image size</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-300">React.memo + useMemo strategic use</span>
+                    <span class="text-green-400">-25% re-renders</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-300">Service Worker caching</span>
+                    <span class="text-green-400">-80% repeat loads</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integración con Workflow -->
+      <section id="integracion" class="mb-20">
+        <div class="bg-gradient-to-r from-purple-900/20 to-indigo-900/20 border border-purple-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-8">🔗 Integración con tu Workflow</h2>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-white mb-6">📋 Best Practices de Uso</h3>
+              
+              <div class="space-y-4">
+                <div class="bg-black/30 rounded-lg p-4">
+                  <h4 class="font-semibold text-purple-400 mb-2">🗂️ Organización de Sources</h4>
+                  <ul class="text-gray-300 text-sm space-y-1">
+                    <li>• Un notebook por proyecto/technology</li>
+                    <li>• Nombra sources descriptivamente</li>
+                    <li>• Agrupa documentación relacionada</li>
+                    <li>• Mantén sources actualizadas</li>
+                  </ul>
+                </div>
+                
+                <div class="bg-black/30 rounded-lg p-4">
+                  <h4 class="font-semibold text-purple-400 mb-2">💬 Efectivos Prompts</h4>
+                  <ul class="text-gray-300 text-sm space-y-1">
+                    <li>• Sé específico sobre tu contexto</li>
+                    <li>• Menciona tu skill level</li>
+                    <li>• Pide comparaciones cuando sea relevante</li>
+                    <li>• Solicita ejemplos prácticos</li>
+                  </ul>
+                </div>
+                
+                <div class="bg-black/30 rounded-lg p-4">
+                  <h4 class="font-semibold text-purple-400 mb-2">🔄 Workflow Integration</h4>
+                  <ul class="text-gray-300 text-sm space-y-1">
+                    <li>• Research phase antes de coding</li>
+                    <li>• Audio overviews durante commute</li>
+                    <li>• Quick reference durante development</li>
+                    <li>• Decision documentation con citations</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-semibold text-white mb-6">🚀 Productivity Tips</h3>
+              
+              <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                <h4 class="font-semibold text-white mb-4">⚡ Daily Workflow</h4>
+                
+                <div class="space-y-3 text-sm">
+                  <div class="flex items-start gap-3">
+                    <span class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-xs font-bold">1</span>
+                    <div>
+                      <div class="text-blue-400 font-semibold">Morning Research (15 min)</div>
+                      <div class="text-gray-300 text-xs">Audio overview de documentation mientras breakfast</div>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start gap-3">
+                    <span class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-xs font-bold">2</span>
+                    <div>
+                      <div class="text-green-400 font-semibold">Development Phase</div>
+                      <div class="text-gray-300 text-xs">Quick questions sin context switching</div>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start gap-3">
+                    <span class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center text-xs font-bold">3</span>
+                    <div>
+                      <div class="text-orange-400 font-semibold">Decision Points</div>
+                      <div class="text-gray-300 text-xs">Research-backed choices con citations</div>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start gap-3">
+                    <span class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-xs font-bold">4</span>
+                    <div>
+                      <div class="text-purple-400 font-semibold">End-of-Day Review</div>
+                      <div class="text-gray-300 text-xs">Document decisions y learnings</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-indigo-900/20 border border-indigo-500/30 rounded-xl p-6">
+                <h4 class="text-lg font-semibold text-white mb-3">💡 Pro Tips</h4>
+                <ul class="space-y-2 text-gray-300 text-sm">
+                  <li>• <strong>Audio Overviews:</strong> Perfect para learning durante exercise</li>
+                  <li>• <strong>Citation Links:</strong> Usa para quick reference durante coding</li>
+                  <li>• <strong>Multiple Perspectives:</strong> Ask "What are alternative approaches?"</li>
+                  <li>• <strong>Source Updates:</strong> Re-upload docs cuando cambian APIs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-8 bg-cyan-900/20 border border-cyan-500/30 rounded-xl p-6">
+            <h3 class="text-lg font-semibold text-white mb-4">🔥 Advanced Use Cases</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+              <div>
+                <h4 class="font-semibold text-cyan-400 mb-2">📚 Technical Interviews Prep</h4>
+                <p class="text-gray-300 text-xs">
+                  Upload system design papers, create audio summaries, 
+                  and practice explanations basadas en real documentation.
+                </p>
+              </div>
+              
+              <div>
+                <h4 class="font-semibold text-cyan-400 mb-2">🏢 Onboarding Acceleration</h4>
+                <p class="text-gray-300 text-xs">
+                  New team members upload company docs, get personalized 
+                  learning paths y audio explanations de internal systems.
+                </p>
+              </div>
+              
+              <div>
+                <h4 class="font-semibold text-cyan-400 mb-2">🔍 Competitive Analysis</h4>
+                <p class="text-gray-300 text-xs">
+                  Compare multiple frameworks/tools uploading their docs, 
+                  get objective analysis basado en official sources.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="text-center">
+        <div class="bg-gradient-to-r from-indigo-900/20 to-cyan-900/20 border border-indigo-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-4">¿Listo para research inteligente? 📚</h2>
+          <p class="text-xl text-gray-300 mb-8">
+            NotebookLM transforma cómo los desarrolladores researcan y aprenden. 
+            No más información dispersa: toda la documentación que necesitas, 
+            analizada y explicada perfectamente para tu contexto.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://notebooklm.google.com" target="_blank" rel="noopener noreferrer" 
+               class="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+              Probar NotebookLM
+            </a>
+            <a href="/herramientas-ia" 
+               class="border border-indigo-500 text-indigo-400 hover:bg-indigo-500/10 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300">
+              Ver Otras IAs
+            </a>
+          </div>
+          
+          <div class="mt-6 flex justify-center gap-8 text-sm text-gray-400">
+            <span>✅ Completamente gratuito</span>
+            <span>✅ No requiere setup</span>
+            <span>✅ Audio overviews incluidos</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  kbd {
+    font-family: monospace;
+    font-size: 0.75rem;
+  }
+  
+  code {
+    font-family: 'Fira Code', 'Monaco', 'Cascadia Code', monospace;
+  }
+  
+  /* Navegación sticky */
+  nav {
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #6366f1;
+    border-radius: 4px;
+  }
+</style>
+
+<script>
+  // Smooth scroll para navegación
+  document.querySelectorAll('nav a[href^="#"]').forEach((anchor: Element) => {
+    anchor.addEventListener('click', (e: Event) => {
+      e.preventDefault();
+      const href = (anchor as HTMLAnchorElement).getAttribute('href');
+      const target = href ? document.querySelector(href) : null;
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+  
+  // Navegación activa
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        document.querySelectorAll('nav a').forEach(link => {
+          link.classList.remove('text-indigo-400');
+          link.classList.add('text-gray-400');
+        });
+        const activeLink = document.querySelector(`nav a[href="#${id}"]`);
+        if (activeLink) {
+          activeLink.classList.remove('text-gray-400');
+          activeLink.classList.add('text-indigo-400');
+        }
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll('section[id]').forEach(section => {
+    observer.observe(section);
+  });
+</script>
+</Layout>

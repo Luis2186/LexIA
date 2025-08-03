@@ -1,0 +1,576 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Cursor - Editor IA para Developers | LexIA">
+  <main class="bg-black min-h-screen">
+    <!-- Header -->
+    <header class="relative bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 py-20">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4">
+        <div class="flex items-center gap-6 mb-8">
+          <div class="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center text-4xl">
+            ⚡
+          </div>
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Cursor</h1>
+            <p class="text-xl text-blue-300">Editor IA para Developers</p>
+            <p class="text-gray-400">by Cursor Team</p>
+          </div>
+        </div>
+        
+        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+          Cursor es el editor de código con IA más avanzado, diseñado específicamente 
+          para developers que quieren programar a la velocidad del pensamiento. 
+          Combina la familiaridad de VS Code con superpoderes de inteligencia artificial.
+        </p>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex overflow-x-auto py-4 space-x-8">
+          <a href="#que-es" class="text-blue-400 hover:text-blue-300 whitespace-nowrap transition-colors">¿Qué es?</a>
+          <a href="#features" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Features</a>
+          <a href="#workflow" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Workflow</a>
+          <a href="#ejemplos" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Ejemplos</a>
+          <a href="#vs-code" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">vs VS Code</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="max-w-6xl mx-auto px-4 py-12">
+      
+      <!-- ¿Qué es Cursor? -->
+      <section id="que-es" class="mb-20">
+        <div class="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-6">⚡ ¿Qué es Cursor?</h2>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="space-y-4">
+              <p class="text-gray-300 leading-relaxed">
+                <strong>Cursor</strong> es un editor de código construido desde cero con IA nativa. 
+                A diferencia de extensiones que añaden IA a editores existentes, 
+                Cursor integra la inteligencia artificial en cada aspecto del desarrollo: 
+                desde autocompletado hasta refactoring completo de aplicaciones.
+              </p>
+              
+              <div class="bg-gray-900 rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-white mb-4">🎯 Filosofía de Diseño</h3>
+                
+                <div class="space-y-3 text-sm">
+                  <div class="flex items-start gap-3">
+                    <span class="text-blue-400">🚀</span>
+                    <div>
+                      <div class="text-white font-medium">IA-First</div>
+                      <div class="text-gray-400">Cada feature pensada con IA desde el inicio</div>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start gap-3">
+                    <span class="text-indigo-400">⚡</span>
+                    <div>
+                      <div class="text-white font-medium">Speed of Thought</div>
+                      <div class="text-gray-400">Programa tan rápido como piensas</div>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start gap-3">
+                    <span class="text-purple-400">🎮</span>
+                    <div>
+                      <div class="text-white font-medium">Natural Interface</div>
+                      <div class="text-gray-400">Interactúa con código usando lenguaje natural</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="space-y-6">
+              <div class="bg-gray-900 rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-white mb-4">🛠️ Core Features</h3>
+                
+                <div class="space-y-4 text-sm">
+                  <div class="border-l-4 border-blue-500 pl-4">
+                    <div class="font-semibold text-blue-300">Tab to Autocomplete</div>
+                    <div class="text-gray-400">Predicciones de código multi-línea inteligentes</div>
+                  </div>
+                  
+                  <div class="border-l-4 border-indigo-500 pl-4">
+                    <div class="font-semibold text-indigo-300">Cmd+K Commands</div>
+                    <div class="text-gray-400">Modifica código con instrucciones naturales</div>
+                  </div>
+                  
+                  <div class="border-l-4 border-purple-500 pl-4">
+                    <div class="font-semibold text-purple-300">Chat with Codebase</div>
+                    <div class="text-gray-400">Conversa con tu proyecto completo</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-gradient-to-r from-blue-800/20 to-purple-800/20 rounded-xl p-4 border border-blue-500/20">
+                <div class="text-sm text-blue-300 font-medium mb-2">🎯 Target Audience</div>
+                <p class="text-gray-400 text-sm">
+                  Desarrolladores que quieren maximizar su productividad sin sacrificar 
+                  control sobre su código. Especialmente potente para equipos que trabajan 
+                  en codebases grandes y complejas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Detalladas -->
+      <section id="features" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">🚀 Features Principales</h2>
+        
+        <div class="space-y-8">
+          <!-- Tab to Autocomplete -->
+          <div class="bg-gray-900 rounded-xl p-8 border border-blue-500/20">
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-4 flex items-center gap-3">
+                  <span class="text-2xl">⌨️</span>
+                  Tab to Autocomplete
+                </h3>
+                
+                <div class="space-y-4 text-sm">
+                  <p class="text-gray-300">
+                    Autocompletado inteligente que entiende el contexto completo de tu proyecto. 
+                    No solo completa líneas, sino bloques enteros de código lógico.
+                  </p>
+                  
+                  <div class="bg-blue-900/20 border border-blue-600/30 p-4 rounded-lg">
+                    <div class="font-semibold text-blue-300 mb-2">✨ Smart Predictions</div>
+                    <ul class="text-gray-400 space-y-1">
+                      <li>• Entiende patrones de tu codebase</li>
+                      <li>• Sugiere imports automáticamente</li>
+                      <li>• Completa funciones complejas</li>
+                      <li>• Adapta estilo a tu código existente</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-gray-800 rounded-lg p-4">
+                <div class="text-xs text-gray-400 mb-2">Ejemplo de Autocompletado</div>
+                <pre class="text-xs text-blue-400"><code>{`// Escribes esto:
+async function fetchUser
+
+// Cursor predice y autocompleta:
+async function fetchUserData(userId: string) {
+  try {
+    const response = await fetch(\`/api/users/\${userId}\`);
+    if (!response.ok) {
+      throw new Error(\`HTTP error! status: \${response.status}\`);
+    }
+    const userData = await response.json();
+    return userData;
+  } catch (error) {
+    console.error('Failed to fetch user:', error);
+    throw error;
+  }
+}
+
+// ¡Todo generado al presionar Tab!`}</code></pre>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Cmd+K Commands -->
+          <div class="bg-gray-900 rounded-xl p-8 border border-indigo-500/20">
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-4 flex items-center gap-3">
+                  <span class="text-2xl">🎯</span>
+                  Cmd+K Commands
+                </h3>
+                
+                <div class="space-y-4 text-sm">
+                  <p class="text-gray-300">
+                    Modifica código existente usando instrucciones en lenguaje natural. 
+                    Selecciona código y pide cambios específicos como si hablaras con un colega.
+                  </p>
+                  
+                  <div class="bg-indigo-900/20 border border-indigo-600/30 p-4 rounded-lg">
+                    <div class="font-semibold text-indigo-300 mb-2">💬 Natural Commands</div>
+                    <ul class="text-gray-400 space-y-1">
+                      <li>• "Add error handling to this function"</li>
+                      <li>• "Convert to TypeScript"</li>
+                      <li>• "Optimize for performance"</li>
+                      <li>• "Add JSDoc comments"</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-gray-800 rounded-lg p-4">
+                <div class="text-xs text-gray-400 mb-2">Comando en Acción</div>
+                <pre class="text-xs text-indigo-400"><code>{`// Código original:
+function calculate(a, b) {
+  return a + b;
+}
+
+// Comando: "Add TypeScript types and validation"
+
+// Resultado automático:
+function calculate(a: number, b: number): number {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    throw new Error('Both arguments must be numbers');
+  }
+  return a + b;
+}
+
+// ¡Transformación instantánea con Cmd+K!`}</code></pre>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Chat with Codebase -->
+          <div class="bg-gray-900 rounded-xl p-8 border border-purple-500/20">
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-4 flex items-center gap-3">
+                  <span class="text-2xl">💬</span>
+                  Chat with Codebase
+                </h3>
+                
+                <div class="space-y-4 text-sm">
+                  <p class="text-gray-300">
+                    Conversa con tu proyecto completo. Haz preguntas sobre arquitectura, 
+                    encuentra funciones específicas, o pide explicaciones sobre código complejo.
+                  </p>
+                  
+                  <div class="bg-purple-900/20 border border-purple-600/30 p-4 rounded-lg">
+                    <div class="font-semibold text-purple-300 mb-2">🧠 Project Understanding</div>
+                    <ul class="text-gray-400 space-y-1">
+                      <li>• Indexa todo tu codebase</li>
+                      <li>• Entiende dependencias y relaciones</li>
+                      <li>• Responde preguntas contextuales</li>
+                      <li>• Sugiere mejoras arquitecturales</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-gray-800 rounded-lg p-4">
+                <div class="text-xs text-gray-400 mb-2">Conversación Ejemplo</div>
+                <pre class="text-xs text-purple-400"><code>{`👤 "¿Dónde se maneja la autenticación de usuarios?"
+
+🤖 "La autenticación se maneja en:
+   • src/auth/authService.ts - Login/logout logic
+   • middleware/auth.ts - Request validation
+   • components/LoginForm.tsx - UI component
+   
+   El flujo principal usa JWT tokens
+   almacenados en localStorage."
+
+👤 "¿Hay algún security issue en el auth?"
+
+🤖 "Sí, encontré 2 vulnerabilidades:
+   1. No hay token refresh mechanism
+   2. localStorage es vulnerable a XSS
+   
+   Recomiendo migrar a httpOnly cookies."
+
+// ¡Cursor entiende todo tu proyecto!`}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workflow -->
+      <section id="workflow" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">⚡ Workflow con Cursor</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gray-900 rounded-xl p-6 border border-blue-500/20">
+            <div class="text-3xl mb-4">🎯</div>
+            <h3 class="text-xl font-semibold text-white mb-3">1. Think & Type</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Escribe tu intención en comentarios o código parcial. 
+              Cursor predice y completa automáticamente.
+            </p>
+            
+            <div class="bg-gray-800 p-3 rounded text-xs">
+              <span class="text-gray-500">// Create user validation</span><br/>
+              <span class="text-blue-400">function validateUser</span><span class="text-gray-600">...</span>
+            </div>
+          </div>
+          
+          <div class="bg-gray-900 rounded-xl p-6 border border-indigo-500/20">
+            <div class="text-3xl mb-4">🔧</div>
+            <h3 class="text-xl font-semibold text-white mb-3">2. Refine & Improve</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Usa Cmd+K para refinar el código generado. 
+              Pide optimizaciones, añade features, o cambia el approach.
+            </p>
+            
+            <div class="bg-gray-800 p-3 rounded text-xs">
+              <span class="text-indigo-400">Cmd+K:</span> <span class="text-gray-400">"Add async/await"</span>
+            </div>
+          </div>
+          
+          <div class="bg-gray-900 rounded-xl p-6 border border-purple-500/20">
+            <div class="text-3xl mb-4">🚀</div>
+            <h3 class="text-xl font-semibold text-white mb-3">3. Deploy & Scale</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Haz preguntas al chat sobre deployment, testing, 
+              o escalabilidad. Cursor conoce tu stack completo.
+            </p>
+            
+            <div class="bg-gray-800 p-3 rounded text-xs">
+              <span class="text-purple-400">"How to deploy this to Vercel?"</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ejemplos Prácticos -->
+      <section id="ejemplos" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">💡 Casos de Uso Reales</h2>
+        
+        <div class="space-y-8">
+          <div class="bg-gray-900 rounded-xl p-8 border border-blue-500/20">
+            <h3 class="text-xl font-semibold text-white mb-6">🏗️ Building a REST API</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="space-y-4">
+                <div class="bg-gray-800 rounded-lg p-4">
+                  <div class="text-xs text-gray-400 mb-2">1. Empiezas escribiendo:</div>
+                  <pre class="text-xs text-blue-400"><code>{`// Express API for todo app
+const express = require('express');`}</code></pre>
+                </div>
+                
+                <div class="bg-gray-800 rounded-lg p-4">
+                  <div class="text-xs text-gray-400 mb-2">2. Cursor predice y completa:</div>
+                  <pre class="text-xs text-green-400"><code>{`const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.use(express.json());
+
+// Routes
+app.get('/api/todos', getAllTodos);
+app.post('/api/todos', createTodo);
+app.put('/api/todos/:id', updateTodo);
+app.delete('/api/todos/:id', deleteTodo);
+
+app.listen(PORT, () => {
+  console.log(\`Server running on port \${PORT}\`);
+});`}</code></pre>
+                </div>
+              </div>
+              
+              <div class="space-y-4">
+                <div class="bg-gray-800 rounded-lg p-4">
+                  <div class="text-xs text-gray-400 mb-2">3. Usas Cmd+K para mejorar:</div>
+                  <div class="text-xs text-indigo-400">
+                    "Add middleware for CORS and error handling"
+                  </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-lg p-4">
+                  <div class="text-xs text-gray-400 mb-2">4. Resultado final automático:</div>
+                  <pre class="text-xs text-yellow-400"><code>{`const cors = require('cors');
+const helmet = require('helmet');
+
+app.use(cors());
+app.use(helmet());
+app.use(express.json({ limit: '10mb' }));
+
+// Error handling middleware
+app.use((error, req, res, next) => {
+  console.error(error.stack);
+  res.status(500).json({ 
+    error: 'Something went wrong!' 
+  });
+});`}</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-gray-900 rounded-xl p-8 border border-purple-500/20">
+            <h3 class="text-xl font-semibold text-white mb-6">🐛 Debugging Complex Issues</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                  <div class="font-semibold text-purple-300 mb-2">Problema Real</div>
+                  <p class="text-gray-400 text-sm">
+                    "Mi React app tiene memory leaks. Los componentes no se desmonta correctamente."
+                  </p>
+                </div>
+                
+                <div class="font-semibold text-blue-300 mb-2">Cursor Chat Analysis</div>
+                <ol class="text-gray-400 text-sm space-y-1 list-decimal list-inside">
+                  <li>Escanea todos los useEffect hooks</li>
+                  <li>Identifica event listeners sin cleanup</li>
+                  <li>Encuentra subscriptions activas</li>
+                  <li>Sugiere fixes automáticos</li>
+                </ol>
+              </div>
+              
+              <div class="bg-gray-800 rounded-lg p-4">
+                <div class="text-xs text-gray-400 mb-2">Cursor encuentra y sugiere fix:</div>
+                <pre class="text-xs text-purple-400"><code>{`🔍 Found 3 potential memory leaks:
+
+1. components/Dashboard.tsx:23
+   Missing cleanup for window.addEventListener
+
+2. hooks/useWebSocket.ts:15
+   WebSocket connection not closed
+
+3. components/Timer.tsx:8
+   setInterval not cleared
+
+💡 Auto-fix suggestions:
+   
+// Before (memory leak):
+useEffect(() => {
+  window.addEventListener('resize', handleResize);
+}, []);
+
+// After (fixed):
+useEffect(() => {
+  window.addEventListener('resize', handleResize);
+  return () => {
+    window.removeEventListener('resize', handleResize);
+  };
+}, []);`}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cursor vs VS Code -->
+      <section id="vs-code" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">⚖️ Cursor vs VS Code + Extensions</h2>
+        
+        <div class="bg-gray-900 rounded-xl p-8">
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="border-b border-gray-700">
+                  <th class="text-left text-white py-3 px-4">Característica</th>
+                  <th class="text-center text-blue-400 py-3 px-4">Cursor</th>
+                  <th class="text-center text-gray-400 py-3 px-4">VS Code + Copilot</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-400">
+                <tr class="border-b border-gray-800">
+                  <td class="py-3 px-4 font-medium">IA Integration</td>
+                  <td class="text-center py-3 px-4">
+                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Nativo</span>
+                  </td>
+                  <td class="text-center py-3 px-4">Extension</td>
+                </tr>
+                <tr class="border-b border-gray-800">
+                  <td class="py-3 px-4 font-medium">Codebase Understanding</td>
+                  <td class="text-center py-3 px-4">
+                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Completo</span>
+                  </td>
+                  <td class="text-center py-3 px-4">Limitado</td>
+                </tr>
+                <tr class="border-b border-gray-800">
+                  <td class="py-3 px-4 font-medium">Natural Commands</td>
+                  <td class="text-center py-3 px-4">
+                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Cmd+K nativo</span>
+                  </td>
+                  <td class="text-center py-3 px-4">Chat sidebar</td>
+                </tr>
+                <tr class="border-b border-gray-800">
+                  <td class="py-3 px-4 font-medium">Performance</td>
+                  <td class="text-center py-3 px-4">Optimizado IA</td>
+                  <td class="text-center py-3 px-4">
+                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Más ligero</span>
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-800">
+                  <td class="py-3 px-4 font-medium">Extension Ecosystem</td>
+                  <td class="text-center py-3 px-4">Limitado</td>
+                  <td class="text-center py-3 px-4">
+                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Enorme</span>
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-800">
+                  <td class="py-3 px-4 font-medium">Setup Time</td>
+                  <td class="text-center py-3 px-4">
+                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Cero config</span>
+                  </td>
+                  <td class="text-center py-3 px-4">Setup extenso</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4 font-medium">Precio</td>
+                  <td class="text-center py-3 px-4">$20/mes</td>
+                  <td class="text-center py-3 px-4">
+                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">$10/mes</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="mt-6 bg-blue-900/20 border border-blue-600/30 p-4 rounded-lg">
+            <div class="text-sm text-blue-300 font-medium mb-2">🎯 Veredicto</div>
+            <p class="text-gray-400 text-sm">
+              <strong>Cursor</strong> es ideal para developers que priorizan velocidad de desarrollo 
+              y quieren IA nativa sin configuración. <strong>VS Code</strong> sigue siendo mejor 
+              para teams que necesitan extensiones específicas o prefieren control granular.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Planes -->
+      <section class="mb-12">
+        <div class="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-8">💼 Planes Disponibles</h2>
+          
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-900 rounded-xl p-6">
+              <h3 class="text-lg font-semibold text-white mb-3">🆓 Free</h3>
+              <div class="text-2xl font-bold text-gray-400 mb-2">$0</div>
+              <div class="text-gray-400 text-sm mb-4">Para probar Cursor</div>
+              <ul class="text-gray-400 text-sm space-y-2">
+                <li>• 2000 completions/mes</li>
+                <li>• 50 comandos Cmd+K</li>
+                <li>• GPT-4 limitado</li>
+              </ul>
+            </div>
+            
+            <div class="bg-gray-900 rounded-xl p-6 border border-blue-500/50">
+              <h3 class="text-lg font-semibold text-white mb-3">⭐ Pro</h3>
+              <div class="text-2xl font-bold text-blue-400 mb-2">$20/mes</div>
+              <div class="text-gray-400 text-sm mb-4">Para developers serios</div>
+              <ul class="text-gray-400 text-sm space-y-2">
+                <li>• Unlimited fast completions</li>
+                <li>• 500 slow completions</li>
+                <li>• Unlimited Cmd+K</li>
+                <li>• GPT-4 + Claude access</li>
+              </ul>
+            </div>
+            
+            <div class="bg-gray-900 rounded-xl p-6">
+              <h3 class="text-lg font-semibold text-white mb-3">🏢 Business</h3>
+              <div class="text-2xl font-bold text-purple-400 mb-2">$40/mes</div>
+              <div class="text-gray-400 text-sm mb-4">Por usuario en equipo</div>
+              <ul class="text-gray-400 text-sm space-y-2">
+                <li>• Todo de Pro</li>
+                <li>• Privacy mode</li>
+                <li>• Admin dashboard</li>
+                <li>• Team analytics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</Layout>

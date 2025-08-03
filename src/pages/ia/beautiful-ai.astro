@@ -1,0 +1,352 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import BackButton from '../../components/BackButton.astro';
+import RelatedTools from '../../components/RelatedTools.astro';
+
+const breadcrumbs = [
+  { name: 'Inicio', href: '/' },
+  { name: 'Herramientas IA', href: '/herramientas-ia' },
+  { name: 'Beautiful.ai', current: true }
+];
+
+const relatedTools = [
+  {
+    name: 'Gamma',
+    href: '/ia/gamma',
+    icon: '🎯',
+    category: 'Presentaciones',
+    description: 'Presentaciones IA automáticas'
+  },
+  {
+    name: 'Notion AI',
+    href: '/ia/notion-ai',
+    icon: '📝',
+    category: 'Productividad',
+    description: 'Documentación inteligente'
+  },
+  {
+    name: 'Figma AI',
+    href: '/ia/figma-ai',
+    icon: '🎨',
+    category: 'Diseño',
+    description: 'Diseño UI/UX asistido'
+  }
+];
+---
+
+<Layout title="Beautiful.ai - Presentaciones con Diseño Automático | LexIA">
+  <main class="min-h-screen bg-gradient-to-br from-gray-900 via-rose-900 to-gray-900">
+    <Breadcrumbs items={breadcrumbs} />
+    
+    <!-- Hero Section -->
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <div class="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-rose-500/20 to-pink-500/20 rounded-full border border-white/20 backdrop-blur-sm mb-8">
+          <span class="text-4xl">✨</span>
+          <span class="text-lg font-medium">Diseño Inteligente</span>
+        </div>
+        
+        <div class="flex items-center justify-center gap-4 mb-6">
+          <div class="w-16 h-16 bg-gradient-to-r from-rose-600 to-pink-600 rounded-2xl flex items-center justify-center text-3xl">
+            🎨
+          </div>
+          <div class="text-left">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Beautiful.ai</h1>
+            <p class="text-gray-400">by Beautiful.ai Inc.</p>
+          </div>
+        </div>
+        
+        <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+          Beautiful.ai revoluciona las presentaciones con <span class="text-rose-400 font-semibold">diseño automático inteligente</span>. 
+          <span class="text-pink-400 font-semibold">Sin esfuerzo, siempre profesional</span>.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://beautiful.ai" target="_blank" class="bg-gradient-to-r from-rose-600 to-pink-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-rose-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">
+            Probar Beautiful.ai
+          </a>
+          <a href="#pricing" class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/20 transition-all duration-300">
+            Ver Precios
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ¿Qué es Beautiful.ai? -->
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="bg-gradient-to-br from-rose-500/10 to-pink-500/10 border border-rose-500/20 rounded-3xl p-12 backdrop-blur-sm">
+          <h2 class="text-3xl font-bold text-white mb-6">✨ ¿Qué es Beautiful.ai?</h2>
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4 text-gray-300 text-lg leading-relaxed">
+              <p>
+                <strong>Beautiful.ai</strong> es una plataforma de presentaciones que utiliza inteligencia artificial 
+                para crear automáticamente diseños profesionales mientras escribes. No necesitas ser diseñador.
+              </p>
+              <p>
+                Su engine de <strong>DesignAI</strong> adapta automáticamente layouts, colores, tipografías 
+                y espaciado para que cada slide se vea perfecta, siguiendo principios de diseño profesional.
+              </p>
+            </div>
+            <div class="bg-gray-900/50 rounded-2xl p-6 border border-gray-600/30">
+              <h3 class="text-lg font-semibold text-white mb-4">🎯 Diferenciadores Clave</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li class="flex items-center gap-3">
+                  <span class="w-2 h-2 bg-rose-400 rounded-full"></span>
+                  <span>Diseño automático en tiempo real</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-2 h-2 bg-pink-400 rounded-full"></span>
+                  <span>Templates inteligentes adaptativos</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-2 h-2 bg-rose-400 rounded-full"></span>
+                  <span>Brand consistency automática</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-2 h-2 bg-pink-400 rounded-full"></span>
+                  <span>Colaboración visual avanzada</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DesignAI Engine -->
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-white mb-8">🤖 DesignAI Engine</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+          <div class="bg-gradient-to-br from-rose-500/10 to-pink-500/10 border border-rose-500/20 rounded-2xl p-6 backdrop-blur-sm">
+            <div class="w-12 h-12 bg-gradient-to-r from-rose-500 to-pink-500 rounded-xl flex items-center justify-center text-2xl mb-4">
+              🎨
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">Layout Automático</h3>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li>• Ajuste dinámico de contenido</li>
+              <li>• Alineación perfecta automática</li>
+              <li>• Espaciado óptimo</li>
+              <li>• Responsive design</li>
+            </ul>
+          </div>
+
+          <div class="bg-gradient-to-br from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-2xl p-6 backdrop-blur-sm">
+            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-500 rounded-xl flex items-center justify-center text-2xl mb-4">
+              🎭
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">Smart Styling</h3>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li>• Paletas de colores inteligentes</li>
+              <li>• Tipografía optimizada</li>
+              <li>• Iconografía contextual</li>
+              <li>• Efectos visuales adaptativos</li>
+            </ul>
+          </div>
+
+          <div class="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/20 rounded-2xl p-6 backdrop-blur-sm">
+            <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center text-2xl mb-4">
+              🔄
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">Adaptación Continua</h3>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li>• Rediseño en tiempo real</li>
+              <li>• Consistency checking</li>
+              <li>• Brand guideline adherence</li>
+              <li>• Multi-format optimization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Para Equipos de Desarrollo -->
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-white mb-8">👨‍💻 Beautiful.ai para Development Teams</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <div class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-6">
+              <h3 class="text-xl font-semibold text-blue-300 mb-4">📊 Technical Presentations</h3>
+              <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30">
+                <div class="text-green-400 mb-2"># Ejemplo: API Documentation</div>
+                <div class="text-gray-300 mb-2">Content: "REST API endpoints for user management"</div>
+                <div class="text-blue-300 mt-3">
+                  🎨 Beautiful.ai automatically creates:<br/>
+                  • Clean endpoint tables<br/>
+                  • Color-coded HTTP methods<br/>
+                  • Request/response examples<br/>
+                  • Professional layouts
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-2xl p-6">
+              <h3 class="text-xl font-semibold text-emerald-300 mb-4">🏗️ Architecture Reviews</h3>
+              <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30">
+                <div class="text-yellow-400 mb-2"># System Architecture</div>
+                <div class="text-gray-300 mb-2">Input: Microservices diagram data</div>
+                <div class="text-emerald-300 mt-3">
+                  🏗️ Auto-designs:<br/>
+                  • Service relationship diagrams<br/>
+                  • Data flow visualizations<br/>
+                  • Deployment architecture<br/>
+                  • Professional styling
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-6">
+              <h3 class="text-xl font-semibold text-purple-300 mb-4">📈 Progress Reports</h3>
+              <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30">
+                <div class="text-purple-400 mb-2"># Sprint Results</div>
+                <div class="text-gray-300 mb-2">Data: Sprint metrics and KPIs</div>
+                <div class="text-pink-300 mt-3">
+                  📊 Smart layouts for:<br/>
+                  • Performance dashboards<br/>
+                  • Timeline visualizations<br/>
+                  • Metric comparisons<br/>
+                  • Executive summaries
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-6">
+              <h3 class="text-xl font-semibold text-orange-300 mb-4">🎯 Product Demos</h3>
+              <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30">
+                <div class="text-orange-400 mb-2"># Demo Presentation</div>
+                <div class="text-gray-300 mb-2">Screenshots + feature descriptions</div>
+                <div class="text-red-300 mt-3">
+                  🚀 Creates beautiful:<br/>
+                  • Feature showcases<br/>
+                  • Before/after comparisons<br/>
+                  • User journey flows<br/>
+                  • Compelling narratives
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Templates Inteligentes -->
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-white mb-8">📋 Smart Templates para Desarrollo</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gradient-to-br from-rose-500/10 to-pink-500/10 border border-rose-500/20 rounded-2xl p-8">
+            <h3 class="text-2xl font-semibold text-rose-300 mb-6">🔧 Technical Specifications</h3>
+            
+            <div class="space-y-4">
+              <div class="bg-gray-900/50 rounded-xl p-4 border border-gray-600/30">
+                <div class="text-sm text-gray-400 mb-2">Template incluye</div>
+                <ul class="text-white text-sm space-y-1">
+                  <li>✅ Requirements overview</li>
+                  <li>✅ Technology stack</li>
+                  <li>✅ Architecture diagrams</li>
+                  <li>✅ Implementation timeline</li>
+                  <li>✅ Risk assessment</li>
+                </ul>
+              </div>
+              
+              <div class="bg-rose-900/20 rounded-xl p-4 border border-rose-500/30">
+                <div class="text-sm text-rose-300 mb-2">DesignAI adapta automáticamente</div>
+                <ul class="text-gray-300 text-sm space-y-1">
+                  <li>• Layouts basados en contenido</li>
+                  <li>• Gráficos técnicos profesionales</li>
+                  <li>• Color coding por prioridad</li>
+                  <li>• Iconografía contextual</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-br from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-2xl p-8">
+            <h3 class="text-2xl font-semibold text-pink-300 mb-6">📊 Project Status Reports</h3>
+            
+            <div class="space-y-4">
+              <div class="bg-gray-900/50 rounded-xl p-4 border border-gray-600/30">
+                <div class="text-sm text-gray-400 mb-2">Elementos automáticos</div>
+                <ul class="text-white text-sm space-y-1">
+                  <li>✅ Executive summary</li>
+                  <li>✅ Progress metrics</li>
+                  <li>✅ Resource utilization</li>
+                  <li>✅ Milestone tracking</li>
+                  <li>✅ Next steps</li>
+                </ul>
+              </div>
+              
+              <div class="bg-pink-900/20 rounded-xl p-4 border border-pink-500/30">
+                <div class="text-sm text-pink-300 mb-2">Visualización inteligente</div>
+                <ul class="text-gray-300 text-sm space-y-1">
+                  <li>• Dashboards automatizados</li>
+                  <li>• Charts y gráficos dinámicos</li>
+                  <li>• Status indicators visuales</li>
+                  <li>• Professional formatting</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-16 bg-gradient-to-r from-rose-900/50 to-pink-900/50 border-y border-rose-700/30">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-white mb-8 text-center">💰 Precios</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gradient-to-br from-gray-800/50 to-slate-800/50 border border-gray-600/30 rounded-2xl p-6">
+            <h3 class="text-xl font-semibold text-white mb-2">Free</h3>
+            <div class="text-3xl font-bold text-gray-400 mb-4">$0</div>
+            <p class="text-gray-300 text-sm mb-4">Para uso personal</p>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li>• Hasta 3 presentaciones</li>
+              <li>• Templates básicos</li>
+              <li>• DesignAI limitado</li>
+              <li>• Exportación básica</li>
+            </ul>
+          </div>
+
+          <div class="bg-gradient-to-br from-rose-500/20 to-pink-500/20 border border-rose-500/30 rounded-2xl p-6 ring-2 ring-rose-500/50">
+            <h3 class="text-xl font-semibold text-white mb-2">Pro</h3>
+            <div class="text-3xl font-bold text-rose-400 mb-4">$12<span class="text-lg text-gray-400">/mes</span></div>
+            <p class="text-gray-300 text-sm mb-4">Para profesionales</p>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li>• Presentaciones ilimitadas</li>
+              <li>• Todos los templates</li>
+              <li>• DesignAI completo</li>
+              <li>• Analytics avanzados</li>
+              <li>• Brand kit personalizado</li>
+            </ul>
+          </div>
+
+          <div class="bg-gradient-to-br from-pink-500/20 to-purple-500/20 border border-pink-500/30 rounded-2xl p-6">
+            <h3 class="text-xl font-semibold text-white mb-2">Team</h3>
+            <div class="text-3xl font-bold text-pink-400 mb-4">$40<span class="text-lg text-gray-400">/usuario/mes</span></div>
+            <p class="text-gray-300 text-sm mb-4">Para equipos</p>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li>• Todo de Pro</li>
+              <li>• Colaboración avanzada</li>
+              <li>• Brand consistency</li>
+              <li>• Admin controls</li>
+              <li>• Soporte prioritario</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <BackButton href="/herramientas-ia" text="Volver a Herramientas IA" />
+    <RelatedTools tools={relatedTools} currentTool="Beautiful.ai" />
+  </main>
+</Layout>

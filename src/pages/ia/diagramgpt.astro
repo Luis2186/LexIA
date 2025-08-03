@@ -1,0 +1,219 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="DiagramGPT - Diagramación Inteligente | LexIA">
+  <main class="bg-black min-h-screen">
+    <!-- Header -->
+    <header class="relative bg-gradient-to-r from-indigo-900 via-purple-900 to-blue-900 py-20">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4">
+        <div class="flex items-center gap-6 mb-8">
+          <div class="w-20 h-20 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center text-4xl">
+            📊
+          </div>
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">DiagramGPT</h1>
+            <p class="text-xl text-indigo-300">Diagramación Automática con IA</p>
+            <p class="text-gray-400">by DiagramGPT</p>
+          </div>
+        </div>
+        
+        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+          DiagramGPT transforma descripciones en texto natural en diagramas técnicos profesionales 
+          usando inteligencia artificial. Especializado en comprensión arquitectural y layout 
+          automático para crear visualizaciones precisas y editables.
+        </p>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex overflow-x-auto py-4 space-x-8">
+          <a href="#que-es" class="text-indigo-400 hover:text-indigo-300 whitespace-nowrap transition-colors">¿Qué es?</a>
+          <a href="#como-funciona" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">¿Cómo funciona?</a>
+          <a href="#casos-uso" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">Casos de Uso</a>
+          <a href="#ejemplos" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">Ejemplos</a>
+          <a href="#integracion" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">Integración</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="max-w-6xl mx-auto px-4 py-12">
+      
+      <!-- ¿Qué es DiagramGPT? -->
+      <section id="que-es" class="mb-20">
+        <div class="bg-gradient-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-6">📊 ¿Qué es DiagramGPT?</h2>
+          
+          <p class="text-gray-300 mb-6">
+            <strong class="text-white">DiagramGPT</strong> es una herramienta de IA especializada en generar diagramas técnicos 
+            a partir de descripciones en lenguaje natural. Utiliza modelos de comprensión semántica avanzados especializados 
+            en comprensión arquitectural y layout automático para crear visualizaciones precisas y editables.
+          </p>
+          
+          <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
+            <h3 class="font-semibold text-white mb-4">🎯 Especialidades Core</h3>
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
+                <span><strong class="text-indigo-400">Architecture Diagrams:</strong> Sistemas, microservicios, infraestructura</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-purple-400 rounded-full"></span>
+                <span><strong class="text-purple-400">Database Schemas:</strong> ERD, relaciones, constraints</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
+                <span><strong class="text-indigo-400">Process Flows:</strong> Workflows, decision trees, user journeys</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-purple-400 rounded-full"></span>
+                <span><strong class="text-purple-400">Network Diagrams:</strong> Topologías, seguridad, conectividad</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Casos de Uso -->
+      <section id="casos-uso" class="mb-20">
+        <div class="bg-gradient-to-r from-purple-900/20 to-blue-900/20 border border-purple-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-8">🔧 Casos de Uso en Documentación Técnica</h2>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-indigo-500/20 rounded-lg flex items-center justify-center">
+                  <span class="text-2xl">🏗️</span>
+                </div>
+                <h3 class="text-xl font-bold text-white">Architecture Documentation</h3>
+              </div>
+              
+              <p class="text-gray-300 mb-4">
+                Creación automática de diagramas de arquitectura para documentar 
+                sistemas complejos y facilitar la comprensión del equipo.
+              </p>
+              
+              <div class="bg-indigo-900/30 border border-indigo-600/30 p-4 rounded-lg">
+                <div class="font-semibold text-indigo-300 mb-2">Scenario Típico</div>
+                <p class="text-gray-300 text-sm mb-3">
+                  "Necesito documentar la arquitectura de un e-commerce con 15 microservicios, 
+                  3 bases de datos y integración con payment gateways externos."
+                </p>
+                
+                <div class="font-semibold text-indigo-300 mb-2">Solución DiagramGPT</div>
+                <ul class="text-gray-300 text-sm space-y-1">
+                  <li>• <strong class="text-indigo-400">High-level overview:</strong> Services, databases, external APIs</li>
+                  <li>• <strong class="text-purple-400">Data flow:</strong> Request routing, message queues, caching</li>
+                  <li>• <strong class="text-indigo-400">Infrastructure:</strong> Load balancers, CDN, monitoring</li>
+                  <li>• <strong class="text-purple-400">Security boundaries:</strong> VPCs, firewalls, auth layers</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center">
+                  <span class="text-2xl">🗄️</span>
+                </div>
+                <h3 class="text-xl font-bold text-white">Database Design</h3>
+              </div>
+              
+              <p class="text-gray-300 mb-4">
+                Generación de diagramas ERD y esquemas de base de datos 
+                a partir de requisitos de negocio descritos en texto.
+              </p>
+              
+              <div class="bg-purple-900/30 border border-purple-600/30 p-4 rounded-lg">
+                <div class="font-semibold text-purple-300 mb-2">Scenario Típico</div>
+                <p class="text-gray-300 text-sm mb-3">
+                  "Sistema CRM que maneja clientes, contactos, oportunidades de venta, 
+                  productos, facturas y seguimiento de actividades."
+                </p>
+                
+                <div class="font-semibold text-purple-300 mb-2">Solución DiagramGPT</div>
+                <ul class="text-gray-300 text-sm space-y-1">
+                  <li>• <strong class="text-purple-400">Entity relationships:</strong> Users, products, orders, payments</li>
+                  <li>• <strong class="text-indigo-400">Cardinality rules:</strong> One-to-many, many-to-many relationships</li>
+                  <li>• <strong class="text-purple-400">Constraints:</strong> Foreign keys, unique indexes, validations</li>
+                  <li>• <strong class="text-indigo-400">Normalization:</strong> Optimized table structure</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ejemplos Prácticos -->
+      <section id="ejemplos" class="mb-20">
+        <div class="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 border border-blue-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-8">💡 Ejemplos Prácticos</h2>
+          
+          <div class="space-y-6">
+            <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
+              <h3 class="text-xl font-bold text-white mb-4">Prompt para Microservicios</h3>
+              <div class="bg-gray-900 border border-gray-700 rounded-lg p-4 mb-4">
+                <code class="text-blue-300 text-sm">
+                  "Sistema de streaming de video con user service, content service, 
+                  recommendation engine, payment service, notification service, 
+                  CDN para delivery, Redis para caching, PostgreSQL para metadata, 
+                  Apache Kafka para eventos, y load balancer con auto-scaling"
+                </code>
+              </div>
+              
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <h4 class="font-semibold text-blue-300 mb-2">Resultado Generado</h4>
+                  <ul class="text-gray-300 text-sm space-y-1">
+                    <li>• Diagrama de arquitectura completo</li>
+                    <li>• Conexiones entre servicios</li>
+                    <li>• Data flow y message patterns</li>
+                    <li>• Infrastructure components</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-300 mb-2">Tiempo de Generación</h4>
+                  <ul class="text-gray-300 text-sm space-y-1">
+                    <li>• <strong>Manual:</strong> 2-3 días</li>
+                    <li>• <strong>DiagramGPT:</strong> 2-3 minutos</li>
+                    <li>• <strong>Precisión:</strong> 95% accuracy</li>
+                    <li>• <strong>Formato:</strong> Editable, exportable</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="text-center">
+        <div class="bg-gradient-to-r from-indigo-900/30 to-purple-900/30 border border-indigo-500/20 rounded-xl p-8">
+          <h3 class="text-2xl font-bold text-white mb-4">¿Listo para automatizar tus diagramas?</h3>
+          <p class="text-gray-300 mb-6">
+            Transforma descripciones de texto en diagramas profesionales con DiagramGPT.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="https://diagramgpt.dev" 
+              target="_blank"
+              class="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-3 rounded-xl font-semibold transition-colors"
+            >
+              Probar DiagramGPT
+            </a>
+            <a 
+              href="/herramientas-ia/documentacion" 
+              class="border border-indigo-500 text-indigo-400 hover:bg-indigo-500/10 px-8 py-3 rounded-xl font-semibold transition-colors"
+            >
+              Ver Más Documentación IA
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</Layout>

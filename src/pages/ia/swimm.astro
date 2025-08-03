@@ -1,0 +1,216 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Swimm - Documentación Viva en IDE | LexIA">
+  <main class="bg-black min-h-screen">
+    <!-- Header -->
+    <header class="relative bg-gradient-to-r from-cyan-900 via-blue-900 to-indigo-900 py-20">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4">
+        <div class="flex items-center gap-6 mb-8">
+          <div class="w-20 h-20 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center text-4xl">
+            🏊‍♂️
+          </div>
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Swimm</h1>
+            <p class="text-xl text-cyan-300">Documentación Viva en IDE</p>
+            <p class="text-gray-400">by Swimm</p>
+          </div>
+        </div>
+        
+        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+          Swimm revoluciona la documentación técnica al mantenerla sincronizada 
+          automáticamente con el código. Crea documentación viva que se actualiza 
+          cuando cambia el código, eliminando docs obsoletas para siempre.
+        </p>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex overflow-x-auto py-4 space-x-8">
+          <a href="#que-es" class="text-cyan-400 hover:text-cyan-300 whitespace-nowrap transition-colors">¿Qué es?</a>
+          <a href="#como-funciona" class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors">¿Cómo funciona?</a>
+          <a href="#instalacion" class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors">Instalación</a>
+          <a href="#ejemplos" class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors">Ejemplos Prácticos</a>
+          <a href="#integracion" class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors">Integración</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="max-w-6xl mx-auto px-4 py-12">
+      
+      <!-- ¿Qué es Swimm? -->
+      <section id="que-es" class="mb-20">
+        <div class="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 border border-cyan-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-6">🏊‍♂️ ¿Qué es Swimm?</h2>
+          
+          <p class="text-gray-300 mb-6">
+            <strong class="text-white">Swimm</strong> revoluciona la documentación técnica al mantenerla sincronizada 
+            automáticamente con el código fuente. Crea "documentación viva" que se actualiza en tiempo real 
+            cuando el código cambia, eliminando la documentación obsoleta y garantizando que siempre refleje 
+            el estado actual del sistema.
+          </p>
+          
+          <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
+            <h3 class="font-semibold text-white mb-4">🚀 Especialidades Core</h3>
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
+                <span><strong class="text-cyan-400">Live Documentation:</strong> Sincronización automática con código</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                <span><strong class="text-blue-400">IDE Integration:</strong> Documentación dentro del editor</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
+                <span><strong class="text-cyan-400">Auto-Update Alerts:</strong> Notificaciones de cambios</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                <span><strong class="text-blue-400">Code-Doc Linking:</strong> Referencias directas al código</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Casos de Uso -->
+      <section id="como-funciona" class="mb-20">
+        <div class="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 border border-blue-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-8">🎯 Casos de Uso en Documentación</h2>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-cyan-500/20 rounded-lg flex items-center justify-center">
+                  <span class="text-2xl">📚</span>
+                </div>
+                <h3 class="text-xl font-bold text-white">Onboarding Documentation</h3>
+              </div>
+              
+              <p class="text-gray-300 mb-4">
+                Crea documentación de onboarding que se mantiene actualizada automáticamente, 
+                guiando a nuevos desarrolladores a través del codebase actual.
+              </p>
+              
+              <div class="bg-cyan-900/30 border border-cyan-600/30 p-4 rounded-lg">
+                <div class="font-semibold text-cyan-300 mb-2">Beneficios</div>
+                <ul class="text-gray-300 text-sm space-y-1">
+                  <li>• <strong class="text-cyan-400">Onboarding actualizado:</strong> Siempre refleja el código actual</li>
+                  <li>• <strong class="text-blue-400">Guided walkthroughs:</strong> Tutoriales interactivos</li>
+                  <li>• <strong class="text-cyan-400">Code exploration:</strong> Navegación guiada</li>
+                  <li>• <strong class="text-blue-400">Faster ramp-up:</strong> 60% menos tiempo de onboarding</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                  <span class="text-2xl">🔧</span>
+                </div>
+                <h3 class="text-xl font-bold text-white">API Documentation</h3>
+              </div>
+              
+              <p class="text-gray-300 mb-4">
+                Documentación de APIs que se actualiza automáticamente cuando 
+                cambian los endpoints, parámetros o responses.
+              </p>
+              
+              <div class="bg-blue-900/30 border border-blue-600/30 p-4 rounded-lg">
+                <div class="font-semibold text-blue-300 mb-2">Features</div>
+                <ul class="text-gray-300 text-sm space-y-1">
+                  <li>• <strong class="text-blue-400">Auto-sync:</strong> Detecta cambios en endpoints</li>
+                  <li>• <strong class="text-cyan-400">Live examples:</strong> Código actualizado siempre</li>
+                  <li>• <strong class="text-blue-400">Version tracking:</strong> Historia de cambios</li>
+                  <li>• <strong class="text-cyan-400">Interactive docs:</strong> Testeable desde docs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integración con IDE -->
+      <section id="integracion" class="mb-20">
+        <div class="bg-gradient-to-r from-indigo-900/20 to-cyan-900/20 border border-indigo-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-8">💻 Integración con IDE</h2>
+          
+          <div class="space-y-6">
+            <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
+              <h3 class="text-xl font-bold text-white mb-4">VS Code Extension</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-indigo-300 mb-3">Características</h4>
+                  <ul class="text-gray-300 text-sm space-y-2">
+                    <li class="flex items-center gap-3">
+                      <span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
+                      <span>Docs en sidebar del IDE</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
+                      <span>Hover tooltips con documentación</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
+                      <span>Quick actions para actualizar docs</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
+                      <span>Code navigation desde docs</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="font-semibold text-indigo-300 mb-3">Workflow</h4>
+                  <div class="bg-gray-900 border border-gray-700 rounded p-3 text-xs font-mono text-gray-300">
+                    <span class="text-cyan-400">// 1. Developer modifica función</span><br/>
+                    <span class="text-gray-400">function processPayment(amount, method) {</span><br/>
+                    <span class="text-gray-400">  // Nuevo parámetro agregado</span><br/>
+                    <span class="text-gray-400">}</span><br/><br/>
+                    <span class="text-indigo-400">// 2. Swimm detecta cambio automáticamente</span><br/>
+                    <span class="text-yellow-400">// 3. Sugiere actualizar documentación</span><br/>
+                    <span class="text-green-400">// 4. Un click actualiza docs relacionadas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="text-center">
+        <div class="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-500/20 rounded-xl p-8">
+          <h3 class="text-2xl font-bold text-white mb-4">¿Listo para documentación que nunca se vuelve obsoleta?</h3>
+          <p class="text-gray-300 mb-6">
+            Descubre cómo Swimm puede mantener tu documentación siempre actualizada.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="https://swimm.io" 
+              target="_blank"
+              class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-xl font-semibold transition-colors"
+            >
+              Probar Swimm
+            </a>
+            <a 
+              href="/herramientas-ia/documentacion" 
+              class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-8 py-3 rounded-xl font-semibold transition-colors"
+            >
+              Ver Más Documentación IA
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</Layout>

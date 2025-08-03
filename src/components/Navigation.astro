@@ -1,0 +1,364 @@
+---
+// Obtener la URL actual para marcar la página activa
+const currentPath = Astro.url.pathname;
+
+const navItems = [
+  {
+    name: 'Inicio',
+    href: '/',
+    icon: '🏠'
+  },
+  {
+    name: 'Herramientas IA',
+    href: '/herramientas-ia',
+    icon: '🤖'
+  },
+  {
+    name: 'Capas de Desarrollo con IA',
+    icon: '⚙️',
+    isDropdown: true,
+    subItems: [
+      {
+        name: 'Análisis y Diseño',
+        href: '/analisis-diseno',
+        icon: '📋',
+        description: 'Planificación inteligente con IA'
+      },
+      {
+        name: 'Desarrollo y Codificación',
+        href: '/desarrollo-codificacion',
+        icon: '💻',
+        description: 'Programación asistida por IA'
+      },
+      {
+        name: 'Testing y Validación',
+        href: '/testing-validacion',
+        icon: '🧪',
+        description: 'Calidad automatizada'
+      },
+      {
+        name: 'Deployment y DevOps',
+        href: '/deployment-devops',
+        icon: '🚀',
+        description: 'Entrega inteligente'
+      },
+      {
+        name: 'Mantenimiento y Evolución',
+        href: '/mantenimiento-evolucion',
+        icon: '🔧',
+        description: 'Mejora continua'
+      },
+      {
+        name: 'Operaciones y Escalabilidad',
+        href: '/operaciones-escalabilidad',
+        icon: '⚡',
+        description: 'Producción optimizada'
+      }
+    ]
+  }
+];
+
+function isActive(href: string | undefined) {
+  if (!href) return false;
+  if (href === '/') {
+    return currentPath === '/';
+  }
+  return currentPath.startsWith(href);
+}
+
+function isDropdownActive(subItems: any[]) {
+  return subItems.some(item => item.href && isActive(item.href));
+}
+---
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="/" class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
+            <span class="text-white text-lg font-bold">L</span>
+          </div>
+          <span class="text-white text-xl font-bold">LexIA</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-4">
+          {navItems.map((item) => (
+            item.isDropdown ? (
+              <div class="relative" id={`dropdown-${item.name.replace(/\s+/g, '-').toLowerCase()}`}>
+                <button
+                  type="button"
+                  class={`dropdown-toggle px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 flex items-center ${
+                    isDropdownActive(item.subItems)
+                      ? 'bg-blue-600 text-white'
+                      : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                  }`}
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  <span class="mr-2">{item.icon}</span>
+                  {item.name}
+                  <svg class="dropdown-arrow w-4 h-4 ml-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                <!-- Dropdown Menu -->
+                <div class="dropdown-menu absolute left-0 mt-2 w-80 bg-gray-800 border border-gray-700 rounded-lg shadow-xl opacity-0 invisible transform scale-95 transition-all duration-200 z-50">
+                  <div class="p-2">
+                    {item.subItems.map((subItem) => (
+                      <a
+                        href={subItem.href}
+                        class={`block p-3 rounded-lg transition-colors duration-200 ${
+                          isActive(subItem.href)
+                            ? 'bg-blue-600 text-white'
+                            : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                        }`}
+                      >
+                        <div class="flex items-start space-x-3">
+                          <span class="text-lg">{subItem.icon}</span>
+                          <div>
+                            <div class="font-medium">{subItem.name}</div>
+                            <div class="text-xs text-gray-400 mt-1">{subItem.description}</div>
+                          </div>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <a
+                href={item.href}
+                class={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                  isActive(item.href)
+                    ? 'bg-blue-600 text-white'
+                    : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                }`}
+              >
+                <span class="mr-2">{item.icon}</span>
+                {item.name}
+              </a>
+            )
+          ))}
+        </div>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Abrir menú principal</span>
+          <!-- Hamburger icon -->
+          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="md:hidden hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-900/95 backdrop-blur-md">
+      {navItems.map((item) => (
+        item.isDropdown ? (
+          <div class="mobile-dropdown">
+            <button
+              type="button"
+              class="mobile-dropdown-toggle w-full text-left px-3 py-2 text-base font-medium border-b border-gray-700 mb-2 flex items-center justify-between text-gray-300 hover:text-white transition-colors duration-200"
+              aria-expanded="false"
+            >
+              <span>
+                <span class="mr-2">{item.icon}</span>
+                {item.name}
+              </span>
+              <svg class="mobile-dropdown-arrow w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="mobile-dropdown-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              {item.subItems.map((subItem) => (
+                <a
+                  href={subItem.href}
+                  class={`block px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 mb-1 ${
+                    isActive(subItem.href)
+                      ? 'bg-blue-600 text-white'
+                      : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                  }`}
+                >
+                  <span class="mr-2">{subItem.icon}</span>
+                  {subItem.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <a
+            href={item.href}
+            class={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+              isActive(item.href)
+                ? 'bg-blue-600 text-white'
+                : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+            }`}
+          >
+            <span class="mr-2">{item.icon}</span>
+            {item.name}
+          </a>
+        )
+      ))}
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Toggle mobile menu
+    const mobileButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileButton && mobileMenu) {
+      mobileButton.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+          mobileMenu.classList.remove('hidden');
+          mobileButton.setAttribute('aria-expanded', 'true');
+        } else {
+          mobileMenu.classList.add('hidden');
+          mobileButton.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // Desktop dropdown functionality
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    dropdownToggles.forEach(toggle => {
+      const dropdown = toggle.parentElement;
+      const menu = dropdown?.querySelector('.dropdown-menu');
+      const arrow = toggle.querySelector('.dropdown-arrow');
+      
+      if (dropdown && menu && arrow) {
+        toggle.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          // Close other dropdowns
+          dropdownToggles.forEach(otherToggle => {
+            if (otherToggle !== toggle) {
+              const otherDropdown = otherToggle.parentElement;
+              const otherMenu = otherDropdown?.querySelector('.dropdown-menu');
+              const otherArrow = otherToggle.querySelector('.dropdown-arrow');
+              
+              if (otherMenu && otherArrow) {
+                otherMenu.classList.add('opacity-0', 'invisible', 'scale-95');
+                otherMenu.classList.remove('opacity-100', 'visible', 'scale-100');
+                otherArrow.classList.remove('rotate-180');
+                otherToggle.setAttribute('aria-expanded', 'false');
+              }
+            }
+          });
+          
+          // Toggle current dropdown
+          const isOpen = menu.classList.contains('opacity-100');
+          if (isOpen) {
+            menu.classList.add('opacity-0', 'invisible', 'scale-95');
+            menu.classList.remove('opacity-100', 'visible', 'scale-100');
+            arrow.classList.remove('rotate-180');
+            toggle.setAttribute('aria-expanded', 'false');
+          } else {
+            menu.classList.remove('opacity-0', 'invisible', 'scale-95');
+            menu.classList.add('opacity-100', 'visible', 'scale-100');
+            arrow.classList.add('rotate-180');
+            toggle.setAttribute('aria-expanded', 'true');
+          }
+        });
+      }
+    });
+
+    // Mobile dropdown functionality
+    const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+    mobileDropdownToggles.forEach(toggle => {
+      const dropdown = toggle.parentElement;
+      const content = dropdown?.querySelector('.mobile-dropdown-content') as HTMLElement;
+      const arrow = toggle.querySelector('.mobile-dropdown-arrow');
+      
+      if (content && arrow) {
+        toggle.addEventListener('click', () => {
+          const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+          
+          if (isOpen) {
+            content.style.maxHeight = '0px';
+            arrow.classList.remove('rotate-180');
+            toggle.setAttribute('aria-expanded', 'false');
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+            arrow.classList.add('rotate-180');
+            toggle.setAttribute('aria-expanded', 'true');
+          }
+        });
+      }
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+      const target = e.target as Element;
+      if (!target.closest('.relative')) {
+        dropdownToggles.forEach(toggle => {
+          const dropdown = toggle.parentElement;
+          const menu = dropdown?.querySelector('.dropdown-menu');
+          const arrow = toggle.querySelector('.dropdown-arrow');
+          
+          if (menu && arrow) {
+            menu.classList.add('opacity-0', 'invisible', 'scale-95');
+            menu.classList.remove('opacity-100', 'visible', 'scale-100');
+            arrow.classList.remove('rotate-180');
+            toggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = mobileMenu?.querySelectorAll('a');
+    mobileLinks?.forEach(link => {
+      link.addEventListener('click', () => {
+        if (mobileMenu && mobileButton) {
+          mobileMenu.classList.add('hidden');
+          mobileButton.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .dropdown-menu {
+    transform-origin: top;
+  }
+  
+  .mobile-dropdown-content {
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  /* Smooth hover effects */
+  .dropdown-toggle:hover .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+  
+  /* Focus styles for accessibility */
+  .dropdown-toggle:focus,
+  .mobile-dropdown-toggle:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+  }
+</style>
+</nav>

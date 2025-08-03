@@ -1,0 +1,489 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Claude - Asistente IA Avanzado por Anthropic | LexIA">
+  <main class="bg-black min-h-screen">
+    <!-- Header -->
+    <header class="relative bg-gradient-to-r from-orange-900 via-amber-900 to-yellow-900 py-20">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4">
+        <div class="flex items-center gap-6 mb-8">
+          <div class="w-20 h-20 bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center text-4xl">
+            🧠
+          </div>
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Claude</h1>
+            <p class="text-xl text-orange-300">Asistente IA de Nueva Generación</p>
+            <p class="text-gray-400">by Anthropic</p>
+          </div>
+        </div>
+        
+        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+          Claude es la familia de modelos de IA más avanzada de Anthropic, 
+          incluyendo Claude 3 y Claude 3.5 Sonnet. Especializada en análisis de código profundo, 
+          arquitectura de software y resolución de problemas complejos con un enfoque 
+          revolucionario en seguridad y Constitutional AI.
+        </p>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex overflow-x-auto py-4 space-x-8">
+          <a href="#que-es" class="text-orange-400 hover:text-orange-300 whitespace-nowrap transition-colors">¿Qué es?</a>
+          <a href="#capacidades" class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors">Capacidades</a>
+          <a href="#para-devs" class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors">Para Developers</a>
+          <a href="#ejemplos" class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors">Ejemplos</a>
+          <a href="#comparacion" class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors">vs Competencia</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="max-w-6xl mx-auto px-4 py-12">
+      
+      <!-- ¿Qué es Claude? -->
+      <section id="que-es" class="mb-20">
+        <div class="bg-gradient-to-r from-orange-900/20 to-amber-900/20 border border-orange-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-6">🧠 ¿Qué es Claude?</h2>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="space-y-4">
+              <p class="text-gray-300 leading-relaxed">
+                <strong>Claude</strong> es la familia de modelos de IA más avanzada desarrollada por Anthropic, 
+                que incluye <strong>Claude 3</strong> (Haiku, Sonnet, Opus) y <strong>Claude 3.5 Sonnet</strong>,
+                diseñada con un enfoque revolucionario en la <strong>Constitutional AI</strong> - 
+                un paradigma que prioriza la seguridad, la honestidad y la utilidad. 
+                Para developers, esto significa respuestas más precisas, código más seguro 
+                y explicaciones más profundas que cualquier generación anterior.
+              </p>
+              
+              <div class="bg-gray-900 rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-white mb-4">🎯 Diferenciadores Clave</h3>
+                
+                <div class="space-y-3 text-sm">
+                  <div class="flex items-start gap-3">
+                    <span class="text-orange-400">🛡️</span>
+                    <div>
+                      <div class="text-white font-medium">Constitutional AI</div>
+                      <div class="text-gray-400">Respuestas más seguras y éticas</div>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start gap-3">
+                    <span class="text-amber-400">�</span>
+                    <div>
+                      <div class="text-white font-medium">Context Window Extenso</div>
+                      <div class="text-gray-400">Analiza proyectos completos de código</div>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start gap-3">
+                    <span class="text-yellow-400">🔍</span>
+                    <div>
+                      <div class="text-white font-medium">Análisis Profundo</div>
+                      <div class="text-gray-400">Comprende arquitecturas complejas</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="space-y-6">
+              <div class="bg-gray-900 rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-white mb-4">🚀 Familia Claude</h3>
+                
+                <div class="space-y-4 text-sm">
+                  <div class="border-l-4 border-orange-500 pl-4">
+                    <div class="font-semibold text-orange-300">Claude 3 Haiku</div>
+                    <div class="text-gray-400">Rápido y eficiente para tareas simples</div>
+                  </div>
+                  
+                  <div class="border-l-4 border-amber-500 pl-4">
+                    <div class="font-semibold text-amber-300">Claude 3 Sonnet</div>
+                    <div class="text-gray-400">Balance perfecto entre velocidad y capacidad</div>
+                  </div>
+                  
+                  <div class="border-l-4 border-yellow-500 pl-4">
+                    <div class="font-semibold text-yellow-300">Claude 3.5 Sonnet</div>
+                    <div class="text-gray-400">El más avanzado para desarrollo complejo</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Capacidades -->
+      <section id="capacidades" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">⚡ Capacidades Extraordinarias</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gray-900 rounded-xl p-6 border border-orange-500/20">
+            <div class="text-3xl mb-4">📖</div>
+            <h3 class="text-xl font-semibold text-white mb-3">Context Window Masivo</h3>
+            <ul class="text-gray-400 space-y-2 text-sm">
+              <li>• 200K tokens (Claude 3.5)</li>
+              <li>• Analiza bases de código completas</li>
+              <li>• Retiene contexto conversacional</li>
+              <li>• Procesa documentación extensa</li>
+            </ul>
+          </div>
+          
+          <div class="bg-gray-900 rounded-xl p-6 border border-amber-500/20">
+            <div class="text-3xl mb-4">🛡️</div>
+            <h3 class="text-xl font-semibold text-white mb-3">Constitutional AI</h3>
+            <ul class="text-gray-400 space-y-2 text-sm">
+              <li>• Código más seguro por diseño</li>
+              <li>• Evita vulnerabilidades conocidas</li>
+              <li>• Respuestas más honestas</li>
+              <li>• Rechaza requests peligrosos</li>
+            </ul>
+          </div>
+          
+          <div class="bg-gray-900 rounded-xl p-6 border border-yellow-500/20">
+            <div class="text-3xl mb-4">�</div>
+            <h3 class="text-xl font-semibold text-white mb-3">Precisión Técnica</h3>
+            <ul class="text-gray-400 space-y-2 text-sm">
+              <li>• Menos alucinaciones</li>
+              <li>• Cita fuentes cuando es relevante</li>
+              <li>• Admite limitaciones</li>
+              <li>• Explica razonamiento paso a paso</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Para Developers -->
+      <section id="para-devs" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">👨‍💻 Claude para Developers</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-900 rounded-xl p-6 border border-orange-500/20">
+            <div class="text-3xl mb-4">🧮</div>
+            <h3 class="text-xl font-semibold text-white mb-3">Análisis de Código Profundo</h3>
+            <ul class="text-gray-400 space-y-2 text-sm">
+              <li>• Comprende arquitecturas complejas</li>
+              <li>• Identifica anti-patterns</li>
+              <li>• Sugiere refactoring inteligente</li>
+              <li>• Analiza performance implications</li>
+            </ul>
+          </div>
+          
+          <div class="bg-gray-900 rounded-xl p-6 border border-amber-500/20">
+            <div class="text-3xl mb-4">🔐</div>
+            <h3 class="text-xl font-semibold text-white mb-3">Security-First Approach</h3>
+            <ul class="text-gray-400 space-y-2 text-sm">
+              <li>• Detecta vulnerabilidades OWASP</li>
+              <li>• Sugiere secure coding practices</li>
+              <li>• Valida inputs automáticamente</li>
+              <li>• Implementa principio least privilege</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Casos de Uso -->
+      <section id="casos-uso" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">🛠️ Casos de Uso Específicos</h2>
+        
+        <div class="space-y-8">
+          <div class="bg-gray-900 rounded-xl p-8 border border-emerald-500/20">
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-4">🐛 Debugging Complejo</h3>
+                
+                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                  <div class="font-semibold text-orange-300 mb-2">Problema Real</div>
+                  <p class="text-gray-400 text-sm">
+                    "Mi aplicación React tiene memory leaks intermitentes. 
+                    El profiler muestra picos de memoria pero no identifico la causa."
+                  </p>
+                </div>
+                
+                <div class="font-semibold text-emerald-300 mb-2">Approach ChatGPT</div>
+                <ul class="text-gray-400 text-sm space-y-1">
+                  <li>• <strong>Code Analysis:</strong> Analiza useEffect hooks</li>
+                  <li>• <strong>Pattern Detection:</strong> Identifica event listeners sin cleanup</li>
+                  <li>• <strong>Solution Steps:</strong> Plan sistemático de debugging</li>
+                  <li>• <strong>Prevention:</strong> Mejores prácticas para evitar leaks</li>
+                </ul>
+              </div>
+              
+              <div class="bg-gray-800 rounded-lg p-4">
+                <div class="text-xs text-gray-400 mb-2">ChatGPT Response Example</div>
+                <pre class="text-xs text-emerald-400"><code>{`Analyzing your React memory leak issue:
+
+1. **Common Causes:**
+   - Event listeners not cleaned up
+   - Timers/intervals not cleared
+   - WebSocket connections not closed
+   - Subscriptions not unsubscribed
+
+2. **Debug Strategy:**
+   - Use React DevTools Profiler
+   - Check for missing cleanup in useEffect
+   - Audit third-party libraries
+
+3. **Quick Fix Pattern:**
+useEffect(() => {
+  const handleScroll = () => { /* logic */ };
+  window.addEventListener('scroll', handleScroll);
+  
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);`}</code></pre>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-gray-900 rounded-xl p-8 border border-teal-500/20">
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-4">🏗️ Architecture Design</h3>
+                
+                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                  <div class="font-semibold text-orange-300 mb-2">Design Challenge</div>
+                  <p class="text-gray-400 text-sm">
+                    "Necesito diseñar un sistema de notifications en tiempo real 
+                    para 100K usuarios. ¿WebSockets, SSE, o Push Notifications?"
+                  </p>
+                </div>
+                
+                <div class="font-semibold text-teal-300 mb-2">ChatGPT Analysis</div>
+                <ul class="text-gray-400 text-sm space-y-1">
+                  <li>• <strong>Technology Comparison:</strong> Pros/cons de cada approach</li>
+                  <li>• <strong>Scalability Analysis:</strong> Load balancing strategies</li>
+                  <li>• <strong>Implementation Plan:</strong> Fases de desarrollo</li>
+                  <li>• <strong>Fallback Strategies:</strong> Reliability patterns</li>
+                </ul>
+              </div>
+              
+              <div class="bg-gray-800 rounded-lg p-4">
+                <div class="text-xs text-gray-400 mb-2">Architecture Recommendation</div>
+                <pre class="text-xs text-teal-400"><code>{`For 100K users real-time notifications:
+
+**Recommended Hybrid Approach:**
+
+1. **WebSockets** for active users (online)
+   - Socket.io with Redis adapter
+   - Horizontal scaling with sticky sessions
+
+2. **Push Notifications** for offline users
+   - FCM for mobile, Web Push for browsers
+   - Queue-based delivery with retry logic
+
+3. **Architecture:**
+   ┌─ Load Balancer ─┬─ Node.js (WS) ─┐
+   │                 ├─ Node.js (WS) ─┤
+   │                 └─ Node.js (WS) ─┘
+   │
+   ├─ Redis Cluster (pub/sub)
+   ├─ Message Queue (RabbitMQ)
+   └─ Push Service (FCM/APNS)`}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ejemplos -->
+      <section id="ejemplos" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">💡 Ejemplos de Interacción</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <div class="bg-gray-900 rounded-xl p-6">
+              <h3 class="text-lg font-semibold text-white mb-4">📝 Code Generation</h3>
+              
+              <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                <div class="text-xs text-gray-400 mb-2">Tu prompt:</div>
+                <div class="text-yellow-400 text-sm">
+                  "Crea una función en Python que procese un CSV de ventas 
+                  y genere un reporte con totales por categoría"
+                </div>
+              </div>
+              
+              <div class="bg-gray-800 rounded-lg p-4">
+                <div class="text-xs text-gray-400 mb-2">ChatGPT responde:</div>
+                <pre class="text-xs text-emerald-400"><code>{`import pandas as pd
+from collections import defaultdict
+
+def process_sales_report(csv_file):
+    """
+    Procesa CSV de ventas y genera reporte por categoría
+    """
+    try:
+        # Leer CSV
+        df = pd.read_csv(csv_file)
+        
+        # Validar columnas requeridas
+        required_cols = ['categoria', 'monto', 'fecha']
+        if not all(col in df.columns for col in required_cols):
+            raise ValueError(f"CSV debe contener: {required_cols}")
+        
+        # Procesar datos
+        report = df.groupby('categoria').agg({
+            'monto': ['sum', 'mean', 'count'],
+            'fecha': ['min', 'max']
+        }).round(2)
+        
+        return report
+        
+    except Exception as e:
+        print(f"Error procesando archivo: {e}")
+        return None`}</code></pre>
+              </div>
+            </div>
+          </div>
+          
+          <div class="space-y-6">
+            <div class="bg-gray-900 rounded-xl p-6">
+              <h3 class="text-lg font-semibold text-white mb-4">🔍 Code Review</h3>
+              
+              <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                <div class="text-xs text-gray-400 mb-2">Tu código:</div>
+                <pre class="text-xs text-red-400"><code>{`// Código a revisar
+async function getUserData(userId) {
+  const user = await db.query('SELECT * FROM users WHERE id = ' + userId);
+  if (user) {
+    return user;
+  } else {
+    return null;
+  }
+}`}</code></pre>
+              </div>
+              
+              <div class="bg-gray-800 rounded-lg p-4">
+                <div class="text-xs text-gray-400 mb-2">ChatGPT identifica:</div>
+                <div class="text-emerald-400 text-sm space-y-2">
+                  <div>🚨 <strong>SQL Injection:</strong> Nunca concatenar input del usuario</div>
+                  <div>⚡ <strong>Simplificar:</strong> Return directo sin if/else</div>
+                  <div>🛡️ <strong>Error Handling:</strong> Añadir try/catch</div>
+                  <div class="mt-3">
+                    <pre class="text-xs text-green-400"><code>{`// Versión mejorada:
+async function getUserData(userId) {
+  try {
+    const user = await db.query(
+      'SELECT * FROM users WHERE id = ?', 
+      [userId]
+    );
+    return user || null;
+  } catch (error) {
+    console.error('Database error:', error);
+    throw new Error('Failed to fetch user');
+  }
+}`}</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tips Avanzados -->
+      <section id="tips" class="mb-20">
+        <h2 class="text-3xl font-bold text-white mb-8">🎯 Tips Avanzados para Developers</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-900 rounded-xl p-6">
+            <h3 class="text-lg font-semibold text-white mb-4">💡 Prompts Efectivos</h3>
+            
+            <div class="space-y-4 text-sm">
+              <div class="bg-emerald-900/20 border border-emerald-600/30 p-4 rounded-lg">
+                <div class="font-semibold text-emerald-300 mb-2">✅ Específico y Contextual</div>
+                <div class="text-gray-300">
+                  "Actúa como senior developer. Revisar este código TypeScript de React 
+                  para una aplicación de e-commerce. Enfócate en performance y security."
+                </div>
+              </div>
+              
+              <div class="bg-red-900/20 border border-red-600/30 p-4 rounded-lg">
+                <div class="font-semibold text-red-300 mb-2">❌ Vago y General</div>
+                <div class="text-gray-300">
+                  "Ayúdame con mi código"
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-gray-900 rounded-xl p-6">
+            <h3 class="text-lg font-semibold text-white mb-4">🔧 Workflows Productivos</h3>
+            
+            <div class="space-y-3 text-sm">
+              <div class="border-l-4 border-emerald-500 pl-4">
+                <div class="font-semibold text-emerald-300">1. Define el Contexto</div>
+                <div class="text-gray-400">Stack tecnológico, objetivo del proyecto</div>
+              </div>
+              
+              <div class="border-l-4 border-teal-500 pl-4">
+                <div class="font-semibold text-teal-300">2. Explica el Problema</div>
+                <div class="text-gray-400">Error específico, comportamiento esperado vs actual</div>
+              </div>
+              
+              <div class="border-l-4 border-cyan-500 pl-4">
+                <div class="font-semibold text-cyan-300">3. Incluye Código Relevante</div>
+                <div class="text-gray-400">Snippets específicos, logs de error</div>
+              </div>
+              
+              <div class="border-l-4 border-blue-500 pl-4">
+                <div class="font-semibold text-blue-300">4. Pide Explicaciones</div>
+                <div class="text-gray-400">"Explica el razonamiento detrás de la solución"</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Planes -->
+      <section class="mb-12">
+        <div class="bg-gradient-to-r from-emerald-900/20 to-teal-900/20 border border-emerald-500/20 rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-white mb-8">💼 Planes Disponibles</h2>
+          
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-900 rounded-xl p-6">
+              <h3 class="text-lg font-semibold text-white mb-3">🆓 Free</h3>
+              <div class="text-2xl font-bold text-gray-400 mb-2">$0</div>
+              <div class="text-gray-400 text-sm mb-4">Limitado pero funcional</div>
+              <ul class="text-gray-400 text-sm space-y-2">
+                <li>• GPT-3.5 access</li>
+                <li>• Rate limits</li>
+                <li>• Funciones básicas</li>
+              </ul>
+            </div>
+            
+            <div class="bg-gray-900 rounded-xl p-6 border border-emerald-500/50">
+              <h3 class="text-lg font-semibold text-white mb-3">⭐ Plus</h3>
+              <div class="text-2xl font-bold text-emerald-400 mb-2">$20/mes</div>
+              <div class="text-gray-400 text-sm mb-4">Para uso profesional</div>
+              <ul class="text-gray-400 text-sm space-y-2">
+                <li>• GPT-4 access</li>
+                <li>• Priority access</li>
+                <li>• Faster responses</li>
+                <li>• Advanced features</li>
+              </ul>
+            </div>
+            
+            <div class="bg-gray-900 rounded-xl p-6">
+              <h3 class="text-lg font-semibold text-white mb-3">🏢 Team</h3>
+              <div class="text-2xl font-bold text-teal-400 mb-2">$25/mes</div>
+              <div class="text-gray-400 text-sm mb-4">Por usuario en equipo</div>
+              <ul class="text-gray-400 text-sm space-y-2">
+                <li>• Todo de Plus</li>
+                <li>• Shared workspace</li>
+                <li>• Admin controls</li>
+                <li>• Team analytics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</Layout>

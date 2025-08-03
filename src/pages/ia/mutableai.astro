@@ -1,0 +1,684 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="MutableAI - Refactorización Inteligente | LexIA">
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-orange-900 via-amber-900 to-yellow-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🔧
+                    </div>
+                    <div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            MutableAI
+                        </h1>
+                        <p class="text-xl text-orange-300">
+                            Refactorización Inteligente con IA
+                        </p>
+                        <p class="text-gray-400">by MutableAI</p>
+                    </div>
+                </div>
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    MutableAI utiliza inteligencia artificial para modernizar y
+                    optimizar código automáticamente. Especializado en
+                    refactorización inteligente, migración de frameworks y
+                    mejora de performance sin alterar la funcionalidad del
+                    código.
+                </p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-orange-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#como-funciona"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >¿Cómo funciona?</a
+                    >
+                    <a
+                        href="#casos-uso"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Casos de Uso</a
+                    >
+                    <a
+                        href="#ejemplos"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Ejemplos</a
+                    >
+                    <a
+                        href="#integracion"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Integración</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es MutableAI? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-orange-900/20 to-amber-900/20 border border-orange-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🔧 ¿Qué es MutableAI?
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong>MutableAI</strong> es una plataforma de IA
+                                especializada en refactorización inteligente de código.
+                                No solo mejora la calidad del código, sino que también
+                                moderniza tecnologías legacy, optimiza performance
+                                y mantiene la funcionalidad exacta mientras transforma
+                                tu codebase.
+                            </p>
+
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🎯 Especialización en Refactoring
+                                </h3>
+
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-orange-400">🔄</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Legacy Modernization
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Transforma código antiguo a
+                                                estándares modernos
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-amber-400">⚡</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Performance Optimization
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Mejora velocidad sin cambiar
+                                                comportamiento
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-yellow-400">🏗️</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Architecture Evolution
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Evoluciona patrones y
+                                                estructuras
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🚀 Ventajas Únicas
+                                </h3>
+
+                                <div class="space-y-4 text-sm">
+                                    <div
+                                        class="border-l-4 border-orange-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-orange-300"
+                                        >
+                                            Behavior Preservation
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Garantiza que la funcionalidad no
+                                            cambie
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-amber-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-amber-300"
+                                        >
+                                            Incremental Migration
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Moderniza gradualmente sin romper
+                                            nada
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-yellow-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-yellow-300"
+                                        >
+                                            Test Generation
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Crea tests para validar los cambios
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ¿Cómo funciona? -->
+            <section id="como-funciona" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚡ ¿Cómo funciona MutableAI?
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-orange-500/20"
+                    >
+                        <div class="text-3xl mb-4">🔍</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Análisis Profundo
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Comprende la lógica de negocio</li>
+                            <li>• Mapea dependencias complejas</li>
+                            <li>• Identifica patrones legacy</li>
+                            <li>• Detecta problemas de performance</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-amber-500/20"
+                    >
+                        <div class="text-3xl mb-4">🛠️</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Transformación
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Refactoring step-by-step</li>
+                            <li>• Modernización de sintaxis</li>
+                            <li>• Optimización de algoritmos</li>
+                            <li>• Migration de frameworks</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-yellow-500/20"
+                    >
+                        <div class="text-3xl mb-4">✅</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Validación
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Tests automáticos generados</li>
+                            <li>• Verificación de comportamiento</li>
+                            <li>• Performance benchmarking</li>
+                            <li>• Code review automático</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Casos de Uso -->
+            <section id="casos-uso" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🛠️ Casos de Uso Especializados
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-orange-500/20"
+                    >
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3
+                                    class="text-xl font-semibold text-white mb-4"
+                                >
+                                    🏢 Modernización Enterprise
+                                </h3>
+
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-orange-300 mb-2"
+                                    >
+                                        Desafío Real
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        "Tenemos 500K líneas de código Java 8
+                                        con arquitectura monolítica. Necesitamos
+                                        migrar a microservicios con Spring Boot
+                                        3 y Java 17."
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-orange-300 mb-2">
+                                    Solución MutableAI
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong
+                                            >Decomposition Analysis:</strong
+                                        > Identifica boundaries naturales
+                                    </li>
+                                    <li>
+                                        • <strong>Gradual Migration:</strong> Extrae
+                                        servicios uno por uno
+                                    </li>
+                                    <li>
+                                        • <strong>API Generation:</strong> Crea interfaces
+                                        entre servicios
+                                    </li>
+                                    <li>
+                                        • <strong>Data Migration:</strong> Separa
+                                        esquemas de BD gradualmente
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Migration Progress Tracking
+                                </div>
+                                <pre
+                                    class="text-xs text-orange-400"><code>Migration Plan Generated:
+┌─ User Service (20% of codebase)
+│  ├─ Extracted: UserController, UserService  
+│  ├─ Dependencies: DatabaseUtils, EmailService
+│  └─ Estimated effort: 2 weeks
+│
+├─ Order Service (35% of codebase)
+│  ├─ Complex dependencies detected
+│  ├─ Shared transaction patterns found
+│  └─ Estimated effort: 4 weeks
+│
+└─ Payment Service (15% of codebase)
+   ├─ High-risk due to financial logic
+   ├─ Requires extensive testing
+   └─ Estimated effort: 3 weeks
+
+Overall Timeline: 12 weeks
+Risk Level: MEDIUM
+Success Probability: 87%</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-amber-500/20"
+                    >
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3
+                                    class="text-xl font-semibold text-white mb-4"
+                                >
+                                    ⚡ Performance Optimization
+                                </h3>
+
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-orange-300 mb-2"
+                                    >
+                                        Caso Performance
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        "API endpoints que tardan 2-3 segundos.
+                                        Base de usuarios creciendo, necesitamos
+                                        optimizar sin tocar la lógica de
+                                        negocio."
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-amber-300 mb-2">
+                                    Optimizaciones IA
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>Query Optimization:</strong> Mejora
+                                        consultas SQL automáticamente
+                                    </li>
+                                    <li>
+                                        • <strong>Caching Strategy:</strong> Añade
+                                        Redis en puntos críticos
+                                    </li>
+                                    <li>
+                                        • <strong>Algorithm Improvement:</strong
+                                        > O(n²) → O(n log n)
+                                    </li>
+                                    <li>
+                                        • <strong>Memory Management:</strong> Reduce
+                                        memory leaks
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Performance Improvements
+                                </div>
+                                <pre
+                                    class="text-xs text-amber-400"><code>Optimization Results:
+┌─ Database Queries
+│  ├─ Before: 47 queries per request
+│  ├─ After: 3 queries per request  
+│  └─ Improvement: 94% reduction
+│
+├─ Response Time
+│  ├─ Before: 2.3s average
+│  ├─ After: 180ms average
+│  └─ Improvement: 92% faster
+│
+├─ Memory Usage
+│  ├─ Before: 512MB baseline
+│  ├─ After: 128MB baseline
+│  └─ Improvement: 75% reduction
+│
+└─ Throughput
+   ├─ Before: 100 req/min
+   ├─ After: 800 req/min
+   └─ Improvement: 8x increase</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos -->
+            <section id="ejemplos" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    💡 Ejemplos de Refactoring
+                </h2>
+
+                <div class="grid md:grid-cols-1 gap-8">
+                    <div class="bg-gray-900 rounded-xl p-8">
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🔄 Legacy Code Modernization
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold text-red-300 mb-2">
+                                    ❌ Antes (Legacy)
+                                </h4>
+                                <div
+                                    class="bg-gray-800 border border-red-500/30 rounded p-4 text-xs font-mono"
+                                >
+                                    <pre
+                                        class="text-gray-300"><code>{`// Legacy jQuery spaghetti code
+$(document).ready(function() {
+  $.ajax({
+    url: '/api/users',
+    type: 'GET',
+    success: function(data) {
+      var html = '';
+      for(var i = 0; i < data.length; i++) {
+        html += '<div>' + data[i].name + '</div>';
+      }
+      $('#user-list').html(html);
+    },
+    error: function() {
+      alert('Error loading users');
+    }
+  });
+});`}</code></pre>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-green-300 mb-2">
+                                    ✅ Después (Modern)
+                                </h4>
+                                <div
+                                    class="bg-gray-800 border border-green-500/30 rounded p-4 text-xs font-mono"
+                                >
+                                    <pre
+                                        class="text-gray-300"><code>{`// Modern React component
+import { useEffect, useState } from 'react';
+
+const UserList = () => {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const response = await fetch('/api/users');
+        const data = await response.json();
+        setUsers(data);
+      } catch (err) {
+        setError('Failed to load users');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchUsers();
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+
+  return (
+    <div>
+      {users.map(user => (
+        <div key={user.id}>{user.name}</div>
+      ))}
+    </div>
+  );
+};`}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="mt-6 p-4 bg-orange-900/20 border border-orange-500/30 rounded-lg"
+                        >
+                            <h5 class="font-semibold text-orange-300 mb-2">
+                                🔧 Transformaciones Aplicadas:
+                            </h5>
+                            <ul class="text-gray-400 text-sm space-y-1">
+                                <li>• jQuery → React hooks modernos</li>
+                                <li>• Callback hell → async/await</li>
+                                <li>
+                                    • Manual DOM manipulation → Declarative
+                                    rendering
+                                </li>
+                                <li>
+                                    • Global state → Component state management
+                                </li>
+                                <li>• Error handling mejorado</li>
+                                <li>• Loading states explícitos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Integración -->
+            <section id="integracion" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🔌 Integración y Workflow
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-900 rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-white mb-4">
+                            🛠️ Herramientas Compatibles
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="font-semibold text-orange-300 mb-2">
+                                    IDEs & Editors
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>• VS Code extension</li>
+                                    <li>• IntelliJ IDEA plugin</li>
+                                    <li>• Web-based interface</li>
+                                    <li>• CLI tools</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="font-semibold text-amber-300 mb-2">
+                                    Version Control
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>• Git integration nativa</li>
+                                    <li>• Pull request automation</li>
+                                    <li>• Branch management</li>
+                                    <li>• Conflict resolution</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-white mb-4">
+                            🔗 Lenguajes Soportados
+                        </h3>
+
+                        <div class="space-y-4 text-sm">
+                            <div class="border-l-4 border-orange-500 pl-4">
+                                <div class="font-semibold text-orange-300">
+                                    Lenguajes Principales
+                                </div>
+                                <div class="text-gray-400">
+                                    JavaScript, TypeScript, Python, Java
+                                </div>
+                            </div>
+
+                            <div class="border-l-4 border-amber-500 pl-4">
+                                <div class="font-semibold text-amber-300">
+                                    Frameworks
+                                </div>
+                                <div class="text-gray-400">
+                                    React, Vue, Angular, Spring, Django
+                                </div>
+                            </div>
+
+                            <div class="border-l-4 border-yellow-500 pl-4">
+                                <div class="font-semibold text-yellow-300">
+                                    Bases de Datos
+                                </div>
+                                <div class="text-gray-400">
+                                    SQL optimization, ORM migrations
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing -->
+            <section class="mb-12">
+                <div
+                    class="bg-gradient-to-r from-orange-900/20 to-amber-900/20 border border-orange-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        💼 Planes y Precios
+                    </h2>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🚀 Starter
+                            </h3>
+                            <div
+                                class="text-2xl font-bold text-orange-400 mb-2"
+                            >
+                                $29/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para desarrolladores individuales
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• 50 refactorings/mes</li>
+                                <li>• Proyectos pequeños</li>
+                                <li>• Lenguajes básicos</li>
+                                <li>• Email support</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-orange-500/50"
+                        >
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🏢 Pro
+                            </h3>
+                            <div class="text-2xl font-bold text-amber-400 mb-2">
+                                $99/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para equipos de desarrollo
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Refactorings ilimitados</li>
+                                <li>• Proyectos enterprise</li>
+                                <li>• Todos los lenguajes</li>
+                                <li>• Priority support</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🏭 Enterprise
+                            </h3>
+                            <div
+                                class="text-2xl font-bold text-yellow-400 mb-2"
+                            >
+                                Custom
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para organizaciones grandes
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• On-premise deployment</li>
+                                <li>• Custom workflows</li>
+                                <li>• SLA garantizado</li>
+                                <li>• Dedicated support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</Layout>
