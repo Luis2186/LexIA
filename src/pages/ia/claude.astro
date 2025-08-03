@@ -1,489 +1,864 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import BackButton from "../../components/BackButton.astro";
+import RelatedTools from "../../components/RelatedTools.astro";
+
+const breadcrumbs = [
+    { name: "Herramientas IA", href: "/herramientas-ia" },
+    { name: "Chat & Asistentes", href: "/herramientas-ia/chat" },
+    { name: "Claude", current: true },
+];
+
+const relatedTools = [
+    {
+        name: "ChatGPT",
+        href: "/ia/chatgpt",
+        category: "Chat & Asistentes",
+        description:
+            "Asistente IA conversacional para programación y desarrollo",
+        icon: "💬",
+    },
+    {
+        name: "GitHub Copilot",
+        href: "/ia/github-copilot",
+        category: "Generación de Código",
+        description:
+            "Tu compañero de programación con IA integrado en el editor",
+        icon: "🐙",
+    },
+    {
+        name: "Cursor",
+        href: "/ia/cursor",
+        category: "IDEs y Editores",
+        description: "Editor de código moderno con IA integrada",
+        icon: "🎯",
+    },
+];
 ---
 
 <Layout title="Claude - Asistente IA Avanzado por Anthropic | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-orange-900 via-amber-900 to-yellow-900 py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center text-4xl">
-            🧠
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Claude</h1>
-            <p class="text-xl text-orange-300">Asistente IA de Nueva Generación</p>
-            <p class="text-gray-400">by Anthropic</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          Claude es la familia de modelos de IA más avanzada de Anthropic, 
-          incluyendo Claude 3 y Claude 3.5 Sonnet. Especializada en análisis de código profundo, 
-          arquitectura de software y resolución de problemas complejos con un enfoque 
-          revolucionario en seguridad y Constitutional AI.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-orange-400 hover:text-orange-300 whitespace-nowrap transition-colors">¿Qué es?</a>
-          <a href="#capacidades" class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors">Capacidades</a>
-          <a href="#para-devs" class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors">Para Developers</a>
-          <a href="#ejemplos" class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors">Ejemplos</a>
-          <a href="#comparacion" class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors">vs Competencia</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- ¿Qué es Claude? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-orange-900/20 to-amber-900/20 border border-orange-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">🧠 ¿Qué es Claude?</h2>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-4">
-              <p class="text-gray-300 leading-relaxed">
-                <strong>Claude</strong> es la familia de modelos de IA más avanzada desarrollada por Anthropic, 
-                que incluye <strong>Claude 3</strong> (Haiku, Sonnet, Opus) y <strong>Claude 3.5 Sonnet</strong>,
-                diseñada con un enfoque revolucionario en la <strong>Constitutional AI</strong> - 
-                un paradigma que prioriza la seguridad, la honestidad y la utilidad. 
-                Para developers, esto significa respuestas más precisas, código más seguro 
-                y explicaciones más profundas que cualquier generación anterior.
-              </p>
-              
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🎯 Diferenciadores Clave</h3>
-                
-                <div class="space-y-3 text-sm">
-                  <div class="flex items-start gap-3">
-                    <span class="text-orange-400">🛡️</span>
-                    <div>
-                      <div class="text-white font-medium">Constitutional AI</div>
-                      <div class="text-gray-400">Respuestas más seguras y éticas</div>
+    <Breadcrumbs items={breadcrumbs} />
+    <BackButton href="/herramientas-ia/chat" text="Chat & Asistentes" />
+    <main
+        class="bg-black min-h-screen"
+        style="background-color: #000000 !important; color: white;"
+    >
+        <style>
+            body {
+                background-color: #000000 !important;
+                color: white !important;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                background-color: #000000 !important;
+                color: white !important;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-orange-900 via-amber-900 to-yellow-900 py-20"
+            style="background: linear-gradient(to right, #7c2d12, #92400e, #a16207) !important;"
+        >
+            <div
+                class="absolute inset-0 bg-black/50"
+                style="background-color: rgba(0,0,0,0.5) !important;"
+            >
+            </div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🧠
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-amber-400">�</span>
                     <div>
-                      <div class="text-white font-medium">Context Window Extenso</div>
-                      <div class="text-gray-400">Analiza proyectos completos de código</div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            Claude
+                        </h1>
+                        <p class="text-xl text-orange-300">
+                            Asistente IA de Nueva Generación
+                        </p>
+                        <p class="text-gray-400">by Anthropic</p>
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-yellow-400">🔍</span>
-                    <div>
-                      <div class="text-white font-medium">Análisis Profundo</div>
-                      <div class="text-gray-400">Comprende arquitecturas complejas</div>
+                </div>
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    Claude es la familia de modelos de IA más avanzada de
+                    Anthropic, incluyendo Claude 3 y Claude 3.5 Sonnet.
+                    Especializada en análisis de código profundo, arquitectura
+                    de software y resolución de problemas complejos con un
+                    enfoque revolucionario en seguridad y Constitutional AI.
+                </p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+            style="background-color: rgba(17, 24, 39, 0.5) !important; border-bottom: 1px solid #374151 !important;"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-orange-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#capacidades"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Capacidades</a
+                    >
+                    <a
+                        href="#para-devs"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Para Developers</a
+                    >
+                    <a
+                        href="#ejemplos"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Ejemplos</a
+                    >
+                    <a
+                        href="#comparacion"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >vs Competencia</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div
+            class="max-w-6xl mx-auto px-4 py-12"
+            style="background-color: #000000 !important; color: white !important;"
+        >
+            <!-- ¿Qué es Claude? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-orange-900/20 to-amber-900/20 border border-orange-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🧠 ¿Qué es Claude?
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong>Claude</strong> es la familia de modelos
+                                de IA más avanzada desarrollada por Anthropic, que
+                                incluye <strong>Claude 3</strong> (Haiku, Sonnet,
+                                Opus) y <strong>Claude 3.5 Sonnet</strong>,
+                                diseñada con un enfoque revolucionario en la <strong
+                                    >Constitutional AI</strong
+                                > - un paradigma que prioriza la seguridad, la honestidad
+                                y la utilidad. Para developers, esto significa respuestas
+                                más precisas, código más seguro y explicaciones más
+                                profundas que cualquier generación anterior.
+                            </p>
+
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🎯 Diferenciadores Clave
+                                </h3>
+
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-orange-400">🛡️</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Constitutional AI
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Respuestas más seguras y éticas
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-amber-400">📚</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Context Window Extenso
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Analiza proyectos completos de
+                                                código
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-yellow-400">🔍</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Análisis Profundo
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Comprende arquitecturas
+                                                complejas
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🚀 Familia Claude
+                                </h3>
+
+                                <div class="space-y-4 text-sm">
+                                    <div
+                                        class="border-l-4 border-orange-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-orange-300"
+                                        >
+                                            Claude 3 Haiku
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Rápido y eficiente para tareas
+                                            simples
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-amber-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-amber-300"
+                                        >
+                                            Claude 3 Sonnet
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Equilibrio perfecto
+                                            velocidad/capacidad
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-yellow-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-yellow-300"
+                                        >
+                                            Claude 3 Opus
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Máxima inteligencia para tareas
+                                            complejas
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-green-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-green-300"
+                                        >
+                                            Claude 3.5 Sonnet
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Última generación con capacidades
+                                            mejoradas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-orange-800/20 to-amber-800/20 rounded-xl p-4 border border-orange-500/20"
+                            >
+                                <div
+                                    class="text-sm text-orange-300 font-medium mb-2"
+                                >
+                                    💡 Para Developers
+                                </div>
+                                <p class="text-gray-400 text-sm">
+                                    Claude excede a otros modelos en tareas de
+                                    reasoning complejo, análisis de código
+                                    legacy y diseño de arquitecturas escalables.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            
-            <div class="space-y-6">
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🚀 Familia Claude</h3>
-                
-                <div class="space-y-4 text-sm">
-                  <div class="border-l-4 border-orange-500 pl-4">
-                    <div class="font-semibold text-orange-300">Claude 3 Haiku</div>
-                    <div class="text-gray-400">Rápido y eficiente para tareas simples</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-amber-500 pl-4">
-                    <div class="font-semibold text-amber-300">Claude 3 Sonnet</div>
-                    <div class="text-gray-400">Balance perfecto entre velocidad y capacidad</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-yellow-500 pl-4">
-                    <div class="font-semibold text-yellow-300">Claude 3.5 Sonnet</div>
-                    <div class="text-gray-400">El más avanzado para desarrollo complejo</div>
-                  </div>
+            </section>
+
+            <!-- Capacidades Técnicas -->
+            <section id="capacidades" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚡ Capacidades Técnicas
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-orange-500/20"
+                        >
+                            <div class="text-3xl mb-4">📊</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Análisis de Codebase
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Large Context:</strong> Hasta 200K
+                                    tokens
+                                </li>
+                                <li>
+                                    • <strong>Full Project Analysis:</strong> Entiende
+                                    arquitecturas completas
+                                </li>
+                                <li>
+                                    • <strong>Dependencies Mapping:</strong> Rastrea
+                                    conexiones entre módulos
+                                </li>
+                                <li>
+                                    • <strong>Technical Debt:</strong> Identifica
+                                    áreas de mejora
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-amber-500/20"
+                        >
+                            <div class="text-3xl mb-4">🔒</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Security-First Approach
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Vulnerability Detection:</strong> OWASP
+                                    Top 10 coverage
+                                </li>
+                                <li>
+                                    • <strong>Secure Coding:</strong> Patterns seguros
+                                    por defecto
+                                </li>
+                                <li>
+                                    • <strong>Privacy Compliance:</strong> GDPR,
+                                    CCPA considerations
+                                </li>
+                                <li>
+                                    • <strong>Risk Assessment:</strong> Evalúa impacto
+                                    de cambios
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-yellow-500/20"
+                        >
+                            <div class="text-3xl mb-4">🏗️</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Architecture Design
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>System Design:</strong> Microservices,
+                                    monoliths
+                                </li>
+                                <li>
+                                    • <strong>Scalability Planning:</strong> Load
+                                    balancing strategies
+                                </li>
+                                <li>
+                                    • <strong>Data Modeling:</strong> Database design
+                                    optimizado
+                                </li>
+                                <li>
+                                    • <strong>API Design:</strong> RESTful, GraphQL
+                                    best practices
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-orange-600/20"
+                        >
+                            <div class="text-3xl mb-4">🧪</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Code Quality
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Test Strategy:</strong> Unit, integration,
+                                    e2e
+                                </li>
+                                <li>
+                                    • <strong>Performance Optimization:</strong>
+                                    Bottleneck analysis
+                                </li>
+                                <li>
+                                    • <strong>Refactoring Safe:</strong> Preserva
+                                    funcionalidad
+                                </li>
+                                <li>
+                                    • <strong>Documentation:</strong> Comments y
+                                    docs claros
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
+            </section>
+
+            <!-- Para Developers -->
+            <section id="para-devs" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    👨‍💻 Claude para Developers
+                </h2>
+
+                <div class="bg-gray-900 rounded-xl p-8">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🤔</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Deep Reasoning
+                            </h3>
+                            <p class="text-gray-400 text-sm">
+                                Claude puede seguir cadenas de lógica complejas,
+                                ideal para debugging de algoritmos avanzados y
+                                optimización de sistemas distribuidos.
+                            </p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">📖</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Code Comprehension
+                            </h3>
+                            <p class="text-gray-400 text-sm">
+                                Entiende codebases legacy, documenta
+                                funcionalidad existente y sugiere mejoras
+                                incrementales sin romper funcionalidad crítica.
+                            </p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🎯</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Precise Solutions
+                            </h3>
+                            <p class="text-gray-400 text-sm">
+                                Respuestas específicas y actionable, con
+                                ejemplos de código que realmente funcionan en
+                                production environments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos Prácticos -->
+            <section id="ejemplos" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    💡 Ejemplos Prácticos
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-orange-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🔍 Análisis de Performance Issues
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-orange-300 mb-2"
+                                    >
+                                        Escenario Real
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        "Nuestra API de Node.js tiene response
+                                        times de 3+ segundos. El database está
+                                        optimizado pero el problema persiste."
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-amber-300 mb-2">
+                                    Claude Analysis Process
+                                </div>
+                                <ol
+                                    class="text-gray-400 text-sm space-y-1 list-decimal list-inside"
+                                >
+                                    <li>
+                                        <strong>Code Review:</strong> Analiza async/await
+                                        patterns
+                                    </li>
+                                    <li>
+                                        <strong>Architecture Assessment:</strong
+                                        > Identifica I/O blocking
+                                    </li>
+                                    <li>
+                                        <strong>Bottleneck Detection:</strong> CPU
+                                        vs I/O bound operations
+                                    </li>
+                                    <li>
+                                        <strong>Solution Strategy:</strong> Parallelization
+                                        opportunities
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Claude's Response
+                                </div>
+                                <pre
+                                    class="text-xs text-amber-400"><code>{`Analysis suggests sequential database calls:
+
+**Problem Pattern:**
+for (const user of users) {
+  const profile = await db.getProfile(user.id);
+  const permissions = await db.getPermissions(user.id);
+  results.push({...user, profile, permissions});
+}
+
+**Optimized Solution:**
+const userIds = users.map(u => u.id);
+const [profiles, permissions] = await Promise.all([
+  db.getProfiles(userIds),
+  db.getPermissions(userIds)
+]);
+
+// Parallel processing reduces 3s to ~300ms
+const results = users.map(user => ({
+  ...user,
+  profile: profiles[user.id],
+  permissions: permissions[user.id]
+}));
+
+**Additional Optimizations:**
+- Implement Redis caching for permissions
+- Use database connection pooling
+- Add request-level caching middleware`}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-yellow-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🏗️ Microservices Architecture Design
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-yellow-300 mb-2"
+                                    >
+                                        Design Challenge
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        "Necesitamos migrar un monolito de
+                                        e-commerce a microservices. ¿Cómo
+                                        dividir sin afectar performance ni crear
+                                        coupling?"
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-orange-300 mb-2">
+                                    Claude's Strategic Approach
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>Domain Analysis:</strong> Identifica
+                                        bounded contexts
+                                    </li>
+                                    <li>
+                                        • <strong>Data Flow Mapping:</strong> Encuentra
+                                        transaction boundaries
+                                    </li>
+                                    <li>
+                                        • <strong>Migration Strategy:</strong> Strangler
+                                        fig pattern
+                                    </li>
+                                    <li>
+                                        • <strong
+                                            >Communication Patterns:</strong
+                                        > Sync vs async APIs
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Architecture Recommendation
+                                </div>
+                                <pre
+                                    class="text-xs text-yellow-400"><code>{`**Phase 1: Core Services Extraction**
+
+┌─ User Service ─────────────────┐
+│ • Authentication              │
+│ • Profile management          │
+│ • Session handling            │
+└───────────────────────────────┘
+
+┌─ Product Catalog Service ─────┐
+│ • Product information         │
+│ • Inventory management        │
+│ • Search & filtering          │
+└───────────────────────────────┘
+
+┌─ Order Service ───────────────┐
+│ • Order processing            │
+│ • Payment integration         │
+│ • Order history              │
+└───────────────────────────────┘
+
+**Communication Strategy:**
+- Synchronous: User auth, product lookup
+- Asynchronous: Order events, inventory updates
+- Event Sourcing: Order state changes
+- CQRS: Separate read/write models
+
+**Data Strategy:**
+- Database per service
+- Eventual consistency
+- Saga pattern for distributed transactions`}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comparación -->
+            <section id="comparacion" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚖️ Claude vs Competencia
+                </h2>
+
+                <div class="bg-gray-900 rounded-xl p-8">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-gray-700">
+                                    <th class="text-left text-white py-3 px-4"
+                                        >Característica</th
+                                    >
+                                    <th
+                                        class="text-center text-orange-400 py-3 px-4"
+                                        >Claude 3</th
+                                    >
+                                    <th
+                                        class="text-center text-gray-400 py-3 px-4"
+                                        >ChatGPT-4</th
+                                    >
+                                    <th
+                                        class="text-center text-gray-400 py-3 px-4"
+                                        >Gemini Pro</th
+                                    >
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-400">
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium"
+                                        >Context Window</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-orange-900/30 text-orange-300 px-2 py-1 rounded text-xs"
+                                            >200K tokens</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4"
+                                        >128K tokens</td
+                                    >
+                                    <td class="text-center py-3 px-4"
+                                        >32K tokens</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium"
+                                        >Code Analysis</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >Excelente</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4"
+                                        >Muy Bueno</td
+                                    >
+                                    <td class="text-center py-3 px-4">Bueno</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium"
+                                        >Security Focus</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >Superior</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4">Bueno</td>
+                                    <td class="text-center py-3 px-4">Básico</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium"
+                                        >Reasoning Complex</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >Líder</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4"
+                                        >Muy Bueno</td
+                                    >
+                                    <td class="text-center py-3 px-4">Bueno</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium">Speed</td>
+                                    <td class="text-center py-3 px-4">Rápido</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >Muy Rápido</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4">Rápido</td
+                                    >
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 font-medium">Precio</td
+                                    >
+                                    <td class="text-center py-3 px-4"
+                                        >$20/mes</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >$20/mes</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4"
+                                        >$20/mes</td
+                                    >
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div
+                        class="mt-6 bg-orange-900/20 border border-orange-600/30 p-4 rounded-lg"
+                    >
+                        <div class="text-sm text-orange-300 font-medium mb-2">
+                            🎯 Veredicto para Developers
+                        </div>
+                        <p class="text-gray-400 text-sm">
+                            Claude destaca en <strong
+                                >análisis profundo de código</strong
+                            > y <strong>reasoning complejo</strong>. Ideal para
+                            arquitecturas enterprise, code reviews exhaustivos y
+                            problemas que requieren pensamiento sistemático.
+                            ChatGPT sigue siendo mejor para velocidad y tareas
+                            generales.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Planes -->
+            <section class="mb-12">
+                <div
+                    class="bg-gradient-to-r from-orange-900/20 to-amber-900/20 border border-orange-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        💼 Planes Disponibles
+                    </h2>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🆓 Free
+                            </h3>
+                            <div class="text-2xl font-bold text-gray-400 mb-2">
+                                $0
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Limitado pero potente
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Claude 3 Haiku</li>
+                                <li>• Rate limits</li>
+                                <li>• Conversaciones básicas</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-orange-500/50"
+                        >
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                ⭐ Pro
+                            </h3>
+                            <div
+                                class="text-2xl font-bold text-orange-400 mb-2"
+                            >
+                                $20/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para uso profesional
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Claude 3 Opus</li>
+                                <li>• 5x más mensajes</li>
+                                <li>• Priority access</li>
+                                <li>• Early features</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🏢 Team
+                            </h3>
+                            <div class="text-2xl font-bold text-amber-400 mb-2">
+                                $25/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Por usuario en equipo
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Todo de Pro</li>
+                                <li>• Team collaboration</li>
+                                <li>• Admin controls</li>
+                                <li>• Usage analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-      </section>
 
-      <!-- Capacidades -->
-      <section id="capacidades" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">⚡ Capacidades Extraordinarias</h2>
-        
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-gray-900 rounded-xl p-6 border border-orange-500/20">
-            <div class="text-3xl mb-4">📖</div>
-            <h3 class="text-xl font-semibold text-white mb-3">Context Window Masivo</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• 200K tokens (Claude 3.5)</li>
-              <li>• Analiza bases de código completas</li>
-              <li>• Retiene contexto conversacional</li>
-              <li>• Procesa documentación extensa</li>
-            </ul>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-6 border border-amber-500/20">
-            <div class="text-3xl mb-4">🛡️</div>
-            <h3 class="text-xl font-semibold text-white mb-3">Constitutional AI</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• Código más seguro por diseño</li>
-              <li>• Evita vulnerabilidades conocidas</li>
-              <li>• Respuestas más honestas</li>
-              <li>• Rechaza requests peligrosos</li>
-            </ul>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-6 border border-yellow-500/20">
-            <div class="text-3xl mb-4">�</div>
-            <h3 class="text-xl font-semibold text-white mb-3">Precisión Técnica</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• Menos alucinaciones</li>
-              <li>• Cita fuentes cuando es relevante</li>
-              <li>• Admite limitaciones</li>
-              <li>• Explica razonamiento paso a paso</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Para Developers -->
-      <section id="para-devs" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">👨‍💻 Claude para Developers</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-gray-900 rounded-xl p-6 border border-orange-500/20">
-            <div class="text-3xl mb-4">🧮</div>
-            <h3 class="text-xl font-semibold text-white mb-3">Análisis de Código Profundo</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• Comprende arquitecturas complejas</li>
-              <li>• Identifica anti-patterns</li>
-              <li>• Sugiere refactoring inteligente</li>
-              <li>• Analiza performance implications</li>
-            </ul>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-6 border border-amber-500/20">
-            <div class="text-3xl mb-4">🔐</div>
-            <h3 class="text-xl font-semibold text-white mb-3">Security-First Approach</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• Detecta vulnerabilidades OWASP</li>
-              <li>• Sugiere secure coding practices</li>
-              <li>• Valida inputs automáticamente</li>
-              <li>• Implementa principio least privilege</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Casos de Uso -->
-      <section id="casos-uso" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🛠️ Casos de Uso Específicos</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-emerald-500/20">
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 class="text-xl font-semibold text-white mb-4">🐛 Debugging Complejo</h3>
-                
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-orange-300 mb-2">Problema Real</div>
-                  <p class="text-gray-400 text-sm">
-                    "Mi aplicación React tiene memory leaks intermitentes. 
-                    El profiler muestra picos de memoria pero no identifico la causa."
-                  </p>
-                </div>
-                
-                <div class="font-semibold text-emerald-300 mb-2">Approach ChatGPT</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• <strong>Code Analysis:</strong> Analiza useEffect hooks</li>
-                  <li>• <strong>Pattern Detection:</strong> Identifica event listeners sin cleanup</li>
-                  <li>• <strong>Solution Steps:</strong> Plan sistemático de debugging</li>
-                  <li>• <strong>Prevention:</strong> Mejores prácticas para evitar leaks</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">ChatGPT Response Example</div>
-                <pre class="text-xs text-emerald-400"><code>{`Analyzing your React memory leak issue:
-
-1. **Common Causes:**
-   - Event listeners not cleaned up
-   - Timers/intervals not cleared
-   - WebSocket connections not closed
-   - Subscriptions not unsubscribed
-
-2. **Debug Strategy:**
-   - Use React DevTools Profiler
-   - Check for missing cleanup in useEffect
-   - Audit third-party libraries
-
-3. **Quick Fix Pattern:**
-useEffect(() => {
-  const handleScroll = () => { /* logic */ };
-  window.addEventListener('scroll', handleScroll);
-  
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);`}</code></pre>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-teal-500/20">
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 class="text-xl font-semibold text-white mb-4">🏗️ Architecture Design</h3>
-                
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-orange-300 mb-2">Design Challenge</div>
-                  <p class="text-gray-400 text-sm">
-                    "Necesito diseñar un sistema de notifications en tiempo real 
-                    para 100K usuarios. ¿WebSockets, SSE, o Push Notifications?"
-                  </p>
-                </div>
-                
-                <div class="font-semibold text-teal-300 mb-2">ChatGPT Analysis</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• <strong>Technology Comparison:</strong> Pros/cons de cada approach</li>
-                  <li>• <strong>Scalability Analysis:</strong> Load balancing strategies</li>
-                  <li>• <strong>Implementation Plan:</strong> Fases de desarrollo</li>
-                  <li>• <strong>Fallback Strategies:</strong> Reliability patterns</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Architecture Recommendation</div>
-                <pre class="text-xs text-teal-400"><code>{`For 100K users real-time notifications:
-
-**Recommended Hybrid Approach:**
-
-1. **WebSockets** for active users (online)
-   - Socket.io with Redis adapter
-   - Horizontal scaling with sticky sessions
-
-2. **Push Notifications** for offline users
-   - FCM for mobile, Web Push for browsers
-   - Queue-based delivery with retry logic
-
-3. **Architecture:**
-   ┌─ Load Balancer ─┬─ Node.js (WS) ─┐
-   │                 ├─ Node.js (WS) ─┤
-   │                 └─ Node.js (WS) ─┘
-   │
-   ├─ Redis Cluster (pub/sub)
-   ├─ Message Queue (RabbitMQ)
-   └─ Push Service (FCM/APNS)`}</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Ejemplos -->
-      <section id="ejemplos" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">💡 Ejemplos de Interacción</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-4">📝 Code Generation</h3>
-              
-              <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                <div class="text-xs text-gray-400 mb-2">Tu prompt:</div>
-                <div class="text-yellow-400 text-sm">
-                  "Crea una función en Python que procese un CSV de ventas 
-                  y genere un reporte con totales por categoría"
-                </div>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">ChatGPT responde:</div>
-                <pre class="text-xs text-emerald-400"><code>{`import pandas as pd
-from collections import defaultdict
-
-def process_sales_report(csv_file):
-    """
-    Procesa CSV de ventas y genera reporte por categoría
-    """
-    try:
-        # Leer CSV
-        df = pd.read_csv(csv_file)
-        
-        # Validar columnas requeridas
-        required_cols = ['categoria', 'monto', 'fecha']
-        if not all(col in df.columns for col in required_cols):
-            raise ValueError(f"CSV debe contener: {required_cols}")
-        
-        # Procesar datos
-        report = df.groupby('categoria').agg({
-            'monto': ['sum', 'mean', 'count'],
-            'fecha': ['min', 'max']
-        }).round(2)
-        
-        return report
-        
-    except Exception as e:
-        print(f"Error procesando archivo: {e}")
-        return None`}</code></pre>
-              </div>
-            </div>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-4">🔍 Code Review</h3>
-              
-              <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                <div class="text-xs text-gray-400 mb-2">Tu código:</div>
-                <pre class="text-xs text-red-400"><code>{`// Código a revisar
-async function getUserData(userId) {
-  const user = await db.query('SELECT * FROM users WHERE id = ' + userId);
-  if (user) {
-    return user;
-  } else {
-    return null;
-  }
-}`}</code></pre>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">ChatGPT identifica:</div>
-                <div class="text-emerald-400 text-sm space-y-2">
-                  <div>🚨 <strong>SQL Injection:</strong> Nunca concatenar input del usuario</div>
-                  <div>⚡ <strong>Simplificar:</strong> Return directo sin if/else</div>
-                  <div>🛡️ <strong>Error Handling:</strong> Añadir try/catch</div>
-                  <div class="mt-3">
-                    <pre class="text-xs text-green-400"><code>{`// Versión mejorada:
-async function getUserData(userId) {
-  try {
-    const user = await db.query(
-      'SELECT * FROM users WHERE id = ?', 
-      [userId]
-    );
-    return user || null;
-  } catch (error) {
-    console.error('Database error:', error);
-    throw new Error('Failed to fetch user');
-  }
-}`}</code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Tips Avanzados -->
-      <section id="tips" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🎯 Tips Avanzados para Developers</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-gray-900 rounded-xl p-6">
-            <h3 class="text-lg font-semibold text-white mb-4">💡 Prompts Efectivos</h3>
-            
-            <div class="space-y-4 text-sm">
-              <div class="bg-emerald-900/20 border border-emerald-600/30 p-4 rounded-lg">
-                <div class="font-semibold text-emerald-300 mb-2">✅ Específico y Contextual</div>
-                <div class="text-gray-300">
-                  "Actúa como senior developer. Revisar este código TypeScript de React 
-                  para una aplicación de e-commerce. Enfócate en performance y security."
-                </div>
-              </div>
-              
-              <div class="bg-red-900/20 border border-red-600/30 p-4 rounded-lg">
-                <div class="font-semibold text-red-300 mb-2">❌ Vago y General</div>
-                <div class="text-gray-300">
-                  "Ayúdame con mi código"
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-6">
-            <h3 class="text-lg font-semibold text-white mb-4">🔧 Workflows Productivos</h3>
-            
-            <div class="space-y-3 text-sm">
-              <div class="border-l-4 border-emerald-500 pl-4">
-                <div class="font-semibold text-emerald-300">1. Define el Contexto</div>
-                <div class="text-gray-400">Stack tecnológico, objetivo del proyecto</div>
-              </div>
-              
-              <div class="border-l-4 border-teal-500 pl-4">
-                <div class="font-semibold text-teal-300">2. Explica el Problema</div>
-                <div class="text-gray-400">Error específico, comportamiento esperado vs actual</div>
-              </div>
-              
-              <div class="border-l-4 border-cyan-500 pl-4">
-                <div class="font-semibold text-cyan-300">3. Incluye Código Relevante</div>
-                <div class="text-gray-400">Snippets específicos, logs de error</div>
-              </div>
-              
-              <div class="border-l-4 border-blue-500 pl-4">
-                <div class="font-semibold text-blue-300">4. Pide Explicaciones</div>
-                <div class="text-gray-400">"Explica el razonamiento detrás de la solución"</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Planes -->
-      <section class="mb-12">
-        <div class="bg-gradient-to-r from-emerald-900/20 to-teal-900/20 border border-emerald-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">💼 Planes Disponibles</h2>
-          
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🆓 Free</h3>
-              <div class="text-2xl font-bold text-gray-400 mb-2">$0</div>
-              <div class="text-gray-400 text-sm mb-4">Limitado pero funcional</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• GPT-3.5 access</li>
-                <li>• Rate limits</li>
-                <li>• Funciones básicas</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-emerald-500/50">
-              <h3 class="text-lg font-semibold text-white mb-3">⭐ Plus</h3>
-              <div class="text-2xl font-bold text-emerald-400 mb-2">$20/mes</div>
-              <div class="text-gray-400 text-sm mb-4">Para uso profesional</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• GPT-4 access</li>
-                <li>• Priority access</li>
-                <li>• Faster responses</li>
-                <li>• Advanced features</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🏢 Team</h3>
-              <div class="text-2xl font-bold text-teal-400 mb-2">$25/mes</div>
-              <div class="text-gray-400 text-sm mb-4">Por usuario en equipo</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Todo de Plus</li>
-                <li>• Shared workspace</li>
-                <li>• Admin controls</li>
-                <li>• Team analytics</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </div>
-  </main>
+        <RelatedTools tools={relatedTools} currentTool="Claude" />
+    </main>
 </Layout>
