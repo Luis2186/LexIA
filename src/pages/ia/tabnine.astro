@@ -1,298 +1,574 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Tabnine - AI Code Completion | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-blue-900 via-cyan-900 to-teal-900 py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-4xl">
-            🧠
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Tabnine</h1>
-            <p class="text-xl text-blue-300">AI-Powered Code Completion</p>
-            <p class="text-gray-400">by Tabnine Ltd.</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          Tabnine revoluciona el coding experience con AI code completion que predice 
-          tu next line of code con precisión, aprende de tu codebase y acelera 
-          development hasta 30% mientras mantiene tu código privado y seguro.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-blue-400 hover:text-blue-300 whitespace-nowrap transition-colors">¿Qué es?</a>
-          <a href="#ai-features" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Features IA</a>
-          <a href="#code-completion" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Code Completion</a>
-          <a href="#ejemplos" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Ejemplos</a>
-          <a href="#beneficios" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Beneficios</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- ¿Qué es Tabnine? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-blue-900/20 to-cyan-900/20 border border-blue-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">🧠 ¿Qué es Tabnine?</h2>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-4">
-              <p class="text-gray-300 leading-relaxed">
-                <strong>Tabnine</strong> es el AI code assistant pionero que utiliza machine learning 
-                para predecir y completar tu código en tiempo real. Entrenado en billions of lines 
-                of code, Tabnine entiende tu context, coding style y project patterns para 
-                ofrecer suggestions ultra-precisas.
-              </p>
-              
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🎯 Core Innovation</h3>
-                
-                <div class="space-y-3 text-sm">
-                  <div class="flex items-start gap-3">
-                    <span class="text-blue-400">🤖</span>
-                    <div>
-                      <div class="text-white font-medium">Predictive AI</div>
-                      <div class="text-gray-400">Predice next lines con 85%+ accuracy</div>
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-blue-900 via-cyan-900 to-teal-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🧠
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-cyan-400">🛡️</span>
                     <div>
-                      <div class="text-white font-medium">Privacy First</div>
-                      <div class="text-gray-400">Tu código nunca sale de tu environment</div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            Tabnine
+                        </h1>
+                        <p class="text-xl text-blue-300">
+                            AI-Powered Code Completion
+                        </p>
+                        <p class="text-gray-400">by Tabnine Ltd.</p>
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-teal-400">📚</span>
-                    <div>
-                      <div class="text-white font-medium">Context Learning</div>
-                      <div class="text-gray-400">Adapts to your codebase y team style</div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    Tabnine revoluciona el coding experience con AI code
+                    completion que predice tu next line of code con precisión,
+                    aprende de tu codebase y acelera development hasta 30%
+                    mientras mantiene tu código privado y seguro.
+                </p>
             </div>
-            
-            <div class="space-y-6">
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🚀 Productivity Boost</h3>
-                
-                <div class="space-y-4 text-sm">
-                  <div class="border-l-4 border-blue-500 pl-4">
-                    <div class="font-semibold text-blue-300">Faster Coding</div>
-                    <div class="text-gray-400">Write code 30% faster con intelligent suggestions</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-cyan-500 pl-4">
-                    <div class="font-semibold text-cyan-300">Fewer Bugs</div>
-                    <div class="text-gray-400">AI sugiere correct patterns y best practices</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-teal-500 pl-4">
-                    <div class="font-semibold text-teal-300">Learning Acceleration</div>
-                    <div class="text-gray-400">Discover APIs y frameworks mientras codeas</div>
-                  </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-blue-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#ai-features"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Features IA</a
+                    >
+                    <a
+                        href="#code-completion"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Code Completion</a
+                    >
+                    <a
+                        href="#ejemplos"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Ejemplos</a
+                    >
+                    <a
+                        href="#beneficios"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Beneficios</a
+                    >
                 </div>
-              </div>
-              
-              <div class="bg-gradient-to-r from-blue-800/20 to-cyan-800/20 rounded-xl p-4 border border-blue-500/20">
-                <div class="text-sm text-blue-300 font-medium mb-2">🎯 Ideal Para</div>
-                <p class="text-gray-400 text-sm">
-                  Developers de todos los levels, teams que valoran privacy, 
-                  enterprises con strict security requirements y cualquier 
-                  proyecto que busque accelerate development velocity.
-                </p>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </nav>
 
-      <!-- AI Features -->
-      <section id="ai-features" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🤖 Features de IA Avanzada</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-blue-500/20">
-              <div class="text-3xl mb-4">🧠</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Deep Code Understanding</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Contextual Awareness:</strong> Entiende function scope y variables</li>
-                <li>• <strong>Pattern Recognition:</strong> Aprende de coding patterns existentes</li>
-                <li>• <strong>API Discovery:</strong> Sugiere relevant APIs y methods</li>
-                <li>• <strong>Cross-File Context:</strong> Analiza imports y dependencies</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-cyan-500/20">
-              <div class="text-3xl mb-4">⚡</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Real-Time Completion</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Line Completion:</strong> Completa entire lines con context</li>
-                <li>• <strong>Function Generation:</strong> Sugiere whole functions</li>
-                <li>• <strong>Variable Naming:</strong> Intelligent variable y method names</li>
-                <li>• <strong>Code Blocks:</strong> Multi-line code structures</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-teal-500/20">
-              <div class="text-3xl mb-4">🛡️</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Privacy & Security</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Local Processing:</strong> AI model runs en tu machine</li>
-                <li>• <strong>Zero Data Sharing:</strong> Tu código never leaves your device</li>
-                <li>• <strong>Compliance Ready:</strong> GDPR, SOC2, HIPAA compatible</li>
-                <li>• <strong>Air-Gapped Mode:</strong> Complete offline operation</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-blue-600/20">
-              <div class="text-3xl mb-4">📊</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Team Integration</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Team Models:</strong> Custom AI trained on team codebase</li>
-                <li>• <strong>Coding Standards:</strong> Enforces team conventions</li>
-                <li>• <strong>Knowledge Sharing:</strong> Best practices distribution</li>
-                <li>• <strong>Onboarding:</strong> New team member acceleration</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es Tabnine? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-blue-900/20 to-cyan-900/20 border border-blue-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🧠 ¿Qué es Tabnine?
+                    </h2>
 
-      <!-- Code Completion -->
-      <section id="code-completion" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">⚙️ Advanced Code Completion</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-blue-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6 text-center">🚀 AI Completion Pipeline</h3>
-            
-            <div class="grid md:grid-cols-4 gap-6">
-              <div class="text-center">
-                <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">1</div>
-                <h4 class="font-semibold text-white mb-2">📊 Context Analysis</h4>
-                <p class="text-gray-400 text-sm">
-                  AI analiza current file, imports, 
-                  variables y function signatures.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">2</div>
-                <h4 class="font-semibold text-white mb-2">🎯 Pattern Matching</h4>
-                <p class="text-gray-400 text-sm">
-                  Matches current context con learned 
-                  patterns de millions of codebases.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">3</div>
-                <h4 class="font-semibold text-white mb-2">🧠 Prediction Generation</h4>
-                <p class="text-gray-400 text-sm">
-                  Genera multiple completion options 
-                  ranked by relevance y accuracy.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">4</div>
-                <h4 class="font-semibold text-white mb-2">✨ Smart Suggestion</h4>
-                <p class="text-gray-400 text-sm">
-                  Presents best suggestions en real-time 
-                  while you type.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-cyan-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🚀 Language & IDE Support</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <h4 class="font-semibold text-blue-300 mb-3">Programming Languages</h4>
-                <ul class="text-gray-400 text-sm space-y-2">
-                  <li>• <strong>JavaScript/TypeScript:</strong> Full ES6+ support</li>
-                  <li>• <strong>Python:</strong> Data science y web frameworks</li>
-                  <li>• <strong>Java/Kotlin:</strong> Enterprise y Android development</li>
-                  <li>• <strong>C#/.NET:</strong> Microsoft ecosystem optimization</li>
-                  <li>• <strong>Go/Rust:</strong> Performance-focused development</li>
-                  <li>• <strong>PHP/Ruby:</strong> Web development frameworks</li>
-                  <li>• <strong>C/C++:</strong> System programming support</li>
-                  <li>• <strong>Swift:</strong> iOS y macOS development</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 class="font-semibold text-cyan-300 mb-3">IDE Integration</h4>
-                <ul class="text-gray-400 text-sm space-y-2">
-                  <li>• <strong>VS Code:</strong> Native extension con rich features</li>
-                  <li>• <strong>IntelliJ IDEA:</strong> JetBrains ecosystem integration</li>
-                  <li>• <strong>PyCharm:</strong> Python-specific optimizations</li>
-                  <li>• <strong>WebStorm:</strong> JavaScript y frontend focus</li>
-                  <li>• <strong>Eclipse:</strong> Java enterprise development</li>
-                  <li>• <strong>Vim/Neovim:</strong> Terminal-based coding</li>
-                  <li>• <strong>Sublime Text:</strong> Lightweight integration</li>
-                  <li>• <strong>Atom:</strong> Community-driven support</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong>Tabnine</strong> es el AI code assistant
+                                pionero que utiliza machine learning para predecir
+                                y completar tu código en tiempo real. Entrenado en
+                                billions of lines of code, Tabnine entiende tu context,
+                                coding style y project patterns para ofrecer suggestions
+                                ultra-precisas.
+                            </p>
 
-      <!-- Ejemplos Prácticos -->
-      <section id="ejemplos" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">💡 Casos de Uso Reales</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-blue-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🚀 React Component Generation</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-blue-300 mb-2">You Type</div>
-                  <pre class="text-xs text-gray-400"><code>{`// Creating a user profile component
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🎯 Core Innovation
+                                </h3>
+
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-blue-400">🤖</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Predictive AI
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Predice next lines con 85%+
+                                                accuracy
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-cyan-400">🛡️</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Privacy First
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Tu código nunca sale de tu
+                                                environment
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-teal-400">📚</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Context Learning
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Adapts to your codebase y team
+                                                style
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🚀 Productivity Boost
+                                </h3>
+
+                                <div class="space-y-4 text-sm">
+                                    <div
+                                        class="border-l-4 border-blue-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-blue-300"
+                                        >
+                                            Faster Coding
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Write code 30% faster con
+                                            intelligent suggestions
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-cyan-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-cyan-300"
+                                        >
+                                            Fewer Bugs
+                                        </div>
+                                        <div class="text-gray-400">
+                                            AI sugiere correct patterns y best
+                                            practices
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-teal-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-teal-300"
+                                        >
+                                            Learning Acceleration
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Discover APIs y frameworks mientras
+                                            codeas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-blue-800/20 to-cyan-800/20 rounded-xl p-4 border border-blue-500/20"
+                            >
+                                <div
+                                    class="text-sm text-blue-300 font-medium mb-2"
+                                >
+                                    🎯 Ideal Para
+                                </div>
+                                <p class="text-gray-400 text-sm">
+                                    Developers de todos los levels, teams que
+                                    valoran privacy, enterprises con strict
+                                    security requirements y cualquier proyecto
+                                    que busque accelerate development velocity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Features -->
+            <section id="ai-features" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🤖 Features de IA Avanzada
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-blue-500/20"
+                        >
+                            <div class="text-3xl mb-4">🧠</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Deep Code Understanding
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Contextual Awareness:</strong> Entiende
+                                    function scope y variables
+                                </li>
+                                <li>
+                                    • <strong>Pattern Recognition:</strong> Aprende
+                                    de coding patterns existentes
+                                </li>
+                                <li>
+                                    • <strong>API Discovery:</strong> Sugiere relevant
+                                    APIs y methods
+                                </li>
+                                <li>
+                                    • <strong>Cross-File Context:</strong> Analiza
+                                    imports y dependencies
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-cyan-500/20"
+                        >
+                            <div class="text-3xl mb-4">⚡</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Real-Time Completion
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Line Completion:</strong> Completa
+                                    entire lines con context
+                                </li>
+                                <li>
+                                    • <strong>Function Generation:</strong> Sugiere
+                                    whole functions
+                                </li>
+                                <li>
+                                    • <strong>Variable Naming:</strong> Intelligent
+                                    variable y method names
+                                </li>
+                                <li>
+                                    • <strong>Code Blocks:</strong> Multi-line code
+                                    structures
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-teal-500/20"
+                        >
+                            <div class="text-3xl mb-4">🛡️</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Privacy & Security
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Local Processing:</strong> AI model
+                                    runs en tu machine
+                                </li>
+                                <li>
+                                    • <strong>Zero Data Sharing:</strong> Tu código
+                                    never leaves your device
+                                </li>
+                                <li>
+                                    • <strong>Compliance Ready:</strong> GDPR, SOC2,
+                                    HIPAA compatible
+                                </li>
+                                <li>
+                                    • <strong>Air-Gapped Mode:</strong> Complete
+                                    offline operation
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-blue-600/20"
+                        >
+                            <div class="text-3xl mb-4">📊</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Team Integration
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Team Models:</strong> Custom AI trained
+                                    on team codebase
+                                </li>
+                                <li>
+                                    • <strong>Coding Standards:</strong> Enforces
+                                    team conventions
+                                </li>
+                                <li>
+                                    • <strong>Knowledge Sharing:</strong> Best practices
+                                    distribution
+                                </li>
+                                <li>
+                                    • <strong>Onboarding:</strong> New team member
+                                    acceleration
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Code Completion -->
+            <section id="code-completion" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚙️ Advanced Code Completion
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-blue-500/20"
+                    >
+                        <h3
+                            class="text-xl font-semibold text-white mb-6 text-center"
+                        >
+                            🚀 AI Completion Pipeline
+                        </h3>
+
+                        <div class="grid md:grid-cols-4 gap-6">
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    1
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    📊 Context Analysis
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    AI analiza current file, imports, variables
+                                    y function signatures.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    2
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🎯 Pattern Matching
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Matches current context con learned patterns
+                                    de millions of codebases.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    3
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🧠 Prediction Generation
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Genera multiple completion options ranked by
+                                    relevance y accuracy.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    4
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    ✨ Smart Suggestion
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Presents best suggestions en real-time while
+                                    you type.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-cyan-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🚀 Language & IDE Support
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-blue-300 mb-3">
+                                    Programming Languages
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>JavaScript/TypeScript:</strong
+                                        > Full ES6+ support
+                                    </li>
+                                    <li>
+                                        • <strong>Python:</strong> Data science y
+                                        web frameworks
+                                    </li>
+                                    <li>
+                                        • <strong>Java/Kotlin:</strong> Enterprise
+                                        y Android development
+                                    </li>
+                                    <li>
+                                        • <strong>C#/.NET:</strong> Microsoft ecosystem
+                                        optimization
+                                    </li>
+                                    <li>
+                                        • <strong>Go/Rust:</strong> Performance-focused
+                                        development
+                                    </li>
+                                    <li>
+                                        • <strong>PHP/Ruby:</strong> Web development
+                                        frameworks
+                                    </li>
+                                    <li>
+                                        • <strong>C/C++:</strong> System programming
+                                        support
+                                    </li>
+                                    <li>
+                                        • <strong>Swift:</strong> iOS y macOS development
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-cyan-300 mb-3">
+                                    IDE Integration
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>VS Code:</strong> Native extension
+                                        con rich features
+                                    </li>
+                                    <li>
+                                        • <strong>IntelliJ IDEA:</strong> JetBrains
+                                        ecosystem integration
+                                    </li>
+                                    <li>
+                                        • <strong>PyCharm:</strong> Python-specific
+                                        optimizations
+                                    </li>
+                                    <li>
+                                        • <strong>WebStorm:</strong> JavaScript y
+                                        frontend focus
+                                    </li>
+                                    <li>
+                                        • <strong>Eclipse:</strong> Java enterprise
+                                        development
+                                    </li>
+                                    <li>
+                                        • <strong>Vim/Neovim:</strong> Terminal-based
+                                        coding
+                                    </li>
+                                    <li>
+                                        • <strong>Sublime Text:</strong> Lightweight
+                                        integration
+                                    </li>
+                                    <li>
+                                        • <strong>Atom:</strong> Community-driven
+                                        support
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos Prácticos -->
+            <section id="ejemplos" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    💡 Casos de Uso Reales
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-blue-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🚀 React Component Generation
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-blue-300 mb-2"
+                                    >
+                                        You Type
+                                    </div>
+                                    <pre
+                                        class="text-xs text-gray-400"><code>{`// Creating a user profile component
 function UserProfile({ user }) {
   const [editing, setEditing] = useState(false);
   
   const handleEdit = () => {
     // Tabnine predicts next lines...`}</code></pre>
-                </div>
-                
-                <div class="font-semibold text-cyan-300 mb-2">Context Analysis</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• <strong>Component:</strong> React functional component</li>
-                  <li>• <strong>State:</strong> useState hook para editing mode</li>
-                  <li>• <strong>Pattern:</strong> Common profile editing pattern</li>
-                  <li>• <strong>Props:</strong> User object con typical properties</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Tabnine AI Completion</div>
-                <pre class="text-xs text-blue-400"><code>{`// ✨ AI-Generated Completion
+                                </div>
+
+                                <div class="font-semibold text-cyan-300 mb-2">
+                                    Context Analysis
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>Component:</strong> React functional
+                                        component
+                                    </li>
+                                    <li>
+                                        • <strong>State:</strong> useState hook para
+                                        editing mode
+                                    </li>
+                                    <li>
+                                        • <strong>Pattern:</strong> Common profile
+                                        editing pattern
+                                    </li>
+                                    <li>
+                                        • <strong>Props:</strong> User object con
+                                        typical properties
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Tabnine AI Completion
+                                </div>
+                                <pre
+                                    class="text-xs text-blue-400"><code>{`// ✨ AI-Generated Completion
 function UserProfile({ user }) {
   const [editing, setEditing] = useState(false);
   const [formData, setFormData] = useState({
@@ -336,36 +612,62 @@ function UserProfile({ user }) {
     </div>
   );
 }`}</code></pre>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-cyan-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🔧 API Integration Auto-Complete</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-cyan-300 mb-2">Partial Code</div>
-                  <pre class="text-xs text-gray-400"><code>{`// Working with Stripe API
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-cyan-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🔧 API Integration Auto-Complete
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-cyan-300 mb-2"
+                                    >
+                                        Partial Code
+                                    </div>
+                                    <pre
+                                        class="text-xs text-gray-400"><code>{`// Working with Stripe API
 const stripe = require('stripe')(process.env.STRIPE_SECRET);
 
 async function createPayment(amount, currency) {
   // AI understands Stripe patterns...`}</code></pre>
-                </div>
-                
-                <div class="font-semibold text-blue-300 mb-2">AI Understanding</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• <strong>Library:</strong> Stripe payment processing</li>
-                  <li>• <strong>Pattern:</strong> Payment intent creation flow</li>
-                  <li>• <strong>Best Practices:</strong> Error handling y validation</li>
-                  <li>• <strong>Security:</strong> PCI compliance considerations</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Smart API Completion</div>
-                <pre class="text-xs text-cyan-400"><code>{`// ✨ Tabnine Complete Implementation
+                                </div>
+
+                                <div class="font-semibold text-blue-300 mb-2">
+                                    AI Understanding
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>Library:</strong> Stripe payment
+                                        processing
+                                    </li>
+                                    <li>
+                                        • <strong>Pattern:</strong> Payment intent
+                                        creation flow
+                                    </li>
+                                    <li>
+                                        • <strong>Best Practices:</strong> Error
+                                        handling y validation
+                                    </li>
+                                    <li>
+                                        • <strong>Security:</strong> PCI compliance
+                                        considerations
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Smart API Completion
+                                </div>
+                                <pre
+                                    class="text-xs text-cyan-400"><code>{`// ✨ Tabnine Complete Implementation
 async function createPayment(amount, currency, customerId) {
   try {
     // Validate input parameters
@@ -401,120 +703,195 @@ async function createPayment(amount, currency, customerId) {
     throw new Error(\`Payment failed: \${error.message}\`);
   }
 }`}</code></pre>
-                
-                <div class="mt-4 p-3 bg-green-900/20 rounded border border-green-500/20">
-                  <div class="text-xs text-green-300 font-medium mb-1">🎯 AI Insights</div>
-                  <p class="text-xs text-gray-400">
-                    Tabnine recognized Stripe API patterns and auto-completed with: 
-                    input validation, amount conversion to cents, error handling, 
-                    and metadata best practices.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- Beneficios Empresariales -->
-      <section id="beneficios" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">📈 Beneficios Empresariales</h2>
-        
-        <div class="bg-gray-900 rounded-xl p-8">
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="text-center">
-              <div class="text-4xl mb-4">⚡</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Productivity</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-blue-900/30 p-3 rounded">
-                  <div class="font-bold text-blue-300 text-lg">30%</div>
-                  <div class="text-gray-400">Faster coding speed</div>
+                                <div
+                                    class="mt-4 p-3 bg-green-900/20 rounded border border-green-500/20"
+                                >
+                                    <div
+                                        class="text-xs text-green-300 font-medium mb-1"
+                                    >
+                                        🎯 AI Insights
+                                    </div>
+                                    <p class="text-xs text-gray-400">
+                                        Tabnine recognized Stripe API patterns
+                                        and auto-completed with: input
+                                        validation, amount conversion to cents,
+                                        error handling, and metadata best
+                                        practices.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-cyan-900/30 p-3 rounded">
-                  <div class="font-bold text-cyan-300 text-lg">50%</div>
-                  <div class="text-gray-400">Less context switching</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="text-center">
-              <div class="text-4xl mb-4">🎯</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Quality</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-teal-900/30 p-3 rounded">
-                  <div class="font-bold text-teal-300 text-lg">85%</div>
-                  <div class="text-gray-400">Suggestion accuracy</div>
-                </div>
-                <div class="bg-blue-900/30 p-3 rounded">
-                  <div class="font-bold text-blue-300 text-lg">40%</div>
-                  <div class="text-gray-400">Fewer syntax errors</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="text-center">
-              <div class="text-4xl mb-4">🛡️</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Security</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-cyan-900/30 p-3 rounded">
-                  <div class="font-bold text-cyan-300 text-lg">100%</div>
-                  <div class="text-gray-400">Data privacy</div>
-                </div>
-                <div class="bg-teal-900/30 p-3 rounded">
-                  <div class="font-bold text-teal-300 text-lg">0</div>
-                  <div class="text-gray-400">Code shared externally</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </section>
 
-      <!-- Planes -->
-      <section class="mb-12">
-        <div class="bg-gradient-to-r from-blue-900/20 to-cyan-900/20 border border-blue-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">💼 Planes Disponibles</h2>
-          
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🆓 Starter</h3>
-              <div class="text-2xl font-bold text-gray-400 mb-2">$0</div>
-              <div class="text-gray-400 text-sm mb-4">Para uso básico</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Short code completion</li>
-                <li>• Limited suggestions</li>
-                <li>• Popular languages</li>
-                <li>• Community support</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-blue-500/50">
-              <h3 class="text-lg font-semibold text-white mb-3">⭐ Pro</h3>
-              <div class="text-2xl font-bold text-blue-400 mb-2">$12/mes</div>
-              <div class="text-gray-400 text-sm mb-4">Para developers profesionales</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Whole-line completion</li>
-                <li>• All languages</li>
-                <li>• Local AI model</li>
-                <li>• Priority support</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🏢 Enterprise</h3>
-              <div class="text-2xl font-bold text-cyan-400 mb-2">$39/mes</div>
-              <div class="text-gray-400 text-sm mb-4">Por seat, team features</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Custom AI training</li>
-                <li>• Team models</li>
-                <li>• Admin dashboard</li>
-                <li>• SLA support</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- Beneficios Empresariales -->
+            <section id="beneficios" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    📈 Beneficios Empresariales
+                </h2>
 
-    </div>
-  </main>
+                <div class="bg-gray-900 rounded-xl p-8">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">⚡</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Productivity
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-blue-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-blue-300 text-lg"
+                                    >
+                                        30%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Faster coding speed
+                                    </div>
+                                </div>
+                                <div class="bg-cyan-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-cyan-300 text-lg"
+                                    >
+                                        50%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Less context switching
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🎯</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Quality
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-teal-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-teal-300 text-lg"
+                                    >
+                                        85%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Suggestion accuracy
+                                    </div>
+                                </div>
+                                <div class="bg-blue-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-blue-300 text-lg"
+                                    >
+                                        40%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Fewer syntax errors
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🛡️</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Security
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-cyan-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-cyan-300 text-lg"
+                                    >
+                                        100%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Data privacy
+                                    </div>
+                                </div>
+                                <div class="bg-teal-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-teal-300 text-lg"
+                                    >
+                                        0
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Code shared externally
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Planes -->
+            <section class="mb-12">
+                <div
+                    class="bg-gradient-to-r from-blue-900/20 to-cyan-900/20 border border-blue-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        💼 Planes Disponibles
+                    </h2>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🆓 Starter
+                            </h3>
+                            <div class="text-2xl font-bold text-gray-400 mb-2">
+                                $0
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para uso básico
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Short code completion</li>
+                                <li>• Limited suggestions</li>
+                                <li>• Popular languages</li>
+                                <li>• Community support</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-blue-500/50"
+                        >
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                ⭐ Pro
+                            </h3>
+                            <div class="text-2xl font-bold text-blue-400 mb-2">
+                                $12/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para developers profesionales
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Whole-line completion</li>
+                                <li>• All languages</li>
+                                <li>• Local AI model</li>
+                                <li>• Priority support</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🏢 Enterprise
+                            </h3>
+                            <div class="text-2xl font-bold text-cyan-400 mb-2">
+                                $39/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Por seat, team features
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Custom AI training</li>
+                                <li>• Team models</li>
+                                <li>• Admin dashboard</li>
+                                <li>• SLA support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </Layout>

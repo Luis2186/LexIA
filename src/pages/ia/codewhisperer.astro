@@ -1,0 +1,1442 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Amazon CodeWhisperer - IA Segura de AWS | LexIA">
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-orange-900 via-yellow-900 to-amber-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🛡️
+                    </div>
+                    <div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            CodeWhisperer
+                        </h1>
+                        <p class="text-xl text-orange-300">
+                            Código IA Seguro y Confiable
+                        </p>
+                        <p class="text-gray-400">by Amazon Web Services</p>
+                    </div>
+                </div>
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    Amazon CodeWhisperer es el asistente de código IA diseñado
+                    con seguridad empresarial desde el primer día. Entrenado en
+                    código open source y APIs de AWS, ofrece sugerencias seguras
+                    con detección de vulnerabilidades integrada.
+                </p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-orange-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#seguridad"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Seguridad</a
+                    >
+                    <a
+                        href="#aws-integration"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >AWS Integration</a
+                    >
+                    <a
+                        href="#casos-uso"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Casos de Uso</a
+                    >
+                    <a
+                        href="#configuracion"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Configuración</a
+                    >
+                    <a
+                        href="#enterprise"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Enterprise</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es CodeWhisperer? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-orange-900/20 to-yellow-900/20 border border-orange-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        ¿Qué hace único a CodeWhisperer?
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <p
+                                class="text-gray-300 text-lg leading-relaxed mb-6"
+                            >
+                                CodeWhisperer no es solo otro copiloto de
+                                código. Es la <strong>respuesta de AWS</strong>
+                                a la necesidad empresarial de IA de código que sea
+                                tanto poderosa como segura. Diseñado desde cero para
+                                entornos enterprise con compliance estricto.
+                            </p>
+
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-orange-400 text-xl"
+                                        >🛡️</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Security-First
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Detección de vulnerabilidades en
+                                            tiempo real
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-orange-400 text-xl"
+                                        >🔍</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Reference Tracking
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Identifica y cita código open source
+                                            similar
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-orange-400 text-xl"
+                                        >☁️</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            AWS Native
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Optimizado para servicios y APIs de
+                                            AWS
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-orange-400 text-xl"
+                                        >📊</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Enterprise Controls
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Governance, compliance y
+                                            auditabilidad
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    💰 Modelo de Precios
+                                </h3>
+
+                                <div class="space-y-4">
+                                    <div
+                                        class="border border-orange-500/50 rounded-lg p-4 bg-orange-900/10"
+                                    >
+                                        <div
+                                            class="flex justify-between items-center mb-2"
+                                        >
+                                            <h4
+                                                class="font-semibold text-white"
+                                            >
+                                                CodeWhisperer Individual
+                                            </h4>
+                                            <span
+                                                class="text-orange-400 font-bold"
+                                                >GRATIS</span
+                                            >
+                                        </div>
+                                        <ul
+                                            class="text-sm text-gray-300 space-y-1"
+                                        >
+                                            <li>
+                                                • Sugerencias de código
+                                                ilimitadas
+                                            </li>
+                                            <li>
+                                                • Detección de vulnerabilidades
+                                            </li>
+                                            <li>• Reference tracking</li>
+                                            <li>• 15+ IDEs soportados</li>
+                                        </ul>
+                                    </div>
+
+                                    <div
+                                        class="border border-gray-700 rounded-lg p-4"
+                                    >
+                                        <div
+                                            class="flex justify-between items-center mb-2"
+                                        >
+                                            <h4
+                                                class="font-semibold text-gray-300"
+                                            >
+                                                CodeWhisperer Professional
+                                            </h4>
+                                            <span
+                                                class="text-orange-400 font-bold"
+                                                >$19/usuario/mes</span
+                                            >
+                                        </div>
+                                        <ul
+                                            class="text-sm text-gray-400 space-y-1"
+                                        >
+                                            <li>• Todo de Individual</li>
+                                            <li>• SSO y admin controls</li>
+                                            <li>• Policy management</li>
+                                            <li>• Usage metrics</li>
+                                            <li>• Priority support</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6"
+                            >
+                                <h3
+                                    class="text-lg font-semibold text-white mb-3"
+                                >
+                                    🎯 Diferenciadores Clave
+                                </h3>
+                                <ul class="space-y-2 text-gray-300 text-sm">
+                                    <li>
+                                        • <strong>AWS Expertise:</strong> Conocimiento
+                                        profundo del ecosistema AWS
+                                    </li>
+                                    <li>
+                                        • <strong>Security Scanning:</strong> Vulnerabilidades
+                                        detectadas automáticamente
+                                    </li>
+                                    <li>
+                                        • <strong>Legal Safety:</strong> Reference
+                                        tracking para compliance
+                                    </li>
+                                    <li>
+                                        • <strong>Enterprise Ready:</strong> Governance
+                                        y controles corporativos
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seguridad -->
+            <section id="seguridad" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🛡️ Seguridad y Compliance
+                </h2>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                    <!-- Vulnerability Detection -->
+                    <div
+                        class="bg-red-900/20 border border-red-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🚨
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Detección de Vulnerabilidades
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• OWASP Top 10 detection</li>
+                            <li>• SQL injection prevention</li>
+                            <li>• XSS vulnerability scanning</li>
+                            <li>• Insecure crypto usage</li>
+                            <li>• Hardcoded secrets detection</li>
+                        </ul>
+                    </div>
+
+                    <!-- Reference Tracking -->
+                    <div
+                        class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            📋
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Reference Tracking
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Código similar identificado</li>
+                            <li>• Licencias open source citadas</li>
+                            <li>• URL de repositorio original</li>
+                            <li>• Compliance legal automático</li>
+                            <li>• Auditoría de dependencias</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Privacy -->
+                    <div
+                        class="bg-green-900/20 border border-green-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🔐
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Privacidad de Datos
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Tu código no se almacena</li>
+                            <li>• No training en datos privados</li>
+                            <li>• Encriptación en tránsito</li>
+                            <li>• AWS security standards</li>
+                            <li>• GDPR y SOC compliance</li>
+                        </ul>
+                    </div>
+
+                    <!-- Code Scanning -->
+                    <div
+                        class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🔍
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Análisis Estático
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• SAST scanning integrado</li>
+                            <li>• Code quality metrics</li>
+                            <li>• Security best practices</li>
+                            <li>• Performance anti-patterns</li>
+                            <li>• Architecture recommendations</li>
+                        </ul>
+                    </div>
+
+                    <!-- Compliance -->
+                    <div
+                        class="bg-yellow-900/20 border border-yellow-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            📜
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Compliance
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• SOC 2 Type II certified</li>
+                            <li>• ISO 27001 compliant</li>
+                            <li>• GDPR data protection</li>
+                            <li>• HIPAA eligible services</li>
+                            <li>• PCI DSS compliance</li>
+                        </ul>
+                    </div>
+
+                    <!-- Enterprise Controls -->
+                    <div
+                        class="bg-indigo-900/20 border border-indigo-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            ⚙️
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Controles Empresariales
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Policy enforcement</li>
+                            <li>• Access controls granulares</li>
+                            <li>• Audit logging completo</li>
+                            <li>• Usage monitoring</li>
+                            <li>• Cost management tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AWS Integration -->
+            <section id="aws-integration" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 border border-blue-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        ☁️ Integración Nativa con AWS
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🚀 Servicios AWS Optimizados
+                            </h3>
+
+                            <div class="space-y-4">
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-blue-400 mb-2"
+                                    >
+                                        📦 Compute & Storage
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>
+                                            • <strong>EC2:</strong> Instancias, security
+                                            groups, AMIs
+                                        </li>
+                                        <li>
+                                            • <strong>Lambda:</strong> Funciones
+                                            serverless optimizadas
+                                        </li>
+                                        <li>
+                                            • <strong>S3:</strong> Buckets, políticas,
+                                            lifecycle
+                                        </li>
+                                        <li>
+                                            • <strong>ECS/EKS:</strong> Containerization
+                                            patterns
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-green-400 mb-2"
+                                    >
+                                        🗄️ Databases
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>
+                                            • <strong>RDS:</strong> Multi-AZ, read
+                                            replicas
+                                        </li>
+                                        <li>
+                                            • <strong>DynamoDB:</strong> NoSQL patterns,
+                                            GSI
+                                        </li>
+                                        <li>
+                                            • <strong>Aurora:</strong> Serverless
+                                            configurations
+                                        </li>
+                                        <li>
+                                            • <strong>ElastiCache:</strong> Redis/Memcached
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-purple-400 mb-2"
+                                    >
+                                        🌐 Networking & API
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>
+                                            • <strong>API Gateway:</strong> REST/GraphQL
+                                            APIs
+                                        </li>
+                                        <li>
+                                            • <strong>VPC:</strong> Subnets, routing,
+                                            NAT
+                                        </li>
+                                        <li>
+                                            • <strong>CloudFront:</strong> CDN configurations
+                                        </li>
+                                        <li>
+                                            • <strong>Route 53:</strong> DNS management
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                ⚡ Casos de Uso Específicos
+                            </h3>
+
+                            <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                                <h4 class="font-semibold text-white mb-4">
+                                    🏗️ Infrastructure as Code
+                                </h4>
+                                <div class="bg-black rounded p-4 text-sm">
+                                    <div class="text-yellow-400 text-xs mb-2">
+                                        Prompt:
+                                    </div>
+                                    <code class="text-gray-300 text-xs">
+                                        // Create CloudFormation template for
+                                        three-tier web app
+                                    </code>
+                                    <div
+                                        class="text-green-400 text-xs mb-2 mt-3"
+                                    >
+                                        CodeWhisperer genera:
+                                    </div>
+                                    <code class="text-green-400 text-xs">
+                                        Resources:<br />
+                                        &nbsp;&nbsp;WebTierALB:<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Type: AWS::ElasticLoadBalancingV2::LoadBalancer<br
+                                        />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Properties:<br
+                                        />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type:
+                                        application<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subnets:
+                                        [!Ref PublicSubnet1, !Ref PublicSubnet2]<br
+                                        />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SecurityGroups:
+                                        [!Ref WebTierSecurityGroup]
+                                    </code>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6"
+                            >
+                                <h4
+                                    class="text-lg font-semibold text-white mb-3"
+                                >
+                                    🎯 Ventajas AWS-Specific
+                                </h4>
+                                <ul class="space-y-2 text-gray-300 text-sm">
+                                    <li>
+                                        • <strong>Best Practices:</strong> Patrones
+                                        arquitecturales validados
+                                    </li>
+                                    <li>
+                                        • <strong>Cost Optimization:</strong> Sugerencias
+                                        de optimización
+                                    </li>
+                                    <li>
+                                        • <strong>Security Defaults:</strong> Configuraciones
+                                        seguras por defecto
+                                    </li>
+                                    <li>
+                                        • <strong>Multi-Region:</strong> Patrones
+                                        de disponibilidad alta
+                                    </li>
+                                    <li>
+                                        • <strong>Well-Architected:</strong> Framework
+                                        compliance
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Casos de Uso -->
+            <section id="casos-uso" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🎯 Casos de Uso Empresariales
+                </h2>
+
+                <!-- Financial Services -->
+                <div
+                    class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-8 mb-8"
+                >
+                    <h3 class="text-xl font-semibold text-white mb-6">
+                        🏦 Caso 1: Servicios Financieros
+                    </h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold text-blue-400 mb-3">
+                                🎯 Desafío Regulatorio:
+                            </h4>
+                            <div class="bg-black rounded-lg p-4 mb-4">
+                                <p class="text-gray-300 text-sm">
+                                    Banco necesita modernizar su plataforma de
+                                    trading con API REST seguras. Compliance
+                                    PCI-DSS, SOX y regulatory requirements
+                                    estrictos. Código debe ser auditado y libre
+                                    de vulnerabilidades.
+                                </p>
+                            </div>
+
+                            <h4 class="font-semibold text-green-400 mb-3">
+                                ✅ Solución CodeWhisperer:
+                            </h4>
+                            <ul class="text-gray-300 text-sm space-y-2">
+                                <li>
+                                    • Detección automática de vulnerabilidades
+                                    financieras
+                                </li>
+                                <li>
+                                    • Patrones seguros para manejo de
+                                    transacciones
+                                </li>
+                                <li>• Reference tracking para audit trails</li>
+                                <li>• Compliance con security frameworks</li>
+                                <li>• Integration con AWS security services</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-orange-400 mb-3">
+                                💻 Implementación Segura:
+                            </h4>
+                            <div
+                                class="bg-gray-900 rounded-lg p-4 space-y-4 text-sm"
+                            >
+                                <div class="bg-black rounded p-3">
+                                    <div class="text-green-400 text-xs mb-1">
+                                        Secure Payment Processing:
+                                    </div>
+                                    <code class="text-gray-300 text-xs">
+                                        // CodeWhisperer detecta y previene:<br
+                                        />
+                                        ❌ Hardcoded API keys<br />
+                                        ❌ SQL injection vectors<br />
+                                        ❌ Unencrypted sensitive data<br />
+                                        ❌ Insufficient input validation
+                                    </code>
+                                </div>
+
+                                <div class="bg-black rounded p-3">
+                                    <div class="text-blue-400 text-xs mb-1">
+                                        Auto-generated secure patterns:
+                                    </div>
+                                    <code class="text-cyan-400 text-xs">
+                                        ✅ AWS KMS encryption<br />
+                                        ✅ VPC private subnets<br />
+                                        ✅ WAF protection rules<br />
+                                        ✅ CloudTrail audit logging
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Healthcare -->
+                <div
+                    class="bg-green-900/20 border border-green-500/20 rounded-xl p-8 mb-8"
+                >
+                    <h3 class="text-xl font-semibold text-white mb-6">
+                        🏥 Caso 2: Healthcare & HIPAA
+                    </h3>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-green-400 mb-3">
+                                🔒 Requisitos HIPAA:
+                            </h4>
+                            <div class="bg-black rounded-lg p-4">
+                                <p class="text-gray-300 text-sm">
+                                    Hospital desarrolla sistema de records
+                                    médicos electrónicos. Debe cumplir HIPAA,
+                                    manejar PHI (Protected Health Information) y
+                                    garantizar encryption en reposo y tránsito.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-yellow-400 mb-3">
+                                    🛡️ Security Features:
+                                </h4>
+                                <div class="bg-gray-900 rounded-lg p-4">
+                                    <ul class="text-gray-300 text-sm space-y-2">
+                                        <li>
+                                            • <strong
+                                                >Data Classification:</strong
+                                            > Automatic PHI detection
+                                        </li>
+                                        <li>
+                                            • <strong>Encryption:</strong> KMS integration
+                                            patterns
+                                        </li>
+                                        <li>
+                                            • <strong>Access Controls:</strong> IAM
+                                            role-based security
+                                        </li>
+                                        <li>
+                                            • <strong>Audit Trails:</strong> CloudTrail
+                                            compliance
+                                        </li>
+                                        <li>
+                                            • <strong>Data Residency:</strong> Region-specific
+                                            deployments
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-purple-400 mb-3">
+                                    📊 Compliance Automation:
+                                </h4>
+                                <div class="bg-gray-900 rounded-lg p-4">
+                                    <div class="space-y-3 text-sm">
+                                        <div>
+                                            <div
+                                                class="text-green-400 font-semibold mb-1"
+                                            >
+                                                ✅ Auto-detected Issues:
+                                            </div>
+                                            <ul
+                                                class="text-gray-300 text-xs space-y-1"
+                                            >
+                                                <li>
+                                                    • Unencrypted database
+                                                    connections
+                                                </li>
+                                                <li>
+                                                    • Missing access logging
+                                                </li>
+                                                <li>
+                                                    • Weak password policies
+                                                </li>
+                                                <li>
+                                                    • Improper error handling
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <div
+                                                class="text-blue-400 font-semibold mb-1"
+                                            >
+                                                🔧 Suggested Fixes:
+                                            </div>
+                                            <ul
+                                                class="text-gray-300 text-xs space-y-1"
+                                            >
+                                                <li>• SSL/TLS enforcement</li>
+                                                <li>
+                                                    • CloudWatch integration
+                                                </li>
+                                                <li>• Secrets Manager usage</li>
+                                                <li>• Error sanitization</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Migration -->
+                <div
+                    class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-8"
+                >
+                    <h3 class="text-xl font-semibold text-white mb-6">
+                        🔄 Caso 3: Enterprise Migration to AWS
+                    </h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold text-purple-400 mb-3">
+                                📋 Migration Challenge:
+                            </h4>
+                            <div class="bg-black rounded-lg p-4 mb-4">
+                                <p class="text-gray-300 text-sm mb-3">
+                                    Fortune 500 company migra aplicación
+                                    monolítica legacy (.NET) a microservicios en
+                                    AWS. 50+ developers, código de 10+ años,
+                                    múltiples compliance requirements.
+                                </p>
+                            </div>
+
+                            <h4 class="font-semibold text-orange-400 mb-3">
+                                ⚡ CodeWhisperer Approach:
+                            </h4>
+                            <ul class="text-gray-300 text-sm space-y-2">
+                                <li>• Patterns de migración AWS-specific</li>
+                                <li>• Containerization con ECS/EKS</li>
+                                <li>• Database migration strategies</li>
+                                <li>• Security group configurations</li>
+                                <li>• Cost optimization recommendations</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-blue-400 mb-3">
+                                📊 Migration Results:
+                            </h4>
+                            <div class="bg-gray-900 rounded-lg p-4 space-y-4">
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-green-400 mb-1"
+                                        >
+                                            40%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Faster migration
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-blue-400 mb-1"
+                                        >
+                                            60%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Less security issues
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-purple-400 mb-1"
+                                        >
+                                            25%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Cost reduction
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-orange-400 mb-1"
+                                        >
+                                            99.9%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Availability SLA
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-black rounded p-3">
+                                    <h5
+                                        class="font-semibold text-yellow-400 text-sm mb-2"
+                                    >
+                                        Key Success Factors:
+                                    </h5>
+                                    <ul class="text-gray-300 text-xs space-y-1">
+                                        <li>
+                                            • AWS-native patterns automatically
+                                            suggested
+                                        </li>
+                                        <li>
+                                            • Security best practices enforced
+                                        </li>
+                                        <li>
+                                            • Cost-optimized architectures
+                                            recommended
+                                        </li>
+                                        <li>
+                                            • Compliance requirements met
+                                            automatically
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Configuración -->
+            <section id="configuracion" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-yellow-900/20 to-orange-900/20 border border-yellow-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        ⚙️ Setup y Configuración
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🚀 Getting Started
+                            </h3>
+
+                            <div class="space-y-4">
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-yellow-400 mb-2"
+                                    >
+                                        1. AWS Account Setup
+                                    </h4>
+                                    <div
+                                        class="bg-gray-900 rounded p-3 text-xs"
+                                    >
+                                        <code class="text-gray-300">
+                                            # Requiere AWS Account activa<br />
+                                            # IAM permissions para CodeWhisperer<br
+                                            />
+                                            # AWS Builder ID (individual) o SSO (enterprise)
+                                        </code>
+                                    </div>
+                                    <p class="text-gray-400 text-xs mt-2">
+                                        Free tier disponible sin tarjeta de
+                                        crédito
+                                    </p>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-yellow-400 mb-2"
+                                    >
+                                        2. IDE Integration
+                                    </h4>
+                                    <div
+                                        class="bg-gray-900 rounded p-3 text-xs"
+                                    >
+                                        <code class="text-gray-300">
+                                            # VS Code: AWS Toolkit extension<br
+                                            />
+                                            # JetBrains: AWS Toolkit plugin<br
+                                            />
+                                            # Command Line: AWS CLI + toolkit
+                                        </code>
+                                    </div>
+                                    <p class="text-gray-400 text-xs mt-2">
+                                        Soporte nativo en 15+ IDEs
+                                    </p>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-yellow-400 mb-2"
+                                    >
+                                        3. Authentication
+                                    </h4>
+                                    <div
+                                        class="bg-gray-900 rounded p-3 text-xs"
+                                    >
+                                        <code class="text-gray-300">
+                                            # Individual: AWS Builder ID<br />
+                                            # Enterprise: AWS SSO/SAML<br />
+                                            # Federated: Active Directory
+                                        </code>
+                                    </div>
+                                    <p class="text-gray-400 text-xs mt-2">
+                                        Single sign-on con servicios existentes
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🎯 Advanced Configuration
+                            </h3>
+
+                            <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                                <h4 class="font-semibold text-white mb-4">
+                                    🔧 Policy Configuration
+                                </h4>
+                                <div
+                                    class="bg-black rounded p-4 text-xs overflow-x-auto"
+                                >
+                                    <code class="text-gray-300">
+                                        <span class="text-green-400"
+                                            >// AWS IAM Policy para
+                                            CodeWhisperer</span
+                                        ><br />
+                                        &#123;<br />
+                                        &nbsp;&nbsp;<span class="text-blue-400"
+                                            >"Version":</span
+                                        >
+                                        <span class="text-orange-400"
+                                            >"2012-10-17"</span
+                                        >,<br />
+                                        &nbsp;&nbsp;<span class="text-blue-400"
+                                            >"Statement":</span
+                                        > [<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&#123;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                            class="text-blue-400"
+                                            >"Effect":</span
+                                        >
+                                        <span class="text-orange-400"
+                                            >"Allow"</span
+                                        >,<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                            class="text-blue-400"
+                                            >"Action":</span
+                                        > [<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                            class="text-orange-400"
+                                            >"codewhisperer:GenerateRecommendations"</span
+                                        >,<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                            class="text-orange-400"
+                                            >"codewhisperer:GetCodeAnalysis"</span
+                                        ><br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br
+                                        />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                            class="text-blue-400"
+                                            >"Resource":</span
+                                        >
+                                        <span class="text-orange-400">"*"</span
+                                        ><br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&#125;<br />
+                                        &nbsp;&nbsp;]<br />
+                                        &#125;
+                                    </code>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div
+                                    class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        🛡️ Security Settings
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong>Data residency:</strong> Region-specific
+                                            processing
+                                        </li>
+                                        <li>
+                                            • <strong
+                                                >Reference filtering:</strong
+                                            > Control suggestion sources
+                                        </li>
+                                        <li>
+                                            • <strong>Opt-out options:</strong> Disable
+                                            specific features
+                                        </li>
+                                        <li>
+                                            • <strong>Audit logging:</strong> CloudTrail
+                                            integration
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div
+                                    class="bg-yellow-900/20 border border-yellow-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        📊 Monitoring & Analytics
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong>Usage metrics:</strong> CloudWatch
+                                            dashboards
+                                        </li>
+                                        <li>
+                                            • <strong>Cost tracking:</strong> Billing
+                                            por usuario
+                                        </li>
+                                        <li>
+                                            • <strong>Performance:</strong> Latency
+                                            y accuracy metrics
+                                        </li>
+                                        <li>
+                                            • <strong>Security events:</strong> Vulnerability
+                                            detection logs
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Enterprise -->
+            <section id="enterprise" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-gray-900/20 to-slate-900/20 border border-gray-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        🏢 Enterprise Features
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                👥 Governance & Control
+                            </h3>
+
+                            <div class="space-y-4">
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-blue-400 mb-2"
+                                    >
+                                        🔐 Access Management
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>
+                                            • Role-based access control (RBAC)
+                                        </li>
+                                        <li>• AWS SSO integration</li>
+                                        <li>• Multi-factor authentication</li>
+                                        <li>• Federated identity support</li>
+                                        <li>
+                                            • Just-in-time access provisioning
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-green-400 mb-2"
+                                    >
+                                        📋 Policy Enforcement
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>
+                                            • Organization-wide coding standards
+                                        </li>
+                                        <li>• Security policy compliance</li>
+                                        <li>• License usage tracking</li>
+                                        <li>
+                                            • Feature enable/disable controls
+                                        </li>
+                                        <li>• Custom suggestion filtering</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-purple-400 mb-2"
+                                    >
+                                        📊 Analytics & Reporting
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>
+                                            • Developer productivity metrics
+                                        </li>
+                                        <li>• Code quality improvements</li>
+                                        <li>• Security vulnerability trends</li>
+                                        <li>• License compliance reports</li>
+                                        <li>
+                                            • Cost allocation and chargeback
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🎯 Business Value
+                            </h3>
+
+                            <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                                <h4 class="font-semibold text-white mb-4">
+                                    💰 ROI Calculator (1000 devs)
+                                </h4>
+                                <div class="space-y-3">
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-black rounded"
+                                    >
+                                        <span class="text-gray-300"
+                                            >Annual license cost</span
+                                        >
+                                        <span class="text-orange-400 font-bold"
+                                            >$228,000</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-black rounded"
+                                    >
+                                        <span class="text-gray-300"
+                                            >Productivity gains</span
+                                        >
+                                        <span class="text-green-400 font-bold"
+                                            >$2,400,000</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-black rounded"
+                                    >
+                                        <span class="text-gray-300"
+                                            >Security cost savings</span
+                                        >
+                                        <span class="text-blue-400 font-bold"
+                                            >$500,000</span
+                                        >
+                                    </div>
+                                    <div class="border-t border-gray-700 pt-3">
+                                        <div
+                                            class="flex justify-between items-center p-3 bg-green-900/20 rounded"
+                                        >
+                                            <span class="text-white font-bold"
+                                                >Net ROI Year 1</span
+                                            >
+                                            <span
+                                                class="text-green-400 font-bold text-xl"
+                                                >1,180%</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <div
+                                    class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        🚀 Implementation Timeline
+                                    </h4>
+                                    <div
+                                        class="space-y-2 text-gray-300 text-sm"
+                                    >
+                                        <div class="flex items-center gap-3">
+                                            <span
+                                                class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-xs font-bold"
+                                                >1</span
+                                            >
+                                            <span
+                                                ><strong>Week 1-2:</strong> Pilot
+                                                con 50 developers</span
+                                            >
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <span
+                                                class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-xs font-bold"
+                                                >2</span
+                                            >
+                                            <span
+                                                ><strong>Month 2:</strong> Department
+                                                rollout (200 devs)</span
+                                            >
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <span
+                                                class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-xs font-bold"
+                                                >3</span
+                                            >
+                                            <span
+                                                ><strong>Month 3-6:</strong> Organization-wide
+                                                deployment</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="bg-yellow-900/20 border border-yellow-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        ✅ Success Metrics
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong>Code velocity:</strong> 30-50%
+                                            improvement
+                                        </li>
+                                        <li>
+                                            • <strong>Security issues:</strong> 40-60%
+                                            reduction
+                                        </li>
+                                        <li>
+                                            • <strong>Code quality:</strong> Measurable
+                                            improvement
+                                        </li>
+                                        <li>
+                                            • <strong
+                                                >Developer satisfaction:</strong
+                                            > 85%+ approval
+                                        </li>
+                                        <li>
+                                            • <strong>Time to market:</strong> 25%
+                                            faster releases
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="text-center">
+                <div
+                    class="bg-gradient-to-r from-orange-900/20 to-yellow-900/20 border border-orange-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-4">
+                        ¿Listo para código IA seguro y confiable? 🛡️
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        CodeWhisperer es la elección inteligente para empresas
+                        que necesitan IA de código sin comprometer seguridad o
+                        compliance. Gratis para empezar, enterprise-ready cuando
+                        lo necesites.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://aws.amazon.com/codewhisperer/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                        >
+                            Empezar Gratis
+                        </a>
+                        <a
+                            href="/herramientas-ia"
+                            class="border border-orange-500 text-orange-400 hover:bg-orange-500/10 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300"
+                        >
+                            Ver Otras IAs
+                        </a>
+                    </div>
+
+                    <div
+                        class="mt-6 flex justify-center gap-8 text-sm text-gray-400"
+                    >
+                        <span>✅ Gratis para individuales</span>
+                        <span>✅ Security-first approach</span>
+                        <span>✅ AWS native integration</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    kbd {
+        font-family: monospace;
+        font-size: 0.75rem;
+    }
+
+    code {
+        font-family: "Fira Code", "Monaco", "Cascadia Code", monospace;
+    }
+
+    /* Navegación sticky */
+    nav {
+        backdrop-filter: blur(10px);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #f59e0b;
+        border-radius: 4px;
+    }
+
+    /* Smooth transitions for table */
+    table {
+        border-collapse: collapse;
+    }
+
+    tr:hover {
+        background-color: rgba(245, 158, 11, 0.05);
+    }
+</style>
+
+<script>
+    // Smooth scroll para navegación
+    document.querySelectorAll('nav a[href^="#"]').forEach((anchor: Element) => {
+        anchor.addEventListener("click", (e: Event) => {
+            e.preventDefault();
+            const href = (anchor as HTMLAnchorElement).getAttribute("href");
+            const target = href ? document.querySelector(href) : null;
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        });
+    });
+
+    // Navegación activa
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute("id");
+                    document.querySelectorAll("nav a").forEach((link) => {
+                        link.classList.remove("text-orange-400");
+                        link.classList.add("text-gray-400");
+                    });
+                    const activeLink = document.querySelector(
+                        `nav a[href="#${id}"]`,
+                    );
+                    if (activeLink) {
+                        activeLink.classList.remove("text-gray-400");
+                        activeLink.classList.add("text-orange-400");
+                    }
+                }
+            });
+        },
+        { threshold: 0.1 },
+    );
+
+    document.querySelectorAll("section[id]").forEach((section) => {
+        observer.observe(section);
+    });
+</script>

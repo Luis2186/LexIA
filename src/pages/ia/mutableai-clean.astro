@@ -1,0 +1,420 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="MutableAI - Refactorización Inteligente | LexIA">
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-orange-900 via-amber-900 to-yellow-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🔧
+                    </div>
+                    <div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            MutableAI
+                        </h1>
+                        <p class="text-xl text-orange-300">
+                            Refactorización Inteligente con IA
+                        </p>
+                        <p class="text-gray-400">by MutableAI</p>
+                    </div>
+                </div>
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    MutableAI utiliza inteligencia artificial para modernizar y
+                    optimizar código automáticamente. Especializado en
+                    refactorización inteligente, migración de frameworks y
+                    mejora de performance sin alterar la funcionalidad del
+                    código.
+                </p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-orange-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#como-funciona"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >¿Cómo funciona?</a
+                    >
+                    <a
+                        href="#casos-uso"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Casos de Uso</a
+                    >
+                    <a
+                        href="#ejemplos"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Ejemplos</a
+                    >
+                    <a
+                        href="#integracion"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Integración</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es MutableAI? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-orange-900/20 to-amber-900/20 border border-orange-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🔧 ¿Qué es MutableAI?
+                    </h2>
+
+                    <p class="text-gray-300 mb-6">
+                        <strong class="text-white">MutableAI</strong> es una plataforma
+                        de IA especializada en refactorización automática de código.
+                        Analiza patrones, detecta code smells y aplica transformaciones
+                        inteligentes para modernizar aplicaciones legacy, mejorar
+                        performance y mantener la funcionalidad intacta.
+                    </p>
+
+                    <div
+                        class="bg-gray-800/50 border border-gray-700 rounded-xl p-6"
+                    >
+                        <h3 class="font-semibold text-white mb-4">
+                            🚀 Especialidades Core
+                        </h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 bg-orange-400 rounded-full"
+                                ></span>
+                                <span
+                                    ><strong class="text-orange-400"
+                                        >Code Modernization:</strong
+                                    > Legacy → Modern patterns</span
+                                >
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 bg-amber-400 rounded-full"
+                                ></span>
+                                <span
+                                    ><strong class="text-amber-400"
+                                        >Framework Migration:</strong
+                                    > Automated upgrades</span
+                                >
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 bg-orange-400 rounded-full"
+                                ></span>
+                                <span
+                                    ><strong class="text-orange-400"
+                                        >Performance Optimization:</strong
+                                    > Smart refactoring</span
+                                >
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 bg-amber-400 rounded-full"
+                                ></span>
+                                <span
+                                    ><strong class="text-amber-400"
+                                        >Code Quality:</strong
+                                    > Anti-patterns elimination</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Casos de Uso -->
+            <section id="casos-uso" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-amber-900/20 to-yellow-900/20 border border-amber-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        🎯 Casos de Uso en Refactorización
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div
+                            class="bg-gray-800/50 border border-gray-700 rounded-xl p-6"
+                        >
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center"
+                                >
+                                    <span class="text-2xl">🏗️</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-white">
+                                    Legacy Modernization
+                                </h3>
+                            </div>
+
+                            <p class="text-gray-300 mb-4">
+                                Modernización automática de aplicaciones legacy
+                                con patrones obsoletos hacia arquitecturas
+                                modernas y mejores prácticas.
+                            </p>
+
+                            <div
+                                class="bg-orange-900/30 border border-orange-600/30 p-4 rounded-lg"
+                            >
+                                <div class="font-semibold text-orange-300 mb-2">
+                                    Transformaciones Típicas
+                                </div>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>
+                                        • <strong class="text-orange-400"
+                                            >jQuery → React:</strong
+                                        > Component migration
+                                    </li>
+                                    <li>
+                                        • <strong class="text-amber-400"
+                                            >Callbacks → Promises:</strong
+                                        > Async modernization
+                                    </li>
+                                    <li>
+                                        • <strong class="text-orange-400"
+                                            >ES5 → ES6+:</strong
+                                        > Modern JavaScript features
+                                    </li>
+                                    <li>
+                                        • <strong class="text-amber-400"
+                                            >Monolith → Microservices:</strong
+                                        > Architecture split
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-gray-800/50 border border-gray-700 rounded-xl p-6"
+                        >
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-10 h-10 bg-amber-500/20 rounded-lg flex items-center justify-center"
+                                >
+                                    <span class="text-2xl">⚡</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-white">
+                                    Performance Optimization
+                                </h3>
+                            </div>
+
+                            <p class="text-gray-300 mb-4">
+                                Optimización automática de código para mejorar
+                                performance, reducir memory leaks y eliminar
+                                bottlenecks.
+                            </p>
+
+                            <div
+                                class="bg-amber-900/30 border border-amber-600/30 p-4 rounded-lg"
+                            >
+                                <div class="font-semibold text-amber-300 mb-2">
+                                    Optimizaciones
+                                </div>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>
+                                        • <strong class="text-amber-400"
+                                            >Loop optimization:</strong
+                                        > Reduce complexity
+                                    </li>
+                                    <li>
+                                        • <strong class="text-orange-400"
+                                            >Memory management:</strong
+                                        > Leak prevention
+                                    </li>
+                                    <li>
+                                        • <strong class="text-amber-400"
+                                            >Database queries:</strong
+                                        > N+1 elimination
+                                    </li>
+                                    <li>
+                                        • <strong class="text-orange-400"
+                                            >Bundle size:</strong
+                                        > Dead code removal
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos de Refactorización -->
+            <section id="ejemplos" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-yellow-900/20 to-orange-900/20 border border-yellow-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        🔄 Ejemplos de Refactorización
+                    </h2>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-800/50 border border-gray-700 rounded-xl p-6"
+                        >
+                            <h3 class="text-xl font-bold text-white mb-4">
+                                Modernización de JavaScript Legacy
+                            </h3>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-red-300 mb-2">
+                                        ❌ Antes (Legacy)
+                                    </h4>
+                                    <div
+                                        class="bg-gray-900 border border-gray-700 rounded p-3 text-xs font-mono text-gray-300"
+                                    >
+                                        <span class="text-red-400"
+                                            >// jQuery spaghetti code</span
+                                        ><br />
+                                        <span class="text-gray-400"
+                                            >$(document).ready(function() {}<br
+                                            />
+                                            <span class="text-gray-400">
+                                                $.ajax({}<br />
+                                                <span class="text-gray-400">
+                                                    url: '/api/users',</span
+                                                ><br />
+                                                <span class="text-gray-400">
+                                                    success: function(data) {
+
+                                                    }<br />
+                                                    <span class="text-gray-400">
+                                                        $('#users').html('');</span
+                                                    ><br />
+                                                    <span class="text-gray-400">
+                                                        data.forEach(function(user)
+                                                        {}<br />
+                                                        <span
+                                                            class="text-gray-400"
+                                                        >
+                                                            $('#users').append('&lt;div&gt;'
+                                                            + user.name +
+                                                            '&lt;/div&gt;');</span
+                                                        ><br />
+                                                        <span
+                                                            class="text-gray-400"
+                                                        >
+                                                        </span>);</span
+                                                    ><br />
+                                                    <span class="text-gray-400">
+                                                    </span></span
+                                                ><br />
+                                                <span class="text-gray-400">
+                                                </span>);</span
+                                            ><br />
+                                            <span class="text-gray-400"
+                                            ></span>);</span
+                                        >
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h4
+                                        class="font-semibold text-green-300 mb-2"
+                                    >
+                                        ✅ Después (Modern)
+                                    </h4>
+                                    <div
+                                        class="bg-gray-900 border border-gray-700 rounded p-3 text-xs font-mono text-gray-300"
+                                    >
+                                        <span class="text-green-400"
+                                            >// Modern React component</span
+                                        ><br />
+                                        <span class="text-gray-400"
+                                            >import React, &#123; (useEffect,
+                                            useState) &#125; from 'react';</span
+                                        ><br /><br />
+                                        <span class="text-gray-400"
+                                            >const UserList = () =&gt;
+                                            &#123;&#125;<br />
+                                            <span class="text-gray-400">
+                                                const [users, setUsers] =
+                                                useState([]);</span
+                                            ><br /><br />
+                                            <span class="text-gray-400">
+                                                useEffect(() =&gt; &#123;&#125;<br
+                                                />
+                                                <span class="text-gray-400">
+                                                    fetch('/api/users')</span
+                                                ><br />
+                                                <span class="text-gray-400">
+                                                    .then(res =&gt; res.json())</span
+                                                ><br />
+                                                <span class="text-gray-400">
+                                                    .then(setUsers);</span
+                                                ><br />
+                                                <span class="text-gray-400">
+                                                </span>, []);</span
+                                            ><br /><br />
+                                            <span class="text-gray-400">
+                                                return (</span
+                                            ><br />
+                                            <span class="text-gray-400">
+                                                &lt;div&gt;{
+                                                    `{users.map(user => <div key={user.id}>{user.name}</div>)}`
+                                                }&lt;/div&gt;</span
+                                            ><br />
+                                            <span class="text-gray-400">
+                                                );</span
+                                            ><br />
+                                            <span class="text-gray-400"
+                                            ></span>;</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="text-center">
+                <div
+                    class="bg-gradient-to-r from-orange-900/30 to-amber-900/30 border border-orange-500/20 rounded-xl p-8"
+                >
+                    <h3 class="text-2xl font-bold text-white mb-4">
+                        ¿Listo para modernizar tu código?
+                    </h3>
+                    <p class="text-gray-300 mb-6">
+                        Transforma tu código legacy en aplicaciones modernas con
+                        MutableAI.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://mutable.ai"
+                            target="_blank"
+                            class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-xl font-semibold transition-colors"
+                        >
+                            Probar MutableAI
+                        </a>
+                        <a
+                            href="/herramientas-ia/programacion"
+                            class="border border-orange-500 text-orange-400 hover:bg-orange-500/10 px-8 py-3 rounded-xl font-semibold transition-colors"
+                        >
+                            Ver Más Programming IA
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</Layout>

@@ -1,271 +1,505 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Diffblue Cover - IA para Testing Automático | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-cyan-900 via-teal-900 to-blue-900 py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center text-4xl">
-            🧪
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Diffblue Cover</h1>
-            <p class="text-xl text-cyan-300">IA para Testing Automático</p>
-            <p class="text-gray-400">by Diffblue</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          Diffblue Cover utiliza IA avanzada para generar automáticamente unit tests 
-          de alta calidad para código Java, mejorando la cobertura de testing y 
-          detectando bugs antes de que lleguen a producción.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-cyan-400 hover:text-cyan-300 whitespace-nowrap transition-colors">¿Qué es?</a>
-          <a href="#como-funciona" class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors">Cómo Funciona</a>
-          <a href="#features" class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors">Features</a>
-          <a href="#ejemplos" class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors">Ejemplos</a>
-          <a href="#beneficios" class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors">Beneficios</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- ¿Qué es Diffblue Cover? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 border border-cyan-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">🧪 ¿Qué es Diffblue Cover?</h2>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-4">
-              <p class="text-gray-300 leading-relaxed">
-                <strong>Diffblue Cover</strong> es una herramienta revolucionaria que utiliza 
-                IA y symbolic execution para generar automáticamente unit tests para código Java. 
-                No requiere anotaciones especiales ni modificaciones al código existente - 
-                simplemente analiza tu codebase y genera tests comprehensivos.
-              </p>
-              
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🎯 Problema que Resuelve</h3>
-                
-                <div class="space-y-3 text-sm">
-                  <div class="flex items-start gap-3">
-                    <span class="text-cyan-400">⏰</span>
-                    <div>
-                      <div class="text-white font-medium">Testing Manual Lento</div>
-                      <div class="text-gray-400">Escribir tests toma 2-3x más tiempo que el código</div>
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-cyan-900 via-teal-900 to-blue-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🧪
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-teal-400">📉</span>
                     <div>
-                      <div class="text-white font-medium">Baja Cobertura</div>
-                      <div class="text-gray-400">Muchos proyectos tienen menos del 50% test coverage</div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            Diffblue Cover
+                        </h1>
+                        <p class="text-xl text-cyan-300">
+                            IA para Testing Automático
+                        </p>
+                        <p class="text-gray-400">by Diffblue</p>
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-blue-400">🐛</span>
-                    <div>
-                      <div class="text-white font-medium">Bugs en Producción</div>
-                      <div class="text-gray-400">Código sin tests llega a prod con errores</div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    Diffblue Cover utiliza IA avanzada para generar
+                    automáticamente unit tests de alta calidad para código Java,
+                    mejorando la cobertura de testing y detectando bugs antes de
+                    que lleguen a producción.
+                </p>
             </div>
-            
-            <div class="space-y-6">
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🚀 Solución IA</h3>
-                
-                <div class="space-y-4 text-sm">
-                  <div class="border-l-4 border-cyan-500 pl-4">
-                    <div class="font-semibold text-cyan-300">Symbolic Execution</div>
-                    <div class="text-gray-400">Analiza todos los paths de ejecución posibles</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-teal-500 pl-4">
-                    <div class="font-semibold text-teal-300">Automatic Test Generation</div>
-                    <div class="text-gray-400">Genera tests JUnit completos y válidos</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-blue-500 pl-4">
-                    <div class="font-semibold text-blue-300">Regression Detection</div>
-                    <div class="text-gray-400">Detecta comportamiento changes automáticamente</div>
-                  </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-cyan-400 hover:text-cyan-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#como-funciona"
+                        class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors"
+                        >Cómo Funciona</a
+                    >
+                    <a
+                        href="#features"
+                        class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors"
+                        >Features</a
+                    >
+                    <a
+                        href="#ejemplos"
+                        class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors"
+                        >Ejemplos</a
+                    >
+                    <a
+                        href="#beneficios"
+                        class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors"
+                        >Beneficios</a
+                    >
                 </div>
-              </div>
-              
-              <div class="bg-gradient-to-r from-cyan-800/20 to-blue-800/20 rounded-xl p-4 border border-cyan-500/20">
-                <div class="text-sm text-cyan-300 font-medium mb-2">🎯 Ideal Para</div>
-                <p class="text-gray-400 text-sm">
-                  Teams Java que quieren mejorar test coverage rápidamente, 
-                  legacy codebases sin tests, y desarrollo donde la calidad 
-                  es crítica (fintech, healthcare, aerospace).
-                </p>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </nav>
 
-      <!-- Cómo Funciona -->
-      <section id="como-funciona" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">⚙️ Cómo Funciona Diffblue Cover</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8">
-            <h3 class="text-xl font-semibold text-white mb-6 text-center">🔄 Proceso de Generación Automática</h3>
-            
-            <div class="grid md:grid-cols-4 gap-6">
-              <div class="text-center">
-                <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">1</div>
-                <h4 class="font-semibold text-white mb-2">📊 Static Analysis</h4>
-                <p class="text-gray-400 text-sm">
-                  Analiza el código Java usando symbolic execution 
-                  para mapear todos los execution paths posibles.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">2</div>
-                <h4 class="font-semibold text-white mb-2">🧠 AI Processing</h4>
-                <p class="text-gray-400 text-sm">
-                  La IA determina qué inputs son necesarios 
-                  para ejercitar cada branch y edge case.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">3</div>
-                <h4 class="font-semibold text-white mb-2">✨ Test Generation</h4>
-                <p class="text-gray-400 text-sm">
-                  Genera unit tests JUnit completos con 
-                  assertions automáticas y setup/teardown.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">4</div>
-                <h4 class="font-semibold text-white mb-2">✅ Validation</h4>
-                <p class="text-gray-400 text-sm">
-                  Valida que los tests generados compilan, 
-                  ejecutan correctamente y no son flaky.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-cyan-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🔬 Tecnología Subyacente</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <h4 class="font-semibold text-cyan-300 mb-3">Symbolic Execution Engine</h4>
-                <ul class="text-gray-400 text-sm space-y-2">
-                  <li>• <strong>Path Exploration:</strong> Analiza todos los branches posibles</li>
-                  <li>• <strong>Constraint Solving:</strong> Determina inputs válidos</li>
-                  <li>• <strong>Abstract Interpretation:</strong> Maneja complex data structures</li>
-                  <li>• <strong>Concolic Testing:</strong> Combina concrete y symbolic execution</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 class="font-semibold text-teal-300 mb-3">AI Optimization</h4>
-                <ul class="text-gray-400 text-sm space-y-2">
-                  <li>• <strong>Machine Learning:</strong> Mejora con cada codebase</li>
-                  <li>• <strong>Pattern Recognition:</strong> Identifica testing anti-patterns</li>
-                  <li>• <strong>Code Understanding:</strong> Entiende domain logic</li>
-                  <li>• <strong>Quality Scoring:</strong> Prioriza tests más valiosos</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es Diffblue Cover? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 border border-cyan-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🧪 ¿Qué es Diffblue Cover?
+                    </h2>
 
-      <!-- Features Principales -->
-      <section id="features" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🚀 Features Principales</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-cyan-500/20">
-              <div class="text-3xl mb-4">🎯</div>
-              <h3 class="text-xl font-semibold text-white mb-3">High Coverage Testing</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>90%+ Coverage:</strong> Achieve high test coverage automáticamente</li>
-                <li>• <strong>Edge Cases:</strong> Detecta y testa casos límite</li>
-                <li>• <strong>Exception Paths:</strong> Cubre error handling scenarios</li>
-                <li>• <strong>Mock Integration:</strong> Maneja dependencies automáticamente</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-teal-500/20">
-              <div class="text-3xl mb-4">⚡</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Zero Configuration</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>No Annotations:</strong> Funciona con código existente</li>
-                <li>• <strong>No Refactoring:</strong> No requiere cambios al código</li>
-                <li>• <strong>IDE Integration:</strong> Plugins para IntelliJ y Eclipse</li>
-                <li>• <strong>CI/CD Ready:</strong> Integración con pipelines</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-blue-500/20">
-              <div class="text-3xl mb-4">🔄</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Regression Detection</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Behavior Monitoring:</strong> Detecta cambios no intencionados</li>
-                <li>• <strong>Golden Master:</strong> Baseline automático de comportamiento</li>
-                <li>• <strong>Delta Analysis:</strong> Identifica qué cambió exactamente</li>
-                <li>• <strong>Impact Assessment:</strong> Evalúa criticidad de cambios</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-cyan-600/20">
-              <div class="text-3xl mb-4">📊</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Quality Insights</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Coverage Reports:</strong> Análisis detallado de cobertura</li>
-                <li>• <strong>Complexity Metrics:</strong> Identifica código complejo</li>
-                <li>• <strong>Risk Assessment:</strong> Resalta código propenso a bugs</li>
-                <li>• <strong>Trend Analysis:</strong> Tracking de calidad over time</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong>Diffblue Cover</strong> es una herramienta
+                                revolucionaria que utiliza IA y symbolic execution
+                                para generar automáticamente unit tests para código
+                                Java. No requiere anotaciones especiales ni modificaciones
+                                al código existente - simplemente analiza tu codebase
+                                y genera tests comprehensivos.
+                            </p>
 
-      <!-- Ejemplos Prácticos -->
-      <section id="ejemplos" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">💡 Ejemplos Prácticos</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-cyan-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🧮 Testing de Business Logic Compleja</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="text-xs text-gray-400 mb-2">Código Original</div>
-                  <pre class="text-xs text-cyan-400"><code>{`public class PricingCalculator {
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🎯 Problema que Resuelve
+                                </h3>
+
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-cyan-400">⏰</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Testing Manual Lento
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Escribir tests toma 2-3x más
+                                                tiempo que el código
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-teal-400">📉</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Baja Cobertura
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Muchos proyectos tienen menos
+                                                del 50% test coverage
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-blue-400">🐛</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Bugs en Producción
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Código sin tests llega a prod
+                                                con errores
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🚀 Solución IA
+                                </h3>
+
+                                <div class="space-y-4 text-sm">
+                                    <div
+                                        class="border-l-4 border-cyan-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-cyan-300"
+                                        >
+                                            Symbolic Execution
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Analiza todos los paths de ejecución
+                                            posibles
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-teal-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-teal-300"
+                                        >
+                                            Automatic Test Generation
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Genera tests JUnit completos y
+                                            válidos
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-blue-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-blue-300"
+                                        >
+                                            Regression Detection
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Detecta comportamiento changes
+                                            automáticamente
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-cyan-800/20 to-blue-800/20 rounded-xl p-4 border border-cyan-500/20"
+                            >
+                                <div
+                                    class="text-sm text-cyan-300 font-medium mb-2"
+                                >
+                                    🎯 Ideal Para
+                                </div>
+                                <p class="text-gray-400 text-sm">
+                                    Teams Java que quieren mejorar test coverage
+                                    rápidamente, legacy codebases sin tests, y
+                                    desarrollo donde la calidad es crítica
+                                    (fintech, healthcare, aerospace).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cómo Funciona -->
+            <section id="como-funciona" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚙️ Cómo Funciona Diffblue Cover
+                </h2>
+
+                <div class="space-y-8">
+                    <div class="bg-gray-900 rounded-xl p-8">
+                        <h3
+                            class="text-xl font-semibold text-white mb-6 text-center"
+                        >
+                            🔄 Proceso de Generación Automática
+                        </h3>
+
+                        <div class="grid md:grid-cols-4 gap-6">
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    1
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    📊 Static Analysis
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Analiza el código Java usando symbolic
+                                    execution para mapear todos los execution
+                                    paths posibles.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    2
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🧠 AI Processing
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    La IA determina qué inputs son necesarios
+                                    para ejercitar cada branch y edge case.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    3
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    ✨ Test Generation
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Genera unit tests JUnit completos con
+                                    assertions automáticas y setup/teardown.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    4
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    ✅ Validation
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Valida que los tests generados compilan,
+                                    ejecutan correctamente y no son flaky.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-cyan-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🔬 Tecnología Subyacente
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-cyan-300 mb-3">
+                                    Symbolic Execution Engine
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>Path Exploration:</strong> Analiza
+                                        todos los branches posibles
+                                    </li>
+                                    <li>
+                                        • <strong>Constraint Solving:</strong> Determina
+                                        inputs válidos
+                                    </li>
+                                    <li>
+                                        • <strong
+                                            >Abstract Interpretation:</strong
+                                        > Maneja complex data structures
+                                    </li>
+                                    <li>
+                                        • <strong>Concolic Testing:</strong> Combina
+                                        concrete y symbolic execution
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-teal-300 mb-3">
+                                    AI Optimization
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>Machine Learning:</strong> Mejora
+                                        con cada codebase
+                                    </li>
+                                    <li>
+                                        • <strong>Pattern Recognition:</strong> Identifica
+                                        testing anti-patterns
+                                    </li>
+                                    <li>
+                                        • <strong>Code Understanding:</strong> Entiende
+                                        domain logic
+                                    </li>
+                                    <li>
+                                        • <strong>Quality Scoring:</strong> Prioriza
+                                        tests más valiosos
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Principales -->
+            <section id="features" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🚀 Features Principales
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-cyan-500/20"
+                        >
+                            <div class="text-3xl mb-4">🎯</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                High Coverage Testing
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>90%+ Coverage:</strong> Achieve high
+                                    test coverage automáticamente
+                                </li>
+                                <li>
+                                    • <strong>Edge Cases:</strong> Detecta y testa
+                                    casos límite
+                                </li>
+                                <li>
+                                    • <strong>Exception Paths:</strong> Cubre error
+                                    handling scenarios
+                                </li>
+                                <li>
+                                    • <strong>Mock Integration:</strong> Maneja dependencies
+                                    automáticamente
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-teal-500/20"
+                        >
+                            <div class="text-3xl mb-4">⚡</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Zero Configuration
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>No Annotations:</strong> Funciona con
+                                    código existente
+                                </li>
+                                <li>
+                                    • <strong>No Refactoring:</strong> No requiere
+                                    cambios al código
+                                </li>
+                                <li>
+                                    • <strong>IDE Integration:</strong> Plugins para
+                                    IntelliJ y Eclipse
+                                </li>
+                                <li>
+                                    • <strong>CI/CD Ready:</strong> Integración con
+                                    pipelines
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-blue-500/20"
+                        >
+                            <div class="text-3xl mb-4">🔄</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Regression Detection
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Behavior Monitoring:</strong> Detecta
+                                    cambios no intencionados
+                                </li>
+                                <li>
+                                    • <strong>Golden Master:</strong> Baseline automático
+                                    de comportamiento
+                                </li>
+                                <li>
+                                    • <strong>Delta Analysis:</strong> Identifica
+                                    qué cambió exactamente
+                                </li>
+                                <li>
+                                    • <strong>Impact Assessment:</strong> Evalúa
+                                    criticidad de cambios
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-cyan-600/20"
+                        >
+                            <div class="text-3xl mb-4">📊</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Quality Insights
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Coverage Reports:</strong> Análisis
+                                    detallado de cobertura
+                                </li>
+                                <li>
+                                    • <strong>Complexity Metrics:</strong> Identifica
+                                    código complejo
+                                </li>
+                                <li>
+                                    • <strong>Risk Assessment:</strong> Resalta código
+                                    propenso a bugs
+                                </li>
+                                <li>
+                                    • <strong>Trend Analysis:</strong> Tracking de
+                                    calidad over time
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos Prácticos -->
+            <section id="ejemplos" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    💡 Ejemplos Prácticos
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-cyan-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🧮 Testing de Business Logic Compleja
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div class="text-xs text-gray-400 mb-2">
+                                        Código Original
+                                    </div>
+                                    <pre
+                                        class="text-xs text-cyan-400"><code>{`public class PricingCalculator {
     
     public BigDecimal calculateDiscount(
         Customer customer, 
@@ -296,13 +530,16 @@ import Layout from '../../layouts/Layout.astro';
         return baseDiscount.min(maxDiscount);
     }
 }`}</code></pre>
-                </div>
-              </div>
-              
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4">
-                  <div class="text-xs text-gray-400 mb-2">Test Generado Automáticamente</div>
-                  <pre class="text-xs text-green-400"><code>{`@Test
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4">
+                                    <div class="text-xs text-gray-400 mb-2">
+                                        Test Generado Automáticamente
+                                    </div>
+                                    <pre
+                                        class="text-xs text-green-400"><code>{`@Test
 public void testCalculateDiscount() {
     // Test null customer
     assertThrows(IllegalArgumentException.class, () -> {
@@ -331,44 +568,68 @@ public void testCalculateDiscount() {
     assertEquals(BigDecimal.ZERO,
         calculator.calculateDiscount(regularCustomer, edgeOrder));
 }`}</code></pre>
-                </div>
-              </div>
-            </div>
-            
-            <div class="mt-6 bg-cyan-900/20 border border-cyan-600/30 p-4 rounded-lg">
-              <div class="text-sm text-cyan-300 font-medium mb-2">✨ Cobertura Automática</div>
-              <p class="text-gray-400 text-sm">
-                Diffblue Cover identificó automáticamente todos los branches (VIP/regular, large/small order), 
-                edge cases (exactly $1000), exception paths (null inputs), y boundary conditions (max discount cap).
-              </p>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-blue-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🔍 Regression Detection en Legacy Code</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-blue-300 mb-2">Escenario</div>
-                  <p class="text-gray-400 text-sm">
-                    Un desarrollador modifica una función crítica de validación de 
-                    tarjetas de crédito en un sistema de pagos legacy sin tests existentes.
-                  </p>
-                </div>
-                
-                <div class="font-semibold text-teal-300 mb-2">Proceso Cover</div>
-                <ol class="text-gray-400 text-sm space-y-1 list-decimal list-inside">
-                  <li>Genera tests para versión original</li>
-                  <li>Ejecuta tests después del cambio</li>
-                  <li>Detecta diferencias en behavior</li>
-                  <li>Reporta potential regressions</li>
-                </ol>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Regression Report</div>
-                <pre class="text-xs text-blue-400"><code>{`🚨 REGRESSION DETECTED
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="mt-6 bg-cyan-900/20 border border-cyan-600/30 p-4 rounded-lg"
+                        >
+                            <div class="text-sm text-cyan-300 font-medium mb-2">
+                                ✨ Cobertura Automática
+                            </div>
+                            <p class="text-gray-400 text-sm">
+                                Diffblue Cover identificó automáticamente todos
+                                los branches (VIP/regular, large/small order),
+                                edge cases (exactly $1000), exception paths
+                                (null inputs), y boundary conditions (max
+                                discount cap).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-blue-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🔍 Regression Detection en Legacy Code
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-blue-300 mb-2"
+                                    >
+                                        Escenario
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        Un desarrollador modifica una función
+                                        crítica de validación de tarjetas de
+                                        crédito en un sistema de pagos legacy
+                                        sin tests existentes.
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-teal-300 mb-2">
+                                    Proceso Cover
+                                </div>
+                                <ol
+                                    class="text-gray-400 text-sm space-y-1 list-decimal list-inside"
+                                >
+                                    <li>Genera tests para versión original</li>
+                                    <li>Ejecuta tests después del cambio</li>
+                                    <li>Detecta diferencias en behavior</li>
+                                    <li>Reporta potential regressions</li>
+                                </ol>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Regression Report
+                                </div>
+                                <pre
+                                    class="text-xs text-blue-400"><code>{`🚨 REGRESSION DETECTED
 
 Function: CreditCardValidator.validateCard()
 Change Impact: CRITICAL
@@ -397,111 +658,178 @@ Recommendation:
 
 Risk Level: 🔴 HIGH
 Affected Users: ~12,000 customers`}</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Beneficios -->
-      <section id="beneficios" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">📈 Beneficios del Testing IA</h2>
-        
-        <div class="bg-gray-900 rounded-xl p-8">
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="text-center">
-              <div class="text-4xl mb-4">⚡</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Velocidad</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-cyan-900/30 p-3 rounded">
-                  <div class="font-bold text-cyan-300 text-lg">10x</div>
-                  <div class="text-gray-400">Faster test creation</div>
-                </div>
-                <div class="bg-teal-900/30 p-3 rounded">
-                  <div class="font-bold text-teal-300 text-lg">80%</div>
-                  <div class="text-gray-400">Time saved on testing</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="text-center">
-              <div class="text-4xl mb-4">🎯</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Calidad</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-blue-900/30 p-3 rounded">
-                  <div class="font-bold text-blue-300 text-lg">95%</div>
-                  <div class="text-gray-400">Test coverage achievable</div>
-                </div>
-                <div class="bg-cyan-900/30 p-3 rounded">
-                  <div class="font-bold text-cyan-300 text-lg">60%</div>
-                  <div class="text-gray-400">Fewer production bugs</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="text-center">
-              <div class="text-4xl mb-4">💰</div>
-              <h3 class="text-xl font-semibold text-white mb-3">ROI</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-teal-900/30 p-3 rounded">
-                  <div class="font-bold text-teal-300 text-lg">400%</div>
-                  <div class="text-gray-400">ROI within first year</div>
-                </div>
-                <div class="bg-blue-900/30 p-3 rounded">
-                  <div class="font-bold text-blue-300 text-lg">$2M</div>
-                  <div class="text-gray-400">Avg. cost savings (large teams)</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- Beneficios -->
+            <section id="beneficios" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    📈 Beneficios del Testing IA
+                </h2>
 
-      <!-- Planes -->
-      <section class="mb-12">
-        <div class="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 border border-cyan-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">💼 Planes Disponibles</h2>
-          
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🆓 Community</h3>
-              <div class="text-2xl font-bold text-gray-400 mb-2">Free</div>
-              <div class="text-gray-400 text-sm mb-4">Para proyectos open source</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Limited test generation</li>
-                <li>• Basic IDE integration</li>
-                <li>• Community support</li>
-                <li>• Open source projects only</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-cyan-500/50">
-              <h3 class="text-lg font-semibold text-white mb-3">⭐ Professional</h3>
-              <div class="text-2xl font-bold text-cyan-400 mb-2">$200/mes</div>
-              <div class="text-gray-400 text-sm mb-4">Por developer</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Unlimited test generation</li>
-                <li>• Full IDE integration</li>
-                <li>• Regression detection</li>
-                <li>• Email support</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🏢 Enterprise</h3>
-              <div class="text-2xl font-bold text-teal-400 mb-2">Custom</div>
-              <div class="text-gray-400 text-sm mb-4">Para grandes teams</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Todo de Professional</li>
-                <li>• On-premise deployment</li>
-                <li>• Advanced analytics</li>
-                <li>• Dedicated support</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+                <div class="bg-gray-900 rounded-xl p-8">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">⚡</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Velocidad
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-cyan-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-cyan-300 text-lg"
+                                    >
+                                        10x
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Faster test creation
+                                    </div>
+                                </div>
+                                <div class="bg-teal-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-teal-300 text-lg"
+                                    >
+                                        80%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Time saved on testing
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    </div>
-  </main>
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🎯</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Calidad
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-blue-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-blue-300 text-lg"
+                                    >
+                                        95%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Test coverage achievable
+                                    </div>
+                                </div>
+                                <div class="bg-cyan-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-cyan-300 text-lg"
+                                    >
+                                        60%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Fewer production bugs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">💰</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                ROI
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-teal-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-teal-300 text-lg"
+                                    >
+                                        400%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        ROI within first year
+                                    </div>
+                                </div>
+                                <div class="bg-blue-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-blue-300 text-lg"
+                                    >
+                                        $2M
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Avg. cost savings (large teams)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Planes -->
+            <section class="mb-12">
+                <div
+                    class="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 border border-cyan-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        💼 Planes Disponibles
+                    </h2>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🆓 Community
+                            </h3>
+                            <div class="text-2xl font-bold text-gray-400 mb-2">
+                                Free
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para proyectos open source
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Limited test generation</li>
+                                <li>• Basic IDE integration</li>
+                                <li>• Community support</li>
+                                <li>• Open source projects only</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-cyan-500/50"
+                        >
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                ⭐ Professional
+                            </h3>
+                            <div class="text-2xl font-bold text-cyan-400 mb-2">
+                                $200/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Por developer
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Unlimited test generation</li>
+                                <li>• Full IDE integration</li>
+                                <li>• Regression detection</li>
+                                <li>• Email support</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🏢 Enterprise
+                            </h3>
+                            <div class="text-2xl font-bold text-teal-400 mb-2">
+                                Custom
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para grandes teams
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Todo de Professional</li>
+                                <li>• On-premise deployment</li>
+                                <li>• Advanced analytics</li>
+                                <li>• Dedicated support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </Layout>

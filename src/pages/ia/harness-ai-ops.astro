@@ -1,290 +1,540 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Harness AI Ops - DevOps Inteligente | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-orange-900 via-amber-900 to-yellow-900 py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-2xl flex items-center justify-center text-4xl">
-            🚀
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Harness AI Ops</h1>
-            <p class="text-xl text-orange-300">DevOps Inteligente y Automatizado</p>
-            <p class="text-gray-400">by Harness</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          Harness AI Ops revoluciona el DevOps con inteligencia artificial integrada, 
-          automatizando deployments, detectando anomalías y optimizando pipelines 
-          para que los teams entreguen software más rápido y con mayor confiabilidad.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-orange-400 hover:text-orange-300 whitespace-nowrap transition-colors">¿Qué es?</a>
-          <a href="#ai-features" class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors">Features IA</a>
-          <a href="#pipeline-automation" class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors">Pipeline Automation</a>
-          <a href="#ejemplos" class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors">Ejemplos</a>
-          <a href="#beneficios" class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors">Beneficios</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- ¿Qué es Harness AI Ops? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-orange-900/20 to-yellow-900/20 border border-orange-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">🚀 ¿Qué es Harness AI Ops?</h2>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-4">
-              <p class="text-gray-300 leading-relaxed">
-                <strong>Harness AI Ops</strong> es una plataforma DevOps de próxima generación 
-                que integra inteligencia artificial en cada aspecto del software delivery lifecycle. 
-                Desde CI/CD automatizado hasta cost optimization y security, Harness utiliza 
-                ML para que los equipos entreguen software más rápido y con menos riesgo.
-              </p>
-              
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🎯 Pilares Fundamentales</h3>
-                
-                <div class="space-y-3 text-sm">
-                  <div class="flex items-start gap-3">
-                    <span class="text-orange-400">🤖</span>
-                    <div>
-                      <div class="text-white font-medium">AI-First Architecture</div>
-                      <div class="text-gray-400">ML integrado en cada decisión y proceso</div>
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-orange-900 via-amber-900 to-yellow-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🚀
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-amber-400">⚡</span>
                     <div>
-                      <div class="text-white font-medium">Autonomous Operations</div>
-                      <div class="text-gray-400">Self-healing y auto-optimization</div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            Harness AI Ops
+                        </h1>
+                        <p class="text-xl text-orange-300">
+                            DevOps Inteligente y Automatizado
+                        </p>
+                        <p class="text-gray-400">by Harness</p>
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-yellow-400">📊</span>
-                    <div>
-                      <div class="text-white font-medium">Predictive Analytics</div>
-                      <div class="text-gray-400">Anticipa problemas antes que ocurran</div>
+                </div>
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    Harness AI Ops revoluciona el DevOps con inteligencia
+                    artificial integrada, automatizando deployments, detectando
+                    anomalías y optimizando pipelines para que los teams
+                    entreguen software más rápido y con mayor confiabilidad.
+                </p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-orange-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#ai-features"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Features IA</a
+                    >
+                    <a
+                        href="#pipeline-automation"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Pipeline Automation</a
+                    >
+                    <a
+                        href="#ejemplos"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Ejemplos</a
+                    >
+                    <a
+                        href="#beneficios"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Beneficios</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es Harness AI Ops? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-orange-900/20 to-yellow-900/20 border border-orange-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🚀 ¿Qué es Harness AI Ops?
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong>Harness AI Ops</strong> es una plataforma
+                                DevOps de próxima generación que integra inteligencia
+                                artificial en cada aspecto del software delivery
+                                lifecycle. Desde CI/CD automatizado hasta cost optimization
+                                y security, Harness utiliza ML para que los equipos
+                                entreguen software más rápido y con menos riesgo.
+                            </p>
+
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🎯 Pilares Fundamentales
+                                </h3>
+
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-orange-400">🤖</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                AI-First Architecture
+                                            </div>
+                                            <div class="text-gray-400">
+                                                ML integrado en cada decisión y
+                                                proceso
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-amber-400">⚡</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Autonomous Operations
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Self-healing y auto-optimization
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-yellow-400">📊</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Predictive Analytics
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Anticipa problemas antes que
+                                                ocurran
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🚀 Modules Principales
+                                </h3>
+
+                                <div class="space-y-4 text-sm">
+                                    <div
+                                        class="border-l-4 border-orange-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-orange-300"
+                                        >
+                                            Continuous Delivery
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Deployments inteligentes y seguros
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-amber-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-amber-300"
+                                        >
+                                            Cloud Cost Management
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Optimización automática de costos
+                                            cloud
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-yellow-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-yellow-300"
+                                        >
+                                            Security Testing
+                                        </div>
+                                        <div class="text-gray-400">
+                                            DevSecOps con AI-powered scanning
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-orange-800/20 to-yellow-800/20 rounded-xl p-4 border border-orange-500/20"
+                            >
+                                <div
+                                    class="text-sm text-orange-300 font-medium mb-2"
+                                >
+                                    🎯 Target Market
+                                </div>
+                                <p class="text-gray-400 text-sm">
+                                    Enterprise teams que necesitan escalar
+                                    DevOps operations, reducir toil manual y
+                                    mejorar reliability sin aumentar
+                                    dramatically el headcount del team.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            
-            <div class="space-y-6">
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🚀 Modules Principales</h3>
-                
-                <div class="space-y-4 text-sm">
-                  <div class="border-l-4 border-orange-500 pl-4">
-                    <div class="font-semibold text-orange-300">Continuous Delivery</div>
-                    <div class="text-gray-400">Deployments inteligentes y seguros</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-amber-500 pl-4">
-                    <div class="font-semibold text-amber-300">Cloud Cost Management</div>
-                    <div class="text-gray-400">Optimización automática de costos cloud</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-yellow-500 pl-4">
-                    <div class="font-semibold text-yellow-300">Security Testing</div>
-                    <div class="text-gray-400">DevSecOps con AI-powered scanning</div>
-                  </div>
+            </section>
+
+            <!-- AI Features -->
+            <section id="ai-features" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🤖 Features de IA Avanzada
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-orange-500/20"
+                        >
+                            <div class="text-3xl mb-4">🎯</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Intelligent Deployments
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Anomaly Detection:</strong> Detecta
+                                    comportamiento anormal automáticamente
+                                </li>
+                                <li>
+                                    • <strong>Auto-Rollback:</strong> Revierte deployments
+                                    problemáticos
+                                </li>
+                                <li>
+                                    • <strong>Canary Analysis:</strong> ML evalúa
+                                    health de canary deployments
+                                </li>
+                                <li>
+                                    • <strong>Impact Prediction:</strong> Predice
+                                    impacto antes del deployment
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-amber-500/20"
+                        >
+                            <div class="text-3xl mb-4">💰</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Cost Intelligence
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Spend Optimization:</strong> Identifica
+                                    waste automáticamente
+                                </li>
+                                <li>
+                                    • <strong>Right-sizing:</strong> Ajusta recursos
+                                    based on usage patterns
+                                </li>
+                                <li>
+                                    • <strong>Budget Alerts:</strong> Predicciones
+                                    de overspend
+                                </li>
+                                <li>
+                                    • <strong>Resource Recommendation:</strong> Sugiere
+                                    optimizaciones
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-yellow-500/20"
+                        >
+                            <div class="text-3xl mb-4">🔒</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Security AI
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong
+                                        >Vulnerability Prioritization:</strong
+                                    > Rank por risk real
+                                </li>
+                                <li>
+                                    • <strong>Supply Chain Analysis:</strong> Detecta
+                                    dependencies risks
+                                </li>
+                                <li>
+                                    • <strong>Policy Enforcement:</strong> Compliance
+                                    automática
+                                </li>
+                                <li>
+                                    • <strong>Threat Detection:</strong> Behavioral
+                                    analysis avanzado
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-orange-600/20"
+                        >
+                            <div class="text-3xl mb-4">📈</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Performance Intelligence
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Pipeline Optimization:</strong> Reduce
+                                    build times automáticamente
+                                </li>
+                                <li>
+                                    • <strong>Resource Allocation:</strong> Smart
+                                    scaling predictions
+                                </li>
+                                <li>
+                                    • <strong>Bottleneck Detection:</strong> Identifica
+                                    y resuelve cuellos de botella
+                                </li>
+                                <li>
+                                    • <strong>Capacity Planning:</strong> Forecasting
+                                    basado en trends
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              
-              <div class="bg-gradient-to-r from-orange-800/20 to-yellow-800/20 rounded-xl p-4 border border-orange-500/20">
-                <div class="text-sm text-orange-300 font-medium mb-2">🎯 Target Market</div>
-                <p class="text-gray-400 text-sm">
-                  Enterprise teams que necesitan escalar DevOps operations, 
-                  reducir toil manual y mejorar reliability sin aumentar 
-                  dramatically el headcount del team.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </section>
 
-      <!-- AI Features -->
-      <section id="ai-features" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🤖 Features de IA Avanzada</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-orange-500/20">
-              <div class="text-3xl mb-4">🎯</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Intelligent Deployments</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Anomaly Detection:</strong> Detecta comportamiento anormal automáticamente</li>
-                <li>• <strong>Auto-Rollback:</strong> Revierte deployments problemáticos</li>
-                <li>• <strong>Canary Analysis:</strong> ML evalúa health de canary deployments</li>
-                <li>• <strong>Impact Prediction:</strong> Predice impacto antes del deployment</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-amber-500/20">
-              <div class="text-3xl mb-4">💰</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Cost Intelligence</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Spend Optimization:</strong> Identifica waste automáticamente</li>
-                <li>• <strong>Right-sizing:</strong> Ajusta recursos based on usage patterns</li>
-                <li>• <strong>Budget Alerts:</strong> Predicciones de overspend</li>
-                <li>• <strong>Resource Recommendation:</strong> Sugiere optimizaciones</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-yellow-500/20">
-              <div class="text-3xl mb-4">🔒</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Security AI</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Vulnerability Prioritization:</strong> Rank por risk real</li>
-                <li>• <strong>Supply Chain Analysis:</strong> Detecta dependencies risks</li>
-                <li>• <strong>Policy Enforcement:</strong> Compliance automática</li>
-                <li>• <strong>Threat Detection:</strong> Behavioral analysis avanzado</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-orange-600/20">
-              <div class="text-3xl mb-4">📈</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Performance Intelligence</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Pipeline Optimization:</strong> Reduce build times automáticamente</li>
-                <li>• <strong>Resource Allocation:</strong> Smart scaling predictions</li>
-                <li>• <strong>Bottleneck Detection:</strong> Identifica y resuelve cuellos de botella</li>
-                <li>• <strong>Capacity Planning:</strong> Forecasting basado en trends</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- Pipeline Automation -->
+            <section id="pipeline-automation" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚙️ Pipeline Automation Avanzada
+                </h2>
 
-      <!-- Pipeline Automation -->
-      <section id="pipeline-automation" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">⚙️ Pipeline Automation Avanzada</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-orange-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6 text-center">🔄 Continuous Delivery con IA</h3>
-            
-            <div class="grid md:grid-cols-4 gap-6">
-              <div class="text-center">
-                <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">1</div>
-                <h4 class="font-semibold text-white mb-2">🧠 Smart Triggers</h4>
-                <p class="text-gray-400 text-sm">
-                  IA decide cuándo deployar basado en 
-                  code quality, test coverage y risk assessment.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">2</div>
-                <h4 class="font-semibold text-white mb-2">🎯 Automated Testing</h4>
-                <p class="text-gray-400 text-sm">
-                  ML genera test scenarios y prioriza 
-                  tests basado en code changes y risk.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">3</div>
-                <h4 class="font-semibold text-white mb-2">📊 Health Validation</h4>
-                <p class="text-gray-400 text-sm">
-                  Continuous validation durante deployment 
-                  con ML anomaly detection en real-time.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">4</div>
-                <h4 class="font-semibold text-white mb-2">🔄 Auto Remediation</h4>
-                <p class="text-gray-400 text-sm">
-                  Rollback automático o self-healing 
-                  cuando IA detecta issues críticos.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-yellow-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🚀 GitOps + AI Integration</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <h4 class="font-semibold text-orange-300 mb-3">Intelligent GitOps</h4>
-                <ul class="text-gray-400 text-sm space-y-2">
-                  <li>• <strong>Smart Sync:</strong> AI decide sync timing y strategy</li>
-                  <li>• <strong>Conflict Resolution:</strong> Automatic merge conflict handling</li>
-                  <li>• <strong>Drift Detection:</strong> Identifica configuration drift</li>
-                  <li>• <strong>Policy Validation:</strong> Compliance checks automáticos</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 class="font-semibold text-amber-300 mb-3">Progressive Delivery</h4>
-                <ul class="text-gray-400 text-sm space-y-2">
-                  <li>• <strong>Canary Automation:</strong> ML-driven traffic shifting</li>
-                  <li>• <strong>Blue-Green Intelligence:</strong> Optimal switch timing</li>
-                  <li>• <strong>Feature Flags:</strong> AI-powered flag management</li>
-                  <li>• <strong>A/B Testing:</strong> Statistical significance automation</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-orange-500/20"
+                    >
+                        <h3
+                            class="text-xl font-semibold text-white mb-6 text-center"
+                        >
+                            🔄 Continuous Delivery con IA
+                        </h3>
 
-      <!-- Ejemplos Prácticos -->
-      <section id="ejemplos" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">💡 Casos de Uso Reales</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-orange-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🎯 Auto-Rollback Inteligente</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-orange-300 mb-2">Scenario</div>
-                  <p class="text-gray-400 text-sm">
-                    E-commerce deployment durante Black Friday. Nueva versión 
-                    causa 15% spike en error rate. Harness AI detecta anomalía 
-                    y ejecuta rollback automático en 90 segundos.
-                  </p>
+                        <div class="grid md:grid-cols-4 gap-6">
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    1
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🧠 Smart Triggers
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    IA decide cuándo deployar basado en code
+                                    quality, test coverage y risk assessment.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    2
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🎯 Automated Testing
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    ML genera test scenarios y prioriza tests
+                                    basado en code changes y risk.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    3
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    📊 Health Validation
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Continuous validation durante deployment con
+                                    ML anomaly detection en real-time.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    4
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🔄 Auto Remediation
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Rollback automático o self-healing cuando IA
+                                    detecta issues críticos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-yellow-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🚀 GitOps + AI Integration
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-orange-300 mb-3">
+                                    Intelligent GitOps
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>Smart Sync:</strong> AI decide
+                                        sync timing y strategy
+                                    </li>
+                                    <li>
+                                        • <strong>Conflict Resolution:</strong> Automatic
+                                        merge conflict handling
+                                    </li>
+                                    <li>
+                                        • <strong>Drift Detection:</strong> Identifica
+                                        configuration drift
+                                    </li>
+                                    <li>
+                                        • <strong>Policy Validation:</strong> Compliance
+                                        checks automáticos
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-amber-300 mb-3">
+                                    Progressive Delivery
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>Canary Automation:</strong> ML-driven
+                                        traffic shifting
+                                    </li>
+                                    <li>
+                                        • <strong
+                                            >Blue-Green Intelligence:</strong
+                                        > Optimal switch timing
+                                    </li>
+                                    <li>
+                                        • <strong>Feature Flags:</strong> AI-powered
+                                        flag management
+                                    </li>
+                                    <li>
+                                        • <strong>A/B Testing:</strong> Statistical
+                                        significance automation
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="font-semibold text-amber-300 mb-2">AI Decision Process</div>
-                <ol class="text-gray-400 text-sm space-y-1 list-decimal list-inside">
-                  <li>Detecta anomalía en error rate vs baseline</li>
-                  <li>Correlaciona con recent deployment</li>
-                  <li>Calcula business impact ($45K/hour loss)</li>
-                  <li>Ejecuta rollback automático</li>
-                  <li>Notifica team con root cause analysis</li>
-                </ol>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Harness AI Alert & Action</div>
-                <pre class="text-xs text-orange-400"><code>{`🚨 DEPLOYMENT ANOMALY DETECTED
+            </section>
+
+            <!-- Ejemplos Prácticos -->
+            <section id="ejemplos" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    💡 Casos de Uso Reales
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-orange-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🎯 Auto-Rollback Inteligente
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-orange-300 mb-2"
+                                    >
+                                        Scenario
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        E-commerce deployment durante Black
+                                        Friday. Nueva versión causa 15% spike en
+                                        error rate. Harness AI detecta anomalía
+                                        y ejecuta rollback automático en 90
+                                        segundos.
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-amber-300 mb-2">
+                                    AI Decision Process
+                                </div>
+                                <ol
+                                    class="text-gray-400 text-sm space-y-1 list-decimal list-inside"
+                                >
+                                    <li>
+                                        Detecta anomalía en error rate vs
+                                        baseline
+                                    </li>
+                                    <li>Correlaciona con recent deployment</li>
+                                    <li>
+                                        Calcula business impact ($45K/hour loss)
+                                    </li>
+                                    <li>Ejecuta rollback automático</li>
+                                    <li>
+                                        Notifica team con root cause analysis
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Harness AI Alert & Action
+                                </div>
+                                <pre
+                                    class="text-xs text-orange-400"><code>{`🚨 DEPLOYMENT ANOMALY DETECTED
 Time: 2024-11-29 14:23:15 PST
 Service: checkout-service-v2.1.4
 
@@ -315,36 +565,63 @@ NEXT STEPS:
 1. Investigation required: payment logic
 2. Database query optimization needed
 3. Add performance tests to pipeline`}</code></pre>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-yellow-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">💰 Cloud Cost Optimization Automática</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-yellow-300 mb-2">Cost Challenge</div>
-                  <p class="text-gray-400 text-sm">
-                    Startup con $50K/mes AWS bill. Harness AI identifica 
-                    over-provisioning, unused resources y optimiza automáticamente, 
-                    reduciendo costos 40% sin impacto en performance.
-                  </p>
-                </div>
-                
-                <div class="font-semibold text-orange-300 mb-2">AI Cost Analysis</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• <strong>Resource Analysis:</strong> 24/7 usage pattern monitoring</li>
-                  <li>• <strong>Right-sizing:</strong> ML recommendations para instance types</li>
-                  <li>• <strong>Waste Detection:</strong> Identifica idle resources</li>
-                  <li>• <strong>Auto-scaling:</strong> Predictive scaling optimizations</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Cost Optimization Report</div>
-                <pre class="text-xs text-yellow-400"><code>{`💰 MONTHLY COST OPTIMIZATION
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-yellow-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            💰 Cloud Cost Optimization Automática
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-yellow-300 mb-2"
+                                    >
+                                        Cost Challenge
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        Startup con $50K/mes AWS bill. Harness
+                                        AI identifica over-provisioning, unused
+                                        resources y optimiza automáticamente,
+                                        reduciendo costos 40% sin impacto en
+                                        performance.
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-orange-300 mb-2">
+                                    AI Cost Analysis
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>Resource Analysis:</strong> 24/7
+                                        usage pattern monitoring
+                                    </li>
+                                    <li>
+                                        • <strong>Right-sizing:</strong> ML recommendations
+                                        para instance types
+                                    </li>
+                                    <li>
+                                        • <strong>Waste Detection:</strong> Identifica
+                                        idle resources
+                                    </li>
+                                    <li>
+                                        • <strong>Auto-scaling:</strong> Predictive
+                                        scaling optimizations
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Cost Optimization Report
+                                </div>
+                                <pre
+                                    class="text-xs text-yellow-400"><code>{`💰 MONTHLY COST OPTIMIZATION
 Report Period: November 2024
 Previous Month: $52,340
 Optimized: $31,180 (-40.4%)
@@ -374,111 +651,182 @@ AUTO-SCHEDULED ACTIONS:
 • Storage cleanup: Weekly orphaned volumes
 
 PROJECTED ANNUAL SAVINGS: $254,000`}</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Beneficios Empresariales -->
-      <section id="beneficios" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">📈 Beneficios Empresariales</h2>
-        
-        <div class="bg-gray-900 rounded-xl p-8">
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="text-center">
-              <div class="text-4xl mb-4">⚡</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Velocity</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-orange-900/30 p-3 rounded">
-                  <div class="font-bold text-orange-300 text-lg">10x</div>
-                  <div class="text-gray-400">Faster deployments</div>
-                </div>
-                <div class="bg-amber-900/30 p-3 rounded">
-                  <div class="font-bold text-amber-300 text-lg">75%</div>
-                  <div class="text-gray-400">Less manual work</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="text-center">
-              <div class="text-4xl mb-4">🛡️</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Reliability</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-yellow-900/30 p-3 rounded">
-                  <div class="font-bold text-yellow-300 text-lg">99.9%</div>
-                  <div class="text-gray-400">Deployment success rate</div>
-                </div>
-                <div class="bg-orange-900/30 p-3 rounded">
-                  <div class="font-bold text-orange-300 text-lg">90%</div>
-                  <div class="text-gray-400">Faster incident recovery</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="text-center">
-              <div class="text-4xl mb-4">💰</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Cost</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-amber-900/30 p-3 rounded">
-                  <div class="font-bold text-amber-300 text-lg">40%</div>
-                  <div class="text-gray-400">Cloud cost reduction</div>
-                </div>
-                <div class="bg-yellow-900/30 p-3 rounded">
-                  <div class="font-bold text-yellow-300 text-lg">$2M</div>
-                  <div class="text-gray-400">Average annual savings</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- Beneficios Empresariales -->
+            <section id="beneficios" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    📈 Beneficios Empresariales
+                </h2>
 
-      <!-- Planes -->
-      <section class="mb-12">
-        <div class="bg-gradient-to-r from-orange-900/20 to-yellow-900/20 border border-orange-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">💼 Planes Disponibles</h2>
-          
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🆓 Free</h3>
-              <div class="text-2xl font-bold text-gray-400 mb-2">$0</div>
-              <div class="text-gray-400 text-sm mb-4">Para comenzar</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• 5 services</li>
-                <li>• Basic CI/CD</li>
-                <li>• Community support</li>
-                <li>• Standard deployments</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-orange-500/50">
-              <h3 class="text-lg font-semibold text-white mb-3">⭐ Team</h3>
-              <div class="text-2xl font-bold text-orange-400 mb-2">$100/mes</div>
-              <div class="text-gray-400 text-sm mb-4">Por 20 services</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• AI-powered deployments</li>
-                <li>• Automated rollbacks</li>
-                <li>• Cost optimization</li>
-                <li>• 24/7 support</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🏢 Enterprise</h3>
-              <div class="text-2xl font-bold text-yellow-400 mb-2">Custom</div>
-              <div class="text-gray-400 text-sm mb-4">Para organizaciones</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Unlimited services</li>
-                <li>• Advanced AI features</li>
-                <li>• SLA garantizado</li>
-                <li>• Professional services</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+                <div class="bg-gray-900 rounded-xl p-8">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">⚡</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Velocity
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-orange-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-orange-300 text-lg"
+                                    >
+                                        10x
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Faster deployments
+                                    </div>
+                                </div>
+                                <div class="bg-amber-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-amber-300 text-lg"
+                                    >
+                                        75%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Less manual work
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    </div>
-  </main>
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🛡️</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Reliability
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-yellow-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-yellow-300 text-lg"
+                                    >
+                                        99.9%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Deployment success rate
+                                    </div>
+                                </div>
+                                <div class="bg-orange-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-orange-300 text-lg"
+                                    >
+                                        90%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Faster incident recovery
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">💰</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Cost
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-amber-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-amber-300 text-lg"
+                                    >
+                                        40%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Cloud cost reduction
+                                    </div>
+                                </div>
+                                <div class="bg-yellow-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-yellow-300 text-lg"
+                                    >
+                                        $2M
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Average annual savings
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Planes -->
+            <section class="mb-12">
+                <div
+                    class="bg-gradient-to-r from-orange-900/20 to-yellow-900/20 border border-orange-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        💼 Planes Disponibles
+                    </h2>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🆓 Free
+                            </h3>
+                            <div class="text-2xl font-bold text-gray-400 mb-2">
+                                $0
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para comenzar
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• 5 services</li>
+                                <li>• Basic CI/CD</li>
+                                <li>• Community support</li>
+                                <li>• Standard deployments</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-orange-500/50"
+                        >
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                ⭐ Team
+                            </h3>
+                            <div
+                                class="text-2xl font-bold text-orange-400 mb-2"
+                            >
+                                $100/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Por 20 services
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• AI-powered deployments</li>
+                                <li>• Automated rollbacks</li>
+                                <li>• Cost optimization</li>
+                                <li>• 24/7 support</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🏢 Enterprise
+                            </h3>
+                            <div
+                                class="text-2xl font-bold text-yellow-400 mb-2"
+                            >
+                                Custom
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para organizaciones
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Unlimited services</li>
+                                <li>• Advanced AI features</li>
+                                <li>• SLA garantizado</li>
+                                <li>• Professional services</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </Layout>

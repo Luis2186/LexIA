@@ -1,743 +1,1257 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Amazon Q Developer - IA Empresarial de AWS | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center text-4xl">
-            🎯
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Amazon Q Developer</h1>
-            <p class="text-xl text-blue-300">IA Empresarial para Desarrollo Completo</p>
-            <p class="text-gray-400">by Amazon Web Services</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          Amazon Q Developer es la evolución empresarial de CodeWhisperer, diseñada para equipos de desarrollo 
-          completos. Va más allá del código con gestión de proyectos, análisis de arquitectura y optimización 
-          automática de recursos AWS.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-blue-400 hover:text-blue-300 whitespace-nowrap transition-colors">¿Qué es?</a>
-          <a href="#full-stack" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Full-Stack IA</a>
-          <a href="#aws-expertise" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">AWS Expertise</a>
-          <a href="#team-features" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Team Features</a>
-          <a href="#migration-tools" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Migration</a>
-          <a href="#enterprise" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Enterprise</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- ¿Qué es Q Developer? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">¿Por qué Q Developer es diferente?</h2>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <div>
-              <p class="text-gray-300 text-lg leading-relaxed mb-6">
-                Mientras otros asistentes de IA se enfocan solo en escribir código, 
-                <strong>Q Developer abarca todo el ciclo de desarrollo</strong>. Desde planning y 
-                arquitectura hasta deployment y monitoring en AWS.
-              </p>
-              
-              <div class="space-y-4">
-                <div class="flex items-start gap-3">
-                  <span class="text-blue-400 text-xl">🏗️</span>
-                  <div>
-                    <h3 class="text-white font-semibold">Full-Stack Development</h3>
-                    <p class="text-gray-400 text-sm">Frontend, backend, infrastructure, DevOps</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start gap-3">
-                  <span class="text-blue-400 text-xl">🎯</span>
-                  <div>
-                    <h3 class="text-white font-semibold">Project Intelligence</h3>
-                    <p class="text-gray-400 text-sm">Análisis de requisitos, planning automático</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start gap-3">
-                  <span class="text-blue-400 text-xl">☁️</span>
-                  <div>
-                    <h3 class="text-white font-semibold">AWS Native Expert</h3>
-                    <p class="text-gray-400 text-sm">Conocimiento profundo de 200+ servicios AWS</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start gap-3">
-                  <span class="text-blue-400 text-xl">👥</span>
-                  <div>
-                    <h3 class="text-white font-semibold">Team Collaboration</h3>
-                    <p class="text-gray-400 text-sm">Sincronización y estándares de equipo</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="space-y-6">
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">💰 Modelo de Pricing</h3>
-                
-                <div class="space-y-4">
-                  <div class="border border-blue-500/50 rounded-lg p-4 bg-blue-900/10">
-                    <div class="flex justify-between items-center mb-2">
-                      <h4 class="font-semibold text-white">Q Developer Pro</h4>
-                      <span class="text-blue-400 font-bold">$19/usuario/mes</span>
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🎯
                     </div>
-                    <ul class="text-sm text-gray-300 space-y-1">
-                      <li>• Full-stack development support</li>
-                      <li>• Project planning & architecture</li>
-                      <li>• Advanced security scanning</li>
-                      <li>• Team collaboration tools</li>
-                      <li>• Priority AWS support</li>
-                    </ul>
-                  </div>
-                  
-                  <div class="border border-gray-700 rounded-lg p-4">
-                    <div class="flex justify-between items-center mb-2">
-                      <h4 class="font-semibold text-gray-300">Q Developer Enterprise</h4>
-                      <span class="text-blue-400 font-bold">Custom pricing</span>
+                    <div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            Amazon Q Developer
+                        </h1>
+                        <p class="text-xl text-blue-300">
+                            IA Empresarial para Desarrollo Completo
+                        </p>
+                        <p class="text-gray-400">by Amazon Web Services</p>
                     </div>
-                    <ul class="text-sm text-gray-400 space-y-1">
-                      <li>• Todo de Pro</li>
-                      <li>• Custom model training</li>
-                      <li>• Advanced governance</li>
-                      <li>• Dedicated support</li>
-                      <li>• On-premises deployment</li>
-                    </ul>
-                  </div>
                 </div>
-              </div>
-              
-              <div class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-3">🎯 Diferenciadores Únicos</h3>
-                <ul class="space-y-2 text-gray-300 text-sm">
-                  <li>• <strong>End-to-End:</strong> Desde idea hasta producción</li>
-                  <li>• <strong>AWS Mastery:</strong> Expertise en arquitecturas cloud nativas</li>
-                  <li>• <strong>Team Intelligence:</strong> Colaboración IA-asistida</li>
-                  <li>• <strong>Cost Optimization:</strong> Reduce costos AWS automáticamente</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- Full-Stack Development -->
-      <section id="full-stack" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🏗️ Full-Stack Development Assistant</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Frontend Development -->
-          <div class="bg-green-900/20 border border-green-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              🎨
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Frontend Development</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• React, Vue, Angular components</li>
-              <li>• Responsive design patterns</li>
-              <li>• State management optimization</li>
-              <li>• Performance best practices</li>
-              <li>• Accessibility compliance</li>
-            </ul>
-          </div>
-          
-          <!-- Backend APIs -->
-          <div class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              ⚙️
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Backend & APIs</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• REST/GraphQL API design</li>
-              <li>• Lambda functions optimized</li>
-              <li>• Database schema design</li>
-              <li>• Authentication/authorization</li>
-              <li>• Error handling patterns</li>
-            </ul>
-          </div>
-          
-          <!-- DevOps & Infrastructure -->
-          <div class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              🚀
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">DevOps & Infrastructure</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• CloudFormation/CDK templates</li>
-              <li>• CI/CD pipeline automation</li>
-              <li>• Container orchestration</li>
-              <li>• Monitoring & logging setup</li>
-              <li>• Security hardening</li>
-            </ul>
-          </div>
-          
-          <!-- Data & Analytics -->
-          <div class="bg-yellow-900/20 border border-yellow-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              📊
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Data & Analytics</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Data pipeline design</li>
-              <li>• ETL job optimization</li>
-              <li>• Analytics dashboard creation</li>
-              <li>• ML model integration</li>
-              <li>• Real-time processing</li>
-            </ul>
-          </div>
-          
-          <!-- Security & Compliance -->
-          <div class="bg-red-900/20 border border-red-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              🔒
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Security & Compliance</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• OWASP security scanning</li>
-              <li>• Compliance framework setup</li>
-              <li>• Identity management</li>
-              <li>• Encryption implementation</li>
-              <li>• Audit trail configuration</li>
-            </ul>
-          </div>
-          
-          <!-- Testing & Quality -->
-          <div class="bg-indigo-900/20 border border-indigo-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              🧪
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Testing & Quality</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Unit/integration test generation</li>
-              <li>• E2E test automation</li>
-              <li>• Performance testing setup</li>
-              <li>• Code quality metrics</li>
-              <li>• Load testing strategies</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- AWS Expertise -->
-      <section id="aws-expertise" class="mb-20">
-        <div class="bg-gradient-to-r from-orange-900/20 to-red-900/20 border border-orange-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">☁️ AWS Architecture Excellence</h2>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">🏆 Well-Architected Framework</h3>
-              
-              <div class="space-y-4">
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-orange-400 mb-2">🔧 Operational Excellence</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• Automated deployment pipelines</li>
-                    <li>• Infrastructure as Code</li>
-                    <li>• Monitoring & observability</li>
-                    <li>• Incident response automation</li>
-                  </ul>
-                </div>
-                
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-blue-400 mb-2">🛡️ Security</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• Identity & access management</li>
-                    <li>• Data encryption strategies</li>
-                    <li>• Network security design</li>
-                    <li>• Threat detection setup</li>
-                  </ul>
-                </div>
-                
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-green-400 mb-2">🔄 Reliability</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• Multi-AZ deployment patterns</li>
-                    <li>• Auto-scaling configurations</li>
-                    <li>• Disaster recovery planning</li>
-                    <li>• Backup & restore automation</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">⚡ Performance & Cost Optimization</h3>
-              
-              <div class="bg-gray-900 rounded-xl p-6 mb-6">
-                <h4 class="font-semibold text-white mb-4">📈 Real-Time Cost Analysis</h4>
-                <div class="bg-black rounded p-4 text-sm overflow-x-auto">
-                  <code class="text-gray-300">
-                    <span class="text-green-400">// Q Developer analiza tu arquitectura actual</span><br/>
-                    <span class="text-blue-400">Cost Analysis:</span><br/>
-                    • RDS: $2,400/month → $1,200/month (Reserved Instances)<br/>
-                    • EC2: $1,800/month → $900/month (Spot + Right-sizing)<br/>
-                    • S3: $600/month → $300/month (Intelligent Tiering)<br/>
-                    <br/>
-                    <span class="text-orange-400">💰 Total Savings: $2,400/month (50%)</span>
-                  </code>
-                </div>
-              </div>
-              
-              <div class="space-y-4">
-                <div class="bg-yellow-900/20 border border-yellow-500/30 rounded-xl p-6">
-                  <h4 class="text-lg font-semibold text-white mb-3">🎯 Architecture Recommendations</h4>
-                  <ul class="space-y-2 text-gray-300 text-sm">
-                    <li>• <strong>Compute:</strong> Right-size instances, serverless optimization</li>
-                    <li>• <strong>Storage:</strong> Lifecycle policies, intelligent tiering</li>
-                    <li>• <strong>Network:</strong> CDN configuration, data transfer optimization</li>
-                    <li>• <strong>Database:</strong> Read replicas, connection pooling</li>
-                  </ul>
-                </div>
-                
-                <div class="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6">
-                  <h4 class="text-lg font-semibold text-white mb-3">🚀 Performance Tuning</h4>
-                  <ul class="space-y-2 text-gray-300 text-sm">
-                    <li>• <strong>Latency:</strong> Edge computing, caching strategies</li>
-                    <li>• <strong>Throughput:</strong> Load balancing, auto-scaling</li>
-                    <li>• <strong>Availability:</strong> Multi-region, failover automation</li>
-                    <li>• <strong>Scalability:</strong> Microservices, event-driven architecture</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Team Features -->
-      <section id="team-features" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">👥 Team Collaboration & Intelligence</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Knowledge Sharing -->
-          <div class="bg-gradient-to-r from-indigo-900/20 to-blue-900/20 border border-indigo-500/20 rounded-xl p-6">
-            <h3 class="text-xl font-semibold text-white mb-6">🧠 Team Knowledge Base</h3>
-            
-            <div class="space-y-4">
-              <div class="bg-black/30 rounded-lg p-4">
-                <h4 class="font-semibold text-indigo-400 mb-2">📚 Shared Learning</h4>
-                <p class="text-gray-300 text-sm mb-2">
-                  Q Developer aprende de las decisiones y patrones del equipo, 
-                  creando un conocimiento compartido que mejora con el tiempo.
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    Amazon Q Developer es la evolución empresarial de
+                    CodeWhisperer, diseñada para equipos de desarrollo
+                    completos. Va más allá del código con gestión de proyectos,
+                    análisis de arquitectura y optimización automática de
+                    recursos AWS.
                 </p>
-                <ul class="text-gray-400 text-xs space-y-1">
-                  <li>• Patrones de código del equipo</li>
-                  <li>• Decisiones arquitecturales históricas</li>
-                  <li>• Best practices organizacionales</li>
-                </ul>
-              </div>
-              
-              <div class="bg-black/30 rounded-lg p-4">
-                <h4 class="font-semibold text-blue-400 mb-2">🔄 Code Review Intelligence</h4>
-                <p class="text-gray-300 text-sm mb-2">
-                  Análisis automático de PRs con sugerencias basadas en 
-                  estándares del equipo y mejores prácticas AWS.
-                </p>
-                <ul class="text-gray-400 text-xs space-y-1">
-                  <li>• Detección de anti-patterns</li>
-                  <li>• Sugerencias de optimización</li>
-                  <li>• Compliance automático</li>
-                </ul>
-              </div>
             </div>
-          </div>
-          
-          <!-- Project Management -->
-          <div class="bg-gradient-to-r from-green-900/20 to-teal-900/20 border border-green-500/20 rounded-xl p-6">
-            <h3 class="text-xl font-semibold text-white mb-6">🎯 Project Intelligence</h3>
-            
-            <div class="space-y-4">
-              <div class="bg-black/30 rounded-lg p-4">
-                <h4 class="font-semibold text-green-400 mb-2">📋 Requirements Analysis</h4>
-                <p class="text-gray-300 text-sm mb-2">
-                  Convierte requirements de negocio en arquitecturas técnicas 
-                  específicas, con estimaciones de tiempo y recursos.
-                </p>
-                <div class="bg-gray-900 rounded p-3 mt-3">
-                  <div class="text-green-400 text-xs mb-1">Input:</div>
-                  <div class="text-gray-300 text-xs mb-2">"Necesitamos una app de e-commerce escalable"</div>
-                  <div class="text-blue-400 text-xs mb-1">Q Developer genera:</div>
-                  <div class="text-cyan-400 text-xs">
-                    ✓ Microservices architecture<br/>
-                    ✓ API Gateway + Lambda<br/>
-                    ✓ DynamoDB + ElastiCache<br/>
-                    ✓ CloudFront + S3<br/>
-                    ✓ Estimated: 8-12 weeks
-                  </div>
-                </div>
-              </div>
-              
-              <div class="bg-black/30 rounded-lg p-4">
-                <h4 class="font-semibold text-teal-400 mb-2">📊 Progress Tracking</h4>
-                <p class="text-gray-300 text-sm">
-                  Monitoreo automático del progreso del proyecto con 
-                  alertas proactivas y recomendaciones de ajuste.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </header>
 
-      <!-- Migration Tools -->
-      <section id="migration-tools" class="mb-20">
-        <div class="bg-gradient-to-r from-purple-900/20 to-pink-900/20 border border-purple-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">🔄 Migration & Modernization Assistant</h2>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">🏗️ Legacy Modernization</h3>
-              
-              <div class="space-y-6">
-                <div class="bg-gray-900 rounded-xl p-6">
-                  <h4 class="font-semibold text-white mb-4">📋 Migration Assessment</h4>
-                  <div class="space-y-3">
-                    <div class="flex items-center gap-3">
-                      <span class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-sm font-bold">1</span>
-                      <div>
-                        <div class="text-purple-400 font-semibold text-sm">Code Analysis</div>
-                        <div class="text-gray-300 text-xs">Analiza dependencies, patterns, complexity</div>
-                      </div>
-                    </div>
-                    
-                    <div class="flex items-center gap-3">
-                      <span class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-sm font-bold">2</span>
-                      <div>
-                        <div class="text-blue-400 font-semibold text-sm">Architecture Planning</div>
-                        <div class="text-gray-300 text-xs">Diseña arquitectura objetivo en AWS</div>
-                      </div>
-                    </div>
-                    
-                    <div class="flex items-center gap-3">
-                      <span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-sm font-bold">3</span>
-                      <div>
-                        <div class="text-green-400 font-semibold text-sm">Migration Strategy</div>
-                        <div class="text-gray-300 text-xs">Define approach: lift-and-shift, refactor, rebuild</div>
-                      </div>
-                    </div>
-                    
-                    <div class="flex items-center gap-3">
-                      <span class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-sm font-bold">4</span>
-                      <div>
-                        <div class="text-orange-400 font-semibold text-sm">Execution Plan</div>
-                        <div class="text-gray-300 text-xs">Timeline, resources, risk mitigation</div>
-                      </div>
-                    </div>
-                  </div>
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-blue-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#full-stack"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Full-Stack IA</a
+                    >
+                    <a
+                        href="#aws-expertise"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >AWS Expertise</a
+                    >
+                    <a
+                        href="#team-features"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Team Features</a
+                    >
+                    <a
+                        href="#migration-tools"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Migration</a
+                    >
+                    <a
+                        href="#enterprise"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Enterprise</a
+                    >
                 </div>
-                
-                <div class="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6">
-                  <h4 class="text-lg font-semibold text-white mb-3">🎯 Common Migration Patterns</h4>
-                  <ul class="space-y-2 text-gray-300 text-sm">
-                    <li>• <strong>Monolith → Microservices:</strong> API Gateway, Lambda, containers</li>
-                    <li>• <strong>On-prem → Cloud:</strong> Lift-and-shift con optimizaciones</li>
-                    <li>• <strong>Database Migration:</strong> DMS, SCT, zero-downtime strategies</li>
-                    <li>• <strong>Legacy → Serverless:</strong> Event-driven, cost-optimized</li>
-                  </ul>
-                </div>
-              </div>
             </div>
-            
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">⚡ Automated Code Transformation</h3>
-              
-              <div class="bg-gray-900 rounded-xl p-6 mb-6">
-                <h4 class="font-semibold text-white mb-4">🔧 Example: .NET to Serverless</h4>
-                <div class="space-y-4 text-sm">
-                  <div class="bg-black rounded p-3">
-                    <div class="text-red-400 text-xs mb-1">Legacy .NET Web API:</div>
-                    <code class="text-gray-300 text-xs">
-                      [ApiController]<br/>
-                      public class UsersController : ControllerBase<br/>
-                      &#123;<br/>
-                      &nbsp;&nbsp;[HttpGet]<br/>
-                      &nbsp;&nbsp;public IActionResult GetUsers()<br/>
-                      &nbsp;&nbsp;&#123;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;// SQL Server connection<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;// Complex business logic<br/>
-                      &nbsp;&nbsp;&#125;<br/>
-                      &#125;
-                    </code>
-                  </div>
-                  
-                  <div class="text-center">
-                    <span class="text-purple-400 font-bold">↓ Q Developer transforms ↓</span>
-                  </div>
-                  
-                  <div class="bg-black rounded p-3">
-                    <div class="text-green-400 text-xs mb-1">AWS Lambda + API Gateway:</div>
-                    <code class="text-cyan-400 text-xs">
-                      [LambdaFunction]<br/>
-                      public async Task&lt;APIGatewayProxyResponse&gt; GetUsers(<br/>
-                      &nbsp;&nbsp;APIGatewayProxyRequest request,<br/>
-                      &nbsp;&nbsp;ILambdaContext context)<br/>
-                      &#123;<br/>
-                      &nbsp;&nbsp;// DynamoDB connection<br/>
-                      &nbsp;&nbsp;// Optimized for serverless<br/>
-                      &nbsp;&nbsp;// Auto-scaling, pay-per-use<br/>
-                      &#125;
-                    </code>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="space-y-4">
-                <div class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6">
-                  <h4 class="text-lg font-semibold text-white mb-3">📊 Migration Benefits</h4>
-                  <div class="grid grid-cols-2 gap-4 text-sm">
-                    <div class="bg-black/30 rounded p-3 text-center">
-                      <div class="text-2xl font-bold text-green-400 mb-1">70%</div>
-                      <div class="text-gray-300 text-xs">Cost reduction</div>
-                    </div>
-                    
-                    <div class="bg-black/30 rounded p-3 text-center">
-                      <div class="text-2xl font-bold text-blue-400 mb-1">10x</div>
-                      <div class="text-gray-300 text-xs">Faster deployment</div>
-                    </div>
-                    
-                    <div class="bg-black/30 rounded p-3 text-center">
-                      <div class="text-2xl font-bold text-purple-400 mb-1">99.9%</div>
-                      <div class="text-gray-300 text-xs">Availability</div>
-                    </div>
-                    
-                    <div class="bg-black/30 rounded p-3 text-center">
-                      <div class="text-2xl font-bold text-orange-400 mb-1">0</div>
-                      <div class="text-gray-300 text-xs">Server management</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </nav>
 
-      <!-- Enterprise -->
-      <section id="enterprise" class="mb-20">
-        <div class="bg-gradient-to-r from-gray-900/20 to-slate-900/20 border border-gray-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">🏢 Enterprise-Grade Features</h2>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">🔐 Security & Governance</h3>
-              
-              <div class="space-y-4">
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-red-400 mb-2">🛡️ Advanced Security</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• SAST/DAST scanning integrado</li>
-                    <li>• Compliance frameworks automatizados</li>
-                    <li>• Secret detection & remediation</li>
-                    <li>• Vulnerability management</li>
-                    <li>• Security policy enforcement</li>
-                  </ul>
-                </div>
-                
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-blue-400 mb-2">📋 Governance Controls</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• Organizational policy management</li>
-                    <li>• Code review automation</li>
-                    <li>• Quality gates enforcement</li>
-                    <li>• Compliance reporting</li>
-                    <li>• Audit trail management</li>
-                  </ul>
-                </div>
-                
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-green-400 mb-2">🔒 Data Protection</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• Código never leaves your VPC</li>
-                    <li>• SOC 2 Type II certified</li>
-                    <li>• GDPR compliance</li>
-                    <li>• Data residency controls</li>
-                    <li>• Encryption at rest & transit</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">📊 Enterprise Analytics</h3>
-              
-              <div class="bg-gray-900 rounded-xl p-6 mb-6">
-                <h4 class="font-semibold text-white mb-4">📈 Developer Productivity Metrics</h4>
-                <div class="space-y-3">
-                  <div class="flex justify-between items-center p-3 bg-black rounded">
-                    <span class="text-gray-300">Code completion usage</span>
-                    <span class="text-blue-400 font-bold">87%</span>
-                  </div>
-                  <div class="flex justify-between items-center p-3 bg-black rounded">
-                    <span class="text-gray-300">Time saved per developer</span>
-                    <span class="text-green-400 font-bold">2.3 hrs/day</span>
-                  </div>
-                  <div class="flex justify-between items-center p-3 bg-black rounded">
-                    <span class="text-gray-300">Security issues prevented</span>
-                    <span class="text-purple-400 font-bold">156/month</span>
-                  </div>
-                  <div class="flex justify-between items-center p-3 bg-black rounded">
-                    <span class="text-gray-300">Cost optimization achieved</span>
-                    <span class="text-orange-400 font-bold">$45K/month</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="space-y-6">
-                <div class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6">
-                  <h4 class="text-lg font-semibold text-white mb-3">🎯 Business Impact</h4>
-                  <ul class="space-y-2 text-gray-300 text-sm">
-                    <li>• <strong>Faster TTM:</strong> 40% reducción en time-to-market</li>
-                    <li>• <strong>Quality Improvement:</strong> 60% menos bugs en producción</li>
-                    <li>• <strong>Cost Savings:</strong> 35% reducción en AWS costs</li>
-                    <li>• <strong>Developer Satisfaction:</strong> 92% approval rating</li>
-                  </ul>
-                </div>
-                
-                <div class="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6">
-                  <h4 class="text-lg font-semibold text-white mb-3">🚀 Scale & Performance</h4>
-                  <ul class="space-y-2 text-gray-300 text-sm">
-                    <li>• <strong>Team Size:</strong> Escalable a 10,000+ developers</li>
-                    <li>• <strong>Response Time:</strong> Sub-50ms suggestions</li>
-                    <li>• <strong>Availability:</strong> 99.99% SLA garantizado</li>
-                    <li>• <strong>Global:</strong> Multi-region deployment</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es Q Developer? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        ¿Por qué Q Developer es diferente?
+                    </h2>
 
-      <!-- Call to Action -->
-      <section class="text-center">
-        <div class="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-4">¿Listo para desarrollo full-stack con IA? 🎯</h2>
-          <p class="text-xl text-gray-300 mb-8">
-            Q Developer no es solo un copiloto - es tu compañero para el desarrollo completo. 
-            Desde la idea hasta producción, con AWS expertise incorporado.
-          </p>
-          
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://aws.amazon.com/q/developer/" target="_blank" rel="noopener noreferrer" 
-               class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105">
-              Probar Q Developer
-            </a>
-            <a href="/herramientas-ia" 
-               class="border border-blue-500 text-blue-400 hover:bg-blue-500/10 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300">
-              Ver Otras IAs
-            </a>
-          </div>
-          
-          <div class="mt-6 flex justify-center gap-8 text-sm text-gray-400">
-            <span>✅ Full-stack development</span>
-            <span>✅ AWS native expertise</span>
-            <span>✅ Enterprise security</span>
-          </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <p
+                                class="text-gray-300 text-lg leading-relaxed mb-6"
+                            >
+                                Mientras otros asistentes de IA se enfocan solo
+                                en escribir código,
+                                <strong
+                                    >Q Developer abarca todo el ciclo de
+                                    desarrollo</strong
+                                >. Desde planning y arquitectura hasta
+                                deployment y monitoring en AWS.
+                            </p>
+
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-400 text-xl">🏗️</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Full-Stack Development
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Frontend, backend, infrastructure,
+                                            DevOps
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-400 text-xl">🎯</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Project Intelligence
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Análisis de requisitos, planning
+                                            automático
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-400 text-xl">☁️</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            AWS Native Expert
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Conocimiento profundo de 200+
+                                            servicios AWS
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-400 text-xl">👥</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Team Collaboration
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Sincronización y estándares de
+                                            equipo
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    💰 Modelo de Pricing
+                                </h3>
+
+                                <div class="space-y-4">
+                                    <div
+                                        class="border border-blue-500/50 rounded-lg p-4 bg-blue-900/10"
+                                    >
+                                        <div
+                                            class="flex justify-between items-center mb-2"
+                                        >
+                                            <h4
+                                                class="font-semibold text-white"
+                                            >
+                                                Q Developer Pro
+                                            </h4>
+                                            <span
+                                                class="text-blue-400 font-bold"
+                                                >$19/usuario/mes</span
+                                            >
+                                        </div>
+                                        <ul
+                                            class="text-sm text-gray-300 space-y-1"
+                                        >
+                                            <li>
+                                                • Full-stack development support
+                                            </li>
+                                            <li>
+                                                • Project planning &
+                                                architecture
+                                            </li>
+                                            <li>
+                                                • Advanced security scanning
+                                            </li>
+                                            <li>• Team collaboration tools</li>
+                                            <li>• Priority AWS support</li>
+                                        </ul>
+                                    </div>
+
+                                    <div
+                                        class="border border-gray-700 rounded-lg p-4"
+                                    >
+                                        <div
+                                            class="flex justify-between items-center mb-2"
+                                        >
+                                            <h4
+                                                class="font-semibold text-gray-300"
+                                            >
+                                                Q Developer Enterprise
+                                            </h4>
+                                            <span
+                                                class="text-blue-400 font-bold"
+                                                >Custom pricing</span
+                                            >
+                                        </div>
+                                        <ul
+                                            class="text-sm text-gray-400 space-y-1"
+                                        >
+                                            <li>• Todo de Pro</li>
+                                            <li>• Custom model training</li>
+                                            <li>• Advanced governance</li>
+                                            <li>• Dedicated support</li>
+                                            <li>• On-premises deployment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6"
+                            >
+                                <h3
+                                    class="text-lg font-semibold text-white mb-3"
+                                >
+                                    🎯 Diferenciadores Únicos
+                                </h3>
+                                <ul class="space-y-2 text-gray-300 text-sm">
+                                    <li>
+                                        • <strong>End-to-End:</strong> Desde idea
+                                        hasta producción
+                                    </li>
+                                    <li>
+                                        • <strong>AWS Mastery:</strong> Expertise
+                                        en arquitecturas cloud nativas
+                                    </li>
+                                    <li>
+                                        • <strong>Team Intelligence:</strong> Colaboración
+                                        IA-asistida
+                                    </li>
+                                    <li>
+                                        • <strong>Cost Optimization:</strong> Reduce
+                                        costos AWS automáticamente
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Full-Stack Development -->
+            <section id="full-stack" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🏗️ Full-Stack Development Assistant
+                </h2>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                    <!-- Frontend Development -->
+                    <div
+                        class="bg-green-900/20 border border-green-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🎨
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Frontend Development
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• React, Vue, Angular components</li>
+                            <li>• Responsive design patterns</li>
+                            <li>• State management optimization</li>
+                            <li>• Performance best practices</li>
+                            <li>• Accessibility compliance</li>
+                        </ul>
+                    </div>
+
+                    <!-- Backend APIs -->
+                    <div
+                        class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            ⚙️
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Backend & APIs
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• REST/GraphQL API design</li>
+                            <li>• Lambda functions optimized</li>
+                            <li>• Database schema design</li>
+                            <li>• Authentication/authorization</li>
+                            <li>• Error handling patterns</li>
+                        </ul>
+                    </div>
+
+                    <!-- DevOps & Infrastructure -->
+                    <div
+                        class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🚀
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            DevOps & Infrastructure
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• CloudFormation/CDK templates</li>
+                            <li>• CI/CD pipeline automation</li>
+                            <li>• Container orchestration</li>
+                            <li>• Monitoring & logging setup</li>
+                            <li>• Security hardening</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data & Analytics -->
+                    <div
+                        class="bg-yellow-900/20 border border-yellow-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            📊
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Data & Analytics
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Data pipeline design</li>
+                            <li>• ETL job optimization</li>
+                            <li>• Analytics dashboard creation</li>
+                            <li>• ML model integration</li>
+                            <li>• Real-time processing</li>
+                        </ul>
+                    </div>
+
+                    <!-- Security & Compliance -->
+                    <div
+                        class="bg-red-900/20 border border-red-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🔒
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Security & Compliance
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• OWASP security scanning</li>
+                            <li>• Compliance framework setup</li>
+                            <li>• Identity management</li>
+                            <li>• Encryption implementation</li>
+                            <li>• Audit trail configuration</li>
+                        </ul>
+                    </div>
+
+                    <!-- Testing & Quality -->
+                    <div
+                        class="bg-indigo-900/20 border border-indigo-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🧪
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Testing & Quality
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Unit/integration test generation</li>
+                            <li>• E2E test automation</li>
+                            <li>• Performance testing setup</li>
+                            <li>• Code quality metrics</li>
+                            <li>• Load testing strategies</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AWS Expertise -->
+            <section id="aws-expertise" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-orange-900/20 to-red-900/20 border border-orange-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        ☁️ AWS Architecture Excellence
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🏆 Well-Architected Framework
+                            </h3>
+
+                            <div class="space-y-4">
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-orange-400 mb-2"
+                                    >
+                                        🔧 Operational Excellence
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>
+                                            • Automated deployment pipelines
+                                        </li>
+                                        <li>• Infrastructure as Code</li>
+                                        <li>• Monitoring & observability</li>
+                                        <li>• Incident response automation</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-blue-400 mb-2"
+                                    >
+                                        🛡️ Security
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>• Identity & access management</li>
+                                        <li>• Data encryption strategies</li>
+                                        <li>• Network security design</li>
+                                        <li>• Threat detection setup</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-green-400 mb-2"
+                                    >
+                                        🔄 Reliability
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>• Multi-AZ deployment patterns</li>
+                                        <li>• Auto-scaling configurations</li>
+                                        <li>• Disaster recovery planning</li>
+                                        <li>• Backup & restore automation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                ⚡ Performance & Cost Optimization
+                            </h3>
+
+                            <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                                <h4 class="font-semibold text-white mb-4">
+                                    📈 Real-Time Cost Analysis
+                                </h4>
+                                <div
+                                    class="bg-black rounded p-4 text-sm overflow-x-auto"
+                                >
+                                    <code class="text-gray-300">
+                                        <span class="text-green-400"
+                                            >// Q Developer analiza tu
+                                            arquitectura actual</span
+                                        ><br />
+                                        <span class="text-blue-400"
+                                            >Cost Analysis:</span
+                                        ><br />
+                                        • RDS: $2,400/month → $1,200/month (Reserved
+                                        Instances)<br />
+                                        • EC2: $1,800/month → $900/month (Spot +
+                                        Right-sizing)<br />
+                                        • S3: $600/month → $300/month (Intelligent
+                                        Tiering)<br />
+                                        <br />
+                                        <span class="text-orange-400"
+                                            >💰 Total Savings: $2,400/month
+                                            (50%)</span
+                                        >
+                                    </code>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div
+                                    class="bg-yellow-900/20 border border-yellow-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        🎯 Architecture Recommendations
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong>Compute:</strong> Right-size
+                                            instances, serverless optimization
+                                        </li>
+                                        <li>
+                                            • <strong>Storage:</strong> Lifecycle
+                                            policies, intelligent tiering
+                                        </li>
+                                        <li>
+                                            • <strong>Network:</strong> CDN configuration,
+                                            data transfer optimization
+                                        </li>
+                                        <li>
+                                            • <strong>Database:</strong> Read replicas,
+                                            connection pooling
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div
+                                    class="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        🚀 Performance Tuning
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong>Latency:</strong> Edge computing,
+                                            caching strategies
+                                        </li>
+                                        <li>
+                                            • <strong>Throughput:</strong> Load balancing,
+                                            auto-scaling
+                                        </li>
+                                        <li>
+                                            • <strong>Availability:</strong> Multi-region,
+                                            failover automation
+                                        </li>
+                                        <li>
+                                            • <strong>Scalability:</strong> Microservices,
+                                            event-driven architecture
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Features -->
+            <section id="team-features" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    👥 Team Collaboration & Intelligence
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Knowledge Sharing -->
+                    <div
+                        class="bg-gradient-to-r from-indigo-900/20 to-blue-900/20 border border-indigo-500/20 rounded-xl p-6"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🧠 Team Knowledge Base
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div class="bg-black/30 rounded-lg p-4">
+                                <h4 class="font-semibold text-indigo-400 mb-2">
+                                    📚 Shared Learning
+                                </h4>
+                                <p class="text-gray-300 text-sm mb-2">
+                                    Q Developer aprende de las decisiones y
+                                    patrones del equipo, creando un conocimiento
+                                    compartido que mejora con el tiempo.
+                                </p>
+                                <ul class="text-gray-400 text-xs space-y-1">
+                                    <li>• Patrones de código del equipo</li>
+                                    <li>
+                                        • Decisiones arquitecturales históricas
+                                    </li>
+                                    <li>• Best practices organizacionales</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-black/30 rounded-lg p-4">
+                                <h4 class="font-semibold text-blue-400 mb-2">
+                                    🔄 Code Review Intelligence
+                                </h4>
+                                <p class="text-gray-300 text-sm mb-2">
+                                    Análisis automático de PRs con sugerencias
+                                    basadas en estándares del equipo y mejores
+                                    prácticas AWS.
+                                </p>
+                                <ul class="text-gray-400 text-xs space-y-1">
+                                    <li>• Detección de anti-patterns</li>
+                                    <li>• Sugerencias de optimización</li>
+                                    <li>• Compliance automático</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Management -->
+                    <div
+                        class="bg-gradient-to-r from-green-900/20 to-teal-900/20 border border-green-500/20 rounded-xl p-6"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🎯 Project Intelligence
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div class="bg-black/30 rounded-lg p-4">
+                                <h4 class="font-semibold text-green-400 mb-2">
+                                    📋 Requirements Analysis
+                                </h4>
+                                <p class="text-gray-300 text-sm mb-2">
+                                    Convierte requirements de negocio en
+                                    arquitecturas técnicas específicas, con
+                                    estimaciones de tiempo y recursos.
+                                </p>
+                                <div class="bg-gray-900 rounded p-3 mt-3">
+                                    <div class="text-green-400 text-xs mb-1">
+                                        Input:
+                                    </div>
+                                    <div class="text-gray-300 text-xs mb-2">
+                                        "Necesitamos una app de e-commerce
+                                        escalable"
+                                    </div>
+                                    <div class="text-blue-400 text-xs mb-1">
+                                        Q Developer genera:
+                                    </div>
+                                    <div class="text-cyan-400 text-xs">
+                                        ✓ Microservices architecture<br />
+                                        ✓ API Gateway + Lambda<br />
+                                        ✓ DynamoDB + ElastiCache<br />
+                                        ✓ CloudFront + S3<br />
+                                        ✓ Estimated: 8-12 weeks
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-black/30 rounded-lg p-4">
+                                <h4 class="font-semibold text-teal-400 mb-2">
+                                    📊 Progress Tracking
+                                </h4>
+                                <p class="text-gray-300 text-sm">
+                                    Monitoreo automático del progreso del
+                                    proyecto con alertas proactivas y
+                                    recomendaciones de ajuste.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Migration Tools -->
+            <section id="migration-tools" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-purple-900/20 to-pink-900/20 border border-purple-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        🔄 Migration & Modernization Assistant
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🏗️ Legacy Modernization
+                            </h3>
+
+                            <div class="space-y-6">
+                                <div class="bg-gray-900 rounded-xl p-6">
+                                    <h4 class="font-semibold text-white mb-4">
+                                        📋 Migration Assessment
+                                    </h4>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center gap-3">
+                                            <span
+                                                class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-sm font-bold"
+                                                >1</span
+                                            >
+                                            <div>
+                                                <div
+                                                    class="text-purple-400 font-semibold text-sm"
+                                                >
+                                                    Code Analysis
+                                                </div>
+                                                <div
+                                                    class="text-gray-300 text-xs"
+                                                >
+                                                    Analiza dependencies,
+                                                    patterns, complexity
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-center gap-3">
+                                            <span
+                                                class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-sm font-bold"
+                                                >2</span
+                                            >
+                                            <div>
+                                                <div
+                                                    class="text-blue-400 font-semibold text-sm"
+                                                >
+                                                    Architecture Planning
+                                                </div>
+                                                <div
+                                                    class="text-gray-300 text-xs"
+                                                >
+                                                    Diseña arquitectura objetivo
+                                                    en AWS
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-center gap-3">
+                                            <span
+                                                class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-sm font-bold"
+                                                >3</span
+                                            >
+                                            <div>
+                                                <div
+                                                    class="text-green-400 font-semibold text-sm"
+                                                >
+                                                    Migration Strategy
+                                                </div>
+                                                <div
+                                                    class="text-gray-300 text-xs"
+                                                >
+                                                    Define approach:
+                                                    lift-and-shift, refactor,
+                                                    rebuild
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-center gap-3">
+                                            <span
+                                                class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-sm font-bold"
+                                                >4</span
+                                            >
+                                            <div>
+                                                <div
+                                                    class="text-orange-400 font-semibold text-sm"
+                                                >
+                                                    Execution Plan
+                                                </div>
+                                                <div
+                                                    class="text-gray-300 text-xs"
+                                                >
+                                                    Timeline, resources, risk
+                                                    mitigation
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        🎯 Common Migration Patterns
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong
+                                                >Monolith → Microservices:</strong
+                                            > API Gateway, Lambda, containers
+                                        </li>
+                                        <li>
+                                            • <strong>On-prem → Cloud:</strong> Lift-and-shift
+                                            con optimizaciones
+                                        </li>
+                                        <li>
+                                            • <strong
+                                                >Database Migration:</strong
+                                            > DMS, SCT, zero-downtime strategies
+                                        </li>
+                                        <li>
+                                            • <strong
+                                                >Legacy → Serverless:</strong
+                                            > Event-driven, cost-optimized
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                ⚡ Automated Code Transformation
+                            </h3>
+
+                            <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                                <h4 class="font-semibold text-white mb-4">
+                                    🔧 Example: .NET to Serverless
+                                </h4>
+                                <div class="space-y-4 text-sm">
+                                    <div class="bg-black rounded p-3">
+                                        <div class="text-red-400 text-xs mb-1">
+                                            Legacy .NET Web API:
+                                        </div>
+                                        <code class="text-gray-300 text-xs">
+                                            [ApiController]<br />
+                                            public class UsersController : ControllerBase<br
+                                            />
+                                            &#123;<br />
+                                            &nbsp;&nbsp;[HttpGet]<br />
+                                            &nbsp;&nbsp;public IActionResult GetUsers()<br
+                                            />
+                                            &nbsp;&nbsp;&#123;<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;// SQL Server
+                                            connection<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;// Complex business
+                                            logic<br />
+                                            &nbsp;&nbsp;&#125;<br />
+                                            &#125;
+                                        </code>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <span class="text-purple-400 font-bold"
+                                            >↓ Q Developer transforms ↓</span
+                                        >
+                                    </div>
+
+                                    <div class="bg-black rounded p-3">
+                                        <div
+                                            class="text-green-400 text-xs mb-1"
+                                        >
+                                            AWS Lambda + API Gateway:
+                                        </div>
+                                        <code class="text-cyan-400 text-xs">
+                                            [LambdaFunction]<br />
+                                            public async Task&lt;APIGatewayProxyResponse&gt;
+                                            GetUsers(<br />
+                                            &nbsp;&nbsp;APIGatewayProxyRequest request,<br
+                                            />
+                                            &nbsp;&nbsp;ILambdaContext context)<br
+                                            />
+                                            &#123;<br />
+                                            &nbsp;&nbsp;// DynamoDB connection<br
+                                            />
+                                            &nbsp;&nbsp;// Optimized for serverless<br
+                                            />
+                                            &nbsp;&nbsp;// Auto-scaling, pay-per-use<br
+                                            />
+                                            &#125;
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div
+                                    class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        📊 Migration Benefits
+                                    </h4>
+                                    <div class="grid grid-cols-2 gap-4 text-sm">
+                                        <div
+                                            class="bg-black/30 rounded p-3 text-center"
+                                        >
+                                            <div
+                                                class="text-2xl font-bold text-green-400 mb-1"
+                                            >
+                                                70%
+                                            </div>
+                                            <div class="text-gray-300 text-xs">
+                                                Cost reduction
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="bg-black/30 rounded p-3 text-center"
+                                        >
+                                            <div
+                                                class="text-2xl font-bold text-blue-400 mb-1"
+                                            >
+                                                10x
+                                            </div>
+                                            <div class="text-gray-300 text-xs">
+                                                Faster deployment
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="bg-black/30 rounded p-3 text-center"
+                                        >
+                                            <div
+                                                class="text-2xl font-bold text-purple-400 mb-1"
+                                            >
+                                                99.9%
+                                            </div>
+                                            <div class="text-gray-300 text-xs">
+                                                Availability
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="bg-black/30 rounded p-3 text-center"
+                                        >
+                                            <div
+                                                class="text-2xl font-bold text-orange-400 mb-1"
+                                            >
+                                                0
+                                            </div>
+                                            <div class="text-gray-300 text-xs">
+                                                Server management
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Enterprise -->
+            <section id="enterprise" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-gray-900/20 to-slate-900/20 border border-gray-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        🏢 Enterprise-Grade Features
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🔐 Security & Governance
+                            </h3>
+
+                            <div class="space-y-4">
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4 class="font-semibold text-red-400 mb-2">
+                                        🛡️ Advanced Security
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>• SAST/DAST scanning integrado</li>
+                                        <li>
+                                            • Compliance frameworks
+                                            automatizados
+                                        </li>
+                                        <li>
+                                            • Secret detection & remediation
+                                        </li>
+                                        <li>• Vulnerability management</li>
+                                        <li>• Security policy enforcement</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-blue-400 mb-2"
+                                    >
+                                        📋 Governance Controls
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>
+                                            • Organizational policy management
+                                        </li>
+                                        <li>• Code review automation</li>
+                                        <li>• Quality gates enforcement</li>
+                                        <li>• Compliance reporting</li>
+                                        <li>• Audit trail management</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-green-400 mb-2"
+                                    >
+                                        🔒 Data Protection
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>• Código never leaves your VPC</li>
+                                        <li>• SOC 2 Type II certified</li>
+                                        <li>• GDPR compliance</li>
+                                        <li>• Data residency controls</li>
+                                        <li>• Encryption at rest & transit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                📊 Enterprise Analytics
+                            </h3>
+
+                            <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                                <h4 class="font-semibold text-white mb-4">
+                                    📈 Developer Productivity Metrics
+                                </h4>
+                                <div class="space-y-3">
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-black rounded"
+                                    >
+                                        <span class="text-gray-300"
+                                            >Code completion usage</span
+                                        >
+                                        <span class="text-blue-400 font-bold"
+                                            >87%</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-black rounded"
+                                    >
+                                        <span class="text-gray-300"
+                                            >Time saved per developer</span
+                                        >
+                                        <span class="text-green-400 font-bold"
+                                            >2.3 hrs/day</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-black rounded"
+                                    >
+                                        <span class="text-gray-300"
+                                            >Security issues prevented</span
+                                        >
+                                        <span class="text-purple-400 font-bold"
+                                            >156/month</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-black rounded"
+                                    >
+                                        <span class="text-gray-300"
+                                            >Cost optimization achieved</span
+                                        >
+                                        <span class="text-orange-400 font-bold"
+                                            >$45K/month</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <div
+                                    class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        🎯 Business Impact
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong>Faster TTM:</strong> 40% reducción
+                                            en time-to-market
+                                        </li>
+                                        <li>
+                                            • <strong
+                                                >Quality Improvement:</strong
+                                            > 60% menos bugs en producción
+                                        </li>
+                                        <li>
+                                            • <strong>Cost Savings:</strong> 35%
+                                            reducción en AWS costs
+                                        </li>
+                                        <li>
+                                            • <strong
+                                                >Developer Satisfaction:</strong
+                                            > 92% approval rating
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div
+                                    class="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        🚀 Scale & Performance
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong>Team Size:</strong> Escalable
+                                            a 10,000+ developers
+                                        </li>
+                                        <li>
+                                            • <strong>Response Time:</strong> Sub-50ms
+                                            suggestions
+                                        </li>
+                                        <li>
+                                            • <strong>Availability:</strong> 99.99%
+                                            SLA garantizado
+                                        </li>
+                                        <li>
+                                            • <strong>Global:</strong> Multi-region
+                                            deployment
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="text-center">
+                <div
+                    class="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-4">
+                        ¿Listo para desarrollo full-stack con IA? 🎯
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        Q Developer no es solo un copiloto - es tu compañero
+                        para el desarrollo completo. Desde la idea hasta
+                        producción, con AWS expertise incorporado.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://aws.amazon.com/q/developer/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                        >
+                            Probar Q Developer
+                        </a>
+                        <a
+                            href="/herramientas-ia"
+                            class="border border-blue-500 text-blue-400 hover:bg-blue-500/10 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300"
+                        >
+                            Ver Otras IAs
+                        </a>
+                    </div>
+
+                    <div
+                        class="mt-6 flex justify-center gap-8 text-sm text-gray-400"
+                    >
+                        <span>✅ Full-stack development</span>
+                        <span>✅ AWS native expertise</span>
+                        <span>✅ Enterprise security</span>
+                    </div>
+                </div>
+            </section>
         </div>
-      </section>
-    </div>
-  </main>
+    </main>
 </Layout>
 
 <style>
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  kbd {
-    font-family: monospace;
-    font-size: 0.75rem;
-  }
-  
-  code {
-    font-family: 'Fira Code', 'Monaco', 'Cascadia Code', monospace;
-  }
-  
-  /* Navegación sticky */
-  nav {
-    backdrop-filter: blur(10px);
-  }
-  
-  /* Custom scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #1a1a1a;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #3b82f6;
-    border-radius: 4px;
-  }
-  
-  /* Smooth transitions for table */
-  table {
-    border-collapse: collapse;
-  }
-  
-  tr:hover {
-    background-color: rgba(59, 130, 246, 0.05);
-  }
+    html {
+        scroll-behavior: smooth;
+    }
+
+    kbd {
+        font-family: monospace;
+        font-size: 0.75rem;
+    }
+
+    code {
+        font-family: "Fira Code", "Monaco", "Cascadia Code", monospace;
+    }
+
+    /* Navegación sticky */
+    nav {
+        backdrop-filter: blur(10px);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #3b82f6;
+        border-radius: 4px;
+    }
+
+    /* Smooth transitions for table */
+    table {
+        border-collapse: collapse;
+    }
+
+    tr:hover {
+        background-color: rgba(59, 130, 246, 0.05);
+    }
 </style>
 
 <script>
-  // Smooth scroll para navegación
-  document.querySelectorAll('nav a[href^="#"]').forEach((anchor: Element) => {
-    anchor.addEventListener('click', (e: Event) => {
-      e.preventDefault();
-      const href = (anchor as HTMLAnchorElement).getAttribute('href');
-      const target = href ? document.querySelector(href) : null;
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
+    // Smooth scroll para navegación
+    document.querySelectorAll('nav a[href^="#"]').forEach((anchor: Element) => {
+        anchor.addEventListener("click", (e: Event) => {
+            e.preventDefault();
+            const href = (anchor as HTMLAnchorElement).getAttribute("href");
+            const target = href ? document.querySelector(href) : null;
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
         });
-      }
     });
-  });
-  
-  // Navegación activa
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute('id');
-        document.querySelectorAll('nav a').forEach(link => {
-          link.classList.remove('text-blue-400');
-          link.classList.add('text-gray-400');
-        });
-        const activeLink = document.querySelector(`nav a[href="#${id}"]`);
-        if (activeLink) {
-          activeLink.classList.remove('text-gray-400');
-          activeLink.classList.add('text-blue-400');
-        }
-      }
+
+    // Navegación activa
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute("id");
+                    document.querySelectorAll("nav a").forEach((link) => {
+                        link.classList.remove("text-blue-400");
+                        link.classList.add("text-gray-400");
+                    });
+                    const activeLink = document.querySelector(
+                        `nav a[href="#${id}"]`,
+                    );
+                    if (activeLink) {
+                        activeLink.classList.remove("text-gray-400");
+                        activeLink.classList.add("text-blue-400");
+                    }
+                }
+            });
+        },
+        { threshold: 0.1 },
+    );
+
+    document.querySelectorAll("section[id]").forEach((section) => {
+        observer.observe(section);
     });
-  }, { threshold: 0.1 });
-  
-  document.querySelectorAll('section[id]').forEach(section => {
-    observer.observe(section);
-  });
 </script>
-</Layout>

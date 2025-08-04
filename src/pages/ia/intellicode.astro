@@ -1,0 +1,1964 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="IntelliCode - IA de Microsoft para Visual Studio | LexIA">
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-blue-900 via-cyan-900 to-teal-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🧠
+                    </div>
+                    <div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            IntelliCode
+                        </h1>
+                        <p class="text-xl text-blue-300">
+                            IA Native para Microsoft Stack
+                        </p>
+                        <p class="text-gray-400">by Microsoft</p>
+                    </div>
+                </div>
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    IntelliCode es la plataforma de IA nativa de Microsoft
+                    integrada en Visual Studio y VS Code. Optimizada
+                    específicamente para el ecosystem Microsoft (.NET, Azure,
+                    C#) con intelligence contextual superior.
+                </p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-blue-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#ai-features"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >AI Features</a
+                    >
+                    <a
+                        href="#team-completions"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Team Models</a
+                    >
+                    <a
+                        href="#casos-uso"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Casos de Uso</a
+                    >
+                    <a
+                        href="#implementacion"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Implementación</a
+                    >
+                    <a
+                        href="#comparacion"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Comparación</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es IntelliCode? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-blue-900/20 to-cyan-900/20 border border-blue-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        ¿Por qué IntelliCode domina el Microsoft Stack?
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <p
+                                class="text-gray-300 text-lg leading-relaxed mb-6"
+                            >
+                                IntelliCode es <strong
+                                    >más que autocompletion</strong
+                                >: es IA que comprende profundamente el
+                                ecosystem Microsoft. Trained específicamente en
+                                .NET, Azure, y patterns empresariales, ofrece
+                                suggestions que otros tools no pueden igualar.
+                            </p>
+
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-400 text-xl">🎯</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Microsoft-Native
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Optimizado para C#, .NET, Azure,
+                                            TypeScript
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-400 text-xl">👥</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Team Intelligence
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Models entrenados en tu codebase
+                                            específico
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-400 text-xl">🔗</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            IDE Integration
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Native en Visual Studio, VS Code,
+                                            vim
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-400 text-xl">📊</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Context Awareness
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Entiende project structure y
+                                            dependencies
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    💰 Modelo de Pricing
+                                </h3>
+
+                                <div class="space-y-4">
+                                    <div
+                                        class="border border-green-500/50 rounded-lg p-4 bg-green-900/10"
+                                    >
+                                        <div
+                                            class="flex justify-between items-center mb-2"
+                                        >
+                                            <h4
+                                                class="font-semibold text-white"
+                                            >
+                                                Base Features
+                                            </h4>
+                                            <span
+                                                class="text-green-400 font-bold"
+                                                >FREE</span
+                                            >
+                                        </div>
+                                        <ul
+                                            class="text-sm text-gray-300 space-y-1"
+                                        >
+                                            <li>• AI-assisted IntelliSense</li>
+                                            <li>• Whole line completions</li>
+                                            <li>• Argument completion</li>
+                                            <li>• Basic recommendations</li>
+                                            <li>
+                                                • Popular OSS model training
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div
+                                        class="border border-blue-500/50 rounded-lg p-4 bg-blue-900/10"
+                                    >
+                                        <div
+                                            class="flex justify-between items-center mb-2"
+                                        >
+                                            <h4
+                                                class="font-semibold text-white"
+                                            >
+                                                Visual Studio Pro
+                                            </h4>
+                                            <span
+                                                class="text-blue-400 font-bold"
+                                                >$45/month</span
+                                            >
+                                        </div>
+                                        <ul
+                                            class="text-sm text-gray-300 space-y-1"
+                                        >
+                                            <li>• All free features</li>
+                                            <li>• Team completions</li>
+                                            <li>• Custom model training</li>
+                                            <li>• Code reviews assistance</li>
+                                            <li>• Enterprise support</li>
+                                        </ul>
+                                    </div>
+
+                                    <div
+                                        class="border border-purple-500/50 rounded-lg p-4 bg-purple-900/10"
+                                    >
+                                        <div
+                                            class="flex justify-between items-center mb-2"
+                                        >
+                                            <h4
+                                                class="font-semibold text-white"
+                                            >
+                                                Enterprise
+                                            </h4>
+                                            <span
+                                                class="text-purple-400 font-bold"
+                                                >Volume Licensing</span
+                                            >
+                                        </div>
+                                        <ul
+                                            class="text-sm text-gray-300 space-y-1"
+                                        >
+                                            <li>• Custom deployment</li>
+                                            <li>• On-premises training</li>
+                                            <li>• Security compliance</li>
+                                            <li>• Dedicated support</li>
+                                            <li>• Azure DevOps integration</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6"
+                            >
+                                <h3
+                                    class="text-lg font-semibold text-white mb-3"
+                                >
+                                    🚀 Microsoft Stack Benefits
+                                </h3>
+                                <ul class="space-y-2 text-gray-300 text-sm">
+                                    <li>
+                                        • <strong>Native Integration:</strong> Zero
+                                        setup, works out-of-box
+                                    </li>
+                                    <li>
+                                        • <strong>Enterprise Ready:</strong> Azure
+                                        AD, compliance built-in
+                                    </li>
+                                    <li>
+                                        • <strong>Performance:</strong> Optimized
+                                        para Microsoft toolchain
+                                    </li>
+                                    <li>
+                                        • <strong>Support:</strong> Microsoft enterprise
+                                        support included
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Features -->
+            <section id="ai-features" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🧠 AI-Powered Features
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Intelligent Completions -->
+                    <div
+                        class="bg-green-900/20 border border-green-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            ⚡
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Smart IntelliSense
+                        </h3>
+                        <div class="space-y-3 text-sm">
+                            <div class="bg-black/30 rounded p-3">
+                                <div class="text-green-400 font-semibold mb-1">
+                                    🎯 Context-Aware:
+                                </div>
+                                <ul class="text-gray-300 text-xs space-y-1">
+                                    <li>• Project dependencies analysis</li>
+                                    <li>• Usage pattern recognition</li>
+                                    <li>
+                                        • Framework-specific recommendations
+                                    </li>
+                                    <li>• Real-time code analysis</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-black/30 rounded p-3">
+                                <div class="text-teal-400 font-semibold mb-1">
+                                    📊 Smart Ranking:
+                                </div>
+                                <ul class="text-gray-300 text-xs space-y-1">
+                                    <li>• Popular methods prioritized</li>
+                                    <li>• Team patterns learned</li>
+                                    <li>• API usage optimization</li>
+                                    <li>• Error prevention suggestions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Whole Line Completions -->
+                    <div
+                        class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            📝
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Whole Line AI
+                        </h3>
+                        <div class="space-y-3 text-sm">
+                            <div class="bg-black/30 rounded p-3">
+                                <div class="text-blue-400 font-semibold mb-1">
+                                    🔮 Predictive Writing:
+                                </div>
+                                <ul class="text-gray-300 text-xs space-y-1">
+                                    <li>• Complete code lines prediction</li>
+                                    <li>• Multi-line block completion</li>
+                                    <li>• LINQ expressions optimization</li>
+                                    <li>• Async/await pattern completion</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-black/30 rounded p-3">
+                                <div class="text-cyan-400 font-semibold mb-1">
+                                    ⚡ Performance:
+                                </div>
+                                <ul class="text-gray-300 text-xs space-y-1">
+                                    <li>• Sub-100ms latency</li>
+                                    <li>• Local model inference</li>
+                                    <li>• Offline capability</li>
+                                    <li>• Minimal resource usage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Code Reviews -->
+                    <div
+                        class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🔍
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            AI Code Reviews
+                        </h3>
+                        <div class="space-y-3 text-sm">
+                            <div class="bg-black/30 rounded p-3">
+                                <div class="text-purple-400 font-semibold mb-1">
+                                    🔎 Quality Analysis:
+                                </div>
+                                <ul class="text-gray-300 text-xs space-y-1">
+                                    <li>• Best practices enforcement</li>
+                                    <li>• Code smell detection</li>
+                                    <li>• Performance bottlenecks</li>
+                                    <li>• Security vulnerability scanning</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-black/30 rounded p-3">
+                                <div class="text-pink-400 font-semibold mb-1">
+                                    📋 Review Assistance:
+                                </div>
+                                <ul class="text-gray-300 text-xs space-y-1">
+                                    <li>• Automated review comments</li>
+                                    <li>• Improvement suggestions</li>
+                                    <li>• Team standard compliance</li>
+                                    <li>• Documentation gaps detection</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real-time Example -->
+                <div class="mt-8 bg-gray-900 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold text-white mb-4">
+                        ⚡ IntelliCode en Acción - C# Example
+                    </h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-blue-400 mb-3">
+                                🎯 Tu Código Inicial:
+                            </h4>
+                            <div
+                                class="bg-black rounded-lg p-4 overflow-x-auto"
+                            >
+                                <code class="text-sm">
+                                    <span class="text-purple-400"
+                                        >// ASP.NET Core Controller</span
+                                    ><br />
+                                    <span class="text-blue-400"
+                                        >public class</span
+                                    >
+                                    <span class="text-yellow-400"
+                                        >UserController</span
+                                    > : <span class="text-green-400"
+                                        >ControllerBase</span
+                                    ><br />
+                                    &#123;<br />
+                                    &nbsp;&nbsp;<span class="text-blue-400"
+                                        >private readonly</span
+                                    >
+                                    <span class="text-green-400"
+                                        >IUserService</span
+                                    > _userService;<br />
+                                    <br />
+                                    &nbsp;&nbsp;<span class="text-blue-400"
+                                        >public</span
+                                    >
+                                    <span class="text-yellow-400"
+                                        >UserController</span
+                                    >(<span class="text-green-400"
+                                        >IUserService</span
+                                    > userService)<br />
+                                    &nbsp;&nbsp;&#123;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;_userService = userService;<br
+                                    />
+                                    &nbsp;&nbsp;&#125;<br />
+                                    <br />
+                                    &nbsp;&nbsp;<span class="text-gray-500"
+                                        >// IntelliCode detecta pattern y
+                                        sugiere:</span
+                                    ><br />
+                                    &nbsp;&nbsp;<span class="text-blue-400"
+                                        >public async</span
+                                    >
+                                    <span class="text-green-400"
+                                        >Task&lt;ActionResult&gt;</span
+                                    >
+                                    <span class="text-yellow-400">Get</span>|
+                                </code>
+                            </div>
+
+                            <div
+                                class="mt-4 bg-blue-900/20 border border-blue-500/30 rounded-lg p-4"
+                            >
+                                <h5
+                                    class="text-blue-400 font-semibold text-sm mb-2"
+                                >
+                                    🧠 IntelliCode Analysis:
+                                </h5>
+                                <ul class="text-gray-300 text-xs space-y-1">
+                                    <li>
+                                        • <strong>Pattern Recognition:</strong> Controller
+                                        + Service injection
+                                    </li>
+                                    <li>
+                                        • <strong>Framework Context:</strong> ASP.NET
+                                        Core conventions
+                                    </li>
+                                    <li>
+                                        • <strong>Team Patterns:</strong> Learned
+                                        from your codebase
+                                    </li>
+                                    <li>
+                                        • <strong>Best Practices:</strong> Async/await,
+                                        proper return types
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-green-400 mb-3">
+                                ✨ IntelliCode Suggestions:
+                            </h4>
+                            <div
+                                class="bg-black rounded-lg p-4 overflow-x-auto"
+                            >
+                                <code class="text-sm">
+                                    <span class="text-purple-400"
+                                        >// IntelliCode completa
+                                        automáticamente:</span
+                                    ><br />
+                                    <span class="text-blue-400"
+                                        >public async</span
+                                    >
+                                    <span class="text-green-400"
+                                        >Task&lt;ActionResult&lt;IEnumerable&lt;User&gt;&gt;&gt;</span
+                                    >
+                                    <span class="text-yellow-400">GetUsers</span
+                                    >()<br />
+                                    &#123;<br />
+                                    &nbsp;&nbsp;<span class="text-blue-400"
+                                        >try</span
+                                    ><br />
+                                    &nbsp;&nbsp;&#123;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="text-blue-400">var</span
+                                    > users = <span class="text-blue-400"
+                                        >await</span
+                                    > _userService.GetAllAsync();<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="text-blue-400">return</span
+                                    >
+                                    <span class="text-yellow-400">Ok</span
+                                    >(users);<br />
+                                    &nbsp;&nbsp;&#125;<br />
+                                    &nbsp;&nbsp;<span class="text-blue-400"
+                                        >catch</span
+                                    > (<span class="text-green-400"
+                                        >Exception</span
+                                    > ex)<br />
+                                    &nbsp;&nbsp;&#123;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="text-gray-500"
+                                        >// IntelliCode sugiere logging pattern</span
+                                    ><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;_logger.<span
+                                        class="text-yellow-400">LogError</span
+                                    >(ex, <span class="text-orange-400"
+                                        >"Error getting users"</span
+                                    >);<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="text-blue-400">return</span
+                                    >
+                                    <span class="text-yellow-400"
+                                        >StatusCode</span
+                                    >(500);<br />
+                                    &nbsp;&nbsp;&#125;<br />
+                                    &#125;
+                                </code>
+                            </div>
+
+                            <div
+                                class="mt-4 bg-green-900/20 border border-green-500/30 rounded-lg p-4"
+                            >
+                                <h5
+                                    class="text-green-400 font-semibold text-sm mb-2"
+                                >
+                                    ✅ Smart Features Applied:
+                                </h5>
+                                <ul class="text-gray-300 text-xs space-y-1">
+                                    <li>
+                                        • <strong
+                                            >Return Type Intelligence:</strong
+                                        > ActionResult&lt;IEnumerable&lt;User&gt;&gt;
+                                    </li>
+                                    <li>
+                                        • <strong>Exception Handling:</strong> Try-catch
+                                        pattern with logging
+                                    </li>
+                                    <li>
+                                        • <strong>Async Best Practices:</strong>
+                                        Proper await usage
+                                    </li>
+                                    <li>
+                                        • <strong>HTTP Status Codes:</strong> RESTful
+                                        API conventions
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Completions -->
+            <section id="team-completions" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-purple-900/20 to-pink-900/20 border border-purple-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        👥 Team Completions & Custom Models
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🎯 Team Model Training
+                            </h3>
+
+                            <div class="space-y-4">
+                                <div class="bg-gray-900 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-purple-400 mb-2"
+                                    >
+                                        📊 Codebase Analysis
+                                    </h4>
+                                    <div class="bg-black rounded p-3 text-sm">
+                                        <ul class="text-gray-300 space-y-2">
+                                            <li>
+                                                • <strong
+                                                    >Pattern Mining:</strong
+                                                > Extrae patterns específicos de
+                                                tu team
+                                            </li>
+                                            <li>
+                                                • <strong>API Usage:</strong> Aprende
+                                                cómo usas frameworks y librerías
+                                            </li>
+                                            <li>
+                                                • <strong
+                                                    >Naming Conventions:</strong
+                                                > Adopta tu team's coding style
+                                            </li>
+                                            <li>
+                                                • <strong
+                                                    >Architecture Patterns:</strong
+                                                > Entiende tu solution structure
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="bg-gray-900 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-cyan-400 mb-2"
+                                    >
+                                        🔄 Continuous Learning
+                                    </h4>
+                                    <div class="bg-black rounded p-3 text-sm">
+                                        <ul class="text-gray-300 space-y-2">
+                                            <li>
+                                                • <strong
+                                                    >Weekly Updates:</strong
+                                                > Model re-training automático
+                                            </li>
+                                            <li>
+                                                • <strong>Feedback Loop:</strong
+                                                > Acepta/rechaza suggestions mejora
+                                                model
+                                            </li>
+                                            <li>
+                                                • <strong>Team Sync:</strong> Shared
+                                                patterns across developers
+                                            </li>
+                                            <li>
+                                                • <strong
+                                                    >Version Control:</strong
+                                                > Model evolution tracking
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="bg-gray-900 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-green-400 mb-2"
+                                    >
+                                        🔒 Privacy & Security
+                                    </h4>
+                                    <div class="bg-black rounded p-3 text-sm">
+                                        <ul class="text-gray-300 space-y-2">
+                                            <li>
+                                                • <strong
+                                                    >On-Premises Training:</strong
+                                                > Code nunca leaves your network
+                                            </li>
+                                            <li>
+                                                • <strong
+                                                    >Secure Processing:</strong
+                                                > Azure Private Link compatibility
+                                            </li>
+                                            <li>
+                                                • <strong
+                                                    >Data Residency:</strong
+                                                > Control where models are stored
+                                            </li>
+                                            <li>
+                                                • <strong
+                                                    >Access Control:</strong
+                                                > Team-level permissions y visibility
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                📈 Team Benefits & ROI
+                            </h3>
+
+                            <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                                <h4 class="font-semibold text-white mb-4">
+                                    📊 Productivity Metrics
+                                </h4>
+                                <div class="space-y-4">
+                                    <div class="grid grid-cols-2 gap-4 text-sm">
+                                        <div
+                                            class="bg-black rounded p-3 text-center"
+                                        >
+                                            <div
+                                                class="text-2xl font-bold text-green-400 mb-1"
+                                            >
+                                                55%
+                                            </div>
+                                            <div class="text-gray-300 text-xs">
+                                                Code completion accuracy
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="bg-black rounded p-3 text-center"
+                                        >
+                                            <div
+                                                class="text-2xl font-bold text-blue-400 mb-1"
+                                            >
+                                                35%
+                                            </div>
+                                            <div class="text-gray-300 text-xs">
+                                                Faster development
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="bg-black rounded p-3 text-center"
+                                        >
+                                            <div
+                                                class="text-2xl font-bold text-purple-400 mb-1"
+                                            >
+                                                60%
+                                            </div>
+                                            <div class="text-gray-300 text-xs">
+                                                Reduced context switching
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="bg-black rounded p-3 text-center"
+                                        >
+                                            <div
+                                                class="text-2xl font-bold text-orange-400 mb-1"
+                                            >
+                                                40%
+                                            </div>
+                                            <div class="text-gray-300 text-xs">
+                                                Less debugging time
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-black rounded p-3">
+                                        <h5
+                                            class="font-semibold text-yellow-400 text-sm mb-2"
+                                        >
+                                            Team Onboarding Benefits:
+                                        </h5>
+                                        <ul
+                                            class="text-gray-300 text-xs space-y-1"
+                                        >
+                                            <li>
+                                                • New developers learn team
+                                                patterns 3x faster
+                                            </li>
+                                            <li>
+                                                • Consistent code style across
+                                                team members
+                                            </li>
+                                            <li>
+                                                • Reduced code review iterations
+                                                by 45%
+                                            </li>
+                                            <li>
+                                                • Knowledge sharing through AI
+                                                suggestions
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div
+                                    class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        🎯 Setup Process
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong
+                                                >1. Repository Connection:</strong
+                                            > Connect Azure DevOps/GitHub
+                                        </li>
+                                        <li>
+                                            • <strong>2. Model Training:</strong
+                                            > 24-48 hours initial training
+                                        </li>
+                                        <li>
+                                            • <strong
+                                                >3. Team Deployment:</strong
+                                            > Distribute model to team
+                                        </li>
+                                        <li>
+                                            • <strong
+                                                >4. Continuous Learning:</strong
+                                            > Automated improvements
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div
+                                    class="bg-green-900/20 border border-green-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        💡 Enterprise Features
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong>Multiple Models:</strong> Different
+                                            models per project/team
+                                        </li>
+                                        <li>
+                                            • <strong>A/B Testing:</strong> Compare
+                                            model performance
+                                        </li>
+                                        <li>
+                                            • <strong
+                                                >Analytics Dashboard:</strong
+                                            > Usage metrics y productivity gains
+                                        </li>
+                                        <li>
+                                            • <strong>Compliance:</strong> SOC2,
+                                            ISO27001 certified
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Casos de Uso -->
+            <section id="casos-uso" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🎯 Casos de Uso Empresariales
+                </h2>
+
+                <!-- Enterprise .NET -->
+                <div
+                    class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-8 mb-8"
+                >
+                    <h3 class="text-xl font-semibold text-white mb-6">
+                        🏢 Enterprise .NET Development
+                    </h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold text-blue-400 mb-3">
+                                🎯 Challenge:
+                            </h4>
+                            <div class="bg-black rounded-lg p-4 mb-4">
+                                <p class="text-gray-300 text-sm">
+                                    Large enterprise con 200+ .NET developers
+                                    working en microservices architecture.
+                                    Different teams usando different patterns,
+                                    causing inconsistency y slow onboarding.
+                                    Need standardization sin sacrificar
+                                    developer velocity.
+                                </p>
+                            </div>
+
+                            <h4 class="font-semibold text-green-400 mb-3">
+                                ✅ IntelliCode Solution:
+                            </h4>
+                            <ul class="text-gray-300 text-sm space-y-2">
+                                <li>
+                                    • <strong>Organization-wide Models:</strong>
+                                    Shared coding patterns across teams
+                                </li>
+                                <li>
+                                    • <strong>Microservice Templates:</strong> Consistent
+                                    service structure
+                                </li>
+                                <li>
+                                    • <strong>API Guidelines:</strong> Enforced through
+                                    intelligent suggestions
+                                </li>
+                                <li>
+                                    • <strong>Azure Integration:</strong> Cloud-native
+                                    patterns recommended
+                                </li>
+                                <li>
+                                    • <strong>Dependency Management:</strong> NuGet
+                                    package recommendations
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-orange-400 mb-3">
+                                📊 Implementation Results:
+                            </h4>
+                            <div
+                                class="bg-gray-900 rounded-lg p-4 space-y-4 text-sm"
+                            >
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-green-400 mb-1"
+                                        >
+                                            65%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Faster onboarding
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-blue-400 mb-1"
+                                        >
+                                            40%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Code consistency
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-purple-400 mb-1"
+                                        >
+                                            50%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Less code reviews
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-orange-400 mb-1"
+                                        >
+                                            $850K
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Annual savings
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-black rounded p-3">
+                                    <h5
+                                        class="font-semibold text-yellow-400 text-sm mb-2"
+                                    >
+                                        Enterprise Benefits:
+                                    </h5>
+                                    <ul class="text-gray-300 text-xs space-y-1">
+                                        <li>
+                                            • Standardized microservice patterns
+                                            across 50+ services
+                                        </li>
+                                        <li>
+                                            • New team members productive in 2
+                                            weeks vs 6 weeks
+                                        </li>
+                                        <li>
+                                            • 90% reduction in "how do we do X?"
+                                            questions
+                                        </li>
+                                        <li>
+                                            • Automated compliance with
+                                            enterprise coding standards
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Azure Cloud Migration -->
+                <div
+                    class="bg-cyan-900/20 border border-cyan-500/20 rounded-xl p-8 mb-8"
+                >
+                    <h3 class="text-xl font-semibold text-white mb-6">
+                        ☁️ Azure Cloud Migration
+                    </h3>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-cyan-400 mb-3">
+                                🔄 Legacy to Cloud Transformation:
+                            </h4>
+                            <div class="bg-black rounded-lg p-4">
+                                <p class="text-gray-300 text-sm">
+                                    Financial institution migrating 15-year-old
+                                    .NET Framework applications to Azure.
+                                    Developers unfamiliar con cloud patterns,
+                                    need guidance para Azure-native
+                                    implementations and best practices.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-teal-400 mb-3">
+                                    🛠️ IntelliCode Migration Assistance:
+                                </h4>
+                                <div class="bg-gray-900 rounded-lg p-4">
+                                    <ul class="space-y-3 text-sm">
+                                        <div>
+                                            <div
+                                                class="text-blue-400 font-semibold mb-1"
+                                            >
+                                                Azure Service Recommendations:
+                                            </div>
+                                            <ul
+                                                class="text-gray-300 text-xs space-y-1 ml-4"
+                                            >
+                                                <li>
+                                                    • App Service deployment
+                                                    patterns
+                                                </li>
+                                                <li>
+                                                    • Azure SQL Database
+                                                    optimization
+                                                </li>
+                                                <li>
+                                                    • Service Bus messaging
+                                                    patterns
+                                                </li>
+                                                <li>
+                                                    • Key Vault secrets
+                                                    management
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <div
+                                                class="text-green-400 font-semibold mb-1"
+                                            >
+                                                Cloud-Native Patterns:
+                                            </div>
+                                            <ul
+                                                class="text-gray-300 text-xs space-y-1 ml-4"
+                                            >
+                                                <li>
+                                                    • Configuration via Azure
+                                                    App Configuration
+                                                </li>
+                                                <li>
+                                                    • Health checks y monitoring
+                                                </li>
+                                                <li>
+                                                    • Resilience patterns
+                                                    (Circuit Breaker, Retry)
+                                                </li>
+                                                <li>
+                                                    • Distributed tracing con
+                                                    Application Insights
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <div
+                                                class="text-purple-400 font-semibold mb-1"
+                                            >
+                                                Security & Compliance:
+                                            </div>
+                                            <ul
+                                                class="text-gray-300 text-xs space-y-1 ml-4"
+                                            >
+                                                <li>
+                                                    • Azure AD authentication
+                                                    integration
+                                                </li>
+                                                <li>
+                                                    • Managed Identity usage
+                                                    patterns
+                                                </li>
+                                                <li>
+                                                    • Network security groups
+                                                    configuration
+                                                </li>
+                                                <li>
+                                                    • Compliance framework
+                                                    alignment
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-pink-400 mb-3">
+                                    📊 Migration Results:
+                                </h4>
+                                <div
+                                    class="bg-gray-900 rounded-lg p-4 space-y-4"
+                                >
+                                    <div class="grid grid-cols-2 gap-4 text-sm">
+                                        <div
+                                            class="bg-black rounded p-3 text-center"
+                                        >
+                                            <div
+                                                class="text-2xl font-bold text-green-400 mb-1"
+                                            >
+                                                6 months
+                                            </div>
+                                            <div class="text-gray-300 text-xs">
+                                                Migration time
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="bg-black rounded p-3 text-center"
+                                        >
+                                            <div
+                                                class="text-2xl font-bold text-blue-400 mb-1"
+                                            >
+                                                70%
+                                            </div>
+                                            <div class="text-gray-300 text-xs">
+                                                Faster development
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="bg-black rounded p-3 text-center"
+                                        >
+                                            <div
+                                                class="text-2xl font-bold text-purple-400 mb-1"
+                                            >
+                                                $2.4M
+                                            </div>
+                                            <div class="text-gray-300 text-xs">
+                                                Infrastructure savings
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="bg-black rounded p-3 text-center"
+                                        >
+                                            <div
+                                                class="text-2xl font-bold text-orange-400 mb-1"
+                                            >
+                                                99.95%
+                                            </div>
+                                            <div class="text-gray-300 text-xs">
+                                                Uptime achieved
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-black rounded p-3">
+                                        <h5
+                                            class="font-semibold text-cyan-400 text-sm mb-2"
+                                        >
+                                            Cloud Migration Success:
+                                        </h5>
+                                        <ul
+                                            class="text-gray-300 text-xs space-y-1"
+                                        >
+                                            <li>
+                                                • 15 legacy applications
+                                                successfully migrated
+                                            </li>
+                                            <li>
+                                                • Zero security incidents during
+                                                migration
+                                            </li>
+                                            <li>
+                                                • Team Azure expertise increased
+                                                300%
+                                            </li>
+                                            <li>
+                                                • Automated deployment pipelines
+                                                implemented
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Development -->
+                <div
+                    class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-8"
+                >
+                    <h3 class="text-xl font-semibold text-white mb-6">
+                        🎮 Game Development - Unity & C#
+                    </h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold text-purple-400 mb-3">
+                                🎯 Gaming Studio Challenge:
+                            </h4>
+                            <div class="bg-black rounded-lg p-4 mb-4">
+                                <p class="text-gray-300 text-sm">
+                                    Indie game studio con 25 developers working
+                                    en Unity projects. Mix de senior y junior
+                                    developers, inconsistent coding patterns, y
+                                    performance issues en mobile games. Need
+                                    standardization y optimization.
+                                </p>
+                            </div>
+
+                            <h4 class="font-semibold text-cyan-400 mb-3">
+                                🔧 IntelliCode Gaming Solution:
+                            </h4>
+                            <ul class="text-gray-300 text-sm space-y-2">
+                                <li>
+                                    • <strong>Unity-Specific Patterns:</strong> MonoBehaviour
+                                    best practices
+                                </li>
+                                <li>
+                                    • <strong>Performance Optimization:</strong>
+                                    Mobile-friendly code suggestions
+                                </li>
+                                <li>
+                                    • <strong>Asset Management:</strong> Resource
+                                    loading patterns
+                                </li>
+                                <li>
+                                    • <strong>Scriptable Objects:</strong> Data architecture
+                                    recommendations
+                                </li>
+                                <li>
+                                    • <strong>Coroutine Patterns:</strong> Async
+                                    operations for Unity
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-pink-400 mb-3">
+                                📊 Game Development Results:
+                            </h4>
+                            <div class="bg-gray-900 rounded-lg p-4 space-y-4">
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-green-400 mb-1"
+                                        >
+                                            45%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Better performance
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-blue-400 mb-1"
+                                        >
+                                            60%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Faster prototyping
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-purple-400 mb-1"
+                                        >
+                                            30%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Less bugs
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-orange-400 mb-1"
+                                        >
+                                            8 weeks
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Faster releases
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-black rounded p-3">
+                                    <h5
+                                        class="font-semibold text-purple-400 text-sm mb-2"
+                                    >
+                                        Gaming Development Wins:
+                                    </h5>
+                                    <ul class="text-gray-300 text-xs space-y-1">
+                                        <li>
+                                            • Consistent Unity project structure
+                                            across teams
+                                        </li>
+                                        <li>
+                                            • Mobile optimization patterns
+                                            learned automatically
+                                        </li>
+                                        <li>
+                                            • Junior developers writing
+                                            senior-level code
+                                        </li>
+                                        <li>
+                                            • 90% reduction in
+                                            performance-related bugs
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Implementation -->
+            <section id="implementacion" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-green-900/20 to-teal-900/20 border border-green-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        🔧 Implementation Guide
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🚀 Quick Setup
+                            </h3>
+
+                            <div class="space-y-6">
+                                <div class="bg-gray-900 rounded-xl p-6">
+                                    <h4 class="font-semibold text-white mb-4">
+                                        1️⃣ Visual Studio Setup
+                                    </h4>
+                                    <div
+                                        class="bg-black rounded p-4 text-sm overflow-x-auto"
+                                    >
+                                        <code class="text-gray-300">
+                                            <span class="text-green-400"
+                                                ># IntelliCode viene
+                                                pre-installed</span
+                                            ><br />
+                                            <span class="text-blue-400"
+                                                ># Visual Studio 2019/2022</span
+                                            ><br />
+                                            <br />
+                                            <span class="text-purple-400"
+                                                ># Enable IntelliCode features</span
+                                            ><br />
+                                            Tools → Options → IntelliCode<br />
+                                            ✅ Enable whole line completions<br
+                                            />
+                                            ✅ Enable starred suggestions<br />
+                                            ✅ Enable team completions<br />
+                                            <br />
+                                            <span class="text-cyan-400"
+                                                ># Configure team model</span
+                                            ><br />
+                                            View → Other Windows → IntelliCode
+                                        </code>
+                                    </div>
+                                </div>
+
+                                <div class="bg-gray-900 rounded-xl p-6">
+                                    <h4 class="font-semibold text-white mb-4">
+                                        2️⃣ VS Code Extension
+                                    </h4>
+                                    <div
+                                        class="bg-black rounded p-4 text-sm overflow-x-auto"
+                                    >
+                                        <code class="text-gray-300">
+                                            <span class="text-green-400"
+                                                ># Install IntelliCode extension</span
+                                            ><br />
+                                            ext install VisualStudioExptTeam.vscodeintellicode<br
+                                            />
+                                            <br />
+                                            <span class="text-blue-400"
+                                                ># Language-specific extensions</span
+                                            ><br />
+                                            ext install ms-dotnettools.csharp<br
+                                            />
+                                            ext install ms-vscode.vscode-typescript-next<br
+                                            />
+                                            ext install ms-python.python<br />
+                                            <br />
+                                            <span class="text-purple-400"
+                                                ># Configure settings.json</span
+                                            ><br />
+                                            &#123;<br />
+                                            &nbsp;&nbsp;<span
+                                                class="text-orange-400"
+                                                >"vsintellicode.modify.editor.suggestSelection"</span
+                                            >: <span class="text-cyan-400"
+                                                >"automaticallyOverrodeDefaultValue"</span
+                                            ><br />
+                                            &#125;
+                                        </code>
+                                    </div>
+                                </div>
+
+                                <div class="bg-gray-900 rounded-xl p-6">
+                                    <h4 class="font-semibold text-white mb-4">
+                                        3️⃣ Team Model Creation
+                                    </h4>
+                                    <div
+                                        class="bg-black rounded p-4 text-sm overflow-x-auto"
+                                    >
+                                        <code class="text-gray-300">
+                                            <span class="text-green-400"
+                                                ># Create team completions model</span
+                                            ><br />
+                                            <span class="text-blue-400">1.</span
+                                            > Open IntelliCode window<br />
+                                            <span class="text-blue-400">2.</span
+                                            > Select "Create new model"<br />
+                                            <span class="text-blue-400">3.</span
+                                            > Choose repository/solution<br />
+                                            <span class="text-blue-400">4.</span
+                                            > Configure training settings<br />
+                                            <span class="text-blue-400">5.</span
+                                            > Start training (24-48 hours)<br />
+                                            <br />
+                                            <span class="text-purple-400"
+                                                ># Share with team</span
+                                            ><br />
+                                            <span class="text-blue-400">6.</span
+                                            > Generate sharing link<br />
+                                            <span class="text-blue-400">7.</span
+                                            > Team members install model<br />
+                                            <span class="text-blue-400">8.</span
+                                            > Automatic updates enabled
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                ⚙️ Advanced Configuration
+                            </h3>
+
+                            <div class="space-y-6">
+                                <div class="bg-gray-900 rounded-xl p-6">
+                                    <h4 class="font-semibold text-white mb-4">
+                                        🔧 Enterprise Deployment
+                                    </h4>
+                                    <div
+                                        class="bg-black rounded p-4 text-sm overflow-x-auto"
+                                    >
+                                        <code class="text-gray-300">
+                                            <span class="text-green-400"
+                                                ># Enterprise policy
+                                                configuration</span
+                                            ><br />
+                                            <span class="text-blue-400"
+                                                ># Group Policy / Intune
+                                                settings</span
+                                            ><br />
+                                            <br />
+                                            <span class="text-purple-400"
+                                                ># Registry keys para corporate
+                                                deployment</span
+                                            ><br />
+                                            HKLM\SOFTWARE\Microsoft\VisualStudio\IntelliCode<br
+                                            />
+                                            <span class="text-orange-400"
+                                                >DisableCloudModel</span
+                                            >: <span class="text-cyan-400"
+                                                >0</span
+                                            >
+                                            <span class="text-gray-500"
+                                                ># Allow cloud features</span
+                                            ><br />
+                                            <span class="text-orange-400"
+                                                >EnableTeamModels</span
+                                            >: <span class="text-cyan-400"
+                                                >1</span
+                                            >
+                                            <span class="text-gray-500"
+                                                ># Enable team training</span
+                                            ><br />
+                                            <span class="text-orange-400"
+                                                >ModelStorageLocation</span
+                                            >: <span class="text-cyan-400"
+                                                >"\\\\fileserver\\intellicode"</span
+                                            ><br />
+                                            <br />
+                                            <span class="text-cyan-400"
+                                                ># Azure DevOps integration</span
+                                            ><br />
+                                            <span class="text-blue-400">1.</span
+                                            > Configure Azure DevOps connection<br
+                                            />
+                                            <span class="text-blue-400">2.</span
+                                            > Set up automated model training<br
+                                            />
+                                            <span class="text-blue-400">3.</span
+                                            > Configure permissions y access control
+                                        </code>
+                                    </div>
+                                </div>
+
+                                <div class="bg-gray-900 rounded-xl p-6">
+                                    <h4 class="font-semibold text-white mb-4">
+                                        📊 Monitoring & Analytics
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-2">
+                                        <li>
+                                            • <strong>Usage Metrics:</strong> Track
+                                            suggestion acceptance rates
+                                        </li>
+                                        <li>
+                                            • <strong>Model Performance:</strong
+                                            > Monitor accuracy y relevance
+                                        </li>
+                                        <li>
+                                            • <strong>Team Adoption:</strong> Developer
+                                            engagement analytics
+                                        </li>
+                                        <li>
+                                            • <strong>ROI Measurement:</strong> Productivity
+                                            gains quantification
+                                        </li>
+                                        <li>
+                                            • <strong>Custom Dashboards:</strong
+                                            > Power BI integration available
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-gray-900 rounded-xl p-6">
+                                    <h4 class="font-semibold text-white mb-4">
+                                        🔒 Security & Compliance
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-2">
+                                        <li>
+                                            • <strong>Data Protection:</strong> Code
+                                            stays within your tenant
+                                        </li>
+                                        <li>
+                                            • <strong>GDPR Compliance:</strong> EU
+                                            data residency options
+                                        </li>
+                                        <li>
+                                            • <strong>SOC2 Type II:</strong> Enterprise
+                                            security standards
+                                        </li>
+                                        <li>
+                                            • <strong>Audit Logging:</strong> Complete
+                                            activity tracking
+                                        </li>
+                                        <li>
+                                            • <strong>Access Control:</strong> Azure
+                                            AD integration
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comparison -->
+            <section id="comparacion" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚖️ IntelliCode vs AI Assistants
+                </h2>
+
+                <div
+                    class="bg-gray-900/50 border border-gray-800 rounded-2xl p-8 overflow-x-auto"
+                >
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="border-b border-gray-700">
+                                <th class="text-white font-semibold pb-4"
+                                    >Feature</th
+                                >
+                                <th class="text-white font-semibold pb-4"
+                                    >IntelliCode</th
+                                >
+                                <th class="text-white font-semibold pb-4"
+                                    >GitHub Copilot</th
+                                >
+                                <th class="text-white font-semibold pb-4"
+                                    >Tabnine</th
+                                >
+                                <th class="text-white font-semibold pb-4"
+                                    >Codeium</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-300">
+                            <tr class="border-b border-gray-800">
+                                <td class="py-4 font-medium">💰 Pricing</td>
+                                <td class="py-4 text-green-400"
+                                    >Free + $45/month Pro</td
+                                >
+                                <td class="py-4">$10-19/user/month</td>
+                                <td class="py-4">Free + $12/month Pro</td>
+                                <td class="py-4 text-green-400">Free</td>
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="py-4 font-medium"
+                                    >🎯 Microsoft Stack</td
+                                >
+                                <td class="py-4 text-green-400"
+                                    >Native optimization</td
+                                >
+                                <td class="py-4 text-yellow-400"
+                                    >Good support</td
+                                >
+                                <td class="py-4 text-yellow-400"
+                                    >Generic support</td
+                                >
+                                <td class="py-4 text-yellow-400"
+                                    >Generic support</td
+                                >
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="py-4 font-medium">👥 Team Models</td>
+                                <td class="py-4 text-green-400"
+                                    >Custom training</td
+                                >
+                                <td class="py-4 text-red-400">No</td>
+                                <td class="py-4 text-yellow-400">Limited</td>
+                                <td class="py-4 text-red-400">No</td>
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="py-4 font-medium"
+                                    >🏢 Enterprise Features</td
+                                >
+                                <td class="py-4 text-green-400"
+                                    >Full Azure AD integration</td
+                                >
+                                <td class="py-4 text-yellow-400"
+                                    >Basic enterprise</td
+                                >
+                                <td class="py-4 text-green-400"
+                                    >Enterprise ready</td
+                                >
+                                <td class="py-4 text-yellow-400"
+                                    >Basic enterprise</td
+                                >
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="py-4 font-medium">🔒 Data Privacy</td
+                                >
+                                <td class="py-4 text-green-400"
+                                    >Microsoft tenant</td
+                                >
+                                <td class="py-4 text-yellow-400"
+                                    >Configurable</td
+                                >
+                                <td class="py-4 text-green-400">On-premises</td>
+                                <td class="py-4 text-yellow-400">Cloud-based</td
+                                >
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="py-4 font-medium">📊 Analytics</td>
+                                <td class="py-4 text-green-400"
+                                    >Detailed insights</td
+                                >
+                                <td class="py-4 text-yellow-400"
+                                    >Basic metrics</td
+                                >
+                                <td class="py-4 text-yellow-400">Usage stats</td
+                                >
+                                <td class="py-4 text-red-400">Limited</td>
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="py-4 font-medium"
+                                    >🔧 IDE Integration</td
+                                >
+                                <td class="py-4 text-green-400"
+                                    >Native VS/VSCode</td
+                                >
+                                <td class="py-4 text-green-400">Wide support</td
+                                >
+                                <td class="py-4 text-green-400">Wide support</td
+                                >
+                                <td class="py-4 text-green-400">40+ IDEs</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-medium">🎯 Best For</td>
+                                <td class="py-4 text-blue-400"
+                                    >Microsoft ecosystem</td
+                                >
+                                <td class="py-4 text-blue-400"
+                                    >General development</td
+                                >
+                                <td class="py-4 text-blue-400"
+                                    >Privacy-focused</td
+                                >
+                                <td class="py-4 text-blue-400"
+                                    >Free alternative</td
+                                >
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div
+                        class="bg-green-900/20 border border-green-500/30 rounded-xl p-6"
+                    >
+                        <h4 class="text-lg font-semibold text-white mb-3">
+                            ✅ Choose IntelliCode When:
+                        </h4>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>
+                                • <strong>Microsoft Stack:</strong> .NET, Azure,
+                                C#, TypeScript projects
+                            </li>
+                            <li>
+                                • <strong>Enterprise Environment:</strong> Azure
+                                AD, compliance requirements
+                            </li>
+                            <li>
+                                • <strong>Team Standardization:</strong> Want consistent
+                                coding patterns
+                            </li>
+                            <li>
+                                • <strong>Custom Models:</strong> Need AI trained
+                                on your codebase
+                            </li>
+                            <li>
+                                • <strong>Visual Studio Users:</strong> Deep IDE
+                                integration needed
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6"
+                    >
+                        <h4 class="text-lg font-semibold text-white mb-3">
+                            ⚠️ Consider Alternatives When:
+                        </h4>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>
+                                • <strong>Multi-Language:</strong> Heavy non-Microsoft
+                                stack usage
+                            </li>
+                            <li>
+                                • <strong>Small Teams:</strong> Custom models not
+                                cost-effective
+                            </li>
+                            <li>
+                                • <strong>Budget Constraints:</strong> Need completely
+                                free solution
+                            </li>
+                            <li>
+                                • <strong>Non-Microsoft IDEs:</strong> Primary development
+                                en other tools
+                            </li>
+                            <li>
+                                • <strong>Quick Setup:</strong> Want immediate value
+                                without training
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="text-center">
+                <div
+                    class="bg-gradient-to-r from-blue-900/20 to-cyan-900/20 border border-blue-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-4">
+                        ¿Listo para AI nativa de Microsoft? 🧠
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        IntelliCode maximiza el potential del Microsoft
+                        ecosystem. AI que comprende tu stack, aprende de tu
+                        team, y scales con tu enterprise requirements.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://visualstudio.microsoft.com/services/intellicode/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                        >
+                            Probar en Visual Studio
+                        </a>
+                        <a
+                            href="https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300"
+                        >
+                            VS Code Extension
+                        </a>
+                        <a
+                            href="/herramientas-ia"
+                            class="border border-blue-500 text-blue-400 hover:bg-blue-500/10 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300"
+                        >
+                            Ver Otras IAs
+                        </a>
+                    </div>
+
+                    <div
+                        class="mt-6 flex justify-center gap-8 text-sm text-gray-400"
+                    >
+                        <span>✅ Microsoft-native</span>
+                        <span>✅ Team models</span>
+                        <span>✅ Enterprise ready</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    kbd {
+        font-family: monospace;
+        font-size: 0.75rem;
+    }
+
+    code {
+        font-family: "Fira Code", "Monaco", "Cascadia Code", monospace;
+    }
+
+    /* Navegación sticky */
+    nav {
+        backdrop-filter: blur(10px);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #3b82f6;
+        border-radius: 4px;
+    }
+
+    /* Smooth transitions for table */
+    table {
+        border-collapse: collapse;
+    }
+
+    tr:hover {
+        background-color: rgba(59, 130, 246, 0.05);
+    }
+</style>
+
+<script>
+    // Smooth scroll para navegación
+    document.querySelectorAll('nav a[href^="#"]').forEach((anchor: Element) => {
+        anchor.addEventListener("click", (e: Event) => {
+            e.preventDefault();
+            const href = (anchor as HTMLAnchorElement).getAttribute("href");
+            const target = href ? document.querySelector(href) : null;
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        });
+    });
+
+    // Navegación activa
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute("id");
+                    document.querySelectorAll("nav a").forEach((link) => {
+                        link.classList.remove("text-blue-400");
+                        link.classList.add("text-gray-400");
+                    });
+                    const activeLink = document.querySelector(
+                        `nav a[href="#${id}"]`,
+                    );
+                    if (activeLink) {
+                        activeLink.classList.remove("text-gray-400");
+                        activeLink.classList.add("text-blue-400");
+                    }
+                }
+            });
+        },
+        { threshold: 0.1 },
+    );
+
+    document.querySelectorAll("section[id]").forEach((section) => {
+        observer.observe(section);
+    });
+</script>

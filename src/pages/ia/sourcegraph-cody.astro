@@ -1,881 +1,1455 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Sourcegraph Cody - IA para Codebases Grandes | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-indigo-900 via-violet-900 to-purple-900 py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center text-4xl">
-            🔍
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Sourcegraph Cody</h1>
-            <p class="text-xl text-indigo-300">IA para Codebases Masivos</p>
-            <p class="text-gray-400">by Sourcegraph</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          Cody es el asistente de IA diseñado específicamente para equipos que trabajan con codebases 
-          masivos. Entiende toda tu arquitectura, navega millones de líneas de código y proporciona 
-          contexto inteligente para decisiones informadas.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-indigo-400 hover:text-indigo-300 whitespace-nowrap transition-colors">¿Qué es?</a>
-          <a href="#codebase-intelligence" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">Codebase Intelligence</a>
-          <a href="#search-navigation" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">Search & Navigation</a>
-          <a href="#enterprise-features" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">Enterprise</a>
-          <a href="#casos-uso" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">Casos de Uso</a>
-          <a href="#integraciones" class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors">Integraciones</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- ¿Qué es Cody? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">¿Por qué Cody es único para codebases grandes?</h2>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <div>
-              <p class="text-gray-300 text-lg leading-relaxed mb-6">
-                Mientras otros asistentes de IA luchan con proyectos grandes, 
-                <strong>Cody fue diseñado desde el primer día para entender codebases masivos</strong>. 
-                Usa graph neural networks para mapear tu arquitectura completa.
-              </p>
-              
-              <div class="space-y-4">
-                <div class="flex items-start gap-3">
-                  <span class="text-indigo-400 text-xl">🧠</span>
-                  <div>
-                    <h3 class="text-white font-semibold">Codebase Intelligence</h3>
-                    <p class="text-gray-400 text-sm">Entiende arquitectura, dependencies, y patterns</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start gap-3">
-                  <span class="text-indigo-400 text-xl">🔍</span>
-                  <div>
-                    <h3 class="text-white font-semibold">Semantic Search</h3>
-                    <p class="text-gray-400 text-sm">Busca por concepto, no solo texto literal</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start gap-3">
-                  <span class="text-indigo-400 text-xl">📊</span>
-                  <div>
-                    <h3 class="text-white font-semibold">Code Graph Navigation</h3>
-                    <p class="text-gray-400 text-sm">Navega relaciones complejas automáticamente</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start gap-3">
-                  <span class="text-indigo-400 text-xl">⚡</span>
-                  <div>
-                    <h3 class="text-white font-semibold">Scale Performance</h3>
-                    <p class="text-gray-400 text-sm">Optimizado para millones de líneas de código</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="space-y-6">
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">💰 Modelo de Precios</h3>
-                
-                <div class="space-y-4">
-                  <div class="border border-indigo-500/50 rounded-lg p-4 bg-indigo-900/10">
-                    <div class="flex justify-between items-center mb-2">
-                      <h4 class="font-semibold text-white">Cody Free</h4>
-                      <span class="text-indigo-400 font-bold">GRATIS</span>
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-indigo-900 via-violet-900 to-purple-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🔍
                     </div>
-                    <ul class="text-sm text-gray-300 space-y-1">
-                      <li>• Chat limitado (20 mensajes/mes)</li>
-                      <li>• Autocompletions unlimited</li>
-                      <li>• VS Code, JetBrains support</li>
-                      <li>• Public code search</li>
-                    </ul>
-                  </div>
-                  
-                  <div class="border border-gray-700 rounded-lg p-4">
-                    <div class="flex justify-between items-center mb-2">
-                      <h4 class="font-semibold text-gray-300">Cody Pro</h4>
-                      <span class="text-indigo-400 font-bold">$9/usuario/mes</span>
-                    </div>
-                    <ul class="text-sm text-gray-400 space-y-1">
-                      <li>• Chat ilimitado</li>
-                      <li>• Multiple LLM access</li>
-                      <li>• Advanced code search</li>
-                      <li>• Custom commands</li>
-                    </ul>
-                  </div>
-                  
-                  <div class="border border-purple-500/50 rounded-lg p-4 bg-purple-900/10">
-                    <div class="flex justify-between items-center mb-2">
-                      <h4 class="font-semibold text-white">Cody Enterprise</h4>
-                      <span class="text-purple-400 font-bold">$19/usuario/mes</span>
-                    </div>
-                    <ul class="text-sm text-gray-300 space-y-1">
-                      <li>• Todo de Pro</li>
-                      <li>• Private codebase analysis</li>
-                      <li>• Custom LLM training</li>
-                      <li>• Advanced security controls</li>
-                      <li>• Analytics & insights</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="bg-indigo-900/20 border border-indigo-500/30 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-3">🎯 Ideal Para</h3>
-                <ul class="space-y-2 text-gray-300 text-sm">
-                  <li>• <strong>Legacy Systems:</strong> Millones de líneas de código</li>
-                  <li>• <strong>Microservices:</strong> Arquitecturas distribuidas complejas</li>
-                  <li>• <strong>Enterprise Teams:</strong> 50+ developers</li>
-                  <li>• <strong>Code Archaeology:</strong> Entender código legacy</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Codebase Intelligence -->
-      <section id="codebase-intelligence" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🧠 Codebase Intelligence Engine</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Code Graph Analysis -->
-          <div class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              🕸️
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Code Graph Analysis</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Mapea relaciones entre archivos</li>
-              <li>• Detecta dependencies circulares</li>
-              <li>• Identifica dead code automáticamente</li>
-              <li>• Analiza impact de cambios</li>
-              <li>• Visualiza arquitectura completa</li>
-            </ul>
-          </div>
-          
-          <!-- Semantic Understanding -->
-          <div class="bg-green-900/20 border border-green-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              🤖
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Semantic Understanding</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Entiende business logic</li>
-              <li>• Detecta design patterns</li>
-              <li>• Identifica anti-patterns</li>
-              <li>• Comprende domain models</li>
-              <li>• Mapea data flows</li>
-            </ul>
-          </div>
-          
-          <!-- Context Awareness -->
-          <div class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              🎯
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Context Awareness</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Contexto multi-archivo automático</li>
-              <li>• Entiende llamadas cross-service</li>
-              <li>• Analiza test coverage</li>
-              <li>• Detecta performance bottlenecks</li>
-              <li>• Sugiere refactoring inteligente</li>
-            </ul>
-          </div>
-          
-          <!-- Architecture Analysis -->
-          <div class="bg-orange-900/20 border border-orange-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              🏗️
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Architecture Analysis</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Identifica architectural smells</li>
-              <li>• Sugiere modularización</li>
-              <li>• Detecta tight coupling</li>
-              <li>• Analiza cohesion metrics</li>
-              <li>• Propone mejoras estructurales</li>
-            </ul>
-          </div>
-          
-          <!-- Documentation Mining -->
-          <div class="bg-yellow-900/20 border border-yellow-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              📚
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Documentation Mining</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Extrae knowledge de comments</li>
-              <li>• Analiza commit messages</li>
-              <li>• Detecta undocumented APIs</li>
-              <li>• Genera docs automática</li>
-              <li>• Mantiene knowledge base</li>
-            </ul>
-          </div>
-          
-          <!-- Historical Analysis -->
-          <div class="bg-red-900/20 border border-red-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              📈
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Historical Analysis</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Analiza evolution patterns</li>
-              <li>• Detecta hotspots de bugs</li>
-              <li>• Predice maintenance needs</li>
-              <li>• Identifica ownership gaps</li>
-              <li>• Sugiere team organization</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Search & Navigation -->
-      <section id="search-navigation" class="mb-20">
-        <div class="bg-gradient-to-r from-cyan-900/20 to-teal-900/20 border border-cyan-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">🔍 Advanced Search & Navigation</h2>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">🎯 Semantic Code Search</h3>
-              
-              <div class="space-y-4">
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-cyan-400 mb-2">🔍 Natural Language Search</h4>
-                  <div class="bg-gray-900 rounded p-3 text-sm">
-                    <div class="text-green-400 text-xs mb-1">Query:</div>
-                    <div class="text-gray-300 text-xs mb-2">"Functions that handle user authentication"</div>
-                    <div class="text-cyan-400 text-xs mb-1">Results:</div>
-                    <div class="text-yellow-400 text-xs">
-                      ✓ auth/login.ts:authenticateUser()<br/>
-                      ✓ middleware/auth.ts:verifyToken()<br/>
-                      ✓ services/user.ts:validateCredentials()<br/>
-                      ✓ utils/jwt.ts:generateAuthToken()
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-teal-400 mb-2">📊 Pattern Recognition</h4>
-                  <div class="bg-gray-900 rounded p-3 text-sm">
-                    <div class="text-green-400 text-xs mb-1">Query:</div>
-                    <div class="text-gray-300 text-xs mb-2">"Show me all Observer patterns"</div>
-                    <div class="text-cyan-400 text-xs mb-1">Found 15 implementations:</div>
-                    <div class="text-yellow-400 text-xs">
-                      ✓ EventEmitter patterns (8)<br/>
-                      ✓ Redux store listeners (4)<br/>
-                      ✓ Database triggers (2)<br/>
-                      ✓ File watchers (1)
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-blue-400 mb-2">🔄 Cross-Reference Analysis</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• Find all usages across repositories</li>
-                    <li>• Trace data flow end-to-end</li>
-                    <li>• Identify breaking change impact</li>
-                    <li>• Map API dependencies</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">🧭 Smart Navigation</h3>
-              
-              <div class="bg-gray-900 rounded-xl p-6 mb-6">
-                <h4 class="font-semibold text-white mb-4">🗺️ Context-Aware Navigation</h4>
-                <div class="space-y-4 text-sm">
-                  <div class="bg-black rounded p-3">
-                    <div class="text-purple-400 text-xs mb-1">Smart Jump:</div>
-                    <code class="text-gray-300 text-xs">
-                      user.authenticate() →<br/>
-                      &nbsp;&nbsp;🔍 Definition: auth/user-service.ts:42<br/>
-                      &nbsp;&nbsp;📝 Tests: auth/user-service.test.ts:15<br/>
-                      &nbsp;&nbsp;🔧 Usage: 23 files across 8 services<br/>
-                      &nbsp;&nbsp;📊 Performance: 125ms avg response
-                    </code>
-                  </div>
-                  
-                  <div class="bg-black rounded p-3">
-                    <div class="text-green-400 text-xs mb-1">Contextual Suggestions:</div>
-                    <code class="text-cyan-400 text-xs">
-                      "Working on authentication bug?"<br/>
-                      <br/>
-                      📋 Suggested files to check:<br/>
-                      • Recent auth-related commits<br/>
-                      • Similar bug reports<br/>
-                      • Related test failures<br/>
-                      • Performance monitoring alerts
-                    </code>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="space-y-4">
-                <div class="bg-cyan-900/20 border border-cyan-500/30 rounded-xl p-6">
-                  <h4 class="text-lg font-semibold text-white mb-3">⚡ Navigation Features</h4>
-                  <ul class="space-y-2 text-gray-300 text-sm">
-                    <li>• <strong>Call Graph:</strong> Visual function dependencies</li>
-                    <li>• <strong>Data Flow:</strong> End-to-end data tracking</li>
-                    <li>• <strong>Impact Analysis:</strong> Change risk assessment</li>
-                    <li>• <strong>Smart Bookmarks:</strong> Context-aware favorites</li>
-                  </ul>
-                </div>
-                
-                <div class="bg-teal-900/20 border border-teal-500/30 rounded-xl p-6">
-                  <h4 class="text-lg font-semibold text-white mb-3">🎯 Advanced Filters</h4>
-                  <ul class="space-y-2 text-gray-300 text-sm">
-                    <li>• <strong>By Author:</strong> Code ownership tracking</li>
-                    <li>• <strong>By Complexity:</strong> Cyclomatic complexity</li>
-                    <li>• <strong>By Recency:</strong> Last modified dates</li>
-                    <li>• <strong>By Language:</strong> Multi-language projects</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Enterprise Features -->
-      <section id="enterprise-features" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🏢 Enterprise-Grade Features</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Security & Compliance -->
-          <div class="bg-gradient-to-r from-red-900/20 to-pink-900/20 border border-red-500/20 rounded-xl p-6">
-            <h3 class="text-xl font-semibold text-white mb-6">🔒 Security & Compliance</h3>
-            
-            <div class="space-y-4">
-              <div class="bg-black/30 rounded-lg p-4">
-                <h4 class="font-semibold text-red-400 mb-2">🛡️ Data Protection</h4>
-                <ul class="text-gray-300 text-sm space-y-1">
-                  <li>• Self-hosted deployment options</li>
-                  <li>• End-to-end encryption</li>
-                  <li>• Zero data retention policy</li>
-                  <li>• SOC 2 Type II compliance</li>
-                  <li>• GDPR/CCPA compliant</li>
-                </ul>
-              </div>
-              
-              <div class="bg-black/30 rounded-lg p-4">
-                <h4 class="font-semibold text-pink-400 mb-2">🔐 Access Controls</h4>
-                <ul class="text-gray-300 text-sm space-y-1">
-                  <li>• Role-based permissions</li>
-                  <li>• SSO integration (SAML/OIDC)</li>
-                  <li>• Repository-level access</li>
-                  <li>• Audit logging completo</li>
-                  <li>• IP whitelist controls</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Analytics & Insights -->
-          <div class="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 border border-blue-500/20 rounded-xl p-6">
-            <h3 class="text-xl font-semibold text-white mb-6">📊 Analytics & Insights</h3>
-            
-            <div class="space-y-4">
-              <div class="bg-black/30 rounded-lg p-4">
-                <h4 class="font-semibold text-blue-400 mb-2">📈 Usage Analytics</h4>
-                <ul class="text-gray-300 text-sm space-y-1">
-                  <li>• Developer productivity metrics</li>
-                  <li>• Search query analytics</li>
-                  <li>• Code exploration patterns</li>
-                  <li>• Feature adoption rates</li>
-                  <li>• Performance benchmarks</li>
-                </ul>
-              </div>
-              
-              <div class="bg-black/30 rounded-lg p-4">
-                <h4 class="font-semibold text-indigo-400 mb-2">🎯 Code Insights</h4>
-                <ul class="text-gray-300 text-sm space-y-1">
-                  <li>• Technical debt assessment</li>
-                  <li>• Code quality trends</li>
-                  <li>• Security vulnerability tracking</li>
-                  <li>• Dependency health monitoring</li>
-                  <li>• Team collaboration metrics</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Custom Training -->
-          <div class="bg-gradient-to-r from-purple-900/20 to-violet-900/20 border border-purple-500/20 rounded-xl p-6">
-            <h3 class="text-xl font-semibold text-white mb-6">🧠 Custom Model Training</h3>
-            
-            <div class="space-y-4">
-              <div class="bg-black/30 rounded-lg p-4">
-                <h4 class="font-semibold text-purple-400 mb-2">⚙️ Private Model</h4>
-                <ul class="text-gray-300 text-sm space-y-1">
-                  <li>• Training en tu codebase específico</li>
-                  <li>• Domain-specific knowledge</li>
-                  <li>• Company coding standards</li>
-                  <li>• Business logic understanding</li>
-                  <li>• Legacy system expertise</li>
-                </ul>
-              </div>
-              
-              <div class="bg-black/30 rounded-lg p-4">
-                <h4 class="font-semibold text-violet-400 mb-2">🔧 Customization</h4>
-                <ul class="text-gray-300 text-sm space-y-1">
-                  <li>• Custom prompts y templates</li>
-                  <li>• Organizational best practices</li>
-                  <li>• Specific architectural patterns</li>
-                  <li>• Team workflow integration</li>
-                  <li>• Custom search algorithms</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Scale & Performance -->
-          <div class="bg-gradient-to-r from-green-900/20 to-teal-900/20 border border-green-500/20 rounded-xl p-6">
-            <h3 class="text-xl font-semibold text-white mb-6">⚡ Scale & Performance</h3>
-            
-            <div class="space-y-4">
-              <div class="bg-black/30 rounded-lg p-4">
-                <h4 class="font-semibold text-green-400 mb-2">🌐 Enterprise Scale</h4>
-                <ul class="text-gray-300 text-sm space-y-1">
-                  <li>• 10M+ lines of code support</li>
-                  <li>• 1000+ repositories</li>
-                  <li>• Multi-region deployment</li>
-                  <li>• High availability (99.9% SLA)</li>
-                  <li>• Auto-scaling infrastructure</li>
-                </ul>
-              </div>
-              
-              <div class="bg-black/30 rounded-lg p-4">
-                <h4 class="font-semibold text-teal-400 mb-2">⚡ Performance</h4>
-                <ul class="text-gray-300 text-sm space-y-1">
-                  <li>• Sub-second search results</li>
-                  <li>• Real-time code indexing</li>
-                  <li>• Incremental analysis</li>
-                  <li>• Distributed processing</li>
-                  <li>• Optimized for large repos</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Casos de Uso -->
-      <section id="casos-uso" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🎯 Casos de Uso Empresariales</h2>
-        
-        <!-- Legacy System Migration -->
-        <div class="bg-yellow-900/20 border border-yellow-500/20 rounded-xl p-8 mb-8">
-          <h3 class="text-xl font-semibold text-white mb-6">🏗️ Legacy System Migration</h3>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <h4 class="font-semibold text-yellow-400 mb-3">🎯 Challenge:</h4>
-              <div class="bg-black rounded-lg p-4 mb-4">
-                <p class="text-gray-300 text-sm">
-                  Enterprise con 5M+ líneas de código COBOL legacy necesita 
-                  migrar a arquitectura cloud moderna. Equipo nuevo no conoce 
-                  la lógica de negocio ancestral.
-                </p>
-              </div>
-              
-              <h4 class="font-semibold text-green-400 mb-3">✅ Cody Solution:</h4>
-              <ul class="text-gray-300 text-sm space-y-2">
-                <li>• <strong>Business Logic Mining:</strong> Extrae reglas de negocio del código</li>
-                <li>• <strong>Data Flow Analysis:</strong> Mapea transformaciones complejas</li>
-                <li>• <strong>Dependency Mapping:</strong> Identifica módulos acoplados</li>
-                <li>• <strong>Test Generation:</strong> Crea tests para preservar lógica</li>
-                <li>• <strong>Documentation Auto:</strong> Genera docs de sistemas legacy</li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 class="font-semibold text-orange-400 mb-3">📊 Results:</h4>
-              <div class="bg-gray-900 rounded-lg p-4 space-y-4 text-sm">
-                <div class="grid grid-cols-2 gap-4">
-                  <div class="bg-black rounded p-3 text-center">
-                    <div class="text-2xl font-bold text-green-400 mb-1">60%</div>
-                    <div class="text-gray-300 text-xs">Faster discovery</div>
-                  </div>
-                  
-                  <div class="bg-black rounded p-3 text-center">
-                    <div class="text-2xl font-bold text-blue-400 mb-1">80%</div>
-                    <div class="text-gray-300 text-xs">Business logic mapped</div>
-                  </div>
-                  
-                  <div class="bg-black rounded p-3 text-center">
-                    <div class="text-2xl font-bold text-purple-400 mb-1">12</div>
-                    <div class="text-gray-300 text-xs">Months saved</div>
-                  </div>
-                  
-                  <div class="bg-black rounded p-3 text-center">
-                    <div class="text-2xl font-bold text-orange-400 mb-1">$2M</div>
-                    <div class="text-gray-300 text-xs">Migration savings</div>
-                  </div>
-                </div>
-                
-                <div class="bg-black rounded p-3">
-                  <h5 class="font-semibold text-yellow-400 text-sm mb-2">Key Insights Discovered:</h5>
-                  <ul class="text-gray-300 text-xs space-y-1">
-                    <li>• 247 undocumented business rules extracted</li>
-                    <li>• 89 critical data transformations mapped</li>
-                    <li>• 156 inter-module dependencies identified</li>
-                    <li>• 23 potential modernization candidates found</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Microservices Architecture -->
-        <div class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-8 mb-8">
-          <h3 class="text-xl font-semibold text-white mb-6">🔄 Microservices Architecture Analysis</h3>
-          
-          <div class="space-y-6">
-            <div>
-              <h4 class="font-semibold text-blue-400 mb-3">🎯 Complex Distributed Systems:</h4>
-              <div class="bg-black rounded-lg p-4">
-                <p class="text-gray-300 text-sm">
-                  Fintech company con 150+ microservices necesita optimizar arquitectura. 
-                  Performance issues, duplicated logic, y dependency hell.
-                </p>
-              </div>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div>
-                <h4 class="font-semibold text-cyan-400 mb-3">🔍 Cody Analysis:</h4>
-                <div class="bg-gray-900 rounded-lg p-4">
-                  <div class="space-y-3 text-sm">
                     <div>
-                      <div class="text-green-400 font-semibold mb-1">Service Dependency Graph:</div>
-                      <ul class="text-gray-300 text-xs space-y-1">
-                        <li>• 23 circular dependencies detected</li>
-                        <li>• 45 services with >10 dependencies</li>
-                        <li>• 12 single points of failure</li>
-                        <li>• 67% coupling reduction possible</li>
-                      </ul>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            Sourcegraph Cody
+                        </h1>
+                        <p class="text-xl text-indigo-300">
+                            IA para Codebases Masivos
+                        </p>
+                        <p class="text-gray-400">by Sourcegraph</p>
                     </div>
-                    
-                    <div>
-                      <div class="text-blue-400 font-semibold mb-1">Duplicate Code Analysis:</div>
-                      <ul class="text-gray-300 text-xs space-y-1">
-                        <li>• 189 duplicate business logic blocks</li>
-                        <li>• 34 identical API implementations</li>
-                        <li>• 78 common utilities scattered</li>
-                        <li>• 45% code reduction potential</li>
-                      </ul>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              
-              <div>
-                <h4 class="font-semibold text-purple-400 mb-3">💡 Recommendations:</h4>
-                <div class="bg-gray-900 rounded-lg p-4">
-                  <ul class="text-gray-300 text-sm space-y-2">
-                    <li>• <strong>Service Consolidation:</strong> Merge 23 redundant services</li>
-                    <li>• <strong>Shared Libraries:</strong> Extract 12 common modules</li>
-                    <li>• <strong>API Gateway:</strong> Centralize cross-cutting concerns</li>
-                    <li>• <strong>Event-Driven:</strong> Replace synchronous dependencies</li>
-                    <li>• <strong>Circuit Breakers:</strong> Add resilience patterns</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Security Analysis -->
-        <div class="bg-red-900/20 border border-red-500/20 rounded-xl p-8">
-          <h3 class="text-xl font-semibold text-white mb-6">🔒 Enterprise Security Analysis</h3>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <h4 class="font-semibold text-red-400 mb-3">🚨 Security Audit Automation:</h4>
-              <div class="bg-black rounded-lg p-4 mb-4">
-                <p class="text-gray-300 text-sm">
-                  Healthcare company requiere auditoría de seguridad HIPAA compliance 
-                  en codebase de 2M+ líneas para certificación SOC 2.
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    Cody es el asistente de IA diseñado específicamente para
+                    equipos que trabajan con codebases masivos. Entiende toda tu
+                    arquitectura, navega millones de líneas de código y
+                    proporciona contexto inteligente para decisiones informadas.
                 </p>
-              </div>
-              
-              <div class="bg-gray-900 rounded-lg p-4">
-                <h5 class="font-semibold text-orange-400 text-sm mb-2">Automated Detection:</h5>
-                <ul class="text-gray-300 text-xs space-y-1">
-                  <li>• 156 hardcoded secrets found</li>
-                  <li>• 89 SQL injection vulnerabilities</li>
-                  <li>• 234 unencrypted PII data flows</li>
-                  <li>• 67 insufficient access controls</li>
-                  <li>• 45 missing audit trails</li>
-                </ul>
-              </div>
             </div>
-            
-            <div>
-              <h4 class="font-semibold text-green-400 mb-3">🛡️ Remediation Guidance:</h4>
-              <div class="bg-gray-900 rounded-lg p-4 space-y-3">
-                <div>
-                  <div class="text-yellow-400 font-semibold text-sm mb-1">Priority 1 (Critical):</div>
-                  <ul class="text-gray-300 text-xs space-y-1">
-                    <li>• Move secrets to vault (156 locations)</li>
-                    <li>• Implement parameterized queries</li>
-                    <li>• Add encryption to PII fields</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <div class="text-blue-400 font-semibold text-sm mb-1">Priority 2 (High):</div>
-                  <ul class="text-gray-300 text-xs space-y-1">
-                    <li>• Implement RBAC (67 endpoints)</li>
-                    <li>• Add audit logging (45 operations)</li>
-                    <li>• Update dependencies (23 CVEs)</li>
-                  </ul>
-                </div>
-                
-                <div class="bg-green-900/20 border border-green-500/30 rounded p-3">
-                  <div class="text-green-400 font-semibold text-xs mb-1">Compliance Score:</div>
-                  <div class="text-white text-lg font-bold">92% → 99%</div>
-                  <div class="text-gray-400 text-xs">After remediation</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </header>
 
-      <!-- Integraciones -->
-      <section id="integraciones" class="mb-20">
-        <div class="bg-gradient-to-r from-gray-900/20 to-slate-900/20 border border-gray-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">🔗 Integraciones & Ecosistema</h2>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">💻 IDEs & Editors</h3>
-              
-              <div class="space-y-4">
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-blue-400 mb-2">🚀 Tier 1 Support</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• <strong>VS Code:</strong> Extension nativa completa</li>
-                    <li>• <strong>JetBrains:</strong> IntelliJ, WebStorm, PyCharm</li>
-                    <li>• <strong>Neovim:</strong> Plugin nativo Lua</li>
-                    <li>• <strong>Emacs:</strong> Package manager integration</li>
-                  </ul>
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-indigo-400 hover:text-indigo-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#codebase-intelligence"
+                        class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors"
+                        >Codebase Intelligence</a
+                    >
+                    <a
+                        href="#search-navigation"
+                        class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors"
+                        >Search & Navigation</a
+                    >
+                    <a
+                        href="#enterprise-features"
+                        class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors"
+                        >Enterprise</a
+                    >
+                    <a
+                        href="#casos-uso"
+                        class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors"
+                        >Casos de Uso</a
+                    >
+                    <a
+                        href="#integraciones"
+                        class="text-gray-400 hover:text-indigo-300 whitespace-nowrap transition-colors"
+                        >Integraciones</a
+                    >
                 </div>
-                
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-green-400 mb-2">⚡ Advanced Features</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• Contextual autocomplete</li>
-                    <li>• Inline documentation</li>
-                    <li>• Smart navigation</li>
-                    <li>• Real-time search</li>
-                    <li>• Custom commands</li>
-                  </ul>
-                </div>
-              </div>
             </div>
-            
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">🔧 DevOps & CI/CD</h3>
-              
-              <div class="space-y-4">
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-purple-400 mb-2">🏗️ Version Control</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• <strong>GitHub:</strong> Native app, webhooks</li>
-                    <li>• <strong>GitLab:</strong> Self-hosted integration</li>
-                    <li>• <strong>Bitbucket:</strong> Atlassian ecosystem</li>
-                    <li>• <strong>Azure DevOps:</strong> Enterprise integration</li>
-                  </ul>
-                </div>
-                
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-orange-400 mb-2">🚀 CI/CD Integration</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• Pre-commit hooks</li>
-                    <li>• PR analysis automation</li>
-                    <li>• Code quality gates</li>
-                    <li>• Security scanning</li>
-                    <li>• Documentation generation</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-indigo-900/20 border border-indigo-500/30 rounded-xl p-6">
-              <h4 class="text-lg font-semibold text-white mb-3">📊 Analytics Platforms</h4>
-              <ul class="space-y-2 text-gray-300 text-sm">
-                <li>• Datadog integration</li>
-                <li>• New Relic monitoring</li>
-                <li>• Splunk logging</li>
-                <li>• Grafana dashboards</li>
-                <li>• Custom metrics export</li>
-              </ul>
-            </div>
-            
-            <div class="bg-green-900/20 border border-green-500/30 rounded-xl p-6">
-              <h4 class="text-lg font-semibold text-white mb-3">🔒 Security Tools</h4>
-              <ul class="space-y-2 text-gray-300 text-sm">
-                <li>• Snyk vulnerability scanning</li>
-                <li>• SonarQube integration</li>
-                <li>• Veracode SAST/DAST</li>
-                <li>• HashiCorp Vault</li>
-                <li>• OWASP ZAP automation</li>
-              </ul>
-            </div>
-            
-            <div class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6">
-              <h4 class="text-lg font-semibold text-white mb-3">🎯 Project Management</h4>
-              <ul class="space-y-2 text-gray-300 text-sm">
-                <li>• Jira ticket linking</li>
-                <li>• Trello card automation</li>
-                <li>• Linear issue tracking</li>
-                <li>• Notion documentation</li>
-                <li>• Slack notifications</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+        </nav>
 
-      <!-- Call to Action -->
-      <section class="text-center">
-        <div class="bg-gradient-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-4">¿Listo para dominar tu codebase masivo? 🔍</h2>
-          <p class="text-xl text-gray-300 mb-8">
-            Cody es tu copiloto especializado en navegar y entender sistemas complejos. 
-            Perfecto para equipos enterprise con codebases de millones de líneas.
-          </p>
-          
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://sourcegraph.com/cody" target="_blank" rel="noopener noreferrer" 
-               class="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105">
-              Probar Cody Gratis
-            </a>
-            <a href="/herramientas-ia" 
-               class="border border-indigo-500 text-indigo-400 hover:bg-indigo-500/10 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300">
-              Ver Otras IAs
-            </a>
-          </div>
-          
-          <div class="mt-6 flex justify-center gap-8 text-sm text-gray-400">
-            <span>✅ Codebase intelligence</span>
-            <span>✅ Semantic search</span>
-            <span>✅ Enterprise security</span>
-          </div>
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es Cody? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        ¿Por qué Cody es único para codebases grandes?
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <p
+                                class="text-gray-300 text-lg leading-relaxed mb-6"
+                            >
+                                Mientras otros asistentes de IA luchan con
+                                proyectos grandes,
+                                <strong
+                                    >Cody fue diseñado desde el primer día para
+                                    entender codebases masivos</strong
+                                >. Usa graph neural networks para mapear tu
+                                arquitectura completa.
+                            </p>
+
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-indigo-400 text-xl"
+                                        >🧠</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Codebase Intelligence
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Entiende arquitectura, dependencies,
+                                            y patterns
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-indigo-400 text-xl"
+                                        >🔍</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Semantic Search
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Busca por concepto, no solo texto
+                                            literal
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-indigo-400 text-xl"
+                                        >📊</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Code Graph Navigation
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Navega relaciones complejas
+                                            automáticamente
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-indigo-400 text-xl"
+                                        >⚡</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Scale Performance
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Optimizado para millones de líneas
+                                            de código
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    💰 Modelo de Precios
+                                </h3>
+
+                                <div class="space-y-4">
+                                    <div
+                                        class="border border-indigo-500/50 rounded-lg p-4 bg-indigo-900/10"
+                                    >
+                                        <div
+                                            class="flex justify-between items-center mb-2"
+                                        >
+                                            <h4
+                                                class="font-semibold text-white"
+                                            >
+                                                Cody Free
+                                            </h4>
+                                            <span
+                                                class="text-indigo-400 font-bold"
+                                                >GRATIS</span
+                                            >
+                                        </div>
+                                        <ul
+                                            class="text-sm text-gray-300 space-y-1"
+                                        >
+                                            <li>
+                                                • Chat limitado (20
+                                                mensajes/mes)
+                                            </li>
+                                            <li>• Autocompletions unlimited</li>
+                                            <li>
+                                                • VS Code, JetBrains support
+                                            </li>
+                                            <li>• Public code search</li>
+                                        </ul>
+                                    </div>
+
+                                    <div
+                                        class="border border-gray-700 rounded-lg p-4"
+                                    >
+                                        <div
+                                            class="flex justify-between items-center mb-2"
+                                        >
+                                            <h4
+                                                class="font-semibold text-gray-300"
+                                            >
+                                                Cody Pro
+                                            </h4>
+                                            <span
+                                                class="text-indigo-400 font-bold"
+                                                >$9/usuario/mes</span
+                                            >
+                                        </div>
+                                        <ul
+                                            class="text-sm text-gray-400 space-y-1"
+                                        >
+                                            <li>• Chat ilimitado</li>
+                                            <li>• Multiple LLM access</li>
+                                            <li>• Advanced code search</li>
+                                            <li>• Custom commands</li>
+                                        </ul>
+                                    </div>
+
+                                    <div
+                                        class="border border-purple-500/50 rounded-lg p-4 bg-purple-900/10"
+                                    >
+                                        <div
+                                            class="flex justify-between items-center mb-2"
+                                        >
+                                            <h4
+                                                class="font-semibold text-white"
+                                            >
+                                                Cody Enterprise
+                                            </h4>
+                                            <span
+                                                class="text-purple-400 font-bold"
+                                                >$19/usuario/mes</span
+                                            >
+                                        </div>
+                                        <ul
+                                            class="text-sm text-gray-300 space-y-1"
+                                        >
+                                            <li>• Todo de Pro</li>
+                                            <li>• Private codebase analysis</li>
+                                            <li>• Custom LLM training</li>
+                                            <li>
+                                                • Advanced security controls
+                                            </li>
+                                            <li>• Analytics & insights</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-indigo-900/20 border border-indigo-500/30 rounded-xl p-6"
+                            >
+                                <h3
+                                    class="text-lg font-semibold text-white mb-3"
+                                >
+                                    🎯 Ideal Para
+                                </h3>
+                                <ul class="space-y-2 text-gray-300 text-sm">
+                                    <li>
+                                        • <strong>Legacy Systems:</strong> Millones
+                                        de líneas de código
+                                    </li>
+                                    <li>
+                                        • <strong>Microservices:</strong> Arquitecturas
+                                        distribuidas complejas
+                                    </li>
+                                    <li>
+                                        • <strong>Enterprise Teams:</strong> 50+
+                                        developers
+                                    </li>
+                                    <li>
+                                        • <strong>Code Archaeology:</strong> Entender
+                                        código legacy
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Codebase Intelligence -->
+            <section id="codebase-intelligence" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🧠 Codebase Intelligence Engine
+                </h2>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                    <!-- Code Graph Analysis -->
+                    <div
+                        class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🕸️
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Code Graph Analysis
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Mapea relaciones entre archivos</li>
+                            <li>• Detecta dependencies circulares</li>
+                            <li>• Identifica dead code automáticamente</li>
+                            <li>• Analiza impact de cambios</li>
+                            <li>• Visualiza arquitectura completa</li>
+                        </ul>
+                    </div>
+
+                    <!-- Semantic Understanding -->
+                    <div
+                        class="bg-green-900/20 border border-green-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🤖
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Semantic Understanding
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Entiende business logic</li>
+                            <li>• Detecta design patterns</li>
+                            <li>• Identifica anti-patterns</li>
+                            <li>• Comprende domain models</li>
+                            <li>• Mapea data flows</li>
+                        </ul>
+                    </div>
+
+                    <!-- Context Awareness -->
+                    <div
+                        class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🎯
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Context Awareness
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Contexto multi-archivo automático</li>
+                            <li>• Entiende llamadas cross-service</li>
+                            <li>• Analiza test coverage</li>
+                            <li>• Detecta performance bottlenecks</li>
+                            <li>• Sugiere refactoring inteligente</li>
+                        </ul>
+                    </div>
+
+                    <!-- Architecture Analysis -->
+                    <div
+                        class="bg-orange-900/20 border border-orange-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🏗️
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Architecture Analysis
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Identifica architectural smells</li>
+                            <li>• Sugiere modularización</li>
+                            <li>• Detecta tight coupling</li>
+                            <li>• Analiza cohesion metrics</li>
+                            <li>• Propone mejoras estructurales</li>
+                        </ul>
+                    </div>
+
+                    <!-- Documentation Mining -->
+                    <div
+                        class="bg-yellow-900/20 border border-yellow-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            📚
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Documentation Mining
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Extrae knowledge de comments</li>
+                            <li>• Analiza commit messages</li>
+                            <li>• Detecta undocumented APIs</li>
+                            <li>• Genera docs automática</li>
+                            <li>• Mantiene knowledge base</li>
+                        </ul>
+                    </div>
+
+                    <!-- Historical Analysis -->
+                    <div
+                        class="bg-red-900/20 border border-red-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            📈
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Historical Analysis
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Analiza evolution patterns</li>
+                            <li>• Detecta hotspots de bugs</li>
+                            <li>• Predice maintenance needs</li>
+                            <li>• Identifica ownership gaps</li>
+                            <li>• Sugiere team organization</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Search & Navigation -->
+            <section id="search-navigation" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-cyan-900/20 to-teal-900/20 border border-cyan-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        🔍 Advanced Search & Navigation
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🎯 Semantic Code Search
+                            </h3>
+
+                            <div class="space-y-4">
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-cyan-400 mb-2"
+                                    >
+                                        🔍 Natural Language Search
+                                    </h4>
+                                    <div
+                                        class="bg-gray-900 rounded p-3 text-sm"
+                                    >
+                                        <div
+                                            class="text-green-400 text-xs mb-1"
+                                        >
+                                            Query:
+                                        </div>
+                                        <div class="text-gray-300 text-xs mb-2">
+                                            "Functions that handle user
+                                            authentication"
+                                        </div>
+                                        <div class="text-cyan-400 text-xs mb-1">
+                                            Results:
+                                        </div>
+                                        <div class="text-yellow-400 text-xs">
+                                            ✓ auth/login.ts:authenticateUser()<br
+                                            />
+                                            ✓ middleware/auth.ts:verifyToken()<br
+                                            />
+                                            ✓ services/user.ts:validateCredentials()<br
+                                            />
+                                            ✓ utils/jwt.ts:generateAuthToken()
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-teal-400 mb-2"
+                                    >
+                                        📊 Pattern Recognition
+                                    </h4>
+                                    <div
+                                        class="bg-gray-900 rounded p-3 text-sm"
+                                    >
+                                        <div
+                                            class="text-green-400 text-xs mb-1"
+                                        >
+                                            Query:
+                                        </div>
+                                        <div class="text-gray-300 text-xs mb-2">
+                                            "Show me all Observer patterns"
+                                        </div>
+                                        <div class="text-cyan-400 text-xs mb-1">
+                                            Found 15 implementations:
+                                        </div>
+                                        <div class="text-yellow-400 text-xs">
+                                            ✓ EventEmitter patterns (8)<br />
+                                            ✓ Redux store listeners (4)<br />
+                                            ✓ Database triggers (2)<br />
+                                            ✓ File watchers (1)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-blue-400 mb-2"
+                                    >
+                                        🔄 Cross-Reference Analysis
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>
+                                            • Find all usages across
+                                            repositories
+                                        </li>
+                                        <li>• Trace data flow end-to-end</li>
+                                        <li>
+                                            • Identify breaking change impact
+                                        </li>
+                                        <li>• Map API dependencies</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🧭 Smart Navigation
+                            </h3>
+
+                            <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                                <h4 class="font-semibold text-white mb-4">
+                                    🗺️ Context-Aware Navigation
+                                </h4>
+                                <div class="space-y-4 text-sm">
+                                    <div class="bg-black rounded p-3">
+                                        <div
+                                            class="text-purple-400 text-xs mb-1"
+                                        >
+                                            Smart Jump:
+                                        </div>
+                                        <code class="text-gray-300 text-xs">
+                                            user.authenticate() →<br />
+                                            &nbsp;&nbsp;🔍 Definition: auth/user-service.ts:42<br
+                                            />
+                                            &nbsp;&nbsp;📝 Tests: auth/user-service.test.ts:15<br
+                                            />
+                                            &nbsp;&nbsp;🔧 Usage: 23 files across
+                                            8 services<br />
+                                            &nbsp;&nbsp;📊 Performance: 125ms avg
+                                            response
+                                        </code>
+                                    </div>
+
+                                    <div class="bg-black rounded p-3">
+                                        <div
+                                            class="text-green-400 text-xs mb-1"
+                                        >
+                                            Contextual Suggestions:
+                                        </div>
+                                        <code class="text-cyan-400 text-xs">
+                                            "Working on authentication bug?"<br
+                                            />
+                                            <br />
+                                            📋 Suggested files to check:<br />
+                                            • Recent auth-related commits<br />
+                                            • Similar bug reports<br />
+                                            • Related test failures<br />
+                                            • Performance monitoring alerts
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div
+                                    class="bg-cyan-900/20 border border-cyan-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        ⚡ Navigation Features
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong>Call Graph:</strong> Visual
+                                            function dependencies
+                                        </li>
+                                        <li>
+                                            • <strong>Data Flow:</strong> End-to-end
+                                            data tracking
+                                        </li>
+                                        <li>
+                                            • <strong>Impact Analysis:</strong> Change
+                                            risk assessment
+                                        </li>
+                                        <li>
+                                            • <strong>Smart Bookmarks:</strong> Context-aware
+                                            favorites
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div
+                                    class="bg-teal-900/20 border border-teal-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        🎯 Advanced Filters
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong>By Author:</strong> Code ownership
+                                            tracking
+                                        </li>
+                                        <li>
+                                            • <strong>By Complexity:</strong> Cyclomatic
+                                            complexity
+                                        </li>
+                                        <li>
+                                            • <strong>By Recency:</strong> Last modified
+                                            dates
+                                        </li>
+                                        <li>
+                                            • <strong>By Language:</strong> Multi-language
+                                            projects
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Enterprise Features -->
+            <section id="enterprise-features" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🏢 Enterprise-Grade Features
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Security & Compliance -->
+                    <div
+                        class="bg-gradient-to-r from-red-900/20 to-pink-900/20 border border-red-500/20 rounded-xl p-6"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🔒 Security & Compliance
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div class="bg-black/30 rounded-lg p-4">
+                                <h4 class="font-semibold text-red-400 mb-2">
+                                    🛡️ Data Protection
+                                </h4>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Self-hosted deployment options</li>
+                                    <li>• End-to-end encryption</li>
+                                    <li>• Zero data retention policy</li>
+                                    <li>• SOC 2 Type II compliance</li>
+                                    <li>• GDPR/CCPA compliant</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-black/30 rounded-lg p-4">
+                                <h4 class="font-semibold text-pink-400 mb-2">
+                                    🔐 Access Controls
+                                </h4>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Role-based permissions</li>
+                                    <li>• SSO integration (SAML/OIDC)</li>
+                                    <li>• Repository-level access</li>
+                                    <li>• Audit logging completo</li>
+                                    <li>• IP whitelist controls</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analytics & Insights -->
+                    <div
+                        class="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 border border-blue-500/20 rounded-xl p-6"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            📊 Analytics & Insights
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div class="bg-black/30 rounded-lg p-4">
+                                <h4 class="font-semibold text-blue-400 mb-2">
+                                    📈 Usage Analytics
+                                </h4>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Developer productivity metrics</li>
+                                    <li>• Search query analytics</li>
+                                    <li>• Code exploration patterns</li>
+                                    <li>• Feature adoption rates</li>
+                                    <li>• Performance benchmarks</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-black/30 rounded-lg p-4">
+                                <h4 class="font-semibold text-indigo-400 mb-2">
+                                    🎯 Code Insights
+                                </h4>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Technical debt assessment</li>
+                                    <li>• Code quality trends</li>
+                                    <li>• Security vulnerability tracking</li>
+                                    <li>• Dependency health monitoring</li>
+                                    <li>• Team collaboration metrics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Custom Training -->
+                    <div
+                        class="bg-gradient-to-r from-purple-900/20 to-violet-900/20 border border-purple-500/20 rounded-xl p-6"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🧠 Custom Model Training
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div class="bg-black/30 rounded-lg p-4">
+                                <h4 class="font-semibold text-purple-400 mb-2">
+                                    ⚙️ Private Model
+                                </h4>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>
+                                        • Training en tu codebase específico
+                                    </li>
+                                    <li>• Domain-specific knowledge</li>
+                                    <li>• Company coding standards</li>
+                                    <li>• Business logic understanding</li>
+                                    <li>• Legacy system expertise</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-black/30 rounded-lg p-4">
+                                <h4 class="font-semibold text-violet-400 mb-2">
+                                    🔧 Customization
+                                </h4>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Custom prompts y templates</li>
+                                    <li>• Organizational best practices</li>
+                                    <li>• Specific architectural patterns</li>
+                                    <li>• Team workflow integration</li>
+                                    <li>• Custom search algorithms</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scale & Performance -->
+                    <div
+                        class="bg-gradient-to-r from-green-900/20 to-teal-900/20 border border-green-500/20 rounded-xl p-6"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            ⚡ Scale & Performance
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div class="bg-black/30 rounded-lg p-4">
+                                <h4 class="font-semibold text-green-400 mb-2">
+                                    🌐 Enterprise Scale
+                                </h4>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• 10M+ lines of code support</li>
+                                    <li>• 1000+ repositories</li>
+                                    <li>• Multi-region deployment</li>
+                                    <li>• High availability (99.9% SLA)</li>
+                                    <li>• Auto-scaling infrastructure</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-black/30 rounded-lg p-4">
+                                <h4 class="font-semibold text-teal-400 mb-2">
+                                    ⚡ Performance
+                                </h4>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Sub-second search results</li>
+                                    <li>• Real-time code indexing</li>
+                                    <li>• Incremental analysis</li>
+                                    <li>• Distributed processing</li>
+                                    <li>• Optimized for large repos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Casos de Uso -->
+            <section id="casos-uso" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🎯 Casos de Uso Empresariales
+                </h2>
+
+                <!-- Legacy System Migration -->
+                <div
+                    class="bg-yellow-900/20 border border-yellow-500/20 rounded-xl p-8 mb-8"
+                >
+                    <h3 class="text-xl font-semibold text-white mb-6">
+                        🏗️ Legacy System Migration
+                    </h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold text-yellow-400 mb-3">
+                                🎯 Challenge:
+                            </h4>
+                            <div class="bg-black rounded-lg p-4 mb-4">
+                                <p class="text-gray-300 text-sm">
+                                    Enterprise con 5M+ líneas de código COBOL
+                                    legacy necesita migrar a arquitectura cloud
+                                    moderna. Equipo nuevo no conoce la lógica de
+                                    negocio ancestral.
+                                </p>
+                            </div>
+
+                            <h4 class="font-semibold text-green-400 mb-3">
+                                ✅ Cody Solution:
+                            </h4>
+                            <ul class="text-gray-300 text-sm space-y-2">
+                                <li>
+                                    • <strong>Business Logic Mining:</strong> Extrae
+                                    reglas de negocio del código
+                                </li>
+                                <li>
+                                    • <strong>Data Flow Analysis:</strong> Mapea
+                                    transformaciones complejas
+                                </li>
+                                <li>
+                                    • <strong>Dependency Mapping:</strong> Identifica
+                                    módulos acoplados
+                                </li>
+                                <li>
+                                    • <strong>Test Generation:</strong> Crea tests
+                                    para preservar lógica
+                                </li>
+                                <li>
+                                    • <strong>Documentation Auto:</strong> Genera
+                                    docs de sistemas legacy
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-orange-400 mb-3">
+                                📊 Results:
+                            </h4>
+                            <div
+                                class="bg-gray-900 rounded-lg p-4 space-y-4 text-sm"
+                            >
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-green-400 mb-1"
+                                        >
+                                            60%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Faster discovery
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-blue-400 mb-1"
+                                        >
+                                            80%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Business logic mapped
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-purple-400 mb-1"
+                                        >
+                                            12
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Months saved
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-orange-400 mb-1"
+                                        >
+                                            $2M
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Migration savings
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-black rounded p-3">
+                                    <h5
+                                        class="font-semibold text-yellow-400 text-sm mb-2"
+                                    >
+                                        Key Insights Discovered:
+                                    </h5>
+                                    <ul class="text-gray-300 text-xs space-y-1">
+                                        <li>
+                                            • 247 undocumented business rules
+                                            extracted
+                                        </li>
+                                        <li>
+                                            • 89 critical data transformations
+                                            mapped
+                                        </li>
+                                        <li>
+                                            • 156 inter-module dependencies
+                                            identified
+                                        </li>
+                                        <li>
+                                            • 23 potential modernization
+                                            candidates found
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Microservices Architecture -->
+                <div
+                    class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-8 mb-8"
+                >
+                    <h3 class="text-xl font-semibold text-white mb-6">
+                        🔄 Microservices Architecture Analysis
+                    </h3>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-blue-400 mb-3">
+                                🎯 Complex Distributed Systems:
+                            </h4>
+                            <div class="bg-black rounded-lg p-4">
+                                <p class="text-gray-300 text-sm">
+                                    Fintech company con 150+ microservices
+                                    necesita optimizar arquitectura. Performance
+                                    issues, duplicated logic, y dependency hell.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-cyan-400 mb-3">
+                                    🔍 Cody Analysis:
+                                </h4>
+                                <div class="bg-gray-900 rounded-lg p-4">
+                                    <div class="space-y-3 text-sm">
+                                        <div>
+                                            <div
+                                                class="text-green-400 font-semibold mb-1"
+                                            >
+                                                Service Dependency Graph:
+                                            </div>
+                                            <ul
+                                                class="text-gray-300 text-xs space-y-1"
+                                            >
+                                                <li>
+                                                    • 23 circular dependencies
+                                                    detected
+                                                </li>
+                                                <li>
+                                                    • 45 services with >10
+                                                    dependencies
+                                                </li>
+                                                <li>
+                                                    • 12 single points of
+                                                    failure
+                                                </li>
+                                                <li>
+                                                    • 67% coupling reduction
+                                                    possible
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <div
+                                                class="text-blue-400 font-semibold mb-1"
+                                            >
+                                                Duplicate Code Analysis:
+                                            </div>
+                                            <ul
+                                                class="text-gray-300 text-xs space-y-1"
+                                            >
+                                                <li>
+                                                    • 189 duplicate business
+                                                    logic blocks
+                                                </li>
+                                                <li>
+                                                    • 34 identical API
+                                                    implementations
+                                                </li>
+                                                <li>
+                                                    • 78 common utilities
+                                                    scattered
+                                                </li>
+                                                <li>
+                                                    • 45% code reduction
+                                                    potential
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-purple-400 mb-3">
+                                    💡 Recommendations:
+                                </h4>
+                                <div class="bg-gray-900 rounded-lg p-4">
+                                    <ul class="text-gray-300 text-sm space-y-2">
+                                        <li>
+                                            • <strong
+                                                >Service Consolidation:</strong
+                                            > Merge 23 redundant services
+                                        </li>
+                                        <li>
+                                            • <strong>Shared Libraries:</strong>
+                                            Extract 12 common modules
+                                        </li>
+                                        <li>
+                                            • <strong>API Gateway:</strong> Centralize
+                                            cross-cutting concerns
+                                        </li>
+                                        <li>
+                                            • <strong>Event-Driven:</strong> Replace
+                                            synchronous dependencies
+                                        </li>
+                                        <li>
+                                            • <strong>Circuit Breakers:</strong>
+                                            Add resilience patterns
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Analysis -->
+                <div
+                    class="bg-red-900/20 border border-red-500/20 rounded-xl p-8"
+                >
+                    <h3 class="text-xl font-semibold text-white mb-6">
+                        🔒 Enterprise Security Analysis
+                    </h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold text-red-400 mb-3">
+                                🚨 Security Audit Automation:
+                            </h4>
+                            <div class="bg-black rounded-lg p-4 mb-4">
+                                <p class="text-gray-300 text-sm">
+                                    Healthcare company requiere auditoría de
+                                    seguridad HIPAA compliance en codebase de
+                                    2M+ líneas para certificación SOC 2.
+                                </p>
+                            </div>
+
+                            <div class="bg-gray-900 rounded-lg p-4">
+                                <h5
+                                    class="font-semibold text-orange-400 text-sm mb-2"
+                                >
+                                    Automated Detection:
+                                </h5>
+                                <ul class="text-gray-300 text-xs space-y-1">
+                                    <li>• 156 hardcoded secrets found</li>
+                                    <li>• 89 SQL injection vulnerabilities</li>
+                                    <li>• 234 unencrypted PII data flows</li>
+                                    <li>• 67 insufficient access controls</li>
+                                    <li>• 45 missing audit trails</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-green-400 mb-3">
+                                🛡️ Remediation Guidance:
+                            </h4>
+                            <div class="bg-gray-900 rounded-lg p-4 space-y-3">
+                                <div>
+                                    <div
+                                        class="text-yellow-400 font-semibold text-sm mb-1"
+                                    >
+                                        Priority 1 (Critical):
+                                    </div>
+                                    <ul class="text-gray-300 text-xs space-y-1">
+                                        <li>
+                                            • Move secrets to vault (156
+                                            locations)
+                                        </li>
+                                        <li>
+                                            • Implement parameterized queries
+                                        </li>
+                                        <li>• Add encryption to PII fields</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="text-blue-400 font-semibold text-sm mb-1"
+                                    >
+                                        Priority 2 (High):
+                                    </div>
+                                    <ul class="text-gray-300 text-xs space-y-1">
+                                        <li>• Implement RBAC (67 endpoints)</li>
+                                        <li>
+                                            • Add audit logging (45 operations)
+                                        </li>
+                                        <li>• Update dependencies (23 CVEs)</li>
+                                    </ul>
+                                </div>
+
+                                <div
+                                    class="bg-green-900/20 border border-green-500/30 rounded p-3"
+                                >
+                                    <div
+                                        class="text-green-400 font-semibold text-xs mb-1"
+                                    >
+                                        Compliance Score:
+                                    </div>
+                                    <div class="text-white text-lg font-bold">
+                                        92% → 99%
+                                    </div>
+                                    <div class="text-gray-400 text-xs">
+                                        After remediation
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Integraciones -->
+            <section id="integraciones" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-gray-900/20 to-slate-900/20 border border-gray-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        🔗 Integraciones & Ecosistema
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                💻 IDEs & Editors
+                            </h3>
+
+                            <div class="space-y-4">
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-blue-400 mb-2"
+                                    >
+                                        🚀 Tier 1 Support
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>
+                                            • <strong>VS Code:</strong> Extension
+                                            nativa completa
+                                        </li>
+                                        <li>
+                                            • <strong>JetBrains:</strong> IntelliJ,
+                                            WebStorm, PyCharm
+                                        </li>
+                                        <li>
+                                            • <strong>Neovim:</strong> Plugin nativo
+                                            Lua
+                                        </li>
+                                        <li>
+                                            • <strong>Emacs:</strong> Package manager
+                                            integration
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-green-400 mb-2"
+                                    >
+                                        ⚡ Advanced Features
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>• Contextual autocomplete</li>
+                                        <li>• Inline documentation</li>
+                                        <li>• Smart navigation</li>
+                                        <li>• Real-time search</li>
+                                        <li>• Custom commands</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🔧 DevOps & CI/CD
+                            </h3>
+
+                            <div class="space-y-4">
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-purple-400 mb-2"
+                                    >
+                                        🏗️ Version Control
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>
+                                            • <strong>GitHub:</strong> Native app,
+                                            webhooks
+                                        </li>
+                                        <li>
+                                            • <strong>GitLab:</strong> Self-hosted
+                                            integration
+                                        </li>
+                                        <li>
+                                            • <strong>Bitbucket:</strong> Atlassian
+                                            ecosystem
+                                        </li>
+                                        <li>
+                                            • <strong>Azure DevOps:</strong> Enterprise
+                                            integration
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-orange-400 mb-2"
+                                    >
+                                        🚀 CI/CD Integration
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>• Pre-commit hooks</li>
+                                        <li>• PR analysis automation</li>
+                                        <li>• Code quality gates</li>
+                                        <li>• Security scanning</li>
+                                        <li>• Documentation generation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div
+                            class="bg-indigo-900/20 border border-indigo-500/30 rounded-xl p-6"
+                        >
+                            <h4 class="text-lg font-semibold text-white mb-3">
+                                📊 Analytics Platforms
+                            </h4>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Datadog integration</li>
+                                <li>• New Relic monitoring</li>
+                                <li>• Splunk logging</li>
+                                <li>• Grafana dashboards</li>
+                                <li>• Custom metrics export</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-green-900/20 border border-green-500/30 rounded-xl p-6"
+                        >
+                            <h4 class="text-lg font-semibold text-white mb-3">
+                                🔒 Security Tools
+                            </h4>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Snyk vulnerability scanning</li>
+                                <li>• SonarQube integration</li>
+                                <li>• Veracode SAST/DAST</li>
+                                <li>• HashiCorp Vault</li>
+                                <li>• OWASP ZAP automation</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6"
+                        >
+                            <h4 class="text-lg font-semibold text-white mb-3">
+                                🎯 Project Management
+                            </h4>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Jira ticket linking</li>
+                                <li>• Trello card automation</li>
+                                <li>• Linear issue tracking</li>
+                                <li>• Notion documentation</li>
+                                <li>• Slack notifications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="text-center">
+                <div
+                    class="bg-gradient-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-4">
+                        ¿Listo para dominar tu codebase masivo? 🔍
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        Cody es tu copiloto especializado en navegar y entender
+                        sistemas complejos. Perfecto para equipos enterprise con
+                        codebases de millones de líneas.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://sourcegraph.com/cody"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                        >
+                            Probar Cody Gratis
+                        </a>
+                        <a
+                            href="/herramientas-ia"
+                            class="border border-indigo-500 text-indigo-400 hover:bg-indigo-500/10 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300"
+                        >
+                            Ver Otras IAs
+                        </a>
+                    </div>
+
+                    <div
+                        class="mt-6 flex justify-center gap-8 text-sm text-gray-400"
+                    >
+                        <span>✅ Codebase intelligence</span>
+                        <span>✅ Semantic search</span>
+                        <span>✅ Enterprise security</span>
+                    </div>
+                </div>
+            </section>
         </div>
-      </section>
-    </div>
-  </main>
+    </main>
 </Layout>
 
 <style>
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  kbd {
-    font-family: monospace;
-    font-size: 0.75rem;
-  }
-  
-  code {
-    font-family: 'Fira Code', 'Monaco', 'Cascadia Code', monospace;
-  }
-  
-  /* Navegación sticky */
-  nav {
-    backdrop-filter: blur(10px);
-  }
-  
-  /* Custom scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #1a1a1a;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #6366f1;
-    border-radius: 4px;
-  }
-  
-  /* Smooth transitions for table */
-  table {
-    border-collapse: collapse;
-  }
-  
-  tr:hover {
-    background-color: rgba(99, 102, 241, 0.05);
-  }
+    html {
+        scroll-behavior: smooth;
+    }
+
+    kbd {
+        font-family: monospace;
+        font-size: 0.75rem;
+    }
+
+    code {
+        font-family: "Fira Code", "Monaco", "Cascadia Code", monospace;
+    }
+
+    /* Navegación sticky */
+    nav {
+        backdrop-filter: blur(10px);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #6366f1;
+        border-radius: 4px;
+    }
+
+    /* Smooth transitions for table */
+    table {
+        border-collapse: collapse;
+    }
+
+    tr:hover {
+        background-color: rgba(99, 102, 241, 0.05);
+    }
 </style>
 
 <script>
-  // Smooth scroll para navegación
-  document.querySelectorAll('nav a[href^="#"]').forEach((anchor: Element) => {
-    anchor.addEventListener('click', (e: Event) => {
-      e.preventDefault();
-      const href = (anchor as HTMLAnchorElement).getAttribute('href');
-      const target = href ? document.querySelector(href) : null;
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
+    // Smooth scroll para navegación
+    document.querySelectorAll('nav a[href^="#"]').forEach((anchor: Element) => {
+        anchor.addEventListener("click", (e: Event) => {
+            e.preventDefault();
+            const href = (anchor as HTMLAnchorElement).getAttribute("href");
+            const target = href ? document.querySelector(href) : null;
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
         });
-      }
     });
-  });
-  
-  // Navegación activa
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute('id');
-        document.querySelectorAll('nav a').forEach(link => {
-          link.classList.remove('text-indigo-400');
-          link.classList.add('text-gray-400');
-        });
-        const activeLink = document.querySelector(`nav a[href="#${id}"]`);
-        if (activeLink) {
-          activeLink.classList.remove('text-gray-400');
-          activeLink.classList.add('text-indigo-400');
-        }
-      }
+
+    // Navegación activa
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute("id");
+                    document.querySelectorAll("nav a").forEach((link) => {
+                        link.classList.remove("text-indigo-400");
+                        link.classList.add("text-gray-400");
+                    });
+                    const activeLink = document.querySelector(
+                        `nav a[href="#${id}"]`,
+                    );
+                    if (activeLink) {
+                        activeLink.classList.remove("text-gray-400");
+                        activeLink.classList.add("text-indigo-400");
+                    }
+                }
+            });
+        },
+        { threshold: 0.1 },
+    );
+
+    document.querySelectorAll("section[id]").forEach((section) => {
+        observer.observe(section);
     });
-  }, { threshold: 0.1 });
-  
-  document.querySelectorAll('section[id]').forEach(section => {
-    observer.observe(section);
-  });
 </script>
-</Layout>

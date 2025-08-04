@@ -1,19 +1,19 @@
 ---
 export interface Props {
-  href: string;
-  text: string;
-  icon?: string;
+    href: string;
+    text: string;
+    icon?: string;
 }
 
 const { href, text, icon = "←" } = Astro.props;
 ---
 
 <div class="fixed bottom-20 left-8 z-40">
-  <a 
-    href={href} 
-    class="flex items-center space-x-2 bg-gray-800/90 hover:bg-gray-700/90 backdrop-blur-sm text-white px-4 py-3 rounded-full shadow-lg border border-gray-600/50 transition-all duration-300 hover:scale-105 hover:shadow-xl"
-  >
-    <span class="text-lg">{icon}</span>
-    <span class="text-sm font-medium hidden sm:block">{text}</span>
-  </a>
+    <a
+        href={href}
+        class="flex items-center space-x-2 bg-gray-800/90 hover:bg-gray-700/90 backdrop-blur-sm text-white px-4 py-3 rounded-full shadow-lg border border-gray-600/50 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+    >
+        <span class="text-lg">{icon}</span>
+        <span class="text-sm font-medium hidden sm:block">{text}</span>
+    </a>
 </div>

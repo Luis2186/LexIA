@@ -1,280 +1,514 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Gemini Code Assist - IA de Google para Desarrollo | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-blue-900 via-sky-900 to-cyan-900 py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-4xl">
-            💎
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Gemini Code Assist</h1>
-            <p class="text-xl text-blue-300">IA de Google para Desarrollo</p>
-            <p class="text-gray-400">by Google Cloud</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          Gemini Code Assist es la solución de IA generativa de Google Cloud 
-          para acelerar el desarrollo de software, especialmente optimizada 
-          para aplicaciones enterprise y cloud-native en Google Cloud Platform.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-blue-400 hover:text-blue-300 whitespace-nowrap transition-colors">¿Qué es?</a>
-          <a href="#capacidades" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Capacidades</a>
-          <a href="#gcp-integration" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">GCP Integration</a>
-          <a href="#ejemplos" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Ejemplos</a>
-          <a href="#vs-competencia" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">vs Competencia</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- ¿Qué es Gemini Code Assist? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-blue-900/20 to-cyan-900/20 border border-blue-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">💎 ¿Qué es Gemini Code Assist?</h2>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-4">
-              <p class="text-gray-300 leading-relaxed">
-                <strong>Gemini Code Assist</strong> es la plataforma de IA generativa de Google Cloud 
-                diseñada específicamente para developers que construyen aplicaciones enterprise. 
-                Combina la potencia de los modelos Gemini con deep integration en el ecosistema 
-                Google Cloud, ofreciendo asistencia contextual para desarrollo cloud-native.
-              </p>
-              
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🎯 Enfoque Enterprise</h3>
-                
-                <div class="space-y-3 text-sm">
-                  <div class="flex items-start gap-3">
-                    <span class="text-blue-400">☁️</span>
-                    <div>
-                      <div class="text-white font-medium">Cloud-Native First</div>
-                      <div class="text-gray-400">Optimizado para GCP services y patterns</div>
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-blue-900 via-sky-900 to-cyan-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        💎
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-sky-400">🔒</span>
                     <div>
-                      <div class="text-white font-medium">Enterprise Security</div>
-                      <div class="text-gray-400">SOC 2, ISO 27001, GDPR compliance</div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            Gemini Code Assist
+                        </h1>
+                        <p class="text-xl text-blue-300">
+                            IA de Google para Desarrollo
+                        </p>
+                        <p class="text-gray-400">by Google Cloud</p>
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-cyan-400">🏢</span>
-                    <div>
-                      <div class="text-white font-medium">Large-scale Deployments</div>
-                      <div class="text-gray-400">Diseñado para teams de 1000+ developers</div>
+                </div>
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    Gemini Code Assist es la solución de IA generativa de Google
+                    Cloud para acelerar el desarrollo de software, especialmente
+                    optimizada para aplicaciones enterprise y cloud-native en
+                    Google Cloud Platform.
+                </p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-blue-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#capacidades"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Capacidades</a
+                    >
+                    <a
+                        href="#gcp-integration"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >GCP Integration</a
+                    >
+                    <a
+                        href="#ejemplos"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Ejemplos</a
+                    >
+                    <a
+                        href="#vs-competencia"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >vs Competencia</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es Gemini Code Assist? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-blue-900/20 to-cyan-900/20 border border-blue-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        💎 ¿Qué es Gemini Code Assist?
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong>Gemini Code Assist</strong> es la plataforma
+                                de IA generativa de Google Cloud diseñada específicamente
+                                para developers que construyen aplicaciones enterprise.
+                                Combina la potencia de los modelos Gemini con deep
+                                integration en el ecosistema Google Cloud, ofreciendo
+                                asistencia contextual para desarrollo cloud-native.
+                            </p>
+
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🎯 Enfoque Enterprise
+                                </h3>
+
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-blue-400">☁️</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Cloud-Native First
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Optimizado para GCP services y
+                                                patterns
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-sky-400">🔒</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Enterprise Security
+                                            </div>
+                                            <div class="text-gray-400">
+                                                SOC 2, ISO 27001, GDPR
+                                                compliance
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-cyan-400">🏢</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Large-scale Deployments
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Diseñado para teams de 1000+
+                                                developers
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🚀 Gemini Models
+                                </h3>
+
+                                <div class="space-y-4 text-sm">
+                                    <div
+                                        class="border-l-4 border-blue-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-blue-300"
+                                        >
+                                            Gemini Pro
+                                        </div>
+                                        <div class="text-gray-400">
+                                            General-purpose coding y text
+                                            generation
+                                        </div>
+                                    </div>
+
+                                    <div class="border-l-4 border-sky-500 pl-4">
+                                        <div class="font-semibold text-sky-300">
+                                            Gemini Pro Vision
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Análisis de imágenes, diagramas y
+                                            mockups
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-cyan-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-cyan-300"
+                                        >
+                                            Gemini Ultra
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Máxima capacidad para tareas
+                                            complejas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-blue-800/20 to-cyan-800/20 rounded-xl p-4 border border-blue-500/20"
+                            >
+                                <div
+                                    class="text-sm text-blue-300 font-medium mb-2"
+                                >
+                                    🎯 Sweet Spot
+                                </div>
+                                <p class="text-gray-400 text-sm">
+                                    Ideal para enterprises que ya usan Google
+                                    Cloud y necesitan IA code generation que se
+                                    integre nativamente con sus workflows de
+                                    GCP, Kubernetes y microservices.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            
-            <div class="space-y-6">
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🚀 Gemini Models</h3>
-                
-                <div class="space-y-4 text-sm">
-                  <div class="border-l-4 border-blue-500 pl-4">
-                    <div class="font-semibold text-blue-300">Gemini Pro</div>
-                    <div class="text-gray-400">General-purpose coding y text generation</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-sky-500 pl-4">
-                    <div class="font-semibold text-sky-300">Gemini Pro Vision</div>
-                    <div class="text-gray-400">Análisis de imágenes, diagramas y mockups</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-cyan-500 pl-4">
-                    <div class="font-semibold text-cyan-300">Gemini Ultra</div>
-                    <div class="text-gray-400">Máxima capacidad para tareas complejas</div>
-                  </div>
+            </section>
+
+            <!-- Capacidades Técnicas -->
+            <section id="capacidades" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚡ Capacidades Técnicas
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-blue-500/20"
+                        >
+                            <div class="text-3xl mb-4">💻</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Code Generation
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Multi-language:</strong> Java, Python,
+                                    Go, JavaScript, Kotlin
+                                </li>
+                                <li>
+                                    • <strong>Framework Aware:</strong> Spring Boot,
+                                    Django, Express, Angular
+                                </li>
+                                <li>
+                                    • <strong>Cloud Patterns:</strong> Microservices,
+                                    serverless, containers
+                                </li>
+                                <li>
+                                    • <strong>API Integration:</strong> REST, GraphQL,
+                                    gRPC code generation
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-sky-500/20"
+                        >
+                            <div class="text-3xl mb-4">🔍</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Code Analysis
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Security Scanning:</strong> Vulnerability
+                                    detection
+                                </li>
+                                <li>
+                                    • <strong>Performance Review:</strong> Optimization
+                                    suggestions
+                                </li>
+                                <li>
+                                    • <strong>Best Practices:</strong> GCP-specific
+                                    recommendations
+                                </li>
+                                <li>
+                                    • <strong>Migration Help:</strong> Legacy to
+                                    cloud-native patterns
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-cyan-500/20"
+                        >
+                            <div class="text-3xl mb-4">🛠️</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Infrastructure as Code
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Terraform:</strong> GCP resource provisioning
+                                </li>
+                                <li>
+                                    • <strong>Kubernetes:</strong> YAML manifest
+                                    generation
+                                </li>
+                                <li>
+                                    • <strong>Cloud Build:</strong> CI/CD pipeline
+                                    creation
+                                </li>
+                                <li>
+                                    • <strong>Monitoring:</strong> Cloud Operations
+                                    setup
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-blue-600/20"
+                        >
+                            <div class="text-3xl mb-4">📊</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Data & ML Integration
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>BigQuery:</strong> SQL optimization
+                                    y análisis
+                                </li>
+                                <li>
+                                    • <strong>Vertex AI:</strong> ML pipeline creation
+                                </li>
+                                <li>
+                                    • <strong>Dataflow:</strong> Stream processing
+                                    code
+                                </li>
+                                <li>
+                                    • <strong>Pub/Sub:</strong> Event-driven architecture
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              
-              <div class="bg-gradient-to-r from-blue-800/20 to-cyan-800/20 rounded-xl p-4 border border-blue-500/20">
-                <div class="text-sm text-blue-300 font-medium mb-2">🎯 Sweet Spot</div>
-                <p class="text-gray-400 text-sm">
-                  Ideal para enterprises que ya usan Google Cloud y necesitan 
-                  IA code generation que se integre nativamente con sus workflows 
-                  de GCP, Kubernetes y microservices.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </section>
 
-      <!-- Capacidades Técnicas -->
-      <section id="capacidades" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">⚡ Capacidades Técnicas</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-blue-500/20">
-              <div class="text-3xl mb-4">💻</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Code Generation</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Multi-language:</strong> Java, Python, Go, JavaScript, Kotlin</li>
-                <li>• <strong>Framework Aware:</strong> Spring Boot, Django, Express, Angular</li>
-                <li>• <strong>Cloud Patterns:</strong> Microservices, serverless, containers</li>
-                <li>• <strong>API Integration:</strong> REST, GraphQL, gRPC code generation</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-sky-500/20">
-              <div class="text-3xl mb-4">🔍</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Code Analysis</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Security Scanning:</strong> Vulnerability detection</li>
-                <li>• <strong>Performance Review:</strong> Optimization suggestions</li>
-                <li>• <strong>Best Practices:</strong> GCP-specific recommendations</li>
-                <li>• <strong>Migration Help:</strong> Legacy to cloud-native patterns</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-cyan-500/20">
-              <div class="text-3xl mb-4">🛠️</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Infrastructure as Code</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Terraform:</strong> GCP resource provisioning</li>
-                <li>• <strong>Kubernetes:</strong> YAML manifest generation</li>
-                <li>• <strong>Cloud Build:</strong> CI/CD pipeline creation</li>
-                <li>• <strong>Monitoring:</strong> Cloud Operations setup</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-blue-600/20">
-              <div class="text-3xl mb-4">📊</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Data & ML Integration</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>BigQuery:</strong> SQL optimization y análisis</li>
-                <li>• <strong>Vertex AI:</strong> ML pipeline creation</li>
-                <li>• <strong>Dataflow:</strong> Stream processing code</li>
-                <li>• <strong>Pub/Sub:</strong> Event-driven architecture</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- GCP Integration -->
+            <section id="gcp-integration" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ☁️ Integración Profunda con GCP
+                </h2>
 
-      <!-- GCP Integration -->
-      <section id="gcp-integration" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">☁️ Integración Profunda con GCP</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-blue-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6 text-center">🔗 Ecosystem Native Integration</h3>
-            
-            <div class="grid md:grid-cols-3 gap-6">
-              <div class="text-center">
-                <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">⚙️</div>
-                <h4 class="font-semibold text-white mb-2">Cloud Workstations</h4>
-                <p class="text-gray-400 text-sm">
-                  IDE en la nube con Gemini Code Assist 
-                  preconfigurado y acceso directo a GCP services.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-sky-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">🚀</div>
-                <h4 class="font-semibold text-white mb-2">Cloud Build Integration</h4>
-                <p class="text-gray-400 text-sm">
-                  Genera automáticamente pipelines CI/CD 
-                  optimizados para tu stack y deployment targets.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">📊</div>
-                <h4 class="font-semibold text-white mb-2">Cloud Console</h4>
-                <p class="text-gray-400 text-sm">
-                  Asistencia IA directamente en la consola 
-                  para configuración de recursos y troubleshooting.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-cyan-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🏗️ Cloud-Native Development</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <h4 class="font-semibold text-blue-300 mb-3">Kubernetes & GKE</h4>
-                <ul class="text-gray-400 text-sm space-y-2">
-                  <li>• <strong>Manifest Generation:</strong> Optimized K8s YAML</li>
-                  <li>• <strong>Helm Charts:</strong> Production-ready templates</li>
-                  <li>• <strong>Security Policies:</strong> Pod Security Standards</li>
-                  <li>• <strong>Monitoring Setup:</strong> GKE observability</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 class="font-semibold text-sky-300 mb-3">Serverless & Functions</h4>
-                <ul class="text-gray-400 text-sm space-y-2">
-                  <li>• <strong>Cloud Functions:</strong> Event-driven code</li>
-                  <li>• <strong>Cloud Run:</strong> Containerized services</li>
-                  <li>• <strong>App Engine:</strong> Scalable web apps</li>
-                  <li>• <strong>Firebase:</strong> Frontend + backend integration</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-blue-500/20"
+                    >
+                        <h3
+                            class="text-xl font-semibold text-white mb-6 text-center"
+                        >
+                            🔗 Ecosystem Native Integration
+                        </h3>
 
-      <!-- Ejemplos Prácticos -->
-      <section id="ejemplos" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">💡 Ejemplos Prácticos</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-blue-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🏗️ Microservice con Cloud Run</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-blue-300 mb-2">Prompt</div>
-                  <p class="text-gray-400 text-sm">
-                    "Create a Node.js microservice for product catalog with BigQuery integration, 
-                    deploy to Cloud Run with auto-scaling and monitoring"
-                  </p>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    ⚙️
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    Cloud Workstations
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    IDE en la nube con Gemini Code Assist
+                                    preconfigurado y acceso directo a GCP
+                                    services.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-sky-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    🚀
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    Cloud Build Integration
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Genera automáticamente pipelines CI/CD
+                                    optimizados para tu stack y deployment
+                                    targets.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    📊
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    Cloud Console
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Asistencia IA directamente en la consola
+                                    para configuración de recursos y
+                                    troubleshooting.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-cyan-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🏗️ Cloud-Native Development
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-blue-300 mb-3">
+                                    Kubernetes & GKE
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>Manifest Generation:</strong> Optimized
+                                        K8s YAML
+                                    </li>
+                                    <li>
+                                        • <strong>Helm Charts:</strong> Production-ready
+                                        templates
+                                    </li>
+                                    <li>
+                                        • <strong>Security Policies:</strong> Pod
+                                        Security Standards
+                                    </li>
+                                    <li>
+                                        • <strong>Monitoring Setup:</strong> GKE
+                                        observability
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-sky-300 mb-3">
+                                    Serverless & Functions
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>Cloud Functions:</strong> Event-driven
+                                        code
+                                    </li>
+                                    <li>
+                                        • <strong>Cloud Run:</strong> Containerized
+                                        services
+                                    </li>
+                                    <li>
+                                        • <strong>App Engine:</strong> Scalable web
+                                        apps
+                                    </li>
+                                    <li>
+                                        • <strong>Firebase:</strong> Frontend + backend
+                                        integration
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="font-semibold text-sky-300 mb-2">Gemini Generated</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• Express.js service con TypeScript</li>
-                  <li>• BigQuery client integration</li>
-                  <li>• Dockerfile optimizado para Cloud Run</li>
-                  <li>• Cloud Build pipeline</li>
-                  <li>• Monitoring y logging setup</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Generated Service (excerpt)</div>
-                <pre class="text-xs text-blue-400"><code>{`// src/app.ts
+            </section>
+
+            <!-- Ejemplos Prácticos -->
+            <section id="ejemplos" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    💡 Ejemplos Prácticos
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-blue-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🏗️ Microservice con Cloud Run
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-blue-300 mb-2"
+                                    >
+                                        Prompt
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        "Create a Node.js microservice for
+                                        product catalog with BigQuery
+                                        integration, deploy to Cloud Run with
+                                        auto-scaling and monitoring"
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-sky-300 mb-2">
+                                    Gemini Generated
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>• Express.js service con TypeScript</li>
+                                    <li>• BigQuery client integration</li>
+                                    <li>
+                                        • Dockerfile optimizado para Cloud Run
+                                    </li>
+                                    <li>• Cloud Build pipeline</li>
+                                    <li>• Monitoring y logging setup</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Generated Service (excerpt)
+                                </div>
+                                <pre
+                                    class="text-xs text-blue-400"><code>{`// src/app.ts
 import express from 'express';
 import { BigQuery } from '@google-cloud/bigquery';
 import { logger } from './utils/logger';
@@ -315,36 +549,53 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   logger.info(\`Server running on port \${PORT}\`);
 });`}</code></pre>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-cyan-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🤖 ML Pipeline con Vertex AI</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-cyan-300 mb-2">ML Use Case</div>
-                  <p class="text-gray-400 text-sm">
-                    "Build a recommendation engine pipeline: data ingestion from BigQuery, 
-                    feature engineering, model training with AutoML, and real-time serving"
-                  </p>
-                </div>
-                
-                <div class="font-semibold text-blue-300 mb-2">Pipeline Components</div>
-                <ol class="text-gray-400 text-sm space-y-1 list-decimal list-inside">
-                  <li>Data extraction from BigQuery</li>
-                  <li>Feature engineering with Dataflow</li>
-                  <li>AutoML model training</li>
-                  <li>Model deployment to Vertex AI</li>
-                  <li>Real-time prediction API</li>
-                </ol>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Vertex AI Pipeline</div>
-                <pre class="text-xs text-cyan-400"><code>{`from google.cloud import aiplatform
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-cyan-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🤖 ML Pipeline con Vertex AI
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-cyan-300 mb-2"
+                                    >
+                                        ML Use Case
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        "Build a recommendation engine pipeline:
+                                        data ingestion from BigQuery, feature
+                                        engineering, model training with AutoML,
+                                        and real-time serving"
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-blue-300 mb-2">
+                                    Pipeline Components
+                                </div>
+                                <ol
+                                    class="text-gray-400 text-sm space-y-1 list-decimal list-inside"
+                                >
+                                    <li>Data extraction from BigQuery</li>
+                                    <li>Feature engineering with Dataflow</li>
+                                    <li>AutoML model training</li>
+                                    <li>Model deployment to Vertex AI</li>
+                                    <li>Real-time prediction API</li>
+                                </ol>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Vertex AI Pipeline
+                                </div>
+                                <pre
+                                    class="text-xs text-cyan-400"><code>{`from google.cloud import aiplatform
 from kfp.v2 import dsl
 from kfp.v2.dsl import component
 
@@ -395,134 +646,221 @@ def recommendation_pipeline(
         model=train_model.outputs["model"],
         endpoint_display_name="recommendation-endpoint"
     )`}</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Comparación -->
-      <section id="vs-competencia" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">⚖️ Gemini vs Competencia</h2>
-        
-        <div class="bg-gray-900 rounded-xl p-8">
-          <div class="overflow-x-auto">
-            <table class="w-full text-sm">
-              <thead>
-                <tr class="border-b border-gray-700">
-                  <th class="text-left text-white py-3 px-4">Característica</th>
-                  <th class="text-center text-blue-400 py-3 px-4">Gemini Code Assist</th>
-                  <th class="text-center text-gray-400 py-3 px-4">GitHub Copilot</th>
-                  <th class="text-center text-gray-400 py-3 px-4">Amazon CodeWhisperer</th>
-                </tr>
-              </thead>
-              <tbody class="text-gray-400">
-                <tr class="border-b border-gray-800">
-                  <td class="py-3 px-4 font-medium">Cloud Integration</td>
-                  <td class="text-center py-3 px-4">
-                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">GCP Native</span>
-                  </td>
-                  <td class="text-center py-3 px-4">GitHub/Azure</td>
-                  <td class="text-center py-3 px-4">AWS Native</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="py-3 px-4 font-medium">Enterprise Features</td>
-                  <td class="text-center py-3 px-4">
-                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Avanzadas</span>
-                  </td>
-                  <td class="text-center py-3 px-4">Buenas</td>
-                  <td class="text-center py-3 px-4">Buenas</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="py-3 px-4 font-medium">ML/Data Integration</td>
-                  <td class="text-center py-3 px-4">
-                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Excelente</span>
-                  </td>
-                  <td class="text-center py-3 px-4">Limitada</td>
-                  <td class="text-center py-3 px-4">Buena</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="py-3 px-4 font-medium">Multimodal (Vision)</td>
-                  <td class="text-center py-3 px-4">
-                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Sí (Gemini Vision)</span>
-                  </td>
-                  <td class="text-center py-3 px-4">No</td>
-                  <td class="text-center py-3 px-4">No</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="py-3 px-4 font-medium">IDE Support</td>
-                  <td class="text-center py-3 px-4">VS Code, IntelliJ</td>
-                  <td class="text-center py-3 px-4">
-                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Amplio</span>
-                  </td>
-                  <td class="text-center py-3 px-4">VS Code, IntelliJ</td>
-                </tr>
-                <tr>
-                  <td class="py-3 px-4 font-medium">Precio (Enterprise)</td>
-                  <td class="text-center py-3 px-4">$19/usuario/mes</td>
-                  <td class="text-center py-3 px-4">
-                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">$19/usuario/mes</span>
-                  </td>
-                  <td class="text-center py-3 px-4">$19/usuario/mes</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          
-          <div class="mt-6 bg-blue-900/20 border border-blue-600/30 p-4 rounded-lg">
-            <div class="text-sm text-blue-300 font-medium mb-2">🎯 Veredicto</div>
-            <p class="text-gray-400 text-sm">
-              <strong>Gemini Code Assist</strong> destaca para teams que ya están en Google Cloud 
-              y necesitan deep integration con GCP services, ML workflows y data analytics. 
-              Su capacidad multimodal es única en el mercado enterprise.
-            </p>
-          </div>
-        </div>
-      </section>
+            <!-- Comparación -->
+            <section id="vs-competencia" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚖️ Gemini vs Competencia
+                </h2>
 
-      <!-- Planes -->
-      <section class="mb-12">
-        <div class="bg-gradient-to-r from-blue-900/20 to-cyan-900/20 border border-blue-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">💼 Disponibilidad y Precios</h2>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🏢 Enterprise</h3>
-              <div class="text-2xl font-bold text-blue-400 mb-2">$19/mes</div>
-              <div class="text-gray-400 text-sm mb-4">Por usuario activo</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Full Gemini Code Assist access</li>
-                <li>• Cloud Workstations integration</li>
-                <li>• Enterprise security & compliance</li>
-                <li>• 24/7 Google Cloud support</li>
-              </ul>
-              
-              <div class="mt-4 p-4 bg-blue-900/30 rounded-lg">
-                <div class="text-blue-300 font-medium text-sm">Disponible Ya</div>
-                <div class="text-gray-400 text-xs">Requiere Google Cloud account</div>
-              </div>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🧪 Trial</h3>
-              <div class="text-2xl font-bold text-gray-400 mb-2">Free</div>
-              <div class="text-gray-400 text-sm mb-4">90 días trial</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Limited usage quota</li>
-                <li>• Basic features access</li>
-                <li>• GCP $300 credit included</li>
-                <li>• Community support</li>
-              </ul>
-              
-              <div class="mt-4 p-4 bg-gray-800 rounded-lg">
-                <div class="text-gray-300 font-medium text-sm">Start Free Trial</div>
-                <div class="text-gray-400 text-xs">No credit card required initially</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                <div class="bg-gray-900 rounded-xl p-8">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-gray-700">
+                                    <th class="text-left text-white py-3 px-4"
+                                        >Característica</th
+                                    >
+                                    <th
+                                        class="text-center text-blue-400 py-3 px-4"
+                                        >Gemini Code Assist</th
+                                    >
+                                    <th
+                                        class="text-center text-gray-400 py-3 px-4"
+                                        >GitHub Copilot</th
+                                    >
+                                    <th
+                                        class="text-center text-gray-400 py-3 px-4"
+                                        >Amazon CodeWhisperer</th
+                                    >
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-400">
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium"
+                                        >Cloud Integration</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >GCP Native</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4"
+                                        >GitHub/Azure</td
+                                    >
+                                    <td class="text-center py-3 px-4"
+                                        >AWS Native</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium"
+                                        >Enterprise Features</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >Avanzadas</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4">Buenas</td
+                                    >
+                                    <td class="text-center py-3 px-4">Buenas</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium"
+                                        >ML/Data Integration</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >Excelente</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4"
+                                        >Limitada</td
+                                    >
+                                    <td class="text-center py-3 px-4">Buena</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium"
+                                        >Multimodal (Vision)</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >Sí (Gemini Vision)</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4">No</td>
+                                    <td class="text-center py-3 px-4">No</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium"
+                                        >IDE Support</td
+                                    >
+                                    <td class="text-center py-3 px-4"
+                                        >VS Code, IntelliJ</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >Amplio</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4"
+                                        >VS Code, IntelliJ</td
+                                    >
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 font-medium"
+                                        >Precio (Enterprise)</td
+                                    >
+                                    <td class="text-center py-3 px-4"
+                                        >$19/usuario/mes</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >$19/usuario/mes</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4"
+                                        >$19/usuario/mes</td
+                                    >
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-    </div>
-  </main>
+                    <div
+                        class="mt-6 bg-blue-900/20 border border-blue-600/30 p-4 rounded-lg"
+                    >
+                        <div class="text-sm text-blue-300 font-medium mb-2">
+                            🎯 Veredicto
+                        </div>
+                        <p class="text-gray-400 text-sm">
+                            <strong>Gemini Code Assist</strong> destaca para teams
+                            que ya están en Google Cloud y necesitan deep integration
+                            con GCP services, ML workflows y data analytics. Su capacidad
+                            multimodal es única en el mercado enterprise.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Planes -->
+            <section class="mb-12">
+                <div
+                    class="bg-gradient-to-r from-blue-900/20 to-cyan-900/20 border border-blue-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        💼 Disponibilidad y Precios
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🏢 Enterprise
+                            </h3>
+                            <div class="text-2xl font-bold text-blue-400 mb-2">
+                                $19/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Por usuario activo
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Full Gemini Code Assist access</li>
+                                <li>• Cloud Workstations integration</li>
+                                <li>• Enterprise security & compliance</li>
+                                <li>• 24/7 Google Cloud support</li>
+                            </ul>
+
+                            <div class="mt-4 p-4 bg-blue-900/30 rounded-lg">
+                                <div class="text-blue-300 font-medium text-sm">
+                                    Disponible Ya
+                                </div>
+                                <div class="text-gray-400 text-xs">
+                                    Requiere Google Cloud account
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🧪 Trial
+                            </h3>
+                            <div class="text-2xl font-bold text-gray-400 mb-2">
+                                Free
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                90 días trial
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Limited usage quota</li>
+                                <li>• Basic features access</li>
+                                <li>• GCP $300 credit included</li>
+                                <li>• Community support</li>
+                            </ul>
+
+                            <div class="mt-4 p-4 bg-gray-800 rounded-lg">
+                                <div class="text-gray-300 font-medium text-sm">
+                                    Start Free Trial
+                                </div>
+                                <div class="text-gray-400 text-xs">
+                                    No credit card required initially
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </Layout>

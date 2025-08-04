@@ -1,254 +1,457 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="GPT-4o - Modelo IA Multimodal de OpenAI | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-emerald-900 via-green-900 to-teal-900 py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center text-4xl">
-            🌟
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">GPT-4o</h1>
-            <p class="text-xl text-emerald-300">Modelo IA Multimodal Avanzado</p>
-            <p class="text-gray-400">by OpenAI</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          GPT-4o es la evolución más avanzada de OpenAI, un modelo multimodal que procesa 
-          texto, imágenes, audio y video de manera nativa, revolucionando cómo los 
-          developers pueden crear aplicaciones inteligentes y experiencias interactivas.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-emerald-400 hover:text-emerald-300 whitespace-nowrap transition-colors">¿Qué es?</a>
-          <a href="#multimodal" class="text-gray-400 hover:text-emerald-300 whitespace-nowrap transition-colors">Capacidades Multimodal</a>
-          <a href="#casos-uso" class="text-gray-400 hover:text-emerald-300 whitespace-nowrap transition-colors">Casos de Uso</a>
-          <a href="#ejemplos" class="text-gray-400 hover:text-emerald-300 whitespace-nowrap transition-colors">Ejemplos</a>
-          <a href="#comparacion" class="text-gray-400 hover:text-emerald-300 whitespace-nowrap transition-colors">vs GPT-4</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- ¿Qué es GPT-4o? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-emerald-900/20 to-teal-900/20 border border-emerald-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">🌟 ¿Qué es GPT-4o?</h2>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-4">
-              <p class="text-gray-300 leading-relaxed">
-                <strong>GPT-4o</strong> (donde "o" significa "omni") es el modelo más avanzado de OpenAI, 
-                diseñado para procesar y generar texto, imágenes, audio y video de manera nativa. 
-                A diferencia de modelos anteriores que conectaban múltiples sistemas, GPT-4o 
-                integra todas las modalidades en un solo modelo unificado.
-              </p>
-              
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🎯 Revoluciones Clave</h3>
-                
-                <div class="space-y-3 text-sm">
-                  <div class="flex items-start gap-3">
-                    <span class="text-emerald-400">🚀</span>
-                    <div>
-                      <div class="text-white font-medium">Native Multimodal</div>
-                      <div class="text-gray-400">Procesa múltiples tipos de input simultáneamente</div>
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-emerald-900 via-green-900 to-teal-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🌟
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-green-400">⚡</span>
                     <div>
-                      <div class="text-white font-medium">Real-time Processing</div>
-                      <div class="text-gray-400">Latencia ultra-baja para aplicaciones en vivo</div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            GPT-4o
+                        </h1>
+                        <p class="text-xl text-emerald-300">
+                            Modelo IA Multimodal Avanzado
+                        </p>
+                        <p class="text-gray-400">by OpenAI</p>
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-teal-400">🧠</span>
-                    <div>
-                      <div class="text-white font-medium">Enhanced Reasoning</div>
-                      <div class="text-gray-400">Mejor comprensión contextual y lógica</div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            
-            <div class="space-y-6">
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🚀 Mejoras vs GPT-4</h3>
-                
-                <div class="space-y-4 text-sm">
-                  <div class="border-l-4 border-emerald-500 pl-4">
-                    <div class="font-semibold text-emerald-300">2x Faster</div>
-                    <div class="text-gray-400">Velocidad de respuesta significativamente mayor</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-green-500 pl-4">
-                    <div class="font-semibold text-green-300">50% Cheaper</div>
-                    <div class="text-gray-400">Costo reducido para API calls</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-teal-500 pl-4">
-                    <div class="font-semibold text-teal-300">Better Understanding</div>
-                    <div class="text-gray-400">Comprensión mejorada en múltiples idiomas</div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="bg-gradient-to-r from-emerald-800/20 to-teal-800/20 rounded-xl p-4 border border-emerald-500/20">
-                <div class="text-sm text-emerald-300 font-medium mb-2">🎯 Perfect For</div>
-                <p class="text-gray-400 text-sm">
-                  Developers building next-generation applications que requieren 
-                  procesamiento en tiempo real de múltiples tipos de media: 
-                  chatbots visuales, asistentes de voz, análisis de contenido.
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    GPT-4o es la evolución más avanzada de OpenAI, un modelo
+                    multimodal que procesa texto, imágenes, audio y video de
+                    manera nativa, revolucionando cómo los developers pueden
+                    crear aplicaciones inteligentes y experiencias interactivas.
                 </p>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </header>
 
-      <!-- Capacidades Multimodal -->
-      <section id="multimodal" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🎭 Capacidades Multimodal</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-emerald-500/20">
-              <div class="text-3xl mb-4">📝</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Text Processing</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Advanced Reasoning:</strong> Lógica y matemáticas complejas</li>
-                <li>• <strong>Code Generation:</strong> Programación en 100+ lenguajes</li>
-                <li>• <strong>Creative Writing:</strong> Contenido original y creativo</li>
-                <li>• <strong>Analysis:</strong> Documentos largos y data analysis</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-green-500/20">
-              <div class="text-3xl mb-4">🖼️</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Vision Capabilities</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Image Understanding:</strong> Describe y analiza imágenes</li>
-                <li>• <strong>OCR:</strong> Extrae texto de imágenes y documentos</li>
-                <li>• <strong>Chart Analysis:</strong> Interpreta gráficos y diagramas</li>
-                <li>• <strong>Visual Q&A:</strong> Responde preguntas sobre imágenes</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-teal-500/20">
-              <div class="text-3xl mb-4">🎵</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Audio Processing</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Speech Recognition:</strong> Transcripción en tiempo real</li>
-                <li>• <strong>Voice Synthesis:</strong> Generación de voz natural</li>
-                <li>• <strong>Audio Analysis:</strong> Música, sonidos y speech patterns</li>
-                <li>• <strong>Real-time Conversation:</strong> Diálogo fluido y natural</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-emerald-600/20">
-              <div class="text-3xl mb-4">🎬</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Video Understanding</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Video Analysis:</strong> Comprende contenido y contexto</li>
-                <li>• <strong>Object Tracking:</strong> Seguimiento de objetos en movimiento</li>
-                <li>• <strong>Scene Description:</strong> Narra lo que sucede en video</li>
-                <li>• <strong>Temporal Understanding:</strong> Comprende secuencias y tiempo</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Casos de Uso -->
-      <section id="casos-uso" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🛠️ Casos de Uso Revolucionarios</h2>
-        
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-gray-900 rounded-xl p-6 border border-emerald-500/20">
-            <div class="text-3xl mb-4">🤖</div>
-            <h3 class="text-xl font-semibold text-white mb-3">AI Assistants</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• Asistentes que ven y escuchan</li>
-              <li>• Conversaciones naturales en tiempo real</li>
-              <li>• Análisis de screenshots y documentos</li>
-              <li>• Guía visual paso a paso</li>
-            </ul>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-6 border border-green-500/20">
-            <div class="text-3xl mb-4">🎓</div>
-            <h3 class="text-xl font-semibold text-white mb-3">Education</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• Tutores personalizados multimodal</li>
-              <li>• Explicación de diagramas complejos</li>
-              <li>• Corrección de problemas matemáticos</li>
-              <li>• Learning adaptativo personalizado</li>
-            </ul>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-6 border border-teal-500/20">
-            <div class="text-3xl mb-4">🏥</div>
-            <h3 class="text-xl font-semibold text-white mb-3">Healthcare</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• Análisis de imágenes médicas</li>
-              <li>• Asistentes para diagnóstico</li>
-              <li>• Documentación automática</li>
-              <li>• Telemedicina avanzada</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Ejemplos Prácticos -->
-      <section id="ejemplos" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">💡 Ejemplos Prácticos</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-emerald-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🖥️ Code Review Visual</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-emerald-300 mb-2">Scenario</div>
-                  <p class="text-gray-400 text-sm">
-                    Un developer sube una screenshot de código con un bug. 
-                    GPT-4o analiza la imagen, identifica el problema y 
-                    sugiere la solución correcta.
-                  </p>
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-emerald-400 hover:text-emerald-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#multimodal"
+                        class="text-gray-400 hover:text-emerald-300 whitespace-nowrap transition-colors"
+                        >Capacidades Multimodal</a
+                    >
+                    <a
+                        href="#casos-uso"
+                        class="text-gray-400 hover:text-emerald-300 whitespace-nowrap transition-colors"
+                        >Casos de Uso</a
+                    >
+                    <a
+                        href="#ejemplos"
+                        class="text-gray-400 hover:text-emerald-300 whitespace-nowrap transition-colors"
+                        >Ejemplos</a
+                    >
+                    <a
+                        href="#comparacion"
+                        class="text-gray-400 hover:text-emerald-300 whitespace-nowrap transition-colors"
+                        >vs GPT-4</a
+                    >
                 </div>
-                
-                <div class="font-semibold text-green-300 mb-2">Capabilities</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• <strong>OCR de Código:</strong> Lee código desde imágenes</li>
-                  <li>• <strong>Syntax Analysis:</strong> Identifica errores de sintaxis</li>
-                  <li>• <strong>Logic Review:</strong> Detecta errores de lógica</li>
-                  <li>• <strong>Best Practices:</strong> Sugiere mejoras</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">GPT-4o Analysis Response</div>
-                <pre class="text-xs text-emerald-400"><code>{`🔍 CÓDIGO ANALIZADO (desde imagen):
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es GPT-4o? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-emerald-900/20 to-teal-900/20 border border-emerald-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🌟 ¿Qué es GPT-4o?
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong>GPT-4o</strong> (donde "o" significa "omni")
+                                es el modelo más avanzado de OpenAI, diseñado para
+                                procesar y generar texto, imágenes, audio y video
+                                de manera nativa. A diferencia de modelos anteriores
+                                que conectaban múltiples sistemas, GPT-4o integra
+                                todas las modalidades en un solo modelo unificado.
+                            </p>
+
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🎯 Revoluciones Clave
+                                </h3>
+
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-emerald-400">🚀</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Native Multimodal
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Procesa múltiples tipos de input
+                                                simultáneamente
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-green-400">⚡</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Real-time Processing
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Latencia ultra-baja para
+                                                aplicaciones en vivo
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-teal-400">🧠</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Enhanced Reasoning
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Mejor comprensión contextual y
+                                                lógica
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🚀 Mejoras vs GPT-4
+                                </h3>
+
+                                <div class="space-y-4 text-sm">
+                                    <div
+                                        class="border-l-4 border-emerald-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-emerald-300"
+                                        >
+                                            2x Faster
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Velocidad de respuesta
+                                            significativamente mayor
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-green-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-green-300"
+                                        >
+                                            50% Cheaper
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Costo reducido para API calls
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-teal-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-teal-300"
+                                        >
+                                            Better Understanding
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Comprensión mejorada en múltiples
+                                            idiomas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-emerald-800/20 to-teal-800/20 rounded-xl p-4 border border-emerald-500/20"
+                            >
+                                <div
+                                    class="text-sm text-emerald-300 font-medium mb-2"
+                                >
+                                    🎯 Perfect For
+                                </div>
+                                <p class="text-gray-400 text-sm">
+                                    Developers building next-generation
+                                    applications que requieren procesamiento en
+                                    tiempo real de múltiples tipos de media:
+                                    chatbots visuales, asistentes de voz,
+                                    análisis de contenido.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Capacidades Multimodal -->
+            <section id="multimodal" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🎭 Capacidades Multimodal
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-emerald-500/20"
+                        >
+                            <div class="text-3xl mb-4">📝</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Text Processing
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Advanced Reasoning:</strong> Lógica
+                                    y matemáticas complejas
+                                </li>
+                                <li>
+                                    • <strong>Code Generation:</strong> Programación
+                                    en 100+ lenguajes
+                                </li>
+                                <li>
+                                    • <strong>Creative Writing:</strong> Contenido
+                                    original y creativo
+                                </li>
+                                <li>
+                                    • <strong>Analysis:</strong> Documentos largos
+                                    y data analysis
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-green-500/20"
+                        >
+                            <div class="text-3xl mb-4">🖼️</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Vision Capabilities
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Image Understanding:</strong> Describe
+                                    y analiza imágenes
+                                </li>
+                                <li>
+                                    • <strong>OCR:</strong> Extrae texto de imágenes
+                                    y documentos
+                                </li>
+                                <li>
+                                    • <strong>Chart Analysis:</strong> Interpreta
+                                    gráficos y diagramas
+                                </li>
+                                <li>
+                                    • <strong>Visual Q&A:</strong> Responde preguntas
+                                    sobre imágenes
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-teal-500/20"
+                        >
+                            <div class="text-3xl mb-4">🎵</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Audio Processing
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Speech Recognition:</strong> Transcripción
+                                    en tiempo real
+                                </li>
+                                <li>
+                                    • <strong>Voice Synthesis:</strong> Generación
+                                    de voz natural
+                                </li>
+                                <li>
+                                    • <strong>Audio Analysis:</strong> Música, sonidos
+                                    y speech patterns
+                                </li>
+                                <li>
+                                    • <strong>Real-time Conversation:</strong> Diálogo
+                                    fluido y natural
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-emerald-600/20"
+                        >
+                            <div class="text-3xl mb-4">🎬</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Video Understanding
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Video Analysis:</strong> Comprende
+                                    contenido y contexto
+                                </li>
+                                <li>
+                                    • <strong>Object Tracking:</strong> Seguimiento
+                                    de objetos en movimiento
+                                </li>
+                                <li>
+                                    • <strong>Scene Description:</strong> Narra lo
+                                    que sucede en video
+                                </li>
+                                <li>
+                                    • <strong>Temporal Understanding:</strong> Comprende
+                                    secuencias y tiempo
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Casos de Uso -->
+            <section id="casos-uso" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🛠️ Casos de Uso Revolucionarios
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-emerald-500/20"
+                    >
+                        <div class="text-3xl mb-4">🤖</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            AI Assistants
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Asistentes que ven y escuchan</li>
+                            <li>• Conversaciones naturales en tiempo real</li>
+                            <li>• Análisis de screenshots y documentos</li>
+                            <li>• Guía visual paso a paso</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-green-500/20"
+                    >
+                        <div class="text-3xl mb-4">🎓</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Education
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Tutores personalizados multimodal</li>
+                            <li>• Explicación de diagramas complejos</li>
+                            <li>• Corrección de problemas matemáticos</li>
+                            <li>• Learning adaptativo personalizado</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-teal-500/20"
+                    >
+                        <div class="text-3xl mb-4">🏥</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Healthcare
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Análisis de imágenes médicas</li>
+                            <li>• Asistentes para diagnóstico</li>
+                            <li>• Documentación automática</li>
+                            <li>• Telemedicina avanzada</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos Prácticos -->
+            <section id="ejemplos" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    💡 Ejemplos Prácticos
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-emerald-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🖥️ Code Review Visual
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-emerald-300 mb-2"
+                                    >
+                                        Scenario
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        Un developer sube una screenshot de
+                                        código con un bug. GPT-4o analiza la
+                                        imagen, identifica el problema y sugiere
+                                        la solución correcta.
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-green-300 mb-2">
+                                    Capabilities
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>OCR de Código:</strong> Lee código
+                                        desde imágenes
+                                    </li>
+                                    <li>
+                                        • <strong>Syntax Analysis:</strong> Identifica
+                                        errores de sintaxis
+                                    </li>
+                                    <li>
+                                        • <strong>Logic Review:</strong> Detecta
+                                        errores de lógica
+                                    </li>
+                                    <li>
+                                        • <strong>Best Practices:</strong> Sugiere
+                                        mejoras
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    GPT-4o Analysis Response
+                                </div>
+                                <pre
+                                    class="text-xs text-emerald-400"><code>{`🔍 CÓDIGO ANALIZADO (desde imagen):
 
 PROBLEMA IDENTIFICADO:
 Línea 15: for (let i = 0; i <= array.length; i++)
@@ -272,36 +475,56 @@ if (array && array.length > 0) {
     // tu lógica aquí
   });
 }`}</code></pre>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-teal-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🎬 Real-time Video Analysis</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-teal-300 mb-2">Use Case</div>
-                  <p class="text-gray-400 text-sm">
-                    App de security monitoring que analiza feeds de cámaras 
-                    en tiempo real, detecta actividades inusuales y genera 
-                    alertas automáticas con descripción detallada.
-                  </p>
-                </div>
-                
-                <div class="font-semibold text-emerald-300 mb-2">Real-time Capabilities</div>
-                <ol class="text-gray-400 text-sm space-y-1 list-decimal list-inside">
-                  <li>Procesa video frames en tiempo real</li>
-                  <li>Detecta personas, objetos y actividades</li>
-                  <li>Identifica comportamientos anómalos</li>
-                  <li>Genera alerts descriptivos</li>
-                </ol>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Real-time Alert Example</div>
-                <pre class="text-xs text-teal-400"><code>{`🚨 SECURITY ALERT
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-teal-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🎬 Real-time Video Analysis
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-teal-300 mb-2"
+                                    >
+                                        Use Case
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        App de security monitoring que analiza
+                                        feeds de cámaras en tiempo real, detecta
+                                        actividades inusuales y genera alertas
+                                        automáticas con descripción detallada.
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="font-semibold text-emerald-300 mb-2"
+                                >
+                                    Real-time Capabilities
+                                </div>
+                                <ol
+                                    class="text-gray-400 text-sm space-y-1 list-decimal list-inside"
+                                >
+                                    <li>Procesa video frames en tiempo real</li>
+                                    <li>
+                                        Detecta personas, objetos y actividades
+                                    </li>
+                                    <li>Identifica comportamientos anómalos</li>
+                                    <li>Genera alerts descriptivos</li>
+                                </ol>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Real-time Alert Example
+                                </div>
+                                <pre
+                                    class="text-xs text-teal-400"><code>{`🚨 SECURITY ALERT
 Time: 2024-12-15 14:23:45
 Camera: Entrance Lobby
 
@@ -327,152 +550,237 @@ Person appears nervous, checking surroundings
 frequently. Backpack seems unusually full. 
 No interaction with reception desk or elevator 
 call despite 5-minute presence.`}</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Comparación GPT-4 vs GPT-4o -->
-      <section id="comparacion" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">⚖️ GPT-4o vs GPT-4 Turbo</h2>
-        
-        <div class="bg-gray-900 rounded-xl p-8">
-          <div class="overflow-x-auto">
-            <table class="w-full text-sm">
-              <thead>
-                <tr class="border-b border-gray-700">
-                  <th class="text-left text-white py-3 px-4">Característica</th>
-                  <th class="text-center text-emerald-400 py-3 px-4">GPT-4o</th>
-                  <th class="text-center text-gray-400 py-3 px-4">GPT-4 Turbo</th>
-                </tr>
-              </thead>
-              <tbody class="text-gray-400">
-                <tr class="border-b border-gray-800">
-                  <td class="py-3 px-4 font-medium">Multimodal Native</td>
-                  <td class="text-center py-3 px-4">
-                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Sí (Text/Image/Audio/Video)</span>
-                  </td>
-                  <td class="text-center py-3 px-4">Solo Text + Image</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="py-3 px-4 font-medium">Speed</td>
-                  <td class="text-center py-3 px-4">
-                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">2x Faster</span>
-                  </td>
-                  <td class="text-center py-3 px-4">Baseline</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="py-3 px-4 font-medium">Cost</td>
-                  <td class="text-center py-3 px-4">
-                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">50% Cheaper</span>
-                  </td>
-                  <td class="text-center py-3 px-4">Standard pricing</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="py-3 px-4 font-medium">Real-time Audio</td>
-                  <td class="text-center py-3 px-4">
-                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Sí (Ultra-low latency)</span>
-                  </td>
-                  <td class="text-center py-3 px-4">No</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="py-3 px-4 font-medium">Video Understanding</td>
-                  <td class="text-center py-3 px-4">
-                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Native Support</span>
-                  </td>
-                  <td class="text-center py-3 px-4">No</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="py-3 px-4 font-medium">Context Window</td>
-                  <td class="text-center py-3 px-4">128K tokens</td>
-                  <td class="text-center py-3 px-4">
-                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">128K tokens</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-3 px-4 font-medium">Reasoning Ability</td>
-                  <td class="text-center py-3 px-4">
-                    <span class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs">Enhanced</span>
-                  </td>
-                  <td class="text-center py-3 px-4">Excelente</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          
-          <div class="mt-6 bg-emerald-900/20 border border-emerald-600/30 p-4 rounded-lg">
-            <div class="text-sm text-emerald-300 font-medium mb-2">🎯 Veredicto</div>
-            <p class="text-gray-400 text-sm">
-              <strong>GPT-4o</strong> representa un salto generacional: más rápido, más barato, 
-              y con capacidades multimodal nativas que abren posibilidades completamente nuevas. 
-              Es la elección obvia para aplicaciones que requieren procesamiento de múltiples 
-              tipos de media en tiempo real.
-            </p>
-          </div>
-        </div>
-      </section>
+            <!-- Comparación GPT-4 vs GPT-4o -->
+            <section id="comparacion" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚖️ GPT-4o vs GPT-4 Turbo
+                </h2>
 
-      <!-- API Pricing -->
-      <section class="mb-12">
-        <div class="bg-gradient-to-r from-emerald-900/20 to-teal-900/20 border border-emerald-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">💼 API Pricing</h2>
-          
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">📝 Text</h3>
-              <div class="space-y-2 text-sm">
-                <div class="flex justify-between">
-                  <span class="text-gray-400">Input</span>
-                  <span class="text-white font-bold">$5/1M tokens</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="text-gray-400">Output</span>
-                  <span class="text-white font-bold">$15/1M tokens</span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-emerald-500/50">
-              <h3 class="text-lg font-semibold text-white mb-3">🖼️ Vision</h3>
-              <div class="space-y-2 text-sm">
-                <div class="flex justify-between">
-                  <span class="text-gray-400">Low res</span>
-                  <span class="text-white font-bold">$1.25/image</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="text-gray-400">High res</span>
-                  <span class="text-white font-bold">$2.50/image</span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🎵 Audio</h3>
-              <div class="space-y-2 text-sm">
-                <div class="flex justify-between">
-                  <span class="text-gray-400">Input</span>
-                  <span class="text-white font-bold">$10/hour</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="text-gray-400">Output</span>
-                  <span class="text-white font-bold">$20/hour</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="mt-6 bg-emerald-900/20 border border-emerald-600/30 p-4 rounded-lg">
-            <div class="text-sm text-emerald-300 font-medium mb-2">💡 Cost Optimization</div>
-            <p class="text-gray-400 text-sm">
-              GPT-4o ofrece 50% de reducción de costos vs GPT-4 Turbo manteniendo 
-              la misma calidad. Para aplicaciones multimodal, es significativamente 
-              más eficiente que combinar múltiples APIs especializadas.
-            </p>
-          </div>
-        </div>
-      </section>
+                <div class="bg-gray-900 rounded-xl p-8">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-gray-700">
+                                    <th class="text-left text-white py-3 px-4"
+                                        >Característica</th
+                                    >
+                                    <th
+                                        class="text-center text-emerald-400 py-3 px-4"
+                                        >GPT-4o</th
+                                    >
+                                    <th
+                                        class="text-center text-gray-400 py-3 px-4"
+                                        >GPT-4 Turbo</th
+                                    >
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-400">
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium"
+                                        >Multimodal Native</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >Sí (Text/Image/Audio/Video)</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4"
+                                        >Solo Text + Image</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium">Speed</td>
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >2x Faster</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4"
+                                        >Baseline</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium">Cost</td>
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >50% Cheaper</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4"
+                                        >Standard pricing</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium"
+                                        >Real-time Audio</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >Sí (Ultra-low latency)</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4">No</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium"
+                                        >Video Understanding</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >Native Support</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4">No</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-3 px-4 font-medium"
+                                        >Context Window</td
+                                    >
+                                    <td class="text-center py-3 px-4"
+                                        >128K tokens</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >128K tokens</span
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 font-medium"
+                                        >Reasoning Ability</td
+                                    >
+                                    <td class="text-center py-3 px-4">
+                                        <span
+                                            class="bg-green-900/30 text-green-300 px-2 py-1 rounded text-xs"
+                                            >Enhanced</span
+                                        >
+                                    </td>
+                                    <td class="text-center py-3 px-4"
+                                        >Excelente</td
+                                    >
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-    </div>
-  </main>
+                    <div
+                        class="mt-6 bg-emerald-900/20 border border-emerald-600/30 p-4 rounded-lg"
+                    >
+                        <div class="text-sm text-emerald-300 font-medium mb-2">
+                            🎯 Veredicto
+                        </div>
+                        <p class="text-gray-400 text-sm">
+                            <strong>GPT-4o</strong> representa un salto generacional:
+                            más rápido, más barato, y con capacidades multimodal
+                            nativas que abren posibilidades completamente nuevas.
+                            Es la elección obvia para aplicaciones que requieren
+                            procesamiento de múltiples tipos de media en tiempo real.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- API Pricing -->
+            <section class="mb-12">
+                <div
+                    class="bg-gradient-to-r from-emerald-900/20 to-teal-900/20 border border-emerald-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        💼 API Pricing
+                    </h2>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                📝 Text
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Input</span>
+                                    <span class="text-white font-bold"
+                                        >$5/1M tokens</span
+                                    >
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Output</span>
+                                    <span class="text-white font-bold"
+                                        >$15/1M tokens</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-emerald-500/50"
+                        >
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🖼️ Vision
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Low res</span>
+                                    <span class="text-white font-bold"
+                                        >$1.25/image</span
+                                    >
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">High res</span>
+                                    <span class="text-white font-bold"
+                                        >$2.50/image</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🎵 Audio
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Input</span>
+                                    <span class="text-white font-bold"
+                                        >$10/hour</span
+                                    >
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Output</span>
+                                    <span class="text-white font-bold"
+                                        >$20/hour</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mt-6 bg-emerald-900/20 border border-emerald-600/30 p-4 rounded-lg"
+                    >
+                        <div class="text-sm text-emerald-300 font-medium mb-2">
+                            💡 Cost Optimization
+                        </div>
+                        <p class="text-gray-400 text-sm">
+                            GPT-4o ofrece 50% de reducción de costos vs GPT-4
+                            Turbo manteniendo la misma calidad. Para
+                            aplicaciones multimodal, es significativamente más
+                            eficiente que combinar múltiples APIs
+                            especializadas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </Layout>

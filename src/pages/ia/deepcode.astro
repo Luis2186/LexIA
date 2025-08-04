@@ -1,176 +1,310 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="DeepCode - Análisis Estático con IA | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-red-900 via-pink-900 to-rose-900 py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-red-500 to-pink-500 rounded-2xl flex items-center justify-center text-4xl">
-            🤖
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">DeepCode</h1>
-            <p class="text-xl text-red-300">Análisis Estático con Machine Learning</p>
-            <p class="text-gray-400">by DeepCode (now Snyk Code)</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          DeepCode fue pionero en análisis estático de código con IA, utilizando machine learning 
-          para detectar bugs y vulnerabilidades con precisión casi humana. Su tecnología ahora 
-          forma parte de Snyk Code.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-red-400 hover:text-red-300 whitespace-nowrap transition-colors">¿Qué era?</a>
-          <a href="#como-funciona" class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors">¿Cómo funcionaba?</a>
-          <a href="#tecnologia" class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors">Tecnología</a>
-          <a href="#casos-uso" class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors">Casos de Uso</a>
-          <a href="#legado" class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors">Legado</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- Nota Histórica -->
-      <section class="mb-12">
-        <div class="bg-amber-900/20 border border-amber-500/30 rounded-xl p-6">
-          <h3 class="text-lg font-semibold text-amber-400 mb-2">🏛️ Nota Histórica: DeepCode Legacy</h3>
-          <p class="text-amber-200 text-sm">
-            <strong>DeepCode fue adquirido por Snyk en 2020</strong> y su tecnología core se integró en 
-            <a href="/ia/snyk-code" class="underline hover:no-underline">Snyk Code</a>. 
-            Esta documentación preserva el conocimiento del engine original que revolucionó el análisis estático con machine learning.
-          </p>
-        </div>
-      </section>
-
-      <!-- ¿Qué era DeepCode? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-red-900/20 to-pink-900/20 border border-red-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">🤖 ¿Qué era DeepCode?</h2>
-          
-          <p class="text-gray-300 mb-6">
-            <strong class="text-white">DeepCode</strong> fue la primera plataforma de análisis estático que utilizó machine learning 
-            para detectar bugs, vulnerabilidades y code smells con precisión casi humana. Su algoritmo se entrenó 
-            con millones de repositorios de código para aprender patrones de programación y detectar problemas complejos.
-          </p>
-          
-          <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
-            <h3 class="font-semibold text-white mb-4">🧠 Tecnología Core (Heredada por Snyk)</h3>
-            <ul class="space-y-3 text-gray-300">
-              <li class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-red-400 rounded-full"></span>
-                <span><strong class="text-red-400">Machine Learning Engine:</strong> Entrenado con 2M+ repos</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-pink-400 rounded-full"></span>
-                <span><strong class="text-pink-400">Semantic Analysis:</strong> Análisis semántico multi-lenguaje</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-red-400 rounded-full"></span>
-                <span><strong class="text-red-400">Pattern Recognition:</strong> Detección de anti-patterns</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-pink-400 rounded-full"></span>
-                <span><strong class="text-pink-400">False Positive Reduction:</strong> &lt;5% falsos positivos</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Casos de Uso -->
-      <section id="casos-uso" class="mb-20">
-        <div class="bg-gradient-to-r from-pink-900/20 to-rose-900/20 border border-pink-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">🎯 Casos de Uso Históricos</h2>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center">
-                  <span class="text-2xl">🔒</span>
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-red-900 via-pink-900 to-rose-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-red-500 to-pink-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🤖
+                    </div>
+                    <div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            DeepCode
+                        </h1>
+                        <p class="text-xl text-red-300">
+                            Análisis Estático con Machine Learning
+                        </p>
+                        <p class="text-gray-400">by DeepCode (now Snyk Code)</p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-white">Security Analysis</h3>
-              </div>
-              
-              <p class="text-gray-300 mb-4">
-                Detección automática de vulnerabilidades de seguridad con machine learning, 
-                especializado en SQL injection, XSS y buffer overflows.
-              </p>
-              
-              <div class="bg-red-900/30 border border-red-600/30 p-4 rounded-lg">
-                <div class="font-semibold text-red-300 mb-2">Detecciones Típicas</div>
-                <ul class="text-gray-300 text-sm space-y-1">
-                  <li>• <strong class="text-red-400">SQL Injection:</strong> 98% accuracy</li>
-                  <li>• <strong class="text-pink-400">XSS vulnerabilities:</strong> Context-aware</li>
-                  <li>• <strong class="text-red-400">Path traversal:</strong> File system attacks</li>
-                  <li>• <strong class="text-pink-400">Insecure dependencies:</strong> Third-party risks</li>
-                </ul>
-              </div>
-            </div>
 
-            <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 bg-pink-500/20 rounded-lg flex items-center justify-center">
-                  <span class="text-2xl">🐛</span>
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    DeepCode fue pionero en análisis estático de código con IA,
+                    utilizando machine learning para detectar bugs y
+                    vulnerabilidades con precisión casi humana. Su tecnología
+                    ahora forma parte de Snyk Code.
+                </p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-red-400 hover:text-red-300 whitespace-nowrap transition-colors"
+                        >¿Qué era?</a
+                    >
+                    <a
+                        href="#como-funciona"
+                        class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors"
+                        >¿Cómo funcionaba?</a
+                    >
+                    <a
+                        href="#tecnologia"
+                        class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors"
+                        >Tecnología</a
+                    >
+                    <a
+                        href="#casos-uso"
+                        class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors"
+                        >Casos de Uso</a
+                    >
+                    <a
+                        href="#legado"
+                        class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors"
+                        >Legado</a
+                    >
                 </div>
-                <h3 class="text-xl font-bold text-white">Bug Detection</h3>
-              </div>
-              
-              <p class="text-gray-300 mb-4">
-                Identificación de bugs lógicos y errores de programación que herramientas 
-                tradicionales no podían detectar.
-              </p>
-              
-              <div class="bg-pink-900/30 border border-pink-600/30 p-4 rounded-lg">
-                <div class="font-semibold text-pink-300 mb-2">Bug Categories</div>
-                <ul class="text-gray-300 text-sm space-y-1">
-                  <li>• <strong class="text-pink-400">Null pointer</strong> exceptions</li>
-                  <li>• <strong class="text-red-400">Memory leaks</strong> detection</li>
-                  <li>• <strong class="text-pink-400">Logic errors</strong> in algorithms</li>
-                  <li>• <strong class="text-red-400">Performance</strong> anti-patterns</li>
-                </ul>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </nav>
 
-      <!-- CTA -->
-      <section class="text-center">
-        <div class="bg-gradient-to-r from-red-900/30 to-pink-900/30 border border-red-500/20 rounded-xl p-8">
-          <h3 class="text-2xl font-bold text-white mb-4">¿Interesado en análisis estático con IA?</h3>
-          <p class="text-gray-300 mb-6">
-            La tecnología de DeepCode vive en Snyk Code. Descubre la evolución de esta innovación.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/ia/snyk-code" 
-              class="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-xl font-semibold transition-colors"
-            >
-              Ver Snyk Code
-            </a>
-            <a 
-              href="/herramientas-ia/testing" 
-              class="border border-red-500 text-red-400 hover:bg-red-500/10 px-8 py-3 rounded-xl font-semibold transition-colors"
-            >
-              Ver Más Testing IA
-            </a>
-          </div>
-        </div>
-      </section>
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- Nota Histórica -->
+            <section class="mb-12">
+                <div
+                    class="bg-amber-900/20 border border-amber-500/30 rounded-xl p-6"
+                >
+                    <h3 class="text-lg font-semibold text-amber-400 mb-2">
+                        🏛️ Nota Histórica: DeepCode Legacy
+                    </h3>
+                    <p class="text-amber-200 text-sm">
+                        <strong>DeepCode fue adquirido por Snyk en 2020</strong>
+                        y su tecnología core se integró en
+                        <a
+                            href="/ia/snyk-code"
+                            class="underline hover:no-underline">Snyk Code</a
+                        >. Esta documentación preserva el conocimiento del
+                        engine original que revolucionó el análisis estático con
+                        machine learning.
+                    </p>
+                </div>
+            </section>
 
-    </div>
-  </main>
+            <!-- ¿Qué era DeepCode? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-red-900/20 to-pink-900/20 border border-red-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🤖 ¿Qué era DeepCode?
+                    </h2>
+
+                    <p class="text-gray-300 mb-6">
+                        <strong class="text-white">DeepCode</strong> fue la primera
+                        plataforma de análisis estático que utilizó machine learning
+                        para detectar bugs, vulnerabilidades y code smells con precisión
+                        casi humana. Su algoritmo se entrenó con millones de repositorios
+                        de código para aprender patrones de programación y detectar
+                        problemas complejos.
+                    </p>
+
+                    <div
+                        class="bg-gray-800/50 border border-gray-700 rounded-xl p-6"
+                    >
+                        <h3 class="font-semibold text-white mb-4">
+                            🧠 Tecnología Core (Heredada por Snyk)
+                        </h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 bg-red-400 rounded-full"
+                                ></span>
+                                <span
+                                    ><strong class="text-red-400"
+                                        >Machine Learning Engine:</strong
+                                    > Entrenado con 2M+ repos</span
+                                >
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 bg-pink-400 rounded-full"
+                                ></span>
+                                <span
+                                    ><strong class="text-pink-400"
+                                        >Semantic Analysis:</strong
+                                    > Análisis semántico multi-lenguaje</span
+                                >
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 bg-red-400 rounded-full"
+                                ></span>
+                                <span
+                                    ><strong class="text-red-400"
+                                        >Pattern Recognition:</strong
+                                    > Detección de anti-patterns</span
+                                >
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 bg-pink-400 rounded-full"
+                                ></span>
+                                <span
+                                    ><strong class="text-pink-400"
+                                        >False Positive Reduction:</strong
+                                    > &lt;5% falsos positivos</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Casos de Uso -->
+            <section id="casos-uso" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-pink-900/20 to-rose-900/20 border border-pink-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        🎯 Casos de Uso Históricos
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div
+                            class="bg-gray-800/50 border border-gray-700 rounded-xl p-6"
+                        >
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center"
+                                >
+                                    <span class="text-2xl">🔒</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-white">
+                                    Security Analysis
+                                </h3>
+                            </div>
+
+                            <p class="text-gray-300 mb-4">
+                                Detección automática de vulnerabilidades de
+                                seguridad con machine learning, especializado en
+                                SQL injection, XSS y buffer overflows.
+                            </p>
+
+                            <div
+                                class="bg-red-900/30 border border-red-600/30 p-4 rounded-lg"
+                            >
+                                <div class="font-semibold text-red-300 mb-2">
+                                    Detecciones Típicas
+                                </div>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>
+                                        • <strong class="text-red-400"
+                                            >SQL Injection:</strong
+                                        > 98% accuracy
+                                    </li>
+                                    <li>
+                                        • <strong class="text-pink-400"
+                                            >XSS vulnerabilities:</strong
+                                        > Context-aware
+                                    </li>
+                                    <li>
+                                        • <strong class="text-red-400"
+                                            >Path traversal:</strong
+                                        > File system attacks
+                                    </li>
+                                    <li>
+                                        • <strong class="text-pink-400"
+                                            >Insecure dependencies:</strong
+                                        > Third-party risks
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-gray-800/50 border border-gray-700 rounded-xl p-6"
+                        >
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-10 h-10 bg-pink-500/20 rounded-lg flex items-center justify-center"
+                                >
+                                    <span class="text-2xl">🐛</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-white">
+                                    Bug Detection
+                                </h3>
+                            </div>
+
+                            <p class="text-gray-300 mb-4">
+                                Identificación de bugs lógicos y errores de
+                                programación que herramientas tradicionales no
+                                podían detectar.
+                            </p>
+
+                            <div
+                                class="bg-pink-900/30 border border-pink-600/30 p-4 rounded-lg"
+                            >
+                                <div class="font-semibold text-pink-300 mb-2">
+                                    Bug Categories
+                                </div>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>
+                                        • <strong class="text-pink-400"
+                                            >Null pointer</strong
+                                        > exceptions
+                                    </li>
+                                    <li>
+                                        • <strong class="text-red-400"
+                                            >Memory leaks</strong
+                                        > detection
+                                    </li>
+                                    <li>
+                                        • <strong class="text-pink-400"
+                                            >Logic errors</strong
+                                        > in algorithms
+                                    </li>
+                                    <li>
+                                        • <strong class="text-red-400"
+                                            >Performance</strong
+                                        > anti-patterns
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="text-center">
+                <div
+                    class="bg-gradient-to-r from-red-900/30 to-pink-900/30 border border-red-500/20 rounded-xl p-8"
+                >
+                    <h3 class="text-2xl font-bold text-white mb-4">
+                        ¿Interesado en análisis estático con IA?
+                    </h3>
+                    <p class="text-gray-300 mb-6">
+                        La tecnología de DeepCode vive en Snyk Code. Descubre la
+                        evolución de esta innovación.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="/ia/snyk-code"
+                            class="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-xl font-semibold transition-colors"
+                        >
+                            Ver Snyk Code
+                        </a>
+                        <a
+                            href="/herramientas-ia/testing"
+                            class="border border-red-500 text-red-400 hover:bg-red-500/10 px-8 py-3 rounded-xl font-semibold transition-colors"
+                        >
+                            Ver Más Testing IA
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </Layout>

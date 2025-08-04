@@ -1,340 +1,588 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Despliegue y DevOps - LexIA">
-  <main class="min-h-screen bg-gradient-to-br from-gray-900 via-orange-900 to-gray-900">
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
-      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="/" class="text-2xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
-          LexIA
-        </a>
-        <div class="flex items-center gap-6">
-          <a href="/" class="text-gray-300 hover:text-white transition-colors">← Inicio</a>
-          <div class="px-3 py-1 bg-orange-500/20 border border-orange-500/30 rounded-full text-orange-300 text-sm">
-            Etapa 4
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="py-20">
-      <div class="max-w-6xl mx-auto px-4 text-center">
-        <div class="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-full border border-white/20 backdrop-blur-sm mb-8">
-          <span class="text-4xl">🚀</span>
-          <span class="text-lg font-medium">Etapa 4: Despliegue y DevOps</span>
-        </div>
-        
-        <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-orange-400 via-red-400 to-orange-300 bg-clip-text text-transparent leading-tight">
-          Entrega Inteligente
-        </h1>
-        
-        <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-          Automatiza tus entregas con <span class="text-orange-400 font-semibold">CI/CD inteligente</span>, 
-          <span class="text-red-400 font-semibold">despliegue automático</span> y monitoreo predictivo 24/7.
-        </p>
-      </div>
-    </section>
-
-    <!-- Content Sections -->
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <!-- CI/CD Inteligente -->
-        <div class="mb-20">
-          <div class="flex items-center gap-4 mb-8">
-            <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center text-2xl">
-              🔄
-            </div>
-            <h2 class="text-3xl font-bold text-white">CI/CD Inteligente y Automatizado</h2>
-          </div>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-8 backdrop-blur-sm">
-              <h3 class="text-xl font-semibold text-orange-300 mb-4">🤖 Plataformas con IA</h3>
-              <ul class="space-y-4 text-gray-300">
-                <li class="flex items-start gap-3">
-                  <span class="text-green-400 mt-1">•</span>
-                  <div>
-                    <strong class="text-white">GitHub Actions AI:</strong> Workflows inteligentes autooptimizantes
-                    <div class="text-sm text-gray-400 mt-1">Escalado automático de runners, caché inteligente</div>
-                  </div>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="text-green-400 mt-1">•</span>
-                  <div>
-                    <strong class="text-white">GitLab AI-Assist:</strong> Optimización de pipeline automática
-                    <div class="text-sm text-gray-400 mt-1">Builds predictivos, programación inteligente</div>
-                  </div>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="text-green-400 mt-1">•</span>
-                  <div>
-                    <strong class="text-white">CircleCI Insights:</strong> Optimización basada en datos
-                    <div class="text-sm text-gray-400 mt-1">Optimización de tiempo de build, detección de pruebas inestables</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="bg-gradient-to-br from-gray-800/50 to-gray-700/50 border border-gray-600/30 rounded-2xl p-8 backdrop-blur-sm">
-              <h3 class="text-xl font-semibold text-red-300 mb-4">💡 Pipeline Inteligente</h3>
-              <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm text-gray-300 border border-gray-600/30">
-                <div class="text-green-400 mb-2"># GitHub Actions con IA</div>
-                <div class="text-white mb-1">name: Despliegue Inteligente</div>
-                <div class="text-blue-300 mb-1">on:</div>
-                <div class="text-gray-400 mb-1">  push:</div>
-                <div class="text-gray-400 mb-2">    branches: [main]</div>
-                
-                <div class="text-yellow-400 mb-1">jobs:</div>
-                <div class="text-blue-300">  ai-optimize:</div>
-                <div class="text-gray-400">    - uses: optimizador-build-ia</div>
-                <div class="text-gray-400">    - uses: predictive-tests</div>
-                <div class="text-gray-400">    - uses: despliegue-inteligente</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Despliegue Inteligente -->
-        <div class="mb-20">
-          <div class="flex items-center gap-4 mb-8">
-            <div class="w-12 h-12 bg-gradient-to-r from-red-500 to-orange-500 rounded-xl flex items-center justify-center text-2xl">
-              🎯
-            </div>
-            <h2 class="text-3xl font-bold text-white">Despliegue Inteligente y Seguro</h2>
-          </div>
-          
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-2xl p-6 backdrop-blur-sm">
-              <h3 class="text-lg font-semibold text-red-300 mb-4">🛡️ Estrategias Seguras</h3>
-              <ul class="space-y-2 text-gray-300 text-sm">
-                <li>• Azul-Verde con validación IA</li>
-                <li>• Releases canary inteligentes</li>
-                <li>• Despliegues progresivos adaptativos</li>
-                <li>• Feature flags con ML</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gradient-to-br from-orange-500/10 to-yellow-500/10 border border-orange-500/20 rounded-2xl p-6 backdrop-blur-sm">
-              <h3 class="text-lg font-semibold text-orange-300 mb-4">📊 Validación Automática</h3>
-              <ul class="space-y-2 text-gray-300 text-sm">
-                <li>• Chequeos de salud inteligentes</li>
-                <li>• Performance baselines AI</li>
-                <li>• Error rate monitoring</li>
-                <li>• User experience validation</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gradient-to-br from-yellow-500/10 to-red-500/10 border border-yellow-500/20 rounded-2xl p-6 backdrop-blur-sm">
-              <h3 class="text-lg font-semibold text-yellow-300 mb-4">⚡ Rollback Automático</h3>
-              <ul class="space-y-2 text-gray-300 text-sm">
-                <li>• Detección de anomalías en tiempo real</li>
-                <li>• Rollback automático bajo condiciones</li>
-                <li>• Recuperación de estado automática</li>
-                <li>• Notificaciones inteligentes</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Monitoreo Predictivo -->
-        <div class="mb-20">
-          <div class="flex items-center gap-4 mb-8">
-            <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-orange-500 rounded-xl flex items-center justify-center text-2xl">
-              👁️
-            </div>
-            <h2 class="text-3xl font-bold text-white">Monitoreo Predictivo 24/7</h2>
-          </div>
-          
-          <div class="bg-gradient-to-r from-purple-500/10 to-orange-500/10 border border-purple-500/20 rounded-2xl p-8 backdrop-blur-sm">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 class="text-xl font-semibold text-purple-300 mb-4">🧠 Inteligencia Operacional</h3>
-                <ul class="space-y-3 text-gray-300">
-                  <li class="flex items-center gap-3">
-                    <span class="w-2 h-2 bg-green-400 rounded-full"></span>
-                    <span><strong>Anomaly Detection:</strong> Detecta patrones anómalos antes de que causen problemas</span>
-                  </li>
-                  <li class="flex items-center gap-3">
-                    <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
-                    <span><strong>Predictive Scaling:</strong> Escala recursos basado en predicciones ML</span>
-                  </li>
-                  <li class="flex items-center gap-3">
-                    <span class="w-2 h-2 bg-purple-400 rounded-full"></span>
-                    <span><strong>Root Cause Analysis:</strong> Identifica causas raíz automáticamente</span>
-                  </li>
-                  <li class="flex items-center gap-3">
-                    <span class="w-2 h-2 bg-orange-400 rounded-full"></span>
-                    <span><strong>Intelligent Alerting:</strong> Reduce noise con alertas contextuales</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-900/50 rounded-xl p-6 border border-gray-600/30">
-                <h4 class="text-lg font-semibold text-orange-300 mb-3">🛠️ Stack de Monitoreo IA</h4>
-                <div class="space-y-3 text-sm text-gray-300">
-                  <div class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg">
-                    <span>DataDog AI</span>
-                    <span class="text-green-400 text-xs">APM + Logs</span>
-                  </div>
-                  <div class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg">
-                    <span>New Relic AI</span>
-                    <span class="text-blue-400 text-xs">Full Stack</span>
-                  </div>
-                  <div class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg">
-                    <span>Dynatrace</span>
-                    <span class="text-purple-400 text-xs">AI Ops</span>
-                  </div>
-                  <div class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg">
-                    <span>Splunk AI</span>
-                    <span class="text-orange-400 text-xs">Analytics</span>
-                  </div>
+    <main
+        class="min-h-screen bg-gradient-to-br from-gray-900 via-orange-900 to-gray-900"
+    >
+        <!-- Navigation -->
+        <nav
+            class="sticky top-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10"
+        >
+            <div
+                class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"
+            >
+                <a
+                    href="/"
+                    class="text-2xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent"
+                >
+                    LexIA
+                </a>
+                <div class="flex items-center gap-6">
+                    <a
+                        href="/"
+                        class="text-gray-300 hover:text-white transition-colors"
+                        >← Inicio</a
+                    >
+                    <div
+                        class="px-3 py-1 bg-orange-500/20 border border-orange-500/30 rounded-full text-orange-300 text-sm"
+                    >
+                        Etapa 4
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
+        </nav>
 
-        <!-- Infrastructure as Code con IA -->
-        <div class="mb-20">
-          <div class="flex items-center gap-4 mb-8">
-            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-orange-500 rounded-xl flex items-center justify-center text-2xl">
-              🏗️
-            </div>
-            <h2 class="text-3xl font-bold text-white">Infrastructure as Code con IA</h2>
-          </div>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-gradient-to-br from-blue-500/10 to-orange-500/10 border border-blue-500/20 rounded-2xl p-8 backdrop-blur-sm">
-              <h3 class="text-xl font-semibold text-blue-300 mb-4">🤖 Generación Automática</h3>
-              <ul class="space-y-3 text-gray-300">
-                <li class="flex items-start gap-3">
-                  <span class="text-blue-400 mt-1">►</span>
-                  <div>
-                    <strong class="text-white">Terraform AI:</strong> Genera configuraciones optimizadas
-                  </div>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="text-blue-400 mt-1">►</span>
-                  <div>
-                    <strong class="text-white">AWS CDK AI:</strong> Infrastructure patterns inteligentes
-                  </div>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="text-blue-400 mt-1">►</span>
-                  <div>
-                    <strong class="text-white">Pulumi AI:</strong> Multi-cloud con recomendaciones
-                  </div>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="text-blue-400 mt-1">►</span>
-                  <div>
-                    <strong class="text-white">Kubernetes AI:</strong> Manifests auto-optimizados
-                  </div>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-8 backdrop-blur-sm">
-              <h3 class="text-xl font-semibold text-orange-300 mb-4">📊 Optimización Continua</h3>
-              <div class="space-y-4">
-                <div class="flex items-center justify-between p-4 bg-gray-800/30 rounded-lg">
-                  <span class="text-gray-300">Cost Optimization</span>
-                  <span class="text-green-400 font-bold">-35%</span>
+        <!-- Hero Section -->
+        <section class="py-20">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <div
+                    class="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-full border border-white/20 backdrop-blur-sm mb-8"
+                >
+                    <span class="text-4xl">🚀</span>
+                    <span class="text-lg font-medium"
+                        >Etapa 4: Despliegue y DevOps</span
+                    >
                 </div>
-                <div class="flex items-center justify-between p-4 bg-gray-800/30 rounded-lg">
-                  <span class="text-gray-300">Resource Efficiency</span>
-                  <span class="text-blue-400 font-bold">+60%</span>
-                </div>
-                <div class="flex items-center justify-between p-4 bg-gray-800/30 rounded-lg">
-                  <span class="text-gray-300">Deployment Speed</span>
-                  <span class="text-purple-400 font-bold">+80%</span>
-                </div>
-                <div class="flex items-center justify-between p-4 bg-gray-800/30 rounded-lg">
-                  <span class="text-gray-300">Error Reduction</span>
-                  <span class="text-orange-400 font-bold">-90%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Métricas de DevOps -->
-        <div class="mb-20">
-          <div class="flex items-center gap-4 mb-8">
-            <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-orange-500 rounded-xl flex items-center justify-center text-2xl">
-              📈
-            </div>
-            <h2 class="text-3xl font-bold text-white">Métricas DORA y KPIs Inteligentes</h2>
-          </div>
-          
-          <div class="grid md:grid-cols-4 gap-6">
-            <div class="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-2xl p-6 backdrop-blur-sm text-center">
-              <div class="text-3xl mb-2">🚀</div>
-              <div class="text-2xl font-bold text-green-400 mb-1">10x</div>
-              <div class="text-sm text-gray-300">Deployment Frequency</div>
-              <div class="text-xs text-gray-400 mt-1">vs. baseline</div>
-            </div>
-            
-            <div class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-6 backdrop-blur-sm text-center">
-              <div class="text-3xl mb-2">⚡</div>
-              <div class="text-2xl font-bold text-blue-400 mb-1">{"< 1h"}</div>
-              <div class="text-sm text-gray-300">Lead Time</div>
-              <div class="text-xs text-gray-400 mt-1">commit to production</div>
-            </div>
-            
-            <div class="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/20 rounded-2xl p-6 backdrop-blur-sm text-center">
-              <div class="text-3xl mb-2">⏱️</div>
-              <div class="text-2xl font-bold text-purple-400 mb-1">{"< 5min"}</div>
-              <div class="text-sm text-gray-300">Recovery Time</div>
-              <div class="text-xs text-gray-400 mt-1">MTTR automático</div>
-            </div>
-            
-            <div class="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-6 backdrop-blur-sm text-center">
-              <div class="text-3xl mb-2">🎯</div>
-              <div class="text-2xl font-bold text-orange-400 mb-1">0.1%</div>
-              <div class="text-sm text-gray-300">Change Failure Rate</div>
-              <div class="text-xs text-gray-400 mt-1">con validación IA</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                <h1
+                    class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-orange-400 via-red-400 to-orange-300 bg-clip-text text-transparent leading-tight"
+                >
+                    Entrega Inteligente
+                </h1>
 
-    <!-- Navigation Footer -->
-    <section class="py-16 border-t border-white/10">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex justify-between items-center">
-          <a href="/testing-validacion" class="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
-            <span class="text-2xl">←</span>
-            <div>
-              <div class="font-medium">Etapa Anterior</div>
-              <div class="text-sm text-gray-500">Testing y Validación</div>
+                <p
+                    class="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
+                >
+                    Automatiza tus entregas con <span
+                        class="text-orange-400 font-semibold"
+                        >CI/CD inteligente</span
+                    >,
+                    <span class="text-red-400 font-semibold"
+                        >despliegue automático</span
+                    > y monitoreo predictivo 24/7.
+                </p>
             </div>
-          </a>
-          
-          <a href="/mantenimiento-evolucion" class="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
-            <div class="text-right">
-              <div class="font-medium">Siguiente Etapa</div>
-              <div class="text-sm text-gray-500">Mantenimiento y Evolución</div>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-4">
+                <!-- CI/CD Inteligente -->
+                <div class="mb-20">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center text-2xl"
+                        >
+                            🔄
+                        </div>
+                        <h2 class="text-3xl font-bold text-white">
+                            CI/CD Inteligente y Automatizado
+                        </h2>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div
+                            class="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-8 backdrop-blur-sm"
+                        >
+                            <h3
+                                class="text-xl font-semibold text-orange-300 mb-4"
+                            >
+                                🤖 Plataformas con IA
+                            </h3>
+                            <ul class="space-y-4 text-gray-300">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-green-400 mt-1">•</span>
+                                    <div>
+                                        <strong class="text-white"
+                                            >GitHub Actions AI:</strong
+                                        > Workflows inteligentes autooptimizantes
+                                        <div class="text-sm text-gray-400 mt-1">
+                                            Escalado automático de runners,
+                                            caché inteligente
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-green-400 mt-1">•</span>
+                                    <div>
+                                        <strong class="text-white"
+                                            >GitLab AI-Assist:</strong
+                                        > Optimización de pipeline automática
+                                        <div class="text-sm text-gray-400 mt-1">
+                                            Builds predictivos, programación
+                                            inteligente
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-green-400 mt-1">•</span>
+                                    <div>
+                                        <strong class="text-white"
+                                            >CircleCI Insights:</strong
+                                        > Optimización basada en datos
+                                        <div class="text-sm text-gray-400 mt-1">
+                                            Optimización de tiempo de build,
+                                            detección de pruebas inestables
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-gray-800/50 to-gray-700/50 border border-gray-600/30 rounded-2xl p-8 backdrop-blur-sm"
+                        >
+                            <h3 class="text-xl font-semibold text-red-300 mb-4">
+                                💡 Pipeline Inteligente
+                            </h3>
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm text-gray-300 border border-gray-600/30"
+                            >
+                                <div class="text-green-400 mb-2">
+                                    # GitHub Actions con IA
+                                </div>
+                                <div class="text-white mb-1">
+                                    name: Despliegue Inteligente
+                                </div>
+                                <div class="text-blue-300 mb-1">on:</div>
+                                <div class="text-gray-400 mb-1">push:</div>
+                                <div class="text-gray-400 mb-2">
+                                    branches: [main]
+                                </div>
+
+                                <div class="text-yellow-400 mb-1">jobs:</div>
+                                <div class="text-blue-300">ai-optimize:</div>
+                                <div class="text-gray-400">
+                                    - uses: optimizador-build-ia
+                                </div>
+                                <div class="text-gray-400">
+                                    - uses: predictive-tests
+                                </div>
+                                <div class="text-gray-400">
+                                    - uses: despliegue-inteligente
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Despliegue Inteligente -->
+                <div class="mb-20">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-red-500 to-orange-500 rounded-xl flex items-center justify-center text-2xl"
+                        >
+                            🎯
+                        </div>
+                        <h2 class="text-3xl font-bold text-white">
+                            Despliegue Inteligente y Seguro
+                        </h2>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div
+                            class="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-2xl p-6 backdrop-blur-sm"
+                        >
+                            <h3 class="text-lg font-semibold text-red-300 mb-4">
+                                🛡️ Estrategias Seguras
+                            </h3>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Azul-Verde con validación IA</li>
+                                <li>• Releases canary inteligentes</li>
+                                <li>• Despliegues progresivos adaptativos</li>
+                                <li>• Feature flags con ML</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-orange-500/10 to-yellow-500/10 border border-orange-500/20 rounded-2xl p-6 backdrop-blur-sm"
+                        >
+                            <h3
+                                class="text-lg font-semibold text-orange-300 mb-4"
+                            >
+                                📊 Validación Automática
+                            </h3>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Chequeos de salud inteligentes</li>
+                                <li>• Performance baselines AI</li>
+                                <li>• Error rate monitoring</li>
+                                <li>• User experience validation</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-yellow-500/10 to-red-500/10 border border-yellow-500/20 rounded-2xl p-6 backdrop-blur-sm"
+                        >
+                            <h3
+                                class="text-lg font-semibold text-yellow-300 mb-4"
+                            >
+                                ⚡ Rollback Automático
+                            </h3>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Detección de anomalías en tiempo real</li>
+                                <li>• Rollback automático bajo condiciones</li>
+                                <li>• Recuperación de estado automática</li>
+                                <li>• Notificaciones inteligentes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monitoreo Predictivo -->
+                <div class="mb-20">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-purple-500 to-orange-500 rounded-xl flex items-center justify-center text-2xl"
+                        >
+                            👁️
+                        </div>
+                        <h2 class="text-3xl font-bold text-white">
+                            Monitoreo Predictivo 24/7
+                        </h2>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-r from-purple-500/10 to-orange-500/10 border border-purple-500/20 rounded-2xl p-8 backdrop-blur-sm"
+                    >
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3
+                                    class="text-xl font-semibold text-purple-300 mb-4"
+                                >
+                                    🧠 Inteligencia Operacional
+                                </h3>
+                                <ul class="space-y-3 text-gray-300">
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="w-2 h-2 bg-green-400 rounded-full"
+                                        ></span>
+                                        <span
+                                            ><strong>Anomaly Detection:</strong>
+                                            Detecta patrones anómalos antes de que
+                                            causen problemas</span
+                                        >
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="w-2 h-2 bg-blue-400 rounded-full"
+                                        ></span>
+                                        <span
+                                            ><strong>Predictive Scaling:</strong
+                                            > Escala recursos basado en predicciones
+                                            ML</span
+                                        >
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="w-2 h-2 bg-purple-400 rounded-full"
+                                        ></span>
+                                        <span
+                                            ><strong
+                                                >Root Cause Analysis:</strong
+                                            > Identifica causas raíz automáticamente</span
+                                        >
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="w-2 h-2 bg-orange-400 rounded-full"
+                                        ></span>
+                                        <span
+                                            ><strong
+                                                >Intelligent Alerting:</strong
+                                            > Reduce noise con alertas contextuales</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-6 border border-gray-600/30"
+                            >
+                                <h4
+                                    class="text-lg font-semibold text-orange-300 mb-3"
+                                >
+                                    🛠️ Stack de Monitoreo IA
+                                </h4>
+                                <div class="space-y-3 text-sm text-gray-300">
+                                    <div
+                                        class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg"
+                                    >
+                                        <span>DataDog AI</span>
+                                        <span class="text-green-400 text-xs"
+                                            >APM + Logs</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg"
+                                    >
+                                        <span>New Relic AI</span>
+                                        <span class="text-blue-400 text-xs"
+                                            >Full Stack</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg"
+                                    >
+                                        <span>Dynatrace</span>
+                                        <span class="text-purple-400 text-xs"
+                                            >AI Ops</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg"
+                                    >
+                                        <span>Splunk AI</span>
+                                        <span class="text-orange-400 text-xs"
+                                            >Analytics</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infrastructure as Code con IA -->
+                <div class="mb-20">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-blue-500 to-orange-500 rounded-xl flex items-center justify-center text-2xl"
+                        >
+                            🏗️
+                        </div>
+                        <h2 class="text-3xl font-bold text-white">
+                            Infrastructure as Code con IA
+                        </h2>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div
+                            class="bg-gradient-to-br from-blue-500/10 to-orange-500/10 border border-blue-500/20 rounded-2xl p-8 backdrop-blur-sm"
+                        >
+                            <h3
+                                class="text-xl font-semibold text-blue-300 mb-4"
+                            >
+                                🤖 Generación Automática
+                            </h3>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-blue-400 mt-1">►</span>
+                                    <div>
+                                        <strong class="text-white"
+                                            >Terraform AI:</strong
+                                        > Genera configuraciones optimizadas
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-blue-400 mt-1">►</span>
+                                    <div>
+                                        <strong class="text-white"
+                                            >AWS CDK AI:</strong
+                                        > Infrastructure patterns inteligentes
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-blue-400 mt-1">►</span>
+                                    <div>
+                                        <strong class="text-white"
+                                            >Pulumi AI:</strong
+                                        > Multi-cloud con recomendaciones
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-blue-400 mt-1">►</span>
+                                    <div>
+                                        <strong class="text-white"
+                                            >Kubernetes AI:</strong
+                                        > Manifests auto-optimizados
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-8 backdrop-blur-sm"
+                        >
+                            <h3
+                                class="text-xl font-semibold text-orange-300 mb-4"
+                            >
+                                📊 Optimización Continua
+                            </h3>
+                            <div class="space-y-4">
+                                <div
+                                    class="flex items-center justify-between p-4 bg-gray-800/30 rounded-lg"
+                                >
+                                    <span class="text-gray-300"
+                                        >Cost Optimization</span
+                                    >
+                                    <span class="text-green-400 font-bold"
+                                        >-35%</span
+                                    >
+                                </div>
+                                <div
+                                    class="flex items-center justify-between p-4 bg-gray-800/30 rounded-lg"
+                                >
+                                    <span class="text-gray-300"
+                                        >Resource Efficiency</span
+                                    >
+                                    <span class="text-blue-400 font-bold"
+                                        >+60%</span
+                                    >
+                                </div>
+                                <div
+                                    class="flex items-center justify-between p-4 bg-gray-800/30 rounded-lg"
+                                >
+                                    <span class="text-gray-300"
+                                        >Deployment Speed</span
+                                    >
+                                    <span class="text-purple-400 font-bold"
+                                        >+80%</span
+                                    >
+                                </div>
+                                <div
+                                    class="flex items-center justify-between p-4 bg-gray-800/30 rounded-lg"
+                                >
+                                    <span class="text-gray-300"
+                                        >Error Reduction</span
+                                    >
+                                    <span class="text-orange-400 font-bold"
+                                        >-90%</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Métricas de DevOps -->
+                <div class="mb-20">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-green-500 to-orange-500 rounded-xl flex items-center justify-center text-2xl"
+                        >
+                            📈
+                        </div>
+                        <h2 class="text-3xl font-bold text-white">
+                            Métricas DORA y KPIs Inteligentes
+                        </h2>
+                    </div>
+
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div
+                            class="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-2xl p-6 backdrop-blur-sm text-center"
+                        >
+                            <div class="text-3xl mb-2">🚀</div>
+                            <div class="text-2xl font-bold text-green-400 mb-1">
+                                10x
+                            </div>
+                            <div class="text-sm text-gray-300">
+                                Deployment Frequency
+                            </div>
+                            <div class="text-xs text-gray-400 mt-1">
+                                vs. baseline
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-6 backdrop-blur-sm text-center"
+                        >
+                            <div class="text-3xl mb-2">⚡</div>
+                            <div class="text-2xl font-bold text-blue-400 mb-1">
+                                {"< 1h"}
+                            </div>
+                            <div class="text-sm text-gray-300">Lead Time</div>
+                            <div class="text-xs text-gray-400 mt-1">
+                                commit to production
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/20 rounded-2xl p-6 backdrop-blur-sm text-center"
+                        >
+                            <div class="text-3xl mb-2">⏱️</div>
+                            <div
+                                class="text-2xl font-bold text-purple-400 mb-1"
+                            >
+                                {"< 5min"}
+                            </div>
+                            <div class="text-sm text-gray-300">
+                                Recovery Time
+                            </div>
+                            <div class="text-xs text-gray-400 mt-1">
+                                MTTR automático
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-6 backdrop-blur-sm text-center"
+                        >
+                            <div class="text-3xl mb-2">🎯</div>
+                            <div
+                                class="text-2xl font-bold text-orange-400 mb-1"
+                            >
+                                0.1%
+                            </div>
+                            <div class="text-sm text-gray-300">
+                                Change Failure Rate
+                            </div>
+                            <div class="text-xs text-gray-400 mt-1">
+                                con validación IA
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <span class="text-2xl">→</span>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
+        </section>
+
+        <!-- Navigation Footer -->
+        <section class="py-16 border-t border-white/10">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between items-center">
+                    <a
+                        href="/testing-validacion"
+                        class="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
+                    >
+                        <span class="text-2xl">←</span>
+                        <div>
+                            <div class="font-medium">Etapa Anterior</div>
+                            <div class="text-sm text-gray-500">
+                                Testing y Validación
+                            </div>
+                        </div>
+                    </a>
+
+                    <a
+                        href="/mantenimiento-evolucion"
+                        class="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
+                    >
+                        <div class="text-right">
+                            <div class="font-medium">Siguiente Etapa</div>
+                            <div class="text-sm text-gray-500">
+                                Mantenimiento y Evolución
+                            </div>
+                        </div>
+                        <span class="text-2xl">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 </Layout>
 
 <style>
-  .floating-particle {
-    animation: float 6s ease-in-out infinite;
-  }
-  
-  @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(180deg); }
-  }
+    .floating-particle {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0%,
+        100% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(-20px) rotate(180deg);
+        }
+    }
 </style>

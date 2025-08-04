@@ -1,350 +1,529 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import BackButton from '../../components/BackButton.astro';
-import RelatedTools from '../../components/RelatedTools.astro';
+import Layout from "../../layouts/Layout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import BackButton from "../../components/BackButton.astro";
+import RelatedTools from "../../components/RelatedTools.astro";
 
 const breadcrumbs = [
-  { name: 'Inicio', href: '/' },
-  { name: 'Herramientas IA', href: '/herramientas-ia' },
-  { name: 'Gamma', current: true }
+    { name: "Inicio", href: "/" },
+    { name: "Herramientas IA", href: "/herramientas-ia" },
+    { name: "Gamma", current: true },
 ];
 
 const relatedTools = [
-  {
-    name: 'Beautiful.ai',
-    href: '/ia/beautiful-ai',
-    icon: '🎨',
-    category: 'Presentaciones',
-    description: 'Presentaciones con diseño automático'
-  },
-  {
-    name: 'Notion AI',
-    href: '/ia/notion-ai',
-    icon: '📝',
-    category: 'Productividad',
-    description: 'Documentación inteligente'
-  },
-  {
-    name: 'Figma AI',
-    href: '/ia/figma-ai',
-    icon: '🎨',
-    category: 'Diseño',
-    description: 'Diseño UI/UX asistido'
-  }
+    {
+        name: "Beautiful.ai",
+        href: "/ia/beautiful-ai",
+        icon: "🎨",
+        category: "Presentaciones",
+        description: "Presentaciones con diseño automático",
+    },
+    {
+        name: "Notion AI",
+        href: "/ia/notion-ai",
+        icon: "📝",
+        category: "Productividad",
+        description: "Documentación inteligente",
+    },
+    {
+        name: "Figma AI",
+        href: "/ia/figma-ai",
+        icon: "🎨",
+        category: "Diseño",
+        description: "Diseño UI/UX asistido",
+    },
 ];
 ---
 
 <Layout title="Gamma - Presentaciones IA Automáticas | LexIA">
-  <main class="min-h-screen bg-gradient-to-br from-gray-900 via-violet-900 to-gray-900">
-    <Breadcrumbs items={breadcrumbs} />
-    
-    <!-- Hero Section -->
-    <section class="py-20">
-      <div class="max-w-6xl mx-auto px-4 text-center">
-        <div class="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-violet-500/20 to-purple-500/20 rounded-full border border-white/20 backdrop-blur-sm mb-8">
-          <span class="text-4xl">📊</span>
-          <span class="text-lg font-medium">Presentaciones IA</span>
-        </div>
-        
-        <div class="flex items-center justify-center gap-4 mb-6">
-          <div class="w-16 h-16 bg-gradient-to-r from-violet-600 to-purple-600 rounded-2xl flex items-center justify-center text-3xl">
-            🎯
-          </div>
-          <div class="text-left">
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Gamma</h1>
-            <p class="text-gray-400">by Gamma Technologies</p>
-          </div>
-        </div>
-        
-        <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-          Gamma crea <span class="text-violet-400 font-semibold">presentaciones profesionales</span> con IA en segundos. 
-          <span class="text-purple-400 font-semibold">Diseño automático</span> y contenido inteligente.
-        </p>
-        
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://gamma.app" target="_blank" class="bg-gradient-to-r from-violet-600 to-purple-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-violet-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
-            Probar Gamma Gratis
-          </a>
-          <a href="#pricing" class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/20 transition-all duration-300">
-            Ver Precios
-          </a>
-        </div>
-      </div>
-    </section>
+    <main
+        class="min-h-screen bg-gradient-to-br from-gray-900 via-violet-900 to-gray-900"
+    >
+        <Breadcrumbs items={breadcrumbs} />
 
-    <!-- ¿Qué es Gamma? -->
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="bg-gradient-to-br from-violet-500/10 to-purple-500/10 border border-violet-500/20 rounded-3xl p-12 backdrop-blur-sm">
-          <h2 class="text-3xl font-bold text-white mb-6">🎯 ¿Qué es Gamma?</h2>
-          <div class="grid md:grid-cols-2 gap-8 items-center">
-            <div class="space-y-4 text-gray-300 text-lg leading-relaxed">
-              <p>
-                <strong>Gamma</strong> es una plataforma de creación de presentaciones impulsada por IA 
-                que permite crear slides profesionales, documentos y páginas web a partir de simples prompts de texto.
-              </p>
-              <p>
-                Utiliza inteligencia artificial para generar automáticamente diseños atractivos, 
-                seleccionar imágenes relevantes y estructurar el contenido de manera coherente.
-              </p>
-            </div>
-            <div class="bg-gray-900/50 rounded-2xl p-6 border border-gray-600/30">
-              <h3 class="text-lg font-semibold text-white mb-4">🚀 Ventajas Clave</h3>
-              <ul class="space-y-3 text-gray-300">
-                <li class="flex items-center gap-3">
-                  <span class="w-2 h-2 bg-violet-400 rounded-full"></span>
-                  <span>Generación automática de contenido</span>
-                </li>
-                <li class="flex items-center gap-3">
-                  <span class="w-2 h-2 bg-purple-400 rounded-full"></span>
-                  <span>Diseño profesional instantáneo</span>
-                </li>
-                <li class="flex items-center gap-3">
-                  <span class="w-2 h-2 bg-violet-400 rounded-full"></span>
-                  <span>Sin necesidad de plantillas</span>
-                </li>
-                <li class="flex items-center gap-3">
-                  <span class="w-2 h-2 bg-purple-400 rounded-full"></span>
-                  <span>Colaboración en tiempo real</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Funcionalidades -->
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-white mb-8">⚡ Funcionalidades Principales</h2>
-        
-        <div class="grid md:grid-cols-3 gap-6 mb-12">
-          <div class="bg-gradient-to-br from-violet-500/10 to-purple-500/10 border border-violet-500/20 rounded-2xl p-6 backdrop-blur-sm">
-            <div class="w-12 h-12 bg-gradient-to-r from-violet-500 to-purple-500 rounded-xl flex items-center justify-center text-2xl mb-4">
-              🎨
-            </div>
-            <h3 class="text-xl font-semibold text-white mb-3">Diseño Automático</h3>
-            <ul class="space-y-2 text-gray-300 text-sm">
-              <li>• Layouts profesionales automáticos</li>
-              <li>• Paletas de colores inteligentes</li>
-              <li>• Tipografía optimizada</li>
-              <li>• Imágenes contextualmente relevantes</li>
-            </ul>
-          </div>
-
-          <div class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-6 backdrop-blur-sm">
-            <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center text-2xl mb-4">
-              📝
-            </div>
-            <h3 class="text-xl font-semibold text-white mb-3">Contenido Inteligente</h3>
-            <ul class="space-y-2 text-gray-300 text-sm">
-              <li>• Generación de texto automática</li>
-              <li>• Estructura de presentación lógica</li>
-              <li>• Bullet points optimizados</li>
-              <li>• Títulos y subtítulos sugeridos</li>
-            </ul>
-          </div>
-
-          <div class="bg-gradient-to-br from-pink-500/10 to-rose-500/10 border border-pink-500/20 rounded-2xl p-6 backdrop-blur-sm">
-            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl flex items-center justify-center text-2xl mb-4">
-              🚀
-            </div>
-            <h3 class="text-xl font-semibold text-white mb-3">Múltiples Formatos</h3>
-            <ul class="space-y-2 text-gray-300 text-sm">
-              <li>• Presentaciones interactivas</li>
-              <li>• Documentos web</li>
-              <li>• Páginas de aterrizaje</li>
-              <li>• Exportación a PowerPoint/PDF</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Para Equipos de Desarrollo -->
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-white mb-8">👨‍💻 Gamma para Teams de Desarrollo</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="space-y-6">
-            <div class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-6">
-              <h3 class="text-xl font-semibold text-blue-300 mb-4">📊 Product Demos</h3>
-              <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30">
-                <div class="text-green-400 mb-2"># Prompt para demo</div>
-                <div class="text-gray-300 mb-2">"Crear presentación para demo de app móvil de delivery"</div>
-                <div class="text-blue-300 mt-3">
-                  🎯 Gamma genera:<br/>
-                  • Problem statement<br/>
-                  • Solution overview<br/>
-                  • Feature highlights<br/>
-                  • User journey<br/>
-                  • Business metrics
+        <!-- Hero Section -->
+        <section class="py-20">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <div
+                    class="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-violet-500/20 to-purple-500/20 rounded-full border border-white/20 backdrop-blur-sm mb-8"
+                >
+                    <span class="text-4xl">📊</span>
+                    <span class="text-lg font-medium">Presentaciones IA</span>
                 </div>
-              </div>
-            </div>
 
-            <div class="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-2xl p-6">
-              <h3 class="text-xl font-semibold text-emerald-300 mb-4">🏗️ Architecture Presentations</h3>
-              <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30">
-                <div class="text-yellow-400 mb-2"># Presentación técnica</div>
-                <div class="text-gray-300 mb-2">Input: "Microservices architecture for e-commerce platform"</div>
-                <div class="text-emerald-300 mt-3">
-                  🏗️ Slides automáticos:<br/>
-                  • System overview<br/>
-                  • Service breakdown<br/>
-                  • Data flow diagrams<br/>
-                  • Scaling strategies
+                <div class="flex items-center justify-center gap-4 mb-6">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-violet-600 to-purple-600 rounded-2xl flex items-center justify-center text-3xl"
+                    >
+                        🎯
+                    </div>
+                    <div class="text-left">
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            Gamma
+                        </h1>
+                        <p class="text-gray-400">by Gamma Technologies</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="space-y-6">
-            <div class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-6">
-              <h3 class="text-xl font-semibold text-purple-300 mb-4">📈 Sprint Reviews</h3>
-              <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30">
-                <div class="text-purple-400 mb-2"># Sprint retrospective</div>
-                <div class="text-gray-300 mb-2">"Sprint 15 review - user authentication feature"</div>
-                <div class="text-pink-300 mt-3">
-                  📊 Auto-genera:<br/>
-                  • Completed stories<br/>
-                  • Demo screenshots<br/>
-                  • Metrics achieved<br/>
-                  • Next sprint goals
+                <p
+                    class="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
+                >
+                    Gamma crea <span class="text-violet-400 font-semibold"
+                        >presentaciones profesionales</span
+                    > con IA en segundos.
+                    <span class="text-purple-400 font-semibold"
+                        >Diseño automático</span
+                    > y contenido inteligente.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a
+                        href="https://gamma.app"
+                        target="_blank"
+                        class="bg-gradient-to-r from-violet-600 to-purple-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-violet-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
+                    >
+                        Probar Gamma Gratis
+                    </a>
+                    <a
+                        href="#pricing"
+                        class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/20 transition-all duration-300"
+                    >
+                        Ver Precios
+                    </a>
                 </div>
-              </div>
             </div>
+        </section>
 
-            <div class="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-6">
-              <h3 class="text-xl font-semibold text-orange-300 mb-4">🎯 Stakeholder Updates</h3>
-              <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30">
-                <div class="text-orange-400 mb-2"># Executive summary</div>
-                <div class="text-gray-300 mb-2">Prompt: "Q3 development progress for CTO"</div>
-                <div class="text-red-300 mt-3">
-                  📋 Incluye:<br/>
-                  • High-level metrics<br/>
-                  • Key milestones<br/>
-                  • Risk assessment<br/>
-                  • Resource needs
+        <!-- ¿Qué es Gamma? -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-4">
+                <div
+                    class="bg-gradient-to-br from-violet-500/10 to-purple-500/10 border border-violet-500/20 rounded-3xl p-12 backdrop-blur-sm"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🎯 ¿Qué es Gamma?
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div
+                            class="space-y-4 text-gray-300 text-lg leading-relaxed"
+                        >
+                            <p>
+                                <strong>Gamma</strong> es una plataforma de creación
+                                de presentaciones impulsada por IA que permite crear
+                                slides profesionales, documentos y páginas web a
+                                partir de simples prompts de texto.
+                            </p>
+                            <p>
+                                Utiliza inteligencia artificial para generar
+                                automáticamente diseños atractivos, seleccionar
+                                imágenes relevantes y estructurar el contenido
+                                de manera coherente.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-gray-900/50 rounded-2xl p-6 border border-gray-600/30"
+                        >
+                            <h3 class="text-lg font-semibold text-white mb-4">
+                                🚀 Ventajas Clave
+                            </h3>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="flex items-center gap-3">
+                                    <span
+                                        class="w-2 h-2 bg-violet-400 rounded-full"
+                                    ></span>
+                                    <span
+                                        >Generación automática de contenido</span
+                                    >
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span
+                                        class="w-2 h-2 bg-purple-400 rounded-full"
+                                    ></span>
+                                    <span>Diseño profesional instantáneo</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span
+                                        class="w-2 h-2 bg-violet-400 rounded-full"
+                                    ></span>
+                                    <span>Sin necesidad de plantillas</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span
+                                        class="w-2 h-2 bg-purple-400 rounded-full"
+                                    ></span>
+                                    <span>Colaboración en tiempo real</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Casos de Uso -->
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-white mb-8">🎯 Casos de Uso en Desarrollo</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-gradient-to-br from-violet-500/10 to-purple-500/10 border border-violet-500/20 rounded-2xl p-8">
-            <h3 class="text-2xl font-semibold text-violet-300 mb-6">📋 Documentación de Requisitos</h3>
-            
-            <div class="space-y-4">
-              <div class="bg-gray-900/50 rounded-xl p-4 border border-gray-600/30">
-                <div class="text-sm text-gray-400 mb-2">Input</div>
-                <div class="text-white text-sm">
-                  "Crear presentación para requisitos de sistema de gestión de inventario"
+        <!-- Funcionalidades -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚡ Funcionalidades Principales
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-12">
+                    <div
+                        class="bg-gradient-to-br from-violet-500/10 to-purple-500/10 border border-violet-500/20 rounded-2xl p-6 backdrop-blur-sm"
+                    >
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-violet-500 to-purple-500 rounded-xl flex items-center justify-center text-2xl mb-4"
+                        >
+                            🎨
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Diseño Automático
+                        </h3>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Layouts profesionales automáticos</li>
+                            <li>• Paletas de colores inteligentes</li>
+                            <li>• Tipografía optimizada</li>
+                            <li>• Imágenes contextualmente relevantes</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-6 backdrop-blur-sm"
+                    >
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center text-2xl mb-4"
+                        >
+                            📝
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Contenido Inteligente
+                        </h3>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Generación de texto automática</li>
+                            <li>• Estructura de presentación lógica</li>
+                            <li>• Bullet points optimizados</li>
+                            <li>• Títulos y subtítulos sugeridos</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-pink-500/10 to-rose-500/10 border border-pink-500/20 rounded-2xl p-6 backdrop-blur-sm"
+                    >
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl flex items-center justify-center text-2xl mb-4"
+                        >
+                            🚀
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Múltiples Formatos
+                        </h3>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Presentaciones interactivas</li>
+                            <li>• Documentos web</li>
+                            <li>• Páginas de aterrizaje</li>
+                            <li>• Exportación a PowerPoint/PDF</li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
-              
-              <div class="text-center text-violet-400 text-xl">↓</div>
-              
-              <div class="bg-violet-900/20 rounded-xl p-4 border border-violet-500/30">
-                <div class="text-sm text-violet-300 mb-2">Gamma Output</div>
-                <ul class="text-white text-sm space-y-1">
-                  <li>✅ Executive Summary</li>
-                  <li>✅ Functional Requirements</li>
-                  <li>✅ User Stories & Acceptance Criteria</li>
-                  <li>✅ Technical Constraints</li>
-                  <li>✅ Implementation Timeline</li>
-                </ul>
-              </div>
             </div>
-          </div>
+        </section>
 
-          <div class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-8">
-            <h3 class="text-2xl font-semibold text-purple-300 mb-6">🚀 Product Roadmap</h3>
-            
-            <div class="space-y-4">
-              <div class="bg-gray-900/50 rounded-xl p-4 border border-gray-600/30">
-                <div class="text-sm text-gray-400 mb-2">Prompt</div>
-                <div class="text-white text-sm">
-                  "Roadmap Q1-Q4 para plataforma SaaS de analytics"
+        <!-- Para Equipos de Desarrollo -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    👨‍💻 Gamma para Teams de Desarrollo
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-6"
+                        >
+                            <h3
+                                class="text-xl font-semibold text-blue-300 mb-4"
+                            >
+                                📊 Product Demos
+                            </h3>
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30"
+                            >
+                                <div class="text-green-400 mb-2">
+                                    # Prompt para demo
+                                </div>
+                                <div class="text-gray-300 mb-2">
+                                    "Crear presentación para demo de app móvil
+                                    de delivery"
+                                </div>
+                                <div class="text-blue-300 mt-3">
+                                    🎯 Gamma genera:<br />
+                                    • Problem statement<br />
+                                    • Solution overview<br />
+                                    • Feature highlights<br />
+                                    • User journey<br />
+                                    • Business metrics
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-2xl p-6"
+                        >
+                            <h3
+                                class="text-xl font-semibold text-emerald-300 mb-4"
+                            >
+                                🏗️ Architecture Presentations
+                            </h3>
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30"
+                            >
+                                <div class="text-yellow-400 mb-2">
+                                    # Presentación técnica
+                                </div>
+                                <div class="text-gray-300 mb-2">
+                                    Input: "Microservices architecture for
+                                    e-commerce platform"
+                                </div>
+                                <div class="text-emerald-300 mt-3">
+                                    🏗️ Slides automáticos:<br />
+                                    • System overview<br />
+                                    • Service breakdown<br />
+                                    • Data flow diagrams<br />
+                                    • Scaling strategies
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-6"
+                        >
+                            <h3
+                                class="text-xl font-semibold text-purple-300 mb-4"
+                            >
+                                📈 Sprint Reviews
+                            </h3>
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30"
+                            >
+                                <div class="text-purple-400 mb-2">
+                                    # Sprint retrospective
+                                </div>
+                                <div class="text-gray-300 mb-2">
+                                    "Sprint 15 review - user authentication
+                                    feature"
+                                </div>
+                                <div class="text-pink-300 mt-3">
+                                    📊 Auto-genera:<br />
+                                    • Completed stories<br />
+                                    • Demo screenshots<br />
+                                    • Metrics achieved<br />
+                                    • Next sprint goals
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-6"
+                        >
+                            <h3
+                                class="text-xl font-semibold text-orange-300 mb-4"
+                            >
+                                🎯 Stakeholder Updates
+                            </h3>
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30"
+                            >
+                                <div class="text-orange-400 mb-2">
+                                    # Executive summary
+                                </div>
+                                <div class="text-gray-300 mb-2">
+                                    Prompt: "Q3 development progress for CTO"
+                                </div>
+                                <div class="text-red-300 mt-3">
+                                    📋 Incluye:<br />
+                                    • High-level metrics<br />
+                                    • Key milestones<br />
+                                    • Risk assessment<br />
+                                    • Resource needs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              
-              <div class="text-center text-purple-400 text-xl">↓</div>
-              
-              <div class="bg-purple-900/20 rounded-xl p-4 border border-purple-500/30">
-                <div class="text-sm text-purple-300 mb-2">Resultado Automático</div>
-                <ul class="text-white text-sm space-y-1">
-                  <li>📊 Q1: Core Analytics Engine</li>
-                  <li>📈 Q2: Real-time Dashboards</li>
-                  <li>🔗 Q3: Third-party Integrations</li>
-                  <li>🤖 Q4: AI/ML Capabilities</li>
-                </ul>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Pricing -->
-    <section id="pricing" class="py-16 bg-gradient-to-r from-violet-900/50 to-purple-900/50 border-y border-violet-700/30">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-white mb-8 text-center">💰 Precios</h2>
-        
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-gradient-to-br from-gray-800/50 to-slate-800/50 border border-gray-600/30 rounded-2xl p-6">
-            <h3 class="text-xl font-semibold text-white mb-2">Free</h3>
-            <div class="text-3xl font-bold text-gray-400 mb-4">$0</div>
-            <p class="text-gray-300 text-sm mb-4">Para empezar</p>
-            <ul class="space-y-2 text-gray-300 text-sm">
-              <li>• Hasta 3 presentaciones</li>
-              <li>• Funciones básicas de IA</li>
-              <li>• Exportación limitada</li>
-              <li>• Marca de agua Gamma</li>
-            </ul>
-          </div>
+        <!-- Casos de Uso -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🎯 Casos de Uso en Desarrollo
+                </h2>
 
-          <div class="bg-gradient-to-br from-violet-500/20 to-purple-500/20 border border-violet-500/30 rounded-2xl p-6 ring-2 ring-violet-500/50">
-            <h3 class="text-xl font-semibold text-white mb-2">Plus</h3>
-            <div class="text-3xl font-bold text-violet-400 mb-4">$10<span class="text-lg text-gray-400">/mes</span></div>
-            <p class="text-gray-300 text-sm mb-4">Para profesionales</p>
-            <ul class="space-y-2 text-gray-300 text-sm">
-              <li>• Presentaciones ilimitadas</li>
-              <li>• IA avanzada</li>
-              <li>• Sin marca de agua</li>
-              <li>• Exportación HD</li>
-              <li>• Analytics básicos</li>
-            </ul>
-          </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div
+                        class="bg-gradient-to-br from-violet-500/10 to-purple-500/10 border border-violet-500/20 rounded-2xl p-8"
+                    >
+                        <h3 class="text-2xl font-semibold text-violet-300 mb-6">
+                            📋 Documentación de Requisitos
+                        </h3>
 
-          <div class="bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-2xl p-6">
-            <h3 class="text-xl font-semibold text-white mb-2">Pro</h3>
-            <div class="text-3xl font-bold text-purple-400 mb-4">$20<span class="text-lg text-gray-400">/mes</span></div>
-            <p class="text-gray-300 text-sm mb-4">Para equipos</p>
-            <ul class="space-y-2 text-gray-300 text-sm">
-              <li>• Todo de Plus</li>
-              <li>• Colaboración avanzada</li>
-              <li>• Brand kit personalizado</li>
-              <li>• Analytics detallados</li>
-              <li>• Soporte prioritario</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+                        <div class="space-y-4">
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-4 border border-gray-600/30"
+                            >
+                                <div class="text-sm text-gray-400 mb-2">
+                                    Input
+                                </div>
+                                <div class="text-white text-sm">
+                                    "Crear presentación para requisitos de
+                                    sistema de gestión de inventario"
+                                </div>
+                            </div>
 
-    <BackButton href="/herramientas-ia" text="Volver a Herramientas IA" />
-    <RelatedTools tools={relatedTools} currentTool="Gamma" />
-  </main>
+                            <div class="text-center text-violet-400 text-xl">
+                                ↓
+                            </div>
+
+                            <div
+                                class="bg-violet-900/20 rounded-xl p-4 border border-violet-500/30"
+                            >
+                                <div class="text-sm text-violet-300 mb-2">
+                                    Gamma Output
+                                </div>
+                                <ul class="text-white text-sm space-y-1">
+                                    <li>✅ Executive Summary</li>
+                                    <li>✅ Functional Requirements</li>
+                                    <li>
+                                        ✅ User Stories & Acceptance Criteria
+                                    </li>
+                                    <li>✅ Technical Constraints</li>
+                                    <li>✅ Implementation Timeline</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-8"
+                    >
+                        <h3 class="text-2xl font-semibold text-purple-300 mb-6">
+                            🚀 Product Roadmap
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-4 border border-gray-600/30"
+                            >
+                                <div class="text-sm text-gray-400 mb-2">
+                                    Prompt
+                                </div>
+                                <div class="text-white text-sm">
+                                    "Roadmap Q1-Q4 para plataforma SaaS de
+                                    analytics"
+                                </div>
+                            </div>
+
+                            <div class="text-center text-purple-400 text-xl">
+                                ↓
+                            </div>
+
+                            <div
+                                class="bg-purple-900/20 rounded-xl p-4 border border-purple-500/30"
+                            >
+                                <div class="text-sm text-purple-300 mb-2">
+                                    Resultado Automático
+                                </div>
+                                <ul class="text-white text-sm space-y-1">
+                                    <li>📊 Q1: Core Analytics Engine</li>
+                                    <li>📈 Q2: Real-time Dashboards</li>
+                                    <li>🔗 Q3: Third-party Integrations</li>
+                                    <li>🤖 Q4: AI/ML Capabilities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section
+            id="pricing"
+            class="py-16 bg-gradient-to-r from-violet-900/50 to-purple-900/50 border-y border-violet-700/30"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-white mb-8 text-center">
+                    💰 Precios
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div
+                        class="bg-gradient-to-br from-gray-800/50 to-slate-800/50 border border-gray-600/30 rounded-2xl p-6"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-2">
+                            Free
+                        </h3>
+                        <div class="text-3xl font-bold text-gray-400 mb-4">
+                            $0
+                        </div>
+                        <p class="text-gray-300 text-sm mb-4">Para empezar</p>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Hasta 3 presentaciones</li>
+                            <li>• Funciones básicas de IA</li>
+                            <li>• Exportación limitada</li>
+                            <li>• Marca de agua Gamma</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-violet-500/20 to-purple-500/20 border border-violet-500/30 rounded-2xl p-6 ring-2 ring-violet-500/50"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-2">
+                            Plus
+                        </h3>
+                        <div class="text-3xl font-bold text-violet-400 mb-4">
+                            $10<span class="text-lg text-gray-400">/mes</span>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-4">
+                            Para profesionales
+                        </p>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Presentaciones ilimitadas</li>
+                            <li>• IA avanzada</li>
+                            <li>• Sin marca de agua</li>
+                            <li>• Exportación HD</li>
+                            <li>• Analytics básicos</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-2xl p-6"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-2">
+                            Pro
+                        </h3>
+                        <div class="text-3xl font-bold text-purple-400 mb-4">
+                            $20<span class="text-lg text-gray-400">/mes</span>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-4">Para equipos</p>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Todo de Plus</li>
+                            <li>• Colaboración avanzada</li>
+                            <li>• Brand kit personalizado</li>
+                            <li>• Analytics detallados</li>
+                            <li>• Soporte prioritario</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <BackButton href="/herramientas-ia" text="Volver a Herramientas IA" />
+        <RelatedTools tools={relatedTools} currentTool="Gamma" />
+    </main>
 </Layout>

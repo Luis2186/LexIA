@@ -1,254 +1,462 @@
 ﻿---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Dynatrace Davis AI - Observabilidad Inteligente | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-purple-900 via-violet-900 to-indigo-900 py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center text-4xl">
-            🔍
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Dynatrace Davis</h1>
-            <p class="text-xl text-purple-300">IA para Observabilidad</p>
-            <p class="text-gray-400">by Dynatrace</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          Davis es el motor de IA de Dynatrace que revoluciona la observabilidad, 
-          detectando automáticamente problemas de performance, identificando root causes 
-          y proporcionando insights predictivos para aplicaciones en producción.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-purple-400 hover:text-purple-300 whitespace-nowrap transition-colors">¿Qué es?</a>
-          <a href="#capacidades" class="text-gray-400 hover:text-purple-300 whitespace-nowrap transition-colors">Capacidades</a>
-          <a href="#casos-uso" class="text-gray-400 hover:text-purple-300 whitespace-nowrap transition-colors">Casos de Uso</a>
-          <a href="#ejemplos" class="text-gray-400 hover:text-purple-300 whitespace-nowrap transition-colors">Ejemplos</a>
-          <a href="#beneficios" class="text-gray-400 hover:text-purple-300 whitespace-nowrap transition-colors">Beneficios</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- ¿Qué es Davis? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-purple-900/20 to-indigo-900/20 border border-purple-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">🔍 ¿Qué es Dynatrace Davis?</h2>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-4">
-              <p class="text-gray-300 leading-relaxed">
-                <strong>Davis</strong> es el motor de inteligencia artificial de Dynatrace, 
-                diseñado específicamente para observabilidad y monitoreo de aplicaciones. 
-                Utiliza deterministic AI y machine learning para analizar automáticamente 
-                el comportamiento de aplicaciones complejas y detectar anomalías antes 
-                de que impacten a los usuarios.
-              </p>
-              
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🎯 Enfoque Único</h3>
-                
-                <div class="space-y-3 text-sm">
-                  <div class="flex items-start gap-3">
-                    <span class="text-purple-400">🧠</span>
-                    <div>
-                      <div class="text-white font-medium">Deterministic AI</div>
-                      <div class="text-gray-400">No requiere training, funciona desde día 1</div>
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-purple-900 via-violet-900 to-indigo-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🔍
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-violet-400">🔗</span>
                     <div>
-                      <div class="text-white font-medium">Causal AI</div>
-                      <div class="text-gray-400">Entiende relaciones causa-efecto reales</div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            Dynatrace Davis
+                        </h1>
+                        <p class="text-xl text-purple-300">
+                            IA para Observabilidad
+                        </p>
+                        <p class="text-gray-400">by Dynatrace</p>
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-indigo-400">⚡</span>
-                    <div>
-                      <div class="text-white font-medium">Real-time Analysis</div>
-                      <div class="text-gray-400">Análisis continuo 24/7 automático</div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            
-            <div class="space-y-6">
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🚀 Capacidades Core</h3>
-                
-                <div class="space-y-4 text-sm">
-                  <div class="border-l-4 border-purple-500 pl-4">
-                    <div class="font-semibold text-purple-300">Anomaly Detection</div>
-                    <div class="text-gray-400">Detecta problemas antes que los usuarios</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-violet-500 pl-4">
-                    <div class="font-semibold text-violet-300">Root Cause Analysis</div>
-                    <div class="text-gray-400">Identifica el origen exacto de problemas</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-indigo-500 pl-4">
-                    <div class="font-semibold text-indigo-300">Predictive Analytics</div>
-                    <div class="text-gray-400">Predice problemas futuros con precisión</div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="bg-gradient-to-r from-purple-800/20 to-indigo-800/20 rounded-xl p-4 border border-purple-500/20">
-                <div class="text-sm text-purple-300 font-medium mb-2">🎯 Diferenciador Clave</div>
-                <p class="text-gray-400 text-sm">
-                  A diferencia de otros sistemas de monitoreo que requieren configuración 
-                  manual de thresholds, Davis aprende automáticamente el comportamiento 
-                  normal de cada aplicación y detecta desviaciones sin intervención humana.
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    Davis es el motor de IA de Dynatrace que revoluciona la
+                    observabilidad, detectando automáticamente problemas de
+                    performance, identificando root causes y proporcionando
+                    insights predictivos para aplicaciones en producción.
                 </p>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </header>
 
-      <!-- Capacidades Avanzadas -->
-      <section id="capacidades" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🧠 Capacidades de IA Avanzadas</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-purple-500/20">
-              <div class="text-3xl mb-4">🔍</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Anomaly Detection</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Behavioral Learning:</strong> Aprende patrones únicos de cada app</li>
-                <li>• <strong>Multi-dimensional:</strong> Analiza métricas, traces y logs</li>
-                <li>• <strong>Seasonal Patterns:</strong> Entiende ciclos de negocio</li>
-                <li>• <strong>Early Warning:</strong> Detecta degradación antes del impacto</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-violet-500/20">
-              <div class="text-3xl mb-4">🕸️</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Causal Analysis</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Dependency Mapping:</strong> Mapea relaciones entre servicios</li>
-                <li>• <strong>Impact Analysis:</strong> Predice cascading effects</li>
-                <li>• <strong>Topology Awareness:</strong> Entiende arquitectura completa</li>
-                <li>• <strong>Change Correlation:</strong> Conecta deployments con issues</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-indigo-500/20">
-              <div class="text-3xl mb-4">🔮</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Predictive Insights</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Capacity Planning:</strong> Predice necesidades de recursos</li>
-                <li>• <strong>Performance Forecasting:</strong> Anticipa degradación</li>
-                <li>• <strong>Failure Prediction:</strong> Identifica componentes en riesgo</li>
-                <li>• <strong>Business Impact:</strong> Cuantifica impacto en revenue</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-purple-600/20">
-              <div class="text-3xl mb-4">🤖</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Automated Response</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Auto-scaling:</strong> Ajusta recursos automáticamente</li>
-                <li>• <strong>Self-healing:</strong> Ejecuta remediaciones automáticas</li>
-                <li>• <strong>Circuit Breakers:</strong> Previene cascading failures</li>
-                <li>• <strong>Rollback Triggers:</strong> Revierte deployments problemáticos</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Casos de Uso -->
-      <section id="casos-uso" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🛠️ Casos de Uso Críticos</h2>
-        
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-gray-900 rounded-xl p-6 border border-purple-500/20">
-            <div class="text-3xl mb-4">🚨</div>
-            <h3 class="text-xl font-semibold text-white mb-3">Incident Response</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• Detección automática de outages</li>
-              <li>• Root cause analysis instantáneo</li>
-              <li>• Escalación inteligente de alerts</li>
-              <li>• War room automation</li>
-            </ul>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-6 border border-violet-500/20">
-            <div class="text-3xl mb-4">📊</div>
-            <h3 class="text-xl font-semibold text-white mb-3">Performance Optimization</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• Bottleneck identification</li>
-              <li>• Resource optimization</li>
-              <li>• Code-level insights</li>
-              <li>• Database query analysis</li>
-            </ul>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-6 border border-indigo-500/20">
-            <div class="text-3xl mb-4">🚀</div>
-            <h3 class="text-xl font-semibold text-white mb-3">Release Intelligence</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• Deployment impact analysis</li>
-              <li>• Canary release monitoring</li>
-              <li>• Feature flag optimization</li>
-              <li>• Rollback recommendations</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Ejemplos Prácticos -->
-      <section id="ejemplos" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">💡 Casos Reales</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-purple-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🕸️ Microservices Cascade Failure Detection</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-purple-300 mb-2">Escenario</div>
-                  <p class="text-gray-400 text-sm">
-                    E-commerce platform con 50+ microservices. Un servicio de pricing 
-                    empieza a tener latencia alta durante Black Friday.
-                  </p>
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-purple-400 hover:text-purple-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#capacidades"
+                        class="text-gray-400 hover:text-purple-300 whitespace-nowrap transition-colors"
+                        >Capacidades</a
+                    >
+                    <a
+                        href="#casos-uso"
+                        class="text-gray-400 hover:text-purple-300 whitespace-nowrap transition-colors"
+                        >Casos de Uso</a
+                    >
+                    <a
+                        href="#ejemplos"
+                        class="text-gray-400 hover:text-purple-300 whitespace-nowrap transition-colors"
+                        >Ejemplos</a
+                    >
+                    <a
+                        href="#beneficios"
+                        class="text-gray-400 hover:text-purple-300 whitespace-nowrap transition-colors"
+                        >Beneficios</a
+                    >
                 </div>
-                
-                <div class="font-semibold text-violet-300 mb-2">Davis Analysis</div>
-                <ol class="text-gray-400 text-sm space-y-1 list-decimal list-inside">
-                  <li>Detecta anomalía en pricing service (latencia +300%)</li>
-                  <li>Mapea dependencies: 12 services downstream</li>
-                  <li>Predice impacto: checkout process en riesgo</li>
-                  <li>Identifica root cause: database connection pool exhausted</li>
-                </ol>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Davis Alert & Analysis</div>
-                <pre class="text-xs text-purple-400"><code>{`🚨 CRITICAL ALERT
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es Davis? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-purple-900/20 to-indigo-900/20 border border-purple-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🔍 ¿Qué es Dynatrace Davis?
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong>Davis</strong> es el motor de inteligencia
+                                artificial de Dynatrace, diseñado específicamente
+                                para observabilidad y monitoreo de aplicaciones.
+                                Utiliza deterministic AI y machine learning para
+                                analizar automáticamente el comportamiento de aplicaciones
+                                complejas y detectar anomalías antes de que impacten
+                                a los usuarios.
+                            </p>
+
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🎯 Enfoque Único
+                                </h3>
+
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-purple-400">🧠</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Deterministic AI
+                                            </div>
+                                            <div class="text-gray-400">
+                                                No requiere training, funciona
+                                                desde día 1
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-violet-400">🔗</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Causal AI
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Entiende relaciones causa-efecto
+                                                reales
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-indigo-400">⚡</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Real-time Analysis
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Análisis continuo 24/7
+                                                automático
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🚀 Capacidades Core
+                                </h3>
+
+                                <div class="space-y-4 text-sm">
+                                    <div
+                                        class="border-l-4 border-purple-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-purple-300"
+                                        >
+                                            Anomaly Detection
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Detecta problemas antes que los
+                                            usuarios
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-violet-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-violet-300"
+                                        >
+                                            Root Cause Analysis
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Identifica el origen exacto de
+                                            problemas
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-indigo-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-indigo-300"
+                                        >
+                                            Predictive Analytics
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Predice problemas futuros con
+                                            precisión
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-purple-800/20 to-indigo-800/20 rounded-xl p-4 border border-purple-500/20"
+                            >
+                                <div
+                                    class="text-sm text-purple-300 font-medium mb-2"
+                                >
+                                    🎯 Diferenciador Clave
+                                </div>
+                                <p class="text-gray-400 text-sm">
+                                    A diferencia de otros sistemas de monitoreo
+                                    que requieren configuración manual de
+                                    thresholds, Davis aprende automáticamente el
+                                    comportamiento normal de cada aplicación y
+                                    detecta desviaciones sin intervención
+                                    humana.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Capacidades Avanzadas -->
+            <section id="capacidades" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🧠 Capacidades de IA Avanzadas
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-purple-500/20"
+                        >
+                            <div class="text-3xl mb-4">🔍</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Anomaly Detection
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Behavioral Learning:</strong> Aprende
+                                    patrones únicos de cada app
+                                </li>
+                                <li>
+                                    • <strong>Multi-dimensional:</strong> Analiza
+                                    métricas, traces y logs
+                                </li>
+                                <li>
+                                    • <strong>Seasonal Patterns:</strong> Entiende
+                                    ciclos de negocio
+                                </li>
+                                <li>
+                                    • <strong>Early Warning:</strong> Detecta degradación
+                                    antes del impacto
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-violet-500/20"
+                        >
+                            <div class="text-3xl mb-4">🕸️</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Causal Analysis
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Dependency Mapping:</strong> Mapea
+                                    relaciones entre servicios
+                                </li>
+                                <li>
+                                    • <strong>Impact Analysis:</strong> Predice cascading
+                                    effects
+                                </li>
+                                <li>
+                                    • <strong>Topology Awareness:</strong> Entiende
+                                    arquitectura completa
+                                </li>
+                                <li>
+                                    • <strong>Change Correlation:</strong> Conecta
+                                    deployments con issues
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-indigo-500/20"
+                        >
+                            <div class="text-3xl mb-4">🔮</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Predictive Insights
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Capacity Planning:</strong> Predice
+                                    necesidades de recursos
+                                </li>
+                                <li>
+                                    • <strong>Performance Forecasting:</strong> Anticipa
+                                    degradación
+                                </li>
+                                <li>
+                                    • <strong>Failure Prediction:</strong> Identifica
+                                    componentes en riesgo
+                                </li>
+                                <li>
+                                    • <strong>Business Impact:</strong> Cuantifica
+                                    impacto en revenue
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-purple-600/20"
+                        >
+                            <div class="text-3xl mb-4">🤖</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Automated Response
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Auto-scaling:</strong> Ajusta recursos
+                                    automáticamente
+                                </li>
+                                <li>
+                                    • <strong>Self-healing:</strong> Ejecuta remediaciones
+                                    automáticas
+                                </li>
+                                <li>
+                                    • <strong>Circuit Breakers:</strong> Previene
+                                    cascading failures
+                                </li>
+                                <li>
+                                    • <strong>Rollback Triggers:</strong> Revierte
+                                    deployments problemáticos
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Casos de Uso -->
+            <section id="casos-uso" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🛠️ Casos de Uso Críticos
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-purple-500/20"
+                    >
+                        <div class="text-3xl mb-4">🚨</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Incident Response
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Detección automática de outages</li>
+                            <li>• Root cause analysis instantáneo</li>
+                            <li>• Escalación inteligente de alerts</li>
+                            <li>• War room automation</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-violet-500/20"
+                    >
+                        <div class="text-3xl mb-4">📊</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Performance Optimization
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Bottleneck identification</li>
+                            <li>• Resource optimization</li>
+                            <li>• Code-level insights</li>
+                            <li>• Database query analysis</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-indigo-500/20"
+                    >
+                        <div class="text-3xl mb-4">🚀</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Release Intelligence
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Deployment impact analysis</li>
+                            <li>• Canary release monitoring</li>
+                            <li>• Feature flag optimization</li>
+                            <li>• Rollback recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos Prácticos -->
+            <section id="ejemplos" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    💡 Casos Reales
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-purple-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🕸️ Microservices Cascade Failure Detection
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-purple-300 mb-2"
+                                    >
+                                        Escenario
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        E-commerce platform con 50+
+                                        microservices. Un servicio de pricing
+                                        empieza a tener latencia alta durante
+                                        Black Friday.
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-violet-300 mb-2">
+                                    Davis Analysis
+                                </div>
+                                <ol
+                                    class="text-gray-400 text-sm space-y-1 list-decimal list-inside"
+                                >
+                                    <li>
+                                        Detecta anomalía en pricing service
+                                        (latencia +300%)
+                                    </li>
+                                    <li>
+                                        Mapea dependencies: 12 services
+                                        downstream
+                                    </li>
+                                    <li>
+                                        Predice impacto: checkout process en
+                                        riesgo
+                                    </li>
+                                    <li>
+                                        Identifica root cause: database
+                                        connection pool exhausted
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Davis Alert & Analysis
+                                </div>
+                                <pre
+                                    class="text-xs text-purple-400"><code>{`🚨 CRITICAL ALERT
 Service: pricing-service-v2
 Impact: HIGH (Revenue at risk)
 
@@ -275,35 +483,61 @@ RECOMMENDED ACTIONS:
 2. ⚡ Enable read replicas
 3. 🔄 Activate circuit breaker
 4. 📊 Monitor checkout conversion`}</code></pre>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-indigo-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🔮 Predictive Capacity Planning</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-indigo-300 mb-2">Business Context</div>
-                  <p class="text-gray-400 text-sm">
-                    SaaS platform experiencing 40% month-over-month growth. 
-                    CTO necesita planear infrastructure capacity para Q4.
-                  </p>
-                </div>
-                
-                <div class="font-semibold text-purple-300 mb-2">Davis Predictions</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• <strong>User Growth:</strong> +65% en Q4 basado en trends</li>
-                  <li>• <strong>Resource Needs:</strong> CPU +80%, Memory +120%</li>
-                  <li>• <strong>Breaking Points:</strong> Database at 85% capacity en Nov</li>
-                  <li>• <strong>Cost Impact:</strong> $45K additional cloud spend</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Capacity Forecast Report</div>
-                <pre class="text-xs text-indigo-400"><code>{`📊 Q4 CAPACITY FORECAST
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-indigo-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🔮 Predictive Capacity Planning
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-indigo-300 mb-2"
+                                    >
+                                        Business Context
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        SaaS platform experiencing 40%
+                                        month-over-month growth. CTO necesita
+                                        planear infrastructure capacity para Q4.
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-purple-300 mb-2">
+                                    Davis Predictions
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>User Growth:</strong> +65% en Q4
+                                        basado en trends
+                                    </li>
+                                    <li>
+                                        • <strong>Resource Needs:</strong> CPU +80%,
+                                        Memory +120%
+                                    </li>
+                                    <li>
+                                        • <strong>Breaking Points:</strong> Database
+                                        at 85% capacity en Nov
+                                    </li>
+                                    <li>
+                                        • <strong>Cost Impact:</strong> $45K additional
+                                        cloud spend
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Capacity Forecast Report
+                                </div>
+                                <pre
+                                    class="text-xs text-indigo-400"><code>{`📊 Q4 CAPACITY FORECAST
 
 Current Usage (Sept):
 ├─ API Gateway: 2.3M req/day
@@ -332,138 +566,233 @@ Total Q4 increase: $45,400
 2. Implement caching layer (30% load reduction)
 3. Archive old data (save $8K/month)
 4. Consider reserved instances (20% savings)`}</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Beneficios Medibles -->
-      <section id="beneficios" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">📈 Beneficios Medibles</h2>
-        
-        <div class="bg-gray-900 rounded-xl p-8">
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-6">
-              <div class="bg-purple-900/20 border border-purple-600/30 p-6 rounded-xl">
-                <h3 class="text-lg font-semibold text-purple-300 mb-3">⚡ Operational Excellence</h3>
-                <div class="space-y-3 text-sm">
-                  <div class="flex justify-between">
-                    <span class="text-gray-400">MTTR Reduction</span>
-                    <span class="text-white font-bold">-75%</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span class="text-gray-400">False Alert Reduction</span>
-                    <span class="text-white font-bold">-90%</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span class="text-gray-400">Proactive Issue Detection</span>
-                    <span class="text-white font-bold">+85%</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="bg-violet-900/20 border border-violet-600/30 p-6 rounded-xl">
-                <h3 class="text-lg font-semibold text-violet-300 mb-3">💰 Business Impact</h3>
-                <div class="space-y-3 text-sm">
-                  <div class="flex justify-between">
-                    <span class="text-gray-400">Revenue Protection</span>
-                    <span class="text-white font-bold">$2.5M/year</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span class="text-gray-400">Operational Cost Savings</span>
-                    <span class="text-white font-bold">$800K/year</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span class="text-gray-400">Developer Productivity</span>
-                    <span class="text-white font-bold">+40%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="space-y-6">
-              <div class="bg-indigo-900/20 border border-indigo-600/30 p-6 rounded-xl">
-                <h3 class="text-lg font-semibold text-indigo-300 mb-3">🎯 Performance Gains</h3>
-                <div class="space-y-3 text-sm">
-                  <div class="flex justify-between">
-                    <span class="text-gray-400">Application Performance</span>
-                    <span class="text-white font-bold">+35%</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span class="text-gray-400">Resource Utilization</span>
-                    <span class="text-white font-bold">+50%</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span class="text-gray-400">User Experience Score</span>
-                    <span class="text-white font-bold">+60%</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="bg-purple-800/20 border border-purple-500/30 p-6 rounded-xl">
-                <h3 class="text-lg font-semibold text-purple-300 mb-3">🚀 Team Efficiency</h3>
-                <div class="space-y-3 text-sm">
-                  <div class="flex justify-between">
-                    <span class="text-gray-400">On-call Burden</span>
-                    <span class="text-white font-bold">-70%</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span class="text-gray-400">Manual Investigation Time</span>
-                    <span class="text-white font-bold">-80%</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span class="text-gray-400">Feature Delivery Speed</span>
-                    <span class="text-white font-bold">+45%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- Beneficios Medibles -->
+            <section id="beneficios" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    📈 Beneficios Medibles
+                </h2>
 
-      <!-- Integración Dynatrace -->
-      <section class="mb-12">
-        <div class="bg-gradient-to-r from-purple-900/20 to-indigo-900/20 border border-purple-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">🔗 Parte del Ecosistema Dynatrace</h2>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🏢 Dynatrace Platform</h3>
-              <div class="text-gray-400 text-sm mb-4">Davis está integrado nativamente</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Full-stack monitoring</li>
-                <li>• Application Security</li>
-                <li>• Digital Experience Monitoring</li>
-                <li>• Cloud Automation</li>
-              </ul>
-              
-              <div class="mt-4 p-4 bg-purple-900/30 rounded-lg">
-                <div class="text-purple-300 font-medium text-sm">Enterprise Pricing</div>
-                <div class="text-gray-400 text-xs">Contact Dynatrace for custom pricing</div>
-              </div>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🧪 SaaS Trial</h3>
-              <div class="text-gray-400 text-sm mb-4">15-day free trial available</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Full Davis AI capabilities</li>
-                <li>• No installation required</li>
-                <li>• Real-time monitoring</li>
-                <li>• Expert support included</li>
-              </ul>
-              
-              <div class="mt-4 p-4 bg-gray-800 rounded-lg">
-                <div class="text-gray-300 font-medium text-sm">Start Free Trial</div>
-                <div class="text-gray-400 text-xs">No credit card required</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                <div class="bg-gray-900 rounded-xl p-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div
+                                class="bg-purple-900/20 border border-purple-600/30 p-6 rounded-xl"
+                            >
+                                <h3
+                                    class="text-lg font-semibold text-purple-300 mb-3"
+                                >
+                                    ⚡ Operational Excellence
+                                </h3>
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400"
+                                            >MTTR Reduction</span
+                                        >
+                                        <span class="text-white font-bold"
+                                            >-75%</span
+                                        >
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400"
+                                            >False Alert Reduction</span
+                                        >
+                                        <span class="text-white font-bold"
+                                            >-90%</span
+                                        >
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400"
+                                            >Proactive Issue Detection</span
+                                        >
+                                        <span class="text-white font-bold"
+                                            >+85%</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
 
-    </div>
-  </main>
+                            <div
+                                class="bg-violet-900/20 border border-violet-600/30 p-6 rounded-xl"
+                            >
+                                <h3
+                                    class="text-lg font-semibold text-violet-300 mb-3"
+                                >
+                                    💰 Business Impact
+                                </h3>
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400"
+                                            >Revenue Protection</span
+                                        >
+                                        <span class="text-white font-bold"
+                                            >$2.5M/year</span
+                                        >
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400"
+                                            >Operational Cost Savings</span
+                                        >
+                                        <span class="text-white font-bold"
+                                            >$800K/year</span
+                                        >
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400"
+                                            >Developer Productivity</span
+                                        >
+                                        <span class="text-white font-bold"
+                                            >+40%</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div
+                                class="bg-indigo-900/20 border border-indigo-600/30 p-6 rounded-xl"
+                            >
+                                <h3
+                                    class="text-lg font-semibold text-indigo-300 mb-3"
+                                >
+                                    🎯 Performance Gains
+                                </h3>
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400"
+                                            >Application Performance</span
+                                        >
+                                        <span class="text-white font-bold"
+                                            >+35%</span
+                                        >
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400"
+                                            >Resource Utilization</span
+                                        >
+                                        <span class="text-white font-bold"
+                                            >+50%</span
+                                        >
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400"
+                                            >User Experience Score</span
+                                        >
+                                        <span class="text-white font-bold"
+                                            >+60%</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-purple-800/20 border border-purple-500/30 p-6 rounded-xl"
+                            >
+                                <h3
+                                    class="text-lg font-semibold text-purple-300 mb-3"
+                                >
+                                    🚀 Team Efficiency
+                                </h3>
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400"
+                                            >On-call Burden</span
+                                        >
+                                        <span class="text-white font-bold"
+                                            >-70%</span
+                                        >
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400"
+                                            >Manual Investigation Time</span
+                                        >
+                                        <span class="text-white font-bold"
+                                            >-80%</span
+                                        >
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400"
+                                            >Feature Delivery Speed</span
+                                        >
+                                        <span class="text-white font-bold"
+                                            >+45%</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Integración Dynatrace -->
+            <section class="mb-12">
+                <div
+                    class="bg-gradient-to-r from-purple-900/20 to-indigo-900/20 border border-purple-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        🔗 Parte del Ecosistema Dynatrace
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🏢 Dynatrace Platform
+                            </h3>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Davis está integrado nativamente
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Full-stack monitoring</li>
+                                <li>• Application Security</li>
+                                <li>• Digital Experience Monitoring</li>
+                                <li>• Cloud Automation</li>
+                            </ul>
+
+                            <div class="mt-4 p-4 bg-purple-900/30 rounded-lg">
+                                <div
+                                    class="text-purple-300 font-medium text-sm"
+                                >
+                                    Enterprise Pricing
+                                </div>
+                                <div class="text-gray-400 text-xs">
+                                    Contact Dynatrace for custom pricing
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🧪 SaaS Trial
+                            </h3>
+                            <div class="text-gray-400 text-sm mb-4">
+                                15-day free trial available
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Full Davis AI capabilities</li>
+                                <li>• No installation required</li>
+                                <li>• Real-time monitoring</li>
+                                <li>• Expert support included</li>
+                            </ul>
+
+                            <div class="mt-4 p-4 bg-gray-800 rounded-lg">
+                                <div class="text-gray-300 font-medium text-sm">
+                                    Start Free Trial
+                                </div>
+                                <div class="text-gray-400 text-xs">
+                                    No credit card required
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </Layout>

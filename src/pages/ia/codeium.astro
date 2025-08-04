@@ -1,861 +1,1516 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Codeium - Copiloto IA Gratuito | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-cyan-900 via-blue-900 to-indigo-900 py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center text-4xl">
-            🚀
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Codeium</h1>
-            <p class="text-xl text-cyan-300">El Copiloto IA Gratuito</p>
-            <p class="text-gray-400">by Codeium Inc.</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          Codeium es el asistente de código IA completamente gratuito que compite directamente 
-          con GitHub Copilot. Ofrece autocompletado inteligente, chat contextual y soporte 
-          para 70+ lenguajes en más de 40 IDEs.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-cyan-400 hover:text-cyan-300 whitespace-nowrap transition-colors">¿Qué es?</a>
-          <a href="#caracteristicas" class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors">Características</a>
-          <a href="#comparacion" class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors">vs Copilot</a>
-          <a href="#casos-uso" class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors">Casos de Uso</a>
-          <a href="#configuracion" class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors">Configuración</a>
-          <a href="#empresas" class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors">Para Empresas</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- ¿Qué es Codeium? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 border border-cyan-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">¿Por qué Codeium está revolucionando el desarrollo?</h2>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <div>
-              <p class="text-gray-300 text-lg leading-relaxed mb-6">
-                Codeium rompe las barreras de entrada de la programación asistida por IA. 
-                Es <strong>completamente gratuito</strong> para desarrolladores individuales, 
-                sin límites de uso, y ofrece características premium que otros cobran.
-              </p>
-              
-              <div class="space-y-4">
-                <div class="flex items-start gap-3">
-                  <span class="text-cyan-400 text-xl">💝</span>
-                  <div>
-                    <h3 class="text-white font-semibold">100% Gratuito</h3>
-                    <p class="text-gray-400 text-sm">Sin límites, sin restricciones, sin tarjeta de crédito</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start gap-3">
-                  <span class="text-cyan-400 text-xl">🌍</span>
-                  <div>
-                    <h3 class="text-white font-semibold">Universal</h3>
-                    <p class="text-gray-400 text-sm">40+ IDEs, 70+ lenguajes, todas las plataformas</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start gap-3">
-                  <span class="text-cyan-400 text-xl">⚡</span>
-                  <div>
-                    <h3 class="text-white font-semibold">Rendimiento Superior</h3>
-                    <p class="text-gray-400 text-sm">Más rápido que Copilot, mejor precisión</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start gap-3">
-                  <span class="text-cyan-400 text-xl">🔐</span>
-                  <div>
-                    <h3 class="text-white font-semibold">Privacidad First</h3>
-                    <p class="text-gray-400 text-sm">No entrena con tu código, encriptación E2E</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="space-y-6">
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🎯 Planes Disponibles</h3>
-                
-                <div class="space-y-4">
-                  <div class="border border-cyan-500/50 rounded-lg p-4 bg-cyan-900/10">
-                    <div class="flex justify-between items-center mb-2">
-                      <h4 class="font-semibold text-white">Codeium Individual</h4>
-                      <span class="text-cyan-400 font-bold">GRATIS</span>
-                    </div>
-                    <ul class="text-sm text-gray-300 space-y-1">
-                      <li>• Autocompletado ilimitado</li>
-                      <li>• Chat con codebase</li>
-                      <li>• Command para editar código</li>
-                      <li>• 70+ lenguajes de programación</li>
-                      <li>• 40+ integraciones IDE</li>
-                    </ul>
-                  </div>
-                  
-                  <div class="border border-gray-700 rounded-lg p-4">
-                    <div class="flex justify-between items-center mb-2">
-                      <h4 class="font-semibold text-gray-300">Codeium Teams</h4>
-                      <span class="text-cyan-400 font-bold">$12/usuario/mes</span>
-                    </div>
-                    <ul class="text-sm text-gray-400 space-y-1">
-                      <li>• Todo de Individual</li>
-                      <li>• Admin dashboard</li>
-                      <li>• Usage analytics</li>
-                      <li>• Priority support</li>
-                    </ul>
-                  </div>
-                  
-                  <div class="border border-gray-700 rounded-lg p-4">
-                    <div class="flex justify-between items-center mb-2">
-                      <h4 class="font-semibold text-gray-300">Codeium Enterprise</h4>
-                      <span class="text-cyan-400 font-bold">Custom</span>
-                    </div>
-                    <ul class="text-sm text-gray-400 space-y-1">
-                      <li>• Self-hosted deployment</li>
-                      <li>• Fine-tuned models</li>
-                      <li>• Advanced security</li>
-                      <li>• SLA guarantees</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="bg-cyan-900/20 border border-cyan-500/30 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-3">🏆 Ventajas Clave</h3>
-                <ul class="space-y-2 text-gray-300 text-sm">
-                  <li>• <strong>Zero Cost:</strong> Gratuito para siempre, sin catch</li>
-                  <li>• <strong>Better Performance:</strong> 35% más rápido que Copilot</li>
-                  <li>• <strong>More Languages:</strong> Soporte para 70+ lenguajes</li>
-                  <li>• <strong>Privacy-focused:</strong> Tu código no se usa para entrenamiento</li>
-                  <li>• <strong>No Limits:</strong> Sin restricciones de uso diario</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Características -->
-      <section id="caracteristicas" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🚀 Características Principales</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Autocomplete -->
-          <div class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              ⚡
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Autocomplete Inteligente</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Single-line suggestions</li>
-              <li>• Multi-line completions</li>
-              <li>• Function-level generation</li>
-              <li>• Context-aware predictions</li>
-              <li>• Natural language to code</li>
-            </ul>
-          </div>
-          
-          <!-- Chat -->
-          <div class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              💬
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Codeium Chat</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Conversaciones sobre código</li>
-              <li>• Explicación de funciones</li>
-              <li>• Debugging assistance</li>
-              <li>• Code optimization tips</li>
-              <li>• Architecture discussions</li>
-            </ul>
-          </div>
-          
-          <!-- Command -->
-          <div class="bg-green-900/20 border border-green-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              🎯
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Command Actions</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Refactor código existente</li>
-              <li>• Generar documentación</li>
-              <li>• Añadir tests unitarios</li>
-              <li>• Optimizar performance</li>
-              <li>• Fix bugs automáticamente</li>
-            </ul>
-          </div>
-          
-          <!-- Language Support -->
-          <div class="bg-orange-900/20 border border-orange-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              🌐
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Soporte Universal</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• 70+ lenguajes de programación</li>
-              <li>• 40+ IDEs y editores</li>
-              <li>• Web frameworks modernos</li>
-              <li>• Mobile development</li>
-              <li>• DevOps y Infrastructure</li>
-            </ul>
-          </div>
-          
-          <!-- Performance -->
-          <div class="bg-yellow-900/20 border border-yellow-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              🎭
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Performance</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Latencia &lt;100ms</li>
-              <li>• 35% más rápido que Copilot</li>
-              <li>• Mejor accuracy rate</li>
-              <li>• Menor consumo de memoria</li>
-              <li>• Offline fallback</li>
-            </ul>
-          </div>
-          
-          <!-- Privacy -->
-          <div class="bg-red-900/20 border border-red-500/20 rounded-xl p-6">
-            <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center text-2xl mb-4">
-              🔒
-            </div>
-            <h3 class="text-lg font-semibold text-white mb-3">Privacidad</h3>
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• No training en tu código</li>
-              <li>• Encriptación end-to-end</li>
-              <li>• Zero data retention</li>
-              <li>• GDPR compliant</li>
-              <li>• SOC 2 Type II certified</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Comparación vs Copilot -->
-      <section id="comparacion" class="mb-20">
-        <div class="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">⚖️ Codeium vs GitHub Copilot</h2>
-          
-          <div class="overflow-x-auto">
-            <table class="w-full text-sm">
-              <thead>
-                <tr class="border-b border-gray-700">
-                  <th class="text-left text-white p-4">Característica</th>
-                  <th class="text-center text-cyan-400 p-4">Codeium</th>
-                  <th class="text-center text-gray-400 p-4">GitHub Copilot</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-b border-gray-800">
-                  <td class="p-4 text-gray-300">Precio Individual</td>
-                  <td class="p-4 text-center text-green-400 font-bold">GRATIS</td>
-                  <td class="p-4 text-center text-red-400">$10/mes</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="p-4 text-gray-300">Límites de Uso</td>
-                  <td class="p-4 text-center text-green-400">Ninguno</td>
-                  <td class="p-4 text-center text-yellow-400">Según plan</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="p-4 text-gray-300">IDEs Soportados</td>
-                  <td class="p-4 text-center text-green-400">40+</td>
-                  <td class="p-4 text-center text-yellow-400">15+</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="p-4 text-gray-300">Lenguajes</td>
-                  <td class="p-4 text-center text-green-400">70+</td>
-                  <td class="p-4 text-center text-yellow-400">100+</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="p-4 text-gray-300">Chat Features</td>
-                  <td class="p-4 text-center text-green-400">✅ Gratis</td>
-                  <td class="p-4 text-center text-yellow-400">❌ Solo en VS Code</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="p-4 text-gray-300">Command/Actions</td>
-                  <td class="p-4 text-center text-green-400">✅ Incluido</td>
-                  <td class="p-4 text-center text-red-400">❌ No disponible</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="p-4 text-gray-300">Privacy Training</td>
-                  <td class="p-4 text-center text-green-400">No usa tu código</td>
-                  <td class="p-4 text-center text-yellow-400">Opt-out disponible</td>
-                </tr>
-                <tr class="border-b border-gray-800">
-                  <td class="p-4 text-gray-300">Latencia</td>
-                  <td class="p-4 text-center text-green-400">&lt;100ms</td>
-                  <td class="p-4 text-center text-yellow-400">150-300ms</td>
-                </tr>
-                <tr>
-                  <td class="p-4 text-gray-300">Enterprise Options</td>
-                  <td class="p-4 text-center text-green-400">Self-hosted</td>
-                  <td class="p-4 text-center text-green-400">Enterprise Cloud</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-            <div class="bg-green-900/20 border border-green-500/30 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-green-400 mb-4">✅ Ventajas de Codeium</h3>
-              <ul class="text-gray-300 text-sm space-y-2">
-                <li>• <strong>Completamente gratuito</strong> para uso individual</li>
-                <li>• <strong>Más rápido</strong> en respuestas y sugerencias</li>
-                <li>• <strong>Mejor soporte</strong> para IDEs diversos</li>
-                <li>• <strong>Chat integrado</strong> sin costo adicional</li>
-                <li>• <strong>Command features</strong> para refactoring</li>
-                <li>• <strong>Privacy-first</strong> approach por defecto</li>
-              </ul>
-            </div>
-            
-            <div class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-orange-400 mb-4">⚠️ Ventajas de Copilot</h3>
-              <ul class="text-gray-300 text-sm space-y-2">
-                <li>• <strong>Más maduro</strong> en el mercado</li>
-                <li>• <strong>Integración nativa</strong> con GitHub</li>
-                <li>• <strong>Modelo más grande</strong> de entrenamiento</li>
-                <li>• <strong>Mejor para código complejo</strong> en algunos casos</li>
-                <li>• <strong>Documentación extensa</strong> y comunidad</li>
-                <li>• <strong>Enterprise features</strong> más establecidas</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Casos de Uso -->
-      <section id="casos-uso" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🎯 Casos de Uso Reales</h2>
-        
-        <!-- Startup Development -->
-        <div class="bg-green-900/20 border border-green-500/20 rounded-xl p-8 mb-8">
-          <h3 class="text-xl font-semibold text-white mb-6">🚀 Caso 1: Startup con Presupuesto Limitado</h3>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <h4 class="font-semibold text-green-400 mb-3">💡 Escenario:</h4>
-              <div class="bg-black rounded-lg p-4 mb-4">
-                <p class="text-gray-300 text-sm">
-                  Startup de 4 desarrolladores necesita acelerar el desarrollo de su MVP. 
-                  Presupuesto limitado, pero necesitan herramientas de IA para competir. 
-                  No pueden permitirse $40/mes por GitHub Copilot para todo el equipo.
-                </p>
-              </div>
-              
-              <h4 class="font-semibold text-yellow-400 mb-3">⚡ Solución con Codeium:</h4>
-              <ul class="text-gray-300 text-sm space-y-2">
-                <li>• Implementación gratuita para todo el equipo</li>
-                <li>• Chat integrado para debugging colaborativo</li>
-                <li>• Commands para generar tests automáticamente</li>
-                <li>• Autocompletado en todos los IDEs del equipo</li>
-                <li>• Sin límites de uso o restricciones</li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 class="font-semibold text-blue-400 mb-3">💻 Workflow Típico:</h4>
-              <div class="bg-gray-900 rounded-lg p-4 space-y-4 text-sm">
-                <div class="bg-black rounded p-3">
-                  <div class="text-green-400 text-xs mb-1">Frontend Dev:</div>
-                  <code class="text-gray-300 text-xs">
-                    // Escribe comment: "Create responsive navbar component"<br/>
-                    // Codeium genera React component completo con CSS
-                  </code>
-                </div>
-                
-                <div class="bg-black rounded p-3">
-                  <div class="text-blue-400 text-xs mb-1">Backend Dev:</div>
-                  <code class="text-cyan-400 text-xs">
-                    // Usa Chat: "How to implement JWT auth with refresh tokens?"<br/>
-                    // Recibe implementación completa + security best practices
-                  </code>
-                </div>
-                
-                <div class="bg-black rounded p-3">
-                  <div class="text-orange-400 text-xs mb-1">QA Dev:</div>
-                  <code class="text-yellow-400 text-xs">
-                    // Selecciona función → Command "Generate unit tests"<br/>
-                    // Codeium crea test suite completa con edge cases
-                  </code>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="mt-6 bg-green-900/30 border border-green-500/30 rounded-xl p-6">
-            <h4 class="text-lg font-semibold text-white mb-3">📊 Ahorro Real</h4>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-              <div class="text-center">
-                <div class="text-2xl font-bold text-green-400 mb-1">$480</div>
-                <div class="text-gray-300">Ahorro anual vs Copilot</div>
-                <div class="text-gray-400 text-xs">(4 devs × $10/mes × 12 meses)</div>
-              </div>
-              <div class="text-center">
-                <div class="text-2xl font-bold text-green-400 mb-1">3x</div>
-                <div class="text-gray-300">Velocidad de desarrollo</div>
-                <div class="text-gray-400 text-xs">Time-to-market mejorado</div>
-              </div>
-              <div class="text-center">
-                <div class="text-2xl font-bold text-green-400 mb-1">0</div>
-                <div class="text-gray-300">Vendor lock-in</div>
-                <div class="text-gray-400 text-xs">Libertad total de uso</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Learning & Education -->
-        <div class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-8 mb-8">
-          <h3 class="text-xl font-semibold text-white mb-6">📚 Caso 2: Aprendizaje y Educación</h3>
-          
-          <div class="space-y-6">
-            <div>
-              <h4 class="font-semibold text-purple-400 mb-3">🎓 Escenario Educativo:</h4>
-              <div class="bg-black rounded-lg p-4">
-                <p class="text-gray-300 text-sm">
-                  Universidad quiere implementar IA en sus cursos de programación. 
-                  Necesita herramienta gratuita para 200+ estudiantes, que les ayude 
-                  a aprender sin crear dependencia o "trampa académica".
-                </p>
-              </div>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div>
-                <h4 class="font-semibold text-green-400 mb-3">📖 Codeium para Estudiantes:</h4>
-                <div class="bg-gray-900 rounded-lg p-4 space-y-3">
-                  <div>
-                    <h5 class="font-semibold text-yellow-400 text-sm mb-2">Aprendizaje Activo</h5>
-                    <ul class="text-gray-300 text-xs space-y-1">
-                      <li>• Explica código línea por línea</li>
-                      <li>• Sugiere mejores prácticas</li>
-                      <li>• Ayuda con debugging educativo</li>
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h5 class="font-semibold text-blue-400 text-sm mb-2">Mentor Virtual</h5>
-                    <ul class="text-gray-300 text-xs space-y-1">
-                      <li>• Chat para conceptos complejos</li>
-                      <li>• Ejercicios personalizados</li>
-                      <li>• Code review automático</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              
-              <div>
-                <h4 class="font-semibold text-orange-400 mb-3">👨‍🏫 Para Profesores:</h4>
-                <div class="bg-gray-900 rounded-lg p-4 space-y-3">
-                  <div>
-                    <h5 class="font-semibold text-green-400 text-sm mb-2">Herramientas Docentes</h5>
-                    <ul class="text-gray-300 text-xs space-y-1">
-                      <li>• Generación de ejercicios</li>
-                      <li>• Tests automáticos</li>
-                      <li>• Ejemplos de código</li>
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h5 class="font-semibold text-purple-400 text-sm mb-2">Sin Costo</h5>
-                    <ul class="text-gray-300 text-xs space-y-1">
-                      <li>• $0 presupuesto requerido</li>
-                      <li>• Ilimitados estudiantes</li>
-                      <li>• Acceso completo a features</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Migration from Copilot -->
-        <div class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-8">
-          <h3 class="text-xl font-semibold text-white mb-6">🔄 Caso 3: Migración desde GitHub Copilot</h3>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <h4 class="font-semibold text-blue-400 mb-3">💸 ¿Por qué migrar?</h4>
-              <div class="bg-black rounded-lg p-4 mb-4">
-                <p class="text-gray-300 text-sm mb-3">
-                  Empresa con 20 desarrolladores paga $200/mes por Copilot. 
-                  Buscan reducir costos sin perder productividad.
-                </p>
-                <div class="text-red-400 text-xs font-semibold">
-                  Costo anual actual: $2,400
-                </div>
-              </div>
-              
-              <h4 class="font-semibold text-green-400 mb-3">📋 Plan de Migración:</h4>
-              <ol class="text-gray-300 text-sm space-y-2">
-                <li>1. <strong>Piloto:</strong> 5 devs testan Codeium 1 semana</li>
-                <li>2. <strong>Comparación:</strong> Métricas de productividad</li>
-                <li>3. <strong>Gradual:</strong> Migración por equipos</li>
-                <li>4. <strong>Training:</strong> Capacitación en features únicas</li>
-                <li>5. <strong>Full switch:</strong> Cancelación de Copilot</li>
-              </ol>
-            </div>
-            
-            <div>
-              <h4 class="font-semibold text-orange-400 mb-3">📊 Resultados Post-Migración:</h4>
-              <div class="bg-gray-900 rounded-lg p-4 space-y-4">
-                <div class="grid grid-cols-2 gap-4 text-sm">
-                  <div class="bg-black rounded p-3 text-center">
-                    <div class="text-2xl font-bold text-green-400 mb-1">$2,400</div>
-                    <div class="text-gray-300 text-xs">Ahorro anual</div>
-                  </div>
-                  
-                  <div class="bg-black rounded p-3 text-center">
-                    <div class="text-2xl font-bold text-blue-400 mb-1">15%</div>
-                    <div class="text-gray-300 text-xs">Mejor latencia</div>
-                  </div>
-                  
-                  <div class="bg-black rounded p-3 text-center">
-                    <div class="text-2xl font-bold text-purple-400 mb-1">100%</div>
-                    <div class="text-gray-300 text-xs">Feature parity</div>
-                  </div>
-                  
-                  <div class="bg-black rounded p-3 text-center">
-                    <div class="text-2xl font-bold text-orange-400 mb-1">95%</div>
-                    <div class="text-gray-300 text-xs">Team satisfaction</div>
-                  </div>
-                </div>
-                
-                <div class="bg-black rounded p-3">
-                  <h5 class="font-semibold text-yellow-400 text-sm mb-2">Feedback del Equipo:</h5>
-                  <ul class="text-gray-300 text-xs space-y-1">
-                    <li>• "Misma calidad, gratis"</li>
-                    <li>• "Chat integrado es game-changer"</li>
-                    <li>• "Commands ahorran mucho tiempo"</li>
-                    <li>• "Mejor en IDEs que no son VS Code"</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Configuración -->
-      <section id="configuracion" class="mb-20">
-        <div class="bg-gradient-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">⚙️ Configuración y Setup</h2>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">🚀 Installation Rápida</h3>
-              
-              <div class="space-y-4">
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-indigo-400 mb-2">1. VS Code Extension</h4>
-                  <div class="bg-gray-900 rounded p-3 text-xs">
-                    <code class="text-gray-300">
-                      # En VS Code Extensions<br/>
-                      Search: "Codeium"<br/>
-                      Install → Sign Up → Start Coding
-                    </code>
-                  </div>
-                  <p class="text-gray-400 text-xs mt-2">2 minutos, sin tarjeta de crédito</p>
-                </div>
-                
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-indigo-400 mb-2">2. JetBrains IDEs</h4>
-                  <div class="bg-gray-900 rounded p-3 text-xs">
-                    <code class="text-gray-300">
-                      # IntelliJ, PyCharm, WebStorm...<br/>
-                      Settings → Plugins → Search "Codeium"<br/>
-                      Install → Restart → Auth
-                    </code>
-                  </div>
-                  <p class="text-gray-400 text-xs mt-2">Compatible con todos los IDEs JetBrains</p>
-                </div>
-                
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-indigo-400 mb-2">3. Vim/Neovim</h4>
-                  <div class="bg-gray-900 rounded p-3 text-xs">
-                    <code class="text-gray-300">
-                      # Plugin manager (vim-plug, packer, etc.)<br/>
-                      Plug 'Exafunction/codeium.vim'<br/>
-                      :PlugInstall → :Codeium Auth
-                    </code>
-                  </div>
-                  <p class="text-gray-400 text-xs mt-2">Native support para Vim users</p>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">🎯 Configuración Avanzada</h3>
-              
-              <div class="bg-gray-900 rounded-xl p-6 mb-6">
-                <h4 class="font-semibold text-white mb-4">⚡ Settings Optimizadas</h4>
-                <div class="bg-black rounded p-4 text-xs overflow-x-auto">
-                  <code class="text-gray-300">
-                    <span class="text-green-400">// settings.json (VS Code)</span><br/>
-                    &#123;<br/>
-                    &nbsp;&nbsp;<span class="text-blue-400">"codeium.enableSearch":</span> <span class="text-orange-400">true</span>,<br/>
-                    &nbsp;&nbsp;<span class="text-blue-400">"codeium.enableCodeLens":</span> <span class="text-orange-400">true</span>,<br/>
-                    &nbsp;&nbsp;<span class="text-blue-400">"codeium.enableInlineCompletion":</span> <span class="text-orange-400">true</span>,<br/>
-                    &nbsp;&nbsp;<span class="text-blue-400">"codeium.aggressiveMode":</span> <span class="text-orange-400">true</span>,<br/>
-                    &nbsp;&nbsp;<span class="text-blue-400">"codeium.numSuggestions":</span> <span class="text-yellow-400">3</span><br/>
-                    &#125;
-                  </code>
-                </div>
-              </div>
-              
-              <div class="space-y-4">
-                <div class="bg-indigo-900/20 border border-indigo-500/30 rounded-xl p-6">
-                  <h4 class="text-lg font-semibold text-white mb-3">🎨 Personalización</h4>
-                  <ul class="space-y-2 text-gray-300 text-sm">
-                    <li>• <strong>Keybindings:</strong> Personaliza shortcuts</li>
-                    <li>• <strong>Language priority:</strong> Optimiza para tu stack</li>
-                    <li>• <strong>Suggestion frequency:</strong> Ajusta agresividad</li>
-                    <li>• <strong>Theme integration:</strong> Match con tu IDE theme</li>
-                  </ul>
-                </div>
-                
-                <div class="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6">
-                  <h4 class="text-lg font-semibold text-white mb-3">🔧 Team Setup</h4>
-                  <ul class="space-y-2 text-gray-300 text-sm">
-                    <li>• <strong>Shared configs:</strong> Distribuir settings del equipo</li>
-                    <li>• <strong>Code style:</strong> Mantener consistencia</li>
-                    <li>• <strong>Project context:</strong> Setup por proyecto</li>
-                    <li>• <strong>Analytics:</strong> Métricas de productividad</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Para Empresas -->
-      <section id="empresas" class="mb-20">
-        <div class="bg-gradient-to-r from-gray-900/20 to-slate-900/20 border border-gray-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">🏢 Codeium para Empresas</h2>
-          
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">💼 Enterprise Features</h3>
-              
-              <div class="space-y-4">
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-blue-400 mb-2">🔒 Security & Compliance</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• SOC 2 Type II certification</li>
-                    <li>• GDPR compliance</li>
-                    <li>• Self-hosted deployment</li>
-                    <li>• Air-gapped environments</li>
-                    <li>• Custom data retention policies</li>
-                  </ul>
-                </div>
-                
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-green-400 mb-2">👥 Team Management</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• Centralized user management</li>
-                    <li>• Usage analytics dashboard</li>
-                    <li>• Seat management</li>
-                    <li>• Role-based permissions</li>
-                    <li>• Integration con SSO/SAML</li>
-                  </ul>
-                </div>
-                
-                <div class="bg-black/30 rounded-lg p-4">
-                  <h4 class="font-semibold text-purple-400 mb-2">🚀 Custom Models</h4>
-                  <ul class="text-gray-300 text-sm space-y-1">
-                    <li>• Fine-tuning en tu codebase</li>
-                    <li>• Custom training data</li>
-                    <li>• Private model hosting</li>
-                    <li>• API access exclusivo</li>
-                    <li>• Performance optimization</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h3 class="text-xl font-semibold text-white mb-6">📊 ROI y Business Case</h3>
-              
-              <div class="bg-gray-900 rounded-xl p-6 mb-6">
-                <h4 class="font-semibold text-white mb-4">💰 Cost Comparison (100 devs)</h4>
-                <div class="space-y-3">
-                  <div class="flex justify-between items-center p-3 bg-black rounded">
-                    <span class="text-gray-300">GitHub Copilot</span>
-                    <span class="text-red-400 font-bold">$12,000/año</span>
-                  </div>
-                  <div class="flex justify-between items-center p-3 bg-black rounded">
-                    <span class="text-gray-300">Codeium Individual</span>
-                    <span class="text-green-400 font-bold">$0/año</span>
-                  </div>
-                  <div class="flex justify-between items-center p-3 bg-black rounded">
-                    <span class="text-gray-300">Codeium Teams</span>
-                    <span class="text-cyan-400 font-bold">$14,400/año</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="space-y-6">
-                <div class="bg-green-900/20 border border-green-500/30 rounded-xl p-6">
-                  <h4 class="text-lg font-semibold text-white mb-3">📈 Productivity Gains</h4>
-                  <div class="grid grid-cols-2 gap-4 text-center">
-                    <div>
-                      <div class="text-2xl font-bold text-green-400 mb-1">40%</div>
-                      <div class="text-gray-300 text-sm">Faster coding</div>
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-cyan-900 via-blue-900 to-indigo-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🚀
                     </div>
                     <div>
-                      <div class="text-2xl font-bold text-blue-400 mb-1">60%</div>
-                      <div class="text-gray-300 text-sm">Less debugging</div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            Codeium
+                        </h1>
+                        <p class="text-xl text-cyan-300">
+                            El Copiloto IA Gratuito
+                        </p>
+                        <p class="text-gray-400">by Codeium Inc.</p>
                     </div>
-                  </div>
                 </div>
-                
-                <div class="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6">
-                  <h4 class="text-lg font-semibold text-white mb-3">🎯 Implementation Plan</h4>
-                  <ul class="space-y-2 text-gray-300 text-sm">
-                    <li>• <strong>Week 1-2:</strong> Pilot con 10% del team</li>
-                    <li>• <strong>Week 3-4:</strong> Metrics analysis & feedback</li>
-                    <li>• <strong>Month 2:</strong> Gradual rollout</li>
-                    <li>• <strong>Month 3:</strong> Full deployment & training</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- Call to Action -->
-      <section class="text-center">
-        <div class="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 border border-cyan-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-4">¿Listo para programar sin límites? 🚀</h2>
-          <p class="text-xl text-gray-300 mb-8">
-            Codeium democratiza la programación asistida por IA. Todas las características premium, 
-            completamente gratis, sin restricciones. Empieza ahora mismo.
-          </p>
-          
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://codeium.com" target="_blank" rel="noopener noreferrer" 
-               class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105">
-              Empezar Gratis
-            </a>
-            <a href="/herramientas-ia" 
-               class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300">
-              Ver Otras IAs
-            </a>
-          </div>
-          
-          <div class="mt-6 flex justify-center gap-8 text-sm text-gray-400">
-            <span>✅ 100% Gratuito</span>
-            <span>✅ Sin límites de uso</span>
-            <span>✅ Setup en 2 minutos</span>
-          </div>
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    Codeium es el asistente de código IA completamente gratuito
+                    que compite directamente con GitHub Copilot. Ofrece
+                    autocompletado inteligente, chat contextual y soporte para
+                    70+ lenguajes en más de 40 IDEs.
+                </p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-cyan-400 hover:text-cyan-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#caracteristicas"
+                        class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors"
+                        >Características</a
+                    >
+                    <a
+                        href="#comparacion"
+                        class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors"
+                        >vs Copilot</a
+                    >
+                    <a
+                        href="#casos-uso"
+                        class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors"
+                        >Casos de Uso</a
+                    >
+                    <a
+                        href="#configuracion"
+                        class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors"
+                        >Configuración</a
+                    >
+                    <a
+                        href="#empresas"
+                        class="text-gray-400 hover:text-cyan-300 whitespace-nowrap transition-colors"
+                        >Para Empresas</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es Codeium? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 border border-cyan-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        ¿Por qué Codeium está revolucionando el desarrollo?
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <p
+                                class="text-gray-300 text-lg leading-relaxed mb-6"
+                            >
+                                Codeium rompe las barreras de entrada de la
+                                programación asistida por IA. Es <strong
+                                    >completamente gratuito</strong
+                                > para desarrolladores individuales, sin límites
+                                de uso, y ofrece características premium que otros
+                                cobran.
+                            </p>
+
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-cyan-400 text-xl">💝</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            100% Gratuito
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Sin límites, sin restricciones, sin
+                                            tarjeta de crédito
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-cyan-400 text-xl">🌍</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Universal
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            40+ IDEs, 70+ lenguajes, todas las
+                                            plataformas
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-cyan-400 text-xl">⚡</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Rendimiento Superior
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Más rápido que Copilot, mejor
+                                            precisión
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-cyan-400 text-xl">🔐</span
+                                    >
+                                    <div>
+                                        <h3 class="text-white font-semibold">
+                                            Privacidad First
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            No entrena con tu código,
+                                            encriptación E2E
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🎯 Planes Disponibles
+                                </h3>
+
+                                <div class="space-y-4">
+                                    <div
+                                        class="border border-cyan-500/50 rounded-lg p-4 bg-cyan-900/10"
+                                    >
+                                        <div
+                                            class="flex justify-between items-center mb-2"
+                                        >
+                                            <h4
+                                                class="font-semibold text-white"
+                                            >
+                                                Codeium Individual
+                                            </h4>
+                                            <span
+                                                class="text-cyan-400 font-bold"
+                                                >GRATIS</span
+                                            >
+                                        </div>
+                                        <ul
+                                            class="text-sm text-gray-300 space-y-1"
+                                        >
+                                            <li>• Autocompletado ilimitado</li>
+                                            <li>• Chat con codebase</li>
+                                            <li>
+                                                • Command para editar código
+                                            </li>
+                                            <li>
+                                                • 70+ lenguajes de programación
+                                            </li>
+                                            <li>• 40+ integraciones IDE</li>
+                                        </ul>
+                                    </div>
+
+                                    <div
+                                        class="border border-gray-700 rounded-lg p-4"
+                                    >
+                                        <div
+                                            class="flex justify-between items-center mb-2"
+                                        >
+                                            <h4
+                                                class="font-semibold text-gray-300"
+                                            >
+                                                Codeium Teams
+                                            </h4>
+                                            <span
+                                                class="text-cyan-400 font-bold"
+                                                >$12/usuario/mes</span
+                                            >
+                                        </div>
+                                        <ul
+                                            class="text-sm text-gray-400 space-y-1"
+                                        >
+                                            <li>• Todo de Individual</li>
+                                            <li>• Admin dashboard</li>
+                                            <li>• Usage analytics</li>
+                                            <li>• Priority support</li>
+                                        </ul>
+                                    </div>
+
+                                    <div
+                                        class="border border-gray-700 rounded-lg p-4"
+                                    >
+                                        <div
+                                            class="flex justify-between items-center mb-2"
+                                        >
+                                            <h4
+                                                class="font-semibold text-gray-300"
+                                            >
+                                                Codeium Enterprise
+                                            </h4>
+                                            <span
+                                                class="text-cyan-400 font-bold"
+                                                >Custom</span
+                                            >
+                                        </div>
+                                        <ul
+                                            class="text-sm text-gray-400 space-y-1"
+                                        >
+                                            <li>• Self-hosted deployment</li>
+                                            <li>• Fine-tuned models</li>
+                                            <li>• Advanced security</li>
+                                            <li>• SLA guarantees</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-cyan-900/20 border border-cyan-500/30 rounded-xl p-6"
+                            >
+                                <h3
+                                    class="text-lg font-semibold text-white mb-3"
+                                >
+                                    🏆 Ventajas Clave
+                                </h3>
+                                <ul class="space-y-2 text-gray-300 text-sm">
+                                    <li>
+                                        • <strong>Zero Cost:</strong> Gratuito para
+                                        siempre, sin catch
+                                    </li>
+                                    <li>
+                                        • <strong>Better Performance:</strong> 35%
+                                        más rápido que Copilot
+                                    </li>
+                                    <li>
+                                        • <strong>More Languages:</strong> Soporte
+                                        para 70+ lenguajes
+                                    </li>
+                                    <li>
+                                        • <strong>Privacy-focused:</strong> Tu código
+                                        no se usa para entrenamiento
+                                    </li>
+                                    <li>
+                                        • <strong>No Limits:</strong> Sin restricciones
+                                        de uso diario
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Características -->
+            <section id="caracteristicas" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🚀 Características Principales
+                </h2>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                    <!-- Autocomplete -->
+                    <div
+                        class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            ⚡
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Autocomplete Inteligente
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Single-line suggestions</li>
+                            <li>• Multi-line completions</li>
+                            <li>• Function-level generation</li>
+                            <li>• Context-aware predictions</li>
+                            <li>• Natural language to code</li>
+                        </ul>
+                    </div>
+
+                    <!-- Chat -->
+                    <div
+                        class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            💬
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Codeium Chat
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Conversaciones sobre código</li>
+                            <li>• Explicación de funciones</li>
+                            <li>• Debugging assistance</li>
+                            <li>• Code optimization tips</li>
+                            <li>• Architecture discussions</li>
+                        </ul>
+                    </div>
+
+                    <!-- Command -->
+                    <div
+                        class="bg-green-900/20 border border-green-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🎯
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Command Actions
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Refactor código existente</li>
+                            <li>• Generar documentación</li>
+                            <li>• Añadir tests unitarios</li>
+                            <li>• Optimizar performance</li>
+                            <li>• Fix bugs automáticamente</li>
+                        </ul>
+                    </div>
+
+                    <!-- Language Support -->
+                    <div
+                        class="bg-orange-900/20 border border-orange-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🌐
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Soporte Universal
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• 70+ lenguajes de programación</li>
+                            <li>• 40+ IDEs y editores</li>
+                            <li>• Web frameworks modernos</li>
+                            <li>• Mobile development</li>
+                            <li>• DevOps y Infrastructure</li>
+                        </ul>
+                    </div>
+
+                    <!-- Performance -->
+                    <div
+                        class="bg-yellow-900/20 border border-yellow-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🎭
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Performance
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• Latencia &lt;100ms</li>
+                            <li>• 35% más rápido que Copilot</li>
+                            <li>• Mejor accuracy rate</li>
+                            <li>• Menor consumo de memoria</li>
+                            <li>• Offline fallback</li>
+                        </ul>
+                    </div>
+
+                    <!-- Privacy -->
+                    <div
+                        class="bg-red-900/20 border border-red-500/20 rounded-xl p-6"
+                    >
+                        <div
+                            class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center text-2xl mb-4"
+                        >
+                            🔒
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-3">
+                            Privacidad
+                        </h3>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li>• No training en tu código</li>
+                            <li>• Encriptación end-to-end</li>
+                            <li>• Zero data retention</li>
+                            <li>• GDPR compliant</li>
+                            <li>• SOC 2 Type II certified</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comparación vs Copilot -->
+            <section id="comparacion" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        ⚖️ Codeium vs GitHub Copilot
+                    </h2>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-gray-700">
+                                    <th class="text-left text-white p-4"
+                                        >Característica</th
+                                    >
+                                    <th class="text-center text-cyan-400 p-4"
+                                        >Codeium</th
+                                    >
+                                    <th class="text-center text-gray-400 p-4"
+                                        >GitHub Copilot</th
+                                    >
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-800">
+                                    <td class="p-4 text-gray-300"
+                                        >Precio Individual</td
+                                    >
+                                    <td
+                                        class="p-4 text-center text-green-400 font-bold"
+                                        >GRATIS</td
+                                    >
+                                    <td class="p-4 text-center text-red-400"
+                                        >$10/mes</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="p-4 text-gray-300"
+                                        >Límites de Uso</td
+                                    >
+                                    <td class="p-4 text-center text-green-400"
+                                        >Ninguno</td
+                                    >
+                                    <td class="p-4 text-center text-yellow-400"
+                                        >Según plan</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="p-4 text-gray-300"
+                                        >IDEs Soportados</td
+                                    >
+                                    <td class="p-4 text-center text-green-400"
+                                        >40+</td
+                                    >
+                                    <td class="p-4 text-center text-yellow-400"
+                                        >15+</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="p-4 text-gray-300">Lenguajes</td>
+                                    <td class="p-4 text-center text-green-400"
+                                        >70+</td
+                                    >
+                                    <td class="p-4 text-center text-yellow-400"
+                                        >100+</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="p-4 text-gray-300"
+                                        >Chat Features</td
+                                    >
+                                    <td class="p-4 text-center text-green-400"
+                                        >✅ Gratis</td
+                                    >
+                                    <td class="p-4 text-center text-yellow-400"
+                                        >❌ Solo en VS Code</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="p-4 text-gray-300"
+                                        >Command/Actions</td
+                                    >
+                                    <td class="p-4 text-center text-green-400"
+                                        >✅ Incluido</td
+                                    >
+                                    <td class="p-4 text-center text-red-400"
+                                        >❌ No disponible</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="p-4 text-gray-300"
+                                        >Privacy Training</td
+                                    >
+                                    <td class="p-4 text-center text-green-400"
+                                        >No usa tu código</td
+                                    >
+                                    <td class="p-4 text-center text-yellow-400"
+                                        >Opt-out disponible</td
+                                    >
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="p-4 text-gray-300">Latencia</td>
+                                    <td class="p-4 text-center text-green-400"
+                                        >&lt;100ms</td
+                                    >
+                                    <td class="p-4 text-center text-yellow-400"
+                                        >150-300ms</td
+                                    >
+                                </tr>
+                                <tr>
+                                    <td class="p-4 text-gray-300"
+                                        >Enterprise Options</td
+                                    >
+                                    <td class="p-4 text-center text-green-400"
+                                        >Self-hosted</td
+                                    >
+                                    <td class="p-4 text-center text-green-400"
+                                        >Enterprise Cloud</td
+                                    >
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                        <div
+                            class="bg-green-900/20 border border-green-500/30 rounded-xl p-6"
+                        >
+                            <h3
+                                class="text-lg font-semibold text-green-400 mb-4"
+                            >
+                                ✅ Ventajas de Codeium
+                            </h3>
+                            <ul class="text-gray-300 text-sm space-y-2">
+                                <li>
+                                    • <strong>Completamente gratuito</strong> para
+                                    uso individual
+                                </li>
+                                <li>
+                                    • <strong>Más rápido</strong> en respuestas y
+                                    sugerencias
+                                </li>
+                                <li>
+                                    • <strong>Mejor soporte</strong> para IDEs diversos
+                                </li>
+                                <li>
+                                    • <strong>Chat integrado</strong> sin costo adicional
+                                </li>
+                                <li>
+                                    • <strong>Command features</strong> para refactoring
+                                </li>
+                                <li>
+                                    • <strong>Privacy-first</strong> approach por
+                                    defecto
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6"
+                        >
+                            <h3
+                                class="text-lg font-semibold text-orange-400 mb-4"
+                            >
+                                ⚠️ Ventajas de Copilot
+                            </h3>
+                            <ul class="text-gray-300 text-sm space-y-2">
+                                <li>
+                                    • <strong>Más maduro</strong> en el mercado
+                                </li>
+                                <li>
+                                    • <strong>Integración nativa</strong> con GitHub
+                                </li>
+                                <li>
+                                    • <strong>Modelo más grande</strong> de entrenamiento
+                                </li>
+                                <li>
+                                    • <strong>Mejor para código complejo</strong
+                                    > en algunos casos
+                                </li>
+                                <li>
+                                    • <strong>Documentación extensa</strong> y comunidad
+                                </li>
+                                <li>
+                                    • <strong>Enterprise features</strong> más establecidas
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Casos de Uso -->
+            <section id="casos-uso" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🎯 Casos de Uso Reales
+                </h2>
+
+                <!-- Startup Development -->
+                <div
+                    class="bg-green-900/20 border border-green-500/20 rounded-xl p-8 mb-8"
+                >
+                    <h3 class="text-xl font-semibold text-white mb-6">
+                        🚀 Caso 1: Startup con Presupuesto Limitado
+                    </h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold text-green-400 mb-3">
+                                💡 Escenario:
+                            </h4>
+                            <div class="bg-black rounded-lg p-4 mb-4">
+                                <p class="text-gray-300 text-sm">
+                                    Startup de 4 desarrolladores necesita
+                                    acelerar el desarrollo de su MVP.
+                                    Presupuesto limitado, pero necesitan
+                                    herramientas de IA para competir. No pueden
+                                    permitirse $40/mes por GitHub Copilot para
+                                    todo el equipo.
+                                </p>
+                            </div>
+
+                            <h4 class="font-semibold text-yellow-400 mb-3">
+                                ⚡ Solución con Codeium:
+                            </h4>
+                            <ul class="text-gray-300 text-sm space-y-2">
+                                <li>
+                                    • Implementación gratuita para todo el
+                                    equipo
+                                </li>
+                                <li>
+                                    • Chat integrado para debugging colaborativo
+                                </li>
+                                <li>
+                                    • Commands para generar tests
+                                    automáticamente
+                                </li>
+                                <li>
+                                    • Autocompletado en todos los IDEs del
+                                    equipo
+                                </li>
+                                <li>• Sin límites de uso o restricciones</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-blue-400 mb-3">
+                                💻 Workflow Típico:
+                            </h4>
+                            <div
+                                class="bg-gray-900 rounded-lg p-4 space-y-4 text-sm"
+                            >
+                                <div class="bg-black rounded p-3">
+                                    <div class="text-green-400 text-xs mb-1">
+                                        Frontend Dev:
+                                    </div>
+                                    <code class="text-gray-300 text-xs">
+                                        // Escribe comment: "Create responsive
+                                        navbar component"<br />
+                                        // Codeium genera React component completo
+                                        con CSS
+                                    </code>
+                                </div>
+
+                                <div class="bg-black rounded p-3">
+                                    <div class="text-blue-400 text-xs mb-1">
+                                        Backend Dev:
+                                    </div>
+                                    <code class="text-cyan-400 text-xs">
+                                        // Usa Chat: "How to implement JWT auth
+                                        with refresh tokens?"<br />
+                                        // Recibe implementación completa + security
+                                        best practices
+                                    </code>
+                                </div>
+
+                                <div class="bg-black rounded p-3">
+                                    <div class="text-orange-400 text-xs mb-1">
+                                        QA Dev:
+                                    </div>
+                                    <code class="text-yellow-400 text-xs">
+                                        // Selecciona función → Command
+                                        "Generate unit tests"<br />
+                                        // Codeium crea test suite completa con edge
+                                        cases
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mt-6 bg-green-900/30 border border-green-500/30 rounded-xl p-6"
+                    >
+                        <h4 class="text-lg font-semibold text-white mb-3">
+                            📊 Ahorro Real
+                        </h4>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm"
+                        >
+                            <div class="text-center">
+                                <div
+                                    class="text-2xl font-bold text-green-400 mb-1"
+                                >
+                                    $480
+                                </div>
+                                <div class="text-gray-300">
+                                    Ahorro anual vs Copilot
+                                </div>
+                                <div class="text-gray-400 text-xs">
+                                    (4 devs × $10/mes × 12 meses)
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="text-2xl font-bold text-green-400 mb-1"
+                                >
+                                    3x
+                                </div>
+                                <div class="text-gray-300">
+                                    Velocidad de desarrollo
+                                </div>
+                                <div class="text-gray-400 text-xs">
+                                    Time-to-market mejorado
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="text-2xl font-bold text-green-400 mb-1"
+                                >
+                                    0
+                                </div>
+                                <div class="text-gray-300">Vendor lock-in</div>
+                                <div class="text-gray-400 text-xs">
+                                    Libertad total de uso
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learning & Education -->
+                <div
+                    class="bg-purple-900/20 border border-purple-500/20 rounded-xl p-8 mb-8"
+                >
+                    <h3 class="text-xl font-semibold text-white mb-6">
+                        📚 Caso 2: Aprendizaje y Educación
+                    </h3>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-purple-400 mb-3">
+                                🎓 Escenario Educativo:
+                            </h4>
+                            <div class="bg-black rounded-lg p-4">
+                                <p class="text-gray-300 text-sm">
+                                    Universidad quiere implementar IA en sus
+                                    cursos de programación. Necesita herramienta
+                                    gratuita para 200+ estudiantes, que les
+                                    ayude a aprender sin crear dependencia o
+                                    "trampa académica".
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-green-400 mb-3">
+                                    📖 Codeium para Estudiantes:
+                                </h4>
+                                <div
+                                    class="bg-gray-900 rounded-lg p-4 space-y-3"
+                                >
+                                    <div>
+                                        <h5
+                                            class="font-semibold text-yellow-400 text-sm mb-2"
+                                        >
+                                            Aprendizaje Activo
+                                        </h5>
+                                        <ul
+                                            class="text-gray-300 text-xs space-y-1"
+                                        >
+                                            <li>
+                                                • Explica código línea por línea
+                                            </li>
+                                            <li>• Sugiere mejores prácticas</li>
+                                            <li>
+                                                • Ayuda con debugging educativo
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h5
+                                            class="font-semibold text-blue-400 text-sm mb-2"
+                                        >
+                                            Mentor Virtual
+                                        </h5>
+                                        <ul
+                                            class="text-gray-300 text-xs space-y-1"
+                                        >
+                                            <li>
+                                                • Chat para conceptos complejos
+                                            </li>
+                                            <li>• Ejercicios personalizados</li>
+                                            <li>• Code review automático</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-orange-400 mb-3">
+                                    👨‍🏫 Para Profesores:
+                                </h4>
+                                <div
+                                    class="bg-gray-900 rounded-lg p-4 space-y-3"
+                                >
+                                    <div>
+                                        <h5
+                                            class="font-semibold text-green-400 text-sm mb-2"
+                                        >
+                                            Herramientas Docentes
+                                        </h5>
+                                        <ul
+                                            class="text-gray-300 text-xs space-y-1"
+                                        >
+                                            <li>• Generación de ejercicios</li>
+                                            <li>• Tests automáticos</li>
+                                            <li>• Ejemplos de código</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h5
+                                            class="font-semibold text-purple-400 text-sm mb-2"
+                                        >
+                                            Sin Costo
+                                        </h5>
+                                        <ul
+                                            class="text-gray-300 text-xs space-y-1"
+                                        >
+                                            <li>• $0 presupuesto requerido</li>
+                                            <li>• Ilimitados estudiantes</li>
+                                            <li>
+                                                • Acceso completo a features
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Migration from Copilot -->
+                <div
+                    class="bg-blue-900/20 border border-blue-500/20 rounded-xl p-8"
+                >
+                    <h3 class="text-xl font-semibold text-white mb-6">
+                        🔄 Caso 3: Migración desde GitHub Copilot
+                    </h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold text-blue-400 mb-3">
+                                💸 ¿Por qué migrar?
+                            </h4>
+                            <div class="bg-black rounded-lg p-4 mb-4">
+                                <p class="text-gray-300 text-sm mb-3">
+                                    Empresa con 20 desarrolladores paga $200/mes
+                                    por Copilot. Buscan reducir costos sin
+                                    perder productividad.
+                                </p>
+                                <div class="text-red-400 text-xs font-semibold">
+                                    Costo anual actual: $2,400
+                                </div>
+                            </div>
+
+                            <h4 class="font-semibold text-green-400 mb-3">
+                                📋 Plan de Migración:
+                            </h4>
+                            <ol class="text-gray-300 text-sm space-y-2">
+                                <li>
+                                    1. <strong>Piloto:</strong> 5 devs testan Codeium
+                                    1 semana
+                                </li>
+                                <li>
+                                    2. <strong>Comparación:</strong> Métricas de
+                                    productividad
+                                </li>
+                                <li>
+                                    3. <strong>Gradual:</strong> Migración por equipos
+                                </li>
+                                <li>
+                                    4. <strong>Training:</strong> Capacitación en
+                                    features únicas
+                                </li>
+                                <li>
+                                    5. <strong>Full switch:</strong> Cancelación
+                                    de Copilot
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-orange-400 mb-3">
+                                📊 Resultados Post-Migración:
+                            </h4>
+                            <div class="bg-gray-900 rounded-lg p-4 space-y-4">
+                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-green-400 mb-1"
+                                        >
+                                            $2,400
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Ahorro anual
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-blue-400 mb-1"
+                                        >
+                                            15%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Mejor latencia
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-purple-400 mb-1"
+                                        >
+                                            100%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Feature parity
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-black rounded p-3 text-center"
+                                    >
+                                        <div
+                                            class="text-2xl font-bold text-orange-400 mb-1"
+                                        >
+                                            95%
+                                        </div>
+                                        <div class="text-gray-300 text-xs">
+                                            Team satisfaction
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-black rounded p-3">
+                                    <h5
+                                        class="font-semibold text-yellow-400 text-sm mb-2"
+                                    >
+                                        Feedback del Equipo:
+                                    </h5>
+                                    <ul class="text-gray-300 text-xs space-y-1">
+                                        <li>• "Misma calidad, gratis"</li>
+                                        <li>
+                                            • "Chat integrado es game-changer"
+                                        </li>
+                                        <li>
+                                            • "Commands ahorran mucho tiempo"
+                                        </li>
+                                        <li>
+                                            • "Mejor en IDEs que no son VS Code"
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Configuración -->
+            <section id="configuracion" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        ⚙️ Configuración y Setup
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🚀 Installation Rápida
+                            </h3>
+
+                            <div class="space-y-4">
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-indigo-400 mb-2"
+                                    >
+                                        1. VS Code Extension
+                                    </h4>
+                                    <div
+                                        class="bg-gray-900 rounded p-3 text-xs"
+                                    >
+                                        <code class="text-gray-300">
+                                            # En VS Code Extensions<br />
+                                            Search: "Codeium"<br />
+                                            Install → Sign Up → Start Coding
+                                        </code>
+                                    </div>
+                                    <p class="text-gray-400 text-xs mt-2">
+                                        2 minutos, sin tarjeta de crédito
+                                    </p>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-indigo-400 mb-2"
+                                    >
+                                        2. JetBrains IDEs
+                                    </h4>
+                                    <div
+                                        class="bg-gray-900 rounded p-3 text-xs"
+                                    >
+                                        <code class="text-gray-300">
+                                            # IntelliJ, PyCharm, WebStorm...<br
+                                            />
+                                            Settings → Plugins → Search "Codeium"<br
+                                            />
+                                            Install → Restart → Auth
+                                        </code>
+                                    </div>
+                                    <p class="text-gray-400 text-xs mt-2">
+                                        Compatible con todos los IDEs JetBrains
+                                    </p>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-indigo-400 mb-2"
+                                    >
+                                        3. Vim/Neovim
+                                    </h4>
+                                    <div
+                                        class="bg-gray-900 rounded p-3 text-xs"
+                                    >
+                                        <code class="text-gray-300">
+                                            # Plugin manager (vim-plug, packer,
+                                            etc.)<br />
+                                            Plug 'Exafunction/codeium.vim'<br />
+                                            :PlugInstall → :Codeium Auth
+                                        </code>
+                                    </div>
+                                    <p class="text-gray-400 text-xs mt-2">
+                                        Native support para Vim users
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                🎯 Configuración Avanzada
+                            </h3>
+
+                            <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                                <h4 class="font-semibold text-white mb-4">
+                                    ⚡ Settings Optimizadas
+                                </h4>
+                                <div
+                                    class="bg-black rounded p-4 text-xs overflow-x-auto"
+                                >
+                                    <code class="text-gray-300">
+                                        <span class="text-green-400"
+                                            >// settings.json (VS Code)</span
+                                        ><br />
+                                        &#123;<br />
+                                        &nbsp;&nbsp;<span class="text-blue-400"
+                                            >"codeium.enableSearch":</span
+                                        >
+                                        <span class="text-orange-400">true</span
+                                        >,<br />
+                                        &nbsp;&nbsp;<span class="text-blue-400"
+                                            >"codeium.enableCodeLens":</span
+                                        >
+                                        <span class="text-orange-400">true</span
+                                        >,<br />
+                                        &nbsp;&nbsp;<span class="text-blue-400"
+                                            >"codeium.enableInlineCompletion":</span
+                                        >
+                                        <span class="text-orange-400">true</span
+                                        >,<br />
+                                        &nbsp;&nbsp;<span class="text-blue-400"
+                                            >"codeium.aggressiveMode":</span
+                                        >
+                                        <span class="text-orange-400">true</span
+                                        >,<br />
+                                        &nbsp;&nbsp;<span class="text-blue-400"
+                                            >"codeium.numSuggestions":</span
+                                        >
+                                        <span class="text-yellow-400">3</span
+                                        ><br />
+                                        &#125;
+                                    </code>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div
+                                    class="bg-indigo-900/20 border border-indigo-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        🎨 Personalización
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong>Keybindings:</strong> Personaliza
+                                            shortcuts
+                                        </li>
+                                        <li>
+                                            • <strong>Language priority:</strong
+                                            > Optimiza para tu stack
+                                        </li>
+                                        <li>
+                                            • <strong
+                                                >Suggestion frequency:</strong
+                                            > Ajusta agresividad
+                                        </li>
+                                        <li>
+                                            • <strong>Theme integration:</strong
+                                            > Match con tu IDE theme
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div
+                                    class="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        🔧 Team Setup
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong>Shared configs:</strong> Distribuir
+                                            settings del equipo
+                                        </li>
+                                        <li>
+                                            • <strong>Code style:</strong> Mantener
+                                            consistencia
+                                        </li>
+                                        <li>
+                                            • <strong>Project context:</strong> Setup
+                                            por proyecto
+                                        </li>
+                                        <li>
+                                            • <strong>Analytics:</strong> Métricas
+                                            de productividad
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Para Empresas -->
+            <section id="empresas" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-gray-900/20 to-slate-900/20 border border-gray-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        🏢 Codeium para Empresas
+                    </h2>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                💼 Enterprise Features
+                            </h3>
+
+                            <div class="space-y-4">
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-blue-400 mb-2"
+                                    >
+                                        🔒 Security & Compliance
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>• SOC 2 Type II certification</li>
+                                        <li>• GDPR compliance</li>
+                                        <li>• Self-hosted deployment</li>
+                                        <li>• Air-gapped environments</li>
+                                        <li>
+                                            • Custom data retention policies
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-green-400 mb-2"
+                                    >
+                                        👥 Team Management
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>• Centralized user management</li>
+                                        <li>• Usage analytics dashboard</li>
+                                        <li>• Seat management</li>
+                                        <li>• Role-based permissions</li>
+                                        <li>• Integration con SSO/SAML</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-black/30 rounded-lg p-4">
+                                    <h4
+                                        class="font-semibold text-purple-400 mb-2"
+                                    >
+                                        🚀 Custom Models
+                                    </h4>
+                                    <ul class="text-gray-300 text-sm space-y-1">
+                                        <li>• Fine-tuning en tu codebase</li>
+                                        <li>• Custom training data</li>
+                                        <li>• Private model hosting</li>
+                                        <li>• API access exclusivo</li>
+                                        <li>• Performance optimization</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-6">
+                                📊 ROI y Business Case
+                            </h3>
+
+                            <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                                <h4 class="font-semibold text-white mb-4">
+                                    💰 Cost Comparison (100 devs)
+                                </h4>
+                                <div class="space-y-3">
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-black rounded"
+                                    >
+                                        <span class="text-gray-300"
+                                            >GitHub Copilot</span
+                                        >
+                                        <span class="text-red-400 font-bold"
+                                            >$12,000/año</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-black rounded"
+                                    >
+                                        <span class="text-gray-300"
+                                            >Codeium Individual</span
+                                        >
+                                        <span class="text-green-400 font-bold"
+                                            >$0/año</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-black rounded"
+                                    >
+                                        <span class="text-gray-300"
+                                            >Codeium Teams</span
+                                        >
+                                        <span class="text-cyan-400 font-bold"
+                                            >$14,400/año</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <div
+                                    class="bg-green-900/20 border border-green-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        📈 Productivity Gains
+                                    </h4>
+                                    <div
+                                        class="grid grid-cols-2 gap-4 text-center"
+                                    >
+                                        <div>
+                                            <div
+                                                class="text-2xl font-bold text-green-400 mb-1"
+                                            >
+                                                40%
+                                            </div>
+                                            <div class="text-gray-300 text-sm">
+                                                Faster coding
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div
+                                                class="text-2xl font-bold text-blue-400 mb-1"
+                                            >
+                                                60%
+                                            </div>
+                                            <div class="text-gray-300 text-sm">
+                                                Less debugging
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6"
+                                >
+                                    <h4
+                                        class="text-lg font-semibold text-white mb-3"
+                                    >
+                                        🎯 Implementation Plan
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-300 text-sm">
+                                        <li>
+                                            • <strong>Week 1-2:</strong> Pilot con
+                                            10% del team
+                                        </li>
+                                        <li>
+                                            • <strong>Week 3-4:</strong> Metrics
+                                            analysis & feedback
+                                        </li>
+                                        <li>
+                                            • <strong>Month 2:</strong> Gradual rollout
+                                        </li>
+                                        <li>
+                                            • <strong>Month 3:</strong> Full deployment
+                                            & training
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="text-center">
+                <div
+                    class="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 border border-cyan-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-4">
+                        ¿Listo para programar sin límites? 🚀
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        Codeium democratiza la programación asistida por IA.
+                        Todas las características premium, completamente gratis,
+                        sin restricciones. Empieza ahora mismo.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://codeium.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                        >
+                            Empezar Gratis
+                        </a>
+                        <a
+                            href="/herramientas-ia"
+                            class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300"
+                        >
+                            Ver Otras IAs
+                        </a>
+                    </div>
+
+                    <div
+                        class="mt-6 flex justify-center gap-8 text-sm text-gray-400"
+                    >
+                        <span>✅ 100% Gratuito</span>
+                        <span>✅ Sin límites de uso</span>
+                        <span>✅ Setup en 2 minutos</span>
+                    </div>
+                </div>
+            </section>
         </div>
-      </section>
-    </div>
-  </main>
+    </main>
 </Layout>
 
 <style>
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  kbd {
-    font-family: monospace;
-    font-size: 0.75rem;
-  }
-  
-  code {
-    font-family: 'Fira Code', 'Monaco', 'Cascadia Code', monospace;
-  }
-  
-  /* Navegación sticky */
-  nav {
-    backdrop-filter: blur(10px);
-  }
-  
-  /* Custom scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #1a1a1a;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #06b6d4;
-    border-radius: 4px;
-  }
-  
-  /* Smooth transitions for table */
-  table {
-    border-collapse: collapse;
-  }
-  
-  tr:hover {
-    background-color: rgba(6, 182, 212, 0.05);
-  }
+    html {
+        scroll-behavior: smooth;
+    }
+
+    kbd {
+        font-family: monospace;
+        font-size: 0.75rem;
+    }
+
+    code {
+        font-family: "Fira Code", "Monaco", "Cascadia Code", monospace;
+    }
+
+    /* Navegación sticky */
+    nav {
+        backdrop-filter: blur(10px);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #06b6d4;
+        border-radius: 4px;
+    }
+
+    /* Smooth transitions for table */
+    table {
+        border-collapse: collapse;
+    }
+
+    tr:hover {
+        background-color: rgba(6, 182, 212, 0.05);
+    }
 </style>
 
 <script>
-  // Smooth scroll para navegación
-  document.querySelectorAll('nav a[href^="#"]').forEach((anchor: Element) => {
-    anchor.addEventListener('click', (e: Event) => {
-      e.preventDefault();
-      const href = (anchor as HTMLAnchorElement).getAttribute('href');
-      const target = href ? document.querySelector(href) : null;
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
+    // Smooth scroll para navegación
+    document.querySelectorAll('nav a[href^="#"]').forEach((anchor: Element) => {
+        anchor.addEventListener("click", (e: Event) => {
+            e.preventDefault();
+            const href = (anchor as HTMLAnchorElement).getAttribute("href");
+            const target = href ? document.querySelector(href) : null;
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
         });
-      }
     });
-  });
-  
-  // Navegación activa
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute('id');
-        document.querySelectorAll('nav a').forEach(link => {
-          link.classList.remove('text-cyan-400');
-          link.classList.add('text-gray-400');
-        });
-        const activeLink = document.querySelector(`nav a[href="#${id}"]`);
-        if (activeLink) {
-          activeLink.classList.remove('text-gray-400');
-          activeLink.classList.add('text-cyan-400');
-        }
-      }
+
+    // Navegación activa
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute("id");
+                    document.querySelectorAll("nav a").forEach((link) => {
+                        link.classList.remove("text-cyan-400");
+                        link.classList.add("text-gray-400");
+                    });
+                    const activeLink = document.querySelector(
+                        `nav a[href="#${id}"]`,
+                    );
+                    if (activeLink) {
+                        activeLink.classList.remove("text-gray-400");
+                        activeLink.classList.add("text-cyan-400");
+                    }
+                }
+            });
+        },
+        { threshold: 0.1 },
+    );
+
+    document.querySelectorAll("section[id]").forEach((section) => {
+        observer.observe(section);
     });
-  }, { threshold: 0.1 });
-  
-  document.querySelectorAll('section[id]').forEach(section => {
-    observer.observe(section);
-  });
 </script>
-</Layout>

@@ -1,294 +1,552 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="SonarLint AI - Code Quality IA | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-red-900 via-orange-900 to-yellow-900 py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-red-500 to-orange-500 rounded-2xl flex items-center justify-center text-4xl">
-            🛡️
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">SonarLint AI</h1>
-            <p class="text-xl text-red-300">Intelligent Code Quality Assistant</p>
-            <p class="text-gray-400">by SonarSource</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          SonarLint AI lleva code quality al siguiente nivel con inteligencia artificial 
-          que detecta bugs, vulnerabilities y code smells en tiempo real, 
-          proporcionando fix suggestions contextual y automatizado.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-red-400 hover:text-red-300 whitespace-nowrap transition-colors">¿Qué es?</a>
-          <a href="#ai-features" class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors">Features IA</a>
-          <a href="#quality-checks" class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors">Quality Checks</a>
-          <a href="#ejemplos" class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors">Ejemplos</a>
-          <a href="#beneficios" class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors">Beneficios</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- ¿Qué es SonarLint AI? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-red-900/20 to-orange-900/20 border border-red-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">🛡️ ¿Qué es SonarLint AI?</h2>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-4">
-              <p class="text-gray-300 leading-relaxed">
-                <strong>SonarLint AI</strong> es la evolución AI-powered del popular linter que 
-                combina static analysis tradicional con machine learning para detectar 
-                code quality issues más complex y proporcionar intelligent fix suggestions 
-                directamente en tu IDE.
-              </p>
-              
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🎯 Capacidades Core</h3>
-                
-                <div class="space-y-3 text-sm">
-                  <div class="flex items-start gap-3">
-                    <span class="text-red-400">🔍</span>
-                    <div>
-                      <div class="text-white font-medium">Smart Bug Detection</div>
-                      <div class="text-gray-400">AI detecta bugs complex que static analysis miss</div>
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-red-900 via-orange-900 to-yellow-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-red-500 to-orange-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🛡️
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-orange-400">🛡️</span>
                     <div>
-                      <div class="text-white font-medium">Security Intelligence</div>
-                      <div class="text-gray-400">Identifica vulnerabilities y security hotspots</div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            SonarLint AI
+                        </h1>
+                        <p class="text-xl text-red-300">
+                            Intelligent Code Quality Assistant
+                        </p>
+                        <p class="text-gray-400">by SonarSource</p>
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-yellow-400">🔧</span>
-                    <div>
-                      <div class="text-white font-medium">Auto-Fix Generation</div>
-                      <div class="text-gray-400">Propone y aplica fixes automáticamente</div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    SonarLint AI lleva code quality al siguiente nivel con
+                    inteligencia artificial que detecta bugs, vulnerabilities y
+                    code smells en tiempo real, proporcionando fix suggestions
+                    contextual y automatizado.
+                </p>
             </div>
-            
-            <div class="space-y-6">
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🚀 Análisis Avanzado</h3>
-                
-                <div class="space-y-4 text-sm">
-                  <div class="border-l-4 border-red-500 pl-4">
-                    <div class="font-semibold text-red-300">Code Smells</div>
-                    <div class="text-gray-400">Detecta maintainability issues y technical debt</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-orange-500 pl-4">
-                    <div class="font-semibold text-orange-300">Performance Issues</div>
-                    <div class="text-gray-400">Identifica bottlenecks y optimization opportunities</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-yellow-500 pl-4">
-                    <div class="font-semibold text-yellow-300">Security Vulnerabilities</div>
-                    <div class="text-gray-400">OWASP compliance y security best practices</div>
-                  </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-red-400 hover:text-red-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#ai-features"
+                        class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors"
+                        >Features IA</a
+                    >
+                    <a
+                        href="#quality-checks"
+                        class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors"
+                        >Quality Checks</a
+                    >
+                    <a
+                        href="#ejemplos"
+                        class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors"
+                        >Ejemplos</a
+                    >
+                    <a
+                        href="#beneficios"
+                        class="text-gray-400 hover:text-red-300 whitespace-nowrap transition-colors"
+                        >Beneficios</a
+                    >
                 </div>
-              </div>
-              
-              <div class="bg-gradient-to-r from-red-800/20 to-orange-800/20 rounded-xl p-4 border border-red-500/20">
-                <div class="text-sm text-red-300 font-medium mb-2">🎯 Perfect For</div>
-                <p class="text-gray-400 text-sm">
-                  Development teams focused en code quality, enterprises con 
-                  strict compliance requirements y projects que necesitan 
-                  maintain high security y performance standards.
-                </p>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </nav>
 
-      <!-- AI Features -->
-      <section id="ai-features" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🤖 Features de IA Avanzada</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-red-500/20">
-              <div class="text-3xl mb-4">🧠</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Intelligent Code Analysis</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Context Understanding:</strong> Analiza code intent y business logic</li>
-                <li>• <strong>Pattern Recognition:</strong> Detecta anti-patterns complex</li>
-                <li>• <strong>Data Flow Analysis:</strong> Tracks variables across methods</li>
-                <li>• <strong>Semantic Analysis:</strong> Entiende meaning beyond syntax</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-orange-500/20">
-              <div class="text-3xl mb-4">🔧</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Smart Fix Suggestions</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Contextual Fixes:</strong> Solutions específicas al domain</li>
-                <li>• <strong>Multi-Step Refactoring:</strong> Complex code transformations</li>
-                <li>• <strong>Performance Optimization:</strong> Automated efficiency improvements</li>
-                <li>• <strong>Security Hardening:</strong> Auto-apply security best practices</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-yellow-500/20">
-              <div class="text-3xl mb-4">🛡️</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Security Intelligence</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Vulnerability Detection:</strong> OWASP Top 10 y más</li>
-                <li>• <strong>Injection Prevention:</strong> SQL, XSS, Command injection</li>
-                <li>• <strong>Cryptography Analysis:</strong> Weak encryption detection</li>
-                <li>• <strong>Authentication Issues:</strong> Session y auth vulnerabilities</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-red-600/20">
-              <div class="text-3xl mb-4">📊</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Quality Metrics</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Technical Debt:</strong> Quantifica y prioriza debt</li>
-                <li>• <strong>Maintainability Index:</strong> Predice maintenance effort</li>
-                <li>• <strong>Complexity Analysis:</strong> Cyclomatic y cognitive complexity</li>
-                <li>• <strong>Test Coverage:</strong> Intelligent coverage analysis</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es SonarLint AI? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-red-900/20 to-orange-900/20 border border-red-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🛡️ ¿Qué es SonarLint AI?
+                    </h2>
 
-      <!-- Quality Checks -->
-      <section id="quality-checks" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">⚙️ Intelligent Quality Checks</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-red-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6 text-center">🔍 AI-Powered Analysis Pipeline</h3>
-            
-            <div class="grid md:grid-cols-4 gap-6">
-              <div class="text-center">
-                <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">1</div>
-                <h4 class="font-semibold text-white mb-2">📥 Code Ingestion</h4>
-                <p class="text-gray-400 text-sm">
-                  AI parsea code structure, dependencies 
-                  y build context en real-time.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">2</div>
-                <h4 class="font-semibold text-white mb-2">🧠 Semantic Analysis</h4>
-                <p class="text-gray-400 text-sm">
-                  ML models analizan intent, patterns 
-                  y business logic context.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">3</div>
-                <h4 class="font-semibold text-white mb-2">🎯 Issue Detection</h4>
-                <p class="text-gray-400 text-sm">
-                  Identifica bugs, vulnerabilities 
-                  y quality issues con high precision.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">4</div>
-                <h4 class="font-semibold text-white mb-2">🔧 Smart Remediation</h4>
-                <p class="text-gray-400 text-sm">
-                  Genera fix suggestions y aplica 
-                  improvements automáticamente.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-orange-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🚀 Language Support & Integration</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <h4 class="font-semibold text-red-300 mb-3">Supported Languages</h4>
-                <ul class="text-gray-400 text-sm space-y-2">
-                  <li>• <strong>Java/Kotlin:</strong> Enterprise-grade analysis</li>
-                  <li>• <strong>JavaScript/TypeScript:</strong> Modern web development</li>
-                  <li>• <strong>Python:</strong> Data science y backend optimization</li>
-                  <li>• <strong>C#/.NET:</strong> Microsoft ecosystem integration</li>
-                  <li>• <strong>PHP:</strong> Web application security focus</li>
-                  <li>• <strong>Go/Rust:</strong> Performance y memory safety</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 class="font-semibold text-orange-300 mb-3">IDE Integration</h4>
-                <ul class="text-gray-400 text-sm space-y-2">
-                  <li>• <strong>Visual Studio Code:</strong> Real-time analysis</li>
-                  <li>• <strong>IntelliJ IDEA:</strong> Deep JVM integration</li>
-                  <li>• <strong>Eclipse:</strong> Enterprise Java focus</li>
-                  <li>• <strong>Visual Studio:</strong> .NET ecosystem optimization</li>
-                  <li>• <strong>Vim/Neovim:</strong> Terminal-based development</li>
-                  <li>• <strong>Sublime Text:</strong> Lightweight integration</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong>SonarLint AI</strong> es la evolución AI-powered
+                                del popular linter que combina static analysis tradicional
+                                con machine learning para detectar code quality issues
+                                más complex y proporcionar intelligent fix suggestions
+                                directamente en tu IDE.
+                            </p>
 
-      <!-- Ejemplos Prácticos -->
-      <section id="ejemplos" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">💡 Casos de Uso Reales</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-red-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🔍 Security Vulnerability Detection</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-red-300 mb-2">Vulnerable Code Detected</div>
-                  <pre class="text-xs text-gray-400"><code>{`// ❌ SQL Injection Vulnerability
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🎯 Capacidades Core
+                                </h3>
+
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-red-400">🔍</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Smart Bug Detection
+                                            </div>
+                                            <div class="text-gray-400">
+                                                AI detecta bugs complex que
+                                                static analysis miss
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-orange-400">🛡️</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Security Intelligence
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Identifica vulnerabilities y
+                                                security hotspots
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-yellow-400">🔧</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Auto-Fix Generation
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Propone y aplica fixes
+                                                automáticamente
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🚀 Análisis Avanzado
+                                </h3>
+
+                                <div class="space-y-4 text-sm">
+                                    <div class="border-l-4 border-red-500 pl-4">
+                                        <div class="font-semibold text-red-300">
+                                            Code Smells
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Detecta maintainability issues y
+                                            technical debt
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-orange-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-orange-300"
+                                        >
+                                            Performance Issues
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Identifica bottlenecks y
+                                            optimization opportunities
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-yellow-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-yellow-300"
+                                        >
+                                            Security Vulnerabilities
+                                        </div>
+                                        <div class="text-gray-400">
+                                            OWASP compliance y security best
+                                            practices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-red-800/20 to-orange-800/20 rounded-xl p-4 border border-red-500/20"
+                            >
+                                <div
+                                    class="text-sm text-red-300 font-medium mb-2"
+                                >
+                                    🎯 Perfect For
+                                </div>
+                                <p class="text-gray-400 text-sm">
+                                    Development teams focused en code quality,
+                                    enterprises con strict compliance
+                                    requirements y projects que necesitan
+                                    maintain high security y performance
+                                    standards.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Features -->
+            <section id="ai-features" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🤖 Features de IA Avanzada
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-red-500/20"
+                        >
+                            <div class="text-3xl mb-4">🧠</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Intelligent Code Analysis
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Context Understanding:</strong> Analiza
+                                    code intent y business logic
+                                </li>
+                                <li>
+                                    • <strong>Pattern Recognition:</strong> Detecta
+                                    anti-patterns complex
+                                </li>
+                                <li>
+                                    • <strong>Data Flow Analysis:</strong> Tracks
+                                    variables across methods
+                                </li>
+                                <li>
+                                    • <strong>Semantic Analysis:</strong> Entiende
+                                    meaning beyond syntax
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-orange-500/20"
+                        >
+                            <div class="text-3xl mb-4">🔧</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Smart Fix Suggestions
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Contextual Fixes:</strong> Solutions
+                                    específicas al domain
+                                </li>
+                                <li>
+                                    • <strong>Multi-Step Refactoring:</strong> Complex
+                                    code transformations
+                                </li>
+                                <li>
+                                    • <strong>Performance Optimization:</strong>
+                                    Automated efficiency improvements
+                                </li>
+                                <li>
+                                    • <strong>Security Hardening:</strong> Auto-apply
+                                    security best practices
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-yellow-500/20"
+                        >
+                            <div class="text-3xl mb-4">🛡️</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Security Intelligence
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Vulnerability Detection:</strong> OWASP
+                                    Top 10 y más
+                                </li>
+                                <li>
+                                    • <strong>Injection Prevention:</strong> SQL,
+                                    XSS, Command injection
+                                </li>
+                                <li>
+                                    • <strong>Cryptography Analysis:</strong> Weak
+                                    encryption detection
+                                </li>
+                                <li>
+                                    • <strong>Authentication Issues:</strong> Session
+                                    y auth vulnerabilities
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-red-600/20"
+                        >
+                            <div class="text-3xl mb-4">📊</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Quality Metrics
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Technical Debt:</strong> Quantifica
+                                    y prioriza debt
+                                </li>
+                                <li>
+                                    • <strong>Maintainability Index:</strong> Predice
+                                    maintenance effort
+                                </li>
+                                <li>
+                                    • <strong>Complexity Analysis:</strong> Cyclomatic
+                                    y cognitive complexity
+                                </li>
+                                <li>
+                                    • <strong>Test Coverage:</strong> Intelligent
+                                    coverage analysis
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quality Checks -->
+            <section id="quality-checks" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚙️ Intelligent Quality Checks
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-red-500/20"
+                    >
+                        <h3
+                            class="text-xl font-semibold text-white mb-6 text-center"
+                        >
+                            🔍 AI-Powered Analysis Pipeline
+                        </h3>
+
+                        <div class="grid md:grid-cols-4 gap-6">
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    1
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    📥 Code Ingestion
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    AI parsea code structure, dependencies y
+                                    build context en real-time.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    2
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🧠 Semantic Analysis
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    ML models analizan intent, patterns y
+                                    business logic context.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    3
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🎯 Issue Detection
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Identifica bugs, vulnerabilities y quality
+                                    issues con high precision.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    4
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🔧 Smart Remediation
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Genera fix suggestions y aplica improvements
+                                    automáticamente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-orange-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🚀 Language Support & Integration
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-red-300 mb-3">
+                                    Supported Languages
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>Java/Kotlin:</strong> Enterprise-grade
+                                        analysis
+                                    </li>
+                                    <li>
+                                        • <strong>JavaScript/TypeScript:</strong
+                                        > Modern web development
+                                    </li>
+                                    <li>
+                                        • <strong>Python:</strong> Data science y
+                                        backend optimization
+                                    </li>
+                                    <li>
+                                        • <strong>C#/.NET:</strong> Microsoft ecosystem
+                                        integration
+                                    </li>
+                                    <li>
+                                        • <strong>PHP:</strong> Web application security
+                                        focus
+                                    </li>
+                                    <li>
+                                        • <strong>Go/Rust:</strong> Performance y
+                                        memory safety
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-orange-300 mb-3">
+                                    IDE Integration
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>Visual Studio Code:</strong> Real-time
+                                        analysis
+                                    </li>
+                                    <li>
+                                        • <strong>IntelliJ IDEA:</strong> Deep JVM
+                                        integration
+                                    </li>
+                                    <li>
+                                        • <strong>Eclipse:</strong> Enterprise Java
+                                        focus
+                                    </li>
+                                    <li>
+                                        • <strong>Visual Studio:</strong> .NET ecosystem
+                                        optimization
+                                    </li>
+                                    <li>
+                                        • <strong>Vim/Neovim:</strong> Terminal-based
+                                        development
+                                    </li>
+                                    <li>
+                                        • <strong>Sublime Text:</strong> Lightweight
+                                        integration
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos Prácticos -->
+            <section id="ejemplos" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    💡 Casos de Uso Reales
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-red-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🔍 Security Vulnerability Detection
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-red-300 mb-2"
+                                    >
+                                        Vulnerable Code Detected
+                                    </div>
+                                    <pre
+                                        class="text-xs text-gray-400"><code>{`// ❌ SQL Injection Vulnerability
 function getUserData(userId) {
   const query = "SELECT * FROM users WHERE id = " 
     + userId;
   return database.execute(query);
 }`}</code></pre>
-                </div>
-                
-                <div class="font-semibold text-orange-300 mb-2">AI Analysis</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• <strong>Issue:</strong> SQL Injection vulnerability</li>
-                  <li>• <strong>Risk:</strong> High - Data breach potential</li>
-                  <li>• <strong>OWASP:</strong> A03:2021 - Injection</li>
-                  <li>• <strong>CWE:</strong> CWE-89 - SQL Injection</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">SonarLint AI Fix Suggestion</div>
-                <pre class="text-xs text-green-400"><code>{`// ✅ AI-Generated Secure Fix
+                                </div>
+
+                                <div class="font-semibold text-orange-300 mb-2">
+                                    AI Analysis
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>Issue:</strong> SQL Injection vulnerability
+                                    </li>
+                                    <li>
+                                        • <strong>Risk:</strong> High - Data breach
+                                        potential
+                                    </li>
+                                    <li>
+                                        • <strong>OWASP:</strong> A03:2021 - Injection
+                                    </li>
+                                    <li>
+                                        • <strong>CWE:</strong> CWE-89 - SQL Injection
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    SonarLint AI Fix Suggestion
+                                </div>
+                                <pre
+                                    class="text-xs text-green-400"><code>{`// ✅ AI-Generated Secure Fix
 function getUserData(userId) {
   // Use parameterized query to prevent SQL injection
   const query = "SELECT * FROM users WHERE id = ?";
@@ -299,27 +557,44 @@ function getUserData(userId) {
 function getUserDataORM(userId) {
   return User.findByPk(userId);
 }`}</code></pre>
-                
-                <div class="mt-4 p-3 bg-green-900/20 rounded border border-green-500/20">
-                  <div class="text-xs text-green-300 font-medium mb-1">🤖 AI Explanation</div>
-                  <p class="text-xs text-gray-400">
-                    Replaced string concatenation with parameterized queries. 
-                    This prevents user input from being interpreted as SQL code. 
-                    Also suggested ORM alternative for better security practices.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-orange-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">⚡ Performance Optimization</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-orange-300 mb-2">Performance Issue</div>
-                  <pre class="text-xs text-gray-400"><code>{`// ❌ Inefficient N+1 Query Pattern
+
+                                <div
+                                    class="mt-4 p-3 bg-green-900/20 rounded border border-green-500/20"
+                                >
+                                    <div
+                                        class="text-xs text-green-300 font-medium mb-1"
+                                    >
+                                        🤖 AI Explanation
+                                    </div>
+                                    <p class="text-xs text-gray-400">
+                                        Replaced string concatenation with
+                                        parameterized queries. This prevents
+                                        user input from being interpreted as SQL
+                                        code. Also suggested ORM alternative for
+                                        better security practices.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-orange-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            ⚡ Performance Optimization
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-orange-300 mb-2"
+                                    >
+                                        Performance Issue
+                                    </div>
+                                    <pre
+                                        class="text-xs text-gray-400"><code>{`// ❌ Inefficient N+1 Query Pattern
 function getOrdersWithCustomers() {
   const orders = db.query("SELECT * FROM orders");
   
@@ -331,20 +606,36 @@ function getOrdersWithCustomers() {
     )
   }));
 }`}</code></pre>
-                </div>
-                
-                <div class="font-semibold text-red-300 mb-2">Performance Impact</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• <strong>Issue:</strong> N+1 query problem</li>
-                  <li>• <strong>Impact:</strong> 100+ queries for 100 orders</li>
-                  <li>• <strong>Latency:</strong> +2000ms response time</li>
-                  <li>• <strong>Database:</strong> Unnecessary load</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">AI Performance Optimization</div>
-                <pre class="text-xs text-green-400"><code>{`// ✅ Optimized with JOIN query
+                                </div>
+
+                                <div class="font-semibold text-red-300 mb-2">
+                                    Performance Impact
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>Issue:</strong> N+1 query problem
+                                    </li>
+                                    <li>
+                                        • <strong>Impact:</strong> 100+ queries for
+                                        100 orders
+                                    </li>
+                                    <li>
+                                        • <strong>Latency:</strong> +2000ms response
+                                        time
+                                    </li>
+                                    <li>
+                                        • <strong>Database:</strong> Unnecessary
+                                        load
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    AI Performance Optimization
+                                </div>
+                                <pre
+                                    class="text-xs text-green-400"><code>{`// ✅ Optimized with JOIN query
 function getOrdersWithCustomers() {
   const query = \`
     SELECT 
@@ -375,120 +666,192 @@ async function getOrdersWithCustomersBatch() {
     customer: customerMap.get(order.customer_id)
   }));
 }`}</code></pre>
-                
-                <div class="mt-4 p-3 bg-blue-900/20 rounded border border-blue-500/20">
-                  <div class="text-xs text-blue-300 font-medium mb-1">📊 Performance Improvement</div>
-                  <p class="text-xs text-gray-400">
-                    Reduced from 101 queries to 1 query (99% reduction). 
-                    Response time improved from 2.1s to 45ms (95% faster). 
-                    Database load reduced by 98%.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- Beneficios Empresariales -->
-      <section id="beneficios" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">📈 Beneficios Empresariales</h2>
-        
-        <div class="bg-gray-900 rounded-xl p-8">
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="text-center">
-              <div class="text-4xl mb-4">🛡️</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Security</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-red-900/30 p-3 rounded">
-                  <div class="font-bold text-red-300 text-lg">95%</div>
-                  <div class="text-gray-400">Vulnerability reduction</div>
+                                <div
+                                    class="mt-4 p-3 bg-blue-900/20 rounded border border-blue-500/20"
+                                >
+                                    <div
+                                        class="text-xs text-blue-300 font-medium mb-1"
+                                    >
+                                        📊 Performance Improvement
+                                    </div>
+                                    <p class="text-xs text-gray-400">
+                                        Reduced from 101 queries to 1 query (99%
+                                        reduction). Response time improved from
+                                        2.1s to 45ms (95% faster). Database load
+                                        reduced by 98%.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-orange-900/30 p-3 rounded">
-                  <div class="font-bold text-orange-300 text-lg">80%</div>
-                  <div class="text-gray-400">Faster security fixes</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="text-center">
-              <div class="text-4xl mb-4">⚡</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Performance</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-yellow-900/30 p-3 rounded">
-                  <div class="font-bold text-yellow-300 text-lg">60%</div>
-                  <div class="text-gray-400">Faster code reviews</div>
-                </div>
-                <div class="bg-red-900/30 p-3 rounded">
-                  <div class="font-bold text-red-300 text-lg">45%</div>
-                  <div class="text-gray-400">Less debugging time</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="text-center">
-              <div class="text-4xl mb-4">📊</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Quality</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-orange-900/30 p-3 rounded">
-                  <div class="font-bold text-orange-300 text-lg">85%</div>
-                  <div class="text-gray-400">Code quality improvement</div>
-                </div>
-                <div class="bg-yellow-900/30 p-3 rounded">
-                  <div class="font-bold text-yellow-300 text-lg">70%</div>
-                  <div class="text-gray-400">Technical debt reduction</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </section>
 
-      <!-- Planes -->
-      <section class="mb-12">
-        <div class="bg-gradient-to-r from-red-900/20 to-orange-900/20 border border-red-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">💼 Planes Disponibles</h2>
-          
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🆓 Community</h3>
-              <div class="text-2xl font-bold text-gray-400 mb-2">$0</div>
-              <div class="text-gray-400 text-sm mb-4">Para proyectos open source</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Basic quality checks</li>
-                <li>• Community rules</li>
-                <li>• IDE integration</li>
-                <li>• Community support</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-red-500/50">
-              <h3 class="text-lg font-semibold text-white mb-3">⭐ Developer</h3>
-              <div class="text-2xl font-bold text-red-400 mb-2">$10/mes</div>
-              <div class="text-gray-400 text-sm mb-4">Por developer</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• AI-powered analysis</li>
-                <li>• Smart fix suggestions</li>
-                <li>• Advanced security checks</li>
-                <li>• Priority support</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🏢 Enterprise</h3>
-              <div class="text-2xl font-bold text-orange-400 mb-2">$75/mes</div>
-              <div class="text-gray-400 text-sm mb-4">Por developer</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Full AI capabilities</li>
-                <li>• Custom rules</li>
-                <li>• Team analytics</li>
-                <li>• SLA support</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- Beneficios Empresariales -->
+            <section id="beneficios" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    📈 Beneficios Empresariales
+                </h2>
 
-    </div>
-  </main>
+                <div class="bg-gray-900 rounded-xl p-8">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🛡️</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Security
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-red-900/30 p-3 rounded">
+                                    <div class="font-bold text-red-300 text-lg">
+                                        95%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Vulnerability reduction
+                                    </div>
+                                </div>
+                                <div class="bg-orange-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-orange-300 text-lg"
+                                    >
+                                        80%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Faster security fixes
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">⚡</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Performance
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-yellow-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-yellow-300 text-lg"
+                                    >
+                                        60%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Faster code reviews
+                                    </div>
+                                </div>
+                                <div class="bg-red-900/30 p-3 rounded">
+                                    <div class="font-bold text-red-300 text-lg">
+                                        45%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Less debugging time
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">📊</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Quality
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-orange-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-orange-300 text-lg"
+                                    >
+                                        85%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Code quality improvement
+                                    </div>
+                                </div>
+                                <div class="bg-yellow-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-yellow-300 text-lg"
+                                    >
+                                        70%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Technical debt reduction
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Planes -->
+            <section class="mb-12">
+                <div
+                    class="bg-gradient-to-r from-red-900/20 to-orange-900/20 border border-red-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        💼 Planes Disponibles
+                    </h2>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🆓 Community
+                            </h3>
+                            <div class="text-2xl font-bold text-gray-400 mb-2">
+                                $0
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para proyectos open source
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Basic quality checks</li>
+                                <li>• Community rules</li>
+                                <li>• IDE integration</li>
+                                <li>• Community support</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-red-500/50"
+                        >
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                ⭐ Developer
+                            </h3>
+                            <div class="text-2xl font-bold text-red-400 mb-2">
+                                $10/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Por developer
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• AI-powered analysis</li>
+                                <li>• Smart fix suggestions</li>
+                                <li>• Advanced security checks</li>
+                                <li>• Priority support</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🏢 Enterprise
+                            </h3>
+                            <div
+                                class="text-2xl font-bold text-orange-400 mb-2"
+                            >
+                                $75/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Por developer
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Full AI capabilities</li>
+                                <li>• Custom rules</li>
+                                <li>• Team analytics</li>
+                                <li>• SLA support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </Layout>

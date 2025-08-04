@@ -1,289 +1,543 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Mintlify - Documentación IA | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-green-900 via-emerald-900 to-teal-900 py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl flex items-center justify-center text-4xl">
-            📚
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Mintlify</h1>
-            <p class="text-xl text-green-300">Documentation Made Beautiful</p>
-            <p class="text-gray-400">by Mintlify Team</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          Mintlify transforma la documentación técnica con IA, generando docs 
-          hermosas, interactivas y siempre actualizadas directamente desde tu código. 
-          La plataforma que hace que escribir documentación sea eficiente y enjoyable.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-green-400 hover:text-green-300 whitespace-nowrap transition-colors">¿Qué es?</a>
-          <a href="#ai-features" class="text-gray-400 hover:text-green-300 whitespace-nowrap transition-colors">Features IA</a>
-          <a href="#auto-generation" class="text-gray-400 hover:text-green-300 whitespace-nowrap transition-colors">Auto Generation</a>
-          <a href="#ejemplos" class="text-gray-400 hover:text-green-300 whitespace-nowrap transition-colors">Ejemplos</a>
-          <a href="#beneficios" class="text-gray-400 hover:text-green-300 whitespace-nowrap transition-colors">Beneficios</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- ¿Qué es Mintlify? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-green-900/20 to-teal-900/20 border border-green-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">📚 ¿Qué es Mintlify?</h2>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-4">
-              <p class="text-gray-300 leading-relaxed">
-                <strong>Mintlify</strong> es la plataforma de documentación de próxima generación 
-                que utiliza IA para generar, mantener y optimizar documentación técnica 
-                automáticamente. Convierte tu código en docs hermosas, interactivas y 
-                siempre synchronized con tu codebase.
-              </p>
-              
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🎯 Características Principales</h3>
-                
-                <div class="space-y-3 text-sm">
-                  <div class="flex items-start gap-3">
-                    <span class="text-green-400">🤖</span>
-                    <div>
-                      <div class="text-white font-medium">AI Code Analysis</div>
-                      <div class="text-gray-400">Entiende tu código y genera docs relevantes</div>
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-green-900 via-emerald-900 to-teal-900 py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        📚
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-emerald-400">✨</span>
                     <div>
-                      <div class="text-white font-medium">Beautiful UI</div>
-                      <div class="text-gray-400">Interfaces modernas y navegación intuitiva</div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            Mintlify
+                        </h1>
+                        <p class="text-xl text-green-300">
+                            Documentation Made Beautiful
+                        </p>
+                        <p class="text-gray-400">by Mintlify Team</p>
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-teal-400">🔄</span>
-                    <div>
-                      <div class="text-white font-medium">Auto Sync</div>
-                      <div class="text-gray-400">Docs siempre actualizadas con tu código</div>
+                </div>
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    Mintlify transforma la documentación técnica con IA,
+                    generando docs hermosas, interactivas y siempre actualizadas
+                    directamente desde tu código. La plataforma que hace que
+                    escribir documentación sea eficiente y enjoyable.
+                </p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-green-400 hover:text-green-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#ai-features"
+                        class="text-gray-400 hover:text-green-300 whitespace-nowrap transition-colors"
+                        >Features IA</a
+                    >
+                    <a
+                        href="#auto-generation"
+                        class="text-gray-400 hover:text-green-300 whitespace-nowrap transition-colors"
+                        >Auto Generation</a
+                    >
+                    <a
+                        href="#ejemplos"
+                        class="text-gray-400 hover:text-green-300 whitespace-nowrap transition-colors"
+                        >Ejemplos</a
+                    >
+                    <a
+                        href="#beneficios"
+                        class="text-gray-400 hover:text-green-300 whitespace-nowrap transition-colors"
+                        >Beneficios</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es Mintlify? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-green-900/20 to-teal-900/20 border border-green-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        📚 ¿Qué es Mintlify?
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong>Mintlify</strong> es la plataforma de documentación
+                                de próxima generación que utiliza IA para generar,
+                                mantener y optimizar documentación técnica automáticamente.
+                                Convierte tu código en docs hermosas, interactivas
+                                y siempre synchronized con tu codebase.
+                            </p>
+
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🎯 Características Principales
+                                </h3>
+
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-green-400">🤖</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                AI Code Analysis
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Entiende tu código y genera docs
+                                                relevantes
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-emerald-400">✨</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Beautiful UI
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Interfaces modernas y navegación
+                                                intuitiva
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-teal-400">🔄</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Auto Sync
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Docs siempre actualizadas con tu
+                                                código
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🚀 Para Qué Sirve
+                                </h3>
+
+                                <div class="space-y-4 text-sm">
+                                    <div
+                                        class="border-l-4 border-green-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-green-300"
+                                        >
+                                            API Documentation
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Auto-genera docs de APIs desde
+                                            OpenAPI/Swagger
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-emerald-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-emerald-300"
+                                        >
+                                            Developer Guides
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Crea guías interactivas paso a paso
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-teal-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-teal-300"
+                                        >
+                                            Code References
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Documenta funciones y clases
+                                            automáticamente
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-green-800/20 to-teal-800/20 rounded-xl p-4 border border-green-500/20"
+                            >
+                                <div
+                                    class="text-sm text-green-300 font-medium mb-2"
+                                >
+                                    🎯 Perfect For
+                                </div>
+                                <p class="text-gray-400 text-sm">
+                                    Engineering teams, API companies, open
+                                    source projects y developer-focused products
+                                    que necesitan documentación professional sin
+                                    el overhead manual tradicional.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            
-            <div class="space-y-6">
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🚀 Para Qué Sirve</h3>
-                
-                <div class="space-y-4 text-sm">
-                  <div class="border-l-4 border-green-500 pl-4">
-                    <div class="font-semibold text-green-300">API Documentation</div>
-                    <div class="text-gray-400">Auto-genera docs de APIs desde OpenAPI/Swagger</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-emerald-500 pl-4">
-                    <div class="font-semibold text-emerald-300">Developer Guides</div>
-                    <div class="text-gray-400">Crea guías interactivas paso a paso</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-teal-500 pl-4">
-                    <div class="font-semibold text-teal-300">Code References</div>
-                    <div class="text-gray-400">Documenta funciones y clases automáticamente</div>
-                  </div>
+            </section>
+
+            <!-- AI Features -->
+            <section id="ai-features" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🤖 Features de IA Avanzada
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-green-500/20"
+                        >
+                            <div class="text-3xl mb-4">🧠</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Smart Content Generation
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Code Understanding:</strong> Analiza
+                                    context y dependencies
+                                </li>
+                                <li>
+                                    • <strong>Auto Descriptions:</strong> Genera
+                                    descriptions claras y concisas
+                                </li>
+                                <li>
+                                    • <strong>Example Generation:</strong> Crea code
+                                    examples realistas
+                                </li>
+                                <li>
+                                    • <strong>Tutorial Creation:</strong> Builds
+                                    step-by-step guides
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-emerald-500/20"
+                        >
+                            <div class="text-3xl mb-4">🔍</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Intelligent Search
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Semantic Search:</strong> Encuentra
+                                    info por intent, no keywords
+                                </li>
+                                <li>
+                                    • <strong>Context Awareness:</strong> Resultados
+                                    relevantes por section
+                                </li>
+                                <li>
+                                    • <strong>Auto-Suggestions:</strong> Completa
+                                    queries mientras escribes
+                                </li>
+                                <li>
+                                    • <strong>Multi-Modal:</strong> Busca en text,
+                                    code y diagramas
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-teal-500/20"
+                        >
+                            <div class="text-3xl mb-4">📊</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Content Optimization
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Readability Analysis:</strong> Optimiza
+                                    clarity y comprehension
+                                </li>
+                                <li>
+                                    • <strong>Structure Suggestions:</strong> Mejora
+                                    organización de content
+                                </li>
+                                <li>
+                                    • <strong>Gap Detection:</strong> Identifica
+                                    missing documentation
+                                </li>
+                                <li>
+                                    • <strong>Style Consistency:</strong> Mantiene
+                                    voice y tone unified
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-green-600/20"
+                        >
+                            <div class="text-3xl mb-4">🔄</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Maintenance Automation
+                            </h3>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li>
+                                    • <strong>Change Detection:</strong> Monitorea
+                                    code changes relevantes
+                                </li>
+                                <li>
+                                    • <strong>Auto Updates:</strong> Regenera sections
+                                    cuando code cambia
+                                </li>
+                                <li>
+                                    • <strong>Broken Link Fix:</strong> Actualiza
+                                    references automáticamente
+                                </li>
+                                <li>
+                                    • <strong>Version Sync:</strong> Mantiene docs
+                                    aligned con releases
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              
-              <div class="bg-gradient-to-r from-green-800/20 to-teal-800/20 rounded-xl p-4 border border-green-500/20">
-                <div class="text-sm text-green-300 font-medium mb-2">🎯 Perfect For</div>
-                <p class="text-gray-400 text-sm">
-                  Engineering teams, API companies, open source projects 
-                  y developer-focused products que necesitan documentación 
-                  professional sin el overhead manual tradicional.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </section>
 
-      <!-- AI Features -->
-      <section id="ai-features" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🤖 Features de IA Avanzada</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-green-500/20">
-              <div class="text-3xl mb-4">🧠</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Smart Content Generation</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Code Understanding:</strong> Analiza context y dependencies</li>
-                <li>• <strong>Auto Descriptions:</strong> Genera descriptions claras y concisas</li>
-                <li>• <strong>Example Generation:</strong> Crea code examples realistas</li>
-                <li>• <strong>Tutorial Creation:</strong> Builds step-by-step guides</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-emerald-500/20">
-              <div class="text-3xl mb-4">🔍</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Intelligent Search</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Semantic Search:</strong> Encuentra info por intent, no keywords</li>
-                <li>• <strong>Context Awareness:</strong> Resultados relevantes por section</li>
-                <li>• <strong>Auto-Suggestions:</strong> Completa queries mientras escribes</li>
-                <li>• <strong>Multi-Modal:</strong> Busca en text, code y diagramas</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6 border border-teal-500/20">
-              <div class="text-3xl mb-4">📊</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Content Optimization</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Readability Analysis:</strong> Optimiza clarity y comprehension</li>
-                <li>• <strong>Structure Suggestions:</strong> Mejora organización de content</li>
-                <li>• <strong>Gap Detection:</strong> Identifica missing documentation</li>
-                <li>• <strong>Style Consistency:</strong> Mantiene voice y tone unified</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-green-600/20">
-              <div class="text-3xl mb-4">🔄</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Maintenance Automation</h3>
-              <ul class="text-gray-400 space-y-2 text-sm">
-                <li>• <strong>Change Detection:</strong> Monitorea code changes relevantes</li>
-                <li>• <strong>Auto Updates:</strong> Regenera sections cuando code cambia</li>
-                <li>• <strong>Broken Link Fix:</strong> Actualiza references automáticamente</li>
-                <li>• <strong>Version Sync:</strong> Mantiene docs aligned con releases</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- Auto Generation -->
+            <section id="auto-generation" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚙️ Auto Generation Workflow
+                </h2>
 
-      <!-- Auto Generation -->
-      <section id="auto-generation" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">⚙️ Auto Generation Workflow</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-green-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6 text-center">🔄 From Code to Docs</h3>
-            
-            <div class="grid md:grid-cols-4 gap-6">
-              <div class="text-center">
-                <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">1</div>
-                <h4 class="font-semibold text-white mb-2">📥 Code Ingestion</h4>
-                <p class="text-gray-400 text-sm">
-                  AI analiza repository structure, 
-                  code patterns y existing comments.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">2</div>
-                <h4 class="font-semibold text-white mb-2">🧠 Context Understanding</h4>
-                <p class="text-gray-400 text-sm">
-                  Identifica purpose, dependencies, 
-                  usage patterns y domain context.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">3</div>
-                <h4 class="font-semibold text-white mb-2">✍️ Content Generation</h4>
-                <p class="text-gray-400 text-sm">
-                  Genera descriptions, examples, 
-                  guides y references automáticamente.
-                </p>
-              </div>
-              
-              <div class="text-center">
-                <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">4</div>
-                <h4 class="font-semibold text-white mb-2">🎨 Beautiful Rendering</h4>
-                <p class="text-gray-400 text-sm">
-                  Publica como web moderna con 
-                  navigation, search y interactivity.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-teal-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🚀 Integration Options</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <h4 class="font-semibold text-green-300 mb-3">Git Integration</h4>
-                <ul class="text-gray-400 text-sm space-y-2">
-                  <li>• <strong>GitHub/GitLab:</strong> Auto-sync con repository changes</li>
-                  <li>• <strong>PR Integration:</strong> Preview docs changes en PRs</li>
-                  <li>• <strong>Branch Support:</strong> Different docs per branch/environment</li>
-                  <li>• <strong>CI/CD Ready:</strong> Fits seamlessly en pipeline</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 class="font-semibold text-emerald-300 mb-3">API & Frameworks</h4>
-                <ul class="text-gray-400 text-sm space-y-2">
-                  <li>• <strong>OpenAPI/Swagger:</strong> Auto API docs generation</li>
-                  <li>• <strong>TypeScript:</strong> Extract interfaces y types</li>
-                  <li>• <strong>JSDoc/TSDoc:</strong> Leverages existing comments</li>
-                  <li>• <strong>Multi-Language:</strong> Python, Go, Java, Rust support</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-green-500/20"
+                    >
+                        <h3
+                            class="text-xl font-semibold text-white mb-6 text-center"
+                        >
+                            🔄 From Code to Docs
+                        </h3>
 
-      <!-- Ejemplos Prácticos -->
-      <section id="ejemplos" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">💡 Casos de Uso Reales</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-green-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">🚀 API Documentation Automática</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-green-300 mb-2">Input: OpenAPI Spec</div>
-                  <p class="text-gray-400 text-sm">
-                    Fintech startup con 150+ endpoints. Mintlify AI analiza 
-                    OpenAPI spec y genera documentación completa con examples, 
-                    error codes, rate limits y authentication flows.
-                  </p>
+                        <div class="grid md:grid-cols-4 gap-6">
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    1
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    📥 Code Ingestion
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    AI analiza repository structure, code
+                                    patterns y existing comments.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    2
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🧠 Context Understanding
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Identifica purpose, dependencies, usage
+                                    patterns y domain context.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    3
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    ✍️ Content Generation
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Genera descriptions, examples, guides y
+                                    references automáticamente.
+                                </p>
+                            </div>
+
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+                                >
+                                    4
+                                </div>
+                                <h4 class="font-semibold text-white mb-2">
+                                    🎨 Beautiful Rendering
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    Publica como web moderna con navigation,
+                                    search y interactivity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-teal-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🚀 Integration Options
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-green-300 mb-3">
+                                    Git Integration
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>GitHub/GitLab:</strong> Auto-sync
+                                        con repository changes
+                                    </li>
+                                    <li>
+                                        • <strong>PR Integration:</strong> Preview
+                                        docs changes en PRs
+                                    </li>
+                                    <li>
+                                        • <strong>Branch Support:</strong> Different
+                                        docs per branch/environment
+                                    </li>
+                                    <li>
+                                        • <strong>CI/CD Ready:</strong> Fits seamlessly
+                                        en pipeline
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-emerald-300 mb-3">
+                                    API & Frameworks
+                                </h4>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>
+                                        • <strong>OpenAPI/Swagger:</strong> Auto
+                                        API docs generation
+                                    </li>
+                                    <li>
+                                        • <strong>TypeScript:</strong> Extract interfaces
+                                        y types
+                                    </li>
+                                    <li>
+                                        • <strong>JSDoc/TSDoc:</strong> Leverages
+                                        existing comments
+                                    </li>
+                                    <li>
+                                        • <strong>Multi-Language:</strong> Python,
+                                        Go, Java, Rust support
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="font-semibold text-emerald-300 mb-2">AI Enhancements</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• <strong>Smart Examples:</strong> Realistic data en requests/responses</li>
-                  <li>• <strong>Error Scenarios:</strong> Common error cases y solutions</li>
-                  <li>• <strong>SDKs Generation:</strong> Code examples para multiple languages</li>
-                  <li>• <strong>Flow Diagrams:</strong> Visual auth y integration flows</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Generated API Docs Preview</div>
-                <pre class="text-xs text-green-400"><code>{`## POST /api/v1/payments
+            </section>
+
+            <!-- Ejemplos Prácticos -->
+            <section id="ejemplos" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    💡 Casos de Uso Reales
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-green-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            🚀 API Documentation Automática
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-green-300 mb-2"
+                                    >
+                                        Input: OpenAPI Spec
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        Fintech startup con 150+ endpoints.
+                                        Mintlify AI analiza OpenAPI spec y
+                                        genera documentación completa con
+                                        examples, error codes, rate limits y
+                                        authentication flows.
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="font-semibold text-emerald-300 mb-2"
+                                >
+                                    AI Enhancements
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>Smart Examples:</strong> Realistic
+                                        data en requests/responses
+                                    </li>
+                                    <li>
+                                        • <strong>Error Scenarios:</strong> Common
+                                        error cases y solutions
+                                    </li>
+                                    <li>
+                                        • <strong>SDKs Generation:</strong> Code
+                                        examples para multiple languages
+                                    </li>
+                                    <li>
+                                        • <strong>Flow Diagrams:</strong> Visual
+                                        auth y integration flows
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Generated API Docs Preview
+                                </div>
+                                <pre
+                                    class="text-xs text-green-400"><code>{`## POST /api/v1/payments
 
 Create a new payment transaction with support for 
 multiple payment methods and currencies.
@@ -326,36 +580,63 @@ multiple payment methods and currencies.
 
 ### Code Examples
 JavaScript | Python | cURL`}</code></pre>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-teal-500/20">
-            <h3 class="text-xl font-semibold text-white mb-6">📚 Open Source Project Docs</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-teal-300 mb-2">Challenge</div>
-                  <p class="text-gray-400 text-sm">
-                    Popular React library con 10K+ GitHub stars pero docs 
-                    outdated. Mintlify AI genera comprehensive docs desde 
-                    TypeScript code, comments y usage examples.
-                  </p>
-                </div>
-                
-                <div class="font-semibold text-green-300 mb-2">Generated Content</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• <strong>Component API:</strong> Props, methods y events docs</li>
-                  <li>• <strong>Getting Started:</strong> Installation y basic usage</li>
-                  <li>• <strong>Examples Gallery:</strong> Interactive code sandboxes</li>
-                  <li>• <strong>Migration Guide:</strong> Upgrade paths between versions</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Component Documentation</div>
-                <pre class="text-xs text-teal-400"><code>{`# Button Component
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-teal-500/20"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-6">
+                            📚 Open Source Project Docs
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-teal-300 mb-2"
+                                    >
+                                        Challenge
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        Popular React library con 10K+ GitHub
+                                        stars pero docs outdated. Mintlify AI
+                                        genera comprehensive docs desde
+                                        TypeScript code, comments y usage
+                                        examples.
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-green-300 mb-2">
+                                    Generated Content
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>Component API:</strong> Props,
+                                        methods y events docs
+                                    </li>
+                                    <li>
+                                        • <strong>Getting Started:</strong> Installation
+                                        y basic usage
+                                    </li>
+                                    <li>
+                                        • <strong>Examples Gallery:</strong> Interactive
+                                        code sandboxes
+                                    </li>
+                                    <li>
+                                        • <strong>Migration Guide:</strong> Upgrade
+                                        paths between versions
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Component Documentation
+                                </div>
+                                <pre
+                                    class="text-xs text-teal-400"><code>{`# Button Component
 
 A flexible, accessible button component with 
 multiple variants and built-in loading states.
@@ -391,111 +672,178 @@ function App() {
 - Full keyboard navigation support
 - ARIA labels and roles
 - Screen reader optimized`}</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Beneficios Empresariales -->
-      <section id="beneficios" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">📈 Beneficios Empresariales</h2>
-        
-        <div class="bg-gray-900 rounded-xl p-8">
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="text-center">
-              <div class="text-4xl mb-4">⚡</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Speed</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-green-900/30 p-3 rounded">
-                  <div class="font-bold text-green-300 text-lg">90%</div>
-                  <div class="text-gray-400">Faster docs creation</div>
-                </div>
-                <div class="bg-emerald-900/30 p-3 rounded">
-                  <div class="font-bold text-emerald-300 text-lg">50%</div>
-                  <div class="text-gray-400">Less engineering time</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="text-center">
-              <div class="text-4xl mb-4">📊</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Quality</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-teal-900/30 p-3 rounded">
-                  <div class="font-bold text-teal-300 text-lg">95%</div>
-                  <div class="text-gray-400">Always up-to-date</div>
-                </div>
-                <div class="bg-green-900/30 p-3 rounded">
-                  <div class="font-bold text-green-300 text-lg">3x</div>
-                  <div class="text-gray-400">Better developer experience</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="text-center">
-              <div class="text-4xl mb-4">🚀</div>
-              <h3 class="text-xl font-semibold text-white mb-3">Adoption</h3>
-              <div class="space-y-2 text-sm">
-                <div class="bg-emerald-900/30 p-3 rounded">
-                  <div class="font-bold text-emerald-300 text-lg">2x</div>
-                  <div class="text-gray-400">Higher API adoption</div>
-                </div>
-                <div class="bg-teal-900/30 p-3 rounded">
-                  <div class="font-bold text-teal-300 text-lg">70%</div>
-                  <div class="text-gray-400">Fewer support tickets</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- Beneficios Empresariales -->
+            <section id="beneficios" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    📈 Beneficios Empresariales
+                </h2>
 
-      <!-- Planes -->
-      <section class="mb-12">
-        <div class="bg-gradient-to-r from-green-900/20 to-teal-900/20 border border-green-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">💼 Planes Disponibles</h2>
-          
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🆓 Startup</h3>
-              <div class="text-2xl font-bold text-gray-400 mb-2">$0</div>
-              <div class="text-gray-400 text-sm mb-4">Para proyectos pequeños</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• 1 documentation site</li>
-                <li>• Basic AI generation</li>
-                <li>• Community support</li>
-                <li>• Standard themes</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-green-500/50">
-              <h3 class="text-lg font-semibold text-white mb-3">⭐ Growth</h3>
-              <div class="text-2xl font-bold text-green-400 mb-2">$50/mes</div>
-              <div class="text-gray-400 text-sm mb-4">Para teams en crecimiento</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• 5 documentation sites</li>
-                <li>• Advanced AI features</li>
-                <li>• Custom domains</li>
-                <li>• Analytics y insights</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🏢 Enterprise</h3>
-              <div class="text-2xl font-bold text-teal-400 mb-2">$200/mes</div>
-              <div class="text-gray-400 text-sm mb-4">Para organizaciones</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Unlimited sites</li>
-                <li>• White-label options</li>
-                <li>• SSO integration</li>
-                <li>• Priority support</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+                <div class="bg-gray-900 rounded-xl p-8">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">⚡</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Speed
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-green-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-green-300 text-lg"
+                                    >
+                                        90%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Faster docs creation
+                                    </div>
+                                </div>
+                                <div class="bg-emerald-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-emerald-300 text-lg"
+                                    >
+                                        50%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Less engineering time
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    </div>
-  </main>
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">📊</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Quality
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-teal-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-teal-300 text-lg"
+                                    >
+                                        95%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Always up-to-date
+                                    </div>
+                                </div>
+                                <div class="bg-green-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-green-300 text-lg"
+                                    >
+                                        3x
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Better developer experience
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🚀</div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Adoption
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="bg-emerald-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-emerald-300 text-lg"
+                                    >
+                                        2x
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Higher API adoption
+                                    </div>
+                                </div>
+                                <div class="bg-teal-900/30 p-3 rounded">
+                                    <div
+                                        class="font-bold text-teal-300 text-lg"
+                                    >
+                                        70%
+                                    </div>
+                                    <div class="text-gray-400">
+                                        Fewer support tickets
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Planes -->
+            <section class="mb-12">
+                <div
+                    class="bg-gradient-to-r from-green-900/20 to-teal-900/20 border border-green-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        💼 Planes Disponibles
+                    </h2>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🆓 Startup
+                            </h3>
+                            <div class="text-2xl font-bold text-gray-400 mb-2">
+                                $0
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para proyectos pequeños
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• 1 documentation site</li>
+                                <li>• Basic AI generation</li>
+                                <li>• Community support</li>
+                                <li>• Standard themes</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-green-500/50"
+                        >
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                ⭐ Growth
+                            </h3>
+                            <div class="text-2xl font-bold text-green-400 mb-2">
+                                $50/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para teams en crecimiento
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• 5 documentation sites</li>
+                                <li>• Advanced AI features</li>
+                                <li>• Custom domains</li>
+                                <li>• Analytics y insights</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🏢 Enterprise
+                            </h3>
+                            <div class="text-2xl font-bold text-teal-400 mb-2">
+                                $200/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para organizaciones
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Unlimited sites</li>
+                                <li>• White-label options</li>
+                                <li>• SSO integration</li>
+                                <li>• Priority support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </Layout>

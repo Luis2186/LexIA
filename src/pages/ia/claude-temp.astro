@@ -1,49 +1,40 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import BackButton from "../../components/BackButton.astro";
-
-const breadcrumbs = [
-    { name: "Herramientas IA", href: "/herramientas-ia" },
-    { name: "Chat & Asistentes", href: "/herramientas-ia/chat" },
-    { name: "ChatGPT", current: true },
-];
 ---
 
-<Layout title="ChatGPT - Asistente IA Conversacional | LexIA">
-    <Breadcrumbs items={breadcrumbs} />
-    <BackButton href="/herramientas-ia/chat" text="Chat & Asistentes" />
+<Layout title="Claude - Asistente IA Avanzado por Anthropic | LexIA">
     <main class="bg-black min-h-screen">
         <!-- Header -->
         <header
-            class="relative bg-gradient-to-r from-emerald-900 via-teal-900 to-cyan-900 py-20"
+            class="relative bg-gradient-to-r from-orange-900 via-amber-900 to-yellow-900 py-20"
         >
             <div class="absolute inset-0 bg-black/50"></div>
             <div class="relative z-10 max-w-6xl mx-auto px-4">
                 <div class="flex items-center gap-6 mb-8">
                     <div
-                        class="w-20 h-20 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center text-4xl"
+                        class="w-20 h-20 bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center text-4xl"
                     >
-                        💬
+                        🧠
                     </div>
                     <div>
                         <h1
                             class="text-5xl md:text-6xl font-bold text-white mb-2"
                         >
-                            ChatGPT
+                            Claude
                         </h1>
-                        <p class="text-xl text-emerald-300">
-                            Asistente IA Conversacional
+                        <p class="text-xl text-orange-300">
+                            Asistente IA de Nueva Generación
                         </p>
-                        <p class="text-gray-400">by OpenAI</p>
+                        <p class="text-gray-400">by Anthropic</p>
                     </div>
                 </div>
 
                 <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-                    ChatGPT es el asistente de IA conversacional más avanzado
-                    del mundo, capaz de ayudarte con programación, análisis de
-                    código, debugging, arquitectura de software y resolución de
-                    problemas técnicos complejos.
+                    Claude es la familia de modelos de IA más avanzada de
+                    Anthropic, incluyendo Claude 3 y Claude 3.5 Sonnet.
+                    Especializada en análisis de código profundo, arquitectura
+                    de software y resolución de problemas complejos con un
+                    enfoque revolucionario en seguridad y Constitutional AI.
                 </p>
             </div>
         </header>
@@ -56,28 +47,28 @@ const breadcrumbs = [
                 <div class="flex overflow-x-auto py-4 space-x-8">
                     <a
                         href="#que-es"
-                        class="text-emerald-400 hover:text-emerald-300 whitespace-nowrap transition-colors"
+                        class="text-orange-400 hover:text-orange-300 whitespace-nowrap transition-colors"
                         >¿Qué es?</a
                     >
                     <a
+                        href="#capacidades"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >Capacidades</a
+                    >
+                    <a
                         href="#para-devs"
-                        class="text-gray-400 hover:text-emerald-300 whitespace-nowrap transition-colors"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
                         >Para Developers</a
                     >
                     <a
-                        href="#casos-uso"
-                        class="text-gray-400 hover:text-emerald-300 whitespace-nowrap transition-colors"
-                        >Casos de Uso</a
-                    >
-                    <a
                         href="#ejemplos"
-                        class="text-gray-400 hover:text-emerald-300 whitespace-nowrap transition-colors"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
                         >Ejemplos</a
                     >
                     <a
-                        href="#tips"
-                        class="text-gray-400 hover:text-emerald-300 whitespace-nowrap transition-colors"
-                        >Tips Avanzados</a
+                        href="#comparacion"
+                        class="text-gray-400 hover:text-orange-300 whitespace-nowrap transition-colors"
+                        >vs Competencia</a
                     >
                 </div>
             </div>
@@ -85,69 +76,72 @@ const breadcrumbs = [
 
         <!-- Content -->
         <div class="max-w-6xl mx-auto px-4 py-12">
-            <!-- ¿Qué es ChatGPT? -->
+            <!-- ¿Qué es Claude? -->
             <section id="que-es" class="mb-20">
                 <div
-                    class="bg-gradient-to-r from-emerald-900/20 to-teal-900/20 border border-emerald-500/20 rounded-2xl p-8"
+                    class="bg-gradient-to-r from-orange-900/20 to-amber-900/20 border border-orange-500/20 rounded-2xl p-8"
                 >
                     <h2 class="text-3xl font-bold text-white mb-6">
-                        💬 ¿Qué es ChatGPT?
+                        🧠 ¿Qué es Claude?
                     </h2>
 
                     <div class="grid md:grid-cols-2 gap-8">
                         <div class="space-y-4">
                             <p class="text-gray-300 leading-relaxed">
-                                <strong>ChatGPT</strong> es un modelo de lenguaje
-                                avanzado desarrollado por OpenAI, especialmente poderoso
-                                para tareas de programación. Puede escribir código,
-                                explicar algoritmos complejos, debuggear errores
-                                y actuar como tu mentor de programación personal
-                                disponible 24/7.
+                                <strong>Claude</strong> es la familia de modelos
+                                de IA más avanzada desarrollada por Anthropic, que
+                                incluye <strong>Claude 3</strong> (Haiku, Sonnet,
+                                Opus) y <strong>Claude 3.5 Sonnet</strong>,
+                                diseñada con un enfoque revolucionario en la <strong
+                                    >Constitutional AI</strong
+                                > - un paradigma que prioriza la seguridad, la honestidad
+                                y la utilidad. Para developers, esto significa respuestas
+                                más precisas, código más seguro y explicaciones más
+                                profundas que cualquier generación anterior.
                             </p>
 
                             <div class="bg-gray-900 rounded-xl p-6">
                                 <h3
                                     class="text-lg font-semibold text-white mb-4"
                                 >
-                                    🎯 Fortalezas para Developers
+                                    🎯 Diferenciadores Clave
                                 </h3>
 
                                 <div class="space-y-3 text-sm">
                                     <div class="flex items-start gap-3">
-                                        <span class="text-emerald-400">🧠</span>
+                                        <span class="text-orange-400">🛡️</span>
                                         <div>
                                             <div class="text-white font-medium">
-                                                Comprensión Contextual
+                                                Constitutional AI
                                             </div>
                                             <div class="text-gray-400">
-                                                Entiende proyectos complejos y
-                                                arquitecturas
+                                                Respuestas más seguras y éticas
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="flex items-start gap-3">
-                                        <span class="text-teal-400">💡</span>
+                                        <span class="text-amber-400">�</span>
                                         <div>
                                             <div class="text-white font-medium">
-                                                Explicaciones Detalladas
+                                                Context Window Extenso
                                             </div>
                                             <div class="text-gray-400">
-                                                Explica el "por qué" detrás del
+                                                Analiza proyectos completos de
                                                 código
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="flex items-start gap-3">
-                                        <span class="text-cyan-400">🔍</span>
+                                        <span class="text-yellow-400">🔍</span>
                                         <div>
                                             <div class="text-white font-medium">
-                                                Debugging Expert
+                                                Análisis Profundo
                                             </div>
                                             <div class="text-gray-400">
-                                                Identifica bugs y sugiere
-                                                soluciones
+                                                Comprende arquitecturas
+                                                complejas
                                             </div>
                                         </div>
                                     </div>
@@ -160,49 +154,49 @@ const breadcrumbs = [
                                 <h3
                                     class="text-lg font-semibold text-white mb-4"
                                 >
-                                    🚀 Capacidades Técnicas
+                                    🚀 Familia Claude
                                 </h3>
 
                                 <div class="space-y-4 text-sm">
                                     <div
-                                        class="border-l-4 border-emerald-500 pl-4"
+                                        class="border-l-4 border-orange-500 pl-4"
                                     >
                                         <div
-                                            class="font-semibold text-emerald-300"
+                                            class="font-semibold text-orange-300"
                                         >
-                                            Code Generation
+                                            Claude 3 Haiku
                                         </div>
                                         <div class="text-gray-400">
-                                            Desde funciones simples hasta
-                                            aplicaciones completas
+                                            Rápido y eficiente para tareas
+                                            simples
                                         </div>
                                     </div>
 
                                     <div
-                                        class="border-l-4 border-teal-500 pl-4"
+                                        class="border-l-4 border-amber-500 pl-4"
                                     >
                                         <div
-                                            class="font-semibold text-teal-300"
+                                            class="font-semibold text-amber-300"
                                         >
-                                            Architecture Design
+                                            Claude 3 Sonnet
                                         </div>
                                         <div class="text-gray-400">
-                                            Diseño de sistemas y patrones de
-                                            software
+                                            Balance perfecto entre velocidad y
+                                            capacidad
                                         </div>
                                     </div>
 
                                     <div
-                                        class="border-l-4 border-cyan-500 pl-4"
+                                        class="border-l-4 border-yellow-500 pl-4"
                                     >
                                         <div
-                                            class="font-semibold text-cyan-300"
+                                            class="font-semibold text-yellow-300"
                                         >
-                                            Code Review
+                                            Claude 3.5 Sonnet
                                         </div>
                                         <div class="text-gray-400">
-                                            Análisis de calidad y mejores
-                                            prácticas
+                                            El más avanzado para desarrollo
+                                            complejo
                                         </div>
                                     </div>
                                 </div>
@@ -212,55 +206,94 @@ const breadcrumbs = [
                 </div>
             </section>
 
-            <!-- Para Developers -->
-            <section id="para-devs" class="mb-20">
+            <!-- Capacidades -->
+            <section id="capacidades" class="mb-20">
                 <h2 class="text-3xl font-bold text-white mb-8">
-                    👨‍💻 ChatGPT para Developers
+                    ⚡ Capacidades Extraordinarias
                 </h2>
 
                 <div class="grid md:grid-cols-3 gap-6">
                     <div
-                        class="bg-gray-900 rounded-xl p-6 border border-emerald-500/20"
+                        class="bg-gray-900 rounded-xl p-6 border border-orange-500/20"
                     >
-                        <div class="text-3xl mb-4">🤖</div>
+                        <div class="text-3xl mb-4">📖</div>
                         <h3 class="text-xl font-semibold text-white mb-3">
-                            Pair Programming
+                            Context Window Masivo
                         </h3>
                         <ul class="text-gray-400 space-y-2 text-sm">
-                            <li>• Brainstorming de soluciones</li>
-                            <li>• Revisión de lógica de negocio</li>
-                            <li>• Sugerencias de mejoras</li>
-                            <li>• Refactoring inteligente</li>
+                            <li>• 200K tokens (Claude 3.5)</li>
+                            <li>• Analiza bases de código completas</li>
+                            <li>• Retiene contexto conversacional</li>
+                            <li>• Procesa documentación extensa</li>
                         </ul>
                     </div>
 
                     <div
-                        class="bg-gray-900 rounded-xl p-6 border border-teal-500/20"
+                        class="bg-gray-900 rounded-xl p-6 border border-amber-500/20"
                     >
-                        <div class="text-3xl mb-4">🎓</div>
+                        <div class="text-3xl mb-4">🛡️</div>
                         <h3 class="text-xl font-semibold text-white mb-3">
-                            Learning Assistant
+                            Constitutional AI
                         </h3>
                         <ul class="text-gray-400 space-y-2 text-sm">
-                            <li>• Explicación de conceptos</li>
-                            <li>• Ejemplos prácticos</li>
-                            <li>• Best practices</li>
-                            <li>• Technology comparisons</li>
+                            <li>• Código más seguro por diseño</li>
+                            <li>• Evita vulnerabilidades conocidas</li>
+                            <li>• Respuestas más honestas</li>
+                            <li>• Rechaza requests peligrosos</li>
                         </ul>
                     </div>
 
                     <div
-                        class="bg-gray-900 rounded-xl p-6 border border-cyan-500/20"
+                        class="bg-gray-900 rounded-xl p-6 border border-yellow-500/20"
                     >
-                        <div class="text-3xl mb-4">🔧</div>
+                        <div class="text-3xl mb-4">�</div>
                         <h3 class="text-xl font-semibold text-white mb-3">
-                            Problem Solver
+                            Precisión Técnica
                         </h3>
                         <ul class="text-gray-400 space-y-2 text-sm">
-                            <li>• Debug de errores complejos</li>
-                            <li>• Optimización de performance</li>
-                            <li>• Design patterns</li>
-                            <li>• Testing strategies</li>
+                            <li>• Menos alucinaciones</li>
+                            <li>• Cita fuentes cuando es relevante</li>
+                            <li>• Admite limitaciones</li>
+                            <li>• Explica razonamiento paso a paso</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Para Developers -->
+            <section id="para-devs" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    👨‍💻 Claude para Developers
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-orange-500/20"
+                    >
+                        <div class="text-3xl mb-4">🧮</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Análisis de Código Profundo
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Comprende arquitecturas complejas</li>
+                            <li>• Identifica anti-patterns</li>
+                            <li>• Sugiere refactoring inteligente</li>
+                            <li>• Analiza performance implications</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-amber-500/20"
+                    >
+                        <div class="text-3xl mb-4">🔐</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Security-First Approach
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Detecta vulnerabilidades OWASP</li>
+                            <li>• Sugiere secure coding practices</li>
+                            <li>• Valida inputs automáticamente</li>
+                            <li>• Implementa principio least privilege</li>
                         </ul>
                     </div>
                 </div>

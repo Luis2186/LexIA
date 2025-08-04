@@ -1,188 +1,319 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="GitHub Copilot - Tu Copiloto de Código IA | LexIA">
-  <main class="bg-black min-h-screen">
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-gray-900 via-slate-900 to-black py-20">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4">
-        <div class="flex items-center gap-6 mb-8">
-          <div class="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center text-4xl">
-            🤖
-          </div>
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">GitHub Copilot</h1>
-            <p class="text-xl text-blue-300">Tu Copiloto de Código IA</p>
-            <p class="text-gray-400">by GitHub</p>
-          </div>
-        </div>
-        
-        <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-          GitHub Copilot es tu programador de IA que sugiere código en tiempo real. 
-          Entrenado en billones de líneas de código público, te ayuda a escribir código 
-          más rápido con menos esfuerzo, directamente en tu editor favorito.
-        </p>
-      </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex overflow-x-auto py-4 space-x-8">
-          <a href="#que-es" class="text-blue-400 hover:text-blue-300 whitespace-nowrap transition-colors">¿Qué es?</a>
-          <a href="#como-funciona" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">¿Cómo funciona?</a>
-          <a href="#casos-uso" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Casos de Uso</a>
-          <a href="#ejemplos" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">Ejemplos</a>
-          <a href="#comparacion" class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors">vs Competencia</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      
-      <!-- ¿Qué es GitHub Copilot? -->
-      <section id="que-es" class="mb-20">
-        <div class="bg-gradient-to-r from-gray-900/20 to-slate-900/20 border border-gray-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">🤖 ¿Qué es GitHub Copilot?</h2>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-4">
-              <p class="text-gray-300 leading-relaxed">
-                <strong>GitHub Copilot</strong> es el asistente de programación de IA desarrollado por GitHub 
-                en colaboración con OpenAI. Utiliza el modelo Codex para sugerir líneas de código y 
-                funciones completas en tiempo real, directamente en tu editor mientras escribes.
-              </p>
-              
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🎯 Características Principales</h3>
-                
-                <div class="space-y-3 text-sm">
-                  <div class="flex items-start gap-3">
-                    <span class="text-blue-400">💡</span>
-                    <div>
-                      <div class="text-white font-medium">Sugerencias Inteligentes</div>
-                      <div class="text-gray-400">Código contextual en tiempo real</div>
+    <main class="bg-black min-h-screen">
+        <!-- Header -->
+        <header
+            class="relative bg-gradient-to-r from-gray-900 via-slate-900 to-black py-20"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center text-4xl"
+                    >
+                        🤖
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-purple-400">🌐</span>
                     <div>
-                      <div class="text-white font-medium">Multi-lenguaje</div>
-                      <div class="text-gray-400">Soporte para 30+ lenguajes de programación</div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            GitHub Copilot
+                        </h1>
+                        <p class="text-xl text-blue-300">
+                            Tu Copiloto de Código IA
+                        </p>
+                        <p class="text-gray-400">by GitHub</p>
                     </div>
-                  </div>
-                  
-                  <div class="flex items-start gap-3">
-                    <span class="text-green-400">🔌</span>
-                    <div>
-                      <div class="text-white font-medium">Integración IDE</div>
-                      <div class="text-gray-400">VS Code, JetBrains, Neovim, y más</div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+
+                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
+                    GitHub Copilot es tu programador de IA que sugiere código en
+                    tiempo real. Entrenado en billones de líneas de código
+                    público, te ayuda a escribir código más rápido con menos
+                    esfuerzo, directamente en tu editor favorito.
+                </p>
             </div>
-            
-            <div class="space-y-6">
-              <div class="bg-gray-900 rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-white mb-4">🚀 Impacto en Productividad</h3>
-                
-                <div class="space-y-4 text-sm">
-                  <div class="border-l-4 border-blue-500 pl-4">
-                    <div class="font-semibold text-blue-300">55% Código Aceptado</div>
-                    <div class="text-gray-400">Los desarrolladores aceptan más de la mitad de las sugerencias</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-purple-500 pl-4">
-                    <div class="font-semibold text-purple-300">40% Menos Tiempo</div>
-                    <div class="text-gray-400">Reducción en tiempo de desarrollo de tareas</div>
-                  </div>
-                  
-                  <div class="border-l-4 border-green-500 pl-4">
-                    <div class="font-semibold text-green-300">GitHub Native</div>
-                    <div class="text-gray-400">Integración perfecta con el ecosistema GitHub</div>
-                  </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav
+            class="bg-gray-900/50 border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-8">
+                    <a
+                        href="#que-es"
+                        class="text-blue-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >¿Qué es?</a
+                    >
+                    <a
+                        href="#como-funciona"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >¿Cómo funciona?</a
+                    >
+                    <a
+                        href="#casos-uso"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Casos de Uso</a
+                    >
+                    <a
+                        href="#ejemplos"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >Ejemplos</a
+                    >
+                    <a
+                        href="#comparacion"
+                        class="text-gray-400 hover:text-blue-300 whitespace-nowrap transition-colors"
+                        >vs Competencia</a
+                    >
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </nav>
 
-      <!-- ¿Cómo funciona? -->
-      <section id="como-funciona" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">⚡ ¿Cómo funciona GitHub Copilot?</h2>
-        
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-gray-900 rounded-xl p-6 border border-blue-500/20">
-            <div class="text-3xl mb-4">📊</div>
-            <h3 class="text-xl font-semibold text-white mb-3">Modelo Codex</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• Entrenado en código público de GitHub</li>
-              <li>• Comprende contexto y patrones</li>
-              <li>• Aprende de comentarios y nombres</li>
-              <li>• Predice siguiente línea de código</li>
-            </ul>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-6 border border-purple-500/20">
-            <div class="text-3xl mb-4">🔄</div>
-            <h3 class="text-xl font-semibold text-white mb-3">Análisis Contextual</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• Lee archivo actual completo</li>
-              <li>• Analiza archivos relacionados</li>
-              <li>• Entiende imports y dependencias</li>
-              <li>• Considera estilo de código</li>
-            </ul>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-6 border border-green-500/20">
-            <div class="text-3xl mb-4">💡</div>
-            <h3 class="text-xl font-semibold text-white mb-3">Sugerencias Inteligentes</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li>• Completar líneas de código</li>
-              <li>• Funciones completas</li>
-              <li>• Tests automáticos</li>
-              <li>• Documentación de código</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        <!-- Content -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- ¿Qué es GitHub Copilot? -->
+            <section id="que-es" class="mb-20">
+                <div
+                    class="bg-gradient-to-r from-gray-900/20 to-slate-900/20 border border-gray-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🤖 ¿Qué es GitHub Copilot?
+                    </h2>
 
-      <!-- Casos de Uso -->
-      <section id="casos-uso" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">🛠️ Casos de Uso Prácticos</h2>
-        
-        <div class="space-y-8">
-          <div class="bg-gray-900 rounded-xl p-8 border border-blue-500/20">
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 class="text-xl font-semibold text-white mb-4">🏗️ Desarrollo de APIs</h3>
-                
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-orange-300 mb-2">Escenario Típico</div>
-                  <p class="text-gray-400 text-sm">
-                    "Necesito crear endpoints REST para una aplicación de e-commerce. 
-                    Empiezo escribiendo un comentario y Copilot genera toda la estructura."
-                  </p>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong>GitHub Copilot</strong> es el asistente de
+                                programación de IA desarrollado por GitHub en colaboración
+                                con OpenAI. Utiliza el modelo Codex para sugerir
+                                líneas de código y funciones completas en tiempo
+                                real, directamente en tu editor mientras escribes.
+                            </p>
+
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🎯 Características Principales
+                                </h3>
+
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-blue-400">💡</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Sugerencias Inteligentes
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Código contextual en tiempo real
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-purple-400">🌐</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Multi-lenguaje
+                                            </div>
+                                            <div class="text-gray-400">
+                                                Soporte para 30+ lenguajes de
+                                                programación
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-green-400">🔌</span>
+                                        <div>
+                                            <div class="text-white font-medium">
+                                                Integración IDE
+                                            </div>
+                                            <div class="text-gray-400">
+                                                VS Code, JetBrains, Neovim, y
+                                                más
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-gray-900 rounded-xl p-6">
+                                <h3
+                                    class="text-lg font-semibold text-white mb-4"
+                                >
+                                    🚀 Impacto en Productividad
+                                </h3>
+
+                                <div class="space-y-4 text-sm">
+                                    <div
+                                        class="border-l-4 border-blue-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-blue-300"
+                                        >
+                                            55% Código Aceptado
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Los desarrolladores aceptan más de
+                                            la mitad de las sugerencias
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-purple-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-purple-300"
+                                        >
+                                            40% Menos Tiempo
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Reducción en tiempo de desarrollo de
+                                            tareas
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="border-l-4 border-green-500 pl-4"
+                                    >
+                                        <div
+                                            class="font-semibold text-green-300"
+                                        >
+                                            GitHub Native
+                                        </div>
+                                        <div class="text-gray-400">
+                                            Integración perfecta con el
+                                            ecosistema GitHub
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="font-semibold text-blue-300 mb-2">Capacidades Copilot</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• <strong>Boilerplate REST:</strong> Genera CRUD automáticamente</li>
-                  <li>• <strong>Validación:</strong> Añade middleware de validación</li>
-                  <li>• <strong>Error Handling:</strong> Manejo consistente de errores</li>
-                  <li>• <strong>Tests:</strong> Genera tests unitarios</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Ejemplo: API Generation</div>
-                <pre class="text-xs text-blue-400"><code>{`// Create CRUD endpoints for products
+            </section>
+
+            <!-- ¿Cómo funciona? -->
+            <section id="como-funciona" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚡ ¿Cómo funciona GitHub Copilot?
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-blue-500/20"
+                    >
+                        <div class="text-3xl mb-4">📊</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Modelo Codex
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Entrenado en código público de GitHub</li>
+                            <li>• Comprende contexto y patrones</li>
+                            <li>• Aprende de comentarios y nombres</li>
+                            <li>• Predice siguiente línea de código</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-purple-500/20"
+                    >
+                        <div class="text-3xl mb-4">🔄</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Análisis Contextual
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Lee archivo actual completo</li>
+                            <li>• Analiza archivos relacionados</li>
+                            <li>• Entiende imports y dependencias</li>
+                            <li>• Considera estilo de código</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-6 border border-green-500/20"
+                    >
+                        <div class="text-3xl mb-4">💡</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Sugerencias Inteligentes
+                        </h3>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Completar líneas de código</li>
+                            <li>• Funciones completas</li>
+                            <li>• Tests automáticos</li>
+                            <li>• Documentación de código</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Casos de Uso -->
+            <section id="casos-uso" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🛠️ Casos de Uso Prácticos
+                </h2>
+
+                <div class="space-y-8">
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-blue-500/20"
+                    >
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3
+                                    class="text-xl font-semibold text-white mb-4"
+                                >
+                                    🏗️ Desarrollo de APIs
+                                </h3>
+
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-orange-300 mb-2"
+                                    >
+                                        Escenario Típico
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        "Necesito crear endpoints REST para una
+                                        aplicación de e-commerce. Empiezo
+                                        escribiendo un comentario y Copilot
+                                        genera toda la estructura."
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-blue-300 mb-2">
+                                    Capacidades Copilot
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>Boilerplate REST:</strong> Genera
+                                        CRUD automáticamente
+                                    </li>
+                                    <li>
+                                        • <strong>Validación:</strong> Añade middleware
+                                        de validación
+                                    </li>
+                                    <li>
+                                        • <strong>Error Handling:</strong> Manejo
+                                        consistente de errores
+                                    </li>
+                                    <li>
+                                        • <strong>Tests:</strong> Genera tests unitarios
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Ejemplo: API Generation
+                                </div>
+                                <pre
+                                    class="text-xs text-blue-400"><code>{`// Create CRUD endpoints for products
 // Copilot generates:
 
 app.get('/api/products', async (req, res) => {
@@ -205,35 +336,64 @@ app.post('/api/products', async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 });`}</code></pre>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-gray-900 rounded-xl p-8 border border-purple-500/20">
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 class="text-xl font-semibold text-white mb-4">🧪 Testing Automático</h3>
-                
-                <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                  <div class="font-semibold text-orange-300 mb-2">Caso de Testing</div>
-                  <p class="text-gray-400 text-sm">
-                    "Tengo una función compleja de cálculo de impuestos. Copilot 
-                    me genera tests comprehensivos con edge cases que no había considerado."
-                  </p>
-                </div>
-                
-                <div class="font-semibold text-purple-300 mb-2">Generación de Tests</div>
-                <ul class="text-gray-400 text-sm space-y-1">
-                  <li>• <strong>Unit Tests:</strong> Test cases automáticos</li>
-                  <li>• <strong>Edge Cases:</strong> Escenarios límite</li>
-                  <li>• <strong>Mock Data:</strong> Datos de prueba realistas</li>
-                  <li>• <strong>Assertions:</strong> Validaciones completas</li>
-                </ul>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Tests Generados</div>
-                <pre class="text-xs text-purple-400"><code>{`describe('calculateTax', () => {
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-900 rounded-xl p-8 border border-purple-500/20"
+                    >
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3
+                                    class="text-xl font-semibold text-white mb-4"
+                                >
+                                    🧪 Testing Automático
+                                </h3>
+
+                                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                    <div
+                                        class="font-semibold text-orange-300 mb-2"
+                                    >
+                                        Caso de Testing
+                                    </div>
+                                    <p class="text-gray-400 text-sm">
+                                        "Tengo una función compleja de cálculo
+                                        de impuestos. Copilot me genera tests
+                                        comprehensivos con edge cases que no
+                                        había considerado."
+                                    </p>
+                                </div>
+
+                                <div class="font-semibold text-purple-300 mb-2">
+                                    Generación de Tests
+                                </div>
+                                <ul class="text-gray-400 text-sm space-y-1">
+                                    <li>
+                                        • <strong>Unit Tests:</strong> Test cases
+                                        automáticos
+                                    </li>
+                                    <li>
+                                        • <strong>Edge Cases:</strong> Escenarios
+                                        límite
+                                    </li>
+                                    <li>
+                                        • <strong>Mock Data:</strong> Datos de prueba
+                                        realistas
+                                    </li>
+                                    <li>
+                                        • <strong>Assertions:</strong> Validaciones
+                                        completas
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Tests Generados
+                                </div>
+                                <pre
+                                    class="text-xs text-purple-400"><code>{`describe('calculateTax', () => {
   it('should calculate basic tax correctly', () => {
     expect(calculateTax(100, 0.21)).toBe(21);
   });
@@ -252,42 +412,57 @@ app.post('/api/products', async (req, res) => {
       .toThrow('Tax rate must be between 0 and 1');
   });
 });`}</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Ejemplos -->
-      <section id="ejemplos" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">💡 Ejemplos en Acción</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-4">⚡ Autocompletado Inteligente</h3>
-              
-              <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                <div class="text-xs text-gray-400 mb-2">Escribes:</div>
-                <pre class="text-xs text-yellow-400"><code>{`// Function to validate email address
+            <!-- Ejemplos -->
+            <section id="ejemplos" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    💡 Ejemplos en Acción
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-4">
+                                ⚡ Autocompletado Inteligente
+                            </h3>
+
+                            <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Escribes:
+                                </div>
+                                <pre
+                                    class="text-xs text-yellow-400"><code>{`// Function to validate email address
 function isValidEmail(`}</code></pre>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Copilot sugiere:</div>
-                <pre class="text-xs text-green-400"><code>{`email) {
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Copilot sugiere:
+                                </div>
+                                <pre
+                                    class="text-xs text-green-400"><code>{`email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }`}</code></pre>
-              </div>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-4">🔄 Refactoring Sugerido</h3>
-              
-              <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                <div class="text-xs text-gray-400 mb-2">Código original:</div>
-                <pre class="text-xs text-red-400"><code>{`// Repetitive code
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-4">
+                                🔄 Refactoring Sugerido
+                            </h3>
+
+                            <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Código original:
+                                </div>
+                                <pre
+                                    class="text-xs text-red-400"><code>{`// Repetitive code
 if (user.role === 'admin') {
   allowAccess = true;
 } else if (user.role === 'moderator') {
@@ -295,48 +470,64 @@ if (user.role === 'admin') {
 } else {
   allowAccess = false;
 }`}</code></pre>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Copilot mejora:</div>
-                <pre class="text-xs text-green-400"><code>{`// Cleaner approach
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Copilot mejora:
+                                </div>
+                                <pre
+                                    class="text-xs text-green-400"><code>{`// Cleaner approach
 const allowAccess = ['admin', 'moderator'].includes(user.role);`}</code></pre>
-              </div>
-            </div>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-4">📝 Documentación Automática</h3>
-              
-              <div class="bg-gray-800 rounded-lg p-4 mb-4">
-                <div class="text-xs text-gray-400 mb-2">Función existente:</div>
-                <pre class="text-xs text-blue-400"><code>{`function calculateShipping(weight, distance, expedited) {
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-4">
+                                📝 Documentación Automática
+                            </h3>
+
+                            <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Función existente:
+                                </div>
+                                <pre
+                                    class="text-xs text-blue-400"><code>{`function calculateShipping(weight, distance, expedited) {
   let cost = weight * 0.5;
   if (distance > 100) cost += 10;
   if (expedited) cost *= 1.5;
   return cost;
 }`}</code></pre>
-              </div>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Copilot documenta:</div>
-                <pre class="text-xs text-green-400"><code>{`/**
+                            </div>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Copilot documenta:
+                                </div>
+                                <pre
+                                    class="text-xs text-green-400"><code>{`/**
  * Calculates shipping cost based on package weight and distance
  * @param {number} weight - Package weight in kg
  * @param {number} distance - Shipping distance in km
  * @param {boolean} expedited - Whether expedited shipping is requested
  * @returns {number} Total shipping cost in dollars
  */`}</code></pre>
-              </div>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-4">🎯 Configuración de Proyecto</h3>
-              
-              <div class="bg-gray-800 rounded-lg p-4">
-                <div class="text-xs text-gray-400 mb-2">Genera configs automáticamente:</div>
-                <pre class="text-xs text-purple-400"><code>{`// package.json scripts
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-4">
+                                🎯 Configuración de Proyecto
+                            </h3>
+
+                            <div class="bg-gray-800 rounded-lg p-4">
+                                <div class="text-xs text-gray-400 mb-2">
+                                    Genera configs automáticamente:
+                                </div>
+                                <pre
+                                    class="text-xs text-purple-400"><code>{`// package.json scripts
 "scripts": {
   "dev": "nodemon server.js",
   "build": "npm run build:client && npm run build:server",
@@ -352,103 +543,168 @@ module.exports = {
     'no-unused-vars': 'error'
   }
 };`}</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Comparación -->
-      <section id="comparacion" class="mb-20">
-        <h2 class="text-3xl font-bold text-white mb-8">📊 GitHub Copilot vs Competencia</h2>
-        
-        <div class="overflow-x-auto">
-          <table class="w-full border-collapse">
-            <thead>
-              <tr class="border-b border-gray-700">
-                <th class="text-left p-4 text-gray-300">Característica</th>
-                <th class="text-center p-4 text-blue-400">GitHub Copilot</th>
-                <th class="text-center p-4 text-gray-400">TabNine</th>
-                <th class="text-center p-4 text-gray-400">Kite</th>
-                <th class="text-center p-4 text-gray-400">IntelliCode</th>
-              </tr>
-            </thead>
-            <tbody class="text-sm">
-              <tr class="border-b border-gray-800">
-                <td class="p-4 text-gray-300">Contexto completo de archivo</td>
-                <td class="p-4 text-center text-green-400">✅ Archivo completo</td>
-                <td class="p-4 text-center text-yellow-400">⚠️ Limitado</td>
-                <td class="p-4 text-center text-red-400">❌ Solo líneas locales</td>
-                <td class="p-4 text-center text-yellow-400">⚠️ Funciones</td>
-              </tr>
-              <tr class="border-b border-gray-800">
-                <td class="p-4 text-gray-300">Funciones completas</td>
-                <td class="p-4 text-center text-green-400">✅ Hasta 100+ líneas</td>
-                <td class="p-4 text-center text-yellow-400">⚠️ Funciones cortas</td>
-                <td class="p-4 text-center text-red-400">❌ Solo líneas</td>
-                <td class="p-4 text-center text-red-400">❌ Solo líneas</td>
-              </tr>
-              <tr class="border-b border-gray-800">
-                <td class="p-4 text-gray-300">Comprende comentarios</td>
-                <td class="p-4 text-center text-green-400">✅ Genera desde comentarios</td>
-                <td class="p-4 text-center text-red-400">❌</td>
-                <td class="p-4 text-center text-red-400">❌</td>
-                <td class="p-4 text-center text-red-400">❌</td>
-              </tr>
-              <tr class="border-b border-gray-800">
-                <td class="p-4 text-gray-300">Integración GitHub</td>
-                <td class="p-4 text-center text-green-400">✅ Nativa</td>
-                <td class="p-4 text-center text-red-400">❌</td>
-                <td class="p-4 text-center text-red-400">❌</td>
-                <td class="p-4 text-center text-red-400">❌</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+            <!-- Comparación -->
+            <section id="comparacion" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    📊 GitHub Copilot vs Competencia
+                </h2>
 
-      <!-- Pricing -->
-      <section class="mb-12">
-        <div class="bg-gradient-to-r from-gray-900/20 to-slate-900/20 border border-gray-500/20 rounded-2xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-8">💼 Planes y Precios</h2>
-          
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🆓 Estudiantes</h3>
-              <div class="text-2xl font-bold text-green-400 mb-2">Gratis</div>
-              <div class="text-gray-400 text-sm mb-4">Para estudiantes verificados</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Todas las funciones</li>
-                <li>• Ilimitado</li>
-                <li>• GitHub Student Pack</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6 border border-blue-500/50">
-              <h3 class="text-lg font-semibold text-white mb-3">👤 Individual</h3>
-              <div class="text-2xl font-bold text-blue-400 mb-2">$10/mes</div>
-              <div class="text-gray-400 text-sm mb-4">Para desarrolladores</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Sugerencias ilimitadas</li>
-                <li>• Todos los IDEs</li>
-                <li>• Soporte community</li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-900 rounded-xl p-6">
-              <h3 class="text-lg font-semibold text-white mb-3">🏢 Business</h3>
-              <div class="text-2xl font-bold text-purple-400 mb-2">$19/mes</div>
-              <div class="text-gray-400 text-sm mb-4">Por usuario en organización</div>
-              <ul class="text-gray-400 text-sm space-y-2">
-                <li>• Todas las funciones Individual</li>
-                <li>• Administración central</li>
-                <li>• Soporte priority</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="border-b border-gray-700">
+                                <th class="text-left p-4 text-gray-300"
+                                    >Característica</th
+                                >
+                                <th class="text-center p-4 text-blue-400"
+                                    >GitHub Copilot</th
+                                >
+                                <th class="text-center p-4 text-gray-400"
+                                    >TabNine</th
+                                >
+                                <th class="text-center p-4 text-gray-400"
+                                    >Kite</th
+                                >
+                                <th class="text-center p-4 text-gray-400"
+                                    >IntelliCode</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm">
+                            <tr class="border-b border-gray-800">
+                                <td class="p-4 text-gray-300"
+                                    >Contexto completo de archivo</td
+                                >
+                                <td class="p-4 text-center text-green-400"
+                                    >✅ Archivo completo</td
+                                >
+                                <td class="p-4 text-center text-yellow-400"
+                                    >⚠️ Limitado</td
+                                >
+                                <td class="p-4 text-center text-red-400"
+                                    >❌ Solo líneas locales</td
+                                >
+                                <td class="p-4 text-center text-yellow-400"
+                                    >⚠️ Funciones</td
+                                >
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="p-4 text-gray-300"
+                                    >Funciones completas</td
+                                >
+                                <td class="p-4 text-center text-green-400"
+                                    >✅ Hasta 100+ líneas</td
+                                >
+                                <td class="p-4 text-center text-yellow-400"
+                                    >⚠️ Funciones cortas</td
+                                >
+                                <td class="p-4 text-center text-red-400"
+                                    >❌ Solo líneas</td
+                                >
+                                <td class="p-4 text-center text-red-400"
+                                    >❌ Solo líneas</td
+                                >
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="p-4 text-gray-300"
+                                    >Comprende comentarios</td
+                                >
+                                <td class="p-4 text-center text-green-400"
+                                    >✅ Genera desde comentarios</td
+                                >
+                                <td class="p-4 text-center text-red-400">❌</td>
+                                <td class="p-4 text-center text-red-400">❌</td>
+                                <td class="p-4 text-center text-red-400">❌</td>
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="p-4 text-gray-300"
+                                    >Integración GitHub</td
+                                >
+                                <td class="p-4 text-center text-green-400"
+                                    >✅ Nativa</td
+                                >
+                                <td class="p-4 text-center text-red-400">❌</td>
+                                <td class="p-4 text-center text-red-400">❌</td>
+                                <td class="p-4 text-center text-red-400">❌</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-    </div>
-  </main>
+            <!-- Pricing -->
+            <section class="mb-12">
+                <div
+                    class="bg-gradient-to-r from-gray-900/20 to-slate-900/20 border border-gray-500/20 rounded-2xl p-8"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        💼 Planes y Precios
+                    </h2>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🆓 Estudiantes
+                            </h3>
+                            <div class="text-2xl font-bold text-green-400 mb-2">
+                                Gratis
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para estudiantes verificados
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Todas las funciones</li>
+                                <li>• Ilimitado</li>
+                                <li>• GitHub Student Pack</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-xl p-6 border border-blue-500/50"
+                        >
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                👤 Individual
+                            </h3>
+                            <div class="text-2xl font-bold text-blue-400 mb-2">
+                                $10/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Para desarrolladores
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Sugerencias ilimitadas</li>
+                                <li>• Todos los IDEs</li>
+                                <li>• Soporte community</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-900 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-3">
+                                🏢 Business
+                            </h3>
+                            <div
+                                class="text-2xl font-bold text-purple-400 mb-2"
+                            >
+                                $19/mes
+                            </div>
+                            <div class="text-gray-400 text-sm mb-4">
+                                Por usuario en organización
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li>• Todas las funciones Individual</li>
+                                <li>• Administración central</li>
+                                <li>• Soporte priority</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </Layout>

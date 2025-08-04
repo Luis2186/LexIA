@@ -1,359 +1,536 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import BackButton from '../../components/BackButton.astro';
-import RelatedTools from '../../components/RelatedTools.astro';
+import Layout from "../../layouts/Layout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import BackButton from "../../components/BackButton.astro";
+import RelatedTools from "../../components/RelatedTools.astro";
 
 const breadcrumbs = [
-  { name: 'Inicio', href: '/' },
-  { name: 'Herramientas IA', href: '/herramientas-ia' },
-  { name: 'Miro AI', current: true }
+    { name: "Inicio", href: "/" },
+    { name: "Herramientas IA", href: "/herramientas-ia" },
+    { name: "Miro AI", current: true },
 ];
 
 const relatedTools = [
-  {
-    name: 'Figma AI',
-    href: '/ia/figma-ai',
-    icon: '🎨',
-    category: 'Diseño',
-    description: 'Diseño UI/UX asistido'
-  },
-  {
-    name: 'Notion AI',
-    href: '/ia/notion-ai',
-    icon: '📝',
-    category: 'Productividad',
-    description: 'Documentación inteligente'
-  },
-  {
-    name: 'Gamma',
-    href: '/ia/gamma',
-    icon: '🎯',
-    category: 'Presentaciones',
-    description: 'Presentaciones automáticas'
-  }
+    {
+        name: "Figma AI",
+        href: "/ia/figma-ai",
+        icon: "🎨",
+        category: "Diseño",
+        description: "Diseño UI/UX asistido",
+    },
+    {
+        name: "Notion AI",
+        href: "/ia/notion-ai",
+        icon: "📝",
+        category: "Productividad",
+        description: "Documentación inteligente",
+    },
+    {
+        name: "Gamma",
+        href: "/ia/gamma",
+        icon: "🎯",
+        category: "Presentaciones",
+        description: "Presentaciones automáticas",
+    },
 ];
 ---
 
 <Layout title="Miro AI - Colaboración Visual Inteligente | LexIA">
-  <main class="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
-    <Breadcrumbs items={breadcrumbs} />
-    
-    <!-- Hero Section -->
-    <section class="py-20">
-      <div class="max-w-6xl mx-auto px-4 text-center">
-        <div class="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full border border-white/20 backdrop-blur-sm mb-8">
-          <span class="text-4xl">🧠</span>
-          <span class="text-lg font-medium">Colaboración Visual</span>
-        </div>
-        
-        <div class="flex items-center justify-center gap-4 mb-6">
-          <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center text-3xl">
-            🎨
-          </div>
-          <div class="text-left">
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">Miro AI</h1>
-            <p class="text-gray-400">by Miro</p>
-          </div>
-        </div>
-        
-        <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-          Miro AI potencia la <span class="text-blue-400 font-semibold">colaboración visual</span> con 
-          <span class="text-cyan-400 font-semibold">generación automática</span> de diagramas, wireframes y mapas mentales.
-        </p>
-        
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://miro.com/ai" target="_blank" class="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105">
-            Probar Miro AI
-          </a>
-          <a href="#pricing" class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/20 transition-all duration-300">
-            Ver Precios
-          </a>
-        </div>
-      </div>
-    </section>
+    <main
+        class="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900"
+    >
+        <Breadcrumbs items={breadcrumbs} />
 
-    <!-- ¿Qué es Miro AI? -->
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-3xl p-12 backdrop-blur-sm">
-          <h2 class="text-3xl font-bold text-white mb-6">🧠 ¿Qué es Miro AI?</h2>
-          <div class="grid md:grid-cols-2 gap-8 items-center">
-            <div class="space-y-4 text-gray-300 text-lg leading-relaxed">
-              <p>
-                <strong>Miro AI</strong> es el conjunto de funcionalidades de inteligencia artificial 
-                integradas en la plataforma de colaboración visual Miro, diseñadas para acelerar 
-                la creación de diagramas, wireframes y documentación visual.
-              </p>
-              <p>
-                Utiliza IA para generar automáticamente content, organizar ideas, crear flujos de trabajo 
-                y transformar texto en representaciones visuales comprensibles.
-              </p>
-            </div>
-            <div class="bg-gray-900/50 rounded-2xl p-6 border border-gray-600/30">
-              <h3 class="text-lg font-semibold text-white mb-4">🎯 Casos de Uso Clave</h3>
-              <ul class="space-y-3 text-gray-300">
-                <li class="flex items-center gap-3">
-                  <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
-                  <span>Wireframes automáticos</span>
-                </li>
-                <li class="flex items-center gap-3">
-                  <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
-                  <span>Diagramas de arquitectura</span>
-                </li>
-                <li class="flex items-center gap-3">
-                  <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
-                  <span>User journey mapping</span>
-                </li>
-                <li class="flex items-center gap-3">
-                  <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
-                  <span>Brainstorming asistido</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Funcionalidades -->
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-white mb-8">⚡ Funcionalidades de Miro AI</h2>
-        
-        <div class="grid md:grid-cols-3 gap-6 mb-12">
-          <div class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-6 backdrop-blur-sm">
-            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center text-2xl mb-4">
-              🏗️
-            </div>
-            <h3 class="text-xl font-semibold text-white mb-3">Diagramas Automáticos</h3>
-            <ul class="space-y-2 text-gray-300 text-sm">
-              <li>• Arquitectura de sistemas</li>
-              <li>• Flowcharts from text</li>
-              <li>• Entity relationship diagrams</li>
-              <li>• Network topology maps</li>
-            </ul>
-          </div>
-
-          <div class="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border border-cyan-500/20 rounded-2xl p-6 backdrop-blur-sm">
-            <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-xl flex items-center justify-center text-2xl mb-4">
-              📱
-            </div>
-            <h3 class="text-xl font-semibold text-white mb-3">Wireframe Generator</h3>
-            <ul class="space-y-2 text-gray-300 text-sm">
-              <li>• UI layouts automáticos</li>
-              <li>• Mobile-first design</li>
-              <li>• Component libraries</li>
-              <li>• Responsive breakpoints</li>
-            </ul>
-          </div>
-
-          <div class="bg-gradient-to-br from-teal-500/10 to-green-500/10 border border-teal-500/20 rounded-2xl p-6 backdrop-blur-sm">
-            <div class="w-12 h-12 bg-gradient-to-r from-teal-500 to-green-500 rounded-xl flex items-center justify-center text-2xl mb-4">
-              🧩
-            </div>
-            <h3 class="text-xl font-semibold text-white mb-3">Smart Organization</h3>
-            <ul class="space-y-2 text-gray-300 text-sm">
-              <li>• Auto-clustering de ideas</li>
-              <li>• Content categorization</li>
-              <li>• Layout optimization</li>
-              <li>• Visual hierarchy</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Para Equipos de Desarrollo -->
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-white mb-8">👨‍💻 Miro AI para Development Teams</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="space-y-6">
-            <div class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-6">
-              <h3 class="text-xl font-semibold text-purple-300 mb-4">🏗️ System Architecture</h3>
-              <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30">
-                <div class="text-green-400 mb-2"># Prompt de arquitectura</div>
-                <div class="text-gray-300 mb-2">"Crear diagrama de microservicios para e-commerce"</div>
-                <div class="text-purple-300 mt-3">
-                  🏗️ Miro AI genera:<br/>
-                  • Service boundaries<br/>
-                  • API connections<br/>
-                  • Database relationships<br/>
-                  • Load balancer setup
+        <!-- Hero Section -->
+        <section class="py-20">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <div
+                    class="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full border border-white/20 backdrop-blur-sm mb-8"
+                >
+                    <span class="text-4xl">🧠</span>
+                    <span class="text-lg font-medium">Colaboración Visual</span>
                 </div>
-              </div>
-            </div>
 
-            <div class="bg-gradient-to-br from-blue-500/10 to-indigo-500/10 border border-blue-500/20 rounded-2xl p-6">
-              <h3 class="text-xl font-semibold text-blue-300 mb-4">📱 UI/UX Wireframes</h3>
-              <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30">
-                <div class="text-yellow-400 mb-2"># Wireframe automático</div>
-                <div class="text-gray-300 mb-2">Input: "Dashboard for project management app"</div>
-                <div class="text-blue-300 mt-3">
-                  📱 Auto-crea:<br/>
-                  • Layout structure<br/>
-                  • Navigation patterns<br/>
-                  • Component placement<br/>
-                  • Responsive considerations
+                <div class="flex items-center justify-center gap-4 mb-6">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center text-3xl"
+                    >
+                        🎨
+                    </div>
+                    <div class="text-left">
+                        <h1
+                            class="text-5xl md:text-6xl font-bold text-white mb-2"
+                        >
+                            Miro AI
+                        </h1>
+                        <p class="text-gray-400">by Miro</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="space-y-6">
-            <div class="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-2xl p-6">
-              <h3 class="text-xl font-semibold text-emerald-300 mb-4">🗺️ User Journey Mapping</h3>
-              <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30">
-                <div class="text-emerald-400 mb-2"># User flow creation</div>
-                <div class="text-gray-300 mb-2">"Map user registration to first purchase"</div>
-                <div class="text-teal-300 mt-3">
-                  🗺️ Visualiza:<br/>
-                  • Touchpoint sequence<br/>
-                  • Pain point identification<br/>
-                  • Opportunity mapping<br/>
-                  • Success metrics
+                <p
+                    class="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
+                >
+                    Miro AI potencia la <span
+                        class="text-blue-400 font-semibold"
+                        >colaboración visual</span
+                    > con
+                    <span class="text-cyan-400 font-semibold"
+                        >generación automática</span
+                    > de diagramas, wireframes y mapas mentales.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a
+                        href="https://miro.com/ai"
+                        target="_blank"
+                        class="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105"
+                    >
+                        Probar Miro AI
+                    </a>
+                    <a
+                        href="#pricing"
+                        class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/20 transition-all duration-300"
+                    >
+                        Ver Precios
+                    </a>
                 </div>
-              </div>
             </div>
+        </section>
 
-            <div class="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-6">
-              <h3 class="text-xl font-semibold text-orange-300 mb-4">🧠 Sprint Planning</h3>
-              <div class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30">
-                <div class="text-orange-400 mb-2"># Agile board setup</div>
-                <div class="text-gray-300 mb-2">Content: Sprint backlog items</div>
-                <div class="text-red-300 mt-3">
-                  📋 Organiza automáticamente:<br/>
-                  • Story prioritization<br/>
-                  • Epic breakdown<br/>
-                  • Dependency mapping<br/>
-                  • Capacity planning
+        <!-- ¿Qué es Miro AI? -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-4">
+                <div
+                    class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-3xl p-12 backdrop-blur-sm"
+                >
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        🧠 ¿Qué es Miro AI?
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div
+                            class="space-y-4 text-gray-300 text-lg leading-relaxed"
+                        >
+                            <p>
+                                <strong>Miro AI</strong> es el conjunto de funcionalidades
+                                de inteligencia artificial integradas en la plataforma
+                                de colaboración visual Miro, diseñadas para acelerar
+                                la creación de diagramas, wireframes y documentación
+                                visual.
+                            </p>
+                            <p>
+                                Utiliza IA para generar automáticamente content,
+                                organizar ideas, crear flujos de trabajo y
+                                transformar texto en representaciones visuales
+                                comprensibles.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-gray-900/50 rounded-2xl p-6 border border-gray-600/30"
+                        >
+                            <h3 class="text-lg font-semibold text-white mb-4">
+                                🎯 Casos de Uso Clave
+                            </h3>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="flex items-center gap-3">
+                                    <span
+                                        class="w-2 h-2 bg-blue-400 rounded-full"
+                                    ></span>
+                                    <span>Wireframes automáticos</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span
+                                        class="w-2 h-2 bg-cyan-400 rounded-full"
+                                    ></span>
+                                    <span>Diagramas de arquitectura</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span
+                                        class="w-2 h-2 bg-blue-400 rounded-full"
+                                    ></span>
+                                    <span>User journey mapping</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span
+                                        class="w-2 h-2 bg-cyan-400 rounded-full"
+                                    ></span>
+                                    <span>Brainstorming asistido</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Integración con Desarrollo -->
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-white mb-8">🔗 Integración con Herramientas de Desarrollo</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-8">
-            <h3 class="text-2xl font-semibold text-blue-300 mb-6">⚙️ Development Workflow</h3>
-            
-            <div class="space-y-4">
-              <div class="bg-gray-900/50 rounded-xl p-4 border border-gray-600/30">
-                <div class="text-sm text-gray-400 mb-2">Conexiones directas</div>
-                <ul class="text-white text-sm space-y-1">
-                  <li>✅ Jira/Linear integration</li>
-                  <li>✅ GitHub/GitLab repos</li>
-                  <li>✅ Figma design sync</li>
-                  <li>✅ Slack notifications</li>
-                  <li>✅ Azure DevOps boards</li>
-                </ul>
-              </div>
-              
-              <div class="bg-blue-900/20 rounded-xl p-4 border border-blue-500/30">
-                <div class="text-sm text-blue-300 mb-2">Workflow automation</div>
-                <ul class="text-gray-300 text-sm space-y-1">
-                  <li>• Auto-sync de tickets a boards</li>
-                  <li>• Branch creation from user stories</li>
-                  <li>• Design hand-off automation</li>
-                  <li>• Progress tracking visual</li>
-                </ul>
-              </div>
+        <!-- Funcionalidades -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    ⚡ Funcionalidades de Miro AI
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-12">
+                    <div
+                        class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-6 backdrop-blur-sm"
+                    >
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center text-2xl mb-4"
+                        >
+                            🏗️
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Diagramas Automáticos
+                        </h3>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Arquitectura de sistemas</li>
+                            <li>• Flowcharts from text</li>
+                            <li>• Entity relationship diagrams</li>
+                            <li>• Network topology maps</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border border-cyan-500/20 rounded-2xl p-6 backdrop-blur-sm"
+                    >
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-xl flex items-center justify-center text-2xl mb-4"
+                        >
+                            📱
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Wireframe Generator
+                        </h3>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• UI layouts automáticos</li>
+                            <li>• Mobile-first design</li>
+                            <li>• Component libraries</li>
+                            <li>• Responsive breakpoints</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-teal-500/10 to-green-500/10 border border-teal-500/20 rounded-2xl p-6 backdrop-blur-sm"
+                    >
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-teal-500 to-green-500 rounded-xl flex items-center justify-center text-2xl mb-4"
+                        >
+                            🧩
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">
+                            Smart Organization
+                        </h3>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Auto-clustering de ideas</li>
+                            <li>• Content categorization</li>
+                            <li>• Layout optimization</li>
+                            <li>• Visual hierarchy</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
 
-          <div class="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border border-cyan-500/20 rounded-2xl p-8">
-            <h3 class="text-2xl font-semibold text-cyan-300 mb-6">📊 Documentation Hub</h3>
-            
-            <div class="space-y-4">
-              <div class="bg-gray-900/50 rounded-xl p-4 border border-gray-600/30">
-                <div class="text-sm text-gray-400 mb-2">Living documentation</div>
-                <ul class="text-white text-sm space-y-1">
-                  <li>✅ API documentation visual</li>
-                  <li>✅ Architecture decision records</li>
-                  <li>✅ Technical specs diagrams</li>
-                  <li>✅ Onboarding flows</li>
-                  <li>✅ Troubleshooting guides</li>
-                </ul>
-              </div>
-              
-              <div class="bg-cyan-900/20 rounded-xl p-4 border border-cyan-500/30">
-                <div class="text-sm text-cyan-300 mb-2">Smart updates</div>
-                <ul class="text-gray-300 text-sm space-y-1">
-                  <li>• Auto-refresh from code changes</li>
-                  <li>• Version control integration</li>
-                  <li>• Collaborative annotations</li>
-                  <li>• Cross-reference linking</li>
-                </ul>
-              </div>
+        <!-- Para Equipos de Desarrollo -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    👨‍💻 Miro AI para Development Teams
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-6"
+                        >
+                            <h3
+                                class="text-xl font-semibold text-purple-300 mb-4"
+                            >
+                                🏗️ System Architecture
+                            </h3>
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30"
+                            >
+                                <div class="text-green-400 mb-2">
+                                    # Prompt de arquitectura
+                                </div>
+                                <div class="text-gray-300 mb-2">
+                                    "Crear diagrama de microservicios para
+                                    e-commerce"
+                                </div>
+                                <div class="text-purple-300 mt-3">
+                                    🏗️ Miro AI genera:<br />
+                                    • Service boundaries<br />
+                                    • API connections<br />
+                                    • Database relationships<br />
+                                    • Load balancer setup
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-blue-500/10 to-indigo-500/10 border border-blue-500/20 rounded-2xl p-6"
+                        >
+                            <h3
+                                class="text-xl font-semibold text-blue-300 mb-4"
+                            >
+                                📱 UI/UX Wireframes
+                            </h3>
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30"
+                            >
+                                <div class="text-yellow-400 mb-2">
+                                    # Wireframe automático
+                                </div>
+                                <div class="text-gray-300 mb-2">
+                                    Input: "Dashboard for project management
+                                    app"
+                                </div>
+                                <div class="text-blue-300 mt-3">
+                                    📱 Auto-crea:<br />
+                                    • Layout structure<br />
+                                    • Navigation patterns<br />
+                                    • Component placement<br />
+                                    • Responsive considerations
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-2xl p-6"
+                        >
+                            <h3
+                                class="text-xl font-semibold text-emerald-300 mb-4"
+                            >
+                                🗺️ User Journey Mapping
+                            </h3>
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30"
+                            >
+                                <div class="text-emerald-400 mb-2">
+                                    # User flow creation
+                                </div>
+                                <div class="text-gray-300 mb-2">
+                                    "Map user registration to first purchase"
+                                </div>
+                                <div class="text-teal-300 mt-3">
+                                    🗺️ Visualiza:<br />
+                                    • Touchpoint sequence<br />
+                                    • Pain point identification<br />
+                                    • Opportunity mapping<br />
+                                    • Success metrics
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-6"
+                        >
+                            <h3
+                                class="text-xl font-semibold text-orange-300 mb-4"
+                            >
+                                🧠 Sprint Planning
+                            </h3>
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-4 font-mono text-sm border border-gray-600/30"
+                            >
+                                <div class="text-orange-400 mb-2">
+                                    # Agile board setup
+                                </div>
+                                <div class="text-gray-300 mb-2">
+                                    Content: Sprint backlog items
+                                </div>
+                                <div class="text-red-300 mt-3">
+                                    📋 Organiza automáticamente:<br />
+                                    • Story prioritization<br />
+                                    • Epic breakdown<br />
+                                    • Dependency mapping<br />
+                                    • Capacity planning
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Pricing -->
-    <section id="pricing" class="py-16 bg-gradient-to-r from-blue-900/50 to-cyan-900/50 border-y border-blue-700/30">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-white mb-8 text-center">💰 Precios</h2>
-        
-        <div class="grid md:grid-cols-4 gap-6">
-          <div class="bg-gradient-to-br from-gray-800/50 to-slate-800/50 border border-gray-600/30 rounded-2xl p-6">
-            <h3 class="text-xl font-semibold text-white mb-2">Free</h3>
-            <div class="text-3xl font-bold text-gray-400 mb-4">$0</div>
-            <p class="text-gray-300 text-sm mb-4">Para empezar</p>
-            <ul class="space-y-2 text-gray-300 text-sm">
-              <li>• 3 boards editables</li>
-              <li>• AI básico limitado</li>
-              <li>• Templates públicos</li>
-            </ul>
-          </div>
+        <!-- Integración con Desarrollo -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-white mb-8">
+                    🔗 Integración con Herramientas de Desarrollo
+                </h2>
 
-          <div class="bg-gradient-to-br from-orange-500/20 to-yellow-500/20 border border-orange-500/30 rounded-2xl p-6">
-            <h3 class="text-xl font-semibold text-white mb-2">Starter</h3>
-            <div class="text-3xl font-bold text-orange-400 mb-4">$8<span class="text-lg text-gray-400">/mes</span></div>
-            <p class="text-gray-300 text-sm mb-4">Para individuos</p>
-            <ul class="space-y-2 text-gray-300 text-sm">
-              <li>• Boards ilimitados</li>
-              <li>• AI features básicos</li>
-              <li>• Templates premium</li>
-            </ul>
-          </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div
+                        class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-8"
+                    >
+                        <h3 class="text-2xl font-semibold text-blue-300 mb-6">
+                            ⚙️ Development Workflow
+                        </h3>
 
-          <div class="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-2xl p-6 ring-2 ring-blue-500/50">
-            <h3 class="text-xl font-semibold text-white mb-2">Business</h3>
-            <div class="text-3xl font-bold text-blue-400 mb-4">$16<span class="text-lg text-gray-400">/mes</span></div>
-            <p class="text-gray-300 text-sm mb-4">Para equipos</p>
-            <ul class="space-y-2 text-gray-300 text-sm">
-              <li>• Todo de Starter</li>
-              <li>• Miro AI completo</li>
-              <li>• Integraciones avanzadas</li>
-            </ul>
-          </div>
+                        <div class="space-y-4">
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-4 border border-gray-600/30"
+                            >
+                                <div class="text-sm text-gray-400 mb-2">
+                                    Conexiones directas
+                                </div>
+                                <ul class="text-white text-sm space-y-1">
+                                    <li>✅ Jira/Linear integration</li>
+                                    <li>✅ GitHub/GitLab repos</li>
+                                    <li>✅ Figma design sync</li>
+                                    <li>✅ Slack notifications</li>
+                                    <li>✅ Azure DevOps boards</li>
+                                </ul>
+                            </div>
 
-          <div class="bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-2xl p-6">
-            <h3 class="text-xl font-semibold text-white mb-2">Enterprise</h3>
-            <div class="text-3xl font-bold text-purple-400 mb-4">Custom</div>
-            <p class="text-gray-300 text-sm mb-4">Para organizaciones</p>
-            <ul class="space-y-2 text-gray-300 text-sm">
-              <li>• Todo de Business</li>
-              <li>• AI enterprise features</li>
-              <li>• SSO & compliance</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+                            <div
+                                class="bg-blue-900/20 rounded-xl p-4 border border-blue-500/30"
+                            >
+                                <div class="text-sm text-blue-300 mb-2">
+                                    Workflow automation
+                                </div>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Auto-sync de tickets a boards</li>
+                                    <li>• Branch creation from user stories</li>
+                                    <li>• Design hand-off automation</li>
+                                    <li>• Progress tracking visual</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-    <BackButton href="/herramientas-ia" text="Volver a Herramientas IA" />
-    <RelatedTools tools={relatedTools} currentTool="Miro AI" />
-  </main>
+                    <div
+                        class="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border border-cyan-500/20 rounded-2xl p-8"
+                    >
+                        <h3 class="text-2xl font-semibold text-cyan-300 mb-6">
+                            📊 Documentation Hub
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div
+                                class="bg-gray-900/50 rounded-xl p-4 border border-gray-600/30"
+                            >
+                                <div class="text-sm text-gray-400 mb-2">
+                                    Living documentation
+                                </div>
+                                <ul class="text-white text-sm space-y-1">
+                                    <li>✅ API documentation visual</li>
+                                    <li>✅ Architecture decision records</li>
+                                    <li>✅ Technical specs diagrams</li>
+                                    <li>✅ Onboarding flows</li>
+                                    <li>✅ Troubleshooting guides</li>
+                                </ul>
+                            </div>
+
+                            <div
+                                class="bg-cyan-900/20 rounded-xl p-4 border border-cyan-500/30"
+                            >
+                                <div class="text-sm text-cyan-300 mb-2">
+                                    Smart updates
+                                </div>
+                                <ul class="text-gray-300 text-sm space-y-1">
+                                    <li>• Auto-refresh from code changes</li>
+                                    <li>• Version control integration</li>
+                                    <li>• Collaborative annotations</li>
+                                    <li>• Cross-reference linking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section
+            id="pricing"
+            class="py-16 bg-gradient-to-r from-blue-900/50 to-cyan-900/50 border-y border-blue-700/30"
+        >
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-white mb-8 text-center">
+                    💰 Precios
+                </h2>
+
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div
+                        class="bg-gradient-to-br from-gray-800/50 to-slate-800/50 border border-gray-600/30 rounded-2xl p-6"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-2">
+                            Free
+                        </h3>
+                        <div class="text-3xl font-bold text-gray-400 mb-4">
+                            $0
+                        </div>
+                        <p class="text-gray-300 text-sm mb-4">Para empezar</p>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• 3 boards editables</li>
+                            <li>• AI básico limitado</li>
+                            <li>• Templates públicos</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-orange-500/20 to-yellow-500/20 border border-orange-500/30 rounded-2xl p-6"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-2">
+                            Starter
+                        </h3>
+                        <div class="text-3xl font-bold text-orange-400 mb-4">
+                            $8<span class="text-lg text-gray-400">/mes</span>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-4">
+                            Para individuos
+                        </p>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Boards ilimitados</li>
+                            <li>• AI features básicos</li>
+                            <li>• Templates premium</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-2xl p-6 ring-2 ring-blue-500/50"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-2">
+                            Business
+                        </h3>
+                        <div class="text-3xl font-bold text-blue-400 mb-4">
+                            $16<span class="text-lg text-gray-400">/mes</span>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-4">Para equipos</p>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Todo de Starter</li>
+                            <li>• Miro AI completo</li>
+                            <li>• Integraciones avanzadas</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-2xl p-6"
+                    >
+                        <h3 class="text-xl font-semibold text-white mb-2">
+                            Enterprise
+                        </h3>
+                        <div class="text-3xl font-bold text-purple-400 mb-4">
+                            Custom
+                        </div>
+                        <p class="text-gray-300 text-sm mb-4">
+                            Para organizaciones
+                        </p>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Todo de Business</li>
+                            <li>• AI enterprise features</li>
+                            <li>• SSO & compliance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <BackButton href="/herramientas-ia" text="Volver a Herramientas IA" />
+        <RelatedTools tools={relatedTools} currentTool="Miro AI" />
+    </main>
 </Layout>
