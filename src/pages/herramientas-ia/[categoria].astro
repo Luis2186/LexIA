@@ -1074,7 +1074,7 @@ const description = `${categoriaData.descripcion}. Descubre las mejores herramie
                                 <div class="flex flex-wrap gap-2 mb-4">
                                     {/* @ts-ignore */}
                                     {Array.isArray(herramienta.tags) &&
-                                        herramienta.tags.map((tag) => (
+                                        herramienta.tags.map((tag: string) => (
                                             <span class="bg-violet-500/20 text-violet-300 px-2 py-1 rounded text-xs">
                                                 {tag}
                                             </span>
