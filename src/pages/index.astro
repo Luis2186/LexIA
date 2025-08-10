@@ -1,574 +1,70 @@
 ---
-import Layout from '../layouts/Layout.astro';
-
-const sections = [
-  {
-    id: 'analisis',
-    title: 'Análisis y Diseño',
-    subtitle: 'Etapa 1: Planificación Inteligente',
-    description: 'Cómo la IA revoluciona el análisis de requisitos, diseño de arquitectura y planificación de proyectos.',
-    icon: '📋',
-    href: '/analisis-diseno',
-    gradient: 'from-blue-500 to-cyan-500',
-    features: ['Análisis de Requisitos IA', 'Diseño Asistido', 'Estimaciones Precisas', 'Documentación Auto']
-  },
-  {
-    id: 'desarrollo',
-    title: 'Desarrollo y Codificación',
-    subtitle: 'Etapa 2: Programación Asistida',
-    description: 'Desarrollo acelerado con IA: generación de código, refactoring inteligente y programación colaborativa.',
-    icon: '💻',
-    href: '/desarrollo-codificacion',
-    gradient: 'from-emerald-500 to-teal-500',
-    features: ['Code Generation', 'Auto-completion IA', 'Refactoring Smart', 'Code Review IA']
-  },
-  {
-    id: 'testing',
-    title: 'Testing y Validación',
-    subtitle: 'Etapa 3: Calidad Automatizada',
-    description: 'Testing inteligente con generación automática de pruebas, detección de bugs y validación continua.',
-    icon: '🧪',
-    href: '/testing-validacion',
-    gradient: 'from-purple-500 to-indigo-500',
-    features: ['Tests Automáticos', 'Bug Prediction', 'Coverage IA', 'Visual Testing']
-  },
-  {
-    id: 'deployment',
-    title: 'Deployment y DevOps',
-    subtitle: 'Etapa 4: Entrega Inteligente',
-    description: 'CI/CD automatizado, deployment inteligente y monitoreo predictivo para entregas sin errores.',
-    icon: '🚀',
-    href: '/deployment-devops',
-    gradient: 'from-orange-500 to-red-500',
-    features: ['CI/CD Smart', 'Deploy Automático', 'Rollback IA', 'Monitoring 24/7']
-  },
-  {
-    id: 'mantenimiento',
-    title: 'Mantenimiento y Evolución',
-    subtitle: 'Etapa 5: Mejora Continua',
-    description: 'Mantenimiento predictivo, evolución guiada por datos y optimización continua del software.',
-    icon: '🔧',
-    href: '/mantenimiento-evolucion',
-    gradient: 'from-pink-500 to-rose-500',
-    features: ['Mantenimiento Predictivo', 'Analytics Avanzado', 'Performance IA', 'Auto-healing']
-  },
-  {
-    id: 'operaciones',
-    title: 'Operaciones y Escalabilidad',
-    subtitle: 'Etapa 6: Producción Optimizada',
-    description: 'Operaciones autónomas, escalabilidad inteligente y gestión automatizada de infraestructura.',
-    icon: '⚡',
-    href: '/operaciones-escalabilidad',
-    gradient: 'from-violet-500 to-purple-500',
-    features: ['Auto-scaling', 'Load Balancing IA', 'Resource Optimization', 'Cost Management']
-  }
-];
-
-const stats = [
-  { icon: '📚', number: '6', label: 'Etapas del Ciclo' },
-  { icon: '💡', number: '50+', label: 'Ejemplos Prácticos' },
-  { icon: '🤖', number: '25+', label: 'Herramientas IA' },
-  { icon: '📈', number: '40%', label: 'Aumento Productividad' }
-];
+import Layout from "../layouts/Layout.astro";
+import HeroSection from "../components/HeroSection.astro";
+import HeroCTA from "../components/HeroCTA.astro";
+import StatsGrid from "../components/StatsGrid.astro";
+import SectionsGrid from "../components/SectionsGrid.astro";
+import FinalCTA from "../components/FinalCTA.astro";
+import { sections } from "../data/sections";
+import { stats } from "../data/stats";
 ---
 
 <Layout title="LexIA - IA Aplicada al Desarrollo de Software">
-  <!-- Hero Section -->
-  <section class="relative min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 flex items-center justify-center overflow-hidden">
-    <!-- Animated Background -->
-    <div class="absolute inset-0 overflow-hidden">
-      <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
-      <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-indigo-500/10 rounded-full blur-2xl animate-spin" style="animation-duration: 20s;"></div>
-    </div>
-    
-    <!-- Floating particles -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="floating-particle absolute top-1/4 left-1/4 text-blue-400/30 text-2xl">⚡</div>
-      <div class="floating-particle absolute top-1/3 right-1/4 text-cyan-400/30 text-xl delay-1000">🤖</div>
-      <div class="floating-particle absolute bottom-1/4 left-1/3 text-indigo-400/30 text-2xl delay-2000">✨</div>
-      <div class="floating-particle absolute bottom-1/3 right-1/3 text-purple-400/30 text-xl delay-3000">🧠</div>
-    </div>
-    
-    <!-- Main Content -->
-    <div class="relative z-10 text-center max-w-6xl mx-auto px-4">
-      <div class="mb-8">
-        <div class="inline-flex items-center bg-blue-500/10 border border-blue-500/20 rounded-full px-6 py-2 mb-6">
-          <span class="text-blue-400 text-sm font-medium">🚀 Proyecto LexIA - Desarrollo con IA</span>
-        </div>
-        
-        <h1 class="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 bg-clip-text text-transparent leading-tight">
-          LexIA
-          <span class="block text-4xl md:text-6xl mt-2 text-gradient-secondary">Desarrollo con IA</span>
-        </h1>
-        
-        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-          <span class="text-blue-400 font-semibold">Guía Didáctica Completa:</span> Aprende cómo la 
-          Inteligencia Artificial revoluciona cada <span class="text-cyan-400 font-semibold">etapa del ciclo</span> de desarrollo de software moderno.
-        </p>
-      </div>
-      
-      <!-- Stats -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-        {stats.map((stat) => (
-          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 hover:scale-105">
-            <div class="text-3xl mb-2">{stat.icon}</div>
-            <div class="text-2xl md:text-3xl font-bold text-blue-400 mb-1">{stat.number}</div>
-            <div class="text-gray-400 text-sm">{stat.label}</div>
-          </div>
-        ))}
-      </div>
-      
-      <!-- CTA Buttons -->
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a 
-          href="#sections" 
-          class="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25 flex items-center gap-2"
+    <HeroSection
+        title="LexIA"
+        subtitle="Desarrollo con IA"
+        description='<span class="text-blue-400 font-semibold">Guía Didáctica Completa:</span> Aprende cómo la Inteligencia Artificial revoluciona cada <span class="text-cyan-400 font-semibold">etapa del ciclo</span> de desarrollo de software moderno.'
+    >
+        <StatsGrid slot="stats" stats={stats} />
+        <HeroCTA
+            slot="cta"
+            ctaLinks={[
+                {
+                    href: "#sections",
+                    class: "bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25 flex items-center gap-2",
+                    label: "Explorar Capas",
+                    icon: true,
+                },
+                {
+                    href: "/docs/AI_IN_SOFTWARE_DEVELOPMENT",
+                    class: "bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/20 transition-all duration-300 transform hover:scale-105",
+                    label: "Ver Documentación",
+                },
+            ]}
+        />
+        <div
+            slot="scroll-indicator"
+            class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
         >
-          <span>Explorar Capas</span>
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </a>
-        
-        <a 
-          href="/docs/AI_IN_SOFTWARE_DEVELOPMENT" 
-          class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
-        >
-          Ver Documentación
-        </a>
-      </div>
-    </div>
-    
-    <!-- Scroll Indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-      </svg>
-    </div>
-  </section>
-
-  <!-- Sections Grid -->
-  <section id="sections" class="bg-black py-20">
-    <div class="max-w-7xl mx-auto px-4">
-      <!-- Section Header -->
-      <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-          Capas de Desarrollo con IA
-        </h2>
-        <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-          Cada capa de tu aplicación puede ser potenciada con IA. Explora implementaciones prácticas, 
-          ejemplos de código y métricas reales de mejora.
-        </p>
-      </div>
-      
-      <!-- Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {sections.map((section, index) => (
-          <div 
-            class="group bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 hover:border-gray-700 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl card-hover"
-            style={`animation-delay: ${index * 100}ms`}
-          >
-            <!-- Icon & Gradient -->
-            <div class={`w-16 h-16 rounded-xl bg-gradient-to-r ${section.gradient} flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
-              {section.icon}
-            </div>
-            
-            <!-- Content -->
-            <div class="mb-6">
-              <h3 class="text-2xl font-bold text-blue-400 mb-2 group-hover:text-cyan-400 transition-colors">
-                {section.title}
-              </h3>
-              <p class="text-gray-400 text-lg mb-1">{section.subtitle}</p>
-              <p class="text-gray-500 leading-relaxed">
-                {section.description}
-              </p>
-            </div>
-            
-            <!-- Features -->
-            <div class="mb-8">
-              <div class="grid grid-cols-2 gap-2">
-                {section.features.map((feature) => (
-                  <div class="flex items-center text-sm text-gray-400">
-                    <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></div>
-                    {feature}
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            <!-- CTA -->
-            <a 
-              href={section.href}
-              class={`inline-flex items-center justify-center w-full bg-gradient-to-r ${section.gradient} text-white py-3 px-6 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 group-hover:scale-105`}
+            <svg
+                class="w-6 h-6 text-blue-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
             >
-              <span>Explorar {section.title}</span>
-              <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </div>
-        ))}
-      </div>
-      
-      <!-- New AI Tools Section -->
-      <div class="mt-16 pt-16 border-t border-gray-800">
-        <div class="text-center mb-12">
-          <h3 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent">
-            Herramientas IA Profesionales
-          </h3>
-          <p class="text-lg text-gray-400 max-w-3xl mx-auto">
-            Descubre las IAs más utilizadas en el desarrollo profesional, con ejemplos prácticos y casos de uso específicos.
-          </p>
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
         </div>
-        
-        <div class="bg-gradient-to-r from-violet-900/20 via-purple-900/20 to-indigo-900/20 border border-violet-500/20 rounded-2xl p-8 hover:border-violet-500/40 transition-all duration-500">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <!-- Content -->
-            <div>
-              <div class="flex items-center gap-3 mb-6">
-                <div class="w-12 h-12 bg-gradient-to-r from-violet-500 to-purple-500 rounded-xl flex items-center justify-center text-2xl">
-                  🤖
-                </div>
-                <div>
-                  <h4 class="text-2xl font-bold text-violet-400">Arsenal IA Completo</h4>
-                  <p class="text-gray-400">Las mejores herramientas del mercado</p>
-                </div>
-              </div>
-              
-              <p class="text-gray-300 mb-6 leading-relaxed">
-                Explora <span class="text-violet-400 font-semibold">25+ herramientas IA</span> categorizadas 
-                por especialidad: desde GitHub Copilot hasta Cursor AI, ChatGPT hasta Claude, 
-                con comparaciones detalladas, precios y ROI estimado.
-              </p>
-              
-              <div class="grid grid-cols-2 gap-4 mb-8">
-                <div class="flex items-center text-sm text-gray-400">
-                  <div class="w-1.5 h-1.5 bg-violet-400 rounded-full mr-2"></div>
-                  Asistentes de Código
-                </div>
-                <div class="flex items-center text-sm text-gray-400">
-                  <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-2"></div>
-                  Testing Automatizado
-                </div>
-                <div class="flex items-center text-sm text-gray-400">
-                  <div class="w-1.5 h-1.5 bg-indigo-400 rounded-full mr-2"></div>
-                  DevOps Inteligente
-                </div>
-                <div class="flex items-center text-sm text-gray-400">
-                  <div class="w-1.5 h-1.5 bg-violet-400 rounded-full mr-2"></div>
-                  Análisis de Código
-                </div>
-              </div>
-              
-              <a 
-                href="/herramientas-ia"
-                class="inline-flex items-center justify-center bg-gradient-to-r from-violet-500 to-purple-500 text-white py-3 px-8 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-              >
-                <span>Explorar Herramientas IA</span>
-                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </a>
-            </div>
-            
-            <!-- Visual Elements -->
-            <div class="relative p-8">
-              <div class="grid grid-cols-2 gap-4 mb-6">
-                <!-- Tool previews -->
-                <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-4 hover:border-violet-500/50 transition-all duration-300">
-                  <div class="flex items-center gap-3 mb-3">
-                    <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center text-lg">🤖</div>
-                    <div>
-                      <div class="text-white font-semibold text-sm">GitHub Copilot</div>
-                      <div class="text-gray-400 text-xs">$10/mes</div>
-                    </div>
-                  </div>
-                  <div class="text-xs text-gray-500">Autocompletado IA</div>
-                </div>
-                
-                <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-4 hover:border-violet-500/50 transition-all duration-300">
-                  <div class="flex items-center gap-3 mb-3">
-                    <div class="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center text-lg">💬</div>
-                    <div>
-                      <div class="text-white font-semibold text-sm">ChatGPT</div>
-                      <div class="text-gray-400 text-xs">$20/mes</div>
-                    </div>
-                  </div>
-                  <div class="text-xs text-gray-500">IA Conversacional</div>
-                </div>
-                
-                <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-4 hover:border-violet-500/50 transition-all duration-300">
-                  <div class="flex items-center gap-3 mb-3">
-                    <div class="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center text-lg">🧠</div>
-                    <div>
-                      <div class="text-white font-semibold text-sm">Claude</div>
-                      <div class="text-gray-400 text-xs">$20/mes</div>
-                    </div>
-                  </div>
-                  <div class="text-xs text-gray-500">Análisis Profundo</div>
-                </div>
-                
-                <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-4 hover:border-violet-500/50 transition-all duration-300">
-                  <div class="flex items-center gap-3 mb-3">
-                    <div class="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center text-lg">⚡</div>
-                    <div>
-                      <div class="text-white font-semibold text-sm">Cursor AI</div>
-                      <div class="text-gray-400 text-xs">$20/mes</div>
-                    </div>
-                  </div>
-                  <div class="text-xs text-gray-500">Editor IA Nativo</div>
-                </div>
-              </div>
-              
-              <!-- Stats section reorganizada -->
-              <div class="flex justify-between items-center mt-4">
-                <div class="bg-violet-500/20 border border-violet-500/30 rounded-lg px-4 py-3">
-                  <div class="text-violet-400 font-bold text-xl">85%</div>
-                  <div class="text-gray-400 text-xs">Developers usan IA</div>
-                </div>
-                
-                <div class="bg-purple-500/20 border border-purple-500/30 rounded-lg px-4 py-3">
-                  <div class="text-purple-400 font-bold text-xl">40%</div>
-                  <div class="text-gray-400 text-xs">+ Productividad</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Implementation Roadmap -->
-  <section class="bg-gradient-to-br from-gray-900 to-black py-20">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-          Roadmap de Implementación
-        </h2>
-        <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-          Guía paso a paso para implementar IA en tu proyecto, desde componentes básicos hasta sistemas completamente autónomos.
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Fase 1 -->
-        <div class="bg-blue-500/10 border border-blue-500/20 rounded-xl p-6 hover:bg-blue-500/20 transition-all duration-300">
-          <div class="text-center mb-6">
-            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">1</div>
-            <h3 class="text-xl font-bold text-blue-400 mb-2">Fundamentos</h3>
-            <p class="text-gray-400 text-sm">Semanas 1-2</p>
-          </div>
-          
-          <ul class="space-y-2 text-sm text-gray-300">
-            <li class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></div>
-              Setup básico Frontend/Backend
-            </li>
-            <li class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></div>
-              Herramientas esenciales
-            </li>
-            <li class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></div>
-              Primeros componentes IA
-            </li>
-          </ul>
-        </div>
-        
-        <!-- Fase 2 -->
-        <div class="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-6 hover:bg-emerald-500/20 transition-all duration-300">
-          <div class="text-center mb-6">
-            <div class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">2</div>
-            <h3 class="text-xl font-bold text-emerald-400 mb-2">Optimización</h3>
-            <p class="text-gray-400 text-sm">Semanas 3-4</p>
-          </div>
-          
-          <ul class="space-y-2 text-sm text-gray-300">
-            <li class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-2"></div>
-              Base de datos inteligente
-            </li>
-            <li class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-2"></div>
-              Testing automatizado
-            </li>
-            <li class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-2"></div>
-              Monitoreo inicial
-            </li>
-          </ul>
-        </div>
-        
-        <!-- Fase 3 -->
-        <div class="bg-purple-500/10 border border-purple-500/20 rounded-xl p-6 hover:bg-purple-500/20 transition-all duration-300">
-          <div class="text-center mb-6">
-            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">3</div>
-            <h3 class="text-xl font-bold text-purple-400 mb-2">Automatización</h3>
-            <p class="text-gray-400 text-sm">Semanas 5-6</p>
-          </div>
-          
-          <ul class="space-y-2 text-sm text-gray-300">
-            <li class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-2"></div>
-              DevOps completo
-            </li>
-            <li class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-2"></div>
-              Arquitectura auto-optimizante
-            </li>
-            <li class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-2"></div>
-              Integración completa
-            </li>
-          </ul>
-        </div>
-        
-        <!-- Fase 4 -->
-        <div class="bg-orange-500/10 border border-orange-500/20 rounded-xl p-6 hover:bg-orange-500/20 transition-all duration-300">
-          <div class="text-center mb-6">
-            <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">4</div>
-            <h3 class="text-xl font-bold text-orange-400 mb-2">Optimización</h3>
-            <p class="text-gray-400 text-sm">Semanas 7-8</p>
-          </div>
-          
-          <ul class="space-y-2 text-sm text-gray-300">
-            <li class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-orange-400 rounded-full mr-2"></div>
-              ML en producción
-            </li>
-            <li class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-orange-400 rounded-full mr-2"></div>
-              Optimización continua
-            </li>
-            <li class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-orange-400 rounded-full mr-2"></div>
-              Análisis de ROI
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer CTA -->
-  <section class="bg-black py-20">
-    <div class="max-w-4xl mx-auto text-center px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
-        ¿Listo para transformar tu desarrollo con IA?
-      </h2>
-      <p class="text-xl text-gray-400 mb-8">
-        Comienza implementando IA en tu proyecto y ve resultados inmediatos en productividad y calidad.
-      </p>
-      
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a 
-          href="/herramientas-ia" 
-          class="bg-gradient-to-r from-violet-500 to-purple-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-violet-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105"
-        >
-          Explorar Herramientas IA
-        </a>
-        <a 
-          href="/docs/AI_IN_SOFTWARE_DEVELOPMENT" 
-          class="border border-gray-600 text-gray-300 px-8 py-4 rounded-xl text-lg font-semibold hover:border-gray-500 hover:text-white transition-all duration-300"
-        >
-          Ver Documentación Completa
-        </a>
-      </div>
-    </div>
-  </section>
+    </HeroSection>
+    <SectionsGrid sections={sections} />
+    <FinalCTA
+        title="¿Listo para transformar tu desarrollo con IA?"
+        description="Comienza implementando IA en tu proyecto y ve resultados inmediatos en productividad y calidad."
+        ctaLinks={[
+            {
+                href: "/herramientas-ia",
+                class: "bg-gradient-to-r from-violet-500 to-purple-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-violet-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105",
+                label: "Explorar Herramientas IA",
+            },
+            {
+                href: "/docs/AI_IN_SOFTWARE_DEVELOPMENT",
+                class: "border border-gray-600 text-gray-300 px-8 py-4 rounded-xl text-lg font-semibold hover:border-gray-500 hover:text-white transition-all duration-300",
+                label: "Ver Documentación Completa",
+            },
+        ]}
+    />
 </Layout>
-
-<style>
-  .floating-particle {
-    animation: float 6s ease-in-out infinite;
-  }
-  
-  @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(180deg); }
-  }
-  
-  .card-hover {
-    animation: fadeInUp 0.8s ease-out forwards;
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Smooth scroll */
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Custom scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #1a1a1a;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #3b82f6;
-    border-radius: 4px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #2563eb;
-  }
-</style>
-
-<script>
-  // Intersection Observer para animaciones al scroll
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-in');
-      }
-    });
-  }, observerOptions);
-  
-  // Observar todas las cards
-  document.querySelectorAll('.card-hover').forEach(card => {
-    observer.observe(card);
-  });
-  
-  // Smooth scroll para links internos
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (this: HTMLAnchorElement, e: Event) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href') || '');
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  });
-  
-  // Parallax effect para el hero
-  window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const parallaxElements = document.querySelectorAll('.floating-particle');
-    
-    parallaxElements.forEach((element, index) => {
-      const speed = 0.5 + (index * 0.1);
-      (element as HTMLElement).style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
-    });
-  });
-</script>
