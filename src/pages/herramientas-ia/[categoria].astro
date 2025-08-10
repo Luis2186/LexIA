@@ -9,93 +9,251 @@ const categorias = {
         descripcion:
             "Herramientas especializadas en autocompletado, generación y refactoring de código",
         color: "from-blue-500 to-cyan-500",
-    // cantidad: 9, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "GitHub Copilot",
                 empresa: "GitHub + OpenAI",
                 descripcion:
                     "El asistente de código IA más popular. GPT-4 + Codex para 100+ lenguajes.",
-                precio: "$10/mes",
-                tags: ["Autocompletado", "VS Code", "IntelliJ"],
                 url: "/ia/github-copilot",
                 logo: "🤖",
+                planes: [
+                    {
+                        nombre: "Free",
+                        precio: "$0",
+                        licencia: "Propietario",
+                        uso: "50 solicitudes de agente/chat y 2,000 autocompletados al mes. Modelos: Claude 3.5, GPT-4.1, más.",
+                        limitaciones:
+                            "Límites mensuales, menos modelos premium.",
+                    },
+                    {
+                        nombre: "Pro",
+                        precio: "$10/mes o $100/año",
+                        licencia: "Propietario",
+                        uso: "Ilimitado. Acceso a modelos premium (Claude 4, GPT-5, Gemini 2.5 Pro, etc.), code review, agente IA, más. Free para estudiantes y open source.",
+                        limitaciones:
+                            "Uso justo, opción de comprar más solicitudes premium.",
+                    },
+                    {
+                        nombre: "Pro+",
+                        precio: "$39/mes o $390/año",
+                        licencia: "Propietario",
+                        uso: "Todo en Pro + acceso a todos los modelos (incluyendo Claude Opus 4.1, o3, etc.), 30x más solicitudes premium, acceso a GitHub Spark.",
+                        limitaciones:
+                            "Uso justo, opción de comprar más solicitudes premium.",
+                    },
+                ],
             },
             {
                 nombre: "Cursor",
                 empresa: "Cursor",
                 descripcion:
                     "Editor de código con IA integrada. Fork de VS Code con GPT-4.",
-                precio: "$20/mes",
-                tags: ["Editor", "GPT-4", "Autocomplete"],
                 url: "/ia/cursor",
                 logo: "⚡",
+                planes: [
+                    {
+                        nombre: "Hobby",
+                        precio: "$0",
+                        licencia: "Propietario",
+                        uso: "Incluye prueba Pro de 2 semanas, solicitudes de agente y autocompletado limitadas.",
+                        limitaciones:
+                            "Límites mensuales, menos modelos y funciones.",
+                    },
+                    {
+                        nombre: "Pro",
+                        precio: "$20/mes",
+                        licencia: "Propietario",
+                        uso: "Límites extendidos en agente, autocompletado ilimitado, background agents, Bugbot, máximo contexto, acceso a modelos frontier.",
+                        limitaciones:
+                            "Uso justo, límites de inferencia mensual.",
+                    },
+                    {
+                        nombre: "Ultra",
+                        precio: "$200/mes",
+                        licencia: "Propietario",
+                        uso: "20x uso en todos los modelos, prioridad en nuevas funciones.",
+                        limitaciones: "Uso justo, límites muy altos.",
+                    },
+                    {
+                        nombre: "Teams",
+                        precio: "$40/usuario/mes",
+                        licencia: "Propietario",
+                        uso: "Todo en Pro + privacidad organizacional, dashboard admin, facturación centralizada, SSO.",
+                        limitaciones: "Mínimo 2 usuarios.",
+                    },
+                    {
+                        nombre: "Enterprise",
+                        precio: "Custom",
+                        licencia: "Propietario",
+                        uso: "Todo en Teams + más uso, SCIM, control de acceso, soporte prioritario.",
+                        limitaciones: "Negociado.",
+                    },
+                ],
             },
             {
                 nombre: "Tabnine",
                 empresa: "Tabnine",
                 descripcion:
                     "Autocompletado inteligente con modelos propios y personalizables.",
-                precio: "$12/mes",
-                tags: ["Autocomplete", "Local", "Privacidad"],
                 url: "/ia/tabnine",
                 logo: "🔮",
+                planes: [
+                    {
+                        nombre: "Dev Preview",
+                        precio: "$0",
+                        licencia: "Propietario",
+                        uso: "Completado de código, chat IA, agentes básicos, soporte para IDEs principales.",
+                        limitaciones: "14 días de prueba, funciones limitadas.",
+                    },
+                    {
+                        nombre: "Dev",
+                        precio: "$9/mes",
+                        licencia: "Propietario",
+                        uso: "IA chat, agentes IA, modelos Tabnine y terceros, personalización básica, integración Jira, seguridad empresarial.",
+                        limitaciones:
+                            "Soporte por tickets, funciones avanzadas sólo en Enterprise.",
+                    },
+                    {
+                        nombre: "Enterprise",
+                        precio: "$39/usuario/mes (anual)",
+                        licencia: "Propietario",
+                        uso: "Todo en Dev + agentes avanzados, despliegue privado, contexto ilimitado, reglas personalizadas, modelos propios, protección IP, SSO, soporte prioritario.",
+                        limitaciones: "Mínimo usuarios, contrato anual.",
+                    },
+                ],
             },
             {
                 nombre: "Sourcegraph Cody",
                 empresa: "Sourcegraph",
                 descripcion:
                     "Asistente IA con acceso al contexto completo del codebase.",
-                precio: "$9/mes",
-                tags: ["Contexto", "Search", "Claude"],
                 url: "/ia/sourcegraph-cody",
                 logo: "🔍",
+                planes: [
+                    {
+                        nombre: "Enterprise",
+                        precio: "Custom",
+                        licencia: "Propietario",
+                        uso: "Acceso a modelos de última generación, integración con todos los code hosts y editores, seguridad empresarial, escalabilidad.",
+                    },
+                ],
             },
             {
                 nombre: "Codeium",
                 empresa: "Codeium",
-                descripcion: "Copiloto IA gratuito para autocompletado de código.",
-                precio: "Gratis",
-                tags: ["Autocompletado", "Gratis", "IA"],
+                descripcion:
+                    "Copiloto IA gratuito para autocompletado de código.",
                 url: "/ia/codeium",
                 logo: "🚀",
+                planes: [
+                    {
+                        nombre: "Free",
+                        precio: "$0",
+                        licencia: "Propietario",
+                        uso: "25 créditos/mes, modelos premium, sin retención de datos opcional, ilimitado en Tab y SWE-1 Lite, 1 despliegue app/día.",
+                        limitaciones:
+                            "Límites de créditos, funciones avanzadas sólo en Pro/Teams.",
+                    },
+                    {
+                        nombre: "Pro",
+                        precio: "$15/mes",
+                        licencia: "Propietario",
+                        uso: "500 créditos/mes, SWE-1, 5 despliegues app/día, soporte prioritario.",
+                        limitaciones: "Límites de créditos, add-ons.",
+                    },
+                    {
+                        nombre: "Teams",
+                        precio: "$30/usuario/mes",
+                        licencia: "Propietario",
+                        uso: "500 créditos/usuario/mes, facturación centralizada, dashboard admin, SSO (+$10/usuario/mes).",
+                        limitaciones: "Límites de créditos, add-ons.",
+                    },
+                    {
+                        nombre: "Enterprise",
+                        precio: "$60/usuario/mes",
+                        licencia: "Propietario",
+                        uso: "1,000 créditos/usuario/mes, RBAC, SSO, descuentos por volumen, soporte dedicado, despliegue híbrido.",
+                        limitaciones: "Negociado.",
+                    },
+                ],
             },
             {
                 nombre: "Code Llama",
                 empresa: "Meta",
-                descripcion: "Modelo open source de Meta para generación de código.",
-                precio: "Gratis",
-                tags: ["Open Source", "Meta", "Generación"],
+                descripcion:
+                    "Modelo open source de Meta para generación de código.",
                 url: "/ia/code-llama",
                 logo: "🦙",
+                planes: [
+                    {
+                        nombre: "Open Source",
+                        precio: "Gratis",
+                        licencia: "OpenRAIL-M",
+                        uso: "Uso libre para investigación y comercial, sujeto a licencia OpenRAIL-M.",
+                        limitaciones: "Debe cumplir con OpenRAIL-M.",
+                    },
+                ],
             },
             {
                 nombre: "Intellicode",
                 empresa: "Microsoft",
-                descripcion: "Sugerencias inteligentes de código por Microsoft.",
-                precio: "Gratis",
-                tags: ["Autocompletado", "Microsoft", "VSCode"],
+                descripcion:
+                    "Sugerencias inteligentes de código por Microsoft.",
                 url: "/ia/intellicode",
                 logo: "🧠",
+                planes: [
+                    {
+                        nombre: "Gratis",
+                        precio: "Gratis",
+                        licencia: "Propietario",
+                        uso: "Incluido en Visual Studio y VS Code. Sugerencias de código, autocompletado, refactorización.",
+                        limitaciones: "Sólo para lenguajes soportados.",
+                    },
+                ],
             },
             {
                 nombre: "MutableAI",
                 empresa: "MutableAI",
                 descripcion: "Refactorización y generación de código con IA.",
-                precio: "Gratis",
-                tags: ["Refactor", "Generación", "IA"],
                 url: "/ia/mutableai",
                 logo: "🔧",
+                planes: [
+                    {
+                        nombre: "Gratis",
+                        precio: "Gratis",
+                        licencia: "Propietario",
+                        uso: "Refactorización y generación de código básica.",
+                        limitaciones:
+                            "Funciones avanzadas sólo en planes pagos.",
+                    },
+                ],
             },
             {
                 nombre: "CodeWhisperer",
                 empresa: "Amazon",
-                descripcion: "Asistente IA de Amazon para autocompletado y seguridad.",
-                precio: "Gratis",
-                tags: ["Autocompletado", "Amazon", "Seguridad"],
+                descripcion:
+                    "Asistente IA de Amazon para autocompletado y seguridad.",
                 url: "/ia/codewhisperer",
                 logo: "🛡️",
-            }
+                planes: [
+                    {
+                        nombre: "Free Tier",
+                        precio: "Gratis",
+                        licencia: "Propietario",
+                        uso: "50 interacciones de chat/mes, 1,000 líneas de código transformadas/mes.",
+                        limitaciones:
+                            "Límites mensuales, funciones avanzadas sólo en Pro.",
+                    },
+                    {
+                        nombre: "Pro",
+                        precio: "Consultar",
+                        licencia: "Propietario",
+                        uso: "Interacciones y transformaciones ilimitadas, acceso a funciones avanzadas, soporte empresarial.",
+                        limitaciones: "Negociado.",
+                    },
+                ],
+            },
         ],
     },
     chat: {
@@ -104,27 +262,57 @@ const categorias = {
         descripcion:
             "Asistentes conversacionales especializados en desarrollo y programación",
         color: "from-green-500 to-emerald-500",
-    // cantidad: 2, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "GPT-4o",
                 empresa: "OpenAI",
                 descripcion:
                     "El modelo más avanzado para desarrollo. Soporte multimodal y razonamiento complejo.",
-                precio: "$20/mes",
-                tags: ["Multimodal", "Razonamiento", "API"],
                 url: "/ia/gpt-4o",
                 logo: "🧠",
+                planes: [
+                    {
+                        nombre: "ChatGPT Free",
+                        precio: "$0",
+                        licencia: "Propietario",
+                        uso: "Acceso a GPT-3.5, funciones básicas de chat, sin plugins ni modelos avanzados.",
+                        limitaciones:
+                            "Sin acceso a modelos premium ni funciones avanzadas.",
+                    },
+                    {
+                        nombre: "ChatGPT Plus",
+                        precio: "$20/mes",
+                        licencia: "Propietario",
+                        uso: "Acceso a GPT-4o, GPT-4, navegación web, análisis de archivos, generación de imágenes, plugins, prioridad de acceso.",
+                        limitaciones:
+                            "Uso justo, límites de velocidad y tokens.",
+                    },
+                ],
             },
             {
                 nombre: "Claude 3.5",
                 empresa: "Anthropic",
                 descripcion:
                     "Excelente para código complejo, refactoring y arquitectura de software.",
-                precio: "$20/mes",
-                tags: ["Arquitectura", "Refactoring", "Seguridad"],
-                url: "/ia/claude", // Enlace actualizado
+                url: "/ia/claude",
                 logo: "🎭",
+                planes: [
+                    {
+                        nombre: "Claude Free",
+                        precio: "$0",
+                        licencia: "Propietario",
+                        uso: "Acceso a Claude 3 Sonnet, chat básico, límites de mensajes diarios.",
+                        limitaciones:
+                            "Sin acceso a modelos Opus, límites de mensajes.",
+                    },
+                    {
+                        nombre: "Claude Pro",
+                        precio: "$20/mes",
+                        licencia: "Propietario",
+                        uso: "Acceso a Claude 3 Opus, Sonnet y Haiku, más mensajes diarios, prioridad de acceso, archivos grandes.",
+                        limitaciones: "Uso justo, límites de velocidad.",
+                    },
+                ],
             },
         ],
     },
@@ -134,27 +322,70 @@ const categorias = {
         descripcion:
             "Entornos de desarrollo integrados con capacidades de IA avanzadas",
         color: "from-purple-500 to-violet-500",
-    // cantidad: 2, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "Cursor",
                 empresa: "Cursor",
                 descripcion:
                     "Editor de código revolucionario con IA nativa. Fork de VS Code.",
-                precio: "$20/mes",
-                tags: ["Editor", "IA Nativa", "Productivity"],
                 url: "/ia/cursor",
                 logo: "⚡",
+                planes: [
+                    {
+                        nombre: "Hobby",
+                        precio: "$0",
+                        licencia: "Propietario",
+                        uso: "Incluye prueba Pro de 2 semanas, solicitudes de agente y autocompletado limitadas.",
+                        limitaciones:
+                            "Límites mensuales, menos modelos y funciones.",
+                    },
+                    {
+                        nombre: "Pro",
+                        precio: "$20/mes",
+                        licencia: "Propietario",
+                        uso: "Límites extendidos en agente, autocompletado ilimitado, background agents, Bugbot, máximo contexto, acceso a modelos frontier.",
+                        limitaciones:
+                            "Uso justo, límites de inferencia mensual.",
+                    },
+                    {
+                        nombre: "Ultra",
+                        precio: "$200/mes",
+                        licencia: "Propietario",
+                        uso: "20x uso en todos los modelos, prioridad en nuevas funciones.",
+                        limitaciones: "Uso justo, límites muy altos.",
+                    },
+                    {
+                        nombre: "Teams",
+                        precio: "$40/usuario/mes",
+                        licencia: "Propietario",
+                        uso: "Todo en Pro + privacidad organizacional, dashboard admin, facturación centralizada, SSO.",
+                        limitaciones: "Mínimo 2 usuarios.",
+                    },
+                    {
+                        nombre: "Enterprise",
+                        precio: "Custom",
+                        licencia: "Propietario",
+                        uso: "Todo en Teams + más uso, SCIM, control de acceso, soporte prioritario.",
+                        limitaciones: "Negociado.",
+                    },
+                ],
             },
             {
                 nombre: "Replit AI",
                 empresa: "Replit",
                 descripcion:
                     "IDE en la nube con asistente IA integrado para desarrollo colaborativo.",
-                precio: "$7/mes",
-                tags: ["Cloud", "Colaborativo", "Deploy"],
                 url: "/ia/replit-ai",
                 logo: "☁️",
+                planes: [
+                    {
+                        nombre: "Core",
+                        precio: "$7/mes",
+                        licencia: "Propietario",
+                        uso: "Acceso a IA, despliegue en la nube, colaboración en tiempo real, recursos de computación dedicados.",
+                        limitaciones: "Límites de recursos según plan.",
+                    },
+                ],
             },
         ],
     },
@@ -164,37 +395,65 @@ const categorias = {
         descripcion:
             "Herramientas de IA para pruebas automatizadas y aseguramiento de calidad",
         color: "from-orange-500 to-red-500",
-    // cantidad: 3, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "Mabl",
                 empresa: "Mabl",
                 descripcion:
                     "Testing inteligente en la nube con auto-scaling y insights de IA.",
-                precio: "$80/mes",
-                tags: ["Cloud Testing", "Auto-scaling", "AI Insights"],
                 url: "/ia/mabl",
                 logo: "☁️",
+                planes: [
+                    {
+                        nombre: "Custom",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "Pruebas web, mobile, API, accesibilidad, performance, IA, ilimitado local/CI, soporte 24/5, onboarding personalizado.",
+                        limitaciones:
+                            "Precio y límites según necesidades, add-ons disponibles.",
+                    },
+                ],
             },
             {
                 nombre: "Diffblue Cover",
                 empresa: "Diffblue",
                 descripcion:
                     "Generación automática de unit tests para Java con IA.",
-                precio: "Enterprise",
-                tags: ["Java", "Unit Tests", "Automático"],
                 url: "/ia/diffblue-cover",
                 logo: "🛡️",
+                planes: [
+                    {
+                        nombre: "Enterprise",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "Generación automática de tests para Java, integración CI/CD, soporte empresarial.",
+                        limitaciones: "Sólo empresas, licencia anual.",
+                    },
+                ],
             },
             {
                 nombre: "Testim AI",
                 empresa: "Testim",
                 descripcion:
                     "Plataforma de testing automatizado con IA para aplicaciones web.",
-                precio: "$450/mes",
-                tags: ["E2E Testing", "Web", "Auto-healing"],
                 url: "/ia/testim-ai",
                 logo: "🎯",
+                planes: [
+                    {
+                        nombre: "Community",
+                        precio: "Gratis",
+                        licencia: "Propietario",
+                        uso: "Pruebas web y mobile locales, recursos de autoayuda, 1 cuenta por organización.",
+                        limitaciones: "Límites de ejecución, soporte limitado.",
+                    },
+                    {
+                        nombre: "Essentials/Pro/Mobile",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "Pruebas web, Salesforce y mobile en la nube, soporte 24x5, ejecución paralela, integración CI, soporte profesional.",
+                        limitaciones: "Precio y límites según plan.",
+                    },
+                ],
             },
         ],
     },
@@ -204,46 +463,83 @@ const categorias = {
         descripcion:
             "Automatización inteligente para CI/CD, infraestructura y operaciones",
         color: "from-indigo-500 to-blue-500",
-    // cantidad: 4, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "Harness AI/OPS",
                 empresa: "Harness",
                 descripcion:
                     "Plataforma DevOps con IA para CI/CD, feature flags y observabilidad.",
-                precio: "Enterprise",
-                tags: ["CI/CD", "Feature Flags", "Observability"],
                 url: "/ia/harness-ai-ops",
                 logo: "⚙️",
+                planes: [
+                    {
+                        nombre: "Enterprise",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "Automatización CI/CD, feature flags, observabilidad, integración IA, soporte empresarial.",
+                        limitaciones: "Sólo empresas, licencia anual.",
+                    },
+                ],
             },
             {
                 nombre: "Dynatrace Davis AI",
                 empresa: "Dynatrace",
                 descripcion:
                     "IA para observabilidad, detección de anomalías y root cause analysis.",
-                precio: "Enterprise",
-                tags: ["Observability", "Anomalías", "APM"],
                 url: "/ia/dynatrace-davis-ai",
                 logo: "📊",
+                planes: [
+                    {
+                        nombre: "Enterprise",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "Observabilidad, APM, IA, detección de anomalías, root cause analysis, soporte empresarial.",
+                        limitaciones: "Sólo empresas, licencia anual.",
+                    },
+                ],
             },
             {
                 nombre: "Ansible Lightspeed",
                 empresa: "Red Hat",
-                descripcion: "Automatización de infraestructura con IA para Ansible.",
-                precio: "Enterprise",
-                tags: ["DevOps", "Automatización", "Infraestructura"],
+                descripcion:
+                    "Automatización de infraestructura con IA para Ansible.",
                 url: "/ia/ansible-lightspeed",
                 logo: "⚙️",
+                planes: [
+                    {
+                        nombre: "Enterprise",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "Automatización de infraestructura, integración IA, soporte empresarial.",
+                        limitaciones: "Sólo empresas, licencia anual.",
+                    },
+                ],
             },
             {
                 nombre: "Amazon Q Developer",
                 empresa: "Amazon Web Services",
-                descripcion: "Asistente IA de Amazon para desarrollo y operaciones.",
-                precio: "Gratis",
-                tags: ["DevOps", "AWS", "Asistente"],
+                descripcion:
+                    "Asistente IA de Amazon para desarrollo y operaciones.",
                 url: "/ia/amazon-q-developer",
                 logo: "🎯",
-            }
+                planes: [
+                    {
+                        nombre: "Free Tier",
+                        precio: "Gratis",
+                        licencia: "Propietario",
+                        uso: "50 interacciones de chat/mes, 1,000 líneas de código transformadas/mes, integración IDE, CLI, AWS Console.",
+                        limitaciones:
+                            "Límites mensuales, funciones avanzadas sólo en Pro.",
+                    },
+                    {
+                        nombre: "Pro",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "Interacciones y transformaciones ilimitadas, acceso a funciones avanzadas, soporte empresarial.",
+                        limitaciones: "Negociado.",
+                    },
+                ],
+            },
         ],
     },
     documentacion: {
@@ -252,47 +548,113 @@ const categorias = {
         descripcion:
             "Generación automática y mantenimiento de documentación técnica",
         color: "from-teal-500 to-cyan-500",
-    // cantidad: 4, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "Notion AI",
                 empresa: "Notion Labs",
                 descripcion:
                     "Asistente de escritura e investigación integrado en Notion para documentación automática.",
-                precio: "$10/mes",
-                tags: ["Escritura", "Workspace", "Automático"],
                 url: "/ia/notion-ai",
                 logo: "📝",
+                planes: [
+                    {
+                        nombre: "Free",
+                        precio: "$0",
+                        licencia: "Propietario",
+                        uso: "Uso individual, bloques y archivos limitados, prueba limitada de Notion AI.",
+                        limitaciones:
+                            "Sin funciones colaborativas, límites de almacenamiento.",
+                    },
+                    {
+                        nombre: "Plus",
+                        precio: "$10/usuario/mes",
+                        licencia: "Propietario",
+                        uso: "Colaboración, bloques y archivos ilimitados, integraciones básicas, prueba limitada de Notion AI.",
+                        limitaciones: "Sin funciones empresariales.",
+                    },
+                    {
+                        nombre: "Business",
+                        precio: "$20/usuario/mes",
+                        licencia: "Propietario",
+                        uso: "Todo en Plus + SAML SSO, teamspaces privados, integraciones premium, Notion AI incluido.",
+                        limitaciones: "Sin funciones avanzadas de seguridad.",
+                    },
+                    {
+                        nombre: "Enterprise",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "Todo en Business + seguridad avanzada, auditoría, soporte premium, retención de datos personalizada, Notion AI incluido.",
+                        limitaciones: "Negociado.",
+                    },
+                ],
             },
             {
                 nombre: "Mintlify",
                 empresa: "Mintlify",
                 descripcion:
                     "Generación automática de documentación desde código con IA.",
-                precio: "$120/mes",
-                tags: ["Auto-docs", "APIs", "Beautiful"],
                 url: "/ia/mintlify",
                 logo: "📖",
+                planes: [
+                    {
+                        nombre: "Hobby",
+                        precio: "$0",
+                        licencia: "Propietario",
+                        uso: "Plataforma completa, dominio personalizado, editor web, API playground, analytics, componentes personalizados.",
+                        limitaciones:
+                            "1 miembro, sin IA avanzada, sin soporte premium.",
+                    },
+                    {
+                        nombre: "Pro",
+                        precio: "$250/mes",
+                        licencia: "Propietario",
+                        uso: "Todo en Hobby + IA Assistant, despliegues preview, MCP Server, protección por contraseña, soporte prioritario, 5 miembros (extra $20/miembro).",
+                        limitaciones:
+                            "Costo por mensajes IA extra y miembros adicionales.",
+                    },
+                    {
+                        nombre: "Custom",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "Todo en Pro + autenticación personalizada, uptime 99.999%, soporte SLA, SSO, personalización avanzada, soporte dedicado.",
+                        limitaciones: "Negociado.",
+                    },
+                ],
             },
             {
                 nombre: "NotebookLM",
                 empresa: "Google",
                 descripcion:
                     "Asistente IA para investigación y documentación técnica.",
-                precio: "Gratis",
-                tags: ["Research", "PDFs", "Synthesis"],
                 url: "/ia/notebooklm",
                 logo: "📓",
+                planes: [
+                    {
+                        nombre: "Gratis",
+                        precio: "Gratis",
+                        licencia: "Propietario",
+                        uso: "Acceso a funciones de IA para investigación y documentación técnica.",
+                        limitaciones:
+                            "Funciones avanzadas pueden requerir invitación o estar limitadas por región.",
+                    },
+                ],
             },
             {
                 nombre: "Swimm",
                 empresa: "Swimm",
                 descripcion:
                     "Documentación de código que se mantiene actualizada automáticamente.",
-                precio: "$39/mes",
-                tags: ["Live Docs", "Code Sync", "Knowledge"],
                 url: "/ia/swimm",
                 logo: "🏊",
+                planes: [
+                    {
+                        nombre: "Custom",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "Documentación automática, visualización de flujos, personalización para equipos, soporte empresarial.",
+                        limitaciones: "Precio y límites según necesidades.",
+                    },
+                ],
             },
         ],
     },
@@ -302,67 +664,175 @@ const categorias = {
         descripcion:
             "Herramientas de IA para diseño de interfaces, presentaciones y experiencia de usuario",
         color: "from-pink-500 to-rose-500",
-    // cantidad: 6, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "Gamma",
                 empresa: "Gamma Technologies",
                 descripcion:
                     "Crea presentaciones profesionales con IA en segundos. Diseño automático y contenido inteligente.",
-                precio: "$10/mes",
-                tags: ["Presentaciones", "Auto-diseño", "Contenido IA"],
                 url: "/ia/gamma",
                 logo: "🎯",
+                planes: [
+                    {
+                        nombre: "Free",
+                        precio: "$0",
+                        licencia: "Propietario",
+                        uso: "400 créditos AI al registrarse, generación básica de imágenes, hasta 10 tarjetas, exportación básica.",
+                        limitaciones:
+                            "Límites de generación, funciones limitadas.",
+                    },
+                    {
+                        nombre: "Plus",
+                        precio: "Consultar",
+                        licencia: "Propietario",
+                        uso: "IA ilimitada, branding personalizado, generación avanzada de imágenes, hasta 20 tarjetas, soporte prioritario.",
+                        limitaciones: "Límites ampliados, funciones avanzadas.",
+                    },
+                    {
+                        nombre: "Pro",
+                        precio: "Consultar",
+                        licencia: "Propietario",
+                        uso: "IA y edición avanzada ilimitada, hasta 60 tarjetas, API, fuentes y dominios personalizados, analíticas, protección por contraseña.",
+                        limitaciones:
+                            "Funciones premium, contactar ventas para equipos.",
+                    },
+                ],
             },
             {
                 nombre: "Beautiful.ai",
                 empresa: "Beautiful.ai Inc.",
                 descripcion:
                     "Presentaciones con diseño automático inteligente. DesignAI engine adapta layouts en tiempo real.",
-                precio: "$12/mes",
-                tags: ["DesignAI", "Presentaciones", "Auto-layout"],
                 url: "/ia/beautiful-ai",
                 logo: "✨",
+                planes: [
+                    {
+                        nombre: "Pro",
+                        precio: "$12/mes",
+                        licencia: "Propietario",
+                        uso: "1 usuario, slides ilimitadas, generación AI, exportación PowerPoint, analíticas, inspiración de slides.",
+                        limitaciones: "Sin colaboración ni SSO.",
+                    },
+                    {
+                        nombre: "Team",
+                        precio: "$40/usuario/mes",
+                        licencia: "Propietario",
+                        uso: "2-20 usuarios, todo en Pro + colaboración, branding, SSO, soporte prioritario.",
+                        limitaciones: "Mínimo 2 usuarios.",
+                    },
+                    {
+                        nombre: "Enterprise",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "20+ usuarios, todo en Team + recursos ilimitados, permisos avanzados, auditoría, onboarding dedicado, soporte premium.",
+                        limitaciones: "Negociado.",
+                    },
+                ],
             },
             {
                 nombre: "Miro AI",
                 empresa: "Miro",
                 descripcion:
                     "Colaboración visual inteligente con generación automática de diagramas y wireframes.",
-                precio: "$16/mes",
-                tags: ["Diagramas", "Wireframes", "Colaboración"],
                 url: "/ia/miro-ai",
                 logo: "🧠",
+                planes: [
+                    {
+                        nombre: "Starter",
+                        precio: "$8/usuario/mes",
+                        licencia: "Propietario",
+                        uso: "Colaboración básica, tableros ilimitados, plantillas, exportación, IA limitada.",
+                        limitaciones: "Funciones IA limitadas, sin SSO.",
+                    },
+                    {
+                        nombre: "Business",
+                        precio: "$16/usuario/mes",
+                        licencia: "Propietario",
+                        uso: "Todo en Starter + SSO, controles avanzados, IA ampliada, soporte prioritario.",
+                        limitaciones: "Sin funciones Enterprise.",
+                    },
+                    {
+                        nombre: "Enterprise",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "Todo en Business + seguridad avanzada, administración granular, soporte premium, IA completa.",
+                        limitaciones: "Negociado.",
+                    },
+                ],
             },
             {
                 nombre: "Uizard",
                 empresa: "Uizard",
                 descripcion:
                     "Diseño de UI automático desde wireframes, mockups o descripciones.",
-                precio: "$12/mes",
-                tags: ["Wireframes", "Mockups", "Prototyping"],
                 url: "/ia/uizard",
                 logo: "🎨",
+                planes: [
+                    {
+                        nombre: "Free",
+                        precio: "$0",
+                        licencia: "Propietario",
+                        uso: "3 generaciones AI/mes, 2 proyectos, 10 plantillas, motor Autodesigner 1.5.",
+                        limitaciones:
+                            "Límites de proyectos y generaciones, funciones limitadas.",
+                    },
+                    {
+                        nombre: "Pro",
+                        precio: "$12/mes",
+                        licencia: "Propietario",
+                        uso: "500 generaciones AI/mes, hasta 100 proyectos, motor Autodesigner 2.0, handoff React/CSS, proyectos privados, plantillas completas.",
+                        limitaciones: "Límites ampliados, sin soporte premium.",
+                    },
+                    {
+                        nombre: "Business",
+                        precio: "$39/mes",
+                        licencia: "Propietario",
+                        uso: "5,000 generaciones AI/mes, proyectos ilimitados, branding personalizado, soporte prioritario.",
+                        limitaciones: "Funciones premium, mínimo usuarios.",
+                    },
+                    {
+                        nombre: "Enterprise",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "Generaciones AI ilimitadas, equipos ilimitados, SLA de datos, facturación personalizada, onboarding dedicado.",
+                        limitaciones: "Negociado.",
+                    },
+                ],
             },
             {
                 nombre: "Galileo AI",
                 empresa: "Galileo AI",
                 descripcion:
                     "Generación de designs completos desde prompts de texto.",
-                precio: "$19/mes",
-                tags: ["Text-to-Design", "UI Generation", "Figma"],
                 url: "/ia/galileo-ai",
                 logo: "🔭",
+                planes: [
+                    {
+                        nombre: "Pro",
+                        precio: "$19/mes",
+                        licencia: "Propietario",
+                        uso: "Generación de diseños UI desde texto, integración con Figma, plantillas premium.",
+                        limitaciones: "Límites de uso según plan.",
+                    },
+                ],
             },
             {
                 nombre: "DiagramGPT",
                 empresa: "DiagramGPT",
                 descripcion:
                     "Creación automática de diagramas técnicos y arquitecturas.",
-                precio: "Gratis",
-                tags: ["Diagramas", "Arquitectura", "Mermaid"],
                 url: "/ia/diagramgpt",
                 logo: "📊",
+                planes: [
+                    {
+                        nombre: "Gratis",
+                        precio: "Gratis",
+                        licencia: "Open Source",
+                        uso: "Generación de diagramas técnicos y arquitecturas, exportación básica.",
+                        limitaciones:
+                            "Funciones avanzadas pueden requerir donación o suscripción.",
+                    },
+                ],
             },
         ],
     },
@@ -372,37 +842,65 @@ const categorias = {
         descripcion:
             "Análisis de seguridad, vulnerabilidades y calidad de código con IA",
         color: "from-red-500 to-pink-500",
-    // cantidad: 3, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "Snyk Code",
                 empresa: "Snyk",
                 descripcion:
                     "Análisis de seguridad en tiempo real con IA para detectar vulnerabilidades.",
-                precio: "$25/mes",
-                tags: ["Security", "SAST", "Real-time"],
                 url: "/ia/snyk-code",
                 logo: "🛡️",
+                planes: [
+                    {
+                        nombre: "Pro",
+                        precio: "$25/mes",
+                        licencia: "Propietario",
+                        uso: "Análisis SAST, detección de vulnerabilidades, integración CI/CD, soporte profesional.",
+                        limitaciones: "Límites de análisis según plan.",
+                    },
+                    {
+                        nombre: "Enterprise",
+                        precio: "A cotizar",
+                        licencia: "Propietario",
+                        uso: "Todo en Pro + administración avanzada, soporte premium, integración personalizada.",
+                        limitaciones: "Negociado.",
+                    },
+                ],
             },
             {
                 nombre: "SonarLint AI",
                 empresa: "SonarSource",
                 descripcion:
                     "Análisis de calidad de código con sugerencias inteligentes.",
-                precio: "Gratis",
-                tags: ["Code Quality", "Linting", "Best Practices"],
                 url: "/ia/sonarlint-ai",
                 logo: "⚡",
+                planes: [
+                    {
+                        nombre: "Gratis",
+                        precio: "Gratis",
+                        licencia: "Open Source",
+                        uso: "Linting y análisis de calidad de código en IDEs soportados.",
+                        limitaciones:
+                            "Funciones avanzadas sólo en SonarQube/SonarCloud.",
+                    },
+                ],
             },
             {
                 nombre: "DeepCode",
                 empresa: "Snyk",
                 descripcion:
                     "Revisión automática de código con ML para encontrar bugs.",
-                precio: "Integrado Snyk",
-                tags: ["Bug Detection", "ML", "Code Review"],
                 url: "/ia/deepcode",
                 logo: "🔍",
+                planes: [
+                    {
+                        nombre: "Integrado Snyk",
+                        precio: "Incluido",
+                        licencia: "Propietario",
+                        uso: "Revisión automática de código, detección de bugs, integración con Snyk Code.",
+                        limitaciones: "Sólo disponible como parte de Snyk.",
+                    },
+                ],
             },
         ],
     },
@@ -575,11 +1073,12 @@ const description = `${categoriaData.descripcion}. Descubre las mejores herramie
 
                                 <div class="flex flex-wrap gap-2 mb-4">
                                     {/* @ts-ignore */}
-                                    {herramienta.tags.map((tag) => (
-                                        <span class="bg-violet-500/20 text-violet-300 px-2 py-1 rounded text-xs">
-                                            {tag}
-                                        </span>
-                                    ))}
+                                    {Array.isArray(herramienta.tags) &&
+                                        herramienta.tags.map((tag) => (
+                                            <span class="bg-violet-500/20 text-violet-300 px-2 py-1 rounded text-xs">
+                                                {tag}
+                                            </span>
+                                        ))}
                                 </div>
 
                                 <div class="flex items-center justify-between">
@@ -603,9 +1102,10 @@ const description = `${categoriaData.descripcion}. Descubre las mejores herramie
                     class="bg-gray-900/50 border border-gray-800 rounded-xl p-8"
                 >
                     <h2 class="text-2xl font-bold text-white mb-6 text-center">
-                        📊 Comparación Rápida - {categoriaData.nombre}
+                        📊 Comparación de Licenciamiento - {
+                            categoriaData.nombre
+                        }
                     </h2>
-
                     <div class="overflow-x-auto">
                         <table class="w-full text-sm">
                             <thead>
@@ -616,67 +1116,120 @@ const description = `${categoriaData.descripcion}. Descubre las mejores herramie
                                     >
                                     <th
                                         class="text-left text-gray-300 py-3 px-4"
+                                        >Plan</th
+                                    >
+                                    <th
+                                        class="text-left text-gray-300 py-3 px-4"
                                         >Precio</th
                                     >
                                     <th
                                         class="text-left text-gray-300 py-3 px-4"
-                                        >Características</th
+                                        >Alcance/Uso</th
                                     >
                                     <th
                                         class="text-left text-gray-300 py-3 px-4"
-                                        >Mejor Para</th
+                                        >Limitaciones</th
                                     >
                                 </tr>
                             </thead>
                             <tbody>
                                 {/* @ts-ignore */}
                                 {
-                                    categoriaData.herramientas.map(
-                                        (herramienta: any) => (
-                                            <tr class="border-b border-gray-800 hover:bg-gray-800/30">
-                                                <td class="py-4 px-4">
-                                                    <div class="flex items-center gap-3">
-                                                        <span class="text-xl">
-                                                            {herramienta.logo}
-                                                        </span>
-                                                        <div>
-                                                            <div class="text-white font-medium">
-                                                                {
-                                                                    herramienta.nombre
-                                                                }
-                                                            </div>
-                                                            <div class="text-gray-400 text-xs">
-                                                                {
-                                                                    herramienta.empresa
-                                                                }
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="py-4 px-4 text-emerald-400 font-medium">
-                                                    {herramienta.precio}
-                                                </td>
-                                                <td class="py-4 px-4">
-                                                    <div class="flex flex-wrap gap-1">
-                                                        {/* @ts-ignore */}
-                                                        {herramienta.tags
-                                                            .slice(0, 2)
-                                                            .map((tag: any) => (
-                                                                <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs">
-                                                                    {tag}
+                                    categoriaData.herramientas.flatMap(
+                                        (herramienta: any) => {
+                                            if (
+                                                Array.isArray(
+                                                    herramienta.planes,
+                                                ) &&
+                                                herramienta.planes.length > 0
+                                            ) {
+                                                return herramienta.planes.map(
+                                                    (plan: any) => (
+                                                        <tr class="border-b border-gray-800 hover:bg-gray-800/30">
+                                                            <td class="py-4 px-4">
+                                                                <div class="flex items-center gap-3">
+                                                                    <span class="text-xl">
+                                                                        {
+                                                                            herramienta.logo
+                                                                        }
+                                                                    </span>
+                                                                    <div>
+                                                                        <div class="text-white font-medium">
+                                                                            {
+                                                                                herramienta.nombre
+                                                                            }
+                                                                        </div>
+                                                                        <div class="text-gray-400 text-xs">
+                                                                            {
+                                                                                herramienta.empresa
+                                                                            }
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="py-4 px-4 text-gray-300">
+                                                                {plan.nombre}
+                                                            </td>
+                                                            <td class="py-4 px-4 text-emerald-400 font-medium">
+                                                                {plan.precio}
+                                                            </td>
+                                                            <td class="py-4 px-4 text-gray-300 text-xs">
+                                                                {plan.uso}
+                                                            </td>
+                                                            <td class="py-4 px-4 text-gray-300 text-xs">
+                                                                {plan.limitaciones
+                                                                    ? plan.limitaciones
+                                                                    : "-"}
+                                                            </td>
+                                                        </tr>
+                                                    ),
+                                                );
+                                            } else {
+                                                return [
+                                                    <tr class="border-b border-gray-800 hover:bg-gray-800/30">
+                                                        <td class="py-4 px-4">
+                                                            <div class="flex items-center gap-3">
+                                                                <span class="text-xl">
+                                                                    {
+                                                                        herramienta.logo
+                                                                    }
                                                                 </span>
-                                                            ))}
-                                                    </div>
-                                                </td>
-                                                <td class="py-4 px-4 text-gray-300 text-xs">
-                                                    {
-                                                        herramienta.descripcion.split(
-                                                            ".",
-                                                        )[0]
-                                                    }
-                                                </td>
-                                            </tr>
-                                        ),
+                                                                <div>
+                                                                    <div class="text-white font-medium">
+                                                                        {
+                                                                            herramienta.nombre
+                                                                        }
+                                                                    </div>
+                                                                    <div class="text-gray-400 text-xs">
+                                                                        {
+                                                                            herramienta.empresa
+                                                                        }
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-4 px-4 text-gray-400 italic">
+                                                            General
+                                                        </td>
+                                                        <td class="py-4 px-4 text-emerald-400 font-medium">
+                                                            {herramienta.precio
+                                                                ? herramienta.precio
+                                                                : "-"}
+                                                        </td>
+                                                        <td class="py-4 px-4 text-gray-300 text-xs">
+                                                            {herramienta.descripcion
+                                                                ? herramienta.descripcion.split(
+                                                                      ".",
+                                                                  )[0]
+                                                                : "-"}
+                                                        </td>
+                                                        <td class="py-4 px-4 text-gray-300 text-xs">
+                                                            -
+                                                        </td>
+                                                    </tr>,
+                                                ];
+                                            }
+                                        },
                                     )
                                 }
                             </tbody>
