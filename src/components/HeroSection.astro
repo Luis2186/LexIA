@@ -62,9 +62,8 @@ const { title, subtitle, description } = Astro.props;
             </h1>
             <p
                 class="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed"
-            >
-                {description}
-            </p>
+                set:html={description}
+            />
         </div>
         <slot name="stats" />
         <slot name="cta" />
