@@ -1,43 +1,32 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import ToolHeader from "../../components/ToolHeader.astro";
+import FeatureCard from "../../components/FeatureCard.astro";
 ---
 
 <Layout title="MutableAI - Refactorización Inteligente | LexIA">
     <main class="bg-black min-h-screen">
-        <!-- Header -->
-        <header
-            class="relative bg-gradient-to-r from-orange-900 via-amber-900 to-yellow-900 py-20"
+        <!-- Header optimizado con ToolHeader -->
+        <ToolHeader
+            icon={"🔧"}
+            iconBg="bg-gradient-to-r from-orange-500 to-amber-500"
+            title="MutableAI"
+            subtitle="Refactorización Inteligente con IA"
+            author="MutableAI"
+            gradient="bg-gradient-to-r from-orange-900 via-amber-900 to-yellow-900"
+            textColor="text-white"
+            subtitleColor="text-orange-300"
         >
-            <div class="absolute inset-0 bg-black/50"></div>
-            <div class="relative z-10 max-w-6xl mx-auto px-4">
-                <div class="flex items-center gap-6 mb-8">
-                    <div
-                        class="w-20 h-20 bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center text-4xl"
-                    >
-                        🔧
-                    </div>
-                    <div>
-                        <h1
-                            class="text-5xl md:text-6xl font-bold text-white mb-2"
-                        >
-                            MutableAI
-                        </h1>
-                        <p class="text-xl text-orange-300">
-                            Refactorización Inteligente con IA
-                        </p>
-                        <p class="text-gray-400">by MutableAI</p>
-                    </div>
-                </div>
-
-                <p class="text-xl text-gray-300 max-w-4xl leading-relaxed">
-                    MutableAI utiliza inteligencia artificial para modernizar y
-                    optimizar código automáticamente. Especializado en
-                    refactorización inteligente, migración de frameworks y
-                    mejora de performance sin alterar la funcionalidad del
-                    código.
-                </p>
-            </div>
-        </header>
+            <p
+                slot="extra"
+                class="text-xl text-gray-300 max-w-4xl leading-relaxed"
+            >
+                MutableAI utiliza inteligencia artificial para modernizar y
+                optimizar código automáticamente. Especializado en
+                refactorización inteligente, migración de frameworks y mejora de
+                performance sin alterar la funcionalidad del código.
+            </p>
+        </ToolHeader>
 
         <!-- Navigation -->
         <nav
@@ -102,46 +91,31 @@ import Layout from "../../layouts/Layout.astro";
                                 >
                                     🎯 Especialización en Refactoring
                                 </h3>
-
                                 <div class="space-y-3 text-sm">
-                                    <div class="flex items-start gap-3">
-                                        <span class="text-orange-400">🔄</span>
-                                        <div>
-                                            <div class="text-white font-medium">
-                                                Legacy Modernization
-                                            </div>
-                                            <div class="text-gray-400">
-                                                Transforma código antiguo a
-                                                estándares modernos
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-start gap-3">
-                                        <span class="text-amber-400">⚡</span>
-                                        <div>
-                                            <div class="text-white font-medium">
-                                                Performance Optimization
-                                            </div>
-                                            <div class="text-gray-400">
-                                                Mejora velocidad sin cambiar
-                                                comportamiento
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-start gap-3">
-                                        <span class="text-yellow-400">🏗️</span>
-                                        <div>
-                                            <div class="text-white font-medium">
-                                                Architecture Evolution
-                                            </div>
-                                            <div class="text-gray-400">
-                                                Evoluciona patrones y
-                                                estructuras
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <FeatureCard
+                                        icon={"🔄"}
+                                        iconColor="text-orange-400"
+                                        title="Legacy Modernization"
+                                        description="Transforma código antiguo a estándares modernos"
+                                        bgColor="bg-transparent"
+                                        textColor="text-white"
+                                    />
+                                    <FeatureCard
+                                        icon={"⚡"}
+                                        iconColor="text-amber-400"
+                                        title="Performance Optimization"
+                                        description="Mejora velocidad sin cambiar comportamiento"
+                                        bgColor="bg-transparent"
+                                        textColor="text-white"
+                                    />
+                                    <FeatureCard
+                                        icon={"🏗️"}
+                                        iconColor="text-yellow-400"
+                                        title="Architecture Evolution"
+                                        description="Evoluciona patrones y estructuras"
+                                        bgColor="bg-transparent"
+                                        textColor="text-white"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -153,48 +127,31 @@ import Layout from "../../layouts/Layout.astro";
                                 >
                                     🚀 Ventajas Únicas
                                 </h3>
-
                                 <div class="space-y-4 text-sm">
-                                    <div
-                                        class="border-l-4 border-orange-500 pl-4"
-                                    >
-                                        <div
-                                            class="font-semibold text-orange-300"
-                                        >
-                                            Behavior Preservation
-                                        </div>
-                                        <div class="text-gray-400">
-                                            Garantiza que la funcionalidad no
-                                            cambie
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="border-l-4 border-amber-500 pl-4"
-                                    >
-                                        <div
-                                            class="font-semibold text-amber-300"
-                                        >
-                                            Incremental Migration
-                                        </div>
-                                        <div class="text-gray-400">
-                                            Moderniza gradualmente sin romper
-                                            nada
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="border-l-4 border-yellow-500 pl-4"
-                                    >
-                                        <div
-                                            class="font-semibold text-yellow-300"
-                                        >
-                                            Test Generation
-                                        </div>
-                                        <div class="text-gray-400">
-                                            Crea tests para validar los cambios
-                                        </div>
-                                    </div>
+                                    <FeatureCard
+                                        icon={"🛡️"}
+                                        iconColor="text-orange-300"
+                                        title="Behavior Preservation"
+                                        description="Garantiza que la funcionalidad no cambie"
+                                        bgColor="bg-transparent border-l-4 border-orange-500 pl-4"
+                                        textColor="text-orange-300"
+                                    />
+                                    <FeatureCard
+                                        icon={"🔀"}
+                                        iconColor="text-amber-300"
+                                        title="Incremental Migration"
+                                        description="Moderniza gradualmente sin romper nada"
+                                        bgColor="bg-transparent border-l-4 border-amber-500 pl-4"
+                                        textColor="text-amber-300"
+                                    />
+                                    <FeatureCard
+                                        icon={"🧪"}
+                                        iconColor="text-yellow-300"
+                                        title="Test Generation"
+                                        description="Crea tests para validar los cambios"
+                                        bgColor="bg-transparent border-l-4 border-yellow-500 pl-4"
+                                        textColor="text-yellow-300"
+                                    />
                                 </div>
                             </div>
                         </div>

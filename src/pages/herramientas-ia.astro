@@ -1,80 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { categorias, getCantidadPorCategoria } from '../data/mockData';
 
 const breadcrumbs = [
   { name: 'Herramientas IA', current: true }
 ];
 
 // Definir todas las categorías (misma estructura que en [categoria].astro)
-const categorias = {
-  'generacion': {
-    nombre: 'Generación de Código',
-    emoji: '🤖',
-    descripcion: 'Herramientas especializadas en autocompletado, generación y refactoring de código',
-    color: 'from-blue-500 to-cyan-500',
-    cantidad: 4,
-    destacadas: ['GitHub Copilot', 'Cursor', 'Tabnine']
-  },
-  'chat': {
-    nombre: 'Chat & Asistentes',
-    emoji: '💬',
-    descripcion: 'Asistentes conversacionales especializados en desarrollo y programación',
-    color: 'from-green-500 to-emerald-500',
-    cantidad: 2,
-    destacadas: ['GPT-4o', 'Claude 3.5']
-  },
-  'ides': {
-    nombre: 'IDEs y Editores',
-    emoji: '🛠️',
-    descripcion: 'Entornos de desarrollo integrados con capacidades de IA avanzadas',
-    color: 'from-purple-500 to-violet-500',
-    cantidad: 2,
-    destacadas: ['Cursor', 'Replit AI']
-  },
-  'testing': {
-    nombre: 'Testing & QA',
-    emoji: '🧪',
-    descripcion: 'Herramientas de IA para pruebas automatizadas y aseguramiento de calidad',
-    color: 'from-orange-500 to-red-500',
-    cantidad: 3,
-    destacadas: ['Mabl', 'Diffblue Cover', 'Testim AI']
-  },
-  'devops': {
-    nombre: 'DevOps & Deployment',
-    emoji: '🚀',
-    descripcion: 'Automatización inteligente para CI/CD, infraestructura y operaciones',
-    color: 'from-indigo-500 to-blue-500',
-    cantidad: 2,
-    destacadas: ['Harness AI/OPS', 'Dynatrace Davis AI']
-  },
-  'documentacion': {
-    nombre: 'Documentación',
-    emoji: '📚',
-    descripcion: 'Generación automática y mantenimiento de documentación técnica',
-    color: 'from-teal-500 to-cyan-500',
-    cantidad: 4,
-    destacadas: ['Notion AI', 'Mintlify', 'NotebookLM']
-  },
-  'diseno': {
-    nombre: 'UI/UX & Diseño',
-    emoji: '🎨',
-    descripcion: 'Herramientas de IA para diseño de interfaces, presentaciones y experiencia de usuario',
-    color: 'from-pink-500 to-rose-500',
-    cantidad: 6,
-    destacadas: ['Gamma', 'Beautiful.ai', 'Miro AI']
-  },
-  'seguridad': {
-    nombre: 'Seguridad & Análisis',
-    emoji: '🔒',
-    descripcion: 'Análisis de seguridad, vulnerabilidades y calidad de código con IA',
-    color: 'from-red-500 to-pink-500',
-    cantidad: 3,
-    destacadas: ['Snyk Code', 'SonarLint AI', 'DeepCode']
-  }
-};
 
-const totalHerramientas = Object.values(categorias).reduce((sum, cat) => sum + cat.cantidad, 0);
+const totalHerramientas = Object.keys(categorias).reduce((sum, key) => sum + getCantidadPorCategoria(key), 0);
 ---
 
 <Layout title="Herramientas IA - LexIA">
@@ -168,7 +103,7 @@ const totalHerramientas = Object.values(categorias).reduce((sum, cat) => sum + c
                   <h3 class="text-xl font-bold text-white group-hover:text-violet-400 transition-colors">
                     {categoria.nombre}
                   </h3>
-                  <p class="text-gray-400 text-sm">{categoria.cantidad} herramientas</p>
+                  <p class="text-gray-400 text-sm">{getCantidadPorCategoria(key)} herramientas</p>
                 </div>
               </div>
 

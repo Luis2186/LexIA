@@ -1,0 +1,47 @@
+---
+interface Props {
+    icon: any;
+    iconBg?: string;
+    title: string;
+    subtitle?: string;
+    author?: string;
+    gradient?: string;
+    textColor?: string;
+    subtitleColor?: string;
+}
+const {
+    icon,
+    iconBg = "bg-gradient-to-r from-indigo-500 to-cyan-500",
+    title,
+    subtitle = "",
+    author = "",
+    gradient = "bg-gradient-to-r from-indigo-900 via-blue-900 to-cyan-900",
+    textColor = "text-white",
+    subtitleColor = "text-indigo-300",
+} = Astro.props as Props;
+---
+
+<header class={`relative ${gradient} py-20`}>
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-4">
+        <div class="flex items-center gap-6 mb-8">
+            <div
+                class={`w-20 h-20 ${iconBg} rounded-2xl flex items-center justify-center text-4xl`}
+            >
+                {icon}
+            </div>
+            <div>
+                <h1 class={`text-5xl md:text-6xl font-bold ${textColor} mb-2`}>
+                    {title}
+                </h1>
+                {
+                    subtitle && (
+                        <p class={`text-xl ${subtitleColor}`}>{subtitle}</p>
+                    )
+                }
+                {author && <p class="text-gray-400">por {author}</p>}
+            </div>
+        </div>
+        <slot name="extra" />
+    </div>
+</header>

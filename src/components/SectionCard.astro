@@ -1,49 +1,63 @@
 ---
 interface Section {
-  id: string;
-  title: string;
-  subtitle: string;
-  description: string;
-  icon: string;
-  href: string;
-  gradient: string;
-  features: string[];
+    id: string;
+    title: string;
+    subtitle: string;
+    description: string;
+    icon: string;
+    href: string;
+    gradient: string;
+    features: string[];
 }
 const { section, index } = Astro.props as { section: Section; index: number };
 ---
+
 <div
-  class="group bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 hover:border-gray-700 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl card-hover flex flex-col h-full"
-  style={`animation-delay: ${index * 100}ms`}
+    class="group bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 hover:border-gray-700 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl card-hover flex flex-col h-full"
+    style={`animation-delay: ${index * 100}ms`}
 >
-  <div class={`w-16 h-16 rounded-xl bg-gradient-to-r ${section.gradient} flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
-    {section.icon}
-  </div>
-  <div class="mb-6">
-    <h3 class="text-2xl font-bold text-blue-400 mb-2 group-hover:text-cyan-400 transition-colors">
-      {section.title}
-    </h3>
-    <p class="text-gray-400 text-lg mb-1">{section.subtitle}</p>
-    <p class="text-gray-500 leading-relaxed">{section.description}</p>
-  </div>
-  <div class="mb-8">
-    <div class="grid grid-cols-2 gap-2">
-      {section.features.map((feature: string) => (
-        <div class="flex items-center text-sm text-gray-400">
-          <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2" />
-          {feature}
-        </div>
-      ))}
-    </div>
-  </div>
-  <div class="mt-auto">
-    <a
-      href={section.href}
-      class={`inline-flex items-center justify-center w-full bg-gradient-to-r ${section.gradient} text-white py-3 px-6 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 group-hover:scale-105`}
+    <div
+        class={`w-16 h-16 rounded-xl bg-gradient-to-r ${section.gradient} flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}
     >
-      <span>Explorar {section.title}</span>
-      <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
-        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-      </svg>
-    </a>
-  </div>
+        {section.icon}
+    </div>
+    <div class="mb-6">
+        <h3
+            class="text-2xl font-bold text-blue-400 mb-2 group-hover:text-cyan-400 transition-colors"
+        >
+            {section.title}
+        </h3>
+        <p class="text-gray-400 text-lg mb-1">{section.subtitle}</p>
+        <p class="text-gray-500 leading-relaxed">{section.description}</p>
+    </div>
+    <div class="mb-8">
+        <div class="grid grid-cols-2 gap-2">
+            {
+                section.features.map((feature: string) => (
+                    <div class="flex items-center text-sm text-gray-400">
+                        <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2" />
+                        {feature}
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+    <div class="mt-auto">
+        <a
+            href={section.href}
+            class={`inline-flex items-center justify-center w-full bg-gradient-to-r ${section.gradient} text-white py-3 px-6 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 group-hover:scale-105`}
+        >
+            <span>Explorar {section.title}</span>
+            <svg
+                class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+            >
+                <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </div>
 </div>

@@ -9,6 +9,7 @@ const categorias = {
         descripcion:
             "Herramientas especializadas en autocompletado, generación y refactoring de código",
         color: "from-blue-500 to-cyan-500",
+    // cantidad: 9, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "GitHub Copilot",
@@ -50,6 +51,51 @@ const categorias = {
                 url: "/ia/sourcegraph-cody",
                 logo: "🔍",
             },
+            {
+                nombre: "Codeium",
+                empresa: "Codeium",
+                descripcion: "Copiloto IA gratuito para autocompletado de código.",
+                precio: "Gratis",
+                tags: ["Autocompletado", "Gratis", "IA"],
+                url: "/ia/codeium",
+                logo: "🚀",
+            },
+            {
+                nombre: "Code Llama",
+                empresa: "Meta",
+                descripcion: "Modelo open source de Meta para generación de código.",
+                precio: "Gratis",
+                tags: ["Open Source", "Meta", "Generación"],
+                url: "/ia/code-llama",
+                logo: "🦙",
+            },
+            {
+                nombre: "Intellicode",
+                empresa: "Microsoft",
+                descripcion: "Sugerencias inteligentes de código por Microsoft.",
+                precio: "Gratis",
+                tags: ["Autocompletado", "Microsoft", "VSCode"],
+                url: "/ia/intellicode",
+                logo: "🧠",
+            },
+            {
+                nombre: "MutableAI",
+                empresa: "MutableAI",
+                descripcion: "Refactorización y generación de código con IA.",
+                precio: "Gratis",
+                tags: ["Refactor", "Generación", "IA"],
+                url: "/ia/mutableai",
+                logo: "🔧",
+            },
+            {
+                nombre: "CodeWhisperer",
+                empresa: "Amazon",
+                descripcion: "Asistente IA de Amazon para autocompletado y seguridad.",
+                precio: "Gratis",
+                tags: ["Autocompletado", "Amazon", "Seguridad"],
+                url: "/ia/codewhisperer",
+                logo: "🛡️",
+            }
         ],
     },
     chat: {
@@ -58,6 +104,7 @@ const categorias = {
         descripcion:
             "Asistentes conversacionales especializados en desarrollo y programación",
         color: "from-green-500 to-emerald-500",
+    // cantidad: 2, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "GPT-4o",
@@ -87,6 +134,7 @@ const categorias = {
         descripcion:
             "Entornos de desarrollo integrados con capacidades de IA avanzadas",
         color: "from-purple-500 to-violet-500",
+    // cantidad: 2, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "Cursor",
@@ -116,6 +164,7 @@ const categorias = {
         descripcion:
             "Herramientas de IA para pruebas automatizadas y aseguramiento de calidad",
         color: "from-orange-500 to-red-500",
+    // cantidad: 3, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "Mabl",
@@ -155,6 +204,7 @@ const categorias = {
         descripcion:
             "Automatización inteligente para CI/CD, infraestructura y operaciones",
         color: "from-indigo-500 to-blue-500",
+    // cantidad: 4, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "Harness AI/OPS",
@@ -176,6 +226,24 @@ const categorias = {
                 url: "/ia/dynatrace-davis-ai",
                 logo: "📊",
             },
+            {
+                nombre: "Ansible Lightspeed",
+                empresa: "Red Hat",
+                descripcion: "Automatización de infraestructura con IA para Ansible.",
+                precio: "Enterprise",
+                tags: ["DevOps", "Automatización", "Infraestructura"],
+                url: "/ia/ansible-lightspeed",
+                logo: "⚙️",
+            },
+            {
+                nombre: "Amazon Q Developer",
+                empresa: "Amazon Web Services",
+                descripcion: "Asistente IA de Amazon para desarrollo y operaciones.",
+                precio: "Gratis",
+                tags: ["DevOps", "AWS", "Asistente"],
+                url: "/ia/amazon-q-developer",
+                logo: "🎯",
+            }
         ],
     },
     documentacion: {
@@ -184,6 +252,7 @@ const categorias = {
         descripcion:
             "Generación automática y mantenimiento de documentación técnica",
         color: "from-teal-500 to-cyan-500",
+    // cantidad: 4, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "Notion AI",
@@ -233,6 +302,7 @@ const categorias = {
         descripcion:
             "Herramientas de IA para diseño de interfaces, presentaciones y experiencia de usuario",
         color: "from-pink-500 to-rose-500",
+    // cantidad: 6, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "Gamma",
@@ -302,6 +372,7 @@ const categorias = {
         descripcion:
             "Análisis de seguridad, vulnerabilidades y calidad de código con IA",
         color: "from-red-500 to-pink-500",
+    // cantidad: 3, // Se elimina, ahora se calcula dinámicamente
         herramientas: [
             {
                 nombre: "Snyk Code",
